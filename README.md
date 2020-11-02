@@ -1,6 +1,6 @@
 # Symbolic Linking
 $ ln -s {source-dir-name} {symbolic-dir-name}
-ex: ln -s ~/github.com/jdvober/References/.config ~/.config
+ex: ln -s ~/github.com/jdvober/dotfiles/.config/alacritty ~/.config/
 
 # Most of these files should go in ~/.config/
 ~/.config/i3/config

@@ -45,7 +45,7 @@ Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 
 ":HardTimeToggle :HardTimeOn :HardTimeOff
@@ -60,6 +60,7 @@ Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-jedi', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+" Should run :CocInstall coc-ultisnips if using Ultisnips
 
 
 
@@ -461,12 +462,6 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
-" snippets
-let g:UltiSnipsExpandTrigger="<CR>"
-let g:UltiSnipsJumpForwardTrigger="<CR>"
-let g:UltiSnipsJumpBackwardTrigger="<S-CR>"
-let g:UltiSnipsEditSplit="vertical"
-
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
@@ -696,7 +691,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-" let g:coc_global_extensions = ['coc-emoji', 'coc-tsserver', 'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml', 'coc-go', 'coc-html']
+let g:coc_global_extensions = ['coc-emoji', 'coc-tsserver', 'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml', 'coc-ultisnips', 'coc-go', 'coc-html']
 
 "*****************************************************************************
 "" Pear Tree
@@ -785,36 +780,17 @@ map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
 " When calling :GoMetaLinter
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_enabled = ['vet', 'golint']
 " Call on save
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
-let g:go_metalinter_deadline = "5s"
+" let g:go_metalinter_deadline = "5s"
+let g:go_metalinter_fail_silently = 1
 
 autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 " EOF

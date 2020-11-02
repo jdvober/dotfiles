@@ -193,7 +193,7 @@ mode "resize" {
 
 bindsym Mod1+r mode "resize"
 
-bindsym Mod1+o exec i3lock-fancy
+bindsym Mod1+Pause exec i3lock-fancy -p
 
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -228,6 +228,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 
 
+# Wallpaper
 exec --no-startup-id nitrogen --restore
 
 # start rofi

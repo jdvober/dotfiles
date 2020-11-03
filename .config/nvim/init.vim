@@ -780,10 +780,14 @@ map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
 " When calling :GoMetaLinter
-let g:go_metalinter_enabled = ['vet', 'golint']
+" let g:go_metalinter_enabled = ['golint']
+
+autocmd FileType go nmap <F5> <Plug>(go-vet)
+autocmd FileType go nmap <F6> <Plug>(go-lint)
+"
 " Call on save
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_autosave = 0
+" let g:go_metalinter_autosave_enabled = ['golint']
 " let g:go_metalinter_deadline = "5s"
 let g:go_metalinter_fail_silently = 1
 

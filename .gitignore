@@ -1,0 +1,8 @@
+
+.config/nvim/plugged/coc-css/
+.config/nvim/plugged/coc-html/
+.config/nvim/plugged/coc-json/
+.config/nvim/plugged/coc-tsserver/
+.config/nvim/plugged/coc-yaml/
+.config/nvim/plugged/ctrlp.vim/
+.config/nvim/plugged/ultisnips/

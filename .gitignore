@@ -6,3 +6,4 @@
 .config/nvim/plugged/coc-yaml/
 .config/nvim/plugged/ctrlp.vim/
 .config/nvim/plugged/ultisnips/
+polybar-themes/

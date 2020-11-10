@@ -90,7 +90,7 @@ bindsym Mod1+Shift+$right move right
 # bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod1+u split h
+bindsym Mod1+z split h
 
 # split in vertical orientation
 bindsym Mod1+y split v
@@ -232,7 +232,13 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 exec --no-startup-id nitrogen --restore
 
 # start rofi
-bindsym Mod1+d exec rofi -show drun -theme ~/.local/share/rofi/themes/sidetab.rasi -show-icons
+# bindsym Mod1+d exec rofi -show drun -theme ~/.local/share/rofi/themes/sidetab.rasi -show-icons
+bindsym Mod1+d exec rofi -show drun -run-command "zsh -c -i '\{cmd}\'" -theme ~/.local/share/rofi/themes/sidetab.rasi -show-icons
 
 # start compton
 exec --no-startup-id "picom -b --config ~/.config/picom/picom.conf"
+
+# Nvim-gtk settings
+set $NVIM_GTK_NO_HEADERBAR=1
+set $NVIM_GTK_PREFER_DARK_THEME=1
+bindsym Mod1+n exec zsh -c -i nvim-gtk

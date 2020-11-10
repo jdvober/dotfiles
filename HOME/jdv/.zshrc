@@ -119,4 +119,7 @@ alias ohmyzsh="nvim  ~/.oh-my-zsh"
 alias cls="clear && neofetch | lolcat"
 alias lsa="ls -a"
 alias godir="cd ~/go/src/github.com/jdvober && ls -a"
-alias refs="cd ~/github.com/jdvober/References && ls -a"
+alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls -a"
+alias :q="exit"
+alias :wq="exit"
+

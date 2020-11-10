@@ -139,7 +139,7 @@ colorscheme PaperColor
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
-set gfn=Monospace\ 10
+" set gfn="Jetbrains Mono"\ 12
 
 
 "" Disable the blinking cursor.
@@ -800,7 +800,13 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 "*****************************************************************************
 "" Alacritty support for mouse
 "*****************************************************************************
-set ttymouse=sgr
+" set ttymouse=sgr
 
+"*****************************************************************************
+"" Neovim-gtk
+"*****************************************************************************
+"Add these to ~/.zshenv for nvim-gtk environment variable support
+" export NVIM_GTK_NO_HEADERBAR=1
+" export NVIM_GTK_PREFER_DARK_THEME=1
 
 " EOF

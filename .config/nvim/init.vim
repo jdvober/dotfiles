@@ -797,4 +797,10 @@ autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 
 
+"*****************************************************************************
+"" Alacritty support for mouse
+"*****************************************************************************
+set ttymouse=sgr
+
+
 " EOF

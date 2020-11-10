@@ -5,8 +5,8 @@
 
 # --confirm to answer yes to every prompt
 
-for app in "git" "yay-git" "alacritty" "firefox" "gcc" "htop" "lolcat" "make" "mlocate" "neofetch" "neovim" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "picom" "polybar-git" "powerline" "powerline-fonts" "rofi" "siji-git" "ttf-font-awesome"" ttf-ionicons" "vim-plug-git" "w3m" "wget" "xclip" "yarn" "zsh-completions" "feh" "i3lock" "i3status" "i3lock-fancy-git" "mlocate" "vi" "vim" "github-desktop-bin" "nerd-fonts-iosevka" "termsyn-font"
+for app in "vi" "vim" "git" "yay-git" "alacritty" "firefox" "gcc" "htop" "yarn" "lolcat" "make" "mlocate" "neofetch" "neovim" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "picom" "polybar-git" "powerline" "powerline-fonts" "rofi" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "feh" "i3lock" "i3status" "i3lock-fancy-git" "mlocate" "github-desktop-bin" "autoconf" "automake" "geany" "ripgrep" "dust" "nerd-fonts-iosevka" "termsyn-font" "font-manager" "ttf-fira-code" "ttf-monoid" "nerd-fonts-jetbrains-mono" "siji-git" "ttf-font-awesome"" ttf-ionicons" 
 do
     echo "Installing $app"
-    yay -S --confirm $app
+    yay -S --noconfirm $app
 done

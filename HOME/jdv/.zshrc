@@ -1,6 +1,7 @@
 # Auto-start of programs
 neofetch | lolcat
 
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -37,7 +38,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -116,6 +117,7 @@ setopt COMPLETE_ALIASES
 # examples at https://blog.lftechnology.com/command-line-productivity-with-zsh-aliases-28b7cebfdff9
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim  ~/.oh-my-zsh"
+alias qtileconfig="nvim ~/github.com/jdvober/dotfiles/.config/qtile/config.py"
 alias cls="clear && neofetch | lolcat"
 alias lsa="ls -a"
 alias godir="cd ~/go/src/github.com/jdvober && ls -a"
@@ -123,3 +125,6 @@ alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls -a"
 alias :q="exit"
 alias :wq="exit"
 
+
+
+source /home/jdv/.config/broot/launcher/bash/br

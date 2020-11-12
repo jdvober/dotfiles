@@ -8,7 +8,9 @@ neofetch | lolcat
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_github
+#Keychain
+eval $(keychain --eval --quiet --nogui --noask id_ed25519 id_rsa id_rsa_github)
+# zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_github
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jdv/.oh-my-zsh"
@@ -82,7 +84,8 @@ DISABLE_UPDATE_PROMPT="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ssh-agent git golang history-substring-search colored-man-pages)
+# plugins=(ssh-agent git golang history-substring-search colored-man-pages)
+plugins=(git golang history-substring-search colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 

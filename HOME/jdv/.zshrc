@@ -2,6 +2,9 @@
 neofetch | lolcat
 
 
+# Enabling ls colors.  See trapd00r/LS_COLORS on github.
+. "/usr/share/LS_COLORS/dircolors.sh"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -85,17 +88,23 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Set prompt 1 style
+# PS1="$"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Remove duplicate entries in History
+export HISTCONTROL=ignoreboth
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='nvim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -112,19 +121,28 @@ setopt COMPLETE_ALIASES
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# examples at https://blog.lftechnology.com/command-line-productivity-with-zsh-aliases-28b7cebfdff9
+
+# Normal aliases
+alias cls="clear && neofetch | lolcat"
+alias ls="ls -A --color=auto --file-type --group-directories-first"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias grep="grep --color=auto"
+alias :q="exit"
+alias :wq="exit"
+alias vim="nvim"
+alias g="git"
+alias gs="git status"
+# Location shortcuts
+alias ..="cd .."
+alias godir="cd ~/go/src/github.com/jdvober && ls"
+alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls"
+# Config shortcuts
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim  ~/.oh-my-zsh"
 alias qtileconfig="nvim ~/github.com/jdvober/dotfiles/.config/qtile/config.py"
-alias cls="clear && neofetch | lolcat"
-alias lsa="ls -a"
-alias godir="cd ~/go/src/github.com/jdvober && ls -a"
-alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls -a"
-alias :q="exit"
-alias :wq="exit"
-
+alias installsh="nvim ~/github.com/jdvober/dotfiles/install-core-apps.sh"
 
 
 source /home/jdv/.config/broot/launcher/bash/br

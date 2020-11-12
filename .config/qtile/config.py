@@ -3,7 +3,7 @@ import subprocess
 
 from typing import List  # noqa: F401
 
-from libqtile import bar, layout, widget, hook
+from libqtile import bar, layout, widget, hook, extension
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
@@ -11,14 +11,36 @@ from libqtile.utils import guess_terminal
 mod = "mod1"
 terminal = guess_terminal()
 
+colors = {
+    "red": "FF0000",
+    "green": "#079822",
+    "blue": "215578",
+    "lightGrey": "#585858",
+    "medGrey": "#1C1C1C",
+    "darkGrey": "#121212",
+    "white": "#D0D0D0",
+    "orange": "#fc9003",
+    "yellow": "#fffb00",
+    "lightPurple": "#AF87D7",
+    "neonBlue": "#5FD7FF",
+    "neonGreen": "#AED500",
+    "neonPurple": "#a103fc",
+    "neonPink": "#FF5FAF",
+    "yellowGreen": "#cafc03",
+    "gold": "#D7AF00",
+    "black": "000000"
+}
+
+colors["main"] = colors["neonGreen"]
+
 keys = [
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(),
-        desc="Move window focus to other window"),
+    #  Key([mod], "space", lazy.layout.next(),
+        #  desc="Move window focus to other window"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
@@ -45,19 +67,27 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"], "Return", lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
-
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     #  Key([mod], "r", lazy.spawncmd(),
         #  desc="Spawn a command using a prompt widget"),
-    Key([mod], 'r', lazy.spawn('dmenu_run'))
+    Key([mod], 'r', lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
+    Key([mod, "shift"], 'Return', lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
+    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500'))
+    #  Key([mod], 'r', lazy.run_extension(extension.DmenuRun(
+        #  dmenu_prompt=">",
+        #  dmenu_font="Jetbrains Mono",
+        #  background="#15181a",
+        #  foreground="#00ff00",
+        #  selected_background="#079822",
+        #  selected_foreground="#fff",
+        #  dmenu_height=24,  # Only supported by some dmenu forks
+    #  )))
 ]
 
 groups = [Group(i) for i in "asdfuiop"]
@@ -69,34 +99,35 @@ for i in groups:
             desc="Switch to group {}".format(i.name)),
 
         # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
+        #  Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
+            #  desc="Switch to & move focused window to group {}".format(i.name)),
         # Or, use below if you prefer not to switch to that group.
         # # mod1 + shift + letter of group = move focused window to group
-        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-        #     desc="move focused window to group {}".format(i.name)),
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
+           desc="move focused window to group {}".format(i.name)),
     ])
 
 layouts = [
     layout.Max(),
-    layout.MonadTall(),
-    layout.MonadWide(),
-    layout.Tile(),
+    layout.MonadTall(margin = 6, border_focus = colors["white"], border_width = 2),
+    layout.MonadWide(margin = 6, border_focus = colors["white"], border_width = 2),
+    #  layout.Tile(margin = 6),
     # Try more layouts by unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.RatioTile(),
+    #  layout.Matrix(),
+    layout.RatioTile(margin = 3, border_focus = colors["white"], border_width = 2),
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
 
 widget_defaults = dict(
-    font='sans',
+    font='Jetbrains Mono',
     fontsize=12,
     padding=3,
+    background=colors["black"]
 )
 extension_defaults = widget_defaults.copy()
 
@@ -104,21 +135,38 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.Clock(format='%m-%d-%Y %a %I:%M %p'),
-                widget.WindowName(),
+                widget.CurrentLayoutIcon(custom_icon_paths=["/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
+                widget.Spacer(length=4),
+                widget.GroupBox(disable_drag=True,
+                                rounded=False,
+                                this_current_screen_border=colors["main"],
+                                this_screen_border=colors["lightGrey"],
+                                other_current_screen_border=colors["main"],
+                                other_screen_border=colors["lightGrey"]
+                                ),
+                widget.Spacer(length=4),
+                widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"]),
+                widget.Spacer(length=bar.STRETCH),
                 widget.Chord(
                     chords_colors={
                         'launch': ("#ff0000", "#ffffff"),
                     },
-                    name_transform=lambda name: name.upper(),
+                    name_transform=lambda name: name.upper()
                 ),
                 widget.Systray(),
-                widget.QuickExit(),
+                widget.Sep(padding=8, linewidth=2, size_percent=65),
+                widget.CPU(format="CPU {load_percent}%"),
+                widget.Sep(padding=8, linewidth=2, size_percent=65),
+                widget.Memory(format="RAM:{MemPercent}%"),
+                widget.Sep(padding=8, linewidth=2, size_percent=65),
+                widget.Net(format="{down} ↓↑ {up}"),
+                widget.Sep(padding=8, linewidth=2, size_percent=65),
+                widget.TextBox(fmt="VOL:"),
+                widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
+                widget.Sep(padding=8, linewidth=2, size_percent=65),
+                widget.Clock(format='[%m-%d-%Y]  %I:%M %p'),
             ],
-            24,
+            24,background=colors["medGrey"], opacity=0.85
         ),
     ),
 ]

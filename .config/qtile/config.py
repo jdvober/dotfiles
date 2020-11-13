@@ -7,6 +7,7 @@ from libqtile import bar, layout, widget, hook, extension
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+from libqtile.command_client import CommandClient
 
 mod = "mod1"
 terminal = guess_terminal()
@@ -39,8 +40,6 @@ keys = [
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    #  Key([mod], "space", lazy.layout.next(),
-        #  desc="Move window focus to other window"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
@@ -63,31 +62,31 @@ keys = [
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
 
-    # Toggle between split and unsplit sides of stack.
-    # Split = all windows displayed
-    # Unsplit = 1 window displayed, like Max layout, but still with
-    # multiple stack panes
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+
+    # Switch to a certain layout directly
+    Key([mod], '1', lazy.group.setlayout('max')),
+    Key([mod], '2', lazy.group.setlayout('monadtall')),
+    Key([mod], '3', lazy.group.setlayout('monadwide')),
+    Key([mod], '4', lazy.group.setlayout('stack')),
+    Key([mod], '5', lazy.group.setlayout('ratiotile')),
+
+    # Close a window
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
+
+    # Power Management Keybindings
+    Key([mod, "control"], "l", lazy.spawn('i3lock-fancy -p')),
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    #  Key([mod], "r", lazy.spawncmd(),
-        #  desc="Spawn a command using a prompt widget"),
+
+    # Run Command Keybindings
     Key([mod], 'r', lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
     Key([mod, "shift"], 'Return', lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
-    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500'))
-    #  Key([mod], 'r', lazy.run_extension(extension.DmenuRun(
-        #  dmenu_prompt=">",
-        #  dmenu_font="Jetbrains Mono",
-        #  background="#15181a",
-        #  foreground="#00ff00",
-        #  selected_background="#079822",
-        #  selected_foreground="#fff",
-        #  dmenu_height=24,  # Only supported by some dmenu forks
-    #  )))
+    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
+    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal")
+
 ]
 
 groups = [Group(i) for i in "asdfuiop"]
@@ -111,13 +110,13 @@ layouts = [
     layout.Max(),
     layout.MonadTall(margin = 6, border_focus = colors["white"], border_width = 2),
     layout.MonadWide(margin = 6, border_focus = colors["white"], border_width = 2),
+    layout.Stack(num_stacks=2, margin = 6, border_focus = colors["white"], border_width = 2),
+    layout.RatioTile(margin = 3, border_focus = colors["white"], border_width = 2),
     #  layout.Tile(margin = 6),
     # Try more layouts by unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
-    # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     #  layout.Matrix(),
-    layout.RatioTile(margin = 3, border_focus = colors["white"], border_width = 2),
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),

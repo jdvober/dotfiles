@@ -19,18 +19,36 @@ export ZSH="/home/jdv/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="linuxonly"
+# ZSH_THEME="random"
 #
 # If using Powerline, use this, otherwise comment out and use ZSH_THEME for ohmyzsh
-powerline-daemon -q
-. /usr/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+# powerline-daemon -q
+# . /usr/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+#
+# If using powerline-shell or powerline-shell-git
+function powerline_precmd() {
+    PS1="$(powerline-shell --shell zsh $?)"
+}
+
+function install_powerline_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "powerline_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(powerline_precmd)
+}
+
+if [ "$TERM" != "linux" ]; then
+    install_powerline_precmd
+fi
 
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -125,8 +143,9 @@ setopt COMPLETE_ALIASES
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# https://blog.lftechnology.com/command-line-productivity-with-zsh-aliases-28b7cebfdff9
 # Normal aliases
-alias cls="clear && neofetch | lolcat"
+alias cls="clear && pfetch | lolcat"
 alias ls="ls -A --color=auto --file-type --group-directories-first"
 alias rm="rm -i"
 alias cp="cp -i"
@@ -134,18 +153,28 @@ alias mv="mv -i"
 alias grep="grep --color=auto"
 alias :q="exit"
 alias :wq="exit"
+
+# Program aliases
+alias vi="nvim"
 alias vim="nvim"
+alias gvim="nvim-gtk"
 alias g="git"
 alias gs="git status"
+
 # Location shortcuts
 alias ..="cd .."
 alias godir="cd ~/go/src/github.com/jdvober && ls"
 alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls"
+alias -g GODIR="~/go/src/github.com/jdvober"
+alias -g DOTS="~/github.com/jdvober/dotfiles/.config"
+alias -g DOTFILES="~/github.com/jdvober/dotfiles/.config"
+
 # Config shortcuts
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim  ~/.oh-my-zsh"
-alias qtileconfig="nvim ~/github.com/jdvober/dotfiles/.config/qtile/config.py"
-alias installsh="nvim ~/github.com/jdvober/dotfiles/install-core-apps.sh"
+alias -g ZSHRC="~/.zshrc"
+alias -g ZSH="~/.zshrc"
+alias -g QTILE="~/github.com/jdvober/dotfiles/.config/qtile/config.py"
+alias -g INSTALLSH="~/github.com/jdvober/dotfiles/install-core-apps.sh"
+alias -g POWERLINE="~/github.com/jdvober/dotfiles/.config/powerline-shell/config.json"
 
 
 source /home/jdv/.config/broot/launcher/bash/br

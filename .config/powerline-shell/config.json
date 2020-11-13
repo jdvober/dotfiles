@@ -1,0 +1,12 @@
+{
+  "segments": [
+    "cwd",
+    "git",
+    "root"
+  ],
+"theme":"~/github.com/jdvober/dotfiles/.config/powerline-shell/themes/basic.py",
+"cwd": {
+    "max_depth": 3,
+    "max_dir_size": 3
+}
+}

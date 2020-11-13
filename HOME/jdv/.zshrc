@@ -176,5 +176,12 @@ alias -g QTILE="~/github.com/jdvober/dotfiles/.config/qtile/config.py"
 alias -g INSTALLSH="~/github.com/jdvober/dotfiles/install-core-apps.sh"
 alias -g POWERLINE="~/github.com/jdvober/dotfiles/.config/powerline-shell/config.json"
 
+# Git all-in-one
+gpush() {
+    git add . &&
+    git commit -m $1 &&
+    git push
+    git push
+}
 
 source /home/jdv/.config/broot/launcher/bash/br

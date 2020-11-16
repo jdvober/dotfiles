@@ -806,7 +806,6 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 "" Neovim-gtk
 "*****************************************************************************
 "Add these to ~/.zshenv for nvim-gtk environment variable support
-" export NVIM_GTK_NO_HEADERBAR=1
-" export NVIM_GTK_PREFER_DARK_THEME=1
+set guicursor=
 
 " EOF

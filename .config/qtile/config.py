@@ -27,12 +27,13 @@ colors = {
     "neonGreen": "#AED500",
     "neonPurple": "#a103fc",
     "neonPink": "#FF5FAF",
+    "lightYellow": "#FFFF70",
     "yellowGreen": "#cafc03",
     "gold": "#D7AF00",
     "black": "000000"
 }
 
-colors["main"] = colors["neonGreen"]
+colors["main"] = colors["lightYellow"]
 
 keys = [
     # Switch between windows
@@ -123,8 +124,8 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Jetbrains Mono',
-    fontsize=12,
+    font='JetBrainsMono Nerd Font Medium',
+    fontsize=14,
     padding=3,
     background=colors["black"]
 )
@@ -143,8 +144,43 @@ screens = [
                                 other_current_screen_border=colors["main"],
                                 other_screen_border=colors["lightGrey"]
                                 ),
+                widget.Spacer(length=350),
+                widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
+                widget.Spacer(length=70),
+                widget.Spacer(length=bar.STRETCH),
+                #  widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"], max_title_width=120),
+                #  widget.Systray(),
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.CheckUpdates(colour_have_updates=colors["red"], colour_no_update=colors["main"], no_update_string="yay", display_format="yay:{updates}"),
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.CPU(format="CPU:{load_percent}%"),
+                #  widget.CPU(format=" {load_percent}%"),
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
+                #  widget.Memory(format="MEM:{MemPercent}%"),
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.Net(format="{down} ↓↑ {up}"),
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.TextBox(fmt="VOL:", padding=0),
+                #  widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
+            ],
+            24,background=colors["medGrey"], opacity=0.85, margin=6
+        ),
+    ),
+Screen(
+        top=bar.Bar(
+            [
+                widget.CurrentLayoutIcon(custom_icon_paths=["/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
                 widget.Spacer(length=4),
-                widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"]),
+                widget.GroupBox(disable_drag=True,
+                                rounded=False,
+                                this_current_screen_border=colors["lightGrey"],
+                                this_screen_border=colors["main"],
+                                other_current_screen_border=colors["lightGrey"],
+                                other_screen_border=colors["main"]
+                                ),
+                widget.Spacer(length=4),
+                widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"], max_title_width=120),
                 widget.Spacer(length=bar.STRETCH),
                 widget.Chord(
                     chords_colors={
@@ -154,18 +190,22 @@ screens = [
                 ),
                 widget.Systray(),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.CPU(format="CPU {load_percent}%"),
+                widget.CheckUpdates(colour_have_updates=colors["red"], colour_no_update=colors["main"], no_update_string="yay", display_format="yay:{updates}"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.Memory(format="RAM:{MemPercent}%"),
+                widget.CPU(format="CPU:{load_percent}%"),
+                #  widget.CPU(format=" {load_percent}%"),
+                widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
+                widget.Memory(format="MEM:{MemPercent}%"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
                 widget.Net(format="{down} ↓↑ {up}"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.TextBox(fmt="VOL:"),
+                widget.TextBox(fmt="VOL:", padding=0),
                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.Clock(format='[%m-%d-%Y]  %I:%M %p'),
+                widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
             ],
-            24,background=colors["medGrey"], opacity=0.85
+            24,background=colors["medGrey"], opacity=0.85, margin=6
         ),
     ),
 ]

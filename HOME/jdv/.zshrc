@@ -160,6 +160,8 @@ alias vim="nvim"
 alias gvim="nvim-gtk"
 alias g="git"
 alias gs="git status"
+# eval $(thefuck --alias --enable-experimental-instant-mode)
+# alias f="fuck --yeah"
 
 # Location shortcuts
 alias ..="cd .."

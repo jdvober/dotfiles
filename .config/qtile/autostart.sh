@@ -1,7 +1,9 @@
 #! /bin/bash 
-picom -b --config /home/jdv/github.com/jdvober/dotfiles/.config/picom/picom_custom.conf &
+picom -b --experimental-backends --config /home/jdv/github.com/jdvober/dotfiles/.config/picom/picom_custom_3.conf &
 # picom &
 numlockx &
-nm-applet &
+# nm-applet --indicator &
 nitrogen --restore &
-piactl connect &
+# polybar -c ~/.config/polybar/config.ini mainbar-qtile &
+piactl disconnect &&
+piactl connect

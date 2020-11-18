@@ -190,7 +190,7 @@ Screen(
                 ),
                 widget.Systray(),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.CheckUpdates(colour_have_updates=colors["red"], colour_no_update=colors["main"], no_update_string="yay", display_format="yay:{updates}"),
+                widget.CheckUpdates(colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string="yay", display_format="yay: {updates}"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
                 widget.CPU(format="CPU:{load_percent}%"),
                 #  widget.CPU(format=" {load_percent}%"),

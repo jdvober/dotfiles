@@ -30,10 +30,21 @@ colors = {
     "lightYellow": "#FFFF70",
     "yellowGreen": "#cafc03",
     "gold": "#D7AF00",
-    "black": "000000"
+    "black": "000000",
+    "draculaBG": "#282a36",
+    "draculaCurrentLine": "#44475a",
+    "draculaFG": "#f8f8f2",
+    "draculaComment": "#6272a4",
+    "draculaCyan": "#8be9fd",
+    "draculaGreen": "#50fa7b",
+    "draculaOrange": "#ffb86c",
+    "draculaPink": "ff79c6",
+    "draculaPurple": "#bd93f9",
+    "draculaRed": "ff5555",
+    "draculaYellow": "#f1fa8c"
 }
 
-colors["main"] = colors["lightYellow"]
+colors["main"] = colors["draculaPurple"]
 
 keys = [
     # Switch between windows
@@ -109,10 +120,10 @@ for i in groups:
 
 layouts = [
     layout.Max(),
-    layout.MonadTall(margin = 6, border_focus = colors["white"], border_width = 2),
-    layout.MonadWide(margin = 6, border_focus = colors["white"], border_width = 2),
-    layout.Stack(num_stacks=2, margin = 6, border_focus = colors["white"], border_width = 2),
-    layout.RatioTile(margin = 3, border_focus = colors["white"], border_width = 2),
+    layout.MonadTall(margin = 6, border_focus = colors["draculaPink"], border_width = 2),
+    layout.MonadWide(margin = 6, border_focus = colors["draculaPink"], border_width = 2),
+    layout.Stack(num_stacks=2, margin = 6, border_focus = colors["draculaFG"], border_width = 2),
+    layout.RatioTile(margin = 3, border_focus = colors["draculaPink"], border_width = 2),
     #  layout.Tile(margin = 6),
     # Try more layouts by unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
@@ -127,7 +138,7 @@ widget_defaults = dict(
     font='JetBrainsMono Nerd Font Medium',
     fontsize=14,
     padding=3,
-    background=colors["black"]
+    background=colors["draculaBG"]
 )
 extension_defaults = widget_defaults.copy()
 
@@ -140,9 +151,9 @@ screens = [
                 widget.GroupBox(disable_drag=True,
                                 rounded=False,
                                 this_current_screen_border=colors["main"],
-                                this_screen_border=colors["lightGrey"],
+                                this_screen_border=colors["draculaCurrentLine"],
                                 other_current_screen_border=colors["main"],
-                                other_screen_border=colors["lightGrey"]
+                                other_screen_border=colors["draculaCurrentLine"]
                                 ),
                 widget.Spacer(length=350),
                 widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
@@ -174,9 +185,9 @@ Screen(
                 widget.Spacer(length=4),
                 widget.GroupBox(disable_drag=True,
                                 rounded=False,
-                                this_current_screen_border=colors["lightGrey"],
+                                this_current_screen_border=colors["draculaCurrentLine"],
                                 this_screen_border=colors["main"],
-                                other_current_screen_border=colors["lightGrey"],
+                                other_current_screen_border=colors["draculaCurrentLine"],
                                 other_screen_border=colors["main"]
                                 ),
                 widget.Spacer(length=4),

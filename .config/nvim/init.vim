@@ -30,13 +30,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'airblade/vim-gitgutter'
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
+" Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neovim/nvim-lspconfig'
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmsvg/pear-tree'
@@ -51,17 +52,36 @@ Plug 'ctrlpvim/ctrlp.vim'
 ":HardTimeToggle :HardTimeOn :HardTimeOff
 Plug 'takac/vim-hardtime'
 
+" Themes: See 'Visual Settings' section to set theme (ex: colorscheme
+" Papercolor)
+
+"colorscheme Papercolor
+Plug 'NLKNguyen/papercolor-theme'
+"colorscheme nord
+Plug 'arcticicestudio/nord-vim'
+"colorscheme dracula
+Plug 'dracula/vim',{'as':'dracula'}
+"colorscheme oceanic-primal
+Plug 'barlog-m/oceanic-primal-vim' 
+"colorscheme night-owl
+Plug 'haishanh/night-owl.vim'
+"colorscheme daycula
+Plug 'ghifarit53/daycula-vim', {'branch':'main'}
+"colorscheme sonokai
+Plug 'sainnhe/sonokai'
+"colorscheme doom-one
+Plug 'romgrk/doom-one.vim'
+
 
 " Coc Languages
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-go', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-jedi', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-go', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+" " Plug 'neoclide/coc-jedi', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
 " Should run :CocInstall coc-ultisnips if using Ultisnips
-
 
 
 
@@ -122,6 +142,10 @@ let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 "*****************************************************************************
 set ruler
 set number relativenumber
+
+colorscheme dracula
+let g:airline_theme='bubblegum'
+
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -130,8 +154,8 @@ augroup END
 
 let no_buffers_menu=1
 set t_Co=256
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set background=dark
-colorscheme PaperColor
 :syntax enable
 
 
@@ -171,8 +195,14 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
+if (has("termguicolors"))
+    set termguicolors
+endif
+
 " vim-airline
-let g:airline_theme = 'powerlineish'
+"
+" Set at top of section
+" let g:airline_theme = 'powerlineish'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -808,4 +838,22 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 "Add these to ~/.zshenv for nvim-gtk environment variable support
 set guicursor=
 
+
+"*****************************************************************************
+"" Nvim-lsp
+"*****************************************************************************
+lua <<EOF
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.bashls.setup{}
+require'lspconfig'.html.setup{}
+require'lspconfig'.jedi_language_server.setup{}
+require'lspconfig'.jsonls.setup{}
+require'lspconfig'.tsserver.setup{}
+require'lspconfig'.vimls.setup{}
+require'lspconfig'.yamlls.setup{}
+EOF
+"
+"
+"
+"
 " EOF

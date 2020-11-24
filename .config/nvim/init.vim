@@ -37,7 +37,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 " Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
-Plug 'neovim/nvim-lspconfig'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neovim/nvim-lspconfig'
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmsvg/pear-tree'
@@ -48,6 +49,8 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 " Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 
 ":HardTimeToggle :HardTimeOn :HardTimeOff
 Plug 'takac/vim-hardtime'
@@ -74,6 +77,7 @@ Plug 'romgrk/doom-one.vim'
 
 
 " Coc Languages
+" Try just :CocInstall foo first
 " Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-go', {'do': 'yarn install --frozen-lockfile'}
@@ -242,12 +246,12 @@ map <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scro
 
 let g:hardtime_default_on = 1
 " let g:hardtime_timeout = 1000
-let g:hardtime_showmsg = 1
+let g:hardtime_showmsg = 0
 let g:hardtime_ignore_buffer_patterns = [ "CustomPatt[ae]rn", "NERD.*" ]
 let g:hardtime_ignore_quickfix = 1
 let g:hardtime_allow_different_key = 1
-" Allows jj but not jjj
-let g:hardtime_maxcount = 2
+" Allows jjj but not jjjj
+let g:hardtime_maxcount = 3
 
 
 "" NERDTree configuration
@@ -429,8 +433,6 @@ nmap s <Plug>(easymotion-overwin-f)
 " Need one more keystroke, but on average, it may be more comfortable.
 " nmap s <Plug>(easymotion-overwin-f2)
 
-nmap q <Plug>(easymotion-overwin-w)
-
 " Turn on case-insensitive feature
 let g:EasyMotion_smartcase = 1
 
@@ -455,9 +457,9 @@ noremap <Leader>gr :Gremove<CR>
 " nnoremap <leader>sc :CloseSession<CR>
 
 "" Tabs
-nnoremap <C-Tab> gt
-nnoremap <C-S-Tab> gT
-nnoremap <silent> <C-S-t> :tabnew<CR>
+" nnoremap <C-Tab> gt
+" nnoremap <C-S-Tab> gT
+" nnoremap <silent> <C-S-t> :tabnew<CR>
 
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
@@ -721,7 +723,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-let g:coc_global_extensions = ['coc-emoji', 'coc-tsserver', 'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml', 'coc-ultisnips', 'coc-go', 'coc-html']
+" let g:coc_global_extensions = ['coc-emoji', 'coc-tsserver', 'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml', 'coc-ultisnips', 'coc-go', 'coc-html']
 
 "*****************************************************************************
 "" Pear Tree
@@ -781,7 +783,7 @@ let g:go_fmt_command = "goimports"
 let g:go_addtags_transform = "camelcase"
 let g:go_def_mode = 'godef'
 let g:go_decls_includes = "func,type"
-let g:go_auto_sameids = 1
+let g:go_auto_sameids = 0
 
 " Gofmt show errors on save?
 let g:go_fmt_fail_silently = 0
@@ -842,18 +844,88 @@ set guicursor=
 "*****************************************************************************
 "" Nvim-lsp
 "*****************************************************************************
+" lua <<EOF
+" require'lspconfig'.gopls.setup{
+  " cmd = {"gopls", "serve"},
+  " settings = {
+    " gopls = {
+      " analyses = {
+        " unusedparams = true,
+      " },
+      " staticcheck = true,
+    " },
+  " },
+" }
+"
+"
+" require'lspconfig'.bashls.setup{}
+" require'lspconfig'.html.setup{}
+" require'lspconfig'.jedi_language_server.setup{}
+" require'lspconfig'.jsonls.setup{}
+" require'lspconfig'.tsserver.setup{}
+" require'lspconfig'.vimls.setup{}
+" require'lspconfig'.yamlls.setup{}
+" EOF
+"
+"
+"
+"*****************************************************************************
+"" Treesitter
+"*****************************************************************************
+"
 lua <<EOF
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.bashls.setup{}
-require'lspconfig'.html.setup{}
-require'lspconfig'.jedi_language_server.setup{}
-require'lspconfig'.jsonls.setup{}
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.vimls.setup{}
-require'lspconfig'.yamlls.setup{}
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = {},  -- list of language that will be disabled
+  },
+  indent = {
+    enable = true
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+}
 EOF
 "
-"
+"*****************************************************************************
+"" Barbar
+"*****************************************************************************
+" Magic buffer-picking mode
+nnoremap <silent> gh :BufferPick<CR>
+" Sort automatically by...
+nnoremap <silent> gd :BufferOrderByDirectory<CR>
+nnoremap <silent> gl :BufferOrderByLanguage<CR>
+" Move to previous/next
+" nnoremap <silent>    gj :BufferPrevious<CR>
+" nnoremap <silent>    gk :BufferNext<CR>
+" Re-order to previous/next
+nnoremap <silent>    gJ :BufferMovePrevious<CR>
+nnoremap <silent>    gK :BufferMoveNext<CR>
+" Goto buffer in position...
+nnoremap <silent>    gj :BufferGoto 1<CR>
+nnoremap <silent>    gk :BufferGoto 2<CR>
+nnoremap <silent>    gl :BufferGoto 3<CR>
+nnoremap <silent>    g; :BufferGoto 4<CR>
+nnoremap <silent>    g' :BufferGoto 5<CR>
+nnoremap <silent>    ga :BufferGoto 6<CR>
+nnoremap <silent>    gs :BufferGoto 7<CR>
+nnoremap <silent>    gd :BufferGoto 8<CR>
+nnoremap <silent>    gt :BufferLast<CR>
+" Close buffer
+nnoremap <silent>    gw :BufferClose<CR>
+" Wipeout buffer
+"                          :BufferWipeout<CR>
+" Other:
+" :BarbarEnable - enables barbar (enabled by default)
+" :BarbarDisable - very bad command, should never be used
 "
 "
 " EOF

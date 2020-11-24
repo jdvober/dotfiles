@@ -1,5 +1,10 @@
 # Auto-start of programs
-neofetch | lolcat
+
+# Rainbow
+# neofetch | lolcat
+# Non-rainbow
+neofetch
+piactl connect
 
 
 # Enabling ls colors.  See trapd00r/LS_COLORS on github.
@@ -177,6 +182,10 @@ alias -g ZSH="~/.zshrc"
 alias -g QTILE="~/github.com/jdvober/dotfiles/.config/qtile/config.py"
 alias -g INSTALLSH="~/github.com/jdvober/dotfiles/install-core-apps.sh"
 alias -g POWERLINE="~/github.com/jdvober/dotfiles/.config/powerline-shell/config.json"
+alias -g LOCK="~/github.com/jdvober/dotfiles/.config/betterlockscreenrc"
+
+# Power and User Management
+alias restart="sudo shutdown -r now"
 
 # Git all-in-one
 gpush() {

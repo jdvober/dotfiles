@@ -11,5 +11,12 @@ for app in "jedi-language-server"
 
 do
     echo "Installing $app"
-    pip install -U jedi-language-server
+    pip install -U $app
+done
+
+for app in "lua-language-server-git"
+
+do
+    echo "Installing $app"
+    yay -S $app
 done

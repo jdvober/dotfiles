@@ -10,6 +10,7 @@ from libqtile.utils import guess_terminal
 from libqtile.command_client import CommandClient
 
 mod = "mod1"
+mod2 = "mod4"
 terminal = guess_terminal()
 
 colors = {
@@ -89,7 +90,8 @@ keys = [
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 
     # Power Management Keybindings
-    Key([mod, "control"], "l", lazy.spawn('i3lock-fancy -p')),
+    Key([mod2], "l", lazy.spawn('betterlockscreen --lock blur')),
+    #  Key([mod, "control"], "l", lazy.spawn('betterlockscreen -u "/home/jdv/github.com/jdvober/dotfiles/wallpaper" -l blur -t "Locked" -b "0.25"')),
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 

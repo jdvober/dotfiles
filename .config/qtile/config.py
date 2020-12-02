@@ -98,7 +98,7 @@ keys = [
     Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb ' + colors["draculaBG"] + ' -nf ' + colors["draculaComment"] + ' -sb ' + colors["main"] + ' -sf ' + colors["draculaBG"])),
     Key([mod], 'Return', lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], 'u', lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], 'i', lazy.spawn('alacritty --command nvim /home/jdv/'), desc="Launch editor"),
+    Key([mod], 'i', lazy.spawn('alacritty -e sh -c "sleep 0.1 && nvim /home/jdv"'), desc="Launch editor"),
     Key([mod], 'o', lazy.spawn('firefox'), desc="Launch browser"),
     Key([mod], 'p', lazy.spawn('pcmanfm'), desc="Launch file manager")
 
@@ -107,7 +107,7 @@ keys = [
 #  groups = [Group(i) for i in "asdfuiop"]
 groups = [
     Group("a", spawn="alacritty", layout="MonadTall", init=True, position=1, label="a:term1"),
-    Group("s", spawn="alacritty --command nvim /home/jdv/", layout="max", init=True, position=2, label="s:editor"),
+    Group("s", layout="max", init=True, position=2, label="s:editor"),
     Group("d", layout="max", init=True, position=3, label="d:www"),
     Group("f", init=True, position=4, label="f:files"),
     Group("z", init=True, position=5, label="z:term2"),

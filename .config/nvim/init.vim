@@ -51,6 +51,8 @@ Plug 'xolox/vim-session'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
+" Plug 'Yggdroot/indentLine'
+Plug 'nathanaelkane/vim-indent-guides'
 
 ":HardTimeToggle :HardTimeOn :HardTimeOff
 Plug 'takac/vim-hardtime'
@@ -105,11 +107,16 @@ set fileencodings=utf-8
 "" Fix backspace indent
 set backspace=indent,eol,start
 
+"" Fix copy/paste?
+set clipboard+=unnamedplus
+
 "" Tabs. May be overridden by autocmd rules
 set tabstop=2
 set softtabstop=0
 set shiftwidth=4
 set expandtab
+"" Show vertical tab indent guides (manual, no plugin)
+" set list lcs=tab:\|\
 
 "" Map leader to ,
 let mapleader=','
@@ -416,7 +423,7 @@ inoremap ql <C-o>l
 inoremap qa <Esc>la
 
 "This unsets the "last search pattern" register by hitting return
-nnoremap <CR> :noh<CR><CR>
+nnoremap <Esc> :noh<CR><Esc>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
@@ -656,11 +663,20 @@ endif
 "*****************************************************************************
 "" IndentLine
 "*****************************************************************************
-let g:indentLine_enabled = 1
-let g:indentLine_concealcursor = 0
-let g:indentLine_char = '|'
-let g:indentLine_faster = 1
+" let g:indentLine_enabled = 1
+" let g:indentLine_concealcursor = 'inc'
+" let g:indentLine_conceallevel = 2
+" " let g:indentLine_char = '|'
+" "" For a discinct indent character for each indentation level
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" let g:indentLine_faster = 1
 
+"*****************************************************************************
+"" Vim-Indent-Guides
+"*****************************************************************************
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
 
 "*****************************************************************************
 "" Rainbow Brackets

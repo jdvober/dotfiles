@@ -151,7 +151,9 @@ setopt COMPLETE_ALIASES
 # https://blog.lftechnology.com/command-line-productivity-with-zsh-aliases-28b7cebfdff9
 # Normal aliases
 alias cls="clear && pfetch | lolcat"
-alias ls="ls -A --color=auto --file-type --group-directories-first"
+# alias ls="ls -A --color=auto --file-type --group-directories-first"
+alias ls="pwd && exa --grid --long --all --group-directories-first --sort=ext"
+alias tree="pwd && exa --tree --level=3 ../. --long --all"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
@@ -186,6 +188,7 @@ alias -g LOCK="~/github.com/jdvober/dotfiles/.config/betterlockscreenrc"
 
 # Power and User Management
 alias restart="sudo shutdown -r now"
+alias switchuser="dm-tool switch-to-greeter"
 
 # Git all-in-one
 gpush() {

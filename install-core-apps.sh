@@ -19,11 +19,16 @@
     cd yay-git
     makepkg -si
 
-for app in "xorg-xinit" "lightdm" "lightdm-webkit2-greeter" "xorg-server" "lightdm-webkit-theme-aether" "vi" "vim" "alacritty" "alsa-utils" "alsa-plugins" "firefox" "gcc" "rustup" "htop" "gtop" "yarn" "lolcat" "make" "mlocate" "pcmanfm" "neofetch" "pfetch" "neovim-nightly" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "asciidoc" "picom-ibhagwan-git" "pacman-contrib" "powerline-fonts" "dmenu2" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "lscolors-git" "feh" "i3lock" "betterlockscreen-git" "shell-color-scripts" "qtile-git" "mlocate" "autoconf" "automake" "neovim-gtk" "ripgrep" "dust" "broot" "scrot" "pantheon-screenshot" "vscode" 
+for app in "xorg-xinit" "lightdm" "xorg-server" "vi" "vim" "alacritty" "alsa-utils" "alsa-plugins" "firefox" "gcc" "rustup" "htop" "gtop" "yarn" "lolcat" "make" "mlocate" "pcmanfm" "neofetch" "pfetch" "neovim-nightly" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "asciidoc" "picom-ibhagwan-git" "pacman-contrib" "powerline-fonts" "dmenu2" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "lscolors-git" "feh" "i3lock" "betterlockscreen-git" "shell-color-scripts" "qtile-git" "mlocate" "autoconf" "automake" "neovim-gtk" "ripgrep" "exa" "dust" "broot" "scrot" "pantheon-screenshot" "vscode" 
 do
     echo "Installing $app"
     yay -S --noconfirm $app
 done
+
+# Install Lightdm greeter and webkit2 theme
+echo "Setting up Lightdm"
+sudo pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+
 # Clean up system
 sudo yay -Yc
 

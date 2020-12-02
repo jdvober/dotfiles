@@ -91,19 +91,31 @@ keys = [
 
     # Power Management Keybindings
     Key([mod2], "l", lazy.spawn('betterlockscreen --lock blur')),
-    #  Key([mod, "control"], "l", lazy.spawn('betterlockscreen -u "/home/jdv/github.com/jdvober/dotfiles/wallpaper" -l blur -t "Locked" -b "0.25"')),
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Run Command Keybindings
-    Key([mod], 'r', lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
-    Key([mod, "shift"], 'Return', lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
-    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb #121212 -nf #D0D0D0 -sb #AED500')),
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal")
+    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb ' + colors["draculaBG"] + ' -nf ' + colors["draculaComment"] + ' -sb ' + colors["main"] + ' -sf ' + colors["draculaBG"])),
+    Key([mod], 'Return', lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod], 'u', lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod], 'i', lazy.spawn('alacritty --command nvim /home/jdv/'), desc="Launch editor"),
+    Key([mod], 'o', lazy.spawn('firefox'), desc="Launch browser"),
+    Key([mod], 'p', lazy.spawn('pcmanfm'), desc="Launch file manager")
 
 ]
 
-groups = [Group(i) for i in "asdfuiop"]
+#  groups = [Group(i) for i in "asdfuiop"]
+groups = [
+    Group("a", spawn="alacritty", layout="MonadTall", init=True, position=1, label="a:term1"),
+    Group("s", spawn="alacritty --command nvim /home/jdv/", layout="max", init=True, position=2, label="s:editor"),
+    Group("d", layout="max", init=True, position=3, label="d:www"),
+    Group("f", init=True, position=4, label="f:files"),
+    Group("z", init=True, position=5, label="z:term2"),
+    Group("x", init=True, position=6, label="x:term3"),
+    Group("c", init=True, position=7, label="c:vscode"),
+    Group("v", init=True, position=8, label="v:music")
+]
+
 
 for i in groups:
     keys.extend([
@@ -157,10 +169,9 @@ screens = [
                                 other_current_screen_border=colors["main"],
                                 other_screen_border=colors["draculaCurrentLine"]
                                 ),
-                widget.Spacer(length=350),
-                widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
-                widget.Spacer(length=70),
+                #  widget.Spacer(length=350),
                 widget.Spacer(length=bar.STRETCH),
+                widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
                 #  widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"], max_title_width=120),
                 #  widget.Systray(),
                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
@@ -184,16 +195,6 @@ Screen(
         top=bar.Bar(
             [
                 widget.CurrentLayoutIcon(custom_icon_paths=["/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
-                widget.Spacer(length=4),
-                widget.GroupBox(disable_drag=True,
-                                rounded=False,
-                                this_current_screen_border=colors["draculaCurrentLine"],
-                                this_screen_border=colors["main"],
-                                other_current_screen_border=colors["draculaCurrentLine"],
-                                other_screen_border=colors["main"]
-                                ),
-                widget.Spacer(length=4),
-                widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"], max_title_width=120),
                 widget.Spacer(length=bar.STRETCH),
                 widget.Chord(
                     chords_colors={
@@ -216,7 +217,6 @@ Screen(
                 widget.TextBox(fmt="VOL:", padding=0),
                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
             ],
             24,background=colors["medGrey"], opacity=0.85, margin=6
         ),

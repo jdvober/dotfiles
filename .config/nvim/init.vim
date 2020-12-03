@@ -20,6 +20,7 @@ if isdirectory('/snap/node')
     let g:coc_node_path = '/snap/node/current/bin/node'
 endif
 
+
 " Required:
 call plug#begin(expand('~/.config/nvim/plugged'))
 
@@ -146,8 +147,6 @@ let g:session_autosave = "no"
 let g:session_autoload = "no"
 
 let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
-
-
 "*****************************************************************************
 "" Visual Settings
 "*****************************************************************************

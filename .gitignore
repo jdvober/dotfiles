@@ -11,3 +11,5 @@ wallpaper/wallpapers-master.tar.gz
 .config/nvim/plugged/barbar.nvim
 .config/nvim/plugged/daycula-vim
 HOME/jdv/.oh-my-zsh
+HOME/jdv/.oh-my-zsh/*
+HOME/jdv/.oh-my-zsh/*.*

@@ -14,7 +14,7 @@ piactl connect
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Keychain
-eval $(keychain --eval --quiet id_rsa id_rsa_github)
+eval $(keychain --eval --quiet id_rsa_work)
 # zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_github
 
 # Path to your oh-my-zsh installation.

@@ -48,12 +48,13 @@ Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
-" Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
+" Plug 'romgrk/barbar.nvim'
 " Plug 'Yggdroot/indentLine'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'lervag/vimtex'
 
 ":HardTimeToggle :HardTimeOn :HardTimeOff
 Plug 'takac/vim-hardtime'
@@ -71,8 +72,6 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'barlog-m/oceanic-primal-vim' 
 "colorscheme night-owl
 Plug 'haishanh/night-owl.vim'
-"colorscheme daycula
-Plug 'ghifarit53/daycula-vim', {'branch':'main'}
 "colorscheme sonokai
 Plug 'sainnhe/sonokai'
 "colorscheme doom-one
@@ -944,3 +943,12 @@ nnoremap <silent>    gw :BufferClose<CR>
 "
 "
 " EOF
+"
+"*****************************************************************************
+"" Vimtex
+"*****************************************************************************
+" let g:tex_flavor='latex'
+" let g:vimtex_quick_view_method='zathura'
+" let g:vimtex_quickfix_mode=0
+" set coneceallevel=1
+" let g:tex_conceal='abdmg'

@@ -1,0 +1,107 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.rendererType": "dom",
+  "workbench.activityBar.visible": true,
+
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'JetBrains Mono'",
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["q", "q"],
+      "after": ["<C-o>"]
+    },
+    {
+      "before": ["q", "h"],
+      "after": ["<C-o>", "h"]
+    },
+    {
+      "before": ["q", "j"],
+      "after": ["<C-o>", "j"]
+    },
+    {
+      "before": ["q", "k"],
+      "after": ["<C-o>", "k"]
+    },
+    {
+      "before": ["q", "l"],
+      "after": ["<C-o>", "l"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": ",",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-s>": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-o>": false,
+    "<C-b>": false,
+    "<C-d>": true,
+    "<C-u>": true
+  },
+  "workbench.colorTheme": "Dracula",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "darkred",
+
+  "javascript.format.semicolons": "insert",
+  "editor.renameOnType": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "bracketPairColorizer.forceIterationColorCycle": true,
+  "bracketPairColorizer.highlightActiveScope": true,
+  "bracketPairColorizer.showBracketsInGutter": true,
+  "files.insertFinalNewline": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.restore": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+  "terminal.integrated.rightClickBehavior": "default",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "editor.wordWrap": "on",
+  "editor.trimAutoWhitespace": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.multiCursorModifier": "alt",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "go.autocompleteUnimportedPackages": true,
+  "editor.snippetSuggestions": "top",
+  "go.formatTool": "goimports",
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "git.autofetch": true,
+  "editor.lineNumbers": "relative",
+  "[go]": {
+  
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "window.menuBarVisibility": "default",
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme"
+}

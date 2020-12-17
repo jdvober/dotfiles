@@ -20,19 +20,23 @@
     },
     {
       "before": ["q", "h"],
-      "after": ["<C-o>", "h"]
+      "after": ["<left>"]
     },
     {
       "before": ["q", "j"],
-      "after": ["<C-o>", "j"]
+      "after": ["<Esc>", "o"]
     },
     {
       "before": ["q", "k"],
-      "after": ["<C-o>", "k"]
+      "after": ["<Esc>", "<up>", "o"]
+    },
+    {
+      "before": ["q", "a"],
+      "after": ["<right>"]
     },
     {
       "before": ["q", "l"],
-      "after": ["<C-o>", "l"]
+      "after": ["<right>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -45,6 +49,30 @@
       "commands": [":nohl"]
     }
   ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": ["u"],
+      "after": ["<C-z>"],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    }
+  ],
   "vim.leader": ",",
   "vim.handleKeys": {
     "<C-a>": false,
@@ -53,8 +81,9 @@
     "<C-x>": false,
     "<C-c>": false,
     "<C-v>": false,
-    "<C-o>": false,
+    "<C-o>": true,
     "<C-b>": false,
+    "<C-z>": false,
     "<C-d>": true,
     "<C-u>": true
   },
@@ -65,7 +94,7 @@
   "vim.easymotionMarkerBackgroundColor": "darkred",
 
   "javascript.format.semicolons": "insert",
-  "editor.renameOnType": true,
+  "editor.linkedEditing": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -84,24 +113,21 @@
   "editor.wordWrap": "on",
   "editor.trimAutoWhitespace": false,
   "explorer.confirmDragAndDrop": false,
-  "editor.multiCursorModifier": "alt",
+  "editor.multiCursorModifier": "ctrlCmd",
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "go.autocompleteUnimportedPackages": true,
   "editor.snippetSuggestions": "top",
-  "go.formatTool": "goimports",
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "git.autofetch": true,
   "editor.lineNumbers": "relative",
-  "[go]": {
-  
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
   "window.menuBarVisibility": "default",
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.useLanguageServer": true,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "workbench.sideBar.location": "right"
 }

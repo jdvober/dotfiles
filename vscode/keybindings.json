@@ -126,9 +126,5 @@
     "key": "ctrl+k",
     "command": "cursorUp",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "workbench.files.action.focusFilesExplorer"
   }
 ]

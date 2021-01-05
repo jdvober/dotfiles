@@ -1,10 +1,56 @@
 {
-  "workbench.startupEditor": "newUntitledFile",
-  "terminal.integrated.rendererType": "dom",
-  "workbench.activityBar.visible": true,
+  //////////////////////////////////////////////////
+  // Vscode
+  //////////////////////////////////////////////////
 
+  // Editor
   "editor.fontSize": 18,
   "editor.fontFamily": "'JetBrains Mono'",
+  "editor.tabCompletion": "on", // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.wordWrap": "on",
+  "editor.trimAutoWhitespace": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.lineNumbers": "relative",
+
+  // Workbench
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Dracula",
+  "workbench.editor.highlightModifiedTabs": true,
+
+  // Termilal
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+  "terminal.integrated.rightClickBehavior": "default",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+
+  // Files
+  "files.insertFinalNewline": true,
+
+  // Zen Mode
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.restore": true,
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+
+  // Window
+  "window.menuBarVisibility": "default",
+
+  //////////////////////////////////////////////////
+  // Vscode Vim
+  //////////////////////////////////////////////////
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
@@ -45,6 +91,10 @@
       "after": ["<leader>", "<leader>", "s"]
     },
     {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    },
+    {
       "before": ["<C-n>"],
       "commands": [":nohl"]
     }
@@ -73,6 +123,12 @@
       ]
     }
   ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    }
+  ],
   "vim.leader": ",",
   "vim.handleKeys": {
     "<C-a>": false,
@@ -84,50 +140,295 @@
     "<C-o>": true,
     "<C-b>": false,
     "<C-z>": false,
+    "<C-l>": true,
     "<C-d>": true,
     "<C-u>": true
   },
-  "workbench.colorTheme": "Dracula",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "darkred",
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.visual": "block-outline",
+  "vim.statusBarColors.insert": "green",
+
+  //////////////////////////////////////////////////
+  // Go
+  //////////////////////////////////////////////////
+
+  "go.useLanguageServer": true,
+
+  //////////////////////////////////////////////////
+  // Javascript
+  //////////////////////////////////////////////////
 
   "javascript.format.semicolons": "insert",
-  "editor.linkedEditing": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "bracketPairColorizer.forceIterationColorCycle": true,
-  "bracketPairColorizer.highlightActiveScope": true,
-  "bracketPairColorizer.showBracketsInGutter": true,
-  "files.insertFinalNewline": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideStatusBar": false,
-  "zenMode.restore": true,
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.external.windowsExec": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
-  "terminal.integrated.rightClickBehavior": "default",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "editor.wordWrap": "on",
-  "editor.trimAutoWhitespace": false,
-  "explorer.confirmDragAndDrop": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "editor.snippetSuggestions": "top",
-  "vim.mouseSelectionGoesIntoVisualMode": false,
-  "git.autofetch": true,
-  "editor.lineNumbers": "relative",
-  "window.menuBarVisibility": "default",
-  "editor.minimap.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "go.useLanguageServer": true,
-  "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "none",
-  "workbench.sideBar.location": "right"
+
+  //////////////////////////////////////////////////
+  // Bracket Pair Colorizer
+  //////////////////////////////////////////////////
+
+  "bracketPairColorizer.forceIterationColorCycle": true,
+  "bracketPairColorizer.highlightActiveScope": true,
+  "bracketPairColorizer.showBracketsInGutter": true,
+
+  //////////////////////////////////////////////////
+  // Git
+  //////////////////////////////////////////////////
+
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  //////////////////////////////////////////////////
+  // Whichkey
+  //////////////////////////////////////////////////
+
+  "whichkey.bindingOverrides": [
+    {
+      "keys": "s",
+      "name": "+Snippets",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "t",
+          "name": "LaTeX",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "s",
+              "name": "Surround selection with LaTeX command",
+              "type": "command",
+              "command": "latex-workshop.surround"
+            }
+          ],
+          "key": "g",
+          "name": "Go",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "i",
+              "name": "Add Import",
+              "type": "command",
+              "command": "go.import.add"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keys": "t",
+      "name": "+Tex",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "s",
+          "name": "Surround selection with LaTeX command",
+          "type": "command",
+          "command": "latex-workshop.surround"
+        }
+      ]
+    },
+    {
+      "key": "D",
+      "name": "+Debug",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "Start debug",
+          "type": "command",
+          "command": "workbench.action.debug.start"
+        },
+        {
+          "key": "D",
+          "name": "Run without debugging",
+          "type": "command",
+          "command": "workbench.action.debug.run"
+        },
+        {
+          "key": "S",
+          "name": "Stop debug",
+          "type": "command",
+          "command": "workbench.action.debug.stop"
+        },
+        {
+          "key": "c",
+          "name": "Continue debug",
+          "type": "command",
+          "command": "workbench.action.debug.continue"
+        },
+        {
+          "key": "p",
+          "name": "Pause debug",
+          "type": "command",
+          "command": "workbench.action.debug.pause"
+        },
+        {
+          "key": "R",
+          "name": "Restart debug",
+          "type": "command",
+          "command": "workbench.action.debug.restart"
+        },
+        {
+          "key": "i",
+          "name": "Step into",
+          "type": "command",
+          "command": "workbench.action.debug.stepInto"
+        },
+        {
+          "key": "s",
+          "name": "Step over",
+          "type": "command",
+          "command": "workbench.action.debug.stepOver"
+        },
+        {
+          "key": "o",
+          "name": "Step out",
+          "type": "command",
+          "command": "workbench.action.debug.stepOut"
+        },
+        {
+          "key": "b",
+          "name": "Toggle breakpoint",
+          "type": "command",
+          "command": "editor.debug.action.toggleBreakpoint"
+        },
+        {
+          "key": "B",
+          "name": "Toggle inline breakpoint",
+          "type": "command",
+          "command": "editor.debug.action.toggleInlineBreakpoint"
+        },
+        {
+          "key": "j",
+          "name": "Jump to cursor",
+          "type": "command",
+          "command": "debug.jumpToCursor"
+        },
+        {
+          "key": "v",
+          "name": "REPL",
+          "type": "command",
+          "command": "workbench.debug.action.toggleRepl"
+        },
+        {
+          "key": "w",
+          "name": "Focus on watch window",
+          "type": "command",
+          "command": "workbench.debug.action.focusWatchView"
+        },
+        {
+          "key": "W",
+          "name": "Add to watch",
+          "type": "command",
+          "command": "editor.debug.action.selectionToWatch"
+        }
+      ]
+    },
+    {
+      "key": "v",
+      "name": "+View",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "e",
+          "name": "explorer",
+          "type": "command",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "key": "s",
+          "name": "search",
+          "type": "command",
+          "command": "workbench.view.search"
+        },
+        {
+          "key": "g",
+          "name": "git",
+          "type": "command",
+          "command": "workbench.view.scm"
+        },
+        {
+          "key": "t",
+          "name": "test",
+          "type": "command",
+          "command": "workbench.view.extension.test"
+        },
+        {
+          "key": "r",
+          "name": "remote explorer",
+          "type": "command",
+          "command": "workbench.view.remote"
+        },
+        {
+          "key": "x",
+          "name": "extensions",
+          "type": "command",
+          "command": "workbench.view.extensions"
+        },
+        {
+          "key": "p",
+          "name": "problem",
+          "type": "command",
+          "command": "workbench.actions.view.problems"
+        },
+        {
+          "key": "o",
+          "name": "output",
+          "type": "command",
+          "command": "workbench.action.output.toggleOutput"
+        },
+        {
+          "key": "d",
+          "name": "debug console",
+          "type": "command",
+          "command": "workbench.debug.action.toggleRepl"
+        }
+      ]
+    }
+  ],
+
+  //////////////////////////////////////////////////
+  // LaTex
+  //////////////////////////////////////////////////
+
+  "latex-workshop.view.pdf.viewer": "browser",
+  "latex-workshop.message.error.show": false,
+  "latex-workshop.hover.preview.cursor.color": "orange",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (lualatex)",
+      "tools": ["lualatexmk"]
+    },
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "latexmk (latexmkrc)",
+      "tools": ["latexmk_rconly"]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "Compile Rnw files",
+      "tools": ["rnw2tex", "latexmk"]
+    },
+    {
+      "name": "Compile Jnw files",
+      "tools": ["jnw2tex", "latexmk"]
+    },
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ]
 }

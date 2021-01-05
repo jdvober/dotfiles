@@ -3,6 +3,9 @@
   // Vscode
   //////////////////////////////////////////////////
 
+  // Misc
+  "telemetry.enableTelemetry": false,
+
   // Editor
   "editor.fontSize": 18,
   "editor.fontFamily": "'JetBrains Mono'",

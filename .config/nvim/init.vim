@@ -1,3 +1,6 @@
+if exists('g:vscode')
+    "vscode extension settings go here
+     
 " For using an init.vim from version control, make the local init.vim in
 " ~/.config/nvim/init.vim a symlink to the version control version.
 "
@@ -31,15 +34,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
-" Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'neovim/nvim-lspconfig'
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmsvg/pear-tree'
@@ -76,20 +76,6 @@ Plug 'haishanh/night-owl.vim'
 Plug 'sainnhe/sonokai'
 "colorscheme doom-one
 Plug 'romgrk/doom-one.vim'
-
-
-" Coc Languages
-" Try just :CocInstall foo first
-" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-go', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-" " Plug 'neoclide/coc-jedi', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-" Should run :CocInstall coc-ultisnips if using Ultisnips
-
-
 
 call plug#end()
 " Required
@@ -952,3 +938,5 @@ nnoremap <silent>    gw :BufferClose<CR>
 " let g:vimtex_quickfix_mode=0
 " set coneceallevel=1
 " let g:tex_conceal='abdmg'
+
+endif

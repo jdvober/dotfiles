@@ -1,20 +1,13 @@
 
-.config/nvim/plugged/coc-css/
-.config/nvim/plugged/coc-html/
-.config/nvim/plugged/coc-json/
-.config/nvim/plugged/coc-tsserver/
-.config/nvim/plugged/coc-yaml/
-.config/nvim/plugged/ctrlp.vim/
-.config/nvim/plugged/ultisnips/
+.config/nvim/plugged
 polybar-themes/
 wallpaper/wallpapers-master.tar.gz
-.config/nvim/plugged/barbar.nvim/.git
-.config/nvim/plugged/daycula-vim/.git
 HOME/jdv/.oh-my-zsh/.git
 HOME/jdv/.oh-my-zsh/*
 HOME/jdv/.oh-my-zsh/*.*
 usr/share/icons/Dracula/apps/scalable/DBeaver.svg
 *.svg
+usr/share/icons/*
 usr/share/icons/Dracula/apps/scalable/Abricotine.svg
 usr/share/icons/Dracula/apps/scalable/DBeaver.svg
 usr/share/icons/Dracula/apps/scalable/fedoramediawriter.svg

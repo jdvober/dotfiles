@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "q k",
+    "command": "cursorUp",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "command": "vscode-neovim.escape",
+    "key": "j j",
+    "when": "neovim.mode == insert && editorTextFocus"
+  },
+  {
+    "key": "q h",
+    "command": "cursorLeft",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "q j",
+    "command": "cursorDown",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "q l",
+    "command": "cursorRight",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "q a",
+    "command": "cursorRight",
+    "when": "editorTextFocus && neovim.init"
+  }
+]

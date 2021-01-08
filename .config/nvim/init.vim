@@ -73,30 +73,30 @@ endif
 
 
 " " Set python3 location
-" " let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
+let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 
 " "*****************************************************************************
 " "" Terminal Only Settings (Not run in VSCode)
 " "*****************************************************************************
-" if !exists('g:vscode')
-" set ruler
-" set number relativenumber
+if !exists('g:vscode')
+set ruler
+set number relativenumber
 
-" augroup numbertoggle
-"   autocmd!
-"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-"   autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-" augroup END
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+augroup END
 
-" inoremap jj <Esc>
-" " used for moving one space in insert mode
-" inoremap qh <C-o>h
-" inoremap qj <C-o>j
-" inoremap qk <C-o>k
-" inoremap ql <C-o>l
-" " used for breaking out of brackets
-" inoremap qa <Esc>la
-" endif
+inoremap jj <Esc>
+" used for moving one space in insert mode
+inoremap qh <C-o>h
+inoremap qj <C-o>j
+inoremap qk <C-o>k
+inoremap ql <C-o>l
+" used for breaking out of brackets
+inoremap qa <Esc>la
+endif
 
 " "*****************************************************************************
 " "" Visual Settings

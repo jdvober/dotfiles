@@ -16,9 +16,11 @@ Plug 'lervag/vimtex'
     let g:vimtex_view_method='mupdf'
     let g:vimtex_quickfix_mode=0
 
-" A Vim Plugin for Lively Previewing LaTeX PDF Output
+" A Vim Plugin for Lively Previewing LaTeX PDF Output.  Change "updatetime"
+" option for the time it takes to render.
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 let g:livepreview_previewer = 'evince'
+
 
 Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
@@ -34,6 +36,7 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
+Plug 'xolox/vim-session'
 
 call plug#end()
 " Required
@@ -63,7 +66,7 @@ set expandtab
 " set list lcs=tab:\|\
 
 " Map leader to ,
-let mapleader=','
+" let mapleader=','
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 
 " Enable hidden buffers
@@ -82,6 +85,27 @@ if exists('$SHELL')
 else
     set shell=/bin/sh
 endif
+
+" Time for CursorHold, and how long it take for live TeX to update.
+set updatetime=250
+
+" session management
+let g:session_directory = "~/.config/nvim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_autoload = "no"
+" If the PC is fast enough, do syntax highlight syncing from start unless 200 lines
+augroup vimrc-sync-fromstart
+  autocmd!
+  autocmd BufEnter * :syntax sync maxlines=200
+augroup END
+
+" Remember cursor position
+augroup vimrc-remember-cursor-position
+  autocmd!
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+augroup END
+
 
 " Set python3 location
 let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
@@ -177,22 +201,125 @@ set t_Co=256
 set guioptions=egmrti
 
 "*****************************************************************************
+" Nerd Commenter
+"*****************************************************************************
+
+" [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
+
+" [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
+
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+"*****************************************************************************
 " Whichkey
 "*****************************************************************************
+call which_key#register('<Space>', "g:which_key_map")
 nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
 " How long a pause there is after a space before menu appears.  Also affects
 " jj keybinding.
 set timeoutlen=250
+autocmd! FileType which_key
+autocmd  FileType which_key set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+" The next step is to add items to g:which_key_map:
 
-endif
+
+
+" Define prefix dictionary
+let g:which_key_map =  {}
+
+" =======================================================
+" Create menus not based on existing mappings:
+" =======================================================
+" Provide commands(ex-command, <Plug>/<C-W>/<C-d> mapping, etc.)
+" and descriptions for the existing mappings.
+"
+" Mappings to hide from top level menu.  If you decide to rebind these, you
+" must delete from this list:
+let g:which_key_map.p = 'which_key_ignore'
+let g:which_key_map.j = 'which_key_ignore'
+let g:which_key_map.k = 'which_key_ignore'
+"
+" Note:
+" Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
+" Command or function wrapper to make it work with vim-which-key.
+" Ref issue #126, #133 etc.
+let g:which_key_map.b = {
+      \ 'name' : '+buffer' ,
+      \ '1' : ['b1'        , 'buffer 1']        ,
+      \ '2' : ['b2'        , 'buffer 2']        ,
+      \ '3' : ['b3'        , 'buffer 2']        ,
+      \ 'd' : ['bd'        , 'delete']   ,
+      \ 'f' : ['bfirst'    , 'first']    ,
+      \ 'h' : ['Startify'  , 'home']     ,
+      \ 'a' : ['blast'     , 'last']     ,
+      \ 'n' : ['bnext'     , 'next']     ,
+      \ 'p' : ['bprevious' , 'previous'] ,
+      \ 'l' : ['buffers' , 'list'] ,
+      \ 'r' : [':source %' , 'refresh'] ,
+      \ }
+
+let g:which_key_map.w = {
+      \ 'name' : '+window' ,
+      \ 'h' : ['split'        , 'split horizontal']        ,
+      \ 'v' : ['vsplit'        , 'split vertical']        ,
+      \ 'c' : ['wq'        , 'close']        ,
+      \ }
+
+let g:which_key_map.t = {
+      \ 'name' : '+tab' ,
+      \ 'n' : ['tabnext'        , 'next']        ,
+      \ 'p' : ['tabprevious'        , 'previous']        ,
+      \ 'c' : ['tabclose'        , 'close']        ,
+      \ 'l' : ['tabs'        , 'list']        ,
+      \ }
+
+let g:which_key_map.f = {
+      \ 'name' : '+file' ,
+      \ 'o' : ['Tex'        , 'open file in new tab']        ,
+      \ }
+
+
+let g:which_key_map.l = {
+      \ 'name' : '+LaTeX' ,
+      \ 'b' : ['vimtex-compile'        , 'build']        ,
+      \ 'v' : ['vimtex-view'        , 'view']        ,
+      \ 'l' : ['LLPStartPreview'        , 'view live']        ,
+      \ 'r' : ['vimtex-reload'        , 'reload']        ,
+      \ 'k' : ['vimtex-stop'        , 'stop']        ,
+      \ 'i' : ['vimtex-info'        , 'info']        ,
+      \ 's' : ['vimtex-compile-selected'        , 'compile selected']        ,
+      \ 'e' : ['vimtex-errors'        , 'errors']        ,
+      \ 'o' : ['vimtex-log'        , 'log']        ,
+      \ }
+
+let g:which_key_map.c = {
+      \ 'name' : '+comment' ,
+      \ 's' : ['Tex'        , 'open file in new tab']        ,
+      \ }
 
 "*****************************************************************************
 "*****************************************************************************
 "*****************************************************************************
 
 " END OF TERMINAL ONLY SETTINGS
+endif
 
 "*****************************************************************************
 "*****************************************************************************
@@ -223,6 +350,7 @@ map <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scro
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <Esc> :noh<CR><Esc>
+nnoremap <CR> :noh<CR><CR>
 
 " Easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -266,26 +394,3 @@ setlocal spell
 set spelllang=en_us
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-"*****************************************************************************
-" Nerd Commenter
-"*****************************************************************************
-
-" [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
-
-" [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
-
-
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
-let g:NERDToggleCheckAllLines = 1

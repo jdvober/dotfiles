@@ -1,5 +1,5 @@
 #! /bin/bash 
-picom -b --experimental-backends --config /home/jdv/github.com/jdvober/dotfiles/.config/picom/picom_custom_3.conf &
+picom -b --experimental-backends --config /home/jdv/github.com/jdvober/dotfiles/.config/picom/picom_custom.conf &
 # picom &
 numlockx &
 # nm-applet --indicator &

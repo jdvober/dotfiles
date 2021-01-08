@@ -11,6 +11,12 @@
     "when": "neovim.mode == insert && editorTextFocus"
   },
   {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
     "key": "q h",
     "command": "cursorLeft",
     "when": "editorTextFocus && neovim.init"
@@ -29,5 +35,14 @@
     "key": "q a",
     "command": "cursorRight",
     "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "space",
+    "command": "whichkey.show",
+    "when": "editorTextFocus && neovim.init && neovim.mode != insert"
+  },
+  {
+    "key": "f2",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]

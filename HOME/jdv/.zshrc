@@ -14,7 +14,7 @@ piactl connect
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Keychain
-eval $(keychain --eval --quiet id_rsa_work)
+eval $(keychain --eval --quiet id_rsa_github)
 # zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_github
 
 # Path to your oh-my-zsh installation.
@@ -162,9 +162,6 @@ alias :q="exit"
 alias :wq="exit"
 
 # Program aliases
-alias vi="nvim"
-alias vim="nvim"
-alias gvim="nvim-gtk"
 alias g="git"
 alias gs="git status"
 # eval $(thefuck --alias --enable-experimental-instant-mode)

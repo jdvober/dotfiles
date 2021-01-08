@@ -13,8 +13,12 @@ Plug 'sirver/ultisnips'
 
 Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
-    let g:vimtex_view_method='zathura'
+    let g:vimtex_view_method='mupdf'
     let g:vimtex_quickfix_mode=0
+
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+let g:livepreview_previewer = 'evince'
 
 Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
@@ -29,12 +33,13 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 " Required
 filetype plugin indent on
 
-"****************************************************************************
+"*****************************************************************************
 " Basic Setup
 "*****************************************************************************
 " Encoding
@@ -81,9 +86,31 @@ endif
 " Set python3 location
 let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 
+
 "*****************************************************************************
+" Key Remap
+"*****************************************************************************
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+inoremap jj <Esc>
+" used for moving one space in insert mode
+inoremap qh <C-o>h
+inoremap qj <C-o>j
+inoremap qk <C-o>k
+inoremap ql <C-o>l
+" used for breaking out of brackets
+inoremap qa <Esc>la
+
+"*****************************************************************************
+"*****************************************************************************
+"*****************************************************************************
+"
 " Terminal Only Settings (Not run in VSCode)
+"
 "*****************************************************************************
+"*****************************************************************************
+"*****************************************************************************
+
 if !exists('g:vscode')
 set ruler
 set number relativenumber
@@ -94,18 +121,12 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
 
-inoremap jj <Esc>
-" used for moving one space in insert mode
-inoremap qh <C-o>h
-inoremap qj <C-o>j
-inoremap qk <C-o>k
-inoremap ql <C-o>l
-" used for breaking out of brackets
-inoremap qa <Esc>la
 
 colorscheme dracula
 
+"*****************************************************************************
 " Vim Airline
+"*****************************************************************************
 let g:airline_theme='bubblegum'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
@@ -148,37 +169,33 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
-" Gui Options
+"*****************************************************************************
+" GUI Options
+"*****************************************************************************
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
 
-" NERD Commenter settings
+"*****************************************************************************
+" Whichkey
+"*****************************************************************************
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
-" [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
-
-" [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
-
-
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
-let g:NERDToggleCheckAllLines = 1
+" How long a pause there is after a space before menu appears.  Also affects
+" jj keybinding.
+set timeoutlen=250
 
 endif
 
-" *****************************************************************************
-" Visual Settings
+"*****************************************************************************
+"*****************************************************************************
+"*****************************************************************************
+
+" END OF TERMINAL ONLY SETTINGS
+
+"*****************************************************************************
+"*****************************************************************************
 "*****************************************************************************
 
 "*****************************************************************************
@@ -248,3 +265,27 @@ endif
 setlocal spell
 set spelllang=en_us
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+"*****************************************************************************
+" Nerd Commenter
+"*****************************************************************************
+
+" [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
+
+" [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
+
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1

@@ -19,7 +19,7 @@
     cd yay-git
     makepkg -si
 
-for app in "xorg-xinit" "lightdm" "xorg-server" "vi" "vim" "alacritty" "alsa-utils" "alsa-plugins" "firefox" "gcc" "rustup" "htop" "gtop" "yarn" "lolcat" "make" "mlocate" "pcmanfm" "neofetch" "pfetch" "neovim-nightly" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "asciidoc" "picom-ibhagwan-git" "pacman-contrib" "powerline-fonts" "dmenu2" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "lscolors-git" "feh" "i3lock" "betterlockscreen-git" "shell-color-scripts" "qtile-git" "mlocate" "autoconf" "automake" "neovim-gtk" "ripgrep" "exa" "dust" "broot" "scrot" "pantheon-screenshot" "vscode" "zathura" "github-desktop-bin"
+for app in "xorg-xinit" "lightdm" "xorg-server" "vi" "vim" "alacritty" "alsa-utils" "alsa-plugins" "firefox" "gcc" "rustup" "htop" "gtop" "yarn" "lolcat" "make" "mlocate" "pcmanfm" "neofetch" "pfetch" "neovim-nightly" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "asciidoc" "picom-ibhagwan-git" "pacman-contrib" "powerline-fonts" "dmenu2" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "lscolors-git" "feh" "i3lock" "betterlockscreen-git" "shell-color-scripts" "qtile-git" "mlocate" "autoconf" "automake" "neovim-gtk" "ripgrep" "exa" "dust" "broot" "scrot" "pantheon-screenshot" "vscode" "evince" "mupdf" "github-desktop-bin"
 do
     echo "Installing $app"
     yay -S --noconfirm $app

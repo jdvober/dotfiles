@@ -4,7 +4,7 @@
 
 # --confirm to answer yes to every prompt
 
-for app in "bison" "flex" "boost" "miktex"
+for app in "texlive-most"
 do
     echo "Installing $app"
     yay -S --noconfirm $app

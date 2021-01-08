@@ -18,7 +18,7 @@ eval $(keychain --eval --quiet id_rsa_github)
 # zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_github
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jdv/.oh-my-zsh"
+# export ZSH="/home/jdv/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -110,7 +110,7 @@ DISABLE_UPDATE_PROMPT="true"
 # plugins=(ssh-agent git golang history-substring-search colored-man-pages)
 plugins=(git golang history-substring-search colored-man-pages)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 

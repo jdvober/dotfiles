@@ -18,7 +18,6 @@ snippet template "Basic template" b
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
-\usepackage[dutch]{babel}
 \usepackage{amsmath, amssymb}
 
 
@@ -117,8 +116,9 @@ endsnippet
 
 snippet dm "Math" wA
 \[
+-
 ${1:${VISUAL}}
-.\] $0
+-\] $0
 endsnippet
 
 snippet ali "Align" bA
@@ -135,6 +135,15 @@ endsnippet
 
 snippet / "Fraction" i
 \\frac{${VISUAL}}{$1}$0
+endsnippet
+
+
+snippet eq "Math with line-by-line steps" i
+\\\
+\begin{equation} \begin{align*}
+    ${1} &= ${0} \\\
+\end{equation} \end{align*}
+\\\
 endsnippet
 
 context "math()"

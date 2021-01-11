@@ -29,6 +29,7 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 
 Plug 'asvetliakov/vim-easymotion'
 Plug 'honza/vim-snippets'
+Plug 'tpope/vim-surround'
 
 " Terminal-only plugins
 Plug 'scrooloose/nerdcommenter'
@@ -37,6 +38,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
 
 call plug#end()
 " Required
@@ -260,53 +262,45 @@ let g:which_key_map.k = 'which_key_ignore'
 " Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
 " Command or function wrapper to make it work with vim-which-key.
 " Ref issue #126, #133 etc.
-let g:which_key_map.b = {
-      \ 'name' : '+buffer' ,
+let g:which_key_map.w = {
+      \ 'name' : '+Tabs, +Windows and +Buffers' ,
       \ '1' : ['b1'        , 'buffer 1']        ,
       \ '2' : ['b2'        , 'buffer 2']        ,
       \ '3' : ['b3'        , 'buffer 2']        ,
-      \ 'd' : ['bd'        , 'delete']   ,
-      \ 'f' : ['bfirst'    , 'first']    ,
-      \ 'h' : ['Startify'  , 'home']     ,
-      \ 'a' : ['blast'     , 'last']     ,
-      \ 'n' : ['bnext'     , 'next']     ,
-      \ 'p' : ['bprevious' , 'previous'] ,
-      \ 'l' : ['buffers' , 'list'] ,
-      \ 'r' : [':source %' , 'refresh'] ,
-      \ }
-
-let g:which_key_map.w = {
-      \ 'name' : '+window' ,
-      \ 'h' : ['split'        , 'split horizontal']        ,
-      \ 'v' : ['vsplit'        , 'split vertical']        ,
+      \ 'd' : ['bd'        , 'delete buffer']   ,
+      \ 'f' : ['bfirst'    , 'buffer first']    ,
+      \ 'o' : ['Startify'  , 'buffer home']     ,
+      \ 'a' : ['blast'     , 'buffer last']     ,
+      \ 'n' : ['bnext'     , 'buffer next']     ,
+      \ 'p' : ['bprevious' , 'buffer previous'] ,
+      \ 'l' : ['buffers' , 'buffer list'] ,
+      \ 'r' : [':source %' , 'refresh buffer'] ,
+      \ 'h' : ['split'        , 'split window horizontal']        ,
+      \ 'v' : ['vsplit'        , 'split window vertical']        ,
       \ 'c' : ['wq'        , 'close']        ,
-      \ }
-
-let g:which_key_map.t = {
-      \ 'name' : '+tab' ,
-      \ 'n' : ['tabnext'        , 'next']        ,
-      \ 'p' : ['tabprevious'        , 'previous']        ,
-      \ 'c' : ['tabclose'        , 'close']        ,
-      \ 'l' : ['tabs'        , 'list']        ,
+      \ 'j' : ['tabnext'        , 'next']        ,
+      \ 'k' : ['tabprevious'        , 'previous']        ,
+      \ 'w' : ['tabclose'        , 'close']        ,
+      \ 't' : ['tabs'        , 'list']        ,
       \ }
 
 let g:which_key_map.f = {
       \ 'name' : '+file' ,
-      \ 'o' : ['Tex'        , 'open file in new tab']        ,
+      \ 'o' : ['Tex'        , 'Open file in new tab']        ,
+      \ 'w' : ['w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
       \ }
-
 
 let g:which_key_map.l = {
       \ 'name' : '+LaTeX' ,
-      \ 'b' : ['vimtex-compile'        , 'build']        ,
-      \ 'v' : ['vimtex-view'        , 'view']        ,
+      \ 'c' : ['VimtexCompile'        , 'compile']        ,
+      \ 'v' : ['VimtexView'        , 'view']        ,
       \ 'l' : ['LLPStartPreview'        , 'view live']        ,
-      \ 'r' : ['vimtex-reload'        , 'reload']        ,
-      \ 'k' : ['vimtex-stop'        , 'stop']        ,
-      \ 'i' : ['vimtex-info'        , 'info']        ,
-      \ 's' : ['vimtex-compile-selected'        , 'compile selected']        ,
-      \ 'e' : ['vimtex-errors'        , 'errors']        ,
-      \ 'o' : ['vimtex-log'        , 'log']        ,
+      \ 'r' : ['VimtexReload'        , 'reload']        ,
+      \ 'k' : ['VimtexStop'        , 'stop']        ,
+      \ 'i' : ['VimtexInfo'        , 'info']        ,
+      \ 's' : ['VimtexCompileSelected'        , 'compile selected']        ,
+      \ 'e' : ['VimtexErrors'        , 'errors']        ,
+      \ 'o' : ['VimtexLog'        , 'log']        ,
       \ }
 
 let g:which_key_map.c = {

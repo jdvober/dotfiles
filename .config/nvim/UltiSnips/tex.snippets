@@ -11,13 +11,108 @@ def env(name):
 
 endglobal
 
+snippet notes "Lecture Notes Setup" b
+
+% See https://www.overleaf.com/learn/Creating_a_document_in_LaTeX for a good tutorial
+
+%PREAMBLE
+\documentclass[12pt, letterpaper]{article}
+
+% Packages
+\usepackage[margin=0.5in]{geometry}
+\usepackage{indentfirst}% indent the first line of a new paragraph automatically
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb}
+
+% Page dimension over-rides
+\geometry{
+    top=0.75in,
+    bottom=0.5in,
+}
+\pdfsuppresswarningpagegroup=1
+
+\begin{document}
+		$0
+\end{document}
+endsnippet
+
+snippet lab "Setup for a lab document" b
+% See https://www.overleaf.com/learn/Creating_a_document_in_LaTeX for a good tutorial
+
+%PREAMBLE
+\documentclass[12pt, letterpaper]{article}
+
+% Packages
+\usepackage[margin=0.5in]{geometry}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
+%\usepackage{lmodern}
+\usepackage{indentfirst}% indent the first line of a new paragraph automatically
+\usepackage{setspace}
+\usepackage{fontspec}% allows the use of installed system fonts.  See https://www.overleaf.com/learn/latex/XeLaTeX
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+
+\usepackage{fancyhdr}% Fancy Headers and Footers
+\usepackage{lastpage}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% Page dimension over-rides
+\geometry{
+	top=0.75in,
+	bottom=0.5in,
+}
+
+% PDF Options
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={$1},
+    bookmarks=true,
+}
+
+% Title Block Information
+\title{$1}
+\author{ }% Space to make blank
+\date{ }% Space to make blank
+
+% Theme
+\setmainfont{Noto Sans Math}
+
+% Fancy Header and Footer Options
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\rightmark}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{2pt}
+
+% Document
+\begin{document}
+		$0
+\end{document}
+
+endsnippet
 
 snippet template "Basic template" b
-\documentclass[a4paper]{article}
+\documentclass{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{csquotes}
 \usepackage{amsmath, amssymb}
 
 
@@ -114,6 +209,31 @@ else:
 `$2
 endsnippet
 
+snippet quote "A block quote using csquotes package" w
+\begin{displayquote}
+		$0
+\end{displayquote}
+endsnippet
+
+snippet title "The a large set of text" b
+\begin{center}
+    \huge{$1} \\
+\end{center}
+$0
+endsnippet
+
+snippet subtitle "The a large-ish set of text" b
+\begin{center}
+    \large{$1} \\
+\end{center}
+$0
+endsnippet
+
+snippet section "A new section" b
+\section{$1}
+$0
+endsnippet
+
 snippet dm "Math" wA
 \[
 -
@@ -137,13 +257,10 @@ snippet / "Fraction" i
 \\frac{${VISUAL}}{$1}$0
 endsnippet
 
-
 snippet eq "Math with line-by-line steps" i
-\\\
-\begin{equation} \begin{align*}
+\begin{subequations} \begin{align}
     ${1} &= ${0} \\\
-\end{equation} \end{align*}
-\\\
+\end{align} \end{subequations}
 endsnippet
 
 context "math()"
@@ -274,7 +391,7 @@ snippet conj "conjugate" iA
 endsnippet
 
 snippet sum "sum" w
-\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
+\sum ${0:a_n z^n}
 endsnippet
 
 snippet taylor "taylor" w
@@ -298,12 +415,12 @@ snippet part "d/dx" w
 endsnippet
 
 context "math()"
-snippet sq "\sqrt{}" iA
+snippet sqrt "\sqrt{}" iA
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
 
 context "math()"
-snippet sr "^2" iA
+snippet sq "^2" iA
 ^2
 endsnippet
 
@@ -327,6 +444,10 @@ _{$1}$0
 endsnippet
 
 snippet ooo "\infty" iA
+\infty
+endsnippet
+
+snippet inf "\infty" iA
 \infty
 endsnippet
 

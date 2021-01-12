@@ -30,8 +30,13 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'asvetliakov/vim-easymotion'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 
 " Terminal-only plugins
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
@@ -39,6 +44,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
+Plug 'romgrk/barbar.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 " Required
@@ -153,6 +160,20 @@ colorscheme dracula
 "*****************************************************************************
 " Vim Airline
 "*****************************************************************************
+let g:NERDTreeChDirMode=2
+let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
+let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
+let g:NERDTreeShowBookmarks=1
+let g:nerdtree_tabs_focus_on_files=1
+let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
+let g:NERDTreeWinSize = 50
+let g:NERDTreeQuitOnOpen = 1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+nnoremap <silent><F2> :NERDTreeToggle<CR>
+
+"*****************************************************************************
+" Vim Airline
+"*****************************************************************************
 let g:airline_theme='bubblegum'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
@@ -262,8 +283,9 @@ let g:which_key_map.k = 'which_key_ignore'
 " Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
 " Command or function wrapper to make it work with vim-which-key.
 " Ref issue #126, #133 etc.
-let g:which_key_map.w = {
+let g:which_key_map['w'] = {
       \ 'name' : '+Tabs, +Windows and +Buffers' ,
+      \ '=' : ['<C-W>='     , 'balance-window']        ,
       \ '1' : ['b1'        , 'buffer 1']        ,
       \ '2' : ['b2'        , 'buffer 2']        ,
       \ '3' : ['b3'        , 'buffer 2']        ,
@@ -273,24 +295,44 @@ let g:which_key_map.w = {
       \ 'a' : ['blast'     , 'buffer last']     ,
       \ 'n' : ['bnext'     , 'buffer next']     ,
       \ 'p' : ['bprevious' , 'buffer previous'] ,
-      \ 'l' : ['buffers' , 'buffer list'] ,
+      \ 'b' : ['Buffers' , 'List Buffers'] ,
       \ 'r' : [':source %' , 'refresh buffer'] ,
       \ 'h' : ['split'        , 'split window horizontal']        ,
       \ 'v' : ['vsplit'        , 'split window vertical']        ,
-      \ 'c' : ['wq'        , 'close']        ,
+      \ 'c' : ['tabclose'        , 'close tab']        ,
       \ 'j' : ['tabnext'        , 'next']        ,
       \ 'k' : ['tabprevious'        , 'previous']        ,
-      \ 'w' : ['tabclose'        , 'close']        ,
+      \ 'w' : ['Windows'        , 'List Windows']        ,
       \ 't' : ['tabs'        , 'list']        ,
       \ }
 
-let g:which_key_map.f = {
+let g:which_key_map['U'] = {
+      \ 'name' : '+Snippets' ,
+      \ 'U' : ['Snippets'        , 'View Snippets']        ,
+      \ }
+
+let g:which_key_map['f'] = {
       \ 'name' : '+file' ,
-      \ 'o' : ['Tex'        , 'Open file in new tab']        ,
+      \ 'f' : ['Files'        , 'Open via FZF']        ,
+      \ 'h' : ['History'        , 'View File History']        ,
+      \ 'd' : ['Files'        , 'Open in current directory']        ,
       \ 'w' : ['w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
       \ }
 
-let g:which_key_map.l = {
+let g:which_key_map['g'] = {
+      \ 'name' : '+git' ,
+      \ }
+
+let g:which_key_map['/'] = {
+      \ 'name' : '+Search' ,
+      \ '?' : ['Windows!'    , 'fzf-window']            ,
+      \ 'd' : ['Files'        , 'Search in all files in ./']        ,
+      \ 'a' : ['Rg'        , 'Search in all files with ripgrep']        ,
+      \ 'l' : ['BLines'        , 'Search in current buffer']        ,
+      \ 'b' : ['Buffers'        , 'Search in all buffers']        ,
+      \ }
+
+let g:which_key_map['l'] = {
       \ 'name' : '+LaTeX' ,
       \ 'c' : ['VimtexCompile'        , 'compile']        ,
       \ 'v' : ['VimtexView'        , 'view']        ,
@@ -303,9 +345,16 @@ let g:which_key_map.l = {
       \ 'o' : ['VimtexLog'        , 'log']        ,
       \ }
 
-let g:which_key_map.c = {
+let g:which_key_map['c'] = {
       \ 'name' : '+comment' ,
-      \ 's' : ['Tex'        , 'open file in new tab']        ,
+      \ 'SPC' : ['<plug>NERDCommenterToggle'        , 'Toggle']        ,
+      \ '$' : ['<plug>NERDCommenterToEOL'        , 'End Of Line Comment']        ,
+      \ 'A' : ['<plug>NERDCommenterAltDelims'        , 'Comment']        ,
+      \ 'a' : ['<plug>NERDCommenterAppend'        , 'EOL + Insert']        ,
+      \ 'c' : ['<plug>NERDCommenterNested'        , 'Comment']        ,
+      \ 's' : ['<plug>NERDCommenterSexy'        , 'Sexy']        ,
+      \ 'y' : ['<plug>NERDCommenterYank'        , 'Yank and Comment']        ,
+      \ 'u' : ['<plug>NERDCommenterUncomment'        , 'Uncomment']        ,
       \ }
 
 "*****************************************************************************
@@ -388,3 +437,60 @@ setlocal spell
 set spelllang=en_us
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
+
+"*****************************************************************************
+" FZF
+"*****************************************************************************
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" An action can be a reference to a function that processes selected lines
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" Default fzf layout
+" - Popup window
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+
+" - down / up / left / right
+let g:fzf_layout = { 'down': '40%' }
+
+" - Window using a Vim command
+let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_layout = { 'window': '-tabnew' }
+let g:fzf_layout = { 'window': '10new' }
+
+" Customize fzf colors to match your color scheme
+" - fzf#wrap translates this to a set of `--color` options
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+" Enable per-command history
+" - History files will be stored in the specified directory
+" - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
+"   'previous-history' instead of 'down' and 'up'.
+let g:fzf_history_dir = '~/.local/share/fzf-history'

@@ -11,7 +11,7 @@ def env(name):
 
 endglobal
 
-snippet notes "Lecture Notes Setup" b
+snippet notes "Template for a set of lecture notes" b
 
 % See https://www.overleaf.com/learn/Creating_a_document_in_LaTeX for a good tutorial
 
@@ -26,6 +26,7 @@ snippet notes "Lecture Notes Setup" b
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{csquotes}
+\usepackage{marginnote}
 
 \usepackage{textcomp}
 \usepackage{amsmath, amssymb}
@@ -42,7 +43,7 @@ snippet notes "Lecture Notes Setup" b
 \end{document}
 endsnippet
 
-snippet lab "Setup for a lab document" b
+snippet lab "Template for a lab document" b
 % See https://www.overleaf.com/learn/Creating_a_document_in_LaTeX for a good tutorial
 
 %PREAMBLE
@@ -59,6 +60,7 @@ snippet lab "Setup for a lab document" b
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{csquotes}
+\usepackage{marginnote}
 
 \usepackage{fancyhdr}% Fancy Headers and Footers
 \usepackage{lastpage}
@@ -114,6 +116,7 @@ snippet template "Basic template" b
 \usepackage[english]{babel}
 \usepackage{csquotes}
 \usepackage{amsmath, amssymb}
+\usepackage{marginnote}
 
 
 % figure support

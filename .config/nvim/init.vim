@@ -32,6 +32,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'inkarkat/vim-ReplaceWithRegister' " Makes gr Replace existing text with the contents of a register
 
 
 " Terminal-only plugins
@@ -74,8 +75,6 @@ set expandtab
 " Show vertical tab indent guides (manual, no plugin)
 " set list lcs=tab:\|\
 
-" Map leader to ,
-" let mapleader=','
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 
 " Enable hidden buffers
@@ -123,8 +122,11 @@ let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 "*****************************************************************************
 " Key Remap
 "*****************************************************************************
-let g:mapleader = "\<Space>"
-let g:maplocalleader = ','
+" Set leader to ','
+let mapleader=','
+" Set localleader to Space (used for WhichKey)
+let g:maplocalleader = "\<Space>"
+
 inoremap jj <Esc>
 " used for moving one space in insert mode
 inoremap qh <C-o>h
@@ -174,10 +176,11 @@ nnoremap <silent><F2> :NERDTreeToggle<CR>
 "*****************************************************************************
 " Vim Airline
 "*****************************************************************************
-let g:airline_theme='bubblegum'
+let g:airline_theme='dracula'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
@@ -230,7 +233,9 @@ set guioptions=egmrti
 " [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
 
 " [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
-
+"
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -250,9 +255,10 @@ let g:NERDToggleCheckAllLines = 1
 "*****************************************************************************
 " Whichkey
 "*****************************************************************************
+" My Whichkey setup is only set to utilize the localldeader which is set to
+" space
 call which_key#register('<Space>', "g:which_key_map")
-nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
-nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  '<Space>'<CR>
 
 " How long a pause there is after a space before menu appears.  Also affects
 " jj keybinding.
@@ -283,27 +289,64 @@ let g:which_key_map.k = 'which_key_ignore'
 " Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
 " Command or function wrapper to make it work with vim-which-key.
 " Ref issue #126, #133 etc.
-let g:which_key_map['w'] = {
+let g:which_key_map[' '] = {
       \ 'name' : '+Tabs, +Windows and +Buffers' ,
-      \ '=' : ['<C-W>='     , 'balance-window']        ,
-      \ '1' : ['b1'        , 'buffer 1']        ,
-      \ '2' : ['b2'        , 'buffer 2']        ,
-      \ '3' : ['b3'        , 'buffer 2']        ,
-      \ 'd' : ['bd'        , 'delete buffer']   ,
-      \ 'f' : ['bfirst'    , 'buffer first']    ,
-      \ 'o' : ['Startify'  , 'buffer home']     ,
-      \ 'a' : ['blast'     , 'buffer last']     ,
-      \ 'n' : ['bnext'     , 'buffer next']     ,
-      \ 'p' : ['bprevious' , 'buffer previous'] ,
-      \ 'b' : ['Buffers' , 'List Buffers'] ,
-      \ 'r' : [':source %' , 'refresh buffer'] ,
-      \ 'h' : ['split'        , 'split window horizontal']        ,
-      \ 'v' : ['vsplit'        , 'split window vertical']        ,
+      \ '=' : ['<C-W>='     , 'balance-window'] ,
+      \ 'a' : ['tabnew'        , 'new tab']        ,
+      \ 'b' : {
+            \ 'name': '+BUFFERS',
+            \ 'n' : ['bnext'     , 'buffer next']     ,
+            \ 'p' : ['bprevious' , 'buffer previous'] ,
+            \ 'r' : [':source %' , 'refresh buffer'] ,
+            \ },
+      \ 'C' : ['tabo'        , 'close all other tabs']        ,
       \ 'c' : ['tabclose'        , 'close tab']        ,
-      \ 'j' : ['tabnext'        , 'next']        ,
-      \ 'k' : ['tabprevious'        , 'previous']        ,
-      \ 'w' : ['Windows'        , 'List Windows']        ,
-      \ 't' : ['tabs'        , 'list']        ,
+      \ 'd' : ['bd'        , 'delete buffer']   ,
+      \ 'h' : ['split'        , 'split window horizontal']        ,
+      \ 'j' : ['tabnext'        , 'next tab']        ,
+      \ 'k' : ['tabprevious'        , 'previous tab']        ,
+      \ 'l' : {
+            \ 'name': '+list',
+            \ 'b' : ['Buffers'     , 'buffers']      ,
+            \ 't' : ['tabs' , 'tabs'] ,
+            \ 'w' : ['Windows' , 'windows']  ,
+            \ },
+      \ 'r' : [':source %' , 'refresh buffer'] ,
+      \ 't' : {
+            \ 'name': '+TABS',
+            \ '1' : ['1gT'        , '1']        ,
+            \ '2' : ['2gT'        , '2']        ,
+            \ '3' : ['3gT'        , '3']        ,
+            \ '4' : ['4gT'        , '4']        ,
+            \ '5' : ['5gT'        , '5']        ,
+            \ '6' : ['6gT'        , '6']        ,
+            \ '7' : ['7gT'        , '7']        ,
+            \ '8' : ['8gT'        , '8']        ,
+            \ '9' : ['9gT'        , '9']        ,
+            \ '0' : ['0gT'        , '0']        ,
+            \ 'c' : ['tabclose'        , 'close tab']        ,
+            \ 'j' : ['tabnext'        , 'next tab']        ,
+            \ 'k' : ['tabprevious'        , 'previous tab']        ,
+            \ 't' : ['tabnew'        , 'new tab']        ,
+            \ },
+      \ 'v' : ['vsplit'        , 'split window vertical']        ,
+      \ 'w' : {
+            \ 'name': '+WINDOWS',
+            \ 'h' : ['split'        , 'split window horizontal']        ,
+            \ 'q' : [':wq'        , 'close']        ,
+            \ 'j' : [':wnext'        , 'next']        ,
+            \ 'k' : [':wprevious'        , 'previous']        ,
+            \ 'v' : ['vsplit'        , 'split window vertical']        ,
+            \ 'w' : ['Windows' , 'windows']  ,
+            \ },
+      \ }
+
+let g:which_key_map['R'] = {
+      \ 'name' : '+Source %' ,
+      \ 'R' : [':source %'        , 'Reload file']        ,
+      \ 'I' : ['PlugInstall'        , 'Install Plugins in init.vim']        ,
+      \ 'C' : ['PlugClean'        , 'Clean Plugins in init.vim']        ,
+      \ 'U' : ['PlugUpdate'        , 'Update Plugins in init.vim']        ,
       \ }
 
 let g:which_key_map['U'] = {
@@ -317,6 +360,7 @@ let g:which_key_map['f'] = {
       \ 'h' : ['History'        , 'View File History']        ,
       \ 'd' : ['Files'        , 'Open in current directory']        ,
       \ 'w' : ['w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
+      \ 'i' : [':e $MYVIMRC<CR>'        , 'open-init.vim']        ,
       \ }
 
 let g:which_key_map['g'] = {
@@ -345,17 +389,17 @@ let g:which_key_map['l'] = {
       \ 'o' : ['VimtexLog'        , 'log']        ,
       \ }
 
-let g:which_key_map['c'] = {
-      \ 'name' : '+comment' ,
-      \ 'SPC' : ['<plug>NERDCommenterToggle'        , 'Toggle']        ,
-      \ '$' : ['<plug>NERDCommenterToEOL'        , 'End Of Line Comment']        ,
-      \ 'A' : ['<plug>NERDCommenterAltDelims'        , 'Comment']        ,
-      \ 'a' : ['<plug>NERDCommenterAppend'        , 'EOL + Insert']        ,
-      \ 'c' : ['<plug>NERDCommenterNested'        , 'Comment']        ,
-      \ 's' : ['<plug>NERDCommenterSexy'        , 'Sexy']        ,
-      \ 'y' : ['<plug>NERDCommenterYank'        , 'Yank and Comment']        ,
-      \ 'u' : ['<plug>NERDCommenterUncomment'        , 'Uncomment']        ,
-      \ }
+" let g:which_key_map['c'] = {
+    " \ 'name' : '+comment' ,
+    " \ 'SPC' : ['<plug>NERDCommenterToggle'        , 'Toggle']        ,
+    " \ '$' : ['<plug>NERDCommenterToEOL'        , 'End Of Line Comment']        ,
+    " \ 'A' : ['<plug>NERDCommenterAltDelims'        , 'Comment']        ,
+    " \ 'a' : ['<plug>NERDCommenterAppend'        , 'EOL + Insert']        ,
+    " \ 'c' : ['<plug>NERDCommenterNested'        , 'Comment']        ,
+    " \ 's' : ['<plug>NERDCommenterSexy'        , 'Sexy']        ,
+    " \ 'y' : ['<plug>NERDCommenterYank'        , 'Yank and Comment']        ,
+    " \ 'u' : ['<plug>NERDCommenterUncomment'        , 'Uncomment']        ,
+    " \ }
 
 "*****************************************************************************
 "*****************************************************************************

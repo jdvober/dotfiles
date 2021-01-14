@@ -136,6 +136,9 @@ inoremap ql <C-o>l
 " used for breaking out of brackets
 inoremap qa <Esc>la
 
+" For support of figures from Inkscape in LaTeX documents
+inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 "*****************************************************************************
 "*****************************************************************************
 "*****************************************************************************
@@ -289,13 +292,14 @@ let g:which_key_map.k = 'which_key_ignore'
 " Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
 " Command or function wrapper to make it work with vim-which-key.
 " Ref issue #126, #133 etc.
-let g:which_key_map[' '] = {
+let g:which_key_map['w'] = {
       \ 'name' : '+Tabs, +Windows and +Buffers' ,
       \ '=' : ['<C-W>='     , 'balance-window'] ,
       \ 'a' : ['tabnew'        , 'new tab']        ,
       \ 'b' : {
             \ 'name': '+BUFFERS',
             \ 'n' : ['bnext'     , 'buffer next']     ,
+            \ 'i' : ['BufferPick'     , 'pick buffer']     ,
             \ 'p' : ['bprevious' , 'buffer previous'] ,
             \ 'r' : [':source %' , 'refresh buffer'] ,
             \ },
@@ -341,17 +345,16 @@ let g:which_key_map[' '] = {
             \ },
       \ }
 
-let g:which_key_map['R'] = {
-      \ 'name' : '+Source %' ,
-      \ 'R' : [':source %'        , 'Reload file']        ,
-      \ 'I' : ['PlugInstall'        , 'Install Plugins in init.vim']        ,
-      \ 'C' : ['PlugClean'        , 'Clean Plugins in init.vim']        ,
-      \ 'U' : ['PlugUpdate'        , 'Update Plugins in init.vim']        ,
-      \ }
+let g:which_key_map[' '] = { 'name' : 'Pick Buffer' }
+nnoremap <silent> <localleader><localleader> :BufferPick<CR>
 
-let g:which_key_map['U'] = {
+let g:which_key_map['R'] = { 'name' : 'source %' }
+nnoremap <silent> <localleader>R :source %<CR>
+
+let g:which_key_map['s'] = {
       \ 'name' : '+Snippets' ,
-      \ 'U' : ['Snippets'        , 'View Snippets']        ,
+      \ 'v' : ['Snippets'        , 'View Snippets']        ,
+      \ 'e' : ['UltiSnipsEdit'        , 'Edit Snippets']        ,
       \ }
 
 let g:which_key_map['f'] = {
@@ -360,8 +363,10 @@ let g:which_key_map['f'] = {
       \ 'h' : ['History'        , 'View File History']        ,
       \ 'd' : ['Files'        , 'Open in current directory']        ,
       \ 'w' : ['w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
-      \ 'i' : [':e $MYVIMRC<CR>'        , 'open-init.vim']        ,
+      \ 'i' : [':e $MYVIMRC'        , 'open-init.vim']        ,
       \ }
+nnoremap <silent> <localleader>fn :badd 
+nnoremap <silent> <localleader>fo :edit 
 
 let g:which_key_map['g'] = {
       \ 'name' : '+git' ,
@@ -387,6 +392,7 @@ let g:which_key_map['l'] = {
       \ 's' : ['VimtexCompileSelected'        , 'compile selected']        ,
       \ 'e' : ['VimtexErrors'        , 'errors']        ,
       \ 'o' : ['VimtexLog'        , 'log']        ,
+      \ 'w' : ['!inkscape-figures watch'        , 'Watch for inkscape figures']        ,
       \ }
 
 " let g:which_key_map['c'] = {

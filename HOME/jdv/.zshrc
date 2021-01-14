@@ -163,6 +163,8 @@ alias :wq="exit"
 
 # Program aliases
 alias g="git"
+alias figures="~/.local/bin/inkscape-figures"
+alias inkscape-figures="~/.local/bin/inkscape-figures"
 alias gs="git status"
 # eval $(thefuck --alias --enable-experimental-instant-mode)
 # alias f="fuck --yeah"

@@ -74,6 +74,17 @@ snippet lab "Template for a lab document" b
 	bottom=0.5in,
 }
 
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
 % PDF Options
 \hypersetup{
     colorlinks=true,
@@ -100,6 +111,17 @@ snippet lab "Template for a lab document" b
 \fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{2pt}
 
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
 % Document
 \begin{document}
 		$0
@@ -108,15 +130,25 @@ snippet lab "Template for a lab document" b
 endsnippet
 
 snippet template "Basic template" b
-\documentclass{article}
+\documentclass[12pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage[english]{babel}
-\usepackage{csquotes}
+\usepackage{csquotes} % For block quotations
 \usepackage{amsmath, amssymb}
 \usepackage{marginnote}
+%\usepackage{multicol}
+%		\setlength{\columnsep}{3cm}
+\usepackage{graphicx}
+		\graphicspath{ {./images/} }
+%\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
+%\usepackage{indentfirst} % indent the first line of a new paragraph automatically
+\usepackage{setspace}
+\usepackage{fontspec}% allows the use of installed system fonts.  See https://www.overleaf.com/learn/latex/XeLaTeX
+\usepackage{fancyhdr}% Fancy Headers and Footers
+\usepackage{lastpage}
 
 
 % figure support
@@ -250,6 +282,22 @@ snippet ali "Align" bA
 .\end{align*}
 endsnippet
 
+snippet ol "Ordered List" bA
+\begin{enumerate}
+		\item $0
+\end{enumerate}
+endsnippet
+
+snippet ul "Unordered List" bA
+\begin{itemize}
+		\item[$1] $0
+\end{itemize}
+endsnippet
+
+snippet img "Include an image from ./images" b
+\includegraphics[width=${1:8}cm, height=${2:10}cm]{$3}
+$0
+endsnippet
 
 context "math()"
 snippet // "Fraction" iA

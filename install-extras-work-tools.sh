@@ -4,15 +4,15 @@
 
 # --confirm to answer yes to every prompt
 
-for app in "texlive-most"
+for app in "texlive-most" "rofi"
 do
     echo "Installing $app"
     yay -S --noconfirm $app
 done
 
-for app in "pynvim"
+for app in "pynvim" "inkscape-figures"
 do
     echo "Installing $app with pip"
-    python3 python3 -m pip install --user --upgrade $app
+    python3 -m pip install --user --upgrade $app
 done
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<keys
+   name="My custom shortcuts">
+  <bind
+     key="f"
+     action="ToolPen"
+     display="true" />
+  <bind
+     key="F"
+     action="ToolPen" />
+  <bind
+     key="w"
+     action="ToolPencil"
+     display="true" />
+  <bind
+     key="W"
+     action="ToolPencil" />
+  <bind
+     key="d"
+     action="ToolNode"
+     display="true" />
+  <bind
+     key="D"
+     action="ToolNode" />
+  <bind
+     key="a"
+     action="ToolDropper"
+     display="true" />
+  <bind
+     key="A"
+     action="ToolDropper" />
+</keys>

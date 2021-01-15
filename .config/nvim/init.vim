@@ -19,6 +19,7 @@ Plug 'lervag/vimtex'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output.  Change "updatetime"
 " option for the time it takes to render.
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+" let g:livepreview_previewer = 'evince'
 let g:livepreview_previewer = 'evince'
 
 
@@ -137,8 +138,10 @@ inoremap ql <C-o>l
 inoremap qa <Esc>la
 
 " For support of figures from Inkscape in LaTeX documents
-inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+" inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+" nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+inoremap <C-f> <Esc>: silent exec '.!python3 ~/.local/bin/inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+nnoremap <C-f> : silent exec '!python3 ~/.local/bin/inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 "*****************************************************************************
 "*****************************************************************************
 "*****************************************************************************
@@ -345,8 +348,8 @@ let g:which_key_map['w'] = {
             \ },
       \ }
 
-let g:which_key_map[' '] = { 'name' : 'Pick Buffer' }
-nnoremap <silent> <localleader><localleader> :BufferPick<CR>
+let g:which_key_map['Tab'] = { 'name' : 'Pick Buffer' }
+nnoremap <silent> <localleader><Tab> :BufferPick<CR>
 
 let g:which_key_map['R'] = { 'name' : 'source %' }
 nnoremap <silent> <localleader>R :source %<CR>
@@ -383,9 +386,22 @@ let g:which_key_map['/'] = {
 
 let g:which_key_map['l'] = {
       \ 'name' : '+LaTeX' ,
+      \ 'C' : 'which_key_ignore'        ,
+      \ 'G' : 'which_key_ignore'        ,
+      \ 'g' : 'which_key_ignore'        ,
+      \ 'I' : 'which_key_ignore'        ,
+      \ 'K' : 'which_key_ignore'        ,
+      \ 'L' : 'which_key_ignore'        ,
+      \ 'l' : 'which_key_ignore'        ,
+      \ 'q' : 'which_key_ignore'        ,
+      \ 'T' : 'which_key_ignore'        ,
+      \ 't' : 'which_key_ignore'        ,
+      \ 'X' : 'which_key_ignore'        ,
+      \ 'x' : 'which_key_ignore'        ,
+      \ 'm' : 'which_key_ignore'        ,
       \ 'c' : ['VimtexCompile'        , 'compile']        ,
       \ 'v' : ['VimtexView'        , 'view']        ,
-      \ 'l' : ['LLPStartPreview'        , 'view live']        ,
+      \ 'p' : ['LLPStartPreview'        , 'Present (view live)']        ,
       \ 'r' : ['VimtexReload'        , 'reload']        ,
       \ 'k' : ['VimtexStop'        , 'stop']        ,
       \ 'i' : ['VimtexInfo'        , 'info']        ,
@@ -450,7 +466,8 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
 " `s{char}{label}`
-nmap s <Plug>(easymotion-overwin-f)
+nmap S <Plug>(easymotion-overwin-f)
+nmap <leader>s <Plug>(easymotion-overwin-f)
 
 " or
 " `s{char}{char}{label}`

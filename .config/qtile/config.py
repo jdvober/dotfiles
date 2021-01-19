@@ -48,6 +48,9 @@ colors = {
 colors["main"] = colors["draculaPurple"]
 
 keys = [
+    # Toggle Floating
+    Key([mod2], 'f', lazy.window.toggle_floating()),
+
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
@@ -95,7 +98,8 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Run Command Keybindings
-    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb ' + colors["draculaBG"] + ' -nf ' + colors["draculaComment"] + ' -sb ' + colors["main"] + ' -sf ' + colors["draculaBG"])),
+    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb ' + \
+                                   colors["draculaBG"] + ' -nf ' + colors["draculaComment"] + ' -sb ' + colors["main"] + ' -sf ' + colors["draculaBG"])),
     Key([mod], 'Return', lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], 'u', lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], 'i', lazy.spawn('code'), desc="Launch editor"),
@@ -106,7 +110,8 @@ keys = [
 
 #  groups = [Group(i) for i in "asdfuiop"]
 groups = [
-    Group("a", spawn="alacritty", layout="MonadTall", init=True, position=1, label="a:term1"),
+    Group("a", spawn="alacritty", layout="MonadTall",
+          init=True, position=1, label="a:term1"),
     Group("s", layout="max", init=True, position=2, label="s:editor"),
     Group("d", layout="max", init=True, position=3, label="d:www"),
     Group("f", init=True, position=4, label="f:files"),
@@ -125,19 +130,23 @@ for i in groups:
 
         # mod1 + shift + letter of group = switch to & move focused window to group
         #  Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-            #  desc="Switch to & move focused window to group {}".format(i.name)),
+        #  desc="Switch to & move focused window to group {}".format(i.name)),
         # Or, use below if you prefer not to switch to that group.
         # # mod1 + shift + letter of group = move focused window to group
         Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-           desc="move focused window to group {}".format(i.name)),
+            desc="move focused window to group {}".format(i.name)),
     ])
 
 layouts = [
     layout.Max(),
-    layout.MonadTall(margin = 6, border_focus = colors["draculaPink"], border_width = 2),
-    layout.MonadWide(margin = 6, border_focus = colors["draculaPink"], border_width = 2),
-    layout.Stack(num_stacks=2, margin = 6, border_focus = colors["draculaFG"], border_width = 2),
-    layout.RatioTile(margin = 3, border_focus = colors["draculaPink"], border_width = 2),
+    layout.MonadTall(
+        margin=6, border_focus=colors["draculaPink"], border_width=2),
+    layout.MonadWide(
+        margin=6, border_focus=colors["draculaPink"], border_width=2),
+    layout.Stack(num_stacks=2, margin=6,
+                 border_focus=colors["draculaFG"], border_width=2),
+    layout.RatioTile(
+        margin=3, border_focus=colors["draculaPink"], border_width=2),
     #  layout.Tile(margin = 6),
     # Try more layouts by unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
@@ -160,7 +169,8 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayoutIcon(custom_icon_paths=["/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
+                widget.CurrentLayoutIcon(custom_icon_paths=[
+                                         "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
                 widget.Spacer(length=4),
                 widget.GroupBox(disable_drag=True,
                                 rounded=False,
@@ -188,13 +198,14 @@ screens = [
                 #  widget.TextBox(fmt="VOL:", padding=0),
                 #  widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
             ],
-            24,background=colors["medGrey"], opacity=0.85, margin=6
+            24, background=colors["medGrey"], opacity=0.85, margin=6
         ),
     ),
-Screen(
+    Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayoutIcon(custom_icon_paths=["/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
+                widget.CurrentLayoutIcon(custom_icon_paths=[
+                                         "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
                 widget.Spacer(length=bar.STRETCH),
                 widget.Chord(
                     chords_colors={
@@ -204,7 +215,8 @@ Screen(
                 ),
                 widget.Systray(),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.CheckUpdates(colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string="yay", display_format="yay: {updates}"),
+                widget.CheckUpdates(
+                    colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string="yay", display_format="yay: {updates}"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
                 widget.CPU(format="CPU:{load_percent}%"),
                 #  widget.CPU(format=" {load_percent}%"),
@@ -215,10 +227,11 @@ Screen(
                 widget.Net(format="{down} ↓↑ {up}"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
                 widget.TextBox(fmt="VOL:", padding=0),
-                widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
+                widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
+                              volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
             ],
-            24,background=colors["medGrey"], opacity=0.85, margin=6
+            24, background=colors["medGrey"], opacity=0.85, margin=6
         ),
     ),
 ]
@@ -263,10 +276,13 @@ floating_layout = layout.Floating(float_rules=[
 auto_fullscreen = True
 focus_on_window_activation = "smart"
 
+
 @hook.subscribe.startup_once
 def autostart():
-    home = os.path.expanduser('~/github.com/jdvober/dotfiles/.config/qtile/autostart.sh')
+    home = os.path.expanduser(
+        '~/github.com/jdvober/dotfiles/.config/qtile/autostart.sh')
     subprocess.call([home])
+
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the

@@ -620,6 +620,21 @@ args: []
   #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
 
+# Vi mode cursor style
+#
+# If the vi mode cursor style is `None` or not specified, it will fall back to
+# the style of the active value of the normal cursor.
+#
+# See `cursor.style` for available options.
+# # Values for `style`:
+  #   - ‚ñá Block
+  #   - _ Underline
+  #   - | Beam
+cursor:
+    style: Block
+
+vi_mode_style: Beam
+
 #debug:
   # Display the time it takes to redraw each frame.
   #render_timer: false

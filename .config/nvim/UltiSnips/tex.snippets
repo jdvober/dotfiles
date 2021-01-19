@@ -375,12 +375,13 @@ snippet / "Fraction" i
 endsnippet
 
 snippet form "A one-line formula definition" i
+\textcolor{PineGreen}{
 \marginnote{\footnotesize{
     \begin{align*}
 		${4} &\Rightarrow \text{${5}}
     \end{align*}
-}}
-\textcolor{formred}{
+}}}
+\textcolor{form}{
 \begin{align} \label{eq:$1}
     ${2} &= ${3}
 \end{align}}
@@ -942,17 +943,17 @@ endsnippet
 
 context "math()"
 snippet cancel "cancel a part of an equation" i
-\cancel{$1}
+\textcolor{BrickRed}{\cancel{$1}}
 endsnippet
 
 context "math()"
 snippet cancelto "cancel a part of an equation and show what it goes to" iA
-\cancelto{0}{$0}
+\textcolor{BrickRed}{\cancelto{0}{$0}}
 endsnippet
 
 context "math()"
 snippet tozero "cancel a part of an equation and show it goes to zero" iA
-\cancelto{0}{$0}
+\textcolor{BrickRed}{\cancelto{0}{$0}}
 endsnippet
 
 snippet quote "Add a block quotation using csquotes"

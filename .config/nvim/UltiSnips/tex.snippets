@@ -24,11 +24,19 @@ snippet notes "Template for a set of lecture notes" b
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
+\usepackage{gensymb}
 \usepackage[english]{babel}
 \usepackage[dvipsnames]{xcolor}
-		\definecolor{link}{HTML}{0000e0}
-		\definecolor{form}{HTML}{ba1d05}
-    \definecolor{def}{HTML}{7d05ba}
+		\definecolor{link}{HTML}{0000e0}% Dark Blue
+		\definecolor{form}{HTML}{ba1d05}% Dark Red
+		\definecolor{units}{HTML}{129E57}% Forest Green
+		\definecolor{def}{HTML}{7d05ba}% Light Urple?
+		\definecolor{var1}{HTML}{930202}% Dark Red
+		\definecolor{var2}{HTML}{006795}% Dark Blue
+		\definecolor{var3}{HTML}{029305}% Dark Green
+		\definecolor{var4}{HTML}{760293}% Dark Purple
+		\definecolor{var5}{HTML}{c6bc00}% Dark Orange
+		\definecolor{var6}{HTML}{932402}% Dark Yellow
 \usepackage{csquotes} % For block quotations
 \usepackage{amsmath, amssymb}
 \usepackage{marginnote}
@@ -44,7 +52,7 @@ snippet notes "Template for a set of lecture notes" b
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
 		\hypersetup{
 		    colorlinks=true,
-		    linkcolor=blue,
+		    linkcolor=link,
 		    filecolor=magenta,      
 		    urlcolor=cyan,
 		    pdftitle={$1},
@@ -66,8 +74,8 @@ snippet notes "Template for a set of lecture notes" b
 %  Title Block     %
 %%%%%%%%%%%%%%%%%%%%
 %\title{$1}
-%\author{ }% Space to make blank
-%\date{ }% Space to make blank
+\author{ }% Space to make blank
+\date{ }% Space to make blank
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Font (must be installed)    %
@@ -109,11 +117,19 @@ snippet template "Basic template" b
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
+\usepackage{gensymb}
 \usepackage[english]{babel}
 \usepackage[dvipsnames]{xcolor}
-		\definecolor{link}{HTML}{0000e0}
-		\definecolor{form}{HTML}{ba1d05}
-    \definecolor{def}{HTML}{7d05ba}
+		\definecolor{link}{HTML}{0000e0}% Dark Blue
+		\definecolor{form}{HTML}{ba1d05}% Dark Red
+		\definecolor{units}{HTML}{129E57}% Forest Green
+		\definecolor{def}{HTML}{7d05ba}% Light Urple?
+		\definecolor{var1}{HTML}{930202}% Dark Red
+		\definecolor{var2}{HTML}{006795}% Dark Blue
+		\definecolor{var3}{HTML}{029305}% Dark Green
+		\definecolor{var4}{HTML}{760293}% Dark Purple
+		\definecolor{var5}{HTML}{c6bc00}% Dark Orange
+		\definecolor{var6}{HTML}{932402}% Dark Yellow
 \usepackage{csquotes} % For block quotations
 \usepackage{amsmath, amssymb}
 \usepackage{marginnote}
@@ -121,38 +137,37 @@ snippet template "Basic template" b
 \usepackage{lastpage}
 \usepackage{cancel}% charlesreid1.com/wiki/Cancel_Package
 %\usepackage{fontspec}% allows the use of installed system fonts.  See https://www.overleaf.com/learn/latex/XeLaTeX
-%\usepackage[margin=0.5in]{geometry}
-%		\geometry{
-%			top=0.75in,
-%			bottom=0.5in,
-%		}
-%\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
-		%\hypersetup{
-		%    colorlinks=true,
-		%    linkcolor=darkblue,
-		%    filecolor=magenta,      
-		%    urlcolor=cyan,
-		%    pdftitle={$1},
-		%    bookmarks=true,
-		%}
+\usepackage[margin=0.5in]{geometry}
+		\geometry{
+		top=0.75in,
+		bottom=0.5in,
+	}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=link,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={$1},
+    bookmarks=true,
+}
 %\usepackage{lmodern}
 %\usepackage{multicol}
 %		\setlength{\columnsep}{3cm}
-%\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
-%\usepackage{fancyhdr}% Fancy Headers and Footers
-		%\pagestyle{fancy}
-		%\fancyhf{}
-		%\fancyhead[LE,RO]{\rightmark}
-		%\fancyhead[RE,LO]{\leftmark}
-		%\fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
-		%\renewcommand{\headrulewidth}{2pt}
+\usepackage{fancyhdr}% Fancy Headers and Footers
+		\pagestyle{fancy}
+		\fancyhf{}
+		\fancyhead[LE,RO]{\rightmark}
+		\fancyhead[RE,LO]{\leftmark}
+		\fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+		\renewcommand{\headrulewidth}{2pt}
 
 %%%%%%%%%%%%%%%%%%%%
 %  Title Block     %
 %%%%%%%%%%%%%%%%%%%%
-%\title{$1}
-%\author{ }% Space to make blank
-%\date{ }% Space to make blank
+\title{$1}
+\author{ }% Space to make blank
+\date{ }% Space to make blank
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Font (must be installed)    %
@@ -272,7 +287,17 @@ $0
 endsnippet
 
 snippet mk "Math" wA
-$${1}$`!p
+$ ${1} $`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+	snip.rv = ' '
+else:
+	snip.rv = ''
+`$2
+endsnippet
+
+# Same as mk
+snippet im "Math" w
+\( ${1} \)`!p
 if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
 	snip.rv = ' '
 else:
@@ -397,9 +422,11 @@ endsnippet
 
 # Same as above
 snippet steps "Math with line-by-line steps" i
-\begin{subequations} \begin{align}
+\begin{subequations}
+\begin{align}
     ${1} &= ${0} \\\
-\end{align} \end{subequations}
+\end{align}
+\end{subequations}
 endsnippet
 
 snippet solve "Math with line-by-line steps" i
@@ -630,7 +657,7 @@ snippet ooo "\infty" iA
 \infty
 endsnippet
 
-snippet inf "\infty" iA
+snippet inf "\infty" i
 \infty
 endsnippet
 

@@ -20,7 +20,7 @@ Plug 'lervag/vimtex'
 " option for the time it takes to render.
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " let g:livepreview_previewer = 'evince'
-let g:livepreview_previewer = 'evince'
+let g:livepreview_previewer = 'okular'
 
 
 Plug 'KeitaNakamura/tex-conceal.vim'
@@ -28,9 +28,32 @@ Plug 'KeitaNakamura/tex-conceal.vim'
     let g:tex_conceal='abdmg'
     hi Conceal ctermbg=none
 
+Plug 'justinmk/vim-sneak'
+    let g:sneak#label = 1
+    map f <Plug>Sneak_s
+    map F <Plug>Sneak_S
 Plug 'asvetliakov/vim-easymotion'
+    let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+    " Jump to anywhere you want with minimal keystrokes, with just one key binding.
+    " `s{char}{label}`
+    map S <Plug>(easymotion-overwin-f)
+    map s <Plug>(easymotion-overwin-f)
+
+    " or
+    " `s{char}{char}{label}`
+    " Need one more keystroke, but on average, it may be more comfortable.
+    " nmap s <Plug>(easymotion-overwin-f2)
+
+    " Turn on case-insensitive feature
+    let g:EasyMotion_smartcase = 1
+
+    " JK motions: Line motions
+    map <Leader>j <Plug>(easymotion-j)
+    map <Leader>k <Plug>(easymotion-k)
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
+" Plug 'machakann/vim-sandwich'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ReplaceWithRegister' " Makes gr Replace existing text with the contents of a register
@@ -128,6 +151,9 @@ let mapleader=','
 " Set localleader to Space (used for WhichKey)
 let g:maplocalleader = "\<Space>"
 
+" Remap W and E for backwards versions of w and e, respectively.
+nnoremap W b
+nnoremap E ge
 inoremap jj <Esc>
 " used for moving one space in insert mode
 inoremap qh <C-o>h
@@ -297,55 +323,19 @@ let g:which_key_map.k = 'which_key_ignore'
 " Ref issue #126, #133 etc.
 let g:which_key_map['w'] = {
       \ 'name' : '+Tabs, +Windows and +Buffers' ,
-      \ '=' : ['<C-W>='     , 'balance-window'] ,
-      \ 'a' : ['tabnew'        , 'new tab']        ,
-      \ 'b' : {
-            \ 'name': '+BUFFERS',
-            \ 'n' : ['bnext'     , 'buffer next']     ,
-            \ 'i' : ['BufferPick'     , 'pick buffer']     ,
-            \ 'p' : ['bprevious' , 'buffer previous'] ,
-            \ 'r' : [':source %' , 'refresh buffer'] ,
-            \ },
-      \ 'C' : ['tabo'        , 'close all other tabs']        ,
-      \ 'c' : ['tabclose'        , 'close tab']        ,
-      \ 'd' : ['bd'        , 'delete buffer']   ,
-      \ 'h' : ['split'        , 'split window horizontal']        ,
-      \ 'j' : ['tabnext'        , 'next tab']        ,
-      \ 'k' : ['tabprevious'        , 'previous tab']        ,
-      \ 'l' : {
+      \ 'c' : [':clo'        , 'close window']        ,
+      \ 'j' : ['<C-W>j'        , 'Move to window below']        ,
+      \ 'k' : ['<C-W>k'        , 'Move to window above']        ,
+      \ 'l' : ['<C-W>l'        , 'Move to window to right']        ,
+      \ 'h' : ['<C-W>h'        , 'Move to window to left']        ,
+      \ 'H' : ['hsplit'        , 'split window horizontal']        ,
+      \ 'L' : {
             \ 'name': '+list',
             \ 'b' : ['Buffers'     , 'buffers']      ,
             \ 't' : ['tabs' , 'tabs'] ,
             \ 'w' : ['Windows' , 'windows']  ,
             \ },
-      \ 'r' : [':source %' , 'refresh buffer'] ,
-      \ 't' : {
-            \ 'name': '+TABS',
-            \ '1' : ['1gT'        , '1']        ,
-            \ '2' : ['2gT'        , '2']        ,
-            \ '3' : ['3gT'        , '3']        ,
-            \ '4' : ['4gT'        , '4']        ,
-            \ '5' : ['5gT'        , '5']        ,
-            \ '6' : ['6gT'        , '6']        ,
-            \ '7' : ['7gT'        , '7']        ,
-            \ '8' : ['8gT'        , '8']        ,
-            \ '9' : ['9gT'        , '9']        ,
-            \ '0' : ['0gT'        , '0']        ,
-            \ 'c' : ['tabclose'        , 'close tab']        ,
-            \ 'j' : ['tabnext'        , 'next tab']        ,
-            \ 'k' : ['tabprevious'        , 'previous tab']        ,
-            \ 't' : ['tabnew'        , 'new tab']        ,
-            \ },
       \ 'v' : ['vsplit'        , 'split window vertical']        ,
-      \ 'w' : {
-            \ 'name': '+WINDOWS',
-            \ 'h' : ['split'        , 'split window horizontal']        ,
-            \ 'q' : [':wq'        , 'close']        ,
-            \ 'j' : [':wnext'        , 'next']        ,
-            \ 'k' : [':wprevious'        , 'previous']        ,
-            \ 'v' : ['vsplit'        , 'split window vertical']        ,
-            \ 'w' : ['Windows' , 'windows']  ,
-            \ },
       \ }
 
 let g:which_key_map['Tab'] = { 'name' : 'Pick Buffer' }
@@ -355,25 +345,41 @@ let g:which_key_map['R'] = { 'name' : 'source %' }
 nnoremap <silent> <localleader>R :source %<CR>
 
 let g:which_key_map['s'] = {
-      \ 'name' : '+Snippets' ,
+      \ 'name' : '+Snippets & +Macros' ,
       \ 'v' : ['Snippets'        , 'View Snippets']        ,
       \ 'e' : ['UltiSnipsEdit'        , 'Edit Snippets']        ,
+      \ 'l' : {
+            \ 'name': '+LaTeX',
+            \ 'c' : {
+                  \ 'name': '+\textcolor{}',
+                  \ 'x' : ['ciw \\textcolor{}jjpysiw}hi'        , 'BLANK']        ,
+                  \ 'd' : ['ciw \\textbf{\\textcolor{def}jjpysiw}f}a}jjhi'        , 'definition']        ,
+                  \ 'f' : ['ciw \\textbf{\\textcolor{form}jjpysiw}f}a}jjhi'        , 'formula']        ,
+                  \ 'u' : ['ciw \\textbf{\\textcolor{units}jjpysiw}f}a}jjhi'        , 'units']        ,
+                  \ '1' : ['ciw \\textbf{\\textcolor{var1}jjpysiw}f}a}jjhi'        , 'var1']        ,
+                  \ '2' : ['ciw \\textbf{\\textcolor{var2}jjpysiw}f}a}jjhi'        , 'var2']        ,
+                  \ '3' : ['ciw \\textbf{\\textcolor{var3}jjpysiw}f}a}jjhi'        , 'var3']        ,
+                  \ '4' : ['ciw \\textbf{\\textcolor{var4}jjpysiw}f}a}jjhi'        , 'var4']        ,
+                  \ '5' : ['ciw \\textbf{\\textcolor{var5}jjpysiw}f}a}jjhi'        , 'var5']        ,
+                  \ '6' : ['ciw \\textbf{\\textcolor{var6}jjpysiw}f}a}jjhi'        , 'var6']        ,
+            \ },
+            \ 't' : ['ciw\\textjjpysiw}hi'        , '\text']        ,
+            \ 'e' : ['ciw\\begin{center}jjojjpI\tjjo\\end{center}'        , 'center']        ,
+            \ },
       \ }
 
 let g:which_key_map['f'] = {
       \ 'name' : '+file' ,
       \ 'f' : ['Files'        , 'Open via FZF']        ,
-      \ 'h' : ['History'        , 'View File History']        ,
+      \ 'o' : [':History!<CR>'        , 'Open Recent']        ,
       \ 'd' : ['Files'        , 'Open in current directory']        ,
       \ 'w' : ['w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
-      \ 'i' : [':e $MYVIMRC'        , 'open-init.vim']        ,
+      \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
+      \ 'q' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py'        , 'open qtile config']        ,
+      \ 'z' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/.zshrc'        , 'open zshrc']        ,
       \ }
-nnoremap <silent> <localleader>fn :badd 
-nnoremap <silent> <localleader>fo :edit 
-
-let g:which_key_map['g'] = {
-      \ 'name' : '+git' ,
-      \ }
+nnoremap <localleader>fe :edit
+nnoremap <silent> <localleader>fn :enew<CR>
 
 let g:which_key_map['/'] = {
       \ 'name' : '+Search' ,
@@ -411,17 +417,6 @@ let g:which_key_map['l'] = {
       \ 'w' : ['!inkscape-figures watch'        , 'Watch for inkscape figures']        ,
       \ }
 
-" let g:which_key_map['c'] = {
-    " \ 'name' : '+comment' ,
-    " \ 'SPC' : ['<plug>NERDCommenterToggle'        , 'Toggle']        ,
-    " \ '$' : ['<plug>NERDCommenterToEOL'        , 'End Of Line Comment']        ,
-    " \ 'A' : ['<plug>NERDCommenterAltDelims'        , 'Comment']        ,
-    " \ 'a' : ['<plug>NERDCommenterAppend'        , 'EOL + Insert']        ,
-    " \ 'c' : ['<plug>NERDCommenterNested'        , 'Comment']        ,
-    " \ 's' : ['<plug>NERDCommenterSexy'        , 'Sexy']        ,
-    " \ 'y' : ['<plug>NERDCommenterYank'        , 'Yank and Comment']        ,
-    " \ 'u' : ['<plug>NERDCommenterUncomment'        , 'Uncomment']        ,
-    " \ }
 
 "*****************************************************************************
 "*****************************************************************************
@@ -458,28 +453,8 @@ map <PageDown> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-D>:set sc
 map <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scroll=0<CR>
 
 "This unsets the "last search pattern" register by hitting return
-nnoremap <Esc> :noh<CR><Esc>
-nnoremap <CR> :noh<CR><CR>
-
-" Easymotion
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-
-" Jump to anywhere you want with minimal keystrokes, with just one key binding.
-" `s{char}{label}`
-nmap S <Plug>(easymotion-overwin-f)
-nmap <leader>s <Plug>(easymotion-overwin-f)
-
-" or
-" `s{char}{char}{label}`
-" Need one more keystroke, but on average, it may be more comfortable.
-" nmap s <Plug>(easymotion-overwin-f2)
-
-" Turn on case-insensitive feature
-let g:EasyMotion_smartcase = 1
-
-" JK motions: Line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
+nnoremap <silent> <Esc> :noh<CR><Esc>
+nnoremap <silent> <CR> :noh<CR><CR>
 
 " Copy/Paste/Cut
 if has('unnamedplus')

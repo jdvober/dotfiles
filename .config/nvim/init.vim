@@ -53,7 +53,7 @@ Plug 'asvetliakov/vim-easymotion'
     map <Leader>k <Plug>(easymotion-k)
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
-" Plug 'machakann/vim-sandwich'
+Plug 'tpope/vim-unimpaired'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ReplaceWithRegister' " Makes gr Replace existing text with the contents of a register
@@ -166,8 +166,8 @@ inoremap ql <C-o>l
 inoremap qa <Esc>la
 
 " paste on line below / line above
-nnoremap <leader>p ojjp
-nnoremap <leader>P Ojjp
+nnoremap <silent> <leader>p ]p
+nnoremap <silent> <leader>P [p
 
 " For support of figures from Inkscape in LaTeX documents
 " inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
@@ -342,14 +342,16 @@ let g:which_key_map['w'] = {
             \ 'w' : ['Windows' , 'windows']  ,
             \ },
       \ 'v' : ['vsplit'        , 'split window vertical']        ,
+      \ 'w' : ['bd'        , 'close Buffer']        ,
       \ }
 
 let g:which_key_map['Tab'] = { 'name' : 'Pick Buffer' }
 nnoremap <silent> <localleader><Tab> :BufferLinePick<CR>
 
 let g:which_key_map['p'] = { 'name' : 'put on line below' }
-nnoremap <silent> <localleader>p m`o<ESC>p``
-nnoremap <silent> <localleader>P m`O<ESC>p``
+" paste on line below / line above
+nnoremap <silent> <localleader>p ]p
+nnoremap <silent> <localleader>P [p
 
 
 let g:which_key_map['R'] = { 'name' : 'source %' }
@@ -473,7 +475,7 @@ if has('unnamedplus')
 endif
 
 noremap YY "+y<CR>
-noremap <leader>p "+gP<CR>
+" noremap <leader>p "+gP<CR>
 noremap XX "+x<CR>
 
 if has('macunix')
@@ -547,6 +549,7 @@ let g:fzf_colors =
 " - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
 "   'previous-history' instead of 'down' and 'up'.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
+
 "*****************************************************************************
 " Bufferline
 "*****************************************************************************

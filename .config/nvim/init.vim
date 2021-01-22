@@ -69,7 +69,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
-Plug 'romgrk/barbar.nvim'
+" Plug 'romgrk/barbar.nvim'
+Plug 'akinsho/nvim-bufferline.lua'
+    " See bufferline section for config
 Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
@@ -83,7 +85,6 @@ filetype plugin indent on
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-
 
 " Fix backspace indent
 set backspace=indent,eol,start
@@ -142,9 +143,10 @@ augroup END
 " Set python3 location
 let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 
+set termguicolors
 
 "*****************************************************************************
-" Key Remap
+" Keybindings Remap
 "*****************************************************************************
 " Set leader to ','
 let mapleader=','
@@ -162,6 +164,10 @@ inoremap qk <C-o>k
 inoremap ql <C-o>l
 " used for breaking out of brackets
 inoremap qa <Esc>la
+
+" paste on line below / line above
+nnoremap <leader>p ojjp
+nnoremap <leader>P Ojjp
 
 " For support of figures from Inkscape in LaTeX documents
 " inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
@@ -192,7 +198,7 @@ augroup END
 colorscheme dracula
 
 "*****************************************************************************
-" Vim Airline
+" NERDTree
 "*****************************************************************************
 let g:NERDTreeChDirMode=2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
@@ -211,7 +217,7 @@ nnoremap <silent><F2> :NERDTreeToggle<CR>
 let g:airline_theme='dracula'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
@@ -339,7 +345,12 @@ let g:which_key_map['w'] = {
       \ }
 
 let g:which_key_map['Tab'] = { 'name' : 'Pick Buffer' }
-nnoremap <silent> <localleader><Tab> :BufferPick<CR>
+nnoremap <silent> <localleader><Tab> :BufferLinePick<CR>
+
+let g:which_key_map['p'] = { 'name' : 'put on line below' }
+nnoremap <silent> <localleader>p m`o<ESC>p``
+nnoremap <silent> <localleader>P m`O<ESC>p``
+
 
 let g:which_key_map['R'] = { 'name' : 'source %' }
 nnoremap <silent> <localleader>R :source %<CR>
@@ -536,3 +547,32 @@ let g:fzf_colors =
 " - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
 "   'previous-history' instead of 'down' and 'up'.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
+"*****************************************************************************
+" Bufferline
+"*****************************************************************************
+lua << EOF
+require'bufferline'.setup{
+  options = {
+    view = "multiwindow",
+    numbers = "ordinal",
+    number_style = "superscript",
+    mappings = true,
+    buffer_close_icon= '',
+    modified_icon = '●',
+    close_icon = '',
+    left_trunc_marker = '',
+    right_trunc_marker = '',
+    max_name_length = 18,
+    max_prefix_length = 15, -- prefix used when a buffer is deduplicated
+    tab_size = 18,
+    show_buffer_close_icons = true,
+    persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
+    -- can also be a table containing 2 custom separators
+    -- [focused and unfocused]. eg: { '|', '|' }
+    separator_style = "thin",
+    enforce_regular_tabs = false,
+    always_show_bufferline = true,
+    sort_by = 'relative_directory'
+  }
+}
+EOF

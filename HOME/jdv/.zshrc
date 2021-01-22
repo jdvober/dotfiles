@@ -3,8 +3,8 @@
 # Rainbow
 # neofetch | lolcat
 # Non-rainbow
-neofetch
-piactl connect
+# pfetch
+# piactl connect
 
 
 # Enabling ls colors.  See trapd00r/LS_COLORS on github.
@@ -180,6 +180,7 @@ alias -g DOTFILES="~/github.com/jdvober/dotfiles/.config"
 # Config shortcuts
 alias -g ZSHRC="~/.zshrc"
 alias -g ZSH="~/.zshrc"
+alias -g INIT="~/github.com/jdvober/dotfiles/.config/nvim/init.vim"
 alias -g QTILE="~/github.com/jdvober/dotfiles/.config/qtile/config.py"
 alias -g INSTALLSH="~/github.com/jdvober/dotfiles/install-core-apps.sh"
 alias -g POWERLINE="~/github.com/jdvober/dotfiles/.config/powerline-shell/config.json"
@@ -188,6 +189,7 @@ alias -g LOCK="~/github.com/jdvober/dotfiles/.config/betterlockscreenrc"
 # Power and User Management
 alias restart="sudo shutdown -r now"
 alias switchuser="dm-tool switch-to-greeter"
+alias logout="dm-tool switch-to-greeter"
 
 # Git all-in-one
 gpush() {

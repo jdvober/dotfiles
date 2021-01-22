@@ -5,5 +5,5 @@ numlockx &
 # nm-applet --indicator &
 nitrogen --restore &
 # polybar -c ~/.config/polybar/config.ini mainbar-qtile &
-piactl disconnect &&
+# piactl disconnect &&
 piactl connect

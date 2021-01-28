@@ -160,14 +160,15 @@ alias mv="mv -i"
 alias grep="grep --color=auto"
 alias :q="exit"
 alias :wq="exit"
+alias k="fc -e -"
 
 # Program aliases
 alias g="git"
 alias figures="~/.local/bin/inkscape-figures"
 alias inkscape-figures="~/.local/bin/inkscape-figures"
 alias gs="git status"
-# eval $(thefuck --alias --enable-experimental-instant-mode)
-# alias f="fuck --yeah"
+alias gdmount="rclone mount --daemon --allow-other --allow-root --vfs-cache-mode full google-drive-work: ~/google-drive-work"
+alias gdunmount="fusermount -u /home/jdv/google-drive-mount"
 
 # Location shortcuts
 alias ..="cd .."

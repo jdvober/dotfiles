@@ -7,3 +7,4 @@ nitrogen --restore &
 # polybar -c ~/.config/polybar/config.ini mainbar-qtile &
 # piactl disconnect &&
 piactl connect
+rclone mount --daemon google-drive-work: ~/google-drive-work

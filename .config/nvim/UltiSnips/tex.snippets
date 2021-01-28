@@ -56,7 +56,6 @@ snippet notes "Template for a set of lecture notes" b
 		    filecolor=magenta,      
 		    urlcolor=cyan,
 		    pdftitle={$1},
-		    bookmarks=true,
 		}
 %\usepackage{lmodern}
 %\usepackage{multicol}
@@ -101,6 +100,7 @@ snippet notes "Template for a set of lecture notes" b
 %  Start  %
 %%%%%%%%%%%
 \begin{document}
+  \maketitle
 	$0
 \end{document}
 endsnippet
@@ -149,7 +149,6 @@ snippet template "Basic template" b
     filecolor=magenta,
     urlcolor=cyan,
     pdftitle={$1},
-    bookmarks=true,
 }
 %\usepackage{lmodern}
 %\usepackage{multicol}
@@ -193,6 +192,7 @@ snippet template "Basic template" b
 %  Start  %
 %%%%%%%%%%%
 \begin{document}
+  \maketitle
 	$0
 \end{document}
 endsnippet

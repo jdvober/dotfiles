@@ -4,7 +4,7 @@
 
 # --confirm to answer yes to every prompt
 
-for app in "texlive-most" "rofi" "otf-firamath" "okular" "rclone" "fuse"
+for app in "texlive-most" "rofi" "otf-firamath" "okular" "breeze-icons-git" "rclone" "fuse"
 do
     echo "Installing $app"
     yay -S --noconfirm $app

@@ -1,0 +1,60 @@
+snippet template "A blank main.go file"
+package $1
+
+import (
+	"fmt"
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
+)
+
+func init() {
+	// Create log file
+	// If the file doesn't exist, create it or append to the file
+	file, err := os.OpenFile("logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	log.SetOutput(file)
+
+	// loads values from .env into the system
+	if err := godotenv.Load("config.env"); err != nil {
+		log.Println("Error loading .env")
+	}
+}
+func main() {
+	fmt.Println("Starting Package $1")
+	$0
+}
+endsnippet
+
+snippet err "if err != nil{}" w
+if err != nil {
+	log.Println(err)
+}
+$0
+endsnippet
+
+snippet fatal "if err != nil{}" w
+if err != nil {
+	log.Fataln(err)
+}
+$0
+endsnippet
+
+snippet ln "fmt.Println()" w
+fmt.Println($0)
+endsnippet
+
+snippet f "fmt.Println()" w
+fmt.Printf("${1:String}\n", ${0})
+endsnippet
+
+snippet prettify "Import 'encoding/json' A function to Pretty Print Structs"
+func prettify(i interface{}) string {
+	s, _ := json.MarshalIndent(i, "", "\t")
+	return string(s)
+}
+endsnippet

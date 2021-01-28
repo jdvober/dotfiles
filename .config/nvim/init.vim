@@ -30,8 +30,8 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 
 Plug 'justinmk/vim-sneak'
     let g:sneak#label = 1
-    map f <Plug>Sneak_s
-    map F <Plug>Sneak_S
+    map f <Plug>Sneak_f
+    map F <Plug>Sneak_F
 Plug 'asvetliakov/vim-easymotion'
     let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
@@ -60,8 +60,7 @@ Plug 'inkarkat/vim-ReplaceWithRegister' " Makes gr Replace existing text with th
 
 
 " Terminal-only plugins
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+Plug 'tmsvg/pear-tree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
@@ -69,10 +68,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
-" Plug 'romgrk/barbar.nvim'
 Plug 'akinsho/nvim-bufferline.lua'
     " See bufferline section for config
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'neovim/nvim-lspconfig'
+    " See Language Server section for config
+Plug 'nvim-lua/completion-nvim'
+    " See Completion-nvim section for config
 
 call plug#end()
 " Required
@@ -93,7 +95,7 @@ set backspace=indent,eol,start
 set clipboard+=unnamedplus
 
 " Tabs. May be overridden by autocmd rules
-set tabstop=2
+set tabstop=4
 set softtabstop=0
 set shiftwidth=4
 set expandtab
@@ -195,24 +197,55 @@ augroup numbertoggle
 augroup END
 
 
+" Custom Highlight Groups - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+" Must be before colorscheme
+" :highlight to see highlight groups
+function! MyHighlights() abort
+    highlight Search     cterm=bold,italic ctermfg=215 gui=bold,italic guifg=#FFB86C guibg=#21222C
+    highlight PmenuSel   ctermbg=11 ctermfg=84 guifg=#50FA7B guibg=#191A21
+    highlight Sneak      ctermfg=215 gui=bold,italic guifg=#FFB86C
+    highlight SneakLabel cterm=bold,italic ctermfg=215 gui=bold,italic guifg=#FFB86C
+
+endfunction
+
+augroup MyColors
+    autocmd!
+    autocmd ColorScheme * call MyHighlights()
+augroup END
 colorscheme dracula
 
 "*****************************************************************************
-" NERDTree
+" Completion-nvim (terminal only!)
 "*****************************************************************************
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let g:NERDTreeShowBookmarks=1
-let g:nerdtree_tabs_focus_on_files=1
-let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 50
-let g:NERDTreeQuitOnOpen = 1
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent><F2> :NERDTreeToggle<CR>
+" Use completion-nvim in every buffer
+autocmd BufEnter * lua require'completion'.on_attach()
+
+" Use control space for manual popup
+" imap <silent> <C-Space> <Plug>(completion_trigger)
+imap <silent> <C-Space> :CompletionToggle
+
+" Popup Menu Navigation 
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" You can specify a list of matching strategy, completion-nvim will loop through the list and assign priority from high to low.
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
+
+" Ultisnip Support
+let g:completion_enable_snippet = 'UltiSnips'
+
+" Add trigger characters
+let g:completion_trigger_character = ['.', '::']
 
 "*****************************************************************************
-" Vim Airline
+" Vim Airline (terminal only!)
 "*****************************************************************************
 let g:airline_theme='dracula'
 let g:airline#extensions#branch#enabled = 1
@@ -258,7 +291,7 @@ else
 endif
 
 "*****************************************************************************
-" GUI Options
+" GUI Options (terminal only!)
 "*****************************************************************************
 set mousemodel=popup
 set t_Co=256
@@ -291,7 +324,7 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 "*****************************************************************************
-" Whichkey
+" Whichkey (terminal only!)
 "*****************************************************************************
 " My Whichkey setup is only set to utilize the localldeader which is set to
 " space
@@ -357,6 +390,17 @@ nnoremap <silent> <localleader>P [p
 let g:which_key_map['R'] = { 'name' : 'source %' }
 nnoremap <silent> <localleader>R :source %<CR>
 
+let g:which_key_map['g'] = {
+      \ 'name' : '+Golang' ,
+      \ 'r' : [':!go run %'        , 'Go Run this file']        ,
+      \ 'i' : ['GoImports'        , 'Fix Imports']        ,
+      \ 'l' : ['GoDecls'        , 'List func declarations']        ,
+      \ 'f' : ['GoFmt'        , 'GoFmt']        ,
+      \ 'b' : ['GoBuild'        , 'GoBuild']        ,
+      \ 'd' : ['GoDef'        , 'GoDef']        ,
+      \ 'v' : ['GoVet'        , 'GoVet error checking']        ,
+      \ }
+
 let g:which_key_map['s'] = {
       \ 'name' : '+Snippets & +Macros' ,
       \ 'v' : ['Snippets'        , 'View Snippets']        ,
@@ -386,10 +430,11 @@ let g:which_key_map['f'] = {
       \ 'f' : ['Files'        , 'Open via FZF']        ,
       \ 'o' : [':History!<CR>'        , 'Open Recent']        ,
       \ 'd' : ['Files'        , 'Open in current directory']        ,
-      \ 'w' : ['w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
+      \ 'w' : [':w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
       \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
       \ 'q' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py'        , 'open qtile config']        ,
       \ 'z' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/.zshrc'        , 'open zshrc']        ,
+      \ 's' : [':setlocal spell'        , 'turn on spell check']        ,
       \ }
 nnoremap <localleader>fe :edit
 nnoremap <silent> <localleader>fn :enew<CR>
@@ -430,6 +475,104 @@ let g:which_key_map['l'] = {
       \ 'w' : ['!inkscape-figures watch'        , 'Watch for inkscape figures']        ,
       \ }
 
+"*****************************************************************************
+" Language Servers (terminal only!)
+"*****************************************************************************
+lua << EOF
+local nvim_lsp = require('lspconfig')
+local on_attach = function(client, bufnr)
+  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
+  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+  -- Mappings.
+  local opts = { noremap=true, silent=true }
+  buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+  buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+  buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+  buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
+  buf_set_keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+  buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+  buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+  buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+  buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+  buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
+  buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+  buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+
+  -- Set some keybinds conditional on server capabilities
+  if client.resolved_capabilities.document_formatting then
+    buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+  elseif client.resolved_capabilities.document_range_formatting then
+    buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+  end
+
+  -- Set autocommands conditional on server_capabilities
+  if client.resolved_capabilities.document_highlight then
+    vim.api.nvim_exec([[
+      hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
+      hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
+      hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow
+      augroup lsp_document_highlight
+        autocmd!
+        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+      augroup END
+    ]], false)
+  end
+end
+
+-- Use a loop to conveniently both setup defined servers 
+-- and map buffer local keybindings when the language server attaches
+local servers = { "pyright", "rust_analyzer", "tsserver" }
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup { on_attach = on_attach }
+end
+EOF
+    "*****************************************************************************
+    " Go
+    "*****************************************************************************
+lua << EOF
+lspconfig = require "lspconfig"
+lspconfig.gopls.setup{on_attach=require'completion'.on_attach}
+-- lspconfig.gopls.setup {
+--   cmd = {"gopls", "serve"},
+--   settings = {
+--     gopls = {
+--       analyses = {
+--         unusedparams = true,
+--       },
+--       staticcheck = true,
+--     },
+--   },
+-- }
+
+function goimports(timeoutms)
+  local context = { source = { organizeImports = true } }
+  vim.validate { context = { context, "t", true } }
+
+  local params = vim.lsp.util.make_range_params()
+  params.context = context
+
+  local method = "textDocument/codeAction"
+  local resp = vim.lsp.buf_request_sync(0, method, params, timeoutms)
+  if resp and resp[1] then
+    local result = resp[1].result
+    if result and result[1] then
+      local edit = result[1].edit
+      vim.lsp.util.apply_workspace_edit(edit)
+    end
+  end
+
+  vim.lsp.buf.formatting()
+end
+EOF
+autocmd BufWritePre *.go lua goimports(1000)
+autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 "*****************************************************************************
 "*****************************************************************************
@@ -488,8 +631,13 @@ endif
 "*****************************************************************************
 " On-the-fly spelling correction
 "*****************************************************************************
-setlocal spell
-set spelllang=en_us
+augroup spell
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave *.tex,*.md,*.txt setlocal spell
+augroup END
+
+" setlocal spell
+set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 
@@ -553,12 +701,14 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 "*****************************************************************************
 " Bufferline
 "*****************************************************************************
+nnoremap <silent> <leader>` :BufferLineMoveNext<CR>
+nnoremap <silent> <leader>~ :BufferLineMovePrev<CR>
 lua << EOF
 require'bufferline'.setup{
   options = {
     view = "multiwindow",
     numbers = "ordinal",
-    number_style = "superscript",
+    number_style = "",
     mappings = true,
     buffer_close_icon= '',
     modified_icon = '●',

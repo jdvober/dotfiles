@@ -4,6 +4,8 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 " Plug install packages
 "*****************************************************************************
+Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
+
 " Need to have pynvim installed to use.  Please see :help provider-python for details.  Also, running :checkhealth will be useful if you run into problems.
 Plug 'sirver/ultisnips'
     let g:UltiSnipsExpandTrigger = '<tab>'

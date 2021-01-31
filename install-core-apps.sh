@@ -19,7 +19,7 @@
     cd yay-git
     makepkg -si
 
-for app in "xorg-xinit" "lightdm" "xorg-server" "vi" "vim" "alacritty" "alsa-utils" "alsa-plugins" "firefox" "gcc" "rustup" "htop" "gtop" "yarn" "lolcat" "make" "mlocate" "pcmanfm" "neofetch" "pfetch" "neovim-nightly" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "asciidoc" "picom-ibhagwan-git" "pacman-contrib" "powerline-fonts" "dmenu2" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "lscolors-git" "fzf" "feh" "i3lock" "betterlockscreen-git" "shell-color-scripts" "qtile-git" "mlocate" "autoconf" "automake" "neovim-gtk" "ripgrep" "exa" "dust" "broot" "scrot" "pantheon-screenshot" "vscode" "evince" "mupdf" "github-desktop-bin" "xf86-input-wacom" "usbutils"
+for app in "xorg-xinit" "lightdm" "xorg-server" "vi" "vim" "alacritty" "alsa-utils" "alsa-plugins" "firefox" "go" "gcc" "rustup" "htop" "gtop" "yarn" "lolcat" "make" "mlocate" "pcmanfm" "neofetch" "pfetch" "neovim-nightly-bin" "nitrogen" "nodejs" "npm" "zsh-git" "oh-my-zsh-git" "openssh" "asciidoc" "picom-ibhagwan-git" "pacman-contrib" "powerline-fonts" "dmenu2" "vim-plug-git" "w3m" "wget" "xclip" "zsh-completions" "lscolors-git" "fzf" "feh" "i3lock" "betterlockscreen-git" "shell-color-scripts" "qtile" "mlocate" "autoconf" "automake" "neovim-gtk" "ripgrep" "exa" "dust" "broot" "scrot" "pantheon-screenshot" "vscode" "evince" "mupdf" "github-desktop-bin" "xf86-input-wacom" "usbutils"
 do
     echo "Installing $app"
     yay -S --noconfirm $app
@@ -39,3 +39,5 @@ sudo yay -Yc
         yay -S --noconfirm $font
     done
 
+# Install Python3 and pynvim
+yay -S --noconfirm python python-pynvim

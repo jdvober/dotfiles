@@ -8,3 +8,5 @@ nitrogen --restore &
 # piactl disconnect &&
 piactl connect
 rclone mount --daemon google-drive-work: ~/google-drive-work
+# Set brightness of /sys/class/backlight/intel_backlight/brightness (which has been set to rw-rw-rw so we can edit it with this command)
+echo "4648" > /sys/class/backlight/intel_backlight/brightness

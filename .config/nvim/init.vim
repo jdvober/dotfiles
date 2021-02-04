@@ -2,7 +2,7 @@
 call plug#begin(expand('~/.config/nvim/plugged'))
 
 "*****************************************************************************
-" Plug install packages
+" Plugins
 "*****************************************************************************
 " Need to have pynvim installed to use.  Please see :help provider-python for details.  Also, running :checkhealth will be useful if you run into problems.
 Plug 'sirver/ultisnips'
@@ -60,7 +60,7 @@ Plug 'inkarkat/vim-ReplaceWithRegister' " Makes gr Replace existing text with th
 
 
 " Terminal-only plugins
-Plug 'tmsvg/pear-tree'
+" Plug 'tmsvg/pear-tree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
@@ -73,8 +73,15 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'neovim/nvim-lspconfig'
     " See Language Server section for config
-Plug 'nvim-lua/completion-nvim'
+Plug 'glepnir/lspsaga.nvim'
+" Plug 'nvim-lua/completion-nvim'
     " See Completion-nvim section for config
+Plug 'hrsh7th/nvim-compe'
+Plug 'cohama/lexima.vim'
+    " To play nice with nvim-compe
+    inoremap <silent><expr> <C-Space> compe#complete()
+    inoremap <silent><expr> <CR>      compe#confirm(lexima#expand('<LT>CR>', 'i'))
+    inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 call plug#end()
 " Required
@@ -83,6 +90,9 @@ filetype plugin indent on
 "*****************************************************************************
 " Basic Setup
 "*****************************************************************************
+" Auto-reload init.vim of change
+au BufWritePost ~/.config/nvim/init.vim so $MYVIMRC
+
 " Encoding
 set encoding=utf-8
 set fileencoding=utf-8
@@ -217,33 +227,54 @@ colorscheme dracula
 "*****************************************************************************
 " Completion-nvim (terminal only!)
 "*****************************************************************************
-" Use completion-nvim in every buffer
-autocmd BufEnter * lua require'completion'.on_attach()
+" " Use completion-nvim in every buffer
+" autocmd BufEnter * lua require'completion'.on_attach()
+"
+" " Use control space for manual popup
+" " imap <silent> <C-Space> <Plug>(completion_trigger)
+" imap <silent> <C-Space> :CompletionToggle
+"
+" " Popup Menu Navigation
+" inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+" inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"
+" " You can specify a list of matching strategy, completion-nvim will loop through the list and assign priority from high to low.
+" let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
+"
+" " Set completeopt to have a better completion experience
+" set completeopt=menuone,noinsert,noselect
+"
+" " Avoid showing message extra message when using completion
+" set shortmess+=c
+"
+" " Ultisnip Support
+" let g:completion_enable_snippet = 'UltiSnips'
+"
+" " Add trigger characters
+" let g:completion_trigger_character = ['.', '::']
 
-" Use control space for manual popup
-" imap <silent> <C-Space> <Plug>(completion_trigger)
-imap <silent> <C-Space> :CompletionToggle
+"*****************************************************************************
+" Compe (terminal only!)
+"*****************************************************************************
+let g:compe = {}
+let g:compe.enabled = v:true
+let g:compe.autocomplete = v:true
+let g:compe.debug = v:false
+let g:compe.min_length = 1
+let g:compe.preselect = 'enable'
+let g:compe.throttle_time = 80
+let g:compe.source_timeout = 200
+let g:compe.incomplete_delay = 400
+let g:compe.allow_prefix_unmatch = v:false
 
-" Popup Menu Navigation 
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" You can specify a list of matching strategy, completion-nvim will loop through the list and assign priority from high to low.
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
-
-" Set completeopt to have a better completion experience
-set completeopt=menuone,noinsert,noselect
-
-" Avoid showing message extra message when using completion
-set shortmess+=c
-
-" Ultisnip Support
-let g:completion_enable_snippet = 'UltiSnips'
-
-" Add trigger characters
-let g:completion_trigger_character = ['.', '::']
-
+let g:compe.source = {}
+let g:compe.source.path = v:true
+let g:compe.source.buffer = v:true
+let g:compe.source.vsnip = v:true
+let g:compe.source.nvim_lsp = v:true
+let g:compe.source.nvim_lua = v:true
+let g:compe.source.your_awesome_source = {}
 "*****************************************************************************
 " Vim Airline (terminal only!)
 "*****************************************************************************
@@ -399,6 +430,7 @@ let g:which_key_map['g'] = {
       \ 'b' : ['GoBuild'        , 'GoBuild']        ,
       \ 'd' : ['GoDef'        , 'GoDef']        ,
       \ 'v' : ['GoVet'        , 'GoVet error checking']        ,
+      \ 'a' : ['GoAddTags'        , 'GoAddTags']        ,
       \ }
 
 let g:which_key_map['s'] = {
@@ -538,7 +570,9 @@ EOF
     "*****************************************************************************
 lua << EOF
 lspconfig = require "lspconfig"
-lspconfig.gopls.setup{on_attach=require'completion'.on_attach}
+-- if using completion-nvim
+-- lspconfig.gopls.setup{on_attach=require'completion'.on_attach}
+lspconfig.gopls.setup{}
 -- lspconfig.gopls.setup {
 --   cmd = {"gopls", "serve"},
 --   settings = {
@@ -573,6 +607,63 @@ end
 EOF
 autocmd BufWritePre *.go lua goimports(1000)
 autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
+
+
+"*****************************************************************************
+" Lspsaga (terminal only!)
+"*****************************************************************************
+lua << EOF
+local saga = require 'lspsaga'
+
+-- add your config value here
+-- default value
+-- use_saga_diagnostic_handler = true
+-- use_saga_diagnostic_sign = true
+-- error_sign = '',
+-- warn_sign = '',
+-- hint_sign = '',
+-- infor_sign = '',
+-- code_action_icon = ' ',
+-- finder_definition_icon = '  ',
+-- finder_reference_icon = '  ',
+-- definition_preview_icon = '  '
+-- 1: thin border | 2: rounded border | 3: thick border
+-- border_style = 1
+-- max_hover_width = 0 (automatically adjust to the width of current symbol)
+-- rename_prompt_prefix = '➤',
+
+-- saga.init_lsp_saga {
+--   your custom option here
+-- }
+
+-- or --use default config
+saga.init_lsp_saga()
+
+EOF
+
+" Hover Documentation
+nnoremap <silent> <F1> <cmd>lua vim.lsp.buf.hover()<CR>
+" Rename
+nnoremap <silent> <F2> :LspSagaRename<CR>
+" Find the cursor word definition and references
+nnoremap <silent> <F3> :LspSagaFinder<CR>
+" Preview Definition
+nnoremap <silent> <F4> :LspSagaDefPreview<CR>
+" Diagnostics
+"
+" -- show
+" nnoremap <silent><leader>cd <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
+nnoremap <silent> <leader>cd :LspSagaShowLineDiags<CR>
+
+" -- jump diagnostic
+let g:which_key_map['e'] = { 'name' : 'Next Error' }
+" nnoremap <silent> <localleader>e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
+let g:which_key_map['E'] = { 'name' : 'Previous Error' }
+" nnoremap <silent> <localleader>E <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>
+" -- or use command
+nnoremap <silent> [e :LspSagaDiagJumpPrev<CR>
+nnoremap <silent> ]e :LspSagaDiagJumpNext<CR>
+
 
 "*****************************************************************************
 "*****************************************************************************

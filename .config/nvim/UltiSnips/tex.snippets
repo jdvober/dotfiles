@@ -13,14 +13,14 @@ def env(name):
 endglobal
 
 snippet notes "Template for a set of lecture notes" b
-\documentclass[12pt, twoside]{article}
+\documentclass[12pt]{article}
 
 %%%%%%%%%%%%%%
 %  Packages  %
 %%%%%%%%%%%%%%
 
 \usepackage{graphicx}
-		\graphicspath{ {./images/} }
+        \graphicspath{ {./images/} }
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
@@ -43,36 +43,40 @@ snippet notes "Template for a set of lecture notes" b
 \usepackage{setspace}
 \usepackage{lastpage}
 \usepackage{cancel}% charlesreid1.com/wiki/Cancel_Package
-%\usepackage{fontspec}% allows the use of installed system fonts.  See https://www.overleaf.com/learn/latex/XeLaTeX
-%\usepackage[margin=0.5in]{geometry}
-%		\geometry{
-%			top=0.75in,
-%			bottom=0.5in,
-%		}
-\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
-		\hypersetup{
-		    colorlinks=true,
-		    linkcolor=link,
-		    filecolor=magenta,      
-		    urlcolor=cyan,
-		    pdftitle={$1},
-		}
+% \usepackage{fontspec}% allows the use of installed system fonts.  See https://www.overleaf.com/learn/latex/XeLaTeX
+
+\usepackage{geometry}
+    \geometry{
+        left=2in,
+        hoffset=0.5in,
+        right=1.5in
+    }
+\usepackage{hyperref}
+        \hypersetup{
+            colorlinks=true,
+            linkcolor=link,
+            filecolor=magenta,      
+            urlcolor=blue,
+            pdftitle={$1},
+            bookmarks=true,
+            citecolor=red,
+        }
 %\usepackage{lmodern}
 %\usepackage{multicol}
 %		\setlength{\columnsep}{3cm}
-%\usepackage{indentfirst} % indent the first line of a new paragraph automatically
+%\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red]{hyperref}
 %\usepackage{fancyhdr}% Fancy Headers and Footers
-		%\pagestyle{fancy}
-		%\fancyhf{}
-		%\fancyhead[LE,RO]{\rightmark}
-		%\fancyhead[RE,LO]{\leftmark}
-		%\fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
-		%\renewcommand{\headrulewidth}{2pt}
+        %\pagestyle{fancy}
+        %\fancyhf{}
+        %\fancyhead[LE,RO]{\rightmark}
+        %\fancyhead[RE,LO]{\leftmark}
+        %\fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        %\renewcommand{\headrulewidth}{2pt}
 
 %%%%%%%%%%%%%%%%%%%%
 %  Title Block     %
 %%%%%%%%%%%%%%%%%%%%
-%\title{$1}
+\title{$1}
 \author{ }% Space to make blank
 \date{ }% Space to make blank
 
@@ -91,8 +95,8 @@ snippet notes "Template for a set of lecture notes" b
 \usepackage{pdfpages}
 \usepackage{transparent}
 \newcommand{\incfig}[1]{%
-	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
 }
 \pdfsuppresswarningpagegroup=1
 
@@ -100,9 +104,22 @@ snippet notes "Template for a set of lecture notes" b
 %  Start  %
 %%%%%%%%%%%
 \begin{document}
-  \maketitle
-	$0
+% \reversemarginpar
+\onehalfspacing
+\maketitle
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+\section{$2} \label{sec:$2}
+\subsection{$3} \label{sec:${3}1}
+\textcolor{PineGreen}{
+
+$0
+
 \end{document}
+
 endsnippet
 
 snippet template "Basic template" b
@@ -324,6 +341,10 @@ snippet chapter "A new chapter" b
 $0
 endsnippet
 
+snippet reverse "Reverse the margin side" b
+\reversemarginpar
+endsnippet
+
 snippet section "A new section" b
 \section{${1:Section Name}} \label{sec:$1}
 $0
@@ -399,8 +420,10 @@ snippet / "Fraction" i
 \\frac{${VISUAL}}{$1}$0
 endsnippet
 
-snippet form "A one-line formula definition" i
+snippet form "A formula definition" i
 \textcolor{PineGreen}{
+%\reversemarginpar
+}
 \marginnote{\footnotesize{
     \begin{align*}
 		${4} &\Rightarrow \text{${5}}

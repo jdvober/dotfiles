@@ -20,18 +20,18 @@
     Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads
 
 # Symbolic Linking
-## Automatic Linking
-go run linkFiles.go from this directory
+### Automatic Linking
+    go run linkFiles.go from this directory
 
-## Manual Linking
-$ ln -s {source-dir-name} {symbolic-dir-name}
-ex: ln -s ~/github.com/jdvober/dotfiles/.config/alacritty ~/.config/
+### Manual Linking
+    $ ln -s {source-dir-name} {symbolic-dir-name}
+    ex: ln -s ~/github.com/jdvober/dotfiles/.config/alacritty ~/.config/
 
-### Most of these files should go in ~/.config/
-~/.config/i3/config
-~/.config/nvim/
-~/.config/polybar
+Most of these files should go in ~/.config/
+    ~/.config/i3/config
+    ~/.config/nvim/
+    ~/.config/polybar
 
-### Others go in $HOME
-~/.zshrc
+Others go in $HOME
+    ~/.zshrc
 

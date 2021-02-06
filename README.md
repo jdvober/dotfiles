@@ -1,22 +1,25 @@
 # Run install-apps.sh to set up the apps of a new install.
-    Options:
+    Flags:
 
-    --yay
-    Use yay as your AUR helper
+    -h
+    Displays the various flags
 
-    --paru
-    Use paru as your AUR helper
+    -c
+    Set up the initial system.  This can be skipped if the script has already installed the core utilities.
 
-    --extras
+    -a yay | paru
+    Chooses and AUR Helper
+
+    -e
     Install the "extra" apps that may not always be necessary.
 
-    --work
+    -w
     Install tools only used at work
 
-    --language-servers
+    -l
     Install language servers for Neovim
 
-    --pia
+    -p
     Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads
 
 # Symbolic Linking

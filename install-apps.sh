@@ -1,52 +1,124 @@
 #!/bin/bash
 # A shell script to install all of my core utilites and dotfiles in one go, on a fresh install of Arch!
 # Options:
-# --yay
-# --paru
-# --extras
-# --work
-# --language-servers
-# --pia
+ 
+# -h --help
+# Displays this help menu
 
-install_base_utils
-install_aur_helper
-install_text_editors
-install_term
-install_graphics
-install_fonts
-install_audio
-install_core_apps
+# -c --core
+# Set up the initial system.  This can be skipped if the script has already installed the core utilities.
 
-# Optional packages
-if [ -o extras ]; then
-    install_extras
-fi
+# -a yay | paru
+# --aur-helper yay | paru
+# Choose an AUR Helper
 
-if [ -o work ]; then
-    install_work
-fi
-
-if [ -o language-servers ]; then
-    install_language_servers
-fi
-
-if [ -o pia ]; then
-    install_pia
-fi
+# -e --extra
+# Install the "extra" apps that may not always be necessary.
+ 
+# -w --work
+# Install tools only used at work
+ 
+# -l --language-server
+# Install language servers for Neovim
+ 
+# -p --pia
+# Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads
 
 
-install_aur_helper(){
-    # Install AUR Helper
-    if [ -o yay ]; then
-        AUR_HELPER="yay"
-        install_yay
-    elif [ -o paru ]; then
-        AUR_HELPER="paru"
-        install_paru
-    else
-        echo "${Red}==> Error:${Reset} Please set AUR_HELPER to either ${Cyan}yay${Reset} or ${Cyan}paru${Reset} at the beginning of the script, and rerun."
+# Flags
+# https://www.lifewire.com/pass-arguments-to-bash-script-2200571
+# https://stackoverflow.com/questions/18414054/reading-optarg-for-optional-flags
+
+AUR_HELPER=false
+CORE=false
+EXTRA=false
+HELP=TRUE
+LANGUAGE_SERVER=false
+PIA=FALSE
+WORK=FALSE
+
+if [[ "$1" =~ ^((-{1,2})([Hh]$|[Hh][Ee][Ll][Pp])|)$ ]]; then
+    print_usage; exit 1
+else
+  while [[ $# -gt 0 ]]; do
+    opt="$1"
+    shift;
+    current_arg="$1"
+    if [[ "$current_arg" =~ ^-{1,2}.* ]]; then
+      echo "WARNING: You may have left an argument blank. Double check your command." 
     fi
-}
+    case "$opt" in
+      "-a"| "--aur-helper" )
+                 AUR_HELPER=true;;     #set to some default value
+      "-a"| "--aur-helper" )
+                 AUR_HELPER="$1"; shift;; #take argument
+      "-a=*"| "--aur-helper=*" )
+                 AUR_HELPER="${opt#*=}";;             #take argument
+      "-c"| "--core" )
+                 CORE=true;;     #set to some default value
+      "-c"| "--core" )
+                 CORE="$1"; shift;; #take argument
+      "-c=*"| "--core=*" )
+                 CORE="${opt#*=}";;             #take argument
+      "-e"| "--extra" )
+                 EXTRA=true;;     #set to some default value
+      "-e"| "--extra" )
+                 EXTRA="$1"; shift;; #take argument
+      "-e=*"| "--extra=*" )
+                 EXTRA="${opt#*=}";;             #take argument
+      "-h"| "--help" )
+                 HELP=true;;     #set to some default value
+      "-h"| "--help" )
+                 HELP="$1"; shift;; #take argument
+      "-h=*"| "--help=*" )
+                 HELP="${opt#*=}";;             #take argument
+      "-l"| "--language-server" )
+                 LANGUAGE_SERVER=true;;     #set to some default value
+      "-l"| "--language-server" )
+                 LANGUAGE_SERVER="$1"; shift;; #take argument
+      "-l=*"| "--language-server=*" )
+                 LANGUAGE_SERVER="${opt#*=}";;             #take argument
+      "-p"| "--pia" )
+                 PIA=true;;     #set to some default value
+      "-p"| "--pia" )
+                 PIA="$1"; shift;; #take argument
+      "-p=*"| "--pia=*" )
+                 PIA="${opt#*=}";;             #take argument
+      "-w"| "--work" )
+                 WORK=true;;     #set to some default value
+      "-w"| "--work" )
+                 WORK="$1"; shift;; #take argument
+      "-w=*"| "--work=*" )
+                 WORK="${opt#*=}";;             #take argument
+      *                         ) echo "ERROR: Invalid option: \""$opt"\"" >&2
+                                  exit 1;;
+    esac
+  done
+fi
+
+if [[ "$AUR_HELPER" == ""  ]]; then
+  echo "ERROR: Option -a requires either yay or paru" >&2
+  exit 1
+fi
+
+# Help Menu
+__usage="
+Usage: $(basename $0) [OPTIONS]
+
+Options:
+  -a, --aur-helper          Choose an AUR Helper
+  -c, --core                Set up the initial system.  This can be skipped if the script has already installed the core utilities.
+  -e, --extra               Install the extra apps that may not always be necessary.
+  -h, --help                Displays this menu
+  -l, --language-server     Install language servers for Neovim
+  -p, --pia                 Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads
+  -w, --work                Install tools only used at work
+"
+if [ "$HELP" == "true" ]; then
+    echo "$__usage"
+    exit 1
+fi
+
 
 install_yay()
 {
@@ -67,6 +139,18 @@ install_paru()
     cd paru
     makepkg -si
     echo_done
+}
+
+install_aur_helper(){
+    # Install AUR Helper
+    if [ "$AUR_HELPER" == "yay" ]; then
+        install_yay
+    elif [ "$AUR_HELPER" == "paru" ]; then
+        install_paru
+    else
+        echo "${Red}==> Error:${Reset} Please set AUR_HELPER to either ${Cyan}yay${Reset} or ${Cyan}paru${Reset} at the beginning of the script, and rerun."
+        exit 1
+    fi
 }
 
 install_base_utils()
@@ -276,7 +360,7 @@ install_pia()
 {
     echo "${Black_On_White}Getting PIA Installer.  Run sh pia-linux-XXXXXXXXXXX after script finishes.${Reset}"
     # Check if Downloads exists
-    if [ ! (-e /home/jdv/Downloads) ]
+    if [ ! -e /home/jdv/Downloads ]; then
         mkdir ~/Downloads
     fi
     cd ~/Downloads
@@ -292,83 +376,115 @@ echo_done()
 
 # Text colors
 # example 1
-# \e[32m<text>\e[0m <-- Green text that returns to regular font color
+# \033[32m<text>\033[0m <-- Green text that returns to regular font color
 
 # example 2
 # echo ${Green}<text>${Reset} <-- Green text that returns to regular font color
 
 # Reset
-Color_Off='\e[0m'       # Text Reset
-Reset='\e[0m'       # Text Reset
+Reset='\033[om'       # Text Reset
 
 # Regular Colors
-Black='\e[30m'        # Black
-Red='\e[31m'          # Red
-Green='\e[32m'        # Green
-Yellow='\e[33m'       # Yellow
-Blue='\e[34m'         # Blue
-Purple='\e[35m'       # Purple
-Cyan='\e[36m'         # Cyan
-White='\e[37m'        # White
+Black='\033[30m'        # Black
+Red='\033[31m'          # Red
+Green='\033[32m'        # Green
+Yellow='\033[33m'       # Yellow
+Blue='\033[34m'         # Blue
+Purple='\033[35m'       # Purple
+Cyan='\033[36m'         # Cyan
+White='\033[37m'        # White
 
 # Bold
-BBlack='\e[1;30m'       # Black
-BRed='\e[1;31m'         # Red
-BGreen='\e[1;32m'       # Green
-BYellow='\e[1;33m'      # Yellow
-BBlue='\e[1;34m'        # Blue
-BPurple='\e[1;35m'      # Purple
-BCyan='\e[1;36m'        # Cyan
-BWhite='\e[1;37m'       # White
+BBlack='\033[1;30m'       # Black
+BRed='\033[1;31m'         # Red
+BGreen='\033[1;32m'       # Green
+BYellow='\033[1;33m'      # Yellow
+BBlue='\033[1;34m'        # Blue
+BPurple='\033[1;35m'      # Purple
+BCyan='\033[1;36m'        # Cyan
+BWhite='\033[1;37m'       # White
 
 # Underline
-UBlack='\e[4;30m'       # Black
-URed='\e[4;31m'         # Red
-UGreen='\e[4;32m'       # Green
-UYellow='\e[4;33m'      # Yellow
-UBlue='\e[4;34m'        # Blue
-UPurple='\e[4;35m'      # Purple
-UCyan='\e[4;36m'        # Cyan
-UWhite='\e[4;37m'       # White
+UBlack='\033[4;30m'       # Black
+URed='\033[4;31m'         # Red
+UGreen='\033[4;32m'       # Green
+UYellow='\033[4;33m'      # Yellow
+UBlue='\033[4;34m'        # Blue
+UPurple='\033[4;35m'      # Purple
+UCyan='\033[4;36m'        # Cyan
+UWhite='\033[4;37m'       # White
 
 # Background
-On_Black='\e[40m'           # Black
-On_Red='\e[41m'             # Red
-On_Green='\e[42m'           # Green
-On_Yellow='\e[43m'          # Yellow
-On_Blue='\e[44m'            # Blue
-On_Purple='\e[45m'          # Purple
-On_Cyan='\e[46m'            # Cyan
-On_White='\e[47m'           # White
-Black_On_White='\e[30;47m'  # Black on White
-Blue_On_White='\e[34;47m'   # Blue on White
+On_Black='\033[40m'           # Black
+On_Red='\033[41m'             # Red
+On_Green='\033[42m'           # Green
+On_Yellow='\033[43m'          # Yellow
+On_Blue='\033[44m'            # Blue
+On_Purple='\033[45m'          # Purple
+On_Cyan='\033[46m'            # Cyan
+On_White='\033[47m'           # White
+Black_On_White='\033[30;47m'  # Black on White
+Blue_On_White='\033[34;47m'   # Blue on White
 
 # High Intensity
-IBlack='\e[90m'       # Black
-IRed='\e[91m'         # Red
-IGreen='\e[92m'       # Green
-IYellow='\e[93m'      # Yellow
-IBlue='\e[94m'        # Blue
-IPurple='\e[95m'      # Purple
-ICyan='\e[96m'        # Cyan
-IWhite='\e[97m'       # White
+IBlack='\033[90m'       # Black
+IRed='\033[91m'         # Red
+IGreen='\033[92m'       # Green
+IYellow='\033[93m'      # Yellow
+IBlue='\033[94m'        # Blue
+IPurple='\033[95m'      # Purple
+ICyan='\033[96m'        # Cyan
+IWhite='\033[97m'       # White
 
 # Bold High Intensity
-BIBlack='\e[1;90m'      # Black
-BIRed='\e[1;91m'        # Red
-BIGreen='\e[1;92m'      # Green
-BIYellow='\e[1;93m'     # Yellow
-BIBlue='\e[1;94m'       # Blue
-BIPurple='\e[1;95m'     # Purple
-BICyan='\e[1;96m'       # Cyan
-BIWhite='\e[1;97m'      # White
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
 
 # High Intensity backgrounds
-On_IBlack='\e[100m'   # Black
-On_IRed='\e[101m'     # Red
-On_IGreen='\e[102m'   # Green
-On_IYellow='\e[103m'  # Yellow
-On_IBlue='\e[104m'    # Blue
-On_IPurple='\e[105m'  # Purple
-On_ICyan='\e[106m'    # Cyan
-On_IWhite='\e[107m'   # White
+On_IBlack='\033[100m'   # Black
+On_IRed='\033[101m'     # Red
+On_IGreen='\033[102m'   # Green
+On_IYellow='\033[103m'  # Yellow
+On_IBlue='\033[104m'    # Blue
+On_IPurple='\033[105m'  # Purple
+On_ICyan='\033[106m'    # Cyan
+On_IWhite='\033[107m'   # White
+
+
+# Install packages
+if [ "$CORE" == "true" ];then
+    install_base_utils
+    install_aur_helper
+    install_text_editors
+    install_term
+    install_graphics
+    install_fonts
+    install_audio
+    install_core_apps
+fi
+
+# Optional packages
+if [ "$EXTRAS" == "true" ];then
+    install_extras
+fi
+
+if [ "$WORK" == "true" ];then
+    install_work
+fi
+
+if [ "$LANGUAGE_SERVER" == "true" ];then
+    install_language_servers
+fi
+
+if [ "$PIA" == "true" ];then
+    install_pia
+fi
+
+
+

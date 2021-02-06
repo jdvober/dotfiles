@@ -186,6 +186,7 @@ alias -g QTILE="~/github.com/jdvober/dotfiles/.config/qtile/config.py"
 alias -g INSTALLSH="~/github.com/jdvober/dotfiles/install-core-apps.sh"
 alias -g POWERLINE="~/github.com/jdvober/dotfiles/.config/powerline-shell/config.json"
 alias -g LOCK="~/github.com/jdvober/dotfiles/.config/betterlockscreenrc"
+alias -g BRIGHTNESS="/sys/class/backlight/intel_backlight/brightness"
 
 # Power and User Management
 alias restart="sudo shutdown -r now"

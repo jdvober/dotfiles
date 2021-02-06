@@ -14,7 +14,7 @@ do
     pip install -U $app
 done
 
-for app in "lua-language-server-git" "gopls"
+for app in "lua-language-server-git" "gopls" "delve"
 
 do
     echo "Installing $app"

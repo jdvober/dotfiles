@@ -19,8 +19,14 @@
     -l
     Install language servers for Neovim
 
-    -p
+    -v
     Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads
+
+    -p
+    Use paru as the AUR helper
+
+    -y
+    Use yay as the AUR helper
 
 # Symbolic Linking
 ### Automatic Linking

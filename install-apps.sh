@@ -64,8 +64,9 @@ On_Blue='\033[44m'            # Blue
 On_Purple='\033[45m'          # Purple
 On_Cyan='\033[46m'            # Cyan
 On_White='\033[47m'           # White
-Black_On_White='\033[30;47m'  # Black on White
-Blue_On_White='\033[34;47m'   # Blue on White
+Black_On_White='\033[1;90;47m'  # Black on White
+Blue_On_White='\033[1;90;94;47m'   # Blue on White
+Green_On_White='\033[1;90;92;47m'   # Blue on White
 
 # High Intensity
 IBlack='\033[90m'       # Black
@@ -99,18 +100,20 @@ On_IWhite='\033[107m'   # White
 
 print_help(){
         echo -e " "
-        echo -e Usage: $(basename $0) [OPTIONS]
+        echo -e "${BIPurple}"'Usage: $(basename $0) [OPTIONS]'"${Reset}"
         echo -e " "
         echo -e  Options:
         echo -e " "
-        echo -e -e '\t -a, --aur-helper\t'          'Choose an AUR Helper.  Must provide either paru or yay'
-        echo -e -e '\t -c, --core\t\t'                'Get up the initial system.  This can be skipped if the script has already installed the core utilities.'
-        echo -e -e '\t -e, --extra\t\t'               'Install the extra apps that may not always be necessary.'
-        echo -e -e '\t -h, --help\t\t'                'Displays this menu'
-        echo -e -e '\t -l, --language-server\t'     'Install language servers for Neovim'
-        echo -e -e '\t -p, --pia\t\t'                 'Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads'
-        echo -e -e '\t -w, --work\t\t'                'Install tools only used at work'
-        echo -e " "
+        echo -e "${BIPurple}"'\t --aur-helper=\t'          'Choose an AUR Helper.  Must provide either paru or yay'"${Reset}"
+        echo -e '\t -c, --core\t\t'                'Get up the initial system.  This can be skipped if the script has already installed the core utilities.'
+        echo -e "${BIPurple}"'\t -e, --extra\t\t'               'Install the extra apps that may not always be necessary.'"${Reset}"
+        echo -e '\t -h, --help\t\t'                'Displays this menu'
+        echo -e "${BIPurple}"'\t -l, --language-server\t'     'Install language servers for Neovim'"${Reset}"
+        echo -e '\t -v, --vpn\t\t'                 'Download the latest Private Internet Access install file, so it is ready to go in ~/Downloads'
+        echo -e "${BIPurple}"'\t -w, --work\t\t'                'Install tools only used at work'"${Reset}"
+        echo -e '\t -p, --paru\t\t'                'Use paru'"${Reset}"
+        echo -e "${BIPurple}"'\t -y, --yay\t\t'                'Use yay'"${Reset}"
+        echo  " "
         exit 1
 }
 
@@ -203,14 +206,14 @@ install_base_utils()
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Black_On_White}Done installing ${BICyan}${app}${Reset}"
+    echo -e "${Green_On_White}Done installing ${BICyan}${app}${Reset}"
 
     echo -e "<${BIGreen}Done installing Base Utils.  Proceeding.${Reset}>"
 }
 
 install_graphics()
 {
-    echo -e "${Black_On_White}Installing packages needed for graphics (xorg, wm, greeter etc.)${Reset}"
+    echo -e "${Green_On_White}Installing packages needed for graphics (xorg, wm, greeter etc.)${Reset}"
 
     # Xorg
     echo -e "${Blue_On_White}Installing xorg${Reset}"
@@ -237,57 +240,57 @@ install_graphics()
     sudo pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
     echo -e "${Blue_On_White}Done installing ${BICyan}${app}${Reset}"
 
-    echo -e "${Black_On_White}Done installing packages needed for graphics${Reset}"
+    echo -e "${Green_On_White}Done installing packages needed for graphics${Reset}"
 
 }
 
 install_text_editors()
 {
-    echo -e "${Black_On_White}Installing extra text editors.${Reset}"
+    echo -e "${Green_On_White}Installing extra text editors.${Reset}"
     for app in "neovim-nightly-bin" "vim-plug-git" "neovim-gtk" "vscode" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Black_On_White}Done installing extra text editors${Reset}"
+    echo -e "${Green_On_White}Done installing extra text editors${Reset}"
 }
 
 install_fonts(){
     # Install fonts
-    echo -e "${Black_On_White}Installing Core Apps${Reset}"
+    echo -e "${Green_On_White}Installing Core Apps${Reset}"
     for font in "korla-icon-theme-git" "nerd-fonts-iosevka" "termsyn-font" "font-manager" "ttf-fira-code" "ttf-monoid" "nerd-fonts-jetbrains-mono" "ttf-jetbrains-mono" "siji-git" "ttf-font-awesome"" ttf-ionicons" "ttf-liberation" "otf-firamath"
     do
         echo -e "Installing ${BICyan}${font}${Reset}"
         ${AUR_HELPER} -S --noconfirm $font
     done
-    echo -e "${Black_On_White}Done installing fonts${Reset}"
+    echo -e "${Green_On_White}Done installing fonts${Reset}"
 }
 
 install_core_apps()
 {
-    echo -e "${Black_On_White}Installing Core Apps${Reset}"
+    echo -e "${Green_On_White}Installing Core Apps${Reset}"
     for app in "sudo" "doas" "firefox" "pcmanfm" "openssh" "dmenu2" "w3m" "feh" "i3lock" "betterlockscreen-git" "autoconf" "automake" "pantheon-screenshot" "evince" "mupdf" "okular" "breeze-icons-git" "github-desktop-bin" "xf86-input-wacom" "usbutils" "fx" "vlc" "rofi"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Black_On_White}Done installing Core Apps${Reset}"
+    echo -e "${Green_On_White}Done installing Core Apps${Reset}"
 }
 
 install_extras()
 {
-    echo -e "${Black_On_White}Installing Optional Apps${Reset}"
+    echo -e "${Green_On_White}Installing Optional Apps${Reset}"
     for app in "libreoffice" "gimp" "inkscape" "audacity" "thunderbird" "obs-studio" "discord" "timeshift" "joplin" "brave-bin" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Black_On_White}Done installing Optional Apps${Reset}"
+    echo -e "${Green_On_White}Done installing Optional Apps${Reset}"
 }
 
 install_work()
 {
-    echo -e "${Black_On_White}Installing Work Apps${Reset}"
+    echo -e "${Green_On_White}Installing Work Apps${Reset}"
     for app in "texlive-most" "rclone" "fuse"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
@@ -300,11 +303,11 @@ install_work()
         python3 -m pip install --user --upgrade $app
     done
 
-    echo -e "${Black_On_White}Done installing Work Apps${Reset}"
+    echo -e "${Green_On_White}Done installing Work Apps${Reset}"
 }
 
 install_language_servers(){
-    echo -e "${Black_On_White}Installing Language Servers${Reset}"
+    echo -e "${Green_On_White}Installing Language Servers${Reset}"
     for app in "bash-language-server" "vscode-html-languageserver-bin" "vscode-json-languageserver" "typescript-language-server" "vls" "yaml-language-server" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
@@ -325,41 +328,41 @@ install_language_servers(){
         ${AUR_HELPER} -S $app
     done
 
-    echo -e "${Black_On_White}Done installing Language Servers${Reset}"
+    echo -e "${Green_On_White}Done installing Language Servers${Reset}"
 }
 
 install_audio()
 {
-    echo -e "${Black_On_White}Installing Audio related packages.${Reset}"
+    echo -e "${Green_On_White}Installing Audio related packages.${Reset}"
     for app in "alsa-utils" "alsa-plugins" "pulseaudio" "pulseaudio-alsa" "moc-alsa" "ncmpcpp"   
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Black_On_White}Done installing Audio related packages${Reset}"
+    echo -e "${Green_On_White}Done installing Audio related packages${Reset}"
 }
 
 install_term()
 {
-    echo -e "${Black_On_White}Installing terminal modifications.${Reset}"
+    echo -e "${Green_On_White}Installing terminal modifications.${Reset}"
     for app in "alacritty" "htop" "gtop" "lolcat" "mlocate" "neofetch" "pfetch" "zsh-git" "oh-my-zsh-git" "asciidoc" "pacman-contrib" "neofetch" "pfetch" "zsh-git" "oh-my-zsh-git" "powerline-fonts" "wget" "xclip" "zsh-completions" "lscolors-git" "fzf" "mlocate" "ripgrep" "exa" "dust" "broot" "scrot"   
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Black_On_White}Done installing terminal modifications${Reset}"
+    echo -e "${Green_On_White}Done installing terminal modifications${Reset}"
 }
 
 install_pia()
 {
-    echo -e "${Black_On_White}Getting PIA Installer.  Run sh pia-linux-XXXXXXXXXXX after script finishes.${Reset}"
+    echo -e "${Green_On_White}Getting PIA Installer.  Run sh pia-linux-XXXXXXXXXXX after script finishes.${Reset}"
     # Check if Downloads exists
     if [ ! -e /home/jdv/Downloads ]; then
         mkdir ~/Downloads
     fi
     cd ~/Downloads
     wget https://www.privateinternetaccess.com/installer/download_installer_linux_beta
-    echo -e "${Black_On_White}Done${Reset}"
+    echo -e "${Green_On_White}Done${Reset}"
 }
 
 echo_done()
@@ -376,12 +379,16 @@ echo_done()
       # echo -e "WARNING: You may have left an argument blank. Double check your command."
     # fi
     case "$opt" in
-      # "-a"| "--aur-helper" )
-                 # AUR_HELPER=true;;     #set to some default value
-      # "-a"| "--aur-helper" )
-                 # AUR_HELPER="$1"; shift;; #take argument
-      # "-a=*"| "--aur-helper=*" )
-                 # AUR_HELPER="${opt#*=}";;             #take argument
+      "--aur-helper" )
+                 AUR_HELPER="$1"; shift;; #take argument
+      "-y"| "--yay" )
+                 AUR_HELPER="yay";;     #set to some default value
+      "--aur-helper=yay" )
+                 AUR_HELPER="yay";;             #take argument
+      "-p"| "--paru" )
+                 AUR_HELPER="paru";;     #set to some default value
+      "--aur-helper=paru" )
+                 AUR_HELPER="paru";;             #take argument
       "-c"| "--core" )
                  CORE=true;;     #set to some default value
       "-c"| "--core" )
@@ -404,11 +411,11 @@ echo_done()
                  LANGUAGE_SERVER="$1"; shift;; #take argument
       "-l=*"| "--language-server=*" )
                  LANGUAGE_SERVER="${opt#*=}";;             #take argument
-      "-p"| "--pia" )
+      "-v"| "--vpn" )
                  PIA=true;;     #set to some default value
-      "-p"| "--pia" )
+      "-v"| "--vpn" )
                  PIA="$1"; shift;; #take argument
-      "-p=*"| "--pia=*" )
+      "-v=*"| "--vpn=*" )
                  PIA="${opt#*=}";;             #take argument
       "-w"| "--work" )
                  WORK=true;;     #set to some default value

@@ -206,91 +206,91 @@ install_base_utils()
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Green_On_White}Done installing ${BICyan}${app}${Reset}"
+    echo -e "${BICyan}Done installing ${BICyan}${app}${Reset}"
 
     echo -e "<${BIGreen}Done installing Base Utils.  Proceeding.${Reset}>"
 }
 
 install_graphics()
 {
-    echo -e "${Green_On_White}Installing packages needed for graphics (xorg, wm, greeter etc.)${Reset}"
+    echo -e "${BIPurple}Installing packages needed for graphics (xorg, wm, greeter etc.)${Reset}"
 
     # Xorg
-    echo -e "${Blue_On_White}Installing xorg${Reset}"
+    echo -e "${BICyan}Installing xorg${Reset}"
     for app in "xorg" "xorg-xinit" "xorg-server"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Blue_On_White}Done installing ${BICyan}${app}${Reset}"
+    echo -e "${BICyan}Done installing ${BICyan}${app}${Reset}"
 
     # Desktop Environments and Window Managers
-    echo -e "${Blue_On_White}Installing Desktop Environments and Window Managers${Reset}"
+    echo -e "${BICyan}Installing Desktop Environments and Window Managers${Reset}"
     for app in "plasma" "qtile" "nitrogen" "picom-ibhagwan-git" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Blue_On_White}Done installing ${BICyan}${app}${Reset}"
+    echo -e "${BICyan}Done installing ${BICyan}${app}${Reset}"
 
     # Greeter
-    echo -e "${Blue_On_White}Installing Greeter${Reset}"
+    echo -e "${BICyan}Installing Greeter${Reset}"
     # Install Lightdm greeter and webkit2 theme
     echo -e "Setting up Lightdm"
     sudo pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
-    echo -e "${Blue_On_White}Done installing ${BICyan}${app}${Reset}"
+    echo -e "${BICyan}Done installing ${BICyan}${app}${Reset}"
 
-    echo -e "${Green_On_White}Done installing packages needed for graphics${Reset}"
+    echo -e "${BIPurple}Done installing packages needed for graphics${Reset}"
 
 }
 
 install_text_editors()
 {
-    echo -e "${Green_On_White}Installing extra text editors.${Reset}"
+    echo -e "${BIPurple}Installing extra text editors.${Reset}"
     for app in "neovim-nightly-bin" "vim-plug-git" "neovim-gtk" "vscode" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Green_On_White}Done installing extra text editors${Reset}"
+    echo -e "${BIPurple}Done installing extra text editors${Reset}"
 }
 
 install_fonts(){
     # Install fonts
-    echo -e "${Green_On_White}Installing Core Apps${Reset}"
+    echo -e "${BIPurple}Installing Core Apps${Reset}"
     for font in "korla-icon-theme-git" "nerd-fonts-iosevka" "termsyn-font" "font-manager" "ttf-fira-code" "ttf-monoid" "nerd-fonts-jetbrains-mono" "ttf-jetbrains-mono" "siji-git" "ttf-font-awesome"" ttf-ionicons" "ttf-liberation" "otf-firamath"
     do
         echo -e "Installing ${BICyan}${font}${Reset}"
         ${AUR_HELPER} -S --noconfirm $font
     done
-    echo -e "${Green_On_White}Done installing fonts${Reset}"
+    echo -e "${BIPurple}Done installing fonts${Reset}"
 }
 
 install_core_apps()
 {
-    echo -e "${Green_On_White}Installing Core Apps${Reset}"
+    echo -e "${BIPurple}Installing Core Apps${Reset}"
     for app in "sudo" "doas" "firefox" "pcmanfm" "openssh" "dmenu2" "w3m" "feh" "i3lock" "betterlockscreen-git" "autoconf" "automake" "pantheon-screenshot" "evince" "mupdf" "okular" "breeze-icons-git" "github-desktop-bin" "xf86-input-wacom" "usbutils" "fx" "vlc" "rofi"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Green_On_White}Done installing Core Apps${Reset}"
+    echo -e "${BIPurple}Done installing Core Apps${Reset}"
 }
 
 install_extras()
 {
-    echo -e "${Green_On_White}Installing Optional Apps${Reset}"
+    echo -e "${BIPurple}Installing Optional Apps${Reset}"
     for app in "libreoffice" "gimp" "inkscape" "audacity" "thunderbird" "obs-studio" "discord" "timeshift" "joplin" "brave-bin" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Green_On_White}Done installing Optional Apps${Reset}"
+    echo -e "${BIPurple}Done installing Optional Apps${Reset}"
 }
 
 install_work()
 {
-    echo -e "${Green_On_White}Installing Work Apps${Reset}"
+    echo -e "${BIPurple}Installing Work Apps${Reset}"
     for app in "texlive-most" "rclone" "fuse"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
@@ -303,11 +303,11 @@ install_work()
         python3 -m pip install --user --upgrade $app
     done
 
-    echo -e "${Green_On_White}Done installing Work Apps${Reset}"
+    echo -e "${BIPurple}Done installing Work Apps${Reset}"
 }
 
 install_language_servers(){
-    echo -e "${Green_On_White}Installing Language Servers${Reset}"
+    echo -e "${BIPurple}Installing Language Servers${Reset}"
     for app in "bash-language-server" "vscode-html-languageserver-bin" "vscode-json-languageserver" "typescript-language-server" "vls" "yaml-language-server" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
@@ -328,41 +328,41 @@ install_language_servers(){
         ${AUR_HELPER} -S $app
     done
 
-    echo -e "${Green_On_White}Done installing Language Servers${Reset}"
+    echo -e "${BIPurple}Done installing Language Servers${Reset}"
 }
 
 install_audio()
 {
-    echo -e "${Green_On_White}Installing Audio related packages.${Reset}"
+    echo -e "${BIPurple}Installing Audio related packages.${Reset}"
     for app in "alsa-utils" "alsa-plugins" "pulseaudio" "pulseaudio-alsa" "moc-alsa" "ncmpcpp"   
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Green_On_White}Done installing Audio related packages${Reset}"
+    echo -e "${BIPurple}Done installing Audio related packages${Reset}"
 }
 
 install_term()
 {
-    echo -e "${Green_On_White}Installing terminal modifications.${Reset}"
+    echo -e "${BIPurple}Installing terminal modifications.${Reset}"
     for app in "alacritty" "htop" "gtop" "lolcat" "mlocate" "neofetch" "pfetch" "zsh-git" "oh-my-zsh-git" "asciidoc" "pacman-contrib" "neofetch" "pfetch" "zsh-git" "oh-my-zsh-git" "powerline-fonts" "wget" "xclip" "zsh-completions" "lscolors-git" "fzf" "mlocate" "ripgrep" "exa" "dust" "broot" "scrot"   
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
-    echo -e "${Green_On_White}Done installing terminal modifications${Reset}"
+    echo -e "${BIPurple}Done installing terminal modifications${Reset}"
 }
 
 install_pia()
 {
-    echo -e "${Green_On_White}Getting PIA Installer.  Run sh pia-linux-XXXXXXXXXXX after script finishes.${Reset}"
+    echo -e "${BIPurple}Getting PIA Installer.  Run sh pia-linux-XXXXXXXXXXX after script finishes.${Reset}"
     # Check if Downloads exists
     if [ ! -e /home/jdv/Downloads ]; then
         mkdir ~/Downloads
     fi
     cd ~/Downloads
     wget https://www.privateinternetaccess.com/installer/download_installer_linux_beta
-    echo -e "${Green_On_White}Done${Reset}"
+    echo -e "${BIPurple}Done${Reset}"
 }
 
 echo_done()

@@ -170,6 +170,9 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
+# Import Dracula Theme
+import:
+  - /home/jdv/github.com/jdvober/dotfiles/.config/alacritty/dracula-theme/dracula.yml
 
 # Colors (Dracula)
 colors:

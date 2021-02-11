@@ -32,15 +32,18 @@ endsnippet
 
 snippet err "if err != nil{}" w
 if err != nil {
-	log.Println(err)
+	fmt.Printf("\n==> Error ${1:ErrorLocation}:\n\n%v\n\n", err)
+	log.Fatalf("\n==> Error $1:\n\n%v\n\n", err)
 }
 $0
 endsnippet
 
 snippet fatal "if err != nil{}" w
 if err != nil {
+	fmt.Println(err)
 	log.Fataln(err)
 }
+
 $0
 endsnippet
 

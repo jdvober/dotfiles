@@ -150,7 +150,7 @@ setopt COMPLETE_ALIASES
 
 # https://blog.lftechnology.com/command-line-productivity-with-zsh-aliases-28b7cebfdff9
 # Normal aliases
-alias cls="clear && pfetch | lolcat"
+alias cls="clear && ls"
 # alias ls="ls -A --color=auto --file-type --group-directories-first"
 alias ls="pwd && exa --grid --long --all --group-directories-first --sort=ext"
 alias tree="pwd && exa --tree --level=3 ../. --long --all"

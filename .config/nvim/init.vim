@@ -181,6 +181,14 @@ inoremap qa <Esc>la
 nnoremap <silent> <leader>p ]p
 nnoremap <silent> <leader>P [p
 
+" center line in middle of screen while in insert mode
+inoremap <silent> zz <C-o>zz
+
+" move line to top of screen
+nnoremap <silent> zt zk
+" move line to bottom of screen
+nnoremap <silent> zt zj
+
 " For support of figures from Inkscape in LaTeX documents
 " inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
 " nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
@@ -205,7 +213,11 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
-
+"
+"*****************************************************************************
+"" Alacritty support for mouse
+"*****************************************************************************
+" set ttymouse=sgr
 
 " Custom Highlight Groups - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 " Must be before colorscheme
@@ -266,15 +278,59 @@ let g:compe.preselect = 'enable'
 let g:compe.throttle_time = 80
 let g:compe.source_timeout = 200
 let g:compe.incomplete_delay = 400
-let g:compe.allow_prefix_unmatch = v:false
+let g:compe.allow_prefix_unmatch = v:true
 
 let g:compe.source = {}
 let g:compe.source.path = v:true
 let g:compe.source.buffer = v:true
-let g:compe.source.vsnip = v:true
+let g:compe.source.vsnip = v:false
 let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 let g:compe.source.your_awesome_source = {}
+
+lua << EOF
+local t = function(str)
+  return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
+
+local check_back_space = function()
+    local col = vim.fn.col('.') - 1
+    if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
+        return true
+    else
+        return false
+    end
+end
+
+-- Use (s-)tab to:
+--- move to prev/next item in completion menuone
+--- jump to prev/next snippet's placeholder
+_G.tab_complete = function()
+  if vim.fn.pumvisible() == 1 then
+    return t "<C-n>"
+  elseif vim.fn.call("vsnip#available", {1}) == 1 then
+    return t "<Plug>(vsnip-expand-or-jump)"
+  elseif check_back_space() then
+    return t "<Tab>"
+  else
+    return vim.fn['compe#complete']()
+  end
+end
+_G.s_tab_complete = function()
+  if vim.fn.pumvisible() == 1 then
+    return t "<C-p>"
+  elseif vim.fn.call("vsnip#jumpable", {-1}) == 1 then
+    return t "<Plug>(vsnip-jump-prev)"
+  else
+    return t "<S-Tab>"
+  end
+end
+
+vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+EOF
 "*****************************************************************************
 " Vim Airline (terminal only!)
 "*****************************************************************************
@@ -431,6 +487,11 @@ let g:which_key_map['g'] = {
       \ 'd' : ['GoDef'        , 'GoDef']        ,
       \ 'v' : ['GoVet'        , 'GoVet error checking']        ,
       \ 'a' : ['GoAddTags'        , 'GoAddTags']        ,
+      \ 'c' : {
+                  \ 'name': '+GoAddTags',
+                  \ 'j' : [':GoAddTags json']        ,
+                  \ 'b' : [':GoAddTags bson']        ,
+            \ },
       \ }
 
 let g:which_key_map['s'] = {
@@ -460,15 +521,16 @@ let g:which_key_map['s'] = {
 let g:which_key_map['f'] = {
       \ 'name' : '+file' ,
       \ 'f' : ['Files'        , 'Open via FZF']        ,
-      \ 'o' : [':History!<CR>'        , 'Open Recent']        ,
-      \ 'd' : ['Files'        , 'Open in current directory']        ,
+      \ 'o' : ['FZF'        , 'Open']        ,
+      \ 'r' : [':History!<CR>'        , 'Recent']        ,
+      \ 'd' : ['FZF'        , 'Open in current directory']        ,
       \ 'w' : [':w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
       \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
       \ 'q' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py'        , 'open qtile config']        ,
       \ 'z' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/.zshrc'        , 'open zshrc']        ,
       \ 's' : [':setlocal spell'        , 'turn on spell check']        ,
       \ }
-nnoremap <localleader>fe :edit
+nnoremap <localleader>fe :edit /
 nnoremap <silent> <localleader>fn :enew<CR>
 
 let g:which_key_map['/'] = {
@@ -479,6 +541,8 @@ let g:which_key_map['/'] = {
       \ 'l' : ['BLines'        , 'Search in current buffer']        ,
       \ 'b' : ['Buffers'        , 'Search in all buffers']        ,
       \ }
+nnoremap <silent> <localleader>/r :%s/
+vnoremap / :%s/\%V
 
 let g:which_key_map['l'] = {
       \ 'name' : '+LaTeX' ,
@@ -572,7 +636,7 @@ lua << EOF
 lspconfig = require "lspconfig"
 -- if using completion-nvim
 -- lspconfig.gopls.setup{on_attach=require'completion'.on_attach}
-lspconfig.gopls.setup{}
+lspconfig.gopls.setup{composites=false}
 -- lspconfig.gopls.setup {
 --   cmd = {"gopls", "serve"},
 --   settings = {
@@ -630,6 +694,7 @@ local saga = require 'lspsaga'
 -- 1: thin border | 2: rounded border | 3: thick border
 -- border_style = 1
 -- max_hover_width = 0 (automatically adjust to the width of current symbol)
+-- max_hover_width = 0 (automatically adjust to the width of current symbol)
 -- rename_prompt_prefix = '➤',
 
 -- saga.init_lsp_saga {
@@ -664,6 +729,19 @@ let g:which_key_map['E'] = { 'name' : 'Previous Error' }
 nnoremap <silent> [e :LspSagaDiagJumpPrev<CR>
 nnoremap <silent> ]e :LspSagaDiagJumpNext<CR>
 
+"*****************************************************************************
+" Netrw (terminal only!)
+"*****************************************************************************
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+let g:netrw_fastbrowse = 0
+" augroup ProjectDrawer
+  " autocmd!
+  " autocmd VimEnter * :Vexplore
+" augroup END
 
 "*****************************************************************************
 "*****************************************************************************
@@ -701,7 +779,8 @@ map <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scro
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <Esc> :noh<CR><Esc>
-nnoremap <silent> <CR> :noh<CR><CR>
+" nnoremap <silent> <CR> :noh<CR><CR>
+nnoremap <silent> <CR> :noh<CR>
 
 " Copy/Paste/Cut
 if has('unnamedplus')

@@ -45,6 +45,12 @@ snippet notes "Template for a set of lecture notes" b
 \usepackage{cancel}% charlesreid1.com/wiki/Cancel_Package
 % \usepackage{fontspec}% allows the use of installed system fonts.  See https://www.overleaf.com/learn/latex/XeLaTeX
 
+\newcommand*\ccw{%
+  \mathbin{\rotatebox[origin=c]{90}{$\math\curvearrowleft$}-}}
+
+\newcommand*\cw{%
+  \mathbin{\rotatebox[origin=c]{90}{$\math\curvearrowright$}+}}
+
 \usepackage{geometry}
     \geometry{
         left=2in,
@@ -899,10 +905,12 @@ snippet || "parallel" iA
  \parallel 
 endsnippet
 
+snippet g "acceleration due to gravity" w
+9.8\frac{m}{s}
+endsnippet
 
-context "math()"
-snippet cc "subset" Ai
-\subset 
+snippet \deg "acceleration due to gravity" A
+\degree
 endsnippet
 
 snippet notin "not in " iA

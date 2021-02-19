@@ -1,0 +1,911 @@
+58a1e0ab94ff07499bc37abd61a349b8|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
+	.App-logo {
+	  height: 40vmin;
+	  pointer-events: none;
+	}
+	
+	@media (prefers-reduced-motion: no-preference) {
+	  .App-logo {
+	    animation: App-logo-spin infinite 20s linear;
+	  }
+	}
+d6875b0868748c43a47180b435041aab|file:///home/jdv/js/reactDice/src/App.css|99|1|V|css
+	
+	@keyframes App-logo-spin {
+	  from {
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    transform: rotate(360deg);
+	  }
+	}
+9b2e03886d4be5eacac4607d37d4ffb1|file:///home/jdv/js/reactDice/src/components/Map/Image.js|1|1|V|javascript
+	import PropTypes from 'prop-types'
+	
+70ff8c724a7038cdde1f9d48aedf5387|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|1|V|javascript
+	Image.defaultProps = {
+	}
+	
+	Image.propTypes = {
+	}
+	
+b34bc428899c4526d7692453311ee31f|file:///home/jdv/js/reactDice/src/components/Map/Map.js|1|1|V|javascript
+	import ChatInput from './ChatInput'
+	import Messages from './Messages'
+9d27d2a6c8234171b7cf3c7a6fc66aee|file:///home/jdv/js/reactDice/src/components/Map/Map.js|8|1|V|javascript
+	            <Messages chatHistory={chatHistory}/>
+4e37e5d8c4a56e1a3863001f945e6ef6|file:///home/jdv/js/reactDice/src/components/Map/Map.js|8|1|V|javascript
+	            <ChatInput addMessage={addMessage}/>
+55dcdf017b51fc96f7b5f9d63013b95d|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|33|v|javascript
+	Chat
+41de6d6cfb8953c021bbe4ba0701c8a1|file:///home/jdv/js/reactDice/src/App.css|61|4|v|css
+	Messages
+edad6657cf5884f4b77695b8fd969db0|file:///home/jdv/js/reactDice/src/App.css|52|1|V|css
+	    display: flex;
+	    background-color: var(--Background);
+	    border-style: rounded;
+	    flex-direction: column;
+	    border-radius: 20px;
+	    padding: 5%;
+	    margin: 2%;
+6a2484cb3f3a49c4f4a2bb9037ff8b0a|file:///home/jdv/js/reactDice/src/App.css|107|1|V|css
+	    grid-row: 2 / 9;
+12e486284555d5d4dc0f3f3ff698e071|file:///home/jdv/js/reactDice/src/App.css|27|1|V|css
+	    grid-template-columns: repeat(10, 1fr) / repeat(4, 1fr);
+a7de638f3c55483972bee2cd2fcafc80|file:///home/jdv/js/reactDice/src/App.css|28|28|v|css
+	repeat(10, 1fr)
+13984565be5b00430a129ecc70c8b4cd|file:///home/jdv/js/reactDice/src/App.css|28|18|V|css
+	    /* grid-template:  repeat(4, 1fr) / repeat(10, 1fr); */
+77631ca4f0e08419b70726a447333ab6|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|14|v|javascript
+	This
+e161c4655fb160b39fc5146a3ca61c83|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|14|v|javascript
+	This is where the image goes
+158405b9626c837b016127ff6f1e4473|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|19|v|javascript
+	../../../public/LaDendria_Map.png
+8346b01fbc8f314159e8b1c77911a759|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|9|v|javascript
+	<img src="../../../public/LaDendria_Map.png" alt="Map"></img>
+0ae223530009f994969672cc88b86c60|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|18|v|javascript
+	"../../../public/LaDendria_Map.png" 
+ff79f399aee988079da9d92c24945764|file:///home/jdv/js/reactDice/src/components/Map/Image.js|1|23|v|javascript
+	../../../public
+1927cbfe3d1b6a0759518d94a54f698c|file:///home/jdv/js/reactDice/src/App.css|65|1|V|css
+	.chatbox-flex-container > div {
+	    text-align: left;
+	    color: var(--White);
+	    background-color: var(--Medium-Gray);
+	    padding: 1%;
+	    padding-left: 5%;
+	    /* margin-left: 2.5%; */
+	    /* margin-right: 5%; */
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+	    font-size: 30px;
+	    border-radius: 0px 20px 0px 20px;
+	}
+b5a55841b7ee6717218ae33644bff3e4|file:///home/jdv/js/reactDice/src/App.css|122|2|v|css
+	chatbox
+2e1cba59e6684d913863425fc02160c9|file:///home/jdv/js/reactDice/src/App.css|123|9|V|css
+	    text-align: left;
+86c52d948e2d02aea779129bf04c1961|file:///home/jdv/js/reactDice/src/App.css|123|9|V|css
+	    color: var(--White);
+09b4aa014c655fc4260d8649d8860658|file:///home/jdv/js/reactDice/src/App.css|123|9|V|css
+	    background-color: var(--Medium-Gray);
+808543313c28d6b4660d5961ff471ffd|file:///home/jdv/js/reactDice/src/App.css|125|1|V|css
+	    /* margin-left: 2.5%; */
+	    /* margin-right: 5%; */
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+8974309b97f8eb086f240250f455bad3|file:///home/jdv/js/reactDice/src/App.css|126|16|V|css
+	    font-size: 30px;
+3d371bdf3ae05c026b187d3b22cd5d7e|file:///home/jdv/js/reactDice/src/App.css|126|16|V|css
+	    border-radius: 0px 20px 0px 20px;
+82dd6b279dbd4eac5e9c67b26ab35422|file:///home/jdv/js/reactDice/src/App.css|124|19|V|css
+	    padding-left: 25%;
+fe095f8db0d398a826773e378321a779|file:///home/jdv/go/src/github.com/jdvober/apexAttendance/config.env|25|12|v|sh
+	TACDistrictJoseph.Vober=%c3%80%c3%adg%e2%82%ac%c3%a1%c3%98%c3%91%21; TACServerJoseph.Vober=q%c3%97j%c2%b3%e2%80%a1%c2%be%e2%80%99%5c%19%c3%90jN%3e%c3%86%7f%c2%b4; TACDatabaseJoseph.Vober=%c3%a2%c3%a8%c3%9a%e2%80%b9%2as%c3%97%c3%b1%7d%c3%94YM%5e%c3%8b%e2%80%9a%15; TACSummerSchoolJoseph.Vober=N; __RequestVerificationToken_L1RBQw2=qS_GsMOAatpcSdiZrLRVwD8sGpx-Pl6gl-Fw_nu9gWP727nZ-aAfDfiSRupPQxgaYoNkEUAt-fT9nwhkYqHyRzACKBJfe9tVr3iHTJU_CqA1; ASP.NET_SessionId=qulyhemxvfzd14vrx22xvbnr; eSPADAuthCookie=1CDBD272D6E094157B50AE9502DC65B06DCA748C689FE81F4021801297DA7B36F2D85FDD73ED856CF8F39AFC8C1B940EF28F7F83AB2ECC230A3027FBC04482ECA6FB558B3821E00DE2604FBA320FA5DC1622089F00276611A1285FF4EB905AE031EBC2132468E98AD6A0E993B7910A0F
+	
+281858037f7dcf7ed49271bb92c60526|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|1079|16|v|vim
+	ordinal
+1f1d8ed593a49ecc9f820bb656518a84|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|2|1|V|vim
+	    call rpcnotify(1, 'Gui', 'Font', 'JetBrainsMono Nerd Font 14')
+4f3e44bd1004c78bd47573c10ea80995|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|2|39|v|vim
+	JetBrainsMono
+0603ecbed5a97d741b19407a33a00457|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|9|33|V|vim
+	    :Guifont DejaVu Sans Mono:h13
+8ae50134230db227e8bbd188ec6c061a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|2|39|v|vim
+	VictorMono Nerd Font 14
+560a6af3ca9eed524280933b0c6f3ecb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|10|10|v|vim
+	DejaVu Sans Mono
+b2507468f95156358fa490fd543ad2f0|file:///home/jdv/js/reactDice/src/components/Map/Image.js|11|6|V|javascript
+	export
+03c408620c681ce74b0f6f74fd67a7cc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|795|1|V|vim
+	set cmdheight=0
+3187336abd5ee5dae476add79203448c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|15|13|V|vim
+	:GuiTabline 0
+29224bc734b710e9cadbd1b8a73aee34|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|795|1|V|vim
+	set cmdheight=1
+c2b759de16de999c2d2e981a5ad67e97|file:///home/jdv/.config/alacritty/alacritty.yml|122|13|v|yaml
+	JetBrainsMono Nerd Font
+e04ab7509fed5d012948286419e0b128|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|1080|16|v|vim
+	buffer_id
+52d2ccf4dd531289925d8c89e4add5bf|file:///home/jdv/js/reactDice/src/App.css|36|1|V|css
+	    grid-column-gap: 1vh;
+5c6d0efaa5e9d6f63a08c670681b8e7d|file:///home/jdv/js/reactDice/src/App.css|90|1|V|css
+	    padding-right: 10%;
+7c4f29407893c334a6cb7a87bf045c0d|file:///home/jdv/js/reactDice/src/App.css|91|13|v|css
+	right
+0483e5fd9ee49fa47bb747eab2a7d13e|file:///home/jdv/js/reactDice/src/App.css|79|1|V|css
+	#chatboxTitle {
+	    text-align: center;
+	    color: var(--Pink);
+	    background-color: var(--Light-Gray);
+	    /* auto margins center an element within it's container horizontally */
+	    margin: auto;
+	    padding: 1%;
+	    font-size: 250%;
+	    width: 20%;
+	    order: 0;
+	    border-radius: 20px;
+	    padding-right: 10%;
+	    padding-left: 5%;
+	}
+fe7fd9df2746b0f448bdb86eddd71d60|file:///home/jdv/js/reactDice/src/App.css|140|13|V|css
+	    order: 0;
+f6785fea07d33a51608ad822f33fff7b|file:///home/jdv/js/reactDice/src/App.css|141|1|V|css
+	    padding-right: 10%;
+	    padding-left: 5%;
+4446e46624a7239d2698ed126bec6d21|file:///home/jdv/js/reactDice/src/App.css|85|1|V|css
+	    padding: 1%;
+087a51b1ae4dfbad3f223a77f89975f8|file:///home/jdv/js/reactDice/src/App.css|84|1|V|css
+	    margin-left: auto;
+9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/App.css|85|18|v|css
+	auto
+811882fecd5c7618d7099ebbd39ea254|file:///home/jdv/js/reactDice/src/App.css|85|12|v|css
+	left
+1708297b0d707efc88d2930c74285088|file:///home/jdv/js/reactDice/src/App.css|84|1|V|css
+	    margin-left: auto;
+	    margin-right: auto;
+dfb6227c8365b5f3d8ae2afa3f281b4f|file:///home/jdv/js/reactDice/src/App.css|135|1|V|css
+	    margin: auto;
+d3cd63bc41e8f8680f832a40e68f6c08|file:///home/jdv/js/reactDice/src/App.css|141|1|V|css
+	    /* padding-right: 10%; */
+	    /* padding-left: 5%; */
+ea2b2676c28c0db26d39331a336c6b92|file:///home/jdv/js/reactDice/src/App.css|77|27|v|css
+	start
+9e7ace81eb5d8c8e66d15edcaf439d42|file:///home/jdv/js/reactDice/src/App.css|77|5|v|css
+	justify
+9a0364b9e99bb480dd25e1f0284c8555|file:///home/jdv/js/reactDice/src/App.css|77|11|v|css
+	content
+ae98afa874c703bc7e321643c913aeae|file:///home/jdv/js/reactDice/src/App.css|78|26|V|css
+	    align-items: flex-end;
+222ae92ea21d206bd7254b16032e924c|file:///home/jdv/js/reactDice/src/App.css|59|1|V|css
+	    align-content: flex-end;
+897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/App.css|40|14|v|css
+	flex
+b58faf8e71a6fde42efda8d3df8431f9|file:///home/jdv/js/reactDice/src/App.css|117|5|V|css
+	    flex-direction: column;
+c171a97d351eded37ad8e2b509b96108|file:///home/jdv/js/reactDice/src/App.css|52|17|V|css
+	    display:grid;
+33a4f96db9a03ece135d846a8856d2a5|file:///home/jdv/js/reactDice/src/App.css|52|1|V|css
+	    grid-row: 2 / 9;
+	    grid-column: 4 / 5;
+5870683d35a48578c27776eeaad822d2|file:///home/jdv/js/reactDice/src/App.css|52|31|V|css
+	    grid-template-columns: auto auto;
+a58a0779c4f080851153e9a16006b450|file:///home/jdv/js/reactDice/src/App.css|31|18|V|css
+	    grid-auto-rows: minmax(100px, auto);
+e17fba5611885f4ce84fb189ece261fd|file:///home/jdv/js/reactDice/src/App.css|29|18|V|css
+	    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+cdc1464af69ea4c9147d90910498027d|file:///home/jdv/js/reactDice/src/App.css|28|12|V|css
+	    /* row / colums */
+9aad98540d40b187de9b2b8baf23e402|file:///home/jdv/js/reactDice/src/App.css|35|1|V|css
+	.App-header {
+	    background-color: var(--Background);
+	    min-height: 100vh;
+	    display: grid;
+	    align-items: center;
+	    justify-content: center;
+	    font-size: calc(10px + 2vmin);
+	    color: var(--White);
+	}
+94ad01e15abf46b43a69e3e7bde5e796|file:///home/jdv/js/reactDice/src/App.css|35|1|V|css
+	.App-link {
+	    color: var(--Cyan);
+	}
+19515b27a429286485b12ebfe14b862f|file:///home/jdv/js/reactDice/src/App.css|36|1|V|css
+	    display: grid;
+0e07f118fbf0833093b0eb8d2e57ad3c|file:///home/jdv/js/reactDice/src/App.css|91|9|V|css
+	    grid-column: 1 / 4;
+eefe05b5f63320590cc7ac6880675e10|file:///home/jdv/js/reactDice/src/App.css|66|17|V|css
+	    margin-top: 1%;
+20a25bc4e707132251b52a60b2f39a0e|file:///home/jdv/js/reactDice/src/App.css|40|1|V|css
+	    margin: 5%;
+8a3ba650c582150748df1d9655cedf4b|file:///home/jdv/js/reactDice/src/App.css|40|18|V|css
+	    margin-top: 5%;
+	    margin-right: 5%;
+	    margin-bottom: 5%;
+2df0a0c16cf39c29a067b0b7b70008dc|file:///home/jdv/js/reactDice/src/App.css|99|1|V|css
+	    /* margin-right: 2.5%; */
+1ce5ddf23906b7b05c2ee9ab17c701b9|file:///home/jdv/js/reactDice/src/App.css|98|1|V|css
+	    margin: 2%;
+7a523a2878bb699e3fa23cbfede3c9e2|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
+	      [row2-start] "footer footer footer" 25px [row2-end]
+54ff56aca33177244d45e17a61db0e7d|file:///home/jdv/js/reactDice/src/App.css|29|35|^v|css
+	header
+	footer
+	footer
+b9f3259b64012e360eba02826eecb020|file:///home/jdv/js/reactDice/src/App.css|29|34|^v|css
+	 
+	 
+	 
+099fb995346f31c749f6e40db0f395e3|file:///home/jdv/js/reactDice/src/App.css|29|21|v|css
+	header
+251d164643533a527361dbe1a7b9235d|file:///home/jdv/js/reactDice/src/App.css|30|21|v|css
+	footer
+3ead4598185ad88b625516d7029df3c9|file:///home/jdv/js/reactDice/src/App.css|28|1|V|css
+	    grid-template:
+	      [row1-start] "titlebar    timer" 10% [row1-end]
+	      [row2-start] "mapbox      chatbox" 70% [row2-end]
+	      [row3-start] "rollbox      commandbox" 20% [row3-end]
+	      / 70% auto;
+953c99327cbaf91db9147ef9d1d30927|file:///home/jdv/js/reactDice/src/App.css|31|5|V|css
+	    gap: 1%;
+7bc021fb6c13568ea77def386039fa24|file:///home/jdv/js/reactDice/src/App.css|52|1|V|css
+	    /* margin-left: 2.5%; */
+	    /* margin-right: 5%; */
+f792d1afb0399dce47533bead9d71a8a|file:///home/jdv/js/reactDice/src/App.css|30|5|v|css
+	align
+adb115059e28d960fa8badfac5516667|file:///home/jdv/js/reactDice/src/App.css|30|18|v|css
+	center
+3be4bd1c466fc04e9df2c1f3d63f1d7a|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
+	    align-items: start;
+ce6039ad3b839787ddc24e4af236b623|file:///home/jdv/js/reactDice/src/App.css|31|24|V|css
+	    place-items: stretch;
+3cf99c44f97f363440620ebd3677c9b6|file:///home/jdv/js/reactDice/src/App.css|31|27|V|css
+	    /* align-content: stretch; */
+7ec0da99936e2393edc1ae27111fcc03|file:///home/jdv/js/reactDice/src/App.css|31|27|V|css
+	    place-content: stretch;
+7ede1256c6d8a203d2b9ff3a5602483e|file:///home/jdv/js/reactDice/src/App.css|31|9|V|css
+	        ""
+35be8580884ad3abe366784b717bfb01|file:///home/jdv/js/reactDice/src/App.css|31|1|V|css
+	        "mapbox chatbox"
+e37d70e5121bac625f97faf49562c1e6|file:///home/jdv/js/reactDice/src/App.css|32|10|v|css
+	mapbox
+279ed8367e3b37380b6c73d514f80b33|file:///home/jdv/js/reactDice/src/App.css|101|1|V|css
+	.mapbox-grid-container {
+	    grid-area: mapbox;
+	
+	    background-color: var(--Background);
+	    border-style: rounded;
+	    border-radius: 20px;
+	    padding: 2%;
+	    /* margin: 2%; */
+	    /* margin-right: 0%; */
+	}
+6cf25a56fdc8e2fd96ed386a489247e8|file:///home/jdv/js/reactDice/src/App.css|119|1|V|css
+	#mapTitle {
+	    text-align: center;
+	    color: var(--Pink);
+	    background-color: var(--Light-Gray);
+	    /* auto margins center an element within it's container horizontally */
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 1%;
+	    font-size: 250%;
+	    width: auto;
+	    border-radius: 20px;
+	}
+1e6f018cc2b5705de12986d24e7a5623|file:///home/jdv/js/reactDice/src/App.css|143|1|V|css
+	#Title {
+	    text-align: center;
+	    color: var(--Pink);
+	    background-color: var(--Light-Gray);
+	    /* auto margins center an element within it's container horizontally */
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 1%;
+	    font-size: 250%;
+	    width: auto;
+	    border-radius: 20px;
+	}
+c6a4cb5dfff9c4fa074be2dbad25891e|file:///home/jdv/js/reactDice/src/App.css|131|1|V|css
+	
+	/* Time */
+	.timer-grid-container {
+	    grid-area: mapbox;
+	
+	    background-color: var(--Background);
+	    border-style: rounded;
+	    border-radius: 20px;
+	    padding: 2%;
+	    /* margin: 2%; */
+	    /* margin-right: 0%; */
+	}
+012fd52ebc375101cf2d00b0f576a65b|file:///home/jdv/js/reactDice/src/components/Titlebar/Titlebar.js|1|2|V|javascript
+	import Image from './Image'
+a4a9804acb2a556e21a400b4ab706de0|file:///home/jdv/js/reactDice/src/components/Titlebar/Titlebar.js|5|21|V|javascript
+	            <Image />
+c56078b1f6eae338b49920bdd84bf206|file:///home/jdv/js/reactDice/src/components/Titlebar/Titlebar.js|1|1|V|javascript
+	const Titlebar = () => {
+	    return (
+	        <div className='titlebar-grid-container'>
+	            <div id="titlebarTitle">Titlebar</div>
+	        </div>
+	    )
+	}
+	
+	export default Titlebar
+65f8b4d1d210ba43e5869f490cc0d250|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|1|1|V|javascript
+	import Image from './Image'
+	
+	const Map = () => {
+	    return (
+	        <div className='mapbox-grid-container'>
+	            <div id="mapTitle">Map</div>
+	            <Image />
+	        </div>
+	    )
+	}
+	
+	export default Map
+a76d4ef5f3f6a672bbfab2865563e530|file:///home/jdv/js/reactDice/src/App.css|144|4|v|css
+	Time
+6f34f3ecdf12f71f3c70dc8cef6451a5|file:///home/jdv/js/reactDice/src/App.css|144|1|V|css
+	/* Time */
+	.timer-grid-container {
+	    grid-area: mapbox;
+	
+	    background-color: var(--Background);
+	    border-style: rounded;
+	    border-radius: 20px;
+	    padding: 2%;
+	    /* margin: 2%; */
+	    /* margin-right: 0%; */
+	}
+05fa784ed4d713de15cf660435600f81|file:///home/jdv/js/reactDice/src/App.css|179|1|V|css
+	
+	
+	/* Time */
+	.timer-grid-container {
+	    grid-area: mapbox;
+	
+	    background-color: var(--Background);
+	    border-style: rounded;
+	    border-radius: 20px;
+	    padding: 2%;
+	    /* margin: 2%; */
+	    /* margin-right: 0%; */
+	}
+2c127bf32ccb4edf2bf22fea5a00e494|file:///home/jdv/js/reactDice/src/App.css|133|2|v|css
+	timer
+1f46d61869208456209d034ae30b79e4|file:///home/jdv/js/reactDice/src/App.js|3|1|V|javascript
+	import Chat from './components/Chat/Chat'
+c82f688345b9f8958941d830d28453a4|file:///home/jdv/js/reactDice/src/App.js|6|1|V|javascript
+	import Map from './components/Map/Map'
+80102570eddbfdb1c530186b1d589084|file:///home/jdv/js/reactDice/src/App.css|118|1|V|css
+	
+	#mapTitle {
+	    text-align: center;
+	    color: var(--Pink);
+	    background-color: var(--Light-Gray);
+	    /* auto margins center an element within it's container horizontally */
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 1%;
+	    font-size: 250%;
+	    width: auto;
+	    border-radius: 20px;
+	}
+3ae8f19e8383356aa836a15088bedbaa|file:///home/jdv/js/reactDice/src/App.css|144|2|v|css
+	mapTitle
+1afd32818d1c9525f82aff4c09efd254|file:///home/jdv/js/reactDice/src/App.css|37|21|v|css
+	column
+c524651263ce1d4c8ae109580c4566a2|file:///home/jdv/js/reactDice/src/App.css|27|35|v|css
+	 11%
+9a8a2574f1851e473330427fb492f6a9|file:///home/jdv/js/reactDice/src/App.css|28|24|V|css
+	    grid-template-rows: ;
+6955867a9b803f405e97b722a2d93432|file:///home/jdv/js/reactDice/src/App.css|27|1|V|css
+	    grid-template-columns: 11% 11% 11 11% 11% 11% 11% 11% 11%;
+54ca84a794888fe8d92834787dfa935a|file:///home/jdv/js/reactDice/src/App.css|28|19|v|css
+	columns
+929b38ab32eec3e926ec71c938b6e25b|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
+	        "titlebar timer"
+45fb129c76d4574dc19ace9620a2513e|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
+	        "titlebar timer"
+	        "map chat"
+	        "roll command";
+bad88118e683136ea575789abf057304|file:///home/jdv/js/reactDice/src/App.css|30|18|v|css
+	 titlebar
+6a262f900389160a0ef8b930565c0f54|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
+	        "titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar"
+9912b5dc7f4abf6acf19b5fc440ec757|file:///home/jdv/js/reactDice/src/App.css|30|37|v|css
+	titlebar
+bba8a02a0457b8ad7efd8713bd8ee967|file:///home/jdv/js/reactDice/src/App.css|36|1|V|css
+	        "map map map map map map titlebar titlebar titlebar"
+afe5372dddf18c49c93a9517a16448e3|file:///home/jdv/js/reactDice/src/App.css|35|1|V|css
+	        "map titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar"
+b0c2055fc9f7ef8f4a8055d949ff0db3|file:///home/jdv/js/reactDice/src/App.css|31|1|V|css
+	        "map map map map map map chat chat chat"
+239be7bb1f0ad688f21bebc4b34e5108|file:///home/jdv/js/reactDice/src/App.css|37|1|V|css
+	        "roll roll roll roll roll roll command command command"
+bbf48a540dca6d7f48895ffc63873b07|file:///home/jdv/js/reactDice/src/App.css|39|9|V|css
+	        "titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar";
+6feefb829027b9668c9bef08fd949559|file:///home/jdv/js/reactDice/src/App.css|1|55|v|css
+	Rajdhani
+8a31df85800e9efbbcea5c4799cec752|file:///home/jdv/js/reactDice/src/App.css|4|1|V|css
+	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500&display=swap');
+0f50f6fb60f63b570698965c56e9613f|file:///home/jdv/js/reactDice/src/App.css|8|1|V|css
+	  src: local('Rajdhani'), url(./fonts/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
+bf68511d7a9e075aa62658735ec72a3f|file:///home/jdv/js/reactDice/src/App.css|6|1|V|css
+	@font-face {
+	    font-family: 'Rajdhani';
+	    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+	}
+	
+a123a2e84a0ae3016c16d4bc910501f2|file:///home/jdv/js/reactDice/src/App.css|5|1|V|css
+	
+	@font-face {
+	    font-family: 'Rajdhani';
+	    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+	}
+d248b3954dc5c5aaaef1407ce1e8d208|file:///home/jdv/js/reactDice/src/App.css|139|18|v|css
+	Lato
+f35f2992da9516958e73d81404f52a8a|file:///home/jdv/js/reactDice/src/App.css|11|1|V|css
+	@font-face {
+	    font-family: 'Stalinist One';
+	    @import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
+	}
+1d3a7ac9a79857946b4ec5b357abdf5a|file:///home/jdv/js/reactDice/src/App.css|17|19|v|css
+	Stalinist One
+a3cb790df63b7dc1b42ed80d7025b89b|file:///home/jdv/js/reactDice/src/App.css|16|1|V|css
+	@font-face {
+	    font-family: 'Sofia';
+	    @import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
+	}
+fe8f9c5bde9f3782880714013377a3bb|file:///home/jdv/js/reactDice/src/App.css|3|1|V|css
+	    @import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
+328d17361b9ebb3e956230b83b68d901|file:///home/jdv/js/reactDice/src/App.css|18|5|v|css
+	@import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
+	
+d48ab5dd68a5eb2d925c4ad8b34d593d|file:///home/jdv/js/reactDice/src/App.css|8|5|v|css
+	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500&display=swap');
+	
+65be3ca52f4c84d67a297bb5d3b33f43|file:///home/jdv/js/reactDice/src/App.css|13|5|v|css
+	@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+080a21d75c71ad3844842dcdfa06cef7|file:///home/jdv/js/reactDice/src/App.css|3|5|V|css
+	    @import url('https://fonts.googleapis.com/css2?family=Sofia&effect=fire&display=swap');
+af8ea364aff09dd78bf9a9f7e2634815|file:///home/jdv/js/reactDice/src/App.css|2|27|v|css
+	cursive
+fd8303dc23a1516c231d158e8b0d2f3b|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    var countDownTime = new Date("15:37:25").getTime();
+	
+	    // Update the count down every 1 second
+	    var x = setInterval(function() {
+	
+	      // Get today's date and time
+	      var now = new Date().getTime();
+	
+	      // Find the distance between now and the count down date
+	      var distance = countDownTime - now;
+	
+	      // Time calculations for days, hours, minutes and seconds
+	      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	
+	      // Display the result in the element with id="demo"
+	      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+	      + minutes + "m " + seconds + "s ";
+	
+	      // If the count down is finished, write some text
+	      if (distance < 0) {
+	        clearInterval(x);
+	        document.getElementById("demo").innerHTML = "EXPIRED";
+	      }
+	    }, 1000);
+efb4777327e6f704fb1519c1882f93ec|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|21|28|v|javascript
+	Timer
+ef8cef5acc68a307e3d169037cf87546|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|21|1|V|javascript
+	            <div id="timeTitle">Timer</div>
+9eec58876d9eac94c1432ad9955e5722|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    function startTimer() {
+3140c222e3e838493949060341aec175|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    function startTimer() {
+	        const duration = 1
+	        var timer = duration, minutes, seconds;
+	        setInterval(function () {
+	            minutes = parseInt(timer / 60, 10);
+	            seconds = parseInt(timer % 60, 10);
+	    
+	            minutes = minutes < 10 ? "0" + minutes : minutes;
+	            seconds = seconds < 10 ? "0" + seconds : seconds;
+	    
+	            display.textContent = minutes + ":" + seconds;
+	    
+	            if (--timer < 0) {
+	                timer = duration;
+	            }
+	        }, 1000);
+	    }
+6b7fd84c6eabaf7124edda9127c578ca|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|11|21|v|javascript
+	textContent
+857bb04648770147f74db46ba180ffec|file:///home/jdv/js/reactDice/src/App.css|199|1|V|css
+	#timerTitle {
+	    font-family: 'Bungee', cursive;
+	    text-align: center;
+	    color: var(--Pink);
+	    background-color: var(--Light-Gray);
+	    /* auto margins center an element within it's container horizontally */
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 1%;
+	    font-size: 150%;
+	    width: auto;
+	    border-radius: 20px;
+	}
+e209d79f2dd6ea5827b2309b409abe62|file:///home/jdv/js/reactDice/src/App.js|34|1|V|javascript
+	        <Titlebar />
+1dccadfed7bcbb036c56a4afb97e906f|file:///home/jdv/js/reactDice/src/App.css|56|15|v|css
+	command
+aa8af3ebe14831a7cd1b6d1383a03755|file:///home/jdv/js/reactDice/src/App.css|54|16|v|css
+	chat
+b6a5d96a4e99b63723ab54ddb471baad|file:///home/jdv/js/reactDice/src/App.css|56|10|v|css
+	roll
+b85ec314bf443b797ef8a66b3b03f8a4|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|25|v|javascript
+	duration
+915ec53ad6ccbc79962bcae3bbf2a010|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|11|18|V|javascript
+	            display.innerHTML = minutes + ":" + seconds;
+a3409381519d28bcc48ac06943aeb6de|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|16|1|V|javascript
+	                display.innerHTML = minutes + ":" + seconds;
+6b57e91b2cfc2866daa4a0433e1fdaaa|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|1|V|javascript
+	                 "Turn Over";
+c78a7e68270c532449ccdcb680e2eb16|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|37|v|javascript
+	minutes + ":" + seconds;
+	            } else {
+	                display.innerHTML = minutes + ":" + seconds;
+	            }
+	
+	        }, 1000);
+	    }
+	    
+	    window.onload = function () {
+	        var oneMinute = 60 * 1,
+	            display = document.querySelector('#time');
+	        startTimer(oneMinute, display);
+	    };
+	
+	    const playerNam
+0bec2eabe50b2e046f6e100451f53e28|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|37|v|javascript
+	minutes + ":" + seconds
+3c7603c25e0798140575d26925d8ae0b|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|29|43|v|javascript
+	myBar
+3babe96d0bef4b896401917f1f6035fe|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|29|11|v|javascript
+	elem
+b21c802c487c9ea666e3e0f9292de248|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|38|14|V|javascript
+	          // time.innerHTML = width * 1  + '%';
+fae02167ec1f18a789ec1738851aea8c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|33|1|V|javascript
+	        if (width <= 0) {
+	          clearInterval(id);
+3bd531332c6b9aca9a45619035cdc274|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|33|9|V|javascript
+	        else {
+4e1ddba1c31545ee09fb38ae1fd79346|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|35|9|V|javascript
+	        }
+9a032022eb58f6da7214557160ea24a6|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|48|36|v|javascript
+	startTimer
+410569531c20a468d26625929a05fbcc|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|48|36|v|javascript
+	shrinkBar()
+fb60b3db3d1b41a857d09544dc9f01dc|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|47|42|v|javascript
+	shrinkBar
+5fbc8adc4f9078a5d7532eec446f4a8c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|49|1|V|javascript
+	            <div onLoad={shrinkBar()}></div>
+8bca5b08bd8cd6e7e8e0b849a6d7abea|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|39|1|V|javascript
+	          time.style.width = width + '%'; 
+89ff8f210d59b22297cc398a83b359e1|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|51|43|V|javascript
+	            // <div onLoad={startTimer}></div>
+5d59df8dc0ec92624b5ea403542c2562|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|50|1|V|javascript
+	            <div onLoad={shrinkBar()}></div>
+	            <div onLoad={startTimer}></div>
+48e94d96c308ce6b9dabbf8e72a14e47|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|1|V|javascript
+	        startTimer(oneMinute, display);
+30a933b0bd3f5c720d33f0b59888a533|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|46|1|V|javascript
+	    function load() {
+	        shrinkBar();
+	
+	    }
+eaae26a6fb20ed3ef54fb23bfa0b1fcc|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|38|30|v|javascript
+	width
+d5f7a48558520fcec2bc5bc4a973f9c0|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|35|38|V|javascript
+	          console.log(`Bar width: ${width}`);
+1975246eb4a55e6c9bbf10c0d0bf50e5|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|29|1|V|javascript
+	    function shrinkBar() {
+	        console.log("Shrinking Bar!");
+	      var time = document.getElementById("time");   
+	      var width = 60000;
+	      var id = setInterval(frame, 1);
+	      function frame() {
+	        if (width <= 0) {
+	          clearInterval(id);
+	          time.style.width = '0%'; 
+	        } else {
+	          width--; 
+	          time.style.width = (width/60) + '%'; 
+	        }
+	      }
+	    }
+	
+8489fae1e50b6a16804250998d1e86f9|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|26|22|V|javascript
+	        shrinkBar(oneMinute, display);
+344340a46c91da2c9629ea61844d2a58|file:///home/jdv/js/reactDice/src/App.css|228|1|V|css
+	    from {width: 100%;}
+d98a07f84921b24ee30f86fd8cd85c3c|file:///home/jdv/js/reactDice/src/App.css|229|5|v|css
+	from
+f48aa9da6333669964155e029a7ca6c2|file:///home/jdv/js/reactDice/src/App.css|211|1|V|css
+	
+	    animation-name: timebar;
+	    animation-duration: 60s;
+8dc5344bc0746e1cc5abf896ca03bbdf|file:///home/jdv/js/reactDice/src/App.css|216|18|v|css
+	Pink
+7c01df8b4d4cb2d789b21cd0f77759ca|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|34|1|V|javascript
+	            <div id="time"></div>
+31d95948a0e60429ef9b70bd2722dca4|file:///home/jdv/js/reactDice/src/App.css|213|1|V|css
+	#time {
+	    font-family: 'Bungee', cursive;
+	    text-align: center;
+	    color: var(--White);
+	    background-color: var(--Light-Gray);
+	    /* auto margins center an element within it's container horizontally */
+	    margin: auto;
+	    margin-top: 2%;
+	    /* padding: 1%; */
+	    font-size: 250%;
+	    width: 100;
+	    border-radius: 20px;
+	
+	    animation-name: timebar;
+	    animation-duration: 60s;
+	}
+9f3b437c7a6b9a584517b5cd1329cb92|file:///home/jdv/js/reactDice/src/App.css|226|1|V|css
+	    animation-name: timebar;
+	    animation-duration: 60s;
+720ac0a19732ddb277a463134135fbf3|file:///home/jdv/js/reactDice/src/App.css|228|1|V|css
+	    font-family: 'Bungee', cursive;
+	    text-align: center;
+	    color: var(--White);
+cf758710ba0067e4d20f4ad1d21e6cca|file:///home/jdv/js/reactDice/src/App.css|228|1|V|css
+	    background-color: var(--Light-Gray);
+718928833edc2894b2cf33413de03476|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|53|v|javascript
+	selectors
+2dc5ed5b9b6e5a259b4c2c83d609d1ce|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|26|20|v|javascript
+	oneMinute
+463637958afedde8795e2fcfdd43f960|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|27|V|javascript
+	        const timeInMs = document.querySelector("#time").innerHTML
+77a04da066daf1ed171732f7527b0810|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    function startTimer(duration, display) {
+	        var timer = duration, minutes, seconds;
+	        setInterval(function () {
+	            minutes = parseInt(timer / 60, 10);
+	            seconds = parseInt(timer % 60, 10);
+	    
+	            minutes = minutes < 10 ? "0" + minutes : minutes;
+	            seconds = seconds < 10 ? "0" + seconds : seconds;
+	    
+	    
+	            if (--timer < 0) {
+	                timer = 0
+	                display.innerHTML = "Turn Over";
+	            } else {
+	                display.innerHTML = minutes + ":" + seconds;
+	            }
+	
+	        }, 1000);
+	    }
+7c1fb3224b28493feff8fd5a1edd546c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|30|26|V|javascript
+	            <div id="timebar"></div>
+e063b77ff0b7902eca8150004bbd0367|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|20|20|v|javascript
+	oneMinute, display
+d38672c4f3cb959f9588789e64a7a3aa|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|19|20|V|javascript
+	        display = document.querySelector('#time');
+b3851da802d2d7169f48df0d842460a9|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|18|20|V|javascript
+	        var oneMinute = 60 * 1,
+265739c67f879498e84f3a3b2dd8c46e|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|17|1|V|javascript
+	    window.onload = function () {
+a635f48c8a1543ade7ef09415c826999|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|18|6|V|javascript
+	    };
+802437ea2e0ac6faeeb0c8de49d6e875|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|17|17|V|javascript
+	    startTimer();
+7bb0edd98f22430a03b67f853e83c2ca|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|16|1|V|javascript
+	        
+d5a4ba0949c5606d822cca97fc7edbad|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|29|V|javascript
+	    let timerInterval = null;
+27632b84ac9b4e47a42661eca00811ea|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|13|V|javascript
+	        let timerInterval = null;
+118c0307bfde4600371e7eaf78c358f9|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|7|25|v|javascript
+	timerInterval
+08e6f2ada686768baedea6d61b98f9fd|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|23|34|v|javascript
+	base-timer-label
+a113a8e42ee8cb1ad7b15a60b4e7520d|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|37|13|V|javascript
+	                <!-- Remaining time label -->
+089e157c385b048aab6548c6acd674f4|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|38|13|V|javascript
+	            <div id="timerTitle">It's {playerName} turn!</div>
+cc1b2a3e88153b49bae8c9b8adebbd61|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|26|1|V|javascript
+	    const playerName = "your"
+e4c3301af771a8cf7ec6a381b5d1af5a|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|13|1|V|javascript
+	    let timerInterval = null;
+	
+	    const startTimer = () => {
+	        timerInterval = setInterval(() => {
+	        
+	        // The amount of time passed increments by one
+	        timePassed = timePassed += 1;
+	        timeLeft = TIME_LIMIT - timePassed;
+	        
+	        // // The time left label is updated
+	        // document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
+	     }, 1000);
+	
+ea5a1cbe764918679997181a3ea281d3|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|1|V|javascript
+	    }
+f079b1128a7790991bfc81c103f1103e|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|22|1|V|javascript
+	            <div id="timer" onload={startTimer}></div>
+a5fef2945f1a67a5b57297cdf0682168|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|3|5|V|javascript
+	    document.getElementById("timer").innerHTML = `...`
+05c10569fcb7adc2c3670fe987ef2624|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|28|1|V|javascript
+	            <svg class="base-timer__svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+	                <g class="base-timer__circle">
+	                  <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+	                </g>
+	              </svg>
+	              <span>
+	              </span>
+2f2cd54cc245d38e50a56827c5d6952a|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|35|32|v|javascript
+	timeLeft
+b4c62d7792baf178273feba80b203aa2|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    // Start with an initial value of 20 seconds
+	    const TIME_LIMIT = 20;
+	
+	    // Initially, no time has passed, but this will count up
+	    // and subtract from the TIME_LIMIT
+	    let timePassed = 0;
+	    let timeLeft = TIME_LIMIT;
+acb802a188ee447973c0ce19bbb8e6e1|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|3|4|^v|javascript
+	     
+	     
+	     
+	     
+	     
+	     
+0733c0306dcacac7aea5c141eebb6ae8|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|5|V|javascript
+	    // Start with an initial value of 20 seconds
+6304c38b0fdbd103c58cec2f3fb4ecc2|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|56|1|V|javascript
+	            <div class="base-timer">
+	              <svg class="base-timer__svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+	                <g class="base-timer__circle">
+	                  <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+	                </g>
+	              </svg>
+	              <span id="base-timer-label" class="base-timer__label">
+	               {formatTime({timeLeft})}
+	              </span>
+	            </div>
+a389ea8d1edc025451c6027692678951|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|35|V|javascript
+	    document.getElementById("timerApp").innerHTML = `...`
+1284b8a036925b4f13dd6642b7c3f8da|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    document.getElementById("timerApp").innerHTML = `
+	    <div class="base-timer">
+	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+	        <g class="base-timer__circle">
+	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+	        </g>
+	      </svg>
+	      <span>
+	        <!-- Remaining time label -->
+	      </span>
+	    </div>
+	    `;
+	    
+04d9860e5a3b7558d69d569a5c56f7a3|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|59|32|v|javascript
+	onload={timeStart()}
+dc79b556a9563dfbdd93d839313fa60f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|61|44|V|javascript
+	            <div onload={timeStart()}></div>
+d890d813229e6bbfc12805866b63423c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|29|V|javascript
+	    const timeStart = () => {
+bfd6fdda2f1b3f1c5dbe8fd7fb1140dd|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|21|V|javascript
+	        startTimer();
+0e252fe8f421e96096fc9f7a8a6656c3|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|15|4|V|javascript
+	    document.getElementById('timerApp').onload = () => {timeStart()}
+ffb2be84c7e07fa9e99ab9c22a926b0b|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|1|1|V|javascript
+	import PropTypes from 'prop-types'
+21d5ee49033fa8b12439298d54a56a1e|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|7|1|V|javascript
+	.defaultProps = {
+	}
+	
+	.propTypes = {
+	}
+383980f42c37637587f1eb2174e9e389|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
+	    document.getElementById("timerApp").innerHTML = `
+	    <div class="base-timer">
+	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+	        <g class="base-timer__circle">
+	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+	        </g>
+	      </svg>
+	      <span>
+	        <!-- Remaining time label -->
+	      </span>
+	    </div>
+	    `;
+	    
+	    // Start with an initial value of 20 seconds
+	    const TIME_LIMIT = 20;
+	    
+	    // Initially, no time has passed, but this will count up
+	    // and subtract from the TIME_LIMIT
+	    let timePassed = 0;
+	    let timeLeft = TIME_LIMIT;
+	
+	
+	    function startTimer() {
+	        setInterval(() => {
+	        
+	        // The amount of time passed increments by one
+	        timePassed = timePassed += 1;
+	        timeLeft = TIME_LIMIT - timePassed;
+	        
+	        // The time left label is updated
+	        document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
+	      }, 1000);
+	    }
+	    
+	    
+	
+	    function formatTime(time) {
+	        // The largest round integer less than or equal to the result of time divided being by 60.
+	        const minutes = Math.floor(time / 60);
+	        
+	        // Seconds are the remainder of the time divided by 60 (modulus operator)
+	        let seconds = time % 60;
+	        
+	        // If the value of seconds is less than 10, then display seconds with a leading zero
+	        if (seconds < 10) {
+	          seconds = `0${seconds}`;
+	        }
+	    
+	        // The output in MM:SS format
+	        return `${minutes}:${seconds}`;
+	    }
+a782b3953605687dea0596db031e20e2|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|5|1|V|javascript
+	            <div id='timerApp'>Time</div>
+	            <input type='button' onClick={startTimer}>Start Timer</input>
+0ceb76568efb9e104c6fe6a726c0a581|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|55|5|V|javascript
+	        <input type='button' onClick={startTimer}>Start Timer</input>
+10238a0b2b71760eeedee7b1240e11ce|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|3|1|V|javascript
+	    `
+	    <div class="base-timer">
+	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+	        <g class="base-timer__circle">
+	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+	        </g>
+	      </svg>
+	      <span>
+	        <!-- Remaining time label -->
+	      </span>
+	    </div>
+	    `;
+f49da96d330a8712c55e19311f3aa7be|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|68|5|V|javascript
+	        <!-- Remaining time label -->
+b5aab04fe7895b669d643878da9535df|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|2|1|V|javascript
+	    document.getElementById("timerApp").innerHTML = 
+	    `
+	    <div class="base-timer">
+	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+	        <g class="base-timer__circle">
+	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+	        </g>
+	      </svg>
+	      <span>
+	        <!-- Remaining time label -->
+	      </span>
+	    </div>
+	    `;
+0cf31b2c283ce3431794586df7b0996d|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|2|4|V|javascript
+	    

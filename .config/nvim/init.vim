@@ -792,7 +792,8 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+" set cmdheight=2
+set cmdheight=1
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
@@ -1081,7 +1082,7 @@ require'bufferline'.setup{
     mappings = true,
     buffer_close_icon= '',
     modified_icon = '●',
-    close_icon = '',
+    -- close_icon = '',
     left_trunc_marker = '',
     right_trunc_marker = '',
     max_name_length = 18,

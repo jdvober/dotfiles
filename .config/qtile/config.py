@@ -98,11 +98,11 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Run Command Keybindings
-    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">" -fn "Jetbrains Mono" -nb ' + \
+    Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">>" -fn "Jetbrains Mono" -nb ' + \
                                    colors["draculaBG"] + ' -nf ' + colors["draculaComment"] + ' -sb ' + colors["main"] + ' -sf ' + colors["draculaBG"])),
     Key([mod], 'Return', lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], 'u', lazy.spawn('alacritty'), desc="Launch terminal"),
-    Key([mod], 'i', lazy.spawn('code'), desc="Launch editor"),
+    Key([mod], 'i', lazy.spawn('AppImageLauncher Applications/Onivim2.AppImage'), desc="Launch editor"),
     Key([mod], 'o', lazy.spawn('firefox'), desc="Launch browser"),
     Key([mod], 'p', lazy.spawn('pcmanfm'), desc="Launch file manager")
 
@@ -111,14 +111,14 @@ keys = [
 #  groups = [Group(i) for i in "asdfuiop"]
 groups = [
     Group("a", spawn="alacritty", layout="MonadTall",
-          init=True, position=1, label="a:term1"),
-    Group("s", layout="max", init=True, position=2, label="s:editor"),
-    Group("d", layout="max", init=True, position=3, label="d:www"),
-    Group("f", init=True, position=4, label="f:files"),
-    Group("z", init=True, position=5, label="z:term2"),
-    Group("x", init=True, position=6, label="x:term3"),
-    Group("c", init=True, position=7, label="c:vscode"),
-    Group("v", init=True, position=8, label="v:music")
+          init=True, position=1, label=""),
+    Group("s", layout="max", init=True, position=2, label=""),
+    Group("d", layout="max", init=True, position=3, label=""),
+    Group("f", init=True, position=4, label=""),
+    Group("z", init=True, position=5, label=""),
+    Group("x", init=True, position=6, label=""),
+    Group("c", init=True, position=7, label=""),
+    Group("v", init=True, position=8, label="")
 ]
 
 
@@ -140,13 +140,12 @@ for i in groups:
 layouts = [
     layout.Max(),
     layout.MonadTall(
-        margin=6, border_focus=colors["draculaPink"], border_width=2),
+        margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     layout.MonadWide(
-        margin=6, border_focus=colors["draculaPink"], border_width=2),
-    layout.Stack(num_stacks=2, margin=6,
-                 border_focus=colors["draculaFG"], border_width=2),
+        margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
+    # layout.Stack(num_stacks=2, margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaFG"], border_width=2),
     layout.RatioTile(
-        margin=3, border_focus=colors["draculaPink"], border_width=2),
+        margin=3, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     #  layout.Tile(margin = 6),
     # Try more layouts by unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
@@ -173,25 +172,28 @@ screens = [
                                          "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
                 widget.Spacer(length=4),
                 widget.GroupBox(disable_drag=True,
-                                rounded=False,
+                                fontsize=28,
+                                rounded=True,
                                 this_current_screen_border=colors["main"],
                                 this_screen_border=colors["draculaCurrentLine"],
                                 other_current_screen_border=colors["main"],
-                                other_screen_border=colors["draculaCurrentLine"]
+                                other_screen_border=colors["draculaCurrentLine"],
+                                padding_x=12,
+                                highlight_method="block"
                                 ),
                 #  widget.Spacer(length=350),
                 widget.Spacer(length=bar.STRETCH),
-                widget.Clock(format='[%m-%d-%Y] %I:%M %p'),
+                widget.Clock(format=' [%m-%d-%Y]  [%I:%M %p]'),
                 #  widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"], max_title_width=120),
                 #  widget.Systray(),
                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
                 #  widget.CheckUpdates(colour_have_updates=colors["red"], colour_no_update=colors["main"], no_update_string="yay", display_format="yay:{updates}"),
                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  widget.CPU(format="CPU:{load_percent}%"),
+                #  widget.CPU(format="{load_percent}%"),
                 #  widget.CPU(format=" {load_percent}%"),
                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
                 #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
-                #  widget.Memory(format="MEM:{MemPercent}%"),
+                #  widget.Memory(format="{MemPercent}%"),
                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
                 #  widget.Net(format="{down} ↓↑ {up}"),
                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
@@ -201,39 +203,72 @@ screens = [
             24, background=colors["medGrey"], opacity=0.85, margin=6
         ),
     ),
-    #  Screen(
-        #  top=bar.Bar(
-            #  [
-                #  widget.CurrentLayoutIcon(custom_icon_paths=[
-                                         #  "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
-                #  widget.Spacer(length=bar.STRETCH),
-                #  widget.Chord(
-                    #  chords_colors={
-                        #  'launch': ("#ff0000", "#ffffff"),
-                    #  },
-                    #  name_transform=lambda name: name.upper()
-                #  ),
-                #  widget.Systray(),
-                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  widget.CheckUpdates(
-                    #  colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string="yay", display_format="yay: {updates}"),
-                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  widget.CPU(format="CPU:{load_percent}%"),
-                #  #  widget.CPU(format=" {load_percent}%"),
-                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
-                #  widget.Memory(format="MEM:{MemPercent}%"),
-                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  widget.Net(format="{down} ↓↑ {up}"),
-                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  widget.TextBox(fmt="VOL:", padding=0),
-                #  widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
-                              #  volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
-                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-            #  ],
-            #  24, background=colors["medGrey"], opacity=0.85, margin=6
-        #  ),
-    #  ),
+     Screen(
+         top=bar.Bar(
+             [
+                 widget.CurrentLayoutIcon(custom_icon_paths=[
+                                          "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
+                 widget.Spacer(length=bar.STRETCH),
+                 widget.Chord(
+                     chords_colors={
+                         'launch': ("#ff0000", "#ffffff"),
+                     },
+                     name_transform=lambda name: name.upper()
+                 ),
+                 widget.Systray(),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.CheckUpdates(
+                     colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string=" ", display_format=": {updates}"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.CPU(format=" {load_percent}%"),
+                 # widget.CPU(format=" {load_percent}%"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
+                 widget.Memory(format=" {MemPercent}%"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.Net(format=" {down} ↓↑ {up}"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.TextBox(fmt=" ", padding=0),
+                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
+                               volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+             ],
+             24, background=colors["medGrey"], opacity=0.85, margin=6
+         ),
+     ),
+     Screen(
+         top=bar.Bar(
+             [
+                 widget.CurrentLayoutIcon(custom_icon_paths=[
+                                          "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
+                 widget.Spacer(length=bar.STRETCH),
+                 widget.Chord(
+                     chords_colors={
+                         'launch': ("#ff0000", "#ffffff"),
+                     },
+                     name_transform=lambda name: name.upper()
+                 ),
+                 widget.Systray(),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.CheckUpdates(
+                     colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string="", display_format=": {updates}"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.CPU(format=" {load_percent}%"),
+                 # widget.CPU(format=" {load_percent}%"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
+                 widget.Memory(format=" {MemPercent}%"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.Net(format=" {down} ↓↑ {up}"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.TextBox(fmt=" ", padding=0),
+                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
+                               volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+             ],
+             24, background=colors["medGrey"], opacity=0.85, margin=6
+         ),
+     ),
 ]
 
 # Drag floating layouts.

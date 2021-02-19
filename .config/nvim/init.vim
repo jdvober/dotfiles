@@ -20,15 +20,16 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 " Plugins
 "*****************************************************************************
+Plug 'mhinz/vim-startify'
 Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
 
 if LINUX()
     " Need to have pynvim installed to use.  Please see :help provider-python for details.  Also, running :checkhealth will be useful if you run into problems.
     Plug 'sirver/ultisnips'
-        let g:UltiSnipsExpandTrigger = '<tab>'
-        let g:UltiSnipsJumpForwardTrigger = '<tab>'
-        let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-        let g:UltiSnipsEditSplit="tabdo"
+        " let g:UltiSnipsExpandTrigger = '<tab>'
+        " let g:UltiSnipsJumpForwardTrigger = '<tab>'
+        " let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+        " let g:UltiSnipsEditSplit="tabdo"
     
     Plug 'lervag/vimtex'
         let g:tex_flavor='latex'
@@ -85,7 +86,6 @@ Plug 'junegunn/fzf.vim'
 
 " Terminal-only plugins
 " Plug 'tmsvg/pear-tree'
-    " use "TSInstall <language>
 Plug 'scrooloose/nerdcommenter'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
@@ -96,7 +96,7 @@ Plug 'xolox/vim-misc'
 Plug 'akinsho/nvim-bufferline.lua'
     " See bufferline section for config
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " Plug 'neovim/nvim-lspconfig'
     " " See Language Server section for config
 " Plug 'glepnir/lspsaga.nvim'
@@ -104,13 +104,13 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
     " " See Completion-nvim section for config
 " Plug 'hrsh7th/nvim-compe'
 Plug 'cohama/lexima.vim'
-    " To play nice with nvim-compe
-    inoremap <silent><expr> <C-Space> compe#complete()
-    inoremap <silent><expr> <CR>      compe#confirm(lexima#expand('<LT>CR>', 'i'))
-    inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+    " " To play nice with nvim-compe
+    " inoremap <silent><expr> <C-Space> compe#complete()
+    " inoremap <silent><expr> <CR>      compe#confirm(lexima#expand('<LT>CR>', 'i'))
+    " inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
 
 call plug#end()
 " Required
@@ -306,40 +306,40 @@ colorscheme dracula
 "*****************************************************************************
 " Compe (terminal only!)
 "*****************************************************************************
-let g:compe = {}
-let g:compe.enabled = v:true
-let g:compe.autocomplete = v:true
-let g:compe.debug = v:false
-let g:compe.min_length = 1
-let g:compe.preselect = 'enable'
-let g:compe.throttle_time = 80
-let g:compe.source_timeout = 200
-let g:compe.incomplete_delay = 400
-let g:compe.allow_prefix_unmatch = v:true
-
-let g:compe.source = {}
-let g:compe.source.path = v:true
-let g:compe.source.buffer = v:true
-let g:compe.source.vsnip = v:false
-let g:compe.source.nvim_lsp = v:true
-let g:compe.source.nvim_lua = v:true
-let g:compe.source.your_awesome_source = {}
-
-lua << EOF
-local t = function(str)
-  return vim.api.nvim_replace_termcodes(str, true, true, true)
-end
-
-local check_back_space = function()
-    local col = vim.fn.col('.') - 1
-    if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
-        return true
-    else
-        return false
-    end
-end
-
-EOF
+" let g:compe = {}
+" let g:compe.enabled = v:true
+" let g:compe.autocomplete = v:true
+" let g:compe.debug = v:false
+" let g:compe.min_length = 1
+" let g:compe.preselect = 'enable'
+" let g:compe.throttle_time = 80
+" let g:compe.source_timeout = 200
+" let g:compe.incomplete_delay = 400
+" let g:compe.allow_prefix_unmatch = v:true
+"
+" let g:compe.source = {}
+" let g:compe.source.path = v:true
+" let g:compe.source.buffer = v:true
+" let g:compe.source.vsnip = v:false
+" let g:compe.source.nvim_lsp = v:true
+" let g:compe.source.nvim_lua = v:true
+" let g:compe.source.your_awesome_source = {}
+"
+" lua << EOF
+" local t = function(str)
+  " return vim.api.nvim_replace_termcodes(str, true, true, true)
+" end
+"
+" local check_back_space = function()
+    " local col = vim.fn.col('.') - 1
+    " if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
+        " return true
+    " else
+        " return false
+    " end
+" end
+"
+" EOF
 "*****************************************************************************
 " Vim Airline (terminal only!)
 "*****************************************************************************
@@ -681,11 +681,11 @@ let g:which_key_map['l'] = {
 " EOF
 " autocmd BufWritePre *.go lua goimports(1000)
 " autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
-"
-"
-" "*****************************************************************************
-" " Lspsaga (terminal only!)
-" "*****************************************************************************
+
+
+"*****************************************************************************
+" Lspsaga (terminal only!)
+"*****************************************************************************
 " lua << EOF
 " local saga = require 'lspsaga'
 "
@@ -759,37 +759,37 @@ let g:netrw_fastbrowse = 0
 " Treesitter (terminal only!)
 "*****************************************************************************
 
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-    custom_captures = {
-      -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-      ["foo.bar"] = "Identifier",
-    },
-  },
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "gnn",
-      node_incremental = "grn",
-      scope_incremental = "grc",
-      node_decremental = "grm",
-    },
-  },
-  indent = {
-    enable = true
-  },
-}
-EOF
+" lua <<EOF
+" require'nvim-treesitter.configs'.setup {
+  " highlight = {
+    " enable = true,
+    " custom_captures = {
+      " -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+      " ["foo.bar"] = "Identifier",
+    " },
+  " },
+  " incremental_selection = {
+    " enable = true,
+    " keymaps = {
+      " init_selection = "gnn",
+      " node_incremental = "grn",
+      " scope_incremental = "grc",
+      " node_decremental = "grm",
+    " },
+  " },
+  " indent = {
+    " enable = true
+  " },
+" }
+" EOF
 "
 "*****************************************************************************
 " CoC (terminal only!)
 "*****************************************************************************
 
 " " Some servers have issues with backup files, see #649.
-" set nobackup
-" set nowritebackup
+set nobackup
+set nowritebackup
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -926,21 +926,21 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <space>ca  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <space>ce  :<C-u>CocList extensions<cr>
 " Show commands.
-nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent><nowait> <space>cc  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+nnoremap <silent><nowait> <space>co  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent><nowait> <space>cs  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent><nowait> <space>cj  :<C-u>CocNext<CR>
 " Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent><nowait> <space>ck  :<C-u>CocPrev<CR>
 " Resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+nnoremap <silent><nowait> <space>cp  :<C-u>CocListResume<CR>
 
 "*****************************************************************************
 "*****************************************************************************
@@ -973,8 +973,8 @@ map <LeftMouse> <NOP>
 map <RightMouse> <NOP>
 
 " Remaping Pgup Pgdn
-map <PageDown> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-D>:set scroll=0<CR>
-map <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scroll=0<CR>
+map <silent> <PageDown> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-D>:set scroll=0<CR>
+map <silent> <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scroll=0<CR>
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <Esc> :noh<CR><Esc>
@@ -1070,8 +1070,8 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 "*****************************************************************************
 " Bufferline
 "*****************************************************************************
-nnoremap <silent> <leader>` :BufferLineMoveNext<CR>
-nnoremap <silent> <leader>~ :BufferLineMovePrev<CR>
+" nnoremap <silent> <leader>` :BufferLineMoveNext<CR>
+" nnoremap <silent> <leader>~ :BufferLineMovePrev<CR>
 lua << EOF
 require'bufferline'.setup{
   options = {
@@ -1098,3 +1098,20 @@ require'bufferline'.setup{
   }
 }
 EOF
+
+let g:startify_custom_header = [
+            \ '                                                                                   ',
+            \ '                                                                                   ',
+            \ '  /$$    /$$          /$$                            /$$    /$$ /$$                ',
+            \ ' | $$   | $$         | $$                           | $$   | $$|__/                ',
+            \ ' | $$   | $$ /$$$$$$ | $$$$$$$   /$$$$$$   /$$$$$$  | $$   | $$ /$$  /$$$$$$/$$$$  ',
+            \ ' |  $$ / $$//$$__  $$| $$__  $$ /$$__  $$ /$$__  $$ |  $$ / $$/| $$ | $$_  $$_  $$ ',
+            \ '  \  $$ $$/| $$  \ $$| $$  \ $$| $$$$$$$$| $$  \__/  \  $$ $$/ | $$ | $$ \ $$ \ $$ ',
+            \ '   \  $$$/ | $$  | $$| $$  | $$| $$_____/| $$         \  $$$/  | $$ | $$ | $$ | $$ ',
+            \ '    \  $/  |  $$$$$$/| $$$$$$$/|  $$$$$$$| $$          \  $/   | $$ | $$ | $$ | $$ ',
+            \ '     \_/    \______/ |_______/  \_______/|__/           \_/    |__/ |__/ |__/ |__/ ',
+            \ '                                                                                   ',
+            \ '                                                                                   ',
+            \ '                 [To open multiple files, use "B" to batch select]                 ',
+            \ ]
+

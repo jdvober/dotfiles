@@ -169,6 +169,7 @@ alias inkscape-figures="~/.local/bin/inkscape-figures"
 alias gs="git status"
 alias gdmount="rclone mount --daemon --allow-other --allow-root --vfs-cache-mode full google-drive-work: ~/google-drive-work"
 alias gdunmount="fusermount -u /home/jdv/google-drive-mount"
+alias oni="${HOME}/Applications/Onivim2*.AppImage"
 
 # Location shortcuts
 alias ..="cd .."

@@ -25,3 +25,4 @@ usr/share/icons/Dracula/apps/scalable/UNetbootin.svg
 linkFilesLog.txt
 .config/powerline-shell/themes/__pycache__/basic.cpython-39.pyc
 ./.config/nvim/plugged
+./.config/coc

@@ -93,7 +93,7 @@ keys = [
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 
     # Power Management Keybindings
-    Key([mod2], "l", lazy.spawn('betterlockscreen --lock')),
+    Key([mod2], "l", lazy.spawn('betterlockscreen -l')),
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 

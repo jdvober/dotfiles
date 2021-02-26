@@ -1,2408 +1,1505 @@
-9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/App.css|195|25|v|css
-	auto
-b068931cc450442b63f5b3d276ea4297|file:///home/jdv/js/reactDice/src/App.css|214|10|v|css
-	name
-7b05a806414143f2f0b6176b0d477b4b|file:///home/jdv/js/reactDice/src/App.css|306|19|V|css
-	    flex-shrink: 3;
-0a6b99cbbd821a6db47dd5234acd921f|file:///home/jdv/js/reactDice/src/App.css|221|1|V|css
-	    justify-content: space-evenly;
-9e7ace81eb5d8c8e66d15edcaf439d42|file:///home/jdv/js/reactDice/src/App.css|222|5|v|css
-	justify
-1afd32818d1c9525f82aff4c09efd254|file:///home/jdv/js/reactDice/src/App.css|220|21|v|css
-	column
-ccfc59a528a109fa4204e8ea06e8b68b|file:///home/jdv/js/reactDice/src/App.css|221|16|v|css
-	wrap
-6796816f186c47fe3abeba6c5758e02f|file:///home/jdv/js/reactDice/src/App.css|230|1|V|css
+c14210b5dbd8d5d2243616d6abd19148|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|20|18|v|javascript
+	repeats * ( duration + pause)
+63480f2e3055fdf90539ed8ff31b48ac|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|7|4|V|javascript
+				repeats++;
+8f8222326e8ff494c55fc61d88dbd9d0|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|4|10|V|javascript
+		let repeats = 0
+ec1b81965109165de6b38cd92c1e39f9|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|3|27|v|javascript
+	pause
+c2e33d9bed17247ad63b5fc52b0e42fb|file:///home/jdv/js/reactDice/src/sass/App.scss|13|8|V|scss
+	@use 'tabs';
+318eacee22d216048f84fe25581ac084|file:///home/jdv/js/reactDice/src/sass/_map.scss|5|1|V|scss
+		// background-color: colors.$Background;
+4d0836388d7f040b1f7082bd48cd9ef9|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    padding: 2%;
+5c6d0efaa5e9d6f63a08c670681b8e7d|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    padding-right: 10%;
+11b8fdbd493f05616e2e6c4e67cbaf04|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    /* padding-left: 10%; */
+eefe05b5f63320590cc7ac6880675e10|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    margin-top: 1%;
+20500e00d2bf4c607e9c78523a66e0db|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    /* margin-right: 0%; */
+bfb187ee3df68e2744d96942b1eb0975|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|15|V|scss
+	    width: 85%;
+6ac1985fae2f71b2ec281573b20c6fb9|file:///home/jdv/js/reactDice/src/sass/_map.scss|7|1|V|scss
+		border-style: rounded;
+		border-radius: 20px;
+		padding: 2%;
+		margin-left: 2%;
+d74668d8ba4d0d9885ec15043169d49d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|13|1|V|scss
+	    border-style: rounded;
+	    border-radius: 20px;
+	    padding: 2%;
+	    margin-left: 1.5%;
+	    margin-top: 0.5%;
+a53ee7da495853e861e5f53962d69300|file:///home/jdv/js/reactDice/src/sass/_command.scss|9|1|V|scss
+	    border-style: rounded;
+	    border-radius: 20px;
+	    padding: 2%;
+	    margin-left: 2%;
+	    height: 56%;
+3db215353ac27b91977accd18578d152|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|15|1|V|scss
+		border-style: rounded;
+		border-radius: 20px;
+		height: 121%;
+		width: 93%;
+		padding: 2%;
+8f2b3cb4dbe9725c6d5919a2171246e1|file:///home/jdv/js/reactDice/src/sass/_map.scss|93|1|V|scss
+	    width: auto;
+	    height: 83%;
+8f5e3a9c3732d0562e91b0ba7f71941a|file:///home/jdv/js/reactDice/src/sass/_map.scss|91|1|V|scss
 	    margin-top: auto;
-4b7785237dc5c5980d556b37b1ebba5e|file:///home/jdv/js/reactDice/src/App.css|201|16|V|css
+	    margin-bottom: auto;
+26e2fc4a213684e567fad8af851004a7|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
+	    margin: auto;
+	    height: 80%;
+	    width: 80%;
+9400a308b390c2fcbf0e066348e95f7a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|1|V|scss
+	    height: 125%;
+	    width: auto;
+	    transition: 0.4s;
+	    opacity: 100%;
+60c4bd444208c4734af1bab465cbdbaf|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|1|V|scss
+	    height: 125%;
+	    width: auto;
+e8458c2fe05834d9c6cdd13bec4954b4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|35|1|V|scss
+	    height: 150%;
+	    width: auto;
+84df2fde031cbda765b806e3012eea84|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|39|16|V|scss
+	    height: 25%;
+cb6a37c202ba7c0c7154836e9582c5e0|file:///home/jdv/js/reactDice/src/sass/_map.scss|19|1|V|scss
+	    max-height: 100vh;
+	    column-gap: 4%;
+dfb6227c8365b5f3d8ae2afa3f281b4f|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|1|V|scss
+	    margin: auto;
+358944c71477f05eacc67c923985618f|file:///home/jdv/js/reactDice/src/sass/_map.scss|36|1|V|scss
+	    height: 100%;
+	    width: 100%;
+	    padding: 2%;
+8ae6a61beef67835874013fd263a685b|file:///home/jdv/js/reactDice/src/sass/_map.scss|82|1|V|scss
+	.mapImage {
+	    grid-area: mapimage;
+	    /* margin: auto; */
+	    box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	}
+ae35e51ecfcc9c36020563f4cef7ef85|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|1|V|scss
+	    /* margin: auto; */
+752a712b122f491714dd7670aa9232c8|file:///home/jdv/js/reactDice/src/sass/_map.scss|6|1|V|scss
+		background-color: colors.$Green;
+35b712a18de45bc05216221bc7b70764|file:///home/jdv/js/reactDice/src/sass/_map.scss|4|5|V|scss
+	.grid-container {
+		// background-color: colors.$Background;
+	}
+	
+5803d77e7ffc1369b86a3f77013fae0b|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
+		background-color: colors.$Red;
+27a816ca12669aef53edab259d82277d|file:///home/jdv/js/reactDice/src/components/Map/Image.js|19|12|v|javascript
+	imageWidthString
+de889dfbdafa63cca2341d81b720fbe1|file:///home/jdv/.zshrc|181|19|v|zsh
+	local/share/nvim/swap
+	
+fc8213b774d36b00434fd9b5c557ef6d|file:///home/jdv/.zshrc|203|5|V|zsh
+	    git push
+e0d6cf6665d50acce72ad152ae990665|file:///home/jdv/js/reactDice/src/sass/App.scss|20|10|V|scss
+		max-height: 100vh;
+c305432a89972e0430d7f65908265720|file:///home/jdv/js/reactDice/src/sass/App.scss|40|1|V|scss
+	    /* gap: 1% 1%; */
+	    /* align-items: start; */
+51e6cd92b6c45f9affdc158ecca2b8b8|file:///home/jdv/js/reactDice/src/sass/_command.scss|8|28|v|scss
+	Yellow
+02da871292896f27bacd506e0ecc5222|file:///home/jdv/js/reactDice/src/sass/_chat.scss|14|1|V|scss
+		width: 96%;
+		min-height: 72vh;
+		max-height: 72vh;
+887b41bab4da12434c0ef1ae2ee83c04|file:///home/jdv/js/reactDice/src/sass/_chat.scss|13|1|V|scss
+	    // height: 62%;
+ab66a21e4cc5da801a06b01ca3891a99|file:///home/jdv/js/reactDice/src/sass/_chat.scss|43|1|V|scss
+	    min-width: 51%;
+	    max-width: 100%;
+063abb0ab32be7b3046e1f5d33a0f1af|file:///home/jdv/js/reactDice/src/sass/_chat.scss|47|1|V|scss
+	    padding: 2%;
+	    padding-left: 5%;
+	    margin-left: 2.5%;
+	    margin-right: 5%;
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+	    font-size: 20px;
+	    border-radius: 0px 20px 0px 20px;
+67a989e7b31f1dd4b2e457de4dc5e0e5|file:///home/jdv/js/reactDice/src/sass/_chat.scss|55|1|V|scss
+	    min-height: 3em;
+	    max-height: 3em;
+83facfbe063c40fc6ecae8645860db50|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|37|1|V|vim
+	"*****************************************************************************
+	" Used for moving one space in insert mode
+	"*****************************************************************************
+92c568a95f98dadfb5533e493ff97bcc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|36|3|v|vim
+	Used for moving one space in insert mode
+040d2b074e3a99c9ba34f12588152bb7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|117|1|V|vim
+	
+	"*****************************************************************************
+	" This unsets the "last search pattern" register by hitting return
+	"*****************************************************************************
+	
+d0457fece2625a12d9ed2d2846cf6be0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|128|3|v|vim
+	This unsets the "last search pattern" register by hitting return
+e00c176ccd293cd85cfe6c473caaf869|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|26|24|v|vim
+	"\<Space>"
+	
+d4a60019da160430384c32420d024684|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|25|v|vim
+	<leader>c"\<Space>"
+c26d6cccab8bcb33306c4ab04abae4b8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
+	nnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
+9f27410725ab8cc8854a2769c7a516b8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|69|21|v|scss
+	green
+2e42eeb832e48803e769a3db540200c5|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|70|17|V|scss
+			max-height: 50%;
+fd6ca751c3718288c455a0974b1fbac6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|21|1|V|scss
+		flex-grow: 1;
+e30550d8bc02813c56be7dd98e7b5a06|file:///home/jdv/js/reactDice/src/sass/_chat.scss|15|1|V|scss
+		min-height: 72vh;
+		max-height: 72vh;
+bc5a782b79d401a3b43680fac314c6a4|file:///home/jdv/js/reactDice/src/sass/_chat.scss|14|1|V|scss
+		width: 96%;
+ccc3d992926f675652d01957c953039e|file:///home/jdv/js/reactDice/src/sass/_chat.scss|9|1|V|scss
+		align-self: center;
+0e497cbb33cb29fb7cfcc10f68a041de|file:///home/jdv/js/reactDice/src/sass/_chat.scss|52|1|V|scss
+	    margin-left: 2.5%;
+	    margin-right: 5%;
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+1a5df828e8c122cbfcd9defdbb683ca7|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|15|10|V|javascript
+					<Chat />
+d3d622c0d448f93b28dd441d24130f56|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|17|10|V|javascript
+					<Scoreboard />
+2d2423ea0e2973e17c95f256d773d240|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|18|7|V|scss
+		// -webkit-tap-highlight-color: transparent;
+		// background-color: colors.$Orange;
+e3ae77fdf26155296f17bb01dc8f5dd6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|20|11|V|scss
+		opacity: 0.2;
+897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|8|11|v|scss
+	flex
+45632c448addec55a453586857f80da7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|9|1|V|scss
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+dddfb308b7ba80affe34ba46ca6f0402|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|18|14|V|scss
+		max-height: 1fr;
+e900bdf08971e2acf335ca12f19a2eef|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|20|3|V|scss
+			max
+db116c009ca486412b21add57ba3ea81|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|1|V|scss
+			max-height: 1fr;
+	
+5ef28c1da6c1cb60e3ba123743957624|file:///home/jdv/js/reactDice/src/sass/App.scss|27|1|V|scss
+	    display: grid;
+	    grid-template-columns:  3fr 1fr;
+	    grid-template-rows: 1fr 1fr 1fr;
+	    grid-auto-flow: row;
+	    grid-template-areas:
+	        "dice		timer"
+	        "map		tabbox"
+	        "command	tabbox";
+	
+	    column-gap: 1%;
 	    row-gap: 1%;
-36f7bf45d87eefac69ade303e73a8fb8|file:///home/jdv/js/reactDice/src/App.css|222|20|v|css
-	space-evenly
-4fed6c37871b732cbea9f8f3d4855f93|file:///home/jdv/js/reactDice/src/App.css|223|48|v|css
-	, 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-39b774c21fe362e75748972fc9635efb|file:///home/jdv/js/reactDice/src/App.css|218|1|V|css
+7765e45b0472532f1c762d087eb9b6bc|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|8|1|V|scss
+		display: grid;
+6fed8ed92ef60e0ee1c981266b09887e|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|16|^v|scss
+	timer
+	tabbo
+	tabbo
+1dccadfed7bcbb036c56a4afb97e906f|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|15|10|v|scss
+	command
+00e82ada108e167024e87d4aa0a2c475|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|29|4|V|scss
+			max-height: 1fr;
+02d1cc8d1d501e76fe8b23ddd5a789bf|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|29|1|V|scss
+	
+			border-bottom: 1px solid colors.$Light-Gray;
+9b2d3a47401e55e7a1e20ef29873370d|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|75|1|V|scss
+			grid-area: "tab-panel"
+7ede1256c6d8a203d2b9ff3a5602483e|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|10|V|scss
+	        ""
+f1e5d7a5fe13498abbdeb0f1f19136a8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|15|v|scss
+	panel
+e354c877c19014a388fe093a01b38f9c|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|1|V|scss
+		// -webkit-tap-highlight-color: transparent;
+b73219fc7756bc742de2d4aea0fc7f5f|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|28|24|V|scss
+			grid-area: "tab-list";
+e72e8b27f19b2c5c4bbdfb64b1388acc|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|25|2|V|scss
+		background-color: colors.$Orange;
+105d84bfae4c8b58fcafc9d1449f66e8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|78|16|V|scss
+			display: none;
+9914a0ce04a7b7b6a8e39bec55064b82|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|28|v|scss
+	Light
+9ed7827a0e311b4c47f4249bb32e0cdc|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|28|v|scss
+	Light-Gray
+4cffd1420f1d54fef04a0b3da61ed450|file:///home/jdv/js/reactDice/src/sass/_colors.scss|2|1|V|scss
+	$Background-Dark: #16171d;
+	$Background: #282a36;
+	$Medium-Gray: #44475a;
+	$White: #f8f8f2;
+	$Light-Gray: #6272a4;
+	$Cyan: #8be9fd;
+	$Blue: #8be9fd;
+	$Green: #50fa7b;
+	$Orange: #ffb86c;
+	$Pink:	#ff79c6;
+	$Purple: #bd93f9;
+	$Red: #ff5555;
+	$Yellow: #f1fa8c;
+d5417331177d813cc2b72d49491ce44b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|18|1|V|scss
+	$Medium-Gray: #44475a;
+	$White: #f8f8f2;
+	$Light-Gray: #6272a4;
+	$Cyan: #8be9fd;
+	$Blue: #8be9fd;
+	$Green: #50fa7b;
+	$Orange: #ffb86c;
+	$Pink:	#ff79c6;
+	$Purple: #bd93f9;
+	$Red: #ff5555;
+	$Yellow: #f1fa8c;
+dcd6398b2e7b251a72b2c43a4b780808|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|29|v|scss
+	#282a36
+56ccffda33776371294dbbc040a3faa7|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
+	/* Dracula Color Scheme */
+	$Background-Dark: #16171d;
+	$Background: #282a36;
+	$Medium-Gray: #44475a;
+	$White: #f8f8f2;
+	$Light-Gray: #6272a4;
+	$Cyan: #8be9fd;
+	$Blue: #8be9fd;
+	$Green: #50fa7b;
+	$Orange: #ffb86c;
+	$Pink:	#ff79c6;
+	$Purple: #bd93f9;
+	$Red: #ff5555;
+	$Yellow: #f1fa8c;
+3791bdd4378316c70c3e87ffe198884f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|10|15|V|scss
+	$Light-Gray: #6272a4;
+a9f0a7f6eee70b782d075370e92f55e3|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Red: #ff5555;
+7260436a05a23e61c53553be11f4b152|file:///home/jdv/js/reactDice/src/sass/_colors.scss|15|1|V|scss
+	$Orange: #ffb86c;
+48c6205999d8b3591ad15de53af5411f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Yellow: #f1fa8c;
+1f2577417ff39acb883a440402f74d0b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|15|1|V|scss
+	$Green: #50fa7b;
+1bca319f9e8ce485c6751b93d191af61|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Purple: #bd93f9;
+c6232c558d26f60b21db12d01787d4ae|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Pink:	#ff79c6;
+e89b9e64e13b7317c0b3a1983160bc1f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|8|1|V|scss
+	$Dracula-Medium-Gray: #44475a;
+	$Dracula-Light-Gray: #6272a4;
+	$Dracula-White: #f8f8f2;
+	$Dracula-Red: #ff5555;
+	$Dracula-Orange: #ffb86c;
+	$Dracula-Yellow: #f1fa8c;
+	$Dracula-Green: #50fa7b;
+	$Dracula-Blue: #8be9fd;
+	$Dracula-Purple: #bd93f9;
+	$Dracula-Pink:	#ff79c6;
+74948390dda958630022b1868489ce18|file:///home/jdv/js/reactDice/src/sass/_colors.scss|4|2|^v|scss
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+bcdf63ee1dcb5d9deb1f772d13a63fe3|file:///home/jdv/js/reactDice/src/sass/_colors.scss|4|15|v|scss
+	44475a
+33ff2cdd577d25fc81e898f86e4cd197|file:///home/jdv/js/reactDice/src/sass/_colors.scss|5|14|v|scss
+	#6272a
+9d99c9d67f6c8535ce7f287914ada5da|file:///home/jdv/js/reactDice/src/sass/_colors.scss|6|9|v|scss
+	#f8f8f2
+5297d5ce7e329116a286206704560542|file:///home/jdv/js/reactDice/src/sass/_colors.scss|7|7|v|scss
+	#ff5555
+a9a7260d0159e4181282b2743e6ce96d|file:///home/jdv/js/reactDice/src/sass/_colors.scss|8|10|v|scss
+	#ffb86c
+0574d485ebba0b1e632677c95d8cad57|file:///home/jdv/js/reactDice/src/sass/_colors.scss|9|10|v|scss
+	#f1fa8c
+473e02b59dd6288fc66d859871ced5cb|file:///home/jdv/js/reactDice/src/sass/_colors.scss|10|9|v|scss
+	#50fa7b
+4056d6a60880301524b0c7ec4a36dabc|file:///home/jdv/js/reactDice/src/sass/_colors.scss|11|8|v|scss
+	#8be9fd
+d77a111383d047c11d518553e08cd68b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|12|10|v|scss
+	#bd93f9
+b4ee368d86adfa024e48758d626b508a|file:///home/jdv/js/reactDice/src/sass/_colors.scss|13|8|v|scss
+	#ff79c6
+9594eec95be70e7b1710f730fdda33d9|file:///home/jdv/js/reactDice/src/sass/_colors.scss|26|10|v|scss
+	Blue
+1b91b5e6c4e45dcfdcdba7957bd8ad25|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
+	/* Main Color Definitions, update with theme colors */
+	$Body-Background: $Dracula-Background-Dark;
+	$Grid-Container-Background: $Dracula-Background;
+	$Medium-Gray: $Dracula-Medium-Gray;
+	$Light-Gray: $Dracula-Light-Gray;
+	$White: $Dracula-White;
+	$Red: $Dracula-Red;
+	$Orange: $Dracula-Orange;
+	$Yellow: $Dracula-Yellow;
+	$Green: $Dracula-Green;
+	$Blue: $Dracula-Cyan;
+	$Cyan: $Dracula-Cyan;
+	$Purple: $Dracula-Purple;
+	$Pink:	$Dracula-Pink;
+	
+221964facffc60a2c15449fcfd5b294b|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
+	.dice-container {
+	    display: flex;
+	    flex-direction: row;
+		justify-content: space-evenly;
+	    align-items: center;
+	
+		background-color: colors.$Red;
+	}
+	
+	.unheld {
+	    transition: 0.4s;
+	    opacity: 100%;
+	}
+	
+	.unheld:hover {
+	    height: 150%;
+	    width: auto;
+	}
+	
+	.held {
+	    box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+	}
+	
+	.saved {
+		opacity: 100%;
+	}
+19f84d8351d0b77f923b9d2e810f9498|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|1|V|scss
+		.unheld:hover {
+			height: 150%;
+			width: auto;
+		}
+8b56cdf48109ed4cb5b930aa8b310936|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
+			background-color: colors.$Red;
+bd47c79395059324b90fc6f24bd0490f|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|8|19|v|scss
+	space-around
+4fe9c15f2ce177b8989affafdef682fd|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|17|V|scss
+			// flex-shrink: 1;
+5385d0aaf3228767b1ddfc8c2dd63fb6|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|23|1|V|scss
+		.unheld {
+			transition: 0.4s;
+			opacity: 100%;
+	
+			.unheld:hover {
+				height: 150%;
+				width: auto;
+			}
+		}
+		
+		
+		.held {
+			box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+		}
+		
+		.saved {
+			opacity: 100%;
+		}
+171ccc9ab86c15e06331c0d18eb2997a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|5|1|V|scss
+		grid-area: dice;
+e4ad444d516635e1b009b3f8e6d2e3ae|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|1|V|scss
+		justify-content: flex-start;
+f898db45df9f2767e31368fe5de0f426|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|4|V|scss
+			justify-content: flex-start;
+ceba66c97e83473d4b3070b6ebb06418|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|18|1|V|scss
+			justify-content: space-evenly;
+2b3b1c954f84bdbb586ac789b6e4b4a3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|4|9|V|scss
+	.tray-grid-container {
+	
+		display: flex;
+	
+		font-family: 'Lato', sans-serif;
+		// background-color: colors.$Background;
+		background-color: colors.$Orange;
+	
+4a95f0eb3aa1656cce570ef9554c6848|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|5|19|v|javascript
+	timer-grid-container
+2293eb844f3cbce85ce1c1de89e33f19|file:///home/jdv/js/reactDice/src/sass/App.scss|40|16|V|scss
+	    opacity: 0.9;
+fbeb3f386479dceb26badf488ec0acd4|file:///home/jdv/js/reactDice/src/App.js|12|1|V|javascript
+			<Timer />
+			<TabComponent />
+	        <Map />
+	        <Tray />
+	        <Command />
+23effc0059f8fec90a4358463e222e6f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|37|V|javascript
+				<Time duration={30} delay={2000}/>
+060fd336f1541c19b99fb530d54dff12|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|4|v|javascript
+	<Time duration={30} delay={2000}/>
+72f541b2b0f4d6ec5fd64ba393d2cc7a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|57|1|V|vim
+	"*****************************************************************************
+	" Enable NERDCommenterToggle to check all selected lines is commented or not 
+	"*****************************************************************************
+b475bfc1187c3bf5b41c63f56c67a87a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|64|3|v|vim
+	Enable NERDCommenterToggle to check all selected lines is commented or not 
+e0af170f2a113675e706bef9fecf2d5b|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|10|3|V|javascript
+			<div>
+2d0596a45e302740020ccb5a8eb2a382|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|67|1|V|vim
+	let g:NERDCustomDelimiters = {'javascriptreact': { 'leftAlt': '{/*', 'rightAlt': '*/}' }}
+	let g:NERDAltDelims_javascriptreact = 1
+19ee4f81d83293b484e0a50b56a83714|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|62|1|V|vim
+	
+	"*****************************************************************************
+	" Custom Delimiters
+	"*****************************************************************************
+2a85066d77b69d0d9171825a0f0c7dc1|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|4|V|javascript
+				<SavedDice />
+4c33b750ffe7bc42c10ca45c710e3190|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|3|V|javascript
+				<SavedDice  />
+839c330a6267c55e0d3c15bff8dc736a|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|4|^v|javascript
+	<SavedDice  />
+b8090c7f060668db54f5d7b21f58d1d5|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|1|^v|javascript
+	*			<SavedDice  />*
+df8c02724e16f1e03f48d9685ac21a09|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|1|^v|javascript
+	/*			<SavedDice  />*/
+214f42eba1ef948856347ce8ade9198d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
+	nnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
+	vnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
+1d32bb013c28a30ec6b013858a95c51e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
+	nnoremap <silent> <leader><leader>c 0<C-v>$S*<C-v>$S/<C-v>$S}
+2361e79d0e283f99143a208d113df1a2|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|V|javascript
+			<div className='grid-container' id='map-grid-container'>
+6ebefa51b0c5733f091a84832716cecc|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|^v|javascript
+	*		<div className='grid-container' id='map-grid-container'>*
+1ca5e71f9aa269bbab29d86dabb55381|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|^v|javascript
+	/*		<div className='grid-container' id='map-grid-container'>*/
+a8957ccf91a8c8b3ca1515cbe7712677|file:///home/jdv/js/reactDice/src/components/Map/Map.js|5|1|V|javascript
+		return (
+fea087517c26fadd409bd4b9dc642555|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|23|v|vim
+	normal
+1b0b755bcaa9f2b5bab321ad45cf02a4|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|62|v|javascript
+			{/
+948f64e6082600dfe831ef5c1f49ee09|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|136|1|V|vim
+	nnoremap <silent> <leader><leader>u 0dt*x$F*xxx
+8b8a360d6b63fcfcf4c9e6d8f96d4431|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|31|V|vim
+	:command Vb :execute "insert! "
+1d5549871765bbfeb92be9a406a5c36d|file:///home/jdv/js/reactDice/src/components/Map/Map.js|9|15|v|javascript
+				{/
+a12bde56c97d53c4e88bcd19180429df|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|38|V|javascript
+		// let imageWidth = window.innerWidth;
+d0dc5c430cfbc322e981d6da541f576d|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|48|V|javascript
+		// let horizontalMargin = (windowWidth - imageWidth);
+60e7fb6b52f24dcb9e6028fe28d5c829|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|12|V|javascript
+		let imageWidth = window.innerWidth;
+e4bb6f6eaafb51c4cf418a7602f22cca|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|37|V|javascript
+		let windowWidth = window.innerWidth;
+a981b0fe78efbeff463cfbe2fbc6b67c|file:///home/jdv/js/reactDice/src/components/Map/Image.js|17|12|v|javascript
+	windowWidthString
+a0ab0e51b58e49c75bfc144140b68f36|file:///home/jdv/js/reactDice/src/components/Map/Image.js|17|34|V|javascript
+					width={imageWidthScaledString}
+a0c8751244dbf7b346c3f730f72f4511|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|11|V|javascript
+		let imageWidthScaled = window.innerWidth * 0.1
+		let imageWidthScaledString = toString(imageWidthScaled)
+6ba5ed8767721c1d1f2921d466db2ef7|file:///home/jdv/js/reactDice/src/sass/_map.scss|17|1|V|scss
+	.mapImage {
+	    grid-area: mapimage;
+		max-width: 100%; // Contains the image of the map to at most, the size of it's container
+	    box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	}
+	
+	.saved-dice-grid-container {
+	    grid-area: saveddice;
+		background-color: colors.$Yellow;
+	}
+	
+	.saved-dice-container {
 	    display: flex;
 	    flex-direction: row;
 	    flex-wrap: wrap;
 	    justify-content: space-evenly;
 	    align-content: center;
-f792d1afb0399dce47533bead9d71a8a|file:///home/jdv/js/reactDice/src/App.css|218|5|v|css
-	align
-67af3a34cfe3d1a90cb667641ec57645|file:///home/jdv/js/reactDice/src/App.css|218|5|V|css
-	    align-self: center;
-ff4a008470319a22d9cf3d14af485977|file:///home/jdv/js/reactDice/src/App.css|214|14|v|css
-	grid
-00347608fcead3db4b74787c91f30ead|file:///home/jdv/js/reactDice/src/App.css|214|17|V|css
-	    display: flex;
-bb52a82d0daf697605392eb2903cd4d6|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|7|47|v|javascript
-	.sort()
-ccc36ffd54bebf4dcb2992341bb51842|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|12|22|v|javascript
-	.sort((a.val, b.val) => a.val-b.val)
-25e1547d1448aa98f382e33c505716b6|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|12|22|v|javascript
-	.sort((a, b) => a.val-b.val)
-ddb01ad3eff58441bd4850291e11aaa5|file:///home/jdv/js/reactDice/src/App.css|268|23|V|css
-	    flex-direction: row;
-24c4a8db8c5d9e7c88c809db975ebb7f|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|13|18|v|javascript
-	dice.sort((a, b) => a.val-b.val)
-450d27786ad3f9a9c1cf2ed450324a17|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|8|19|v|javascript
-	dice.filter
 	
-db56ea47a8bee9b2139925d4765a08b9|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|8|1|V|javascript
-	    let newDice = dice.sort((a, b) => a.val-b.val)
-14f7543b4de29c05e2cbf0359a90fdd1|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|8|1|V|javascript
-	        // Sort the dice before mapping to group by value
-06c693f16d0c2d05cd867cf85957f9b2|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|10|23|v|javascript
-	.sort((a, b) => b.val-a.val)
-8e9d5dc302b620e24f0332dc187c9622|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|10|1|V|javascript
-	    let newDice = dice.sort((a, b) => b.val-a.val)
-7764cbb82a2e98aeb8a1d6e117018096|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|11|1|V|javascript
-	    newDice = newDice.sort((a, b) => b.val-a.val)
-59e347509e7b64a549ff6ab308d0cedc|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|11|5|V|javascript
-	    t newDice = dice.sort((a, b) => b.val-a.val)
-da143a4fcaf320f47432583b7e75eb9f|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|8|5|V|javascript
-	        // Sort the dice before mapping to group by value
-	    let newDice = dice.sort((a, b) => b.val-a.val)
-5fdcbf768644d63c27d761569272a994|file:///home/jdv/js/reactDice/src/Store.js|134|13|V|javascript
-	            state.dice.sort((a, b) => a.val - b.val)
-6f32d920927a30ef2521d58aa2f10fa5|file:///home/jdv/js/reactDice/src/Store.js|134|11|V|javascript
-	        }),
-125c9750e0a2196eea9fead229a11a71|file:///home/jdv/js/reactDice/src/Store.js|134|13|v|javascript
-	.sort((a, b) => a.val - b.val)
 	
-c06882809892a1a8f3e221cc43068f10|file:///home/jdv/js/reactDice/src/Store.js|114|13|V|javascript
-	            tempDice = tempDice.sort((a, b) => a.val - b.val)
-b6a5d96a4e99b63723ab54ddb471baad|file:///home/jdv/js/reactDice/src/components/Command/RollDiceButton.js|14|69|v|javascript
-	roll
-98a7a1ef5bcb2480d5be37d1dbfba39c|file:///home/jdv/js/reactDice/src/components/Map/SavedDie.js|57|14|v|javascript
-	clas
-288fbcfa6f51fa567b98732acbba622a|file:///home/jdv/js/reactDice/src/App.css|224|5|V|css
-	    box-shadow: 0 4px 8px 0 rgba(75, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-5ee4eda539ec5b444b3ab1a5f3acb260|file:///home/jdv/js/reactDice/src/App.css|224|1|V|css
-	    box-shadow: 0 0 8px 7px rgba(75, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-01459084a3f69ddc1944ccb24bb80db5|file:///home/jdv/js/reactDice/src/App.css|229|1|V|css
-	    background-color: #001F3F;
-07432cebacf77bad9c8263ee17e6ce7e|file:///home/jdv/js/reactDice/src/App.css|232|1|V|css
-	    background-color: #FF4136;
-06abafc0c7939d068db40b1c0f530776|file:///home/jdv/js/reactDice/src/App.css|229|1|V|css
-	    box-shadow: 0 0 8px 7px rgba(75, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	    animation: pulse 60s ease-in-out 0s infinite;
+	}
+	
+	@keyframes pulse {
+	  0%, 100% {
+	    box-shadow: 0 80%px 2px rgba(colors.$White, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-	  100% {
-	    background-color: #001F3F;
-00751fb3445842984b07fda2774b621f|file:///home/jdv/js/reactDice/src/App.css|229|1|V|css
-	    box-shadow: 0 0 8px 7px rgba(75, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	  8% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Red, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-0fb22b1b85c109608328f1a2e0be3652|file:///home/jdv/js/reactDice/src/App.css|226|5|V|css
-	    stretch
-7b1bd426c4fbe7485a611af689ec1da1|file:///home/jdv/js/reactDice/src/App.css|226|1|V|css
-	        pulse 
-	        5s
-	        ease-out
-	        0s
-	        alternate
-	        infinite
-	        none
-	        running;
-564ae101027c589facaedc001f51e5b4|file:///home/jdv/js/reactDice/src/App.css|224|25|V|css
-	    /* box-shadow: 0 0 8px 7px rgba(75, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); [> hoffset voffset blur spread color <] */
-0198de86475db99b947c09916e533781|file:///home/jdv/js/reactDice/src/App.css|230|1|V|css
-	    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-40ae1f55f658540f543a7ebd9173053b|file:///home/jdv/js/reactDice/src/App.css|205|1|V|css
-	    background-color: var(--Background);
-a9ded1e5ce5d75814730bb4caaf49419|file:///home/jdv/js/reactDice/src/App.css|225|29|v|css
-	Background
-b237a3bbb99af055e2a156f51824bfc0|file:///home/jdv/js/reactDice/src/App.css|206|1|V|css
-	    border-style: rounded;
-	    border-radius: 20px;
-8db20d7e6af79574ebebee7b743c3059|file:///home/jdv/js/reactDice/src/App.css|224|5|V|css
-	    min-width: 20px;
-	    border-color: var(--Medium-Gray);
-	    border-style: rounded;
-	    border-radius: 20px;
-	    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-f8eedc2312d683d0f99436b6db0aaf5b|file:///home/jdv/js/reactDice/src/App.css|254|1|V|css
-	    background-color: var(--Background);
-	    border-style: rounded;
-	    border-radius: 20px;
-2ec5ded4cab3abcb54750df6348aafa6|file:///home/jdv/js/reactDice/src/App.css|215|21|V|css
-	    min-height: 100px;
-845d8456320171e7f4e3461b11bad0c0|file:///home/jdv/js/reactDice/src/App.css|215|21|V|css
-	    background-color: var(--Red);
-8f385c32132e0df647b890fc4f32fdec|file:///home/jdv/js/reactDice/src/App.css|215|1|V|css
-	    min-width: 100%;
-eaae26a6fb20ed3ef54fb23bfa0b1fcc|file:///home/jdv/js/reactDice/src/App.css|216|9|v|css
-	width
-e4d286524de982b61afcfe3cfac6fe5e|file:///home/jdv/js/reactDice/src/App.css|216|14|V|css
-	    min-height: 100%;
-b6e7e59a5854026de2c7d1bc813e4606|file:///home/jdv/js/reactDice/src/App.css|215|1|V|css
-	    min-width: 100%;
-	    border-color: aqua;
-	    border-style: rounded;
-	    border-radius: 1px;
-adb115059e28d960fa8badfac5516667|file:///home/jdv/js/reactDice/src/App.css|222|20|v|css
-	center
-5c9166f0e30b1b0d654cc49346d7a8e4|file:///home/jdv/js/reactDice/src/App.css|229|11|V|css
-	    border-width: 100%;
-5ac6d090ea6efb8cb0c754ab2e742f18|file:///home/jdv/js/reactDice/src/App.css|236|1|V|css
-	  50% {
-	    box-shadow: 0 0 8px 9px rgba(255, 85, 85, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	  16% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-66c4bcc135520ca855743361e3b2cb2e|file:///home/jdv/js/reactDice/src/App.css|236|1|V|css
-	  15% {
-	    box-shadow: 0 0 8px 9px rgba(255, 85, 85, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	  24% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Orange, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-311474fb4d938ef9267f2b2b85de57ff|file:///home/jdv/js/reactDice/src/App.css|240|1|V|css
-	    box-shadow: 0 0 8px 9px rgba(255, 85, 85, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-e2ecc12aecc2458978bcbf1f38ca40f9|file:///home/jdv/js/reactDice/src/App.css|239|1|V|css
-	  15% {
-	    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	  32% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-9def0c059b5f1aacd066f09f6f7f6dd3|file:///home/jdv/js/reactDice/src/App.css|263|1|V|css
+	  40% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Yellow, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  48% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  56% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Green, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  64% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  72% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Blue, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
 	  80% {
-	    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
 	  88% {
-	    box-shadow: 0 0 8px 9px rgba(189, 147, 249, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
+	    box-shadow: 0 80%px 2px rgba(colors.$Purple, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-b50943bc5f298de697843939f4247b22|file:///home/jdv/js/reactDice/src/App.css|226|1|V|css
-	    border-color: aqua;
-	    border-style: rounded;
-cdac5beec235861e171517d1c389228a|file:///home/jdv/js/reactDice/src/App.css|272|11|V|css
-	    box-shadow: 0 0 8px 9px rgba(248, 248, 242, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-987314c80971d68012bcfdffec938c73|file:///home/jdv/js/reactDice/src/App.css|271|1|V|css
-	  100% {
+	  96% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
 	  }
-2d1f6554c3514eb41e32a608af417df1|file:///home/jdv/js/reactDice/src/App.css|227|22|V|css
-	    margin-right: auto;
-dfb6227c8365b5f3d8ae2afa3f281b4f|file:///home/jdv/js/reactDice/src/App.css|227|17|V|css
-	    margin: auto;
-d626b1a3fa41938a897e2cdf994de2b8|file:///home/jdv/.zshrc|205|3|V|zsh
-	source /home/jdv/.config/broot/launcher/bash/br
-80b4916758096e096596f5c0b46a11d4|file:///home/jdv/js/reactDice/src/sass/App.scss|31|1|V|scss
-	    --Background-Dark: #16171d;
-	    --Background: #282a36;
-	    --Medium-Gray: #44475a;
-	    --White: #f8f8f2;
-	    --Light-Gray: #6272a4;
-	    --Cyan: #8be9fd;
-	    --Green: #50fa7b;
-	    --Orange: #ffb86c;
-	    --Pink:	#ff79c6;
-	    --Purple: #bd93f9;
-	    --Red: #ff5555;
-	    --Yellow: #f1fa8c;
-3b895242133c90992bb9884b7e63b160|file:///home/jdv/js/reactDice/src/sass/_colors.scss|12|1|v|scss
-	--Re
-5472e22dadb3c717a17be858fca3c050|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
-	--Background-Dark: #16171d;
-	--Background: #282a36;
-	--Medium-Gray: #44475a;
-	--White: #f8f8f2;
-	--Light-Gray: #6272a4;
-	--Cyan: #8be9fd;
-	--Green: #50fa7b;
-	--Orange: #ffb86c;
-	--Pink:	#ff79c6;
-	--Purple: #bd93f9;
-	--Red: #ff5555;
-	--Yellow: #f1fa8c;
-4b8edf8006c156070675a0ac25eb5afb|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|^v|scss
-	--
-	--
-	--
-	--
-	--
-	--
-	--
-	--
-	--
-	--
-	--
-	--
-a9ccf9b9217a1ed20e1cb79e0dba5f2a|file:///home/jdv/js/reactDice/src/sass/App.scss|26|1|V|scss
-	/*
-	Dracula Color Scheme
+	}
 	
-	*/
-fdcb7a7b71b320cd182f7a1b2e3d2df7|file:///home/jdv/js/reactDice/src/sass/App.scss|1|1|V|scss
-	@font-face {
+c27bc1d37a0654ad31b968e67588ce3d|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
+			border: 10px solid colors.$Yellow;
+423a3e3f20a506f243a287c5b882b839|file:///home/jdv/js/reactDice/src/sass/_map.scss|14|32|V|scss
+			border: 10px solid colors.$Red;
+9cf1c243edd475c189bb74a268d3154c|file:///home/jdv/js/reactDice/src/sass/_map.scss|5|1|^v|scss
+		
+	
+		
+		
+		
+		
+		
+b7c4d520ed93ed0054bf9c8b6a42f108|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|^v|scss
+		
+		
+		
+		
+		
+		
+		
+d522089bade75ca6b0edb0e697c28e2d|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|15|V|scss
+			max-height: ;
+9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/sass/_map.scss|8|25|v|scss
+	auto
+0391dc362bd684bb7c7dec4d528eb4eb|file:///home/jdv/js/reactDice/src/components/Map/Map.js|9|14|V|javascript
+	 			<Image /> 
+e752e71d5aa0857d9e988f8d874229e1|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|1|V|scss
+		.mapImage {
+			grid-area: mapimage;
+			max-width: 100%; // Contains the image of the map to at most, the size of it's container
+			box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+		}
+714675ed59fcda137fb017761d125215|file:///home/jdv/js/reactDice/src/sass/_map.scss|15|2|V|scss
+				grid-area: mapimage;
+b0af37cb60f6a42f7cc5f8346bf6cbe5|file:///home/jdv/js/reactDice/src/sass/_map.scss|15|4|V|scss
+			border: 10px solid blue;
+6f66e878c62db60568a3487869695820|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|10|8|v|javascript
+	className
+ace4ef673d09a1a0ec5b93629a7cffa5|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|11|15|V|javascript
+				<div className='saved-dice-container'>
+1e814360255b609cf703bd260d91bbae|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|14|9|V|javascript
+				</div>
+88e2ba100e2706bf47aefc7329463d26|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|23|V|scss
+			grid-area: saveddice;
+baf54f86202a71961fa104e58e9274b4|file:///home/jdv/js/reactDice/src/sass/_map.scss|23|6|V|scss
+		.saved-dice-grid-container {
+		}
+dbb5cf64f8b055ff302f4f922ba6b2d9|file:///home/jdv/js/reactDice/src/sass/_map.scss|25|23|V|scss
+			background-color: red;
+f0039f1f634f0d3ca7e7b6017b8dc03a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|12|V|scss
+				height: 50%;
+268357e522819fd9394ead025c40ce6d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|29|13|V|scss
+					width: auto;
+2188f7c4dd4a5f4344a0c6d141b7253b|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|17|V|scss
+					height: auto;
+8caaad0713b05bf86bf2685a0fce3775|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|17|V|scss
+				opacity: 100%;
+bda86ac49c8f13de75bee9ab4eaf2dc9|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|11|11|V|javascript
+				<div className='dice-container'>
+					{dice.map((die) => (
+4778cc9c38b0d45eac1d25bd5378d758|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|11|11|V|javascript
+				<div className='dice-container'>
+707032f1926322ba1dfda7f94b0cbbde|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|13|1|V|scss
+		.dice-container {
+70ff0f737f672377740656bb2299d3dd|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|^v|scss
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+5ff5d0dd18c73077c68938c2f017f8b3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|1|V|scss
+		display: flex;
+		justify-content: flex-start;
+	
+fbc289924503467fb325a20f35d0145e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
+		background-color: colors.$Medium-Gray;
+b0fcf2597677a112c68cb4db4eae9c17|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
+			.unheld:hover {
+				opacity: 20%;
+			}
+3e4914de665fca658ababa00296808ab|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|3|V|scss
+			height: auto;
+5d7b0ddc5d7496e623e3eb1904474091|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|16|1|V|scss
+			// max-width: 5%;
+			min-width: 05%;
+			max-width: 100%;
+			height: auto;
+a2a4f601f8f8c7a4e7ccd3edd06ce712|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
+			height: 105%;
+			width: auto;
+a9d8be22a749eaff46b448890eb7c405|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|11|V|scss
+			height: ;
+9e9a9028082d740acba9e07d44934eef|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|11|V|scss
+			width: auto;
+d5b5755fc7d751d63d88a870eb5bebfb|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|9|1|V|javascript
+		const dice = UseStore(state => state.dice)
+f91614c13b0e6659f9b16a1d6f22f2db|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|9|8|v|javascript
+	dice
+7fe2471e11eed2d0ac37ad077653c131|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|29|1|V|scss
+			box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+c6bee7a73842fe6e0539e9233b30205e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|10|v|scss
+	box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */
+2209179b9937dbeb613af2a8dcace90a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|25|V|scss
+				opacity: $default-opacity * 2;
+1a721faf2df53972bfd0831c64b6146d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|20|v|scss
+	collapse
+68e2bf1cd16d919e04bd6507e850d203|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|5|V|scss
+				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.1); /* hoffset voffset blur spread color */}
+f5f283356cd1564e879c46d067e1f145|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|33|39|V|scss
+				20% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
+b21091d7b029c7a5f6e3cd010df11fd4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|1|V|scss
+			@keyframes grow-glow {
+				0% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.1); /* hoffset voffset blur spread color */}
+				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
+			}
+b254f0b42b020f446c2a8b6299617b1a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|19|V|scss
+			transition: 0.4s;
+9fbc6d522115fd475631839f94cf09a4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|26|32|V|scss
+				animation-iteration-count: 1;
+acf635689def18ebb0f0c49e0a302bdc|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|26|25|v|scss
+	forwards
+c9e7e975f62c2a389107d220b8b0cc26|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
+			.unheld:hover {
+				animation-name: grow-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+			}
+85ed998c9203767af5ec409f07cdfcab|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|40|19|v|scss
+	glow
+4d200fce73a8e1cc965cfc2c43343824|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|40|14|v|scss
+	grow
+44a96d323d3caafc45174c4c0ac55264|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|42|4|V|scss
+				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
+7198cb51ed3efe8a3c23b84c3065ec7a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|1|V|scss
+			.unheld:hover:after {
+				animation-name: shrink-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+			}
+6b3d5872c460ed5f8f92078ff1055c0a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|1|V|scss
+				animation-name: grow-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+ee5c35ce3d081da90622a10d2272ed5e|file:///home/jdv/js/reactDice/src/Store.js|4|14|v|javascript
+	numbers
+9a31962b953d38f5702495fdf5b44ad0|file:///home/jdv/js/reactDice/src/Store.js|4|25|v|javascript
+	letters
+be42eac213dab0e3be3ef74a0a788f13|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|37|29|V|javascript
+			if (diceTheme === "numbers")
+03266012fd9684f6c53439411b5b2a50|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|41|1|V|javascript
+			1: Die1,
+			2: Die2,
+			3: Die3,
+			4: Die4,
+			5: Die5,
+			6: Die6,
+4f2fbf2e55136fae7a172c6dae0d13be|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|45|3|V|javascript
+					
+20b7bce317b9feb2f50815d5dd952367|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|36|6|V|javascript
+		let source = {
+3d0950243423fd223749e8f1ad01ce9b|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|36|2|^v|javascript
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+737db3e5627936cf3e5fa59d96891651|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|47|^v|javascript
+	png
+	png
+	png
+	png
+	png
+	png
+8657d0df5c3969c5d92c69f1fadb7fbf|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|1|V|javascript
+	import DieI from "../../resources/dice/die-infantry.svg"
+d581dda39ce2a1986387a2fb0e83aae4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|44|v|javascript
+	infantry
+18a40c7efe20efda16beedddc28f3a0a|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|43|1|V|javascript
+					1: Die1,
+					2: Die2,
+					3: Die3,
+					4: Die4,
+					5: Die5,
+					6: Die6,
+9faad0d3963e19ee9fc6fe19f8274d99|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|52|1|V|javascript
+					1: 
+5cc9eb54f98234c219bb885c2989dde4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|42|1|V|javascript
+				let source = {
+					1: Die1,
+					2: Die2,
+					3: Die3,
+					4: Die4,
+					5: Die5,
+					6: Die6,
+				}
+ab429e893ea13cdf53b38b4b9b08a426|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|59|1|V|javascript
+				break;
+04a780af49382e0d8746980225358976|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|40|9|v|javascript
+	diceTheme
+b7c29df4bc67fd94dfb185c917aed843|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|2|1|V|scss
 	    font-family: 'Sofia', cursive;
 	    @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-	}
-	
-	@font-face {
-	    font-family: 'Lato', sans-serif;
-	    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Sofia&family=Stalinist+One&display=swap');
-	}
-	
-	/* @font-face { */
-	    /* font-family: 'Rajdhani', sans-serif; */
-	    /* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rajdhani:wght@500&family=Sofia&family=Stalinist+One&display=swap'); */
-	/* } */
-	/*  */
-	/* @font-face { */
-	    /* font-family: 'Stalinist One', cursive; */
-	    /* @import url('https://fonts.googleapis.com/css2?family=Sofia&family=Stalinist+One&display=swap'); */
-	/* } */
-	
-	@font-face {
-	    font-family: 'Bungee', cursive;
-	    @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-	}
-a04ba9682af70155d22bc6ebe3f5ce92|file:///home/jdv/js/reactDice/src/sass/App.scss|1|1|V|scss
-	
-	:root {
-	    --Background-Dark: #16171d;
-	    --Background: #282a36;
-	    --Medium-Gray: #44475a;
-	    --White: #f8f8f2;
-	    --Light-Gray: #6272a4;
-	    --Cyan: #8be9fd;
-	    --Green: #50fa7b;
-	    --Orange: #ffb86c;
-	    --Pink:	#ff79c6;
-	    --Purple: #bd93f9;
-	    --Red: #ff5555;
-	    --Yellow: #f1fa8c;
-	}
-	
-a872f78695e3685a82c2bf9fd9844aac|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|2|1|V|scss
-	    font-family: 'Sofia', cursive;
-4f0b3999c78ba3abc4961b71d5b936cf|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|5|1|V|scss
-	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
-654cd76590cebe0ba37e8d4cce8a96ee|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|11|13|v|scss
-	Sofia
-af8ea364aff09dd78bf9a9f7e2634815|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|11|42|v|scss
+d248b3954dc5c5aaaef1407ce1e8d208|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|16|v|scss
+	Lato
+af8ea364aff09dd78bf9a9f7e2634815|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|24|v|scss
 	cursive
-ad46792593a5104aa6cd29f58eaa2bde|file:///home/jdv/js/reactDice/src/sass/App.scss|2|1|V|scss
-	@use 'colors';
-62848e3ce5804aa985513a7922ff87b2|file:///home/jdv/js/reactDice/src/sass/App.scss|3|7|v|scss
-	colors
-a8cb2337dccdb617b6dc1f2c519202fa|file:///home/jdv/js/reactDice/src/sass/App.scss|193|1|V|scss
-	    box-shadow: 0 0 8px 2px rgba(248, 248, 242, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* hoffset voffset blur spread color */
-8dccdb2ab4eac647b57b5bca34aa6a1e|file:///home/jdv/js/reactDice/src/sass/App.scss|193|29|v|scss
-	rgba(248
-560da28d197389c524cba5bb830aa71b|file:///home/jdv/js/reactDice/src/sass/App.scss|193|29|v|scss
-	, 248
-f5d5be839504575949fa04ac4770cc24|file:///home/jdv/js/reactDice/src/sass/App.scss|193|29|v|scss
-	, 242
-7b2cdbf170780d1d1fb8a4ce4ec3d2e8|file:///home/jdv/js/reactDice/src/sass/App.scss|193|29|v|scss
-	, 0.8)
-7037331390c8c467bbf54cb91b2d3d81|file:///home/jdv/js/reactDice/src/sass/_colors.scss|2|1|v|scss
-	$Background-Dark
-5f9686b6e85dd6b33d10b91ee89cf7fb|file:///home/jdv/js/reactDice/src/sass/_colors.scss|2|19|v|scss
-	#16171d
-cdff4ebb98f33fd9f158d8b92b01c375|file:///home/jdv/js/reactDice/src/sass/App.scss|13|1|V|scss
-	*::-webkit-scrollbar {
-	  width: 12px;               /* width of the entire scrollbar */
+956bb84bea9943fa8df62af66b655798|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|28|V|scss
+		font-family: 'Sofia', sans-serif;
+9bc8064e919fecfcfb999444dfb15fca|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|11|V|scss
+			@extend die;
+3f8c0f1c77081341c2b322d5a333205f|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|7|V|scss
+		.die {
+21ac93373efa494086dcf261fce322ba|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|1|V|scss
+			font-family: 'Sofia', sans-serif;
+654cd76590cebe0ba37e8d4cce8a96ee|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|17|v|scss
+	Sofia
+44f535286b4e6e42dd8cc3f52a0fd738|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|V|scss
+			font-family: 'Lato', sans-serif;
+2866d2df751441ce69926bfcea14a0f6|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|1|1|V|scss
+	@font-face {
+		font-family: 'Sofia';
+		src: local('Sofia'), url(./resources/fonts/Sofia-Regular.ttf) format('truetype');
 	}
-	
-	*::-webkit-scrollbar-track {
-	  background: colors.$Background;        /* color of the tracking area */
+	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
+8f1751be3863a58e0c8c098191f23d86|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|31|1|V|scss
+	@font-face {
+		font-family: '';
+		src: local('Sofia'), url(./resources/fonts/Sofia-Regular.ttf) format('truetype');
 	}
-	
-	*::-webkit-scrollbar-thumb {
-	  background-color: colors.$Purple;    /* color of the scroll thumb */
-	  border-radius: 20px;       /* roundness of the scroll thumb */
-	  border: 3px solid colors.$Background;  /* creates padding around scroll thumb */
+	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
+fb8ee9715a328403724f64ede0a96937|file:///home/jdv/js/reactDice/src/sass/App.scss|18|1|V|scss
+		font-family: 'Fira Sans', sans-serif;
+1e2a387047f27ee6d014061a1f33c27b|file:///home/jdv/js/reactDice/src/sass/App.scss|19|2|V|scss
+		font-family: 'Fira Sans', sans-serif;
 	}
-	
-344015ad0fce13ea5618f2b664695a6e|file:///home/jdv/js/reactDice/src/sass/App.scss|1|1|V|scss
-	// Imports
-	@use 'colors';
-28057e09309cf8a8231dd868406a374f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|260|1|V|vim
-	"*****************************************************************************
-	"" Alacritty support for mouse
-	"*****************************************************************************
-160af49a18d4bc1c559ac108f7014e55|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|241|1|V|vim
-	" Filetype Specific Settings
-bea782a25b8e6ccb686f93395d02383f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|239|4|v|vim
-	Alacritty support for mouse
-9a9a84621afd3d32d16618819663d567|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|241|1|V|vim
-	autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
-	
-aebeefda4c99bb77a8a62bf4b56bcdb8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|241|1|V|vim
-	autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
-23eeeb4347bdd26bfc6b7ee9a3b755dd|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|242|18|v|vim
-	python
-15dba4cd450c03640506f092d0fbbf01|file:///home/jdv/js/reactDice/src/README.md|12|8|V|markdown
-	    - Go
-401b017a77775bed6cf9b1c27b0d989d|file:///home/jdv/js/reactDice/src/README.md|11|8|V|markdown
-	    - Graphql
-53346e1b884bf8bb32f6bba57c4adcc9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|233|1|V|vim
-	
-	" Search in visual
-	vnoremap / :%s/\%V
-7fa1972f870ac90479b4c9a9d9a10b48|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|235|1|V|vim
-	nnoremap <silent> <leader><leader>t :%s/^\(^I*\)␣␣␣␣/\1^I/g<CR>
-32455e0426c1f49ce8d93545ff9e18e8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|235|1|V|vim
-	    " Four spaces -> tab
-981b8fcee42e1e726a67a2b9a98ea6e9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|237|7|v|vim
-	Four
-dc658425ca28537848b686dd0c3f6cde|file:///home/jdv/js/reactDice/src/components/Command/Command.js|12|7|V|javascript
-	Imports
-c78dfe6860120b93928ba10987012720|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|147|1|V|vim
-	set list lcs=tab:\|\
-10494be30e7680aef502e00eabbfbc89|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|147|20|V|vim
-	" set list lcs=tab:\|\
-8e5b07b648b32aed7d8da36f7653a0dd|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|140|1|V|vim
-	" see
-	" https://stackoverflow.com/questions/11094383/how-can-i-convert-tabs-to-spaces-in-every-file-of-a-directory/11094620#11094620
-	" for a directory tree wide solution to replacing spaces with tabs
-	
-c12b1bdaf3bddcbac6d8d60d9051aaf7|file:///home/jdv/.zshrc|173|46|V|zsh
-	alias space4tab="find . -name '*.$1' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;"
-428c3e98e0f042420708188172455ede|file:///home/jdv/.zshrc|208|2|v|zsh
-	"find . -name '*.$1' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;"
-e548e61c74b6891d64999a4351246792|file:///home/jdv/.zshrc|205|1|V|zsh
-	# Recurse replaces 4 leading spaces with a tab
-	space4tab() {
-		"find . -name '*.$1' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;"
-	}
-485a94487e9c5dfcb61d31c5bac63821|file:///home/jdv/.zshrc|210|1|V|zsh
-	# Recurse replaces 2 leading spaces with a tab
-	space4tab() {
-		"find . -name '*.$1' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;"
-	}
-1a95d30c686fe6fa61d901e21055fcbc|file:///home/jdv/.zshrc|213|1|V|zsh
-		find . -name '*.$1' ! -type d -exec bash -c 'unexpand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
-ddf2d5a7647546aba9557851894c0ff0|file:///home/jdv/.zshrc|213|1|V|zsh
-		find . -name "*.$1" ! -type d -exec bash -c 'unexpand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
-7419d97ed753a2a67b2e1e8242822399|file:///home/jdv/.zshrc|208|1|V|zsh
-		"find . -name '*.$1' ! -type d -exec bash -c 'unexpand -t 2 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;"
-a412cae8825ade1326160f5c2a4ea739|file:///home/jdv/.zshrc|218|1|V|zsh
-		"find . -name '*.$1' ! -type d -exec bash -c 'unexpand -t 8 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;"
-313ffc883c0b2452720b086a66411dd0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|237|1|V|vim
-	nnoremap <silent> <leader><leader>t :%%!unexpand -t 4 --first-only<CR>
-44764bee6730e098053cf89533724a3a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|239|1|V|vim
-	nnoremap <silent> <leader><leader>T :%s/^\(^I*\)␣␣/\1^I/g<CR> 
-00cb6532651b82b07123f9fc6d9c30a2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|235|3|v|vim
-	Retab search.  Replaces instances of four spaces with a tab.  Must be repeated until 'pattern not found' in returned
-dde8c4eb6707cdd698a88fb2dc7cea2d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|201|1|V|vim
-	"*****************************************************************************
-	" Keybindings Remap
-	"*****************************************************************************
-	" Set leader to ','
-	let mapleader=','
-	" Set localleader to Space (used for WhichKey)
-	let g:maplocalleader = "\<Space>"
-	
-	" Remap W and E for backwards versions of w and e, respectively.
-	nnoremap W b
-	nnoremap E ge
-	inoremap jj <Esc>
-	" used for moving one space in insert mode
-	inoremap qh <C-o>h
-	inoremap qj <C-o>j
-	inoremap qk <C-o>k
-	inoremap ql <C-o>l
-	" used for breaking out of brackets
-	inoremap qa <Esc>la
-	
-	" paste on line below / line above
-	nnoremap <silent> Pj ]p
-	nnoremap <silent> Pk [p
-	
-	" center line in middle of screen while in insert mode
-	inoremap <silent> zz <C-o>zz
-	
-	" move line to middle of screen
-	nnoremap <silent> zl zz
-	" move line to top of screen
-	nnoremap <silent> zk zt
-	" move line to bottom of screen
-	nnoremap <silent> zj zb
-	
-	" Spaces to Tabs
-		" Four spaces -> tab
-	nnoremap <silent> <leader><leader>t :%%!unexpand -t 4 --first-only<CR>
-		" Two spaces -> tab
-	nnoremap <silent> <leader><leader>t :%%!unexpand -t 2 --first-only<CR>
-	
-	" For support of figures from Inkscape in LaTeX documents
-	" inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-	" nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-	inoremap <C-f> <Esc>: silent exec '.!python3 ~/.local/bin/inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-	nnoremap <C-f> : silent exec '!python3 ~/.local/bin/inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-6a204bd89f3c8348afd5c77c717a097a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|202|8|V|vim
-	asdfasdf
-fd04fff5835f0c3d40f0db3bf9667d29|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|17|1|V|vim
-	" Required:
-	call plug#begin(expand('~/.config/nvim/plugged'))
-	
-	"*****************************************************************************
-	" Plugins
-	"*****************************************************************************
-	Plug 'mhinz/vim-startify'
-	Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
-	
-	if LINUX()
-		" Need to have pynvim installed to use.  Please see :help provider-python for details.  Also, running :checkhealth will be useful if you run into problems.
-		" Plug 'sirver/ultisnips'
-			" let g:UltiSnipsExpandTrigger = '<tab>'
-			" let g:UltiSnipsJumpForwardTrigger = '<tab>'
-			" let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-			" let g:UltiSnipsEditSplit="tabdo"
-		
-		Plug 'lervag/vimtex'
-			let g:tex_flavor='latex'
-			let g:vimtex_view_method='mupdf'
-			let g:vimtex_quickfix_mode=0
-		
-		" A Vim Plugin for Lively Previewing LaTeX PDF Output.  Change "updatetime"
-		" option for the time it takes to render.
-		Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-		" let g:livepreview_previewer = 'evince'
-		let g:livepreview_previewer = 'okular'
-		
-		
-		Plug 'KeitaNakamura/tex-conceal.vim'
-			set conceallevel=1
-			let g:tex_conceal='abdmg'
-			hi Conceal ctermbg=none
-	endif
-	
-	
-	Plug 'justinmk/vim-sneak'
-		let g:sneak#label = 1
-		map f <Plug>Sneak_f
-		map F <Plug>Sneak_F
-	Plug 'asvetliakov/vim-easymotion'
-		let g:EasyMotion_do_mapping = 0 " Disable default mappings
-	
-		" Jump to anywhere you want with minimal keystrokes, with just one key binding.
-		" `s{char}{label}`
-		map S <Plug>(easymotion-overwin-f)
-		map s <Plug>(easymotion-overwin-f)
-	
-		" or
-		" `s{char}{char}{label}`
-		" Need one more keystroke, but on average, it may be more comfortable.
-		" nmap s <Plug>(easymotion-overwin-f2)
-		" nmap S <Plug>(easymotion-overwin-f2)
-	
-		" Turn on case-insensitive feature
-		let g:EasyMotion_smartcase = 1
-	
-		" JK motions: Line motions
-		map <Leader>j <Plug>(easymotion-j)
-		map <Leader>k <Plug>(easymotion-k)
-	Plug 'honza/vim-snippets'
-	Plug 'tpope/vim-surround'
-	
-	" Pasting above and below
-	Plug 'tpope/vim-unimpaired'
-	Plug 'tpope/vim-repeat'
-	
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'junegunn/fzf.vim'
-	
-	" Terminal-only plugins
-	" Plug 'tmsvg/pear-tree'
-	Plug 'scrooloose/nerdcommenter'
-	Plug 'dracula/vim',{'as':'dracula'}
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	Plug 'liuchengxu/vim-which-key'
-	Plug 'xolox/vim-session'
-	Plug 'xolox/vim-misc'
-	Plug 'akinsho/nvim-bufferline.lua'
-		" See bufferline section for config
-	Plug 'kyazdani42/nvim-web-devicons'
-	" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-	" Plug 'neovim/nvim-lspconfig'
-		" " See Language Server section for config
-	" Plug 'glepnir/lspsaga.nvim'
-	" " Plug 'nvim-lua/completion-nvim'
-		" " See Completion-nvim section for config
-	" Plug 'hrsh7th/nvim-compe'
-	Plug 'cohama/lexima.vim'
-		" " To play nice with nvim-compe
-		" inoremap <silent><expr> <C-Space> compe#complete()
-		" inoremap <silent><expr> <CR>      compe#confirm(lexima#expand('<LT>CR>', 'i'))
-		" inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'HerringtonDarkholme/yats.vim'
-	Plug 'MaxMEllon/vim-jsx-pretty'
-	Plug 'shmargum/vim-sass-colors'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-	
-	call plug#end()
-	" Required
-	filetype plugin indent on
-	
-7182b3349f6d85d4cca182d6ebbaeaeb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|97|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/keybindings.vim
-e1656a25b965bfefc28e2b291e47d52b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|19|1|V|vim
-	"*****************************************************************************
-	" Basic Setup
-	"*****************************************************************************
-50dac7fa7e4b34c370e7b2b2442f1c30|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|19|3|v|vim
-	Basic Setup
-691bdef5bf2a312bb13c8ac1c99888d6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|21|51|v|vim
-	keybindings
-2776d20c52e8b1903117e89d43c1c89a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|23|1|V|vim
-	"*****************************************************************************
-	" Basic Setup
-	"*****************************************************************************
-	" Auto-reload init.vim of change
-	au BufWritePost ~/.config/nvim/init.vim so $MYVIMRC
-	
-	" Encoding
-	set encoding=utf-8
-	set fileencoding=utf-8
-	set fileencodings=utf-8
-	
-	" Fix backspace indent
-	set backspace=indent,eol,start
-	
-	" Fix copy/paste?
-	set clipboard+=unnamedplus
-	
-	" Tabs. May be overridden by autocmd rules
-	""""""""""""""""""""""""""""""""""""""""""
-	set tabstop=4 " Set tabstop to tell vim how many columns a tab counts for. Linux kernel code expects each tab to be eight columns wide.
-	set softtabstop=4 " Set softtabstop to control how many columns vim uses when you hit Tab in insert mode. If softtabstop is less than tabstop and expandtab is not set, vim will use a combination of tabs and spaces to make up the desired spacing. If softtabstop equals tabstop and expandtab is not set, vim will always use tabs. When expandtab is set, vim will always use the appropriate number of spaces. 
-	set shiftwidth=4 " Set shiftwidth to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation. 
-	set noexpandtab " When expandtab is set, hitting Tab in insert mode will produce the appropriate number of spaces. 
-	
-	
-	" Show vertical tab indent guides (manual, no plugin)
-	" set list lcs=tab:\|\
-	set list lcs=tab:\|┈
-	
-	let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-	
-	" Enable hidden buffers
-	set hidden
-	
-	" Searching
-	set hlsearch
-	set incsearch
-	set ignorecase
-	set smartcase
-	
-	set fileformats=unix,dos,mac
-	
-	if WINDOWS()
-		set shell=powershell.exe
-	elseif LINUX()
-		set shell=$SHELL
-	endif
-	
-	" if exists('$SHELL')
-		" set shell=$SHELL
-	" else
-		" set shell=/bin/sh
-	" endif
-	
-	" Time for CursorHold, and how long it take for live TeX to update.
-	set updatetime=250
-	
-	" session management
-	let g:session_directory = "~/.config/nvim/session"
-	let g:session_autoload = "no"
-	let g:session_autosave = "no"
-	let g:session_autoload = "no"
-	" If the PC is fast enough, do syntax highlight syncing from start unless 200 lines
-	augroup vimrc-sync-fromstart
-	  autocmd!
-	  autocmd BufEnter * :syntax sync maxlines=200
-	augroup END
-	
-	" Remember cursor position
-	augroup vimrc-remember-cursor-position
-	  autocmd!
-	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-	augroup END
-	
-	
-	" Set python3 location
-	let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
-	
-	set termguicolors
-	
-55ad1843924f1a581926d8e9e1b77c45|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|22|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/basic.vim
-f17aaabc20bfe045075927934fed52d2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|23|51|v|vim
-	basic
-70bf12314365acecd9942029a09e63e7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|24|1|V|vim
-	" "*****************************************************************************
-	" " Keybindings Remap
-	" "*****************************************************************************
-	" " Set leader to ','
-	" let mapleader=','
-	" " Set localleader to Space (used for WhichKey)
-	" let g:maplocalleader = "\<Space>"
-	"
-	" " Remap W and E for backwards versions of w and e, respectively.
-	" nnoremap W b
-	" nnoremap E ge
-	" inoremap jj <Esc>
-	" " used for moving one space in insert mode
-	" inoremap qh <C-o>h
-	" inoremap qj <C-o>j
-	" inoremap qk <C-o>k
-	" inoremap ql <C-o>l
-	" " used for breaking out of brackets
-	" inoremap qa <Esc>la
-	"
-	" " paste on line below / line above
-	" nnoremap <silent> Pj ]p
-	" nnoremap <silent> Pk [p
-	"
-	" " center line in middle of screen while in insert mode
-	" inoremap <silent> zz <C-o>zz
-	"
-	" " move line to middle of screen
-	" nnoremap <silent> zl zz
-	" " move line to top of screen
-	" nnoremap <silent> zk zt
-	" " move line to bottom of screen
-	" nnoremap <silent> zj zb
-	"
-	" " Spaces to Tabs
-		" " Four spaces -> tab
-	" nnoremap <silent> <leader><leader>t :%%!unexpand -t 4 --first-only<CR>
-		" " Two spaces -> tab
-	" nnoremap <silent> <leader><leader>t :%%!unexpand -t 2 --first-only<CR>
-	"
-	" " For support of figures from Inkscape in LaTeX documents
-	" " inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-	" " nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-	" inoremap <C-f> <Esc>: silent exec '.!python3 ~/.local/bin/inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-	" nnoremap <C-f> : silent exec '!python3 ~/.local/bin/inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-	
-	
-	
-811aa9be3558b1d80ff2bd0771fb4147|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|28|1|V|vim
-	autocmd FileType python setlocal shiftwidth=2 softtabstop=2 noexpandtab
-172610eaafef42389df4526c6d6918a4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|28|27|v|vim
-	setlocal shiftwidth=2 softtabstop=2 noexpandtab
-	
-31b797789a2657bc7bb7529476450d87|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|28|27|V|vim
-	autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 noexpandtab
-05f2f72fb662fc138390cc88d7441b98|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|25|1|V|vim
-	"*****************************************************************************
-	"" Filetype Specific Formatting
-	"*****************************************************************************
-	
-ceb48ceb68428827429fb3b40c3a1a51|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|60|1|V|vim
-	let g:session_directory = "~/.config/nvim/session"
-	let g:session_autoload = "no"
-	let g:session_autosave = "no"
-	let g:session_autoload = "no"
-067dab37d4c253122dfb2954728eaaf3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|59|1|V|vim
-	" session management
-c0355d1355a5bdf0cdf0e00804f7f664|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|41|1|V|vim
-	if !exists('g:vscode')
-	set ruler
-	set number relativenumber
-	
-	augroup numbertoggle
-	  autocmd!
-	  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-	  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-	augroup END
-18358813b9b6c764d806792f041c0886|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|82|3|v|vim
-	BasicSetup
-c74fbb03e5c53581a64e7e683aa99c28|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|81|1|V|vim
-	"*****************************************************************************
-	" Template
-	"*****************************************************************************
-278c491bdd8a53618c149c4ac790da34|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|3|3|v|vim
-	Template
-82bdf8f650ee12362303add57bd5e590|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|6|11|V|vim
-	" Platform identification {
-f65da63a803ce0cbcf13647a32b913a1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|1|1|V|vim
-	
-	"*****************************************************************************
-	" Platforms
-	"*****************************************************************************
-	
-15b1f9d10a170380921432c566709510|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|80|1|V|vim
-	
-	"*****************************************************************************
-	" Template
-	"*****************************************************************************
-	
-c40b12b3d9bcb31fa25aa683fc80380f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|91|1|V|vim
-	
-	"*****************************************************************************
-	" Template
-	"*****************************************************************************
-	
-	
-	"*****************************************************************************
-	" Template
-	"*****************************************************************************
-	
-ef271cec72287ba86e5ea216244fd1bb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|21|1|V|vim
-	'jpjjjjj
-ed49a36c4fd547e5e2ace11bef4f21cf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/coc.vim|3|3|v|vim
-	Platforms
-387135de17c7450950d09f41f2a206ca|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|1|1|V|vim
-	"*****************************************************************************
-	" Basic Setup
-	"*****************************************************************************
-	
-1792a1d95338a4165e9c55f7b083447a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/coc.vim|1|1|V|vim
-	
-	"*****************************************************************************
-	" Coc
-	"*****************************************************************************
-	
-055c46232f5d61d1a887d48e45c327e0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/coc.vim|1|1|V|vim
-	"  /$$$$$$$                      /$$          
-	" | $$__  $$                    |__/          
-	" | $$  \ $$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$$
-	" | $$$$$$$  |____  $$ /$$_____/| $$ /$$_____/
-	" | $$__  $$  /$$$$$$$|  $$$$$$ | $$| $$      
-	" | $$  \ $$ /$$__  $$ \____  $$| $$| $$      
-	" | $$$$$$$/|  $$$$$$$ /$$$$$$$/| $$|  $$$$$$$
-	" |_______/  \_______/|_______/ |__/ \_______/
-	
-	
-	                                             
-	                                             
-	                                             
-	 
-feda0f5f21f502ed7f2032e4e3b158ec|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/coc.vim|9|1|V|vim
-	 " | $$__  $$                    |__/          
-11661062e27202fe82b03035ec6e4a50|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/coc.vim|1|1|V|vim
-	
-	" 
-	" 
-	"  /$$$$$$$                      /$$          
-	" | $$__  $$                    |__/          
-	" | $$  \ $$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$$
-	" | $$$$$$$  |____  $$ /$$_____/| $$ /$$_____/
-	" | $$__  $$  /$$$$$$$|  $$$$$$ | $$| $$      
-	" | $$  \ $$ /$$__  $$ \____  $$| $$| $$      
-	" | $$$$$$$/|  $$$$$$$ /$$$$$$$/| $$|  $$$$$$$
-	" |_______/  \_______/|_______/ |__/ \_______/
-	                                            
-	                                            
-	                                            
-	
-5fadaa87b28cb011e1284097989e894e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|1|1|V|vim
-	"*****************************************************************************
-cfb581e914e0a0aa049d885c9b471f17|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|15|1|V|vim
-	" Keybindings Remap
-	"*****************************************************************************
-3ea1b9a881b4b1fcf5b6856b81897e55|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|15|18|V|vim
-	" Set leader to ','
-328c6fc5f4b8cc88228b921f10c1a887|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|23|3|V|vim
-	" Remap W and E for backwards versions of w and e, respectively.
-520454ddf7d9898e89fb212668577844|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|24|1|V|vim
-	" Platforms
-e1c1d6152a7fa91bf5724b3dff94a9b6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/coc.vim|1|1|V|vim
-	
-	" 
-	" 
-	"  /$$$$$$$                      /$$          
-	" | $$__  $$                    |__/          
-	" | $$  \ $$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$$
-	" | $$$$$$$  |____  $$ /$$_____/| $$ /$$_____/
-	" | $$__  $$  /$$$$$$$|  $$$$$$ | $$| $$      
-	" | $$  \ $$ /$$__  $$ \____  $$| $$| $$      
-	" | $$$$$$$/|  $$$$$$$ /$$$$$$$/| $$|  $$$$$$$
-	" |_______/  \_______/|_______/ |__/ \_______/
-	"                                             
-	"                                             
-	"                                             
-	" 
-2bb99c072687c7d9dc522220588556f5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|60|1|V|vim
-	"*****************************************************************************
-	" Custom Highlight Groups - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
-	"*****************************************************************************
-	
-	" Must be before colorscheme
-	" :highlight to see highlight groups
-	function! MyHighlights() abort
-		highlight Search     cterm=bold,italic ctermfg=215 gui=bold,italic guifg=#FFB86C guibg=#21222C
-		highlight PmenuSel   ctermbg=11 ctermfg=84 guifg=#50FA7B guibg=#191A21
-		highlight Sneak      ctermfg=215 gui=bold,italic guifg=#FFB86C
-		highlight SneakLabel cterm=bold,italic ctermfg=215 gui=bold,italic guifg=#FFB86C
-	
-	endfunction
-	
-	augroup MyColors
-		autocmd!
-		autocmd ColorScheme * call MyHighlights()
-	augroup END
-	colorscheme dracula
-8e7354b856c5e859b84c2109f2968257|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|24|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim
-03583ab88dea25718088ab1f77c9cccb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|26|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
-84b101e589dd1127352be292cefc2fb5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|27|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/completion-nvim.vim
-5bfc897d17a3b6c9efc35f3f85c8342d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|28|59|v|vim
-	completion
-26219af959975ea090748d5a3a15ffb9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|28|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/compe.vim
-c1ccd04c381cbc84041064381265babf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|29|59|v|vim
-	compe
-6d2f2f94fa73ef5eb2bbae22b368290a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|30|59|v|vim
-	airline
-c994cae3a1ed3b1b87e62b25bede503a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|64|^v|vim
-	.vim
-	.vim
-	.vim
-	.vim
-	.vim
-	.vim
-62b220e46a4e019c6cc2e36c2b4f8858|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|37|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/startify.vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim
-d32cb91eccbef06989858603422e154c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
-be82706242640614c004c828a4f871e1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|32|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim
-bebb2941711314869f414b6082b9e194|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim
-bce8e704e3ad1a21ccd86d97d34d63b9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|35|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim
-ef375b37e8acd4f6bdfc9e503a41c6ac|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|37|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim
-197ab24bcc41c5ade7810ecc013e8739|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|57|1|V|vim
-	set ruler
-	set number relativenumber
-	
-	augroup numbertoggle
-	  autocmd!
-	  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-	  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-	augroup END
-ffbdaf859f945d72c7d55c9cbbecbec7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|58|1|V|vim
-	"*****************************************************************************
-	" Alacritty support for mouse
-	"*****************************************************************************
-	
-	"set ttymouse=sgr
-0daddcc030564c0dc1220c8850deb498|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim|1|1|V|vim
-	"   /$$$$$$                               /$$                    
-	"  /$$__  $$                             |__/                    
-	" | $$  \__/  /$$$$$$   /$$$$$$$ /$$$$$$$ /$$  /$$$$$$  /$$$$$$$ 
-	" |  $$$$$$  /$$__  $$ /$$_____//$$_____/| $$ /$$__  $$| $$__  $$
-	"  \____  $$| $$$$$$$$|  $$$$$$|  $$$$$$ | $$| $$  \ $$| $$  \ $$
-	"  /$$  \ $$| $$_____/ \____  $$\____  $$| $$| $$  | $$| $$  | $$
-	" |  $$$$$$/|  $$$$$$$ /$$$$$$$//$$$$$$$/| $$|  $$$$$$/| $$  | $$
-	"  \______/  \_______/|_______/|_______/ |__/ \______/ |__/  |__/
-568acc49db85dd9f088bd6e4a282cf36|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|1|1|V|vim
-	
-	"  /$$    /$$          /$$                                   
-	" | $$   | $$         | $$                                   
-	" | $$   | $$ /$$$$$$ | $$$$$$$   /$$$$$$   /$$$$$$          
-	" |  $$ / $$//$$__  $$| $$__  $$ /$$__  $$ /$$__  $$         
-	"  \  $$ $$/| $$  \ $$| $$  \ $$| $$$$$$$$| $$  \__/         
-	"   \  $$$/ | $$  | $$| $$  | $$| $$_____/| $$               
-	"    \  $/  |  $$$$$$/| $$$$$$$/|  $$$$$$$| $$               
-	"     \_/    \______/ |_______/  \_______/|__/               
-	"  /$$   /$$                                /$$              
-	" | $$$ | $$                               |__/              
-	" | $$$$| $$  /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$ 
-	" | $$ $$ $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$
-	" | $$  $$$$| $$$$$$$$| $$  \ $$ \  $$/$$/ | $$| $$ \ $$ \ $$
-	" | $$\  $$$| $$_____/| $$  | $$  \  $$$/  | $$| $$ | $$ | $$
-	" | $$ \  $$|  $$$$$$$|  $$$$$$/   \  $/   | $$| $$ | $$ | $$
-	" |__/  \__/ \_______/ \______/     \_/    |__/|__/ |__/ |__/
-	"   /$$$$$$                       /$$$$$$  /$$               
-	"  /$$__  $$                     /$$__  $$|__/               
-	" | $$  \__/  /$$$$$$  /$$$$$$$ | $$  \__/ /$$  /$$$$$$      
-	" | $$       /$$__  $$| $$__  $$| $$$$    | $$ /$$__  $$     
-	" | $$      | $$  \ $$| $$  \ $$| $$_/    | $$| $$  \ $$     
-	" | $$    $$| $$  | $$| $$  | $$| $$      | $$| $$  | $$     
-	" |  $$$$$$/|  $$$$$$/| $$  | $$| $$      | $$|  $$$$$$$     
-	"  \______/  \______/ |__/  |__/|__/      |__/ \____  $$     
-	"                                              /$$  \ $$     
-	"                                             |  $$$$$$/     
-	"                                              \______/      
-	
-ffeb8b8ec9f58fd7e59e5cab4f34562d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|14|1|V|vim
-	| $$  $$$$| $$$$$$$$| $$  \ $$ \  $$/$$/ | $$| $$ \ $$ \ $$      | $$      | $$  \ $$| $$  \ $$| $$_/    | $$| $$  \ $$
-	| $$\  $$$| $$_____/| $$  | $$  \  $$$/  | $$| $$ | $$ | $$      | $$    $$| $$  | $$| $$  | $$| $$      | $$| $$  | $$
-	| $$ \  $$|  $$$$$$$|  $$$$$$/   \  $/   | $$| $$ | $$ | $$      |  $$$$$$/|  $$$$$$/| $$  | $$| $$      | $$|  $$$$$$$
-	|__/  \__/ \_______/ \______/     \_/    |__/|__/ |__/ |__/       \______/  \______/ |__/  |__/|__/      |__/ \____  $$
-	                                                                                                              /$$  \ $$
-	                                                                                                             |  $$$$$$/
-	                                                                                                              \______/ 
-	
-	" 
-	"     /$$$$$                           /$$    /$$          /$$                                                           
-	"    |__  $$                          | $$   | $$         | $$                                                           
-	"       | $$  /$$$$$$   /$$$$$$       | $$   | $$ /$$$$$$ | $$$$$$$   /$$$$$$   /$$$$$$                                  
-	"       | $$ /$$__  $$ /$$__  $$      |  $$ / $$//$$__  $$| $$__  $$ /$$__  $$ /$$__  $$                                 
-	"  /$$  | $$| $$  \ $$| $$$$$$$$       \  $$ $$/| $$  \ $$| $$  \ $$| $$$$$$$$| $$  \__/                                 
-	" | $$  | $$| $$  | $$| $$_____/        \  $$$/ | $$  | $$| $$  | $$| $$_____/| $$                                       
-	" |  $$$$$$/|  $$$$$$/|  $$$$$$$         \  $/  |  $$$$$$/| $$$$$$$/|  $$$$$$$| $$                                       
-	"  \______/  \______/  \_______/          \_/    \______/ |_______/  \_______/|__/                                       
-	"  /$$   /$$                                /$$                      /$$$$$$                       /$$$$$$  /$$          
-	" | $$$ | $$                               |__/                     /$$__  $$                     /$$__  $$|__/          
-	" | $$$$| $$  /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$       | $$  \__/  /$$$$$$  /$$$$$$$ | $$  \__/ /$$  /$$$$$$ 
-	" | $$ $$ $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$      | $$       /$$__  $$| $$__  $$| $$$$    | $$ /$$__  $$
-86f4ee75c9bce29d9ee2d806c29401f6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|25|1|V|vim
-	
-		silent function! OSX()
-			return has('macunix')
-		endfunction
-		silent function! LINUX()
-			return has('unix') && !has('macunix') && !has('win32unix')
-		endfunction
-		silent function! WINDOWS()
-			return  (has('win16') || has('win32') || has('win64'))
-		endfunction
-		silent function! FREEBSD()
-		  let s:uname = system("uname -s")
-		  return (match(s:uname, 'FreeBSD') >= 0)
-		endfunction
-	
-f11338a074a77f261cc443f063e3e706|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/platform.vim|18|1|V|vim
-	                                                                                    
-e80ebc8d91bba7fe2cfeeb52b4f2a7a2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|28|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim
-2822d242c8ac009bab0485c34acff5b1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|21|2|V|vim
-	 
-	"*****************************************************************************
-	" Platforms
-	"*****************************************************************************
-55ec9cfe4db3d14bb8540cd1017c9189|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|54|1|V|vim
-	"                                                                                 
-bd314b69a3a79c9a96e0f8517674ab72|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|54|1|V|vim
-	                                                                                
-	                                                                                
-	                                                                                
-	                                                                                
-689dffa18b2655f60272e26dea7424c7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|82|1|V|vim
-	if !exists('g:vscode')
-946b20d0a2ec1da34de4f6d999c2082c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|85|1|V|vim
-	if !exists('g:vscode')
-	endif
-e96d8afc259593a20838480dfb84400b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|86|1|V|vim
-	endif
-b0f1e528d56fc8a7de12f26e294577f3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|91|1|V|vim
-	""*****************************************************************************
-	" " Use completion-nvim in every buffer
-	""*****************************************************************************
-	
-	" autocmd BufEnter * lua require'completion'.on_attach()
-	"
-	
-	""*****************************************************************************
-	" " Use control space for manual popup
-	""*****************************************************************************
-	
-	" " imap <silent> <C-Space> <Plug>(completion_trigger)
-	" imap <silent> <C-Space> :CompletionToggle
-	"
-	
-	""*****************************************************************************
-	" " Popup Menu Navigation
-	""*****************************************************************************
-	
-	" inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-	" inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-	" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-	"
-	
-	""*****************************************************************************
-	" " You can specify a list of matching strategy, completion-nvim will loop through the list and assign priority from high to low.
-	""*****************************************************************************
-	
-	" let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
-	"
-	
-	""*****************************************************************************
-	" " Set completeopt to have a better completion experience
-	""*****************************************************************************
-	
-	" set completeopt=menuone,noinsert,noselect
-	"
-	
-	""*****************************************************************************
-	" " Avoid showing message extra message when using completion
-	""*****************************************************************************
-	
-	" set shortmess+=c
-	"
-	" " Ultisnip Support
-	" let g:completion_enable_snippet = 'UltiSnips'
-	"
-	" " Add trigger characters
-	" let g:completion_trigger_character = ['.', '::']
-d60852c9f77bcf034a385153704d1338|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/completion-nvim.vim|22|20|V|vim
-	f !exists('g:vscode')
-1e68934346ee57858834a205017af8b7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/completion-nvim.vim|21|5|V|vim
-	                                                                                                    
-951413d46ce7649c7910ec8b9158433c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|34|59|v|vim
-	netrw
-d1e0931b32ec51cf18be7ce7774a03cf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|34|65|V|vim
-	" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lspsaga.vim
-83d9bf9d370428a962f48865a1d88f27|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|77|1|V|vim
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-	"
-b0bf2a287e433e3be1426817636f2e2a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	""*****************************************************************************
-	" Completion-nvim (terminal only!)
-	""*****************************************************************************
-	
-5d555c1879b9cecd15a01c62bba36796|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|105|1|V|vim
-	" let g:compe = {}
-	" let g:compe.enabled = v:true
-	" let g:compe.autocomplete = v:true
-	" let g:compe.debug = v:false
-	" let g:compe.min_length = 1
-	" let g:compe.preselect = 'enable'
-	" let g:compe.throttle_time = 80
-	" let g:compe.source_timeout = 200
-	" let g:compe.incomplete_delay = 400
-	" let g:compe.allow_prefix_unmatch = v:true
-	"
-	" let g:compe.source = {}
-	" let g:compe.source.path = v:true
-	" let g:compe.source.buffer = v:true
-	" let g:compe.source.vsnip = v:false
-	" let g:compe.source.nvim_lsp = v:true
-	" let g:compe.source.nvim_lua = v:true
-	" let g:compe.source.your_awesome_source = {}
-	"
-	" lua << EOF
-	" local t = function(str)
-	  " return vim.api.nvim_replace_termcodes(str, true, true, true)
-	" end
-	"
-	" local check_back_space = function()
-		" local col = vim.fn.col('.') - 1
-		" if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
-			" return true
-		" else
-			" return false
-		" end
-	" end
-	"
-	" EOF
-3fd4e6d355e6393d1e9c92db0ccec2ba|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/compe.vim|13|1|^v|vim
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	"
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	"
-	" 
-	" 
-	  
-	" 
-	"
-	" 
-	  
-	  
-	  
-	  
-	  
-	  
-	" 
-	"
-	" 
-5ef33f7ce76580fe4ee1f9817bfb02c1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" Compe (terminal only!)
-	"*****************************************************************************
-f134537a97135a9c476c8bc96456a4a8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|105|1|V|vim
-	let g:airline_theme='dracula'
-	let g:airline#extensions#branch#enabled = 1
-	let g:airline#extensions#ale#enabled = 1
-	let g:airline#extensions#tabline#enabled = 0
-	let g:airline#extensions#tabline#formatter = 'unique_tail'
-	let g:airline#extensions#tagbar#enabled = 1
-	let g:airline_skip_empty_sections = 1
-	
-	if !exists('g:airline_symbols')
-	  let g:airline_symbols = {}
-	endif
-	
-	if !exists('g:airline_powerline_fonts')
-	  let g:airline#extensions#tabline#left_sep = ' '
-	  let g:airline#extensions#tabline#left_alt_sep = '|'
-	  let g:airline_left_sep          = '▶'
-	  let g:airline_left_alt_sep      = '»'
-	  let g:airline_right_sep         = '◀'
-	  let g:airline_right_alt_sep     = '«'
-	  let g:airline#extensions#branch#prefix     = '⤴' "➔, ➥, ⎇
-	  let g:airline#extensions#readonly#symbol   = '⊘'
-	  let g:airline#extensions#linecolumn#prefix = '¶'
-	  let g:airline#extensions#paste#symbol      = 'ρ'
-	  let g:airline_symbols.linenr    = '␊'
-	  let g:airline_symbols.branch    = '⎇'
-	  let g:airline_symbols.paste     = 'ρ'
-	  let g:airline_symbols.paste     = 'Þ'
-	  let g:airline_symbols.paste     = '∥'
-	  let g:airline_symbols.whitespace = 'Ξ'
-	else
-	  let g:airline#extensions#tabline#left_sep = ''
-	  let g:airline#extensions#tabline#left_alt_sep = ''
-5b46ddc525923889e28d98023cb4b786|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim|11|1|V|vim
-	                                                     
-58a194b700185e1e524a3193114713be|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" Vim Airline (terminal only!)
-	"*****************************************************************************
-	
-	
-fb312a45581d953d5e18fe903dfb4ab4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" powerline symbols
-	"*****************************************************************************
-	
-	  let g:airline_left_sep = ''
-	  let g:airline_left_alt_sep = ''
-	  let g:airline_right_sep = ''
-	  let g:airline_right_alt_sep = ''
-	  let g:airline_symbols.branch = ''
-	  let g:airline_symbols.readonly = ''
-	  let g:airline_symbols.linenr = ''
-	endif
-50d33f4b6857404d73235a3841f46128|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|103|1|V|vim
-	"*****************************************************************************
-	" GUI Options (terminal only!)
-	"*****************************************************************************
-	
-	set mousemodel=popup
-	" set t_Co=256
-	set guioptions=egmrti
-b70ee179f2f2422fc13c5fe232ebd79f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|82|1|V|vim
-	"*****************************************************************************
-	" GUI Options (terminal only!)
-	"*****************************************************************************
-4763107ec64e92a517d228fb2743cb96|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|91|1|V|vim
-	                                                                
-a173a464aaca9f89cdfb878c0ae29f46|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|92|1|V|vim
-	"*****************************************************************************
-	" GUI Options (terminal only!)
-	"*****************************************************************************
-	
-0397b15647b60a957bbec374fb5165f5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|1|1|V|vim
-	"
-	"*****************************************************************************
-	" Basic Setup
-	"*****************************************************************************
-	
-98b799dcf95d34ef7fe6c95d0b82e99a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|49|1|V|vim
-	""""""""""""""""""""""""""""""""""""""""""
-f77eb5277cd7def51d43de56b8b0388a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|108|1|V|vim
-	" [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
-	
-	" [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
-	"
-	" Create default mappings
-	let g:NERDCreateDefaultMappings = 1
-	
-	" Add spaces after comment delimiters by default
-	let g:NERDSpaceDelims = 1
-	
-	" Use compact syntax for prettified multi-line comments
-	let g:NERDCompactSexyComs = 1
-	
-	" Allow commenting and inverting empty lines (useful when commenting a region)
-	let g:NERDCommentEmptyLines = 1
-	
-	" Enable trimming of trailing whitespace when uncommenting
-	let g:NERDTrimTrailingWhitespace = 1
-	
-	" Enable NERDCommenterToggle to check all selected lines is commented or not 
-	let g:NERDToggleCheckAllLines = 1
-13d6d719a42e0e8f6cc90060da7a0b57|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|22|1|V|vim
-	" [count]<leader>cs |NERDCommenterSexy| // Comments out the selected lines with a pretty block formatted layout.
-	
-	" [count]<leader>cu |NERDCommenterUncomment| // Uncomments the selected line(s).
-	"
-3421bc10654c2727cd4cea0e5b88d39c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|19|1|V|vim
-	                                                                                                  
-0b551fb86d622d1d378cff071577442d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|103|1|V|vim
-	
-	"*****************************************************************************
-	" Nerd Commenter
-	"*****************************************************************************
-	
-	
-9bf02745a334049f579fe37bffa0e0b7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|106|1|V|vim
-	" My Whichkey setup is only set to utilize the localldeader which is set to
-	" space
-	call which_key#register('<Space>', "g:which_key_map")
-	nnoremap <silent> <localleader> :<c-u>WhichKey  '<Space>'<CR>
-	
-	" How long a pause there is after a space before menu appears.  Also affects
-	" jj keybinding.
-	set timeoutlen=250
-	autocmd! FileType which_key
-	autocmd  FileType which_key set laststatus=0 noshowmode noruler
-	  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
-	" The next step is to add items to g:which_key_map:
-	
-	
-	
-	" Define prefix dictionary
-	let g:which_key_map =  {}
-	
-	" =======================================================
-	" Create menus not based on existing mappings:
-	" =======================================================
-	" Provide commands(ex-command, <Plug>/<C-W>/<C-d> mapping, etc.)
-	" and descriptions for the existing mappings.
-	"
-	" Mappings to hide from top level menu.  If you decide to rebind these, you
-	" must delete from this list:
-	let g:which_key_map.p = 'which_key_ignore'
-	let g:which_key_map.j = 'which_key_ignore'
-	let g:which_key_map.k = 'which_key_ignore'
-	"
-	" Note:
-	" Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
-	" Command or function wrapper to make it work with vim-which-key.
-	" Ref issue #126, #133 etc.
-	let g:which_key_map['w'] = {
-		  \ 'name' : '+Tabs, +Windows and +Buffers' ,
-		  \ 'c' : [':clo'        , 'close window']        ,
-		  \ 'j' : ['<C-W>j'        , 'Move to window below']        ,
-		  \ 'k' : ['<C-W>k'        , 'Move to window above']        ,
-		  \ 'l' : ['<C-W>l'        , 'Move to window to right']        ,
-		  \ 'h' : ['<C-W>h'        , 'Move to window to left']        ,
-		  \ 'H' : ['hsplit'        , 'split window horizontal']        ,
-		  \ 'L' : {
-				\ 'name': '+list',
-				\ 'b' : ['Buffers'     , 'buffers']      ,
-				\ 't' : ['tabs' , 'tabs'] ,
-				\ 'w' : ['Windows' , 'windows']  ,
-				\ },
-		  \ 'v' : ['vsplit'        , 'split window vertical']        ,
-		  \ 'w' : ['bd'        , 'close Buffer']        ,
-		  \ }
-	
-	let g:which_key_map['Tab'] = { 'name' : 'Pick Buffer' }
-	nnoremap <silent> <localleader><Tab> :BufferLinePick<CR>
-	
-	let g:which_key_map['p'] = { 'name' : 'put on line below' }
-	"
-	" paste on line below / line above
-	nnoremap <silent> <localleader>p ]p
-	nnoremap <silent> <localleader>P [p
-	
-	
-	let g:which_key_map['R'] = { 'name' : 'source %' }
-	nnoremap <silent> <localleader>R :source %<CR>
-	
-	let g:which_key_map['g'] = {
-		  \ 'name' : '+Golang' ,
-		  \ 'r' : [':!go run %'        , 'Go Run this file']        ,
-		  \ 'i' : ['GoImports'        , 'Fix Imports']        ,
-		  \ 'l' : ['GoDecls'        , 'List func declarations']        ,
-		  \ 'f' : ['GoFmt'        , 'GoFmt']        ,
-		  \ 'b' : ['GoBuild'        , 'GoBuild']        ,
-		  \ 'd' : ['GoDef'        , 'GoDef']        ,
-		  \ 'v' : ['GoVet'        , 'GoVet error checking']        ,
-		  \ 'a' : ['GoAddTags'        , 'GoAddTags']        ,
-		  \ 'c' : {
-					  \ 'name': '+GoAddTags',
-					  \ 'j' : [':GoAddTags json']        ,
-					  \ 'b' : [':GoAddTags bson']        ,
-				\ },
-		  \ }
-	
-	let g:which_key_map['s'] = {
-		  \ 'name' : '+Snippets & +Macros' ,
-		  \ 'v' : ['Snippets'        , 'View Snippets']        ,
-		  \ 'e' : ['UltiSnipsEdit'        , 'Edit Snippets']        ,
-		  \ 'l' : {
-				\ 'name': '+LaTeX',
-				\ 'c' : {
-					  \ 'name': '+\textcolor{}',
-					  \ 'x' : ['ciw \\textcolor{}jjpysiw}hi'        , 'BLANK']        ,
-					  \ 'd' : ['ciw \\textbf{\\textcolor{def}jjpysiw}f}a}jjhi'        , 'definition']        ,
-					  \ 'f' : ['ciw \\textbf{\\textcolor{form}jjpysiw}f}a}jjhi'        , 'formula']        ,
-					  \ 'u' : ['ciw \\textbf{\\textcolor{units}jjpysiw}f}a}jjhi'        , 'units']        ,
-					  \ '1' : ['ciw \\textbf{\\textcolor{var1}jjpysiw}f}a}jjhi'        , 'var1']        ,
-					  \ '2' : ['ciw \\textbf{\\textcolor{var2}jjpysiw}f}a}jjhi'        , 'var2']        ,
-					  \ '3' : ['ciw \\textbf{\\textcolor{var3}jjpysiw}f}a}jjhi'        , 'var3']        ,
-					  \ '4' : ['ciw \\textbf{\\textcolor{var4}jjpysiw}f}a}jjhi'        , 'var4']        ,
-					  \ '5' : ['ciw \\textbf{\\textcolor{var5}jjpysiw}f}a}jjhi'        , 'var5']        ,
-					  \ '6' : ['ciw \\textbf{\\textcolor{var6}jjpysiw}f}a}jjhi'        , 'var6']        ,
-				\ },
-				\ 't' : ['ciw\\textjjpysiw}hi'        , '\text']        ,
-				\ 'e' : ['ciw\\begin{center}jjojjpI\tjjo\\end{center}'        , 'center']        ,
-				\ },
-		  \ }
-	
-	let g:which_key_map['f'] = {
-		  \ 'name' : '+file' ,
-		  \ 'f' : ['Files'        , 'Open via FZF']        ,
-		  \ 'o' : ['FZF'        , 'Open']        ,
-		  \ 'r' : [':History!<CR>'        , 'Recent']        ,
-		  \ 'd' : ['FZF'        , 'Open in current directory']        ,
-		  \ 'w' : [':w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
-		  \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
-		  \ 'q' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py'        , 'open qtile config']        ,
-		  \ 'z' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/.zshrc'        , 'open zshrc']        ,
-		  \ 's' : [':setlocal spell'        , 'turn on spell check']        ,
-		  \ }
-	nnoremap <localleader>fe :edit /
-	nnoremap <silent> <localleader>fn :enew<CR>
-	
-	let g:which_key_map['/'] = {
-		  \ 'name' : '+Search' ,
-		  \ '?' : ['Windows!'    , 'fzf-window']            ,
-		  \ 'd' : ['Files'        , 'Search in all files in ./']        ,
-		  \ 'a' : ['Rg'        , 'Search in all files with ripgrep']        ,
-		  \ 'l' : ['BLines'        , 'Search in current buffer']        ,
-		  \ 'b' : ['Buffers'        , 'Search in all buffers']        ,
-		  \ }
-	nnoremap <silent> <localleader>/r :%s/
-	vnoremap / :%s/\%V
-	
-	let g:which_key_map['l'] = {
-		  \ 'name' : '+LaTeX' ,
-		  \ 'C' : 'which_key_ignore'        ,
-		  \ 'G' : 'which_key_ignore'        ,
-		  \ 'g' : 'which_key_ignore'        ,
-		  \ 'I' : 'which_key_ignore'        ,
-		  \ 'K' : 'which_key_ignore'        ,
-		  \ 'L' : 'which_key_ignore'        ,
-		  \ 'l' : 'which_key_ignore'        ,
-		  \ 'q' : 'which_key_ignore'        ,
-		  \ 'T' : 'which_key_ignore'        ,
-		  \ 't' : 'which_key_ignore'        ,
-		  \ 'X' : 'which_key_ignore'        ,
-		  \ 'x' : 'which_key_ignore'        ,
-		  \ 'm' : 'which_key_ignore'        ,
-		  \ 'c' : ['VimtexCompile'        , 'compile']        ,
-		  \ 'v' : ['VimtexView'        , 'view']        ,
-		  \ 'p' : ['LLPStartPreview'        , 'Present (view live)']        ,
-		  \ 'r' : ['VimtexReload'        , 'reload']        ,
-		  \ 'k' : ['VimtexStop'        , 'stop']        ,
-		  \ 'i' : ['VimtexInfo'        , 'info']        ,
-		  \ 's' : ['VimtexCompileSelected'        , 'compile selected']        ,
-		  \ 'e' : ['VimtexErrors'        , 'errors']        ,
-		  \ 'o' : ['VimtexLog'        , 'log']        ,
-		  \ 'w' : ['!inkscape-figures watch'        , 'Watch for inkscape figures']        ,
-		  \ }
-2276ad731287a1207ac62455282019c6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|23|7|V|vim
-	" space
-64471499d822ca2aec6e41c246573437|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|31|1|V|vim
-	" jj keybinding.
-6c29ea10613fe61ba45620a743b3e48f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|37|2|v|vim
-	*****************************************************************************
-9e97ace614c2db6840f9b6ad421394ca|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|55|1|V|vim
-	" must delete from this list:
-1e0bec1caf6f41f5b3ea653ee809c1cb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|65|1|V|vim
-	" Some complicated ex-cmd may not work as expected since they'll be feed into `feedkeys()`, in which case you have to define a decicated
-	" Command or function wrapper to make it work with vim-which-key.
-	" Ref issue #126, #133 etc.
-d67d8669ec592e9b19f4681f3d953774|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	
-	"*****************************************************************************
-	" Whichkey (terminal only!)
-	"*****************************************************************************
-	
-683bac4189666b93bae28517f69e8297|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|105|1|V|vim
-	" lua << EOF
-	" local nvim_lsp = require('lspconfig')
-	" local on_attach = function(client, bufnr)
-	  " local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
-	  " local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
-	"
-	  " buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
-	"
-	  " -- Mappings.
-	  " local opts = { noremap=true, silent=true }
-	  " buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-	  " buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-	  " buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
-	  " buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-	  " buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-	  " buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
-	  " buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
-	  " buf_set_keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
-	  " buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
-	  " buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-	  " buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-	  " buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
-	  " buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-	  " buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
-	  " buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-	"
-	  " -- Set some keybinds conditional on server capabilities
-	  " if client.resolved_capabilities.document_formatting then
-		" buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
-	  " elseif client.resolved_capabilities.document_range_formatting then
-		" buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
-	  " end
-	"
-	  " -- Set autocommands conditional on server_capabilities
-	  " if client.resolved_capabilities.document_highlight then
-		" vim.api.nvim_exec([[
-		  " hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
-		  " hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
-		  " hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow
-		  " augroup lsp_document_highlight
-			" autocmd!
-			" autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-			" autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-		  " augroup END
-		" ]], false)
-	  " end
-	" end
-	"
-	" -- Use a loop to conveniently both setup defined servers
-	" -- and map buffer local keybindings when the language server attaches
-	" local servers = { "pyright", "rust_analyzer", "tsserver" }
-	" for _, lsp in ipairs(servers) do
-	  " nvim_lsp[lsp].setup { on_attach = on_attach }
-	" end
-	" EOF
-		" "*****************************************************************************
-		" " Go
-		" "*****************************************************************************
-	" lua << EOF
-	" lspconfig = require "lspconfig"
-	" -- if using completion-nvim
-	" -- lspconfig.gopls.setup{on_attach=require'completion'.on_attach}
-	" lspconfig.gopls.setup{composites=false}
-	" -- lspconfig.gopls.setup {
-	" --   cmd = {"gopls", "serve"},
-	" --   settings = {
-	" --     gopls = {
-	" --       analyses = {
-	" --         unusedparams = true,
-	" --       },
-	" --       staticcheck = true,
-	" --     },
-	" --   },
-	" -- }
-	"
-	" function goimports(timeoutms)
-	  " local context = { source = { organizeImports = true } }
-	  " vim.validate { context = { context, "t", true } }
-	"
-	  " local params = vim.lsp.util.make_range_params()
-	  " params.context = context
-	"
-	  " local method = "textDocument/codeAction"
-	  " local resp = vim.lsp.buf_request_sync(0, method, params, timeoutms)
-	  " if resp and resp[1] then
-		" local result = resp[1].result
-		" if result and result[1] then
-		  " local edit = result[1].edit
-		  " vim.lsp.util.apply_workspace_edit(edit)
-		" end
-	  " end
-	"
-	  " vim.lsp.buf.formatting()
-	" end
-	" EOF
-	" autocmd BufWritePre *.go lua goimports(1000)
-	" autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
-50137c6ec7b603852639ed6440f7a98d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/language-servers.vim|24|1|^v|vim
-	"
-	" 
-	" 
-	" 
-	  
-	  
-	"
-	  
-	"
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	"
-	  
-	  
-	  
-	  
-	  
-	  
-	"
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	" 
-	"
-	" 
-	" 
-	" 
-	" 
-	  
-	" 
-	" 
-	  
-	  
-	  
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	"
-	" 
-	  
-	  
-	"
-	  
-	  
-	"
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	"
-	  
-	" 
-	" 
-	" 
-	" 
-	"
-	" 
-9839bf942aae3d457222c33bc3928a52|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/language-servers.vim|81|1|v|vim
-	  " 
-371d71f9b6b0449652fcdc90e26f53ef|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" Language Servers (terminal only!)
-	"*****************************************************************************
-	
-	
-2d200e4d0f288d59a312fbe121e3bb4d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|105|1|V|vim
-	" lua << EOF
-	" local saga = require 'lspsaga'
-	"
-	" -- add your config value here
-	" -- default value
-	" -- use_saga_diagnostic_handler = true
-	" -- use_saga_diagnostic_sign = true
-	" -- error_sign = '',
-	" -- warn_sign = '',
-	" -- hint_sign = '',
-	" -- infor_sign = '',
-	" -- code_action_icon = ' ',
-	" -- finder_definition_icon = '  ',
-	" -- finder_reference_icon = '  ',
-	" -- definition_preview_icon = '  '
-	" -- 1: thin border | 2: rounded border | 3: thick border
-	" -- border_style = 1
-	" -- max_hover_width = 0 (automatically adjust to the width of current symbol)
-	" -- max_hover_width = 0 (automatically adjust to the width of current symbol)
-	" -- rename_prompt_prefix = '➤',
-	"
-	" -- saga.init_lsp_saga {
-	" --   your custom option here
-	" -- }
-	"
-	" -- or --use default config
-	" saga.init_lsp_saga()
-	"
-	" EOF
-	"
-	" " Hover Documentation
-	" nnoremap <silent> <F1> <cmd>lua vim.lsp.buf.hover()<CR>
-	" " Rename
-	" nnoremap <silent> <F2> :LspSagaRename<CR>
-	" " Find the cursor word definition and references
-	" nnoremap <silent> <F3> :LspSagaFinder<CR>
-	" " Preview Definition
-	" nnoremap <silent> <F4> :LspSagaDefPreview<CR>
-	" " Diagnostics
-	" "
-	" " -- show
-	" " nnoremap <silent><leader>cd <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
-	" nnoremap <silent> <leader>cd :LspSagaShowLineDiags<CR>
-	"
-	" " -- jump diagnostic
-	" let g:which_key_map['e'] = { 'name' : 'Next Error' }
-	" " nnoremap <silent> <localleader>e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
-	" let g:which_key_map['E'] = { 'name' : 'Previous Error' }
-	" " nnoremap <silent> <localleader>E <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>
-	" " -- or use command
-	" nnoremap <silent> [e :LspSagaDiagJumpPrev<CR>
-	" nnoremap <silent> ]e :LspSagaDiagJumpNext<CR>
-8034b17de89cf861cee9d7dbf5c3e0a9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/lspsaga.vim|14|1|^v|vim
-	" 
-	" 
-	"
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	"
-	" 
-	" 
-	" 
-	"
-	" 
-	" 
-	"
-	" 
-	"
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	"
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-	" 
-b5372a19b5d7e87a606669516ca224eb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" Lspsaga (terminal only!)
-	"*****************************************************************************
-	
-d6baa6c822c29f31af62b9cd65d262b0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|105|1|V|vim
-	let g:netrw_banner = 0
-	let g:netrw_liststyle = 3
-	let g:netrw_browse_split = 4
-	let g:netrw_altv = 1
-	let g:netrw_winsize = 25
-	let g:netrw_fastbrowse = 0
-	" augroup ProjectDrawer
-	  " autocmd!
-	  " autocmd VimEnter * :Vexplore
-	" augroup END
-ff76c1110bb3ba95e22a24eff2a36d80|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim|10|1|V|vim
-	"                                                       
-	"                                                       
-1b7584796390a8c969796c34d3ad95ce|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" Netrw (terminal only!)
-	"*****************************************************************************
-	"
-	
-	
-fddd73ecd1d7fbb98aa1ca68765b1da4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|106|1|V|vim
-	" lua <<EOF
-	" require'nvim-treesitter.configs'.setup {
-	  " highlight = {
-		" enable = true,
-		" custom_captures = {
-		  " -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-		  " ["foo.bar"] = "Identifier",
-		" },
-	  " },
-	  " incremental_selection = {
-		" enable = true,
-		" keymaps = {
-		  " init_selection = "gnn",
-		  " node_incremental = "grn",
-		  " scope_incremental = "grc",
-		  " node_decremental = "grm",
-		" },
-	  " },
-	  " indent = {
-		" enable = true
-	  " },
-	" }
-	" EOF
-c61b8c403d036e7801a3c4dd153998cd|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|14|1|^v|vim
-	" 
-	" 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	" 
-	" 
-44d98b336de9b6d8d1a2501041bb514d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|10|1|^v|vim
-	"
-	"
-	"
-	"
-0211afbc5c7fd69b7872436c5a99688d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|10|1|V|vim
-	                                                                                          
-c173e97726b1377f2c60f23985eca370|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|102|1|V|vim
-	"*****************************************************************************
-	" Treesitter (terminal only!)
-	"*****************************************************************************
-	
-	"
-36199666890dfa6250e49dc99b988ee9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|106|1|V|vim
-	" " Some servers have issues with backup files, see #649.
-	set nobackup
-	set nowritebackup
-	
-	" Give more space for displaying messages.
-	" set cmdheight=2
-	set cmdheight=1
-	
-	" Don't pass messages to |ins-completion-menu|.
-	set shortmess+=c
-	
-	" Always show the signcolumn, otherwise it would shift the text each time
-	" diagnostics appear/become resolved.
-	if has("patch-8.1.1564")
-	  " Recently vim can merge signcolumn and number column into one
-	  set signcolumn=number
-	else
-	  set signcolumn=yes
-	endif
-	
-	" Use tab for trigger completion with characters ahead and navigate.
-	" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-	" other plugin before putting this into your config.
-	inoremap <silent><expr> <TAB>
-		  \ pumvisible() ? "\<C-n>" :
-		  \ <SID>check_back_space() ? "\<TAB>" :
-		  \ coc#refresh()
-	inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-	
-	function! s:check_back_space() abort
-	  let col = col('.') - 1
-	  return !col || getline('.')[col - 1]  =~# '\s'
-	endfunction
-	
-	" Use <c-space> to trigger completion.
-	if has('nvim')
-	  inoremap <silent><expr> <c-space> coc#refresh()
-	else
-	  inoremap <silent><expr> <c-@> coc#refresh()
-	endif
-	
-	" Make <CR> auto-select the first completion item and notify coc.nvim to
-	" format on enter, <cr> could be remapped by other vim plugin
-	inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-								  \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-	
-	" Use `[g` and `]g` to navigate diagnostics
-	" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-	nmap <silent> [g <Plug>(coc-diagnostic-prev)
-	nmap <silent> ]g <Plug>(coc-diagnostic-next)
-	
-	" GoTo code navigation.
-	nmap <silent> gd <Plug>(coc-definition)
-	nmap <silent> gy <Plug>(coc-type-definition)
-	nmap <silent> gi <Plug>(coc-implementation)
-	nmap <silent> gr <Plug>(coc-references)
-	
-	" Use K to show documentation in preview window.
-	nnoremap <silent> K :call <SID>show_documentation()<CR>
-	
-	function! s:show_documentation()
-	  if (index(['vim','help'], &filetype) >= 0)
-		execute 'h '.expand('<cword>')
-	  elseif (coc#rpc#ready())
-		call CocActionAsync('doHover')
-	  else
-		execute '!' . &keywordprg . " " . expand('<cword>')
-	  endif
-	endfunction
-	
-	" Highlight the symbol and its references when holding the cursor.
-	autocmd CursorHold * silent call CocActionAsync('highlight')
-	
-	" Symbol renaming.
-	nmap <leader>rn <Plug>(coc-rename)
-	
-	" Formatting selected code.
-	xmap <leader>f  <Plug>(coc-format-selected)
-	nmap <leader>f  <Plug>(coc-format-selected)
-	
-	augroup mygroup
-	  autocmd!
-	  " Setup formatexpr specified filetype(s).
-	  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-	  " Update signature help on jump placeholder.
-	  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-	augroup end
-	
-	" Applying codeAction to the selected region.
-	" Example: `<leader>aap` for current paragraph
-	xmap <leader>a  <Plug>(coc-codeaction-selected)
-	nmap <leader>a  <Plug>(coc-codeaction-selected)
-	
-	" Remap keys for applying codeAction to the current buffer.
-	nmap <leader>ac  <Plug>(coc-codeaction)
-	" Apply AutoFix to problem on the current line.
-	nmap <leader>qf  <Plug>(coc-fix-current)
-	
-	" Map function and class text objects
-	" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-	xmap if <Plug>(coc-funcobj-i)
-	omap if <Plug>(coc-funcobj-i)
-	xmap af <Plug>(coc-funcobj-a)
-	omap af <Plug>(coc-funcobj-a)
-	xmap ic <Plug>(coc-classobj-i)
-	omap ic <Plug>(coc-classobj-i)
-	xmap ac <Plug>(coc-classobj-a)
-	omap ac <Plug>(coc-classobj-a)
-	
-	" Remap <C-f> and <C-b> for scroll float windows/popups.
-	if has('nvim-0.4.0') || has('patch-8.2.0750')
-	  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-	  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-	  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-	  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-	  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-	  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-	endif
-	
-	" Use CTRL-S for selections ranges.
-	" Requires 'textDocument/selectionRange' support of language server.
-	nmap <silent> <C-s> <Plug>(coc-range-select)
-	xmap <silent> <C-s> <Plug>(coc-range-select)
-	
-	" Add `:Format` command to format current buffer.
-	command! -nargs=0 Format :call CocAction('format')
-	
-	" Add `:Fold` command to fold current buffer.
-	command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-	
-	" Add `:OR` command for organize imports of the current buffer.
-	command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-	
-	" Add (Neo)Vim's native statusline support.
-	" NOTE: Please see `:h coc-status` for integrations with external plugins that
-	" provide custom statusline: lightline.vim, vim-airline.
-	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-	
-	" Mappings for CoCList
-	" Show all diagnostics.
-	nnoremap <silent><nowait> <space>ca  :<C-u>CocList diagnostics<cr>
-	" Manage extensions.
-	nnoremap <silent><nowait> <space>ce  :<C-u>CocList extensions<cr>
-	" Show commands.
-	nnoremap <silent><nowait> <space>cc  :<C-u>CocList commands<cr>
-	" Find symbol of current document.
-	nnoremap <silent><nowait> <space>co  :<C-u>CocList outline<cr>
-	" Search workspace symbols.
-	nnoremap <silent><nowait> <space>cs  :<C-u>CocList -I symbols<cr>
-	" Do default action for next item.
-	nnoremap <silent><nowait> <space>cj  :<C-u>CocNext<CR>
-	" Do default action for previous item.
-	nnoremap <silent><nowait> <space>ck  :<C-u>CocPrev<CR>
-	" Resume latest coc list.
-	nnoremap <silent><nowait> <space>cp  :<C-u>CocListResume<CR>
-6246e5168084285e5e093f9ef616f5b2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|10|1|V|vim
-	                               
-47236a9847219959ff512859f47dc86c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|40|1|V|vim
-	" diagnostics appear/become resolved.
-c64cd4ba745a0287468f63a24f58854c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|81|1|V|vim
-	" format on enter, <cr> could be remapped by other vim plugin
-5ae2c3bc36ab74880929fad13a63740e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|90|1|V|vim
-	" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-a43136348ff918b45873ea1155522590|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|156|1|V|vim
-	" Example: `<leader>aap` for current paragraph
-94700c37d99a86386aa4d98b34df7d79|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|178|1|V|vim
-	" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-ff2c5c18cb92d8936a023fd638ebb72d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|207|1|V|vim
-	" Requires 'textDocument/selectionRange' support of language server.
-8de8c6f14b2fcd8aed4aed6cd0bf6365|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim|237|1|V|vim
-	" NOTE: Please see `:h coc-status` for integrations with external plugins that
-	" provide custom statusline: lightline.vim, vim-airline.
-1e8e2c64b484841ee76c304bca925737|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|77|1|V|vim
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	"*****************************************************************************
-	"*****************************************************************************
-	"*****************************************************************************
-	"
-	" Terminal Only Settings (Not run in VSCode)
-	"
-	"*****************************************************************************
-	"*****************************************************************************
-	"*****************************************************************************
-	
-	if !exists('g:vscode')
-	
-	"*****************************************************************************
-	" CoC (terminal only!)
-	"*****************************************************************************
-	
-	
-	"*****************************************************************************
-	"*****************************************************************************
-	"*****************************************************************************
-	
-	" END OF TERMINAL ONLY SETTINGS
-	endif
-	
-	"*****************************************************************************
-	"*****************************************************************************
-	"*****************************************************************************
-044a52764967343b049af996e58cdcc5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|78|1|V|vim
-	"*****************************************************************************
-	" Abbreviations
-	"*****************************************************************************
-	
-	" no one is really happy until you have this shortcuts
-	cnoreabbrev W! w!
-	cnoreabbrev Q! q!
-	cnoreabbrev Qall! qall!
-	cnoreabbrev Wq wq
-	cnoreabbrev Wa wa
-	cnoreabbrev wQ wq
-	cnoreabbrev WQ wq
-	cnoreabbrev W w
-	cnoreabbrev Q q
-	cnoreabbrev Qall qall
-2774b80c7e7aff1043a806c3902527f2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|79|1|V|vim
-	set mouse=a
-	map <LeftMouse> <NOP>
-	map <RightMouse> <NOP>
-	
-2d6b8372d3e45cd84091e9a9d9749eb9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|79|1|V|vim
-	" Remaping Pgup Pgdn
-	map <silent> <PageDown> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-D>:set scroll=0<CR>
-	map <silent> <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scroll=0<CR>
-	
-	"This unsets the "last search pattern" register by hitting return
-	nnoremap <silent> <Esc> :noh<CR><Esc>
-	" nnoremap <silent> <CR> :noh<CR><CR>
-	nnoremap <silent> <CR> :noh<CR>
-11ce8673731956ae38d180d75c116d98|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|121|1|V|vim
-	"*****************************************************************************
-	" For support of figures from Inkscape in LaTeX documents
-	"*****************************************************************************
-	
-	" inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-	" nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-	inoremap <C-f> <Esc>: silent exec '.!python3 ~/.local/bin/inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-	nnoremap <C-f> : silent exec '!python3 ~/.local/bin/inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-e38e536047ecb517282e130e98983033|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ftplugin/tex.vim|11|1|^v|vim
-	"
-	"
-	"
-e4fa7ba7d93c0aa11158f492bd89f956|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ftplugin/tex.vim|11|1|V|vim
-	                                             
-492259aaf4c346e93992f6fba5efce08|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|80|1|V|vim
-	" Copy/Paste/Cut
-	if has('unnamedplus')
-	  set clipboard=unnamed,unnamedplus
-	endif
-	
-	noremap YY "+y<CR>
-	" noremap <leader>p "+gP<CR>
-	noremap XX "+x<CR>
-	
-	if has('macunix')
-	  " pbcopy for OSX copy/paste
-	  vmap <C-x> :!pbcopy<CR>
-	  vmap <C-c> :w !pbcopy<CR><CR>
-	endif
-c620ce311176e54ae976fc856901ca91|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|59|1|V|vim
-	" Copy/Paste/Cut
-3568c26c8771766fc52f0c7757c250f3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|82|1|V|vim
-	"*****************************************************************************
-	" On-the-fly spelling correction
-	"*****************************************************************************
-	augroup spell
-	  autocmd!
-	  autocmd BufEnter,FocusGained,InsertLeave *.tex,*.md,*.txt setlocal spell
-	augroup END
-	
-	" setlocal spell
-	set spelllang=en_gb
-	inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-6d93d3216dc4a7f5df47d4876fbec4d3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|77|1|V|vim
-	
-	
-	
-	
-	
-	
-	
-d8cb336e0ff09e742c4b6691393efd74|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|80|1|V|vim
-	" This is the default extra key bindings
-	let g:fzf_action = {
-	  \ 'ctrl-t': 'tab split',
-	  \ 'ctrl-x': 'split',
-	  \ 'ctrl-v': 'vsplit' }
-	
-	" An action can be a reference to a function that processes selected lines
-	function! s:build_quickfix_list(lines)
-	  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
-	  copen
-	  cc
-	endfunction
-	
-	let g:fzf_action = {
-	  \ 'ctrl-q': function('s:build_quickfix_list'),
-	  \ 'ctrl-t': 'tab split',
-	  \ 'ctrl-x': 'split',
-	  \ 'ctrl-v': 'vsplit' }
-	
-	" Default fzf layout
-	" - Popup window
-	let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-	
-	" - down / up / left / right
-	let g:fzf_layout = { 'down': '40%' }
-	
-	" - Window using a Vim command
-	let g:fzf_layout = { 'window': 'enew' }
-	let g:fzf_layout = { 'window': '-tabnew' }
-	let g:fzf_layout = { 'window': '10new' }
-	
-	" Customize fzf colors to match your color scheme
-	" - fzf#wrap translates this to a set of `--color` options
-	let g:fzf_colors =
-	\ { 'fg':      ['fg', 'Normal'],
-	  \ 'bg':      ['bg', 'Normal'],
-	  \ 'hl':      ['fg', 'Comment'],
-	  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-	  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-	  \ 'hl+':     ['fg', 'Statement'],
-	  \ 'info':    ['fg', 'PreProc'],
-	  \ 'border':  ['fg', 'Ignore'],
-	  \ 'prompt':  ['fg', 'Conditional'],
-	  \ 'pointer': ['fg', 'Exception'],
-	  \ 'marker':  ['fg', 'Keyword'],
-	  \ 'spinner': ['fg', 'Label'],
-	  \ 'header':  ['fg', 'Comment'] }
-	
-	" Enable per-command history
-	" - History files will be stored in the specified directory
-	" - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
-	"   'previous-history' instead of 'down' and 'up'.
-	let g:fzf_history_dir = '~/.local/share/fzf-history'
-666f4f405f7d8c113174bd467879fb7b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim|81|1|V|vim
-	" - History files will be stored in the specified directory
-	" - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
-	"   'previous-history' instead of 'down' and 'up'.
-a9d64a11267850110193d21cb0ea7e57|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|77|1|V|vim
-	"*****************************************************************************
-	" FZF
-	"*****************************************************************************
-0c509f85f9952e6dcce5fbb1de2692b8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|81|1|V|vim
-	" nnoremap <silent> <leader>` :BufferLineMoveNext<CR>
-	" nnoremap <silent> <leader>~ :BufferLineMovePrev<CR>
-	lua << EOF
-	require'bufferline'.setup{
-	  options = {
-		view = "multiwindow",
-		numbers = "ordinal",
-		number_style = "",
-		mappings = true,
-		buffer_close_icon= '',
-		modified_icon = '●',
-		-- close_icon = '',
-		left_trunc_marker = '',
-		right_trunc_marker = '',
-		max_name_length = 18,
-		max_prefix_length = 15, -- prefix used when a buffer is deduplicated
-		tab_size = 18,
-		show_buffer_close_icons = true,
-		persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
-		-- can also be a table containing 2 custom separators
-		-- [focused and unfocused]. eg: { '|', '|' }
-		separator_style = "thin",
-		enforce_regular_tabs = false,
-		always_show_bufferline = true,
-		sort_by = 'relative_directory'
-	  }
-	}
-	EOF
-bf497b752fc858adcf7acd380f40018f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim|11|1|V|vim
-	                                                                                       
-26e82808c418e70e6b4848f0bc4fee40|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|78|1|V|vim
-	"*****************************************************************************
-	" Bufferline
-	"*****************************************************************************
-	
-69e7969d263153b7fee7a7d8cb596dc2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|78|1|V|vim
-	let g:startify_custom_header = [
-				\ '                                                                                   ',
-				\ '                                                                                   ',
-				\ '  /$$    /$$          /$$                            /$$    /$$ /$$                ',
-				\ ' | $$   | $$         | $$                           | $$   | $$|__/                ',
-				\ ' | $$   | $$ /$$$$$$ | $$$$$$$   /$$$$$$   /$$$$$$  | $$   | $$ /$$  /$$$$$$/$$$$  ',
-				\ ' |  $$ / $$//$$__  $$| $$__  $$ /$$__  $$ /$$__  $$ |  $$ / $$/| $$ | $$_  $$_  $$ ',
-				\ '  \  $$ $$/| $$  \ $$| $$  \ $$| $$$$$$$$| $$  \__/  \  $$ $$/ | $$ | $$ \ $$ \ $$ ',
-				\ '   \  $$$/ | $$  | $$| $$  | $$| $$_____/| $$         \  $$$/  | $$ | $$ | $$ | $$ ',
-				\ '    \  $/  |  $$$$$$/| $$$$$$$/|  $$$$$$$| $$          \  $/   | $$ | $$ | $$ | $$ ',
-				\ '     \_/    \______/ |_______/  \_______/|__/           \_/    |__/ |__/ |__/ |__/ ',
-				\ '                                                                                   ',
-				\ '                                                                                   ',
-				\ '                 [To open multiple files, use "B" to batch select]                 ',
-				\ ]
-	
-9b2b2fe5f24a4b5ef79445f6bd029400|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|54|1|V|vim
-	"  /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$                                
-	" |______/|______/|______/|______/|______/|______/                                
-3177da7714bd2b73a1298ca74658642d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|177|43|^v|vim
-	 /$$$$$$
-	|______/
-42d81b2aca4d31375c241f581a7545a9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|19|1|V|vim
-			let g:tex_flavor='latex'
-			let g:vimtex_view_method='mupdf'
-			let g:vimtex_quickfix_mode=0
-86397d7d17de40d2552c50007f004b18|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vimtex.vim|10|1|V|vim
-	                                                            
-66de6408fb7d48729ce3e30eb5584197|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|11|1|V|vim
-		" Need to have pynvim installed to use.  Please see :help provider-python for details.  Also, running :checkhealth will be useful if you run into problems.
-6be946a7ea0867123c3dd71880cd0c11|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|12|1|V|vim
-			" let g:UltiSnipsExpandTrigger = '<tab>'
-			" let g:UltiSnipsJumpForwardTrigger = '<tab>'
-			" let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-			" let g:UltiSnipsEditSplit="tabdo"
-db4ce7995d7a0b4213488a9e126c2ba2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/ultisnips.vim|20|1|^v|vim
-			" 
-			" 
-			" 
-			" 
-b8ff885ddffc15e8a8c23e1aff43a7b3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/ultisnips.vim|23|1|V|vim
-	let g:UltiSnipsExpandTrigger = '<tab>'
-	let g:UltiSnipsJumpForwardTrigger = '<tab>'
-	let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-	let g:UltiSnipsEditSplit="tabdo"
-b802a9e43a9f37940bd9c8c09375f00b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|14|1|V|vim
-		" A Vim Plugin for Lively Previewing LaTeX PDF Output.  Change "updatetime"
-		" option for the time it takes to render.
-74069ef90e782487516d9ff4352824fa|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim|25|1|V|vim
-	" A Vim Plugin for Lively Previewing LaTeX PDF Output.  Change "updatetime"
-	" option for the time it takes to render.
-7de58e7ac494cc6ca589a5d8f3bf6b22|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim|26|1|V|vim
-	" option for the time it takes to render.
-512674545b3e79a75f44150a0db81b1f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|15|1|V|vim
-		" let g:livepreview_previewer = 'evince'
-		let g:livepreview_previewer = 'okular'
-c47b0a27e80ab405bdc3273384e620c8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim|28|1|V|vim
-	let g:livepreview_previewer = 'okular'
-5a8e341dd1711e9e16066dc829ebbc92|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim|20|1|V|vim
-	                                                                                                            
-3c19abea2dbf5d1b05850689b709bab7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|18|1|V|vim
-	"*****************************************************************************
-	" Plugins
-	"*****************************************************************************
-55fd5aa6d9b0843ca90e33e55abc80ea|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|38|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
-7877b75911ad2136e9f6746df9a08af4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|39|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc
-6cb641cbe5d92c82e1239df2185ecfc7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|33|1|V|vim
-		let g:sneak#label = 1
-		map f <Plug>Sneak_f
-		map F <Plug>Sneak_F
-28c612ac01a93759b05ce805add21de3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/tex-conceal.vim|10|1|V|vim
-	                                                                                            
-203243400a4c3c28987839dbe7746d10|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|26|1|V|vim
-			set conceallevel=1
-			let g:tex_conceal='abdmg'
-			hi Conceal ctermbg=none
-10b6fcc7e7911dbe6bde8a5ab9b02b12|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|21|1|V|vim
-	if LINUX()
-aa7061d6aa55b7a05e59eca217e3a531|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|31|1|V|vim
-		let g:EasyMotion_do_mapping = 0 " Disable default mappings
-	
-		" Jump to anywhere you want with minimal keystrokes, with just one key binding.
-		" `s{char}{label}`
-		map S <Plug>(easymotion-overwin-f)
-		map s <Plug>(easymotion-overwin-f)
-	
-		" or
-		" `s{char}{char}{label}`
-		" Need one more keystroke, but on average, it may be more comfortable.
-		" nmap s <Plug>(easymotion-overwin-f2)
-		" nmap S <Plug>(easymotion-overwin-f2)
-	
-		" Turn on case-insensitive feature
-		let g:EasyMotion_smartcase = 1
-	
-		" JK motions: Line motions
-		map <Leader>j <Plug>(easymotion-j)
-		map <Leader>k <Plug>(easymotion-k)
-9ac44708c7149e342fddde0e35fe352b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|21|1|V|vim
-	" `s{char}{label}`
-ca0aa372e34ea7ab6ccd71a0142d0cc8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|20|33|v|vim
-	" Disable default mappings
-5d8db1906734aa9186b41dcc4b6b1e21|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|50|1|V|vim
-		" See bufferline section for config
-83a10d706b100638ca1bfbe5088cc8fa|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|53|1|V|vim
-		" " See Language Server section for config
-0c6a0f4b9790cc8473b6922fd636edbf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|55|1|V|vim
-		" " See Completion-nvim section for config
-b91ae5f2a05e87e53ef4ca58305c600f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim|11|1|V|vim
-	                                                           
-53ba1d8793049a10be1e2593d8500ceb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|57|1|V|vim
-		" " To play nice with nvim-compe
-		" inoremap <silent><expr> <C-Space> compe#complete()
-		" inoremap <silent><expr> <CR>      compe#confirm(lexima#expand('<LT>CR>', 'i'))
-		" inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-e5554237fe1a54880e72c17dfd8d8e69|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|40|1|V|vim
-	" Terminal-only plugins
-30c567db5b3772f5a6bae8f0047a93af|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|40|1|V|vim
-	" Plug 'tmsvg/pear-tree'
-d4abf04dcbac3ae7802cd8f80fcd760c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|54|1|V|vim
-	Plug 'cohama/lexima.vim'
-67de6857ee4d2c0c54bab0aeb9b8b7bb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|37|1|V|vim
-	" Pasting above and below
-6e6fc63dd2af9d499c7ef9a7005fb61f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|25|1|V|vim
-	" Plug 'sirver/ultisnips'
-662657a4208d911f27b096a8516a0e9c|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|171|1|V|python
-	                widget.CurrentLayoutIcon(custom_icon_paths=[
-	                                         "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
-878eea001aa14c7fc09ae1f388bb745d|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|182|13|V|python
-	                #  widget.Spacer(length=350),
-047766e0dfd72991470963f008ac268b|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|184|1|V|python
-	                #  widget.TaskList(rounded=False,border=colors["main"], urgent_border=colors["red"], max_title_width=120),
-	                #  widget.Systray(),
-	                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                #  widget.CheckUpdates(colour_have_updates=colors["red"], colour_no_update=colors["main"], no_update_string="yay", display_format="yay:{updates}"),
-	                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                #  widget.CPU(format="{load_percent}%"),
-	                #  widget.CPU(format=" {load_percent}%"),
-	                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
-	                #  widget.Memory(format="{MemPercent}%"),
-	                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                #  widget.Net(format="{down} ↓↑ {up}"),
-	                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                #  widget.TextBox(fmt="VOL:", padding=0),
-	                #  widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-", volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
-e880d5a48a2dcd37b44679df628e8b9a|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|191|1|V|python
-	                 widget.CurrentLayoutIcon(custom_icon_paths=[
-	                                          "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
-	                 widget.Spacer(length=bar.STRETCH),
-9de209f7eaac2684f062dc89dae6a1d2|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|193|1|V|python
-	                 widget.Spacer(length=bar.STRETCH),
-	                 widget.Chord(
-	                     chords_colors={
-	                         'launch': ("#ff0000", "#ffffff"),
-	                     },
-	                     name_transform=lambda name: name.upper()
-	                 ),
-	                 widget.Systray(),
-	                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                 widget.CheckUpdates(
-	                     colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string=" ", display_format=": {updates}"),
-	                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                 widget.CPU(format=" {load_percent}%"),
-	                 # widget.CPU(format=" {load_percent}%"),
-	                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                 #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
-	                 widget.Memory(format=" {MemPercent}%"),
-	                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                 widget.Net(format=" {down} ↓↑ {up}"),
-	                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-	                 widget.TextBox(fmt=" ", padding=0),
-	                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
-	                               volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
-	                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-1c1800e68b6859d25ad40a3dd50091f7|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|206|1|V|python
-	                widget.Spacer(length=bar.STRETCH),
-796ed8de64425d8d54d625502010fd3d|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|206|1|V|python
-	                widget.Spacer(length=bar.STRETCH),
-	                widget.Clock(format=' [%m-%d-%Y]  [%I:%M %p]'),
-	                widget.Spacer(length=bar.STRETCH),
-97f8402e9dbbf564f34208f2cf919d83|file:///home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py|185|17|V|python
-	                 widget.Spacer(length=bar.STRETCH),
+dcdfe917484762f0b3f72dc16763682c|file:///home/jdv/js/reactDice/src/sass/App.scss|19|5|V|scss
+	body {
+e30e5b95e525862bca33a28ba48c3c5b|file:///home/jdv/js/reactDice/src/sass/App.scss|19|1|V|scss
+	font-family: 'Fira Sans', sans-serif;
+7a38a1435c419210954c4a88f0cb8136|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|2|V|scss
+			font-family: $fontName, $fontStyle;
+213f8330021765156b2e8461c475f900|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|2|V|scss
+		$fontStyle: 'sans-serif';
+713f72c51dffeca92e5346f07305971d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|16|2|V|scss
+		$fontName: 'Lato';
+73c79c49be16af538055469a9747d7c3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|V|scss
+			font-family: 'Fira Sans', sans-serif;
+1fd5098a74270513410bf5f3950a5e99|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|8|v|javascript
+	Die1
+1b919f374ad63de6a1cf145231cb9a31|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|7|8|v|javascript
+	Die2
+5b43d14d5365e477f2044c609a7f3602|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|8|8|v|javascript
+	Die3
+7a75ec1743531e0c5b00379b66597147|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|9|8|v|javascript
+	Die4
+7d7eda23cc5551890d7c41496b0a56b5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|10|8|v|javascript
+	Die5
+034f64b9be3a4adfb6b9e5e19033dd72|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|11|8|v|javascript
+	Die6
+69b9035ec4d8d87f2d52add027cded19|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|8|v|javascript
+	DieI
+5373a83713486412cde7b93af68e0489|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|8|v|javascript
+	DieC
+81c5dde936e5a867f7185e430c2a43e5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|14|8|v|javascript
+	DieA
+b9b5417f657b0e024382509c3ac97608|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|15|8|v|javascript
+	DieG
+fa366341bed3417ad9dc90e200178356|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|88|8|V|javascript
+			 <div 
+2186c5bc01af5b4fe370a2a43c84e904|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|88|4|V|javascript
+			 {/*<img className={dieClass} id={id} src={source[val]} alt={alt} width="100" height="100" onClick={handleClick}></img>*/}
+bef02ee05084b9727d15686383b2b538|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|15|14|V|javascript
+	import { ReactComponent as DieG } from "../../resources/dice/die-general.svg"
+f5feb621a624e40ecdfd213d58bea9c6|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|14|14|V|javascript
+	import { ReactComponent as DieA } from "../../resources/dice/die-artillery.svg"
+75c7ff0566ce9676cbbbd07536bc3153|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|14|V|javascript
+	import { ReactComponent as DieC } from "../../resources/dice/die-cavalry.svg"
+e37f59537166224f42b58d9d6c943743|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|1|V|javascript
+	import { ReactComponent as DieI } from "../../resources/dice/die-infantry.svg"
+ee7e984227b5817e11b8d28a33c93abe|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|3|1|V|svg
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:cc="http://creativecommons.org/ns#"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:svg="http://www.w3.org/2000/svg"
+	   xmlns="http://www.w3.org/2000/svg"
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+fd007593ca9e5674e8edaa21506ba9ee|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|8|1|V|svg
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+6dffd61d499ab04a8b6593ddfda2eea4|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|8|1|V|svg
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+b9855020634296c62b1c588b499e2ea8|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|6|1|V|svg
+	   xmlns:svg="http://www.w3.org/2000/svg"
+70e44a0a2d24dfb84c79a317c0ec9e38|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+201fbe02fc7fb2ad7cf02e18123b0483|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|4|1|V|svg
+	   xmlns:cc="http://creativecommons.org/ns#"
+255f3939f7b57de4ab44328b18d068d6|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|3|1|V|svg
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+3d86cf5f976d0d5bded056387240ad5d|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|114|^v|svg
+	xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+447d423b62bc6692ce2266e1dfb0a3b5|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|1|38|V|svg
+	<?xml version="1.0" encoding="UTF-8"?>
+9b902d1b93b80d294625106bd9c669a8|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|71|V|svg
+	 <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019
+61d0a3b8e4cd3f7d43e45f9e9a982543|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|1|V|svg
+	  <rdf:RDF>
+	   <cc:Work rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+	    <dc:title/>
+	   </cc:Work>
+	  </rdf:RDF>
+	 </metadata>
+ec67f3fd692e9bad415a84d1a4eeb3b4|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|1|1|V|svg
+	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+22f95ba43d3cf9cdbd3cd88b9d2d851d|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|3|1|V|svg
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+06815cc7d5c9c6074348af99331548b0|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|V|svg
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+7b871b9e120e375fc469709b211c3e53|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|3|1|V|svg
+	   xmlns="http://www.w3.org/2000/svg"
+e5901c685b3099884ae78a726cd75e15|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|9|1|V|svg
+	   sodipodi:docname="die6-6.svg"
+c3672b885880ce6ba927aa05d4124655|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1440"
+	     inkscape:window-height="900"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="124.8799"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="1366"
+	     inkscape:window-y="0"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+41968dcb6ec56679a3e6cad8ac698010|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title></dc:title>
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+3217fdd4704cc0bbadaf6aea2abaa413|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+015c093fc91978a8c58861395abbc7d4|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|10|1|V|svg
+	  <defs
+	     id="defs17" />
+68377edcd92016f65c49ed7f41be2f45|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+2713562aced192cee02cb1a25f4ce99d|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
+	   preserveAspectRatio="xMidYMid meet"
+3e2fb1abed9eb7b5ebbdd8b4fb7bf690|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|6|1|V|svg
+	   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+d66c555b73715b4d2f4cd3542827dc7e|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
+	   id="svg13"
+cba1fc3aa4d284ca1839d19b60ca6d83|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|2|1|V|svg
+	   version="1.0"
+	   baseProfile="full"
+	   width="187.5pt"
+	   height="187.50002pt"
+8b3955664a05ff7a9c084453345e6533|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|1|1|V|svg
+	<svg
+	   version="1.0"
+	   baseProfile="full"
+	   width="187.5pt"
+	   height="187.50002pt"
+	   >
+	  <rect
+	     style="fill:none;fill-opacity:0.75;stroke:#6272a4;stroke-width:2.37519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="rect23"
+	     width="185.12482"
+	     height="185.12483"
+	     x="1.187595"
+	     y="1.187595"
+	     ry="27.943369" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="path852"
+	     cx="35.625"
+	     cy="35.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle16"
+	     cx="155.625"
+	     cy="155.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1523"
+	     cx="34.175251"
+	     cy="154.17525"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1587"
+	     cx="154.17525"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1618"
+	     cx="93.75"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1650"
+	     cx="93.75"
+	     cy="154.17525"
+	     r="19.175249" />
+	</svg>
+e5bb72e368f6fb17a88f7be657851564|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
+	   sodipodi:docname="die6-2.svg"
+6cda467e060661c813a18c61c1c74ecb|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
+	  <defs
+	     id="defs17" />
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1440"
+	     inkscape:window-height="900"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="124.8799"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="1366"
+	     inkscape:window-y="0"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title></dc:title>
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+4babe9ef6ea99d3a53c134f31786fc30|file:///home/jdv/js/reactDice/src/resources/dice/die6-3.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die6-3.svg"
+26e57f49e5dd3b5f529e07ad45f06aee|file:///home/jdv/js/reactDice/src/resources/dice/die6-3.svg|5|1|v|svg
+	   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+2d96edffcecd2284066a2c84ae458e74|file:///home/jdv/js/reactDice/src/resources/dice/die6-4.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die6-4.svg"
+f1bb203acdff99f24b877f3390e32940|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die6-5.svg"
+0da0ad8e86badede6b5d88a922397bbc|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|v|svg
+	   inkscape:ve
+77624d2b8ffd03809684a6d0414d908e|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|v|svg
+	rsion="1.0.2 (e86c870879, 2021-01-15)"
+79834ef0039053fbf3ae8db9bb53a3e2|file:///home/jdv/js/reactDice/src/resources/dice/die-artillery.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-artillery.svg"
+a70a64e07b65adbc8a7b419373255413|file:///home/jdv/js/reactDice/src/resources/dice/die-artillery.svg|6|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="124.8799"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+517cb42e0258f93fcfac6ff1dc4d557d|file:///home/jdv/js/reactDice/src/resources/dice/die-cavalry.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-cavalry.svg"
+c52a7a23ded9595d885574e92459b139|file:///home/jdv/js/reactDice/src/resources/dice/die-cavalry.svg|6|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="127.40351"
+	     inkscape:cy="124.84027"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+1479f6f4c742df41c857f41a3a3d1124|file:///home/jdv/js/reactDice/src/resources/dice/die-general.svg|3|1|V|svg
+	   width="187.5pt"
+	   height="187.50002pt"
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-general.svg"
+c318d7f8dfc18b6c23eea1d300229fca|file:///home/jdv/js/reactDice/src/resources/dice/die-general.svg|4|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="-24.912189"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+f918d2a38d40333bb1af71feda9dba3c|file:///home/jdv/js/reactDice/src/resources/dice/die-infantry.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-infantry.svg"
+edb087b0c29f738e4546382b2dec7377|file:///home/jdv/js/reactDice/src/resources/dice/die-infantry.svg|6|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="151.64303"
+	     inkscape:cy="122.34211"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+f889472590a0e269a353e5bb0a6be366|file:///home/jdv/js/reactDice/src/resources/dice/README.md|2|1|V|markdown
+	
+	   xmlns="http://www.w3.org/2000/svg"
+	   xmlns:svg="http://www.w3.org/2000/svg"
+	   xmlns:cc="http://creativecommons.org/ns#"
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+10813eb8c79879a8092204f2125ed3ca|file:///home/jdv/js/reactDice/src/resources/dice/README.md|5|1|V|markdown
+	
+	
+	<svg
+	   version="1.0"
+	   baseProfile="full"
+	   width="187.5pt"
+	   height="187.50002pt"
+	   >
+	  <rect
+	     style="fill:none;fill-opacity:0.75;stroke:#6272a4;stroke-width:2.37519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="rect23"
+	     width="185.12482"
+	     height="185.12483"
+	     x="1.187595"
+	     y="1.187595"
+	     ry="27.943369" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="path852"
+	     cx="35.625"
+	     cy="35.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle16"
+	     cx="155.625"
+	     cy="155.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1523"
+	     cx="34.175251"
+	     cy="154.17525"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1587"
+	     cx="154.17525"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1618"
+	     cx="93.75"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1650"
+	     cx="93.75"
+	     cy="154.17525"
+	     r="19.175249" />
+	</svg>
+79f2634563346580cd05fa2e849e3557|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
+	</svg>
+f31bbdd1b3e85bccd652680e16935819|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|90|5|v|javascript
+	Source
+35af0a1ef14aae0d4b4840fc7fe1e4d5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|89|1|V|javascript
+			<div>
+				<DieA className={dieClass} id={id} onClick={handleClick}/>
+			</div>
+be1c253293efc9f3da72da537173d45f|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|87|2|V|javascript
+			 /*<img className={dieClass} id={id} src={source[val]} alt={alt} width="100" height="100" onClick={handleClick}></img>*/
+2b2cd60e1667782e22847dbadb22b359|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|32|^v|javascript
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+3c7630074790a251435d6dd4583b5cb4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|8|^v|javascript
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 

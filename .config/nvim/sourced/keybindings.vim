@@ -32,6 +32,10 @@ let g:maplocalleader = "\<Space>"
 nnoremap W b
 nnoremap E ge
 
+"*****************************************************************************
+" jj exits insert mode
+"*****************************************************************************
+
 inoremap jj <Esc>
 
 "*****************************************************************************
@@ -120,3 +124,13 @@ nnoremap <silent> <Esc> :noh<CR><Esc>
 nnoremap <silent> <CR> :noh<CR>
 
 
+"*****************************************************************************
+" Toggle comments
+"*****************************************************************************
+
+" Comment in return blocks of React functional components (linewise)
+	" Comment
+nnoremap <silent> <leader><leader>c 0i{/* <C-o>$<C-o>a */}<Esc>
+	" Uncomment
+nnoremap <silent> <leader><leader>u 0dt*x$F*xxx
+nnoremap <silent> <leader><leader>v 0dt*x$F*xxx

@@ -178,6 +178,7 @@ alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls"
 alias -g GODIR="~/go/src/github.com/jdvober"
 alias -g DOTS="~/github.com/jdvober/dotfiles/.config"
 alias -g DOTFILES="~/github.com/jdvober/dotfiles/.config"
+alias -g NVIMSWAP="local/share/nvim/swap"
 
 # Config shortcuts
 alias -g ZSHRC="~/.zshrc"

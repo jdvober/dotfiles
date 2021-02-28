@@ -180,8 +180,10 @@ screens = [
                                 highlight_method="block"
                                 ),
                 widget.Spacer(length=bar.STRETCH),
+
                 widget.Clock(format=' [%m-%d-%Y]  [%I:%M %p]'),
                 widget.Spacer(length=bar.STRETCH),
+
                 widget.Chord(
                      chords_colors={
                          'launch': ("#ff0000", "#ffffff"),
@@ -190,18 +192,21 @@ screens = [
                  ),
                 widget.Systray(),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+
                 widget.CheckUpdates(
                      colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string=" ", display_format=": {updates}"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.CPU(format=" {load_percent}%"),
-                # widget.CPU(format=" {load_percent}%"),
-                widget.Sep(padding=8, linewidth=2, size_percent=65),
-                #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
-                widget.Memory(format=" {MemPercent}%"),
-                widget.Sep(padding=8, linewidth=2, size_percent=65),
-                widget.Net(format=" {down} ↓↑ {up}"),
-                widget.Sep(padding=8, linewidth=2, size_percent=65),
+
+                #  widget.CPU(format=" {load_percent}%"),
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.Memory(format=" {MemPercent}%"),
+#
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
+                #  widget.Net(format=" {down} ↓↑ {up}"),
+
+                #  widget.Sep(padding=8, linewidth=2, size_percent=65),
                 widget.TextBox(fmt=" ", padding=0),
+
                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
                                volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),

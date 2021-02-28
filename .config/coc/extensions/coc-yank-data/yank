@@ -1,911 +1,1505 @@
-58a1e0ab94ff07499bc37abd61a349b8|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
-	.App-logo {
-	  height: 40vmin;
-	  pointer-events: none;
-	}
-	
-	@media (prefers-reduced-motion: no-preference) {
-	  .App-logo {
-	    animation: App-logo-spin infinite 20s linear;
-	  }
-	}
-d6875b0868748c43a47180b435041aab|file:///home/jdv/js/reactDice/src/App.css|99|1|V|css
-	
-	@keyframes App-logo-spin {
-	  from {
-	    transform: rotate(0deg);
-	  }
-	  to {
-	    transform: rotate(360deg);
-	  }
-	}
-9b2e03886d4be5eacac4607d37d4ffb1|file:///home/jdv/js/reactDice/src/components/Map/Image.js|1|1|V|javascript
-	import PropTypes from 'prop-types'
-	
-70ff8c724a7038cdde1f9d48aedf5387|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|1|V|javascript
-	Image.defaultProps = {
-	}
-	
-	Image.propTypes = {
-	}
-	
-b34bc428899c4526d7692453311ee31f|file:///home/jdv/js/reactDice/src/components/Map/Map.js|1|1|V|javascript
-	import ChatInput from './ChatInput'
-	import Messages from './Messages'
-9d27d2a6c8234171b7cf3c7a6fc66aee|file:///home/jdv/js/reactDice/src/components/Map/Map.js|8|1|V|javascript
-	            <Messages chatHistory={chatHistory}/>
-4e37e5d8c4a56e1a3863001f945e6ef6|file:///home/jdv/js/reactDice/src/components/Map/Map.js|8|1|V|javascript
-	            <ChatInput addMessage={addMessage}/>
-55dcdf017b51fc96f7b5f9d63013b95d|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|33|v|javascript
-	Chat
-41de6d6cfb8953c021bbe4ba0701c8a1|file:///home/jdv/js/reactDice/src/App.css|61|4|v|css
-	Messages
-edad6657cf5884f4b77695b8fd969db0|file:///home/jdv/js/reactDice/src/App.css|52|1|V|css
-	    display: flex;
-	    background-color: var(--Background);
-	    border-style: rounded;
-	    flex-direction: column;
-	    border-radius: 20px;
-	    padding: 5%;
-	    margin: 2%;
-6a2484cb3f3a49c4f4a2bb9037ff8b0a|file:///home/jdv/js/reactDice/src/App.css|107|1|V|css
-	    grid-row: 2 / 9;
-12e486284555d5d4dc0f3f3ff698e071|file:///home/jdv/js/reactDice/src/App.css|27|1|V|css
-	    grid-template-columns: repeat(10, 1fr) / repeat(4, 1fr);
-a7de638f3c55483972bee2cd2fcafc80|file:///home/jdv/js/reactDice/src/App.css|28|28|v|css
-	repeat(10, 1fr)
-13984565be5b00430a129ecc70c8b4cd|file:///home/jdv/js/reactDice/src/App.css|28|18|V|css
-	    /* grid-template:  repeat(4, 1fr) / repeat(10, 1fr); */
-77631ca4f0e08419b70726a447333ab6|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|14|v|javascript
-	This
-e161c4655fb160b39fc5146a3ca61c83|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|14|v|javascript
-	This is where the image goes
-158405b9626c837b016127ff6f1e4473|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|19|v|javascript
-	../../../public/LaDendria_Map.png
-8346b01fbc8f314159e8b1c77911a759|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|9|v|javascript
-	<img src="../../../public/LaDendria_Map.png" alt="Map"></img>
-0ae223530009f994969672cc88b86c60|file:///home/jdv/js/reactDice/src/components/Map/Image.js|5|18|v|javascript
-	"../../../public/LaDendria_Map.png" 
-ff79f399aee988079da9d92c24945764|file:///home/jdv/js/reactDice/src/components/Map/Image.js|1|23|v|javascript
-	../../../public
-1927cbfe3d1b6a0759518d94a54f698c|file:///home/jdv/js/reactDice/src/App.css|65|1|V|css
-	.chatbox-flex-container > div {
-	    text-align: left;
-	    color: var(--White);
-	    background-color: var(--Medium-Gray);
-	    padding: 1%;
-	    padding-left: 5%;
-	    /* margin-left: 2.5%; */
-	    /* margin-right: 5%; */
-	    margin-top: 2%;
-	    margin-bottom: 2%;
-	    font-size: 30px;
-	    border-radius: 0px 20px 0px 20px;
-	}
-b5a55841b7ee6717218ae33644bff3e4|file:///home/jdv/js/reactDice/src/App.css|122|2|v|css
-	chatbox
-2e1cba59e6684d913863425fc02160c9|file:///home/jdv/js/reactDice/src/App.css|123|9|V|css
-	    text-align: left;
-86c52d948e2d02aea779129bf04c1961|file:///home/jdv/js/reactDice/src/App.css|123|9|V|css
-	    color: var(--White);
-09b4aa014c655fc4260d8649d8860658|file:///home/jdv/js/reactDice/src/App.css|123|9|V|css
-	    background-color: var(--Medium-Gray);
-808543313c28d6b4660d5961ff471ffd|file:///home/jdv/js/reactDice/src/App.css|125|1|V|css
-	    /* margin-left: 2.5%; */
-	    /* margin-right: 5%; */
-	    margin-top: 2%;
-	    margin-bottom: 2%;
-8974309b97f8eb086f240250f455bad3|file:///home/jdv/js/reactDice/src/App.css|126|16|V|css
-	    font-size: 30px;
-3d371bdf3ae05c026b187d3b22cd5d7e|file:///home/jdv/js/reactDice/src/App.css|126|16|V|css
-	    border-radius: 0px 20px 0px 20px;
-82dd6b279dbd4eac5e9c67b26ab35422|file:///home/jdv/js/reactDice/src/App.css|124|19|V|css
-	    padding-left: 25%;
-fe095f8db0d398a826773e378321a779|file:///home/jdv/go/src/github.com/jdvober/apexAttendance/config.env|25|12|v|sh
-	TACDistrictJoseph.Vober=%c3%80%c3%adg%e2%82%ac%c3%a1%c3%98%c3%91%21; TACServerJoseph.Vober=q%c3%97j%c2%b3%e2%80%a1%c2%be%e2%80%99%5c%19%c3%90jN%3e%c3%86%7f%c2%b4; TACDatabaseJoseph.Vober=%c3%a2%c3%a8%c3%9a%e2%80%b9%2as%c3%97%c3%b1%7d%c3%94YM%5e%c3%8b%e2%80%9a%15; TACSummerSchoolJoseph.Vober=N; __RequestVerificationToken_L1RBQw2=qS_GsMOAatpcSdiZrLRVwD8sGpx-Pl6gl-Fw_nu9gWP727nZ-aAfDfiSRupPQxgaYoNkEUAt-fT9nwhkYqHyRzACKBJfe9tVr3iHTJU_CqA1; ASP.NET_SessionId=qulyhemxvfzd14vrx22xvbnr; eSPADAuthCookie=1CDBD272D6E094157B50AE9502DC65B06DCA748C689FE81F4021801297DA7B36F2D85FDD73ED856CF8F39AFC8C1B940EF28F7F83AB2ECC230A3027FBC04482ECA6FB558B3821E00DE2604FBA320FA5DC1622089F00276611A1285FF4EB905AE031EBC2132468E98AD6A0E993B7910A0F
-	
-281858037f7dcf7ed49271bb92c60526|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|1079|16|v|vim
-	ordinal
-1f1d8ed593a49ecc9f820bb656518a84|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|2|1|V|vim
-	    call rpcnotify(1, 'Gui', 'Font', 'JetBrainsMono Nerd Font 14')
-4f3e44bd1004c78bd47573c10ea80995|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|2|39|v|vim
-	JetBrainsMono
-0603ecbed5a97d741b19407a33a00457|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|9|33|V|vim
-	    :Guifont DejaVu Sans Mono:h13
-8ae50134230db227e8bbd188ec6c061a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|2|39|v|vim
-	VictorMono Nerd Font 14
-560a6af3ca9eed524280933b0c6f3ecb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|10|10|v|vim
-	DejaVu Sans Mono
-b2507468f95156358fa490fd543ad2f0|file:///home/jdv/js/reactDice/src/components/Map/Image.js|11|6|V|javascript
-	export
-03c408620c681ce74b0f6f74fd67a7cc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|795|1|V|vim
-	set cmdheight=0
-3187336abd5ee5dae476add79203448c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/ginit.vim|15|13|V|vim
-	:GuiTabline 0
-29224bc734b710e9cadbd1b8a73aee34|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|795|1|V|vim
-	set cmdheight=1
-c2b759de16de999c2d2e981a5ad67e97|file:///home/jdv/.config/alacritty/alacritty.yml|122|13|v|yaml
-	JetBrainsMono Nerd Font
-e04ab7509fed5d012948286419e0b128|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|1080|16|v|vim
-	buffer_id
-52d2ccf4dd531289925d8c89e4add5bf|file:///home/jdv/js/reactDice/src/App.css|36|1|V|css
-	    grid-column-gap: 1vh;
-5c6d0efaa5e9d6f63a08c670681b8e7d|file:///home/jdv/js/reactDice/src/App.css|90|1|V|css
+c14210b5dbd8d5d2243616d6abd19148|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|20|18|v|javascript
+	repeats * ( duration + pause)
+63480f2e3055fdf90539ed8ff31b48ac|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|7|4|V|javascript
+				repeats++;
+8f8222326e8ff494c55fc61d88dbd9d0|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|4|10|V|javascript
+		let repeats = 0
+ec1b81965109165de6b38cd92c1e39f9|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|3|27|v|javascript
+	pause
+c2e33d9bed17247ad63b5fc52b0e42fb|file:///home/jdv/js/reactDice/src/sass/App.scss|13|8|V|scss
+	@use 'tabs';
+318eacee22d216048f84fe25581ac084|file:///home/jdv/js/reactDice/src/sass/_map.scss|5|1|V|scss
+		// background-color: colors.$Background;
+4d0836388d7f040b1f7082bd48cd9ef9|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    padding: 2%;
+5c6d0efaa5e9d6f63a08c670681b8e7d|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
 	    padding-right: 10%;
-7c4f29407893c334a6cb7a87bf045c0d|file:///home/jdv/js/reactDice/src/App.css|91|13|v|css
-	right
-0483e5fd9ee49fa47bb747eab2a7d13e|file:///home/jdv/js/reactDice/src/App.css|79|1|V|css
-	#chatboxTitle {
-	    text-align: center;
-	    color: var(--Pink);
-	    background-color: var(--Light-Gray);
-	    /* auto margins center an element within it's container horizontally */
-	    margin: auto;
-	    padding: 1%;
-	    font-size: 250%;
-	    width: 20%;
-	    order: 0;
-	    border-radius: 20px;
-	    padding-right: 10%;
-	    padding-left: 5%;
-	}
-fe7fd9df2746b0f448bdb86eddd71d60|file:///home/jdv/js/reactDice/src/App.css|140|13|V|css
-	    order: 0;
-f6785fea07d33a51608ad822f33fff7b|file:///home/jdv/js/reactDice/src/App.css|141|1|V|css
-	    padding-right: 10%;
-	    padding-left: 5%;
-4446e46624a7239d2698ed126bec6d21|file:///home/jdv/js/reactDice/src/App.css|85|1|V|css
-	    padding: 1%;
-087a51b1ae4dfbad3f223a77f89975f8|file:///home/jdv/js/reactDice/src/App.css|84|1|V|css
-	    margin-left: auto;
-9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/App.css|85|18|v|css
-	auto
-811882fecd5c7618d7099ebbd39ea254|file:///home/jdv/js/reactDice/src/App.css|85|12|v|css
-	left
-1708297b0d707efc88d2930c74285088|file:///home/jdv/js/reactDice/src/App.css|84|1|V|css
-	    margin-left: auto;
-	    margin-right: auto;
-dfb6227c8365b5f3d8ae2afa3f281b4f|file:///home/jdv/js/reactDice/src/App.css|135|1|V|css
-	    margin: auto;
-d3cd63bc41e8f8680f832a40e68f6c08|file:///home/jdv/js/reactDice/src/App.css|141|1|V|css
-	    /* padding-right: 10%; */
-	    /* padding-left: 5%; */
-ea2b2676c28c0db26d39331a336c6b92|file:///home/jdv/js/reactDice/src/App.css|77|27|v|css
-	start
-9e7ace81eb5d8c8e66d15edcaf439d42|file:///home/jdv/js/reactDice/src/App.css|77|5|v|css
-	justify
-9a0364b9e99bb480dd25e1f0284c8555|file:///home/jdv/js/reactDice/src/App.css|77|11|v|css
-	content
-ae98afa874c703bc7e321643c913aeae|file:///home/jdv/js/reactDice/src/App.css|78|26|V|css
-	    align-items: flex-end;
-222ae92ea21d206bd7254b16032e924c|file:///home/jdv/js/reactDice/src/App.css|59|1|V|css
-	    align-content: flex-end;
-897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/App.css|40|14|v|css
-	flex
-b58faf8e71a6fde42efda8d3df8431f9|file:///home/jdv/js/reactDice/src/App.css|117|5|V|css
-	    flex-direction: column;
-c171a97d351eded37ad8e2b509b96108|file:///home/jdv/js/reactDice/src/App.css|52|17|V|css
-	    display:grid;
-33a4f96db9a03ece135d846a8856d2a5|file:///home/jdv/js/reactDice/src/App.css|52|1|V|css
-	    grid-row: 2 / 9;
-	    grid-column: 4 / 5;
-5870683d35a48578c27776eeaad822d2|file:///home/jdv/js/reactDice/src/App.css|52|31|V|css
-	    grid-template-columns: auto auto;
-a58a0779c4f080851153e9a16006b450|file:///home/jdv/js/reactDice/src/App.css|31|18|V|css
-	    grid-auto-rows: minmax(100px, auto);
-e17fba5611885f4ce84fb189ece261fd|file:///home/jdv/js/reactDice/src/App.css|29|18|V|css
-	    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
-cdc1464af69ea4c9147d90910498027d|file:///home/jdv/js/reactDice/src/App.css|28|12|V|css
-	    /* row / colums */
-9aad98540d40b187de9b2b8baf23e402|file:///home/jdv/js/reactDice/src/App.css|35|1|V|css
-	.App-header {
-	    background-color: var(--Background);
-	    min-height: 100vh;
-	    display: grid;
-	    align-items: center;
-	    justify-content: center;
-	    font-size: calc(10px + 2vmin);
-	    color: var(--White);
-	}
-94ad01e15abf46b43a69e3e7bde5e796|file:///home/jdv/js/reactDice/src/App.css|35|1|V|css
-	.App-link {
-	    color: var(--Cyan);
-	}
-19515b27a429286485b12ebfe14b862f|file:///home/jdv/js/reactDice/src/App.css|36|1|V|css
-	    display: grid;
-0e07f118fbf0833093b0eb8d2e57ad3c|file:///home/jdv/js/reactDice/src/App.css|91|9|V|css
-	    grid-column: 1 / 4;
-eefe05b5f63320590cc7ac6880675e10|file:///home/jdv/js/reactDice/src/App.css|66|17|V|css
+11b8fdbd493f05616e2e6c4e67cbaf04|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    /* padding-left: 10%; */
+eefe05b5f63320590cc7ac6880675e10|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
 	    margin-top: 1%;
-20a25bc4e707132251b52a60b2f39a0e|file:///home/jdv/js/reactDice/src/App.css|40|1|V|css
-	    margin: 5%;
-8a3ba650c582150748df1d9655cedf4b|file:///home/jdv/js/reactDice/src/App.css|40|18|V|css
-	    margin-top: 5%;
-	    margin-right: 5%;
-	    margin-bottom: 5%;
-2df0a0c16cf39c29a067b0b7b70008dc|file:///home/jdv/js/reactDice/src/App.css|99|1|V|css
-	    /* margin-right: 2.5%; */
-1ce5ddf23906b7b05c2ee9ab17c701b9|file:///home/jdv/js/reactDice/src/App.css|98|1|V|css
-	    margin: 2%;
-7a523a2878bb699e3fa23cbfede3c9e2|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
-	      [row2-start] "footer footer footer" 25px [row2-end]
-54ff56aca33177244d45e17a61db0e7d|file:///home/jdv/js/reactDice/src/App.css|29|35|^v|css
-	header
-	footer
-	footer
-b9f3259b64012e360eba02826eecb020|file:///home/jdv/js/reactDice/src/App.css|29|34|^v|css
-	 
-	 
-	 
-099fb995346f31c749f6e40db0f395e3|file:///home/jdv/js/reactDice/src/App.css|29|21|v|css
-	header
-251d164643533a527361dbe1a7b9235d|file:///home/jdv/js/reactDice/src/App.css|30|21|v|css
-	footer
-3ead4598185ad88b625516d7029df3c9|file:///home/jdv/js/reactDice/src/App.css|28|1|V|css
-	    grid-template:
-	      [row1-start] "titlebar    timer" 10% [row1-end]
-	      [row2-start] "mapbox      chatbox" 70% [row2-end]
-	      [row3-start] "rollbox      commandbox" 20% [row3-end]
-	      / 70% auto;
-953c99327cbaf91db9147ef9d1d30927|file:///home/jdv/js/reactDice/src/App.css|31|5|V|css
-	    gap: 1%;
-7bc021fb6c13568ea77def386039fa24|file:///home/jdv/js/reactDice/src/App.css|52|1|V|css
-	    /* margin-left: 2.5%; */
-	    /* margin-right: 5%; */
-f792d1afb0399dce47533bead9d71a8a|file:///home/jdv/js/reactDice/src/App.css|30|5|v|css
-	align
-adb115059e28d960fa8badfac5516667|file:///home/jdv/js/reactDice/src/App.css|30|18|v|css
-	center
-3be4bd1c466fc04e9df2c1f3d63f1d7a|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
-	    align-items: start;
-ce6039ad3b839787ddc24e4af236b623|file:///home/jdv/js/reactDice/src/App.css|31|24|V|css
-	    place-items: stretch;
-3cf99c44f97f363440620ebd3677c9b6|file:///home/jdv/js/reactDice/src/App.css|31|27|V|css
-	    /* align-content: stretch; */
-7ec0da99936e2393edc1ae27111fcc03|file:///home/jdv/js/reactDice/src/App.css|31|27|V|css
-	    place-content: stretch;
-7ede1256c6d8a203d2b9ff3a5602483e|file:///home/jdv/js/reactDice/src/App.css|31|9|V|css
-	        ""
-35be8580884ad3abe366784b717bfb01|file:///home/jdv/js/reactDice/src/App.css|31|1|V|css
-	        "mapbox chatbox"
-e37d70e5121bac625f97faf49562c1e6|file:///home/jdv/js/reactDice/src/App.css|32|10|v|css
-	mapbox
-279ed8367e3b37380b6c73d514f80b33|file:///home/jdv/js/reactDice/src/App.css|101|1|V|css
-	.mapbox-grid-container {
-	    grid-area: mapbox;
-	
-	    background-color: var(--Background);
+20500e00d2bf4c607e9c78523a66e0db|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
+	    /* margin-right: 0%; */
+bfb187ee3df68e2744d96942b1eb0975|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|15|V|scss
+	    width: 85%;
+6ac1985fae2f71b2ec281573b20c6fb9|file:///home/jdv/js/reactDice/src/sass/_map.scss|7|1|V|scss
+		border-style: rounded;
+		border-radius: 20px;
+		padding: 2%;
+		margin-left: 2%;
+d74668d8ba4d0d9885ec15043169d49d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|13|1|V|scss
 	    border-style: rounded;
 	    border-radius: 20px;
 	    padding: 2%;
-	    /* margin: 2%; */
-	    /* margin-right: 0%; */
-	}
-6cf25a56fdc8e2fd96ed386a489247e8|file:///home/jdv/js/reactDice/src/App.css|119|1|V|css
-	#mapTitle {
-	    text-align: center;
-	    color: var(--Pink);
-	    background-color: var(--Light-Gray);
-	    /* auto margins center an element within it's container horizontally */
-	    margin-left: auto;
-	    margin-right: auto;
-	    padding: 1%;
-	    font-size: 250%;
-	    width: auto;
-	    border-radius: 20px;
-	}
-1e6f018cc2b5705de12986d24e7a5623|file:///home/jdv/js/reactDice/src/App.css|143|1|V|css
-	#Title {
-	    text-align: center;
-	    color: var(--Pink);
-	    background-color: var(--Light-Gray);
-	    /* auto margins center an element within it's container horizontally */
-	    margin-left: auto;
-	    margin-right: auto;
-	    padding: 1%;
-	    font-size: 250%;
-	    width: auto;
-	    border-radius: 20px;
-	}
-c6a4cb5dfff9c4fa074be2dbad25891e|file:///home/jdv/js/reactDice/src/App.css|131|1|V|css
-	
-	/* Time */
-	.timer-grid-container {
-	    grid-area: mapbox;
-	
-	    background-color: var(--Background);
+	    margin-left: 1.5%;
+	    margin-top: 0.5%;
+a53ee7da495853e861e5f53962d69300|file:///home/jdv/js/reactDice/src/sass/_command.scss|9|1|V|scss
 	    border-style: rounded;
 	    border-radius: 20px;
 	    padding: 2%;
-	    /* margin: 2%; */
-	    /* margin-right: 0%; */
-	}
-012fd52ebc375101cf2d00b0f576a65b|file:///home/jdv/js/reactDice/src/components/Titlebar/Titlebar.js|1|2|V|javascript
-	import Image from './Image'
-a4a9804acb2a556e21a400b4ab706de0|file:///home/jdv/js/reactDice/src/components/Titlebar/Titlebar.js|5|21|V|javascript
-	            <Image />
-c56078b1f6eae338b49920bdd84bf206|file:///home/jdv/js/reactDice/src/components/Titlebar/Titlebar.js|1|1|V|javascript
-	const Titlebar = () => {
-	    return (
-	        <div className='titlebar-grid-container'>
-	            <div id="titlebarTitle">Titlebar</div>
-	        </div>
-	    )
-	}
-	
-	export default Titlebar
-65f8b4d1d210ba43e5869f490cc0d250|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|1|1|V|javascript
-	import Image from './Image'
-	
-	const Map = () => {
-	    return (
-	        <div className='mapbox-grid-container'>
-	            <div id="mapTitle">Map</div>
-	            <Image />
-	        </div>
-	    )
-	}
-	
-	export default Map
-a76d4ef5f3f6a672bbfab2865563e530|file:///home/jdv/js/reactDice/src/App.css|144|4|v|css
-	Time
-6f34f3ecdf12f71f3c70dc8cef6451a5|file:///home/jdv/js/reactDice/src/App.css|144|1|V|css
-	/* Time */
-	.timer-grid-container {
-	    grid-area: mapbox;
-	
-	    background-color: var(--Background);
-	    border-style: rounded;
-	    border-radius: 20px;
-	    padding: 2%;
-	    /* margin: 2%; */
-	    /* margin-right: 0%; */
-	}
-05fa784ed4d713de15cf660435600f81|file:///home/jdv/js/reactDice/src/App.css|179|1|V|css
-	
-	
-	/* Time */
-	.timer-grid-container {
-	    grid-area: mapbox;
-	
-	    background-color: var(--Background);
-	    border-style: rounded;
-	    border-radius: 20px;
-	    padding: 2%;
-	    /* margin: 2%; */
-	    /* margin-right: 0%; */
-	}
-2c127bf32ccb4edf2bf22fea5a00e494|file:///home/jdv/js/reactDice/src/App.css|133|2|v|css
-	timer
-1f46d61869208456209d034ae30b79e4|file:///home/jdv/js/reactDice/src/App.js|3|1|V|javascript
-	import Chat from './components/Chat/Chat'
-c82f688345b9f8958941d830d28453a4|file:///home/jdv/js/reactDice/src/App.js|6|1|V|javascript
-	import Map from './components/Map/Map'
-80102570eddbfdb1c530186b1d589084|file:///home/jdv/js/reactDice/src/App.css|118|1|V|css
-	
-	#mapTitle {
-	    text-align: center;
-	    color: var(--Pink);
-	    background-color: var(--Light-Gray);
-	    /* auto margins center an element within it's container horizontally */
-	    margin-left: auto;
-	    margin-right: auto;
-	    padding: 1%;
-	    font-size: 250%;
+	    margin-left: 2%;
+	    height: 56%;
+3db215353ac27b91977accd18578d152|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|15|1|V|scss
+		border-style: rounded;
+		border-radius: 20px;
+		height: 121%;
+		width: 93%;
+		padding: 2%;
+8f2b3cb4dbe9725c6d5919a2171246e1|file:///home/jdv/js/reactDice/src/sass/_map.scss|93|1|V|scss
 	    width: auto;
-	    border-radius: 20px;
-	}
-3ae8f19e8383356aa836a15088bedbaa|file:///home/jdv/js/reactDice/src/App.css|144|2|v|css
-	mapTitle
-1afd32818d1c9525f82aff4c09efd254|file:///home/jdv/js/reactDice/src/App.css|37|21|v|css
-	column
-c524651263ce1d4c8ae109580c4566a2|file:///home/jdv/js/reactDice/src/App.css|27|35|v|css
-	 11%
-9a8a2574f1851e473330427fb492f6a9|file:///home/jdv/js/reactDice/src/App.css|28|24|V|css
-	    grid-template-rows: ;
-6955867a9b803f405e97b722a2d93432|file:///home/jdv/js/reactDice/src/App.css|27|1|V|css
-	    grid-template-columns: 11% 11% 11 11% 11% 11% 11% 11% 11%;
-54ca84a794888fe8d92834787dfa935a|file:///home/jdv/js/reactDice/src/App.css|28|19|v|css
-	columns
-929b38ab32eec3e926ec71c938b6e25b|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
-	        "titlebar timer"
-45fb129c76d4574dc19ace9620a2513e|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
-	        "titlebar timer"
-	        "map chat"
-	        "roll command";
-bad88118e683136ea575789abf057304|file:///home/jdv/js/reactDice/src/App.css|30|18|v|css
-	 titlebar
-6a262f900389160a0ef8b930565c0f54|file:///home/jdv/js/reactDice/src/App.css|30|1|V|css
-	        "titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar"
-9912b5dc7f4abf6acf19b5fc440ec757|file:///home/jdv/js/reactDice/src/App.css|30|37|v|css
-	titlebar
-bba8a02a0457b8ad7efd8713bd8ee967|file:///home/jdv/js/reactDice/src/App.css|36|1|V|css
-	        "map map map map map map titlebar titlebar titlebar"
-afe5372dddf18c49c93a9517a16448e3|file:///home/jdv/js/reactDice/src/App.css|35|1|V|css
-	        "map titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar"
-b0c2055fc9f7ef8f4a8055d949ff0db3|file:///home/jdv/js/reactDice/src/App.css|31|1|V|css
-	        "map map map map map map chat chat chat"
-239be7bb1f0ad688f21bebc4b34e5108|file:///home/jdv/js/reactDice/src/App.css|37|1|V|css
-	        "roll roll roll roll roll roll command command command"
-bbf48a540dca6d7f48895ffc63873b07|file:///home/jdv/js/reactDice/src/App.css|39|9|V|css
-	        "titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar titlebar";
-6feefb829027b9668c9bef08fd949559|file:///home/jdv/js/reactDice/src/App.css|1|55|v|css
-	Rajdhani
-8a31df85800e9efbbcea5c4799cec752|file:///home/jdv/js/reactDice/src/App.css|4|1|V|css
-	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500&display=swap');
-0f50f6fb60f63b570698965c56e9613f|file:///home/jdv/js/reactDice/src/App.css|8|1|V|css
-	  src: local('Rajdhani'), url(./fonts/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
-bf68511d7a9e075aa62658735ec72a3f|file:///home/jdv/js/reactDice/src/App.css|6|1|V|css
-	@font-face {
-	    font-family: 'Rajdhani';
-	    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
-	}
-	
-a123a2e84a0ae3016c16d4bc910501f2|file:///home/jdv/js/reactDice/src/App.css|5|1|V|css
-	
-	@font-face {
-	    font-family: 'Rajdhani';
-	    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
-	}
-d248b3954dc5c5aaaef1407ce1e8d208|file:///home/jdv/js/reactDice/src/App.css|139|18|v|css
-	Lato
-f35f2992da9516958e73d81404f52a8a|file:///home/jdv/js/reactDice/src/App.css|11|1|V|css
-	@font-face {
-	    font-family: 'Stalinist One';
-	    @import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
-	}
-1d3a7ac9a79857946b4ec5b357abdf5a|file:///home/jdv/js/reactDice/src/App.css|17|19|v|css
-	Stalinist One
-a3cb790df63b7dc1b42ed80d7025b89b|file:///home/jdv/js/reactDice/src/App.css|16|1|V|css
-	@font-face {
-	    font-family: 'Sofia';
-	    @import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
-	}
-fe8f9c5bde9f3782880714013377a3bb|file:///home/jdv/js/reactDice/src/App.css|3|1|V|css
-	    @import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
-328d17361b9ebb3e956230b83b68d901|file:///home/jdv/js/reactDice/src/App.css|18|5|v|css
-	@import url('https://fonts.googleapis.com/css2?family=Stalinist+One:wght@400;500&display=swap');
-	
-d48ab5dd68a5eb2d925c4ad8b34d593d|file:///home/jdv/js/reactDice/src/App.css|8|5|v|css
-	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500&display=swap');
-	
-65be3ca52f4c84d67a297bb5d3b33f43|file:///home/jdv/js/reactDice/src/App.css|13|5|v|css
-	@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
-080a21d75c71ad3844842dcdfa06cef7|file:///home/jdv/js/reactDice/src/App.css|3|5|V|css
-	    @import url('https://fonts.googleapis.com/css2?family=Sofia&effect=fire&display=swap');
-af8ea364aff09dd78bf9a9f7e2634815|file:///home/jdv/js/reactDice/src/App.css|2|27|v|css
-	cursive
-fd8303dc23a1516c231d158e8b0d2f3b|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    var countDownTime = new Date("15:37:25").getTime();
-	
-	    // Update the count down every 1 second
-	    var x = setInterval(function() {
-	
-	      // Get today's date and time
-	      var now = new Date().getTime();
-	
-	      // Find the distance between now and the count down date
-	      var distance = countDownTime - now;
-	
-	      // Time calculations for days, hours, minutes and seconds
-	      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	
-	      // Display the result in the element with id="demo"
-	      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-	      + minutes + "m " + seconds + "s ";
-	
-	      // If the count down is finished, write some text
-	      if (distance < 0) {
-	        clearInterval(x);
-	        document.getElementById("demo").innerHTML = "EXPIRED";
-	      }
-	    }, 1000);
-efb4777327e6f704fb1519c1882f93ec|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|21|28|v|javascript
-	Timer
-ef8cef5acc68a307e3d169037cf87546|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|21|1|V|javascript
-	            <div id="timeTitle">Timer</div>
-9eec58876d9eac94c1432ad9955e5722|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    function startTimer() {
-3140c222e3e838493949060341aec175|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    function startTimer() {
-	        const duration = 1
-	        var timer = duration, minutes, seconds;
-	        setInterval(function () {
-	            minutes = parseInt(timer / 60, 10);
-	            seconds = parseInt(timer % 60, 10);
-	    
-	            minutes = minutes < 10 ? "0" + minutes : minutes;
-	            seconds = seconds < 10 ? "0" + seconds : seconds;
-	    
-	            display.textContent = minutes + ":" + seconds;
-	    
-	            if (--timer < 0) {
-	                timer = duration;
-	            }
-	        }, 1000);
-	    }
-6b7fd84c6eabaf7124edda9127c578ca|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|11|21|v|javascript
-	textContent
-857bb04648770147f74db46ba180ffec|file:///home/jdv/js/reactDice/src/App.css|199|1|V|css
-	#timerTitle {
-	    font-family: 'Bungee', cursive;
-	    text-align: center;
-	    color: var(--Pink);
-	    background-color: var(--Light-Gray);
-	    /* auto margins center an element within it's container horizontally */
-	    margin-left: auto;
-	    margin-right: auto;
-	    padding: 1%;
-	    font-size: 150%;
-	    width: auto;
-	    border-radius: 20px;
-	}
-e209d79f2dd6ea5827b2309b409abe62|file:///home/jdv/js/reactDice/src/App.js|34|1|V|javascript
-	        <Titlebar />
-1dccadfed7bcbb036c56a4afb97e906f|file:///home/jdv/js/reactDice/src/App.css|56|15|v|css
-	command
-aa8af3ebe14831a7cd1b6d1383a03755|file:///home/jdv/js/reactDice/src/App.css|54|16|v|css
-	chat
-b6a5d96a4e99b63723ab54ddb471baad|file:///home/jdv/js/reactDice/src/App.css|56|10|v|css
-	roll
-b85ec314bf443b797ef8a66b3b03f8a4|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|25|v|javascript
-	duration
-915ec53ad6ccbc79962bcae3bbf2a010|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|11|18|V|javascript
-	            display.innerHTML = minutes + ":" + seconds;
-a3409381519d28bcc48ac06943aeb6de|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|16|1|V|javascript
-	                display.innerHTML = minutes + ":" + seconds;
-6b57e91b2cfc2866daa4a0433e1fdaaa|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|1|V|javascript
-	                 "Turn Over";
-c78a7e68270c532449ccdcb680e2eb16|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|37|v|javascript
-	minutes + ":" + seconds;
-	            } else {
-	                display.innerHTML = minutes + ":" + seconds;
-	            }
-	
-	        }, 1000);
-	    }
-	    
-	    window.onload = function () {
-	        var oneMinute = 60 * 1,
-	            display = document.querySelector('#time');
-	        startTimer(oneMinute, display);
-	    };
-	
-	    const playerNam
-0bec2eabe50b2e046f6e100451f53e28|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|37|v|javascript
-	minutes + ":" + seconds
-3c7603c25e0798140575d26925d8ae0b|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|29|43|v|javascript
-	myBar
-3babe96d0bef4b896401917f1f6035fe|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|29|11|v|javascript
-	elem
-b21c802c487c9ea666e3e0f9292de248|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|38|14|V|javascript
-	          // time.innerHTML = width * 1  + '%';
-fae02167ec1f18a789ec1738851aea8c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|33|1|V|javascript
-	        if (width <= 0) {
-	          clearInterval(id);
-3bd531332c6b9aca9a45619035cdc274|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|33|9|V|javascript
-	        else {
-4e1ddba1c31545ee09fb38ae1fd79346|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|35|9|V|javascript
-	        }
-9a032022eb58f6da7214557160ea24a6|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|48|36|v|javascript
-	startTimer
-410569531c20a468d26625929a05fbcc|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|48|36|v|javascript
-	shrinkBar()
-fb60b3db3d1b41a857d09544dc9f01dc|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|47|42|v|javascript
-	shrinkBar
-5fbc8adc4f9078a5d7532eec446f4a8c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|49|1|V|javascript
-	            <div onLoad={shrinkBar()}></div>
-8bca5b08bd8cd6e7e8e0b849a6d7abea|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|39|1|V|javascript
-	          time.style.width = width + '%'; 
-89ff8f210d59b22297cc398a83b359e1|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|51|43|V|javascript
-	            // <div onLoad={startTimer}></div>
-5d59df8dc0ec92624b5ea403542c2562|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|50|1|V|javascript
-	            <div onLoad={shrinkBar()}></div>
-	            <div onLoad={startTimer}></div>
-48e94d96c308ce6b9dabbf8e72a14e47|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|1|V|javascript
-	        startTimer(oneMinute, display);
-30a933b0bd3f5c720d33f0b59888a533|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|46|1|V|javascript
-	    function load() {
-	        shrinkBar();
-	
-	    }
-eaae26a6fb20ed3ef54fb23bfa0b1fcc|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|38|30|v|javascript
-	width
-d5f7a48558520fcec2bc5bc4a973f9c0|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|35|38|V|javascript
-	          console.log(`Bar width: ${width}`);
-1975246eb4a55e6c9bbf10c0d0bf50e5|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|29|1|V|javascript
-	    function shrinkBar() {
-	        console.log("Shrinking Bar!");
-	      var time = document.getElementById("time");   
-	      var width = 60000;
-	      var id = setInterval(frame, 1);
-	      function frame() {
-	        if (width <= 0) {
-	          clearInterval(id);
-	          time.style.width = '0%'; 
-	        } else {
-	          width--; 
-	          time.style.width = (width/60) + '%'; 
-	        }
-	      }
-	    }
-	
-8489fae1e50b6a16804250998d1e86f9|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|26|22|V|javascript
-	        shrinkBar(oneMinute, display);
-344340a46c91da2c9629ea61844d2a58|file:///home/jdv/js/reactDice/src/App.css|228|1|V|css
-	    from {width: 100%;}
-d98a07f84921b24ee30f86fd8cd85c3c|file:///home/jdv/js/reactDice/src/App.css|229|5|v|css
-	from
-f48aa9da6333669964155e029a7ca6c2|file:///home/jdv/js/reactDice/src/App.css|211|1|V|css
-	
-	    animation-name: timebar;
-	    animation-duration: 60s;
-8dc5344bc0746e1cc5abf896ca03bbdf|file:///home/jdv/js/reactDice/src/App.css|216|18|v|css
-	Pink
-7c01df8b4d4cb2d789b21cd0f77759ca|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|34|1|V|javascript
-	            <div id="time"></div>
-31d95948a0e60429ef9b70bd2722dca4|file:///home/jdv/js/reactDice/src/App.css|213|1|V|css
-	#time {
-	    font-family: 'Bungee', cursive;
-	    text-align: center;
-	    color: var(--White);
-	    background-color: var(--Light-Gray);
-	    /* auto margins center an element within it's container horizontally */
+	    height: 83%;
+8f5e3a9c3732d0562e91b0ba7f71941a|file:///home/jdv/js/reactDice/src/sass/_map.scss|91|1|V|scss
+	    margin-top: auto;
+	    margin-bottom: auto;
+26e2fc4a213684e567fad8af851004a7|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
 	    margin: auto;
+	    height: 80%;
+	    width: 80%;
+9400a308b390c2fcbf0e066348e95f7a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|1|V|scss
+	    height: 125%;
+	    width: auto;
+	    transition: 0.4s;
+	    opacity: 100%;
+60c4bd444208c4734af1bab465cbdbaf|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|1|V|scss
+	    height: 125%;
+	    width: auto;
+e8458c2fe05834d9c6cdd13bec4954b4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|35|1|V|scss
+	    height: 150%;
+	    width: auto;
+84df2fde031cbda765b806e3012eea84|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|39|16|V|scss
+	    height: 25%;
+cb6a37c202ba7c0c7154836e9582c5e0|file:///home/jdv/js/reactDice/src/sass/_map.scss|19|1|V|scss
+	    max-height: 100vh;
+	    column-gap: 4%;
+dfb6227c8365b5f3d8ae2afa3f281b4f|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|1|V|scss
+	    margin: auto;
+358944c71477f05eacc67c923985618f|file:///home/jdv/js/reactDice/src/sass/_map.scss|36|1|V|scss
+	    height: 100%;
+	    width: 100%;
+	    padding: 2%;
+8ae6a61beef67835874013fd263a685b|file:///home/jdv/js/reactDice/src/sass/_map.scss|82|1|V|scss
+	.mapImage {
+	    grid-area: mapimage;
+	    /* margin: auto; */
+	    box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	}
+ae35e51ecfcc9c36020563f4cef7ef85|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|1|V|scss
+	    /* margin: auto; */
+752a712b122f491714dd7670aa9232c8|file:///home/jdv/js/reactDice/src/sass/_map.scss|6|1|V|scss
+		background-color: colors.$Green;
+35b712a18de45bc05216221bc7b70764|file:///home/jdv/js/reactDice/src/sass/_map.scss|4|5|V|scss
+	.grid-container {
+		// background-color: colors.$Background;
+	}
+	
+5803d77e7ffc1369b86a3f77013fae0b|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
+		background-color: colors.$Red;
+27a816ca12669aef53edab259d82277d|file:///home/jdv/js/reactDice/src/components/Map/Image.js|19|12|v|javascript
+	imageWidthString
+de889dfbdafa63cca2341d81b720fbe1|file:///home/jdv/.zshrc|181|19|v|zsh
+	local/share/nvim/swap
+	
+fc8213b774d36b00434fd9b5c557ef6d|file:///home/jdv/.zshrc|203|5|V|zsh
+	    git push
+e0d6cf6665d50acce72ad152ae990665|file:///home/jdv/js/reactDice/src/sass/App.scss|20|10|V|scss
+		max-height: 100vh;
+c305432a89972e0430d7f65908265720|file:///home/jdv/js/reactDice/src/sass/App.scss|40|1|V|scss
+	    /* gap: 1% 1%; */
+	    /* align-items: start; */
+51e6cd92b6c45f9affdc158ecca2b8b8|file:///home/jdv/js/reactDice/src/sass/_command.scss|8|28|v|scss
+	Yellow
+02da871292896f27bacd506e0ecc5222|file:///home/jdv/js/reactDice/src/sass/_chat.scss|14|1|V|scss
+		width: 96%;
+		min-height: 72vh;
+		max-height: 72vh;
+887b41bab4da12434c0ef1ae2ee83c04|file:///home/jdv/js/reactDice/src/sass/_chat.scss|13|1|V|scss
+	    // height: 62%;
+ab66a21e4cc5da801a06b01ca3891a99|file:///home/jdv/js/reactDice/src/sass/_chat.scss|43|1|V|scss
+	    min-width: 51%;
+	    max-width: 100%;
+063abb0ab32be7b3046e1f5d33a0f1af|file:///home/jdv/js/reactDice/src/sass/_chat.scss|47|1|V|scss
+	    padding: 2%;
+	    padding-left: 5%;
+	    margin-left: 2.5%;
+	    margin-right: 5%;
 	    margin-top: 2%;
-	    /* padding: 1%; */
-	    font-size: 250%;
-	    width: 100;
-	    border-radius: 20px;
+	    margin-bottom: 2%;
+	    font-size: 20px;
+	    border-radius: 0px 20px 0px 20px;
+67a989e7b31f1dd4b2e457de4dc5e0e5|file:///home/jdv/js/reactDice/src/sass/_chat.scss|55|1|V|scss
+	    min-height: 3em;
+	    max-height: 3em;
+83facfbe063c40fc6ecae8645860db50|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|37|1|V|vim
+	"*****************************************************************************
+	" Used for moving one space in insert mode
+	"*****************************************************************************
+92c568a95f98dadfb5533e493ff97bcc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|36|3|v|vim
+	Used for moving one space in insert mode
+040d2b074e3a99c9ba34f12588152bb7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|117|1|V|vim
 	
-	    animation-name: timebar;
-	    animation-duration: 60s;
+	"*****************************************************************************
+	" This unsets the "last search pattern" register by hitting return
+	"*****************************************************************************
+	
+d0457fece2625a12d9ed2d2846cf6be0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|128|3|v|vim
+	This unsets the "last search pattern" register by hitting return
+e00c176ccd293cd85cfe6c473caaf869|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|26|24|v|vim
+	"\<Space>"
+	
+d4a60019da160430384c32420d024684|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|25|v|vim
+	<leader>c"\<Space>"
+c26d6cccab8bcb33306c4ab04abae4b8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
+	nnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
+9f27410725ab8cc8854a2769c7a516b8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|69|21|v|scss
+	green
+2e42eeb832e48803e769a3db540200c5|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|70|17|V|scss
+			max-height: 50%;
+fd6ca751c3718288c455a0974b1fbac6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|21|1|V|scss
+		flex-grow: 1;
+e30550d8bc02813c56be7dd98e7b5a06|file:///home/jdv/js/reactDice/src/sass/_chat.scss|15|1|V|scss
+		min-height: 72vh;
+		max-height: 72vh;
+bc5a782b79d401a3b43680fac314c6a4|file:///home/jdv/js/reactDice/src/sass/_chat.scss|14|1|V|scss
+		width: 96%;
+ccc3d992926f675652d01957c953039e|file:///home/jdv/js/reactDice/src/sass/_chat.scss|9|1|V|scss
+		align-self: center;
+0e497cbb33cb29fb7cfcc10f68a041de|file:///home/jdv/js/reactDice/src/sass/_chat.scss|52|1|V|scss
+	    margin-left: 2.5%;
+	    margin-right: 5%;
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+1a5df828e8c122cbfcd9defdbb683ca7|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|15|10|V|javascript
+					<Chat />
+d3d622c0d448f93b28dd441d24130f56|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|17|10|V|javascript
+					<Scoreboard />
+2d2423ea0e2973e17c95f256d773d240|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|18|7|V|scss
+		// -webkit-tap-highlight-color: transparent;
+		// background-color: colors.$Orange;
+e3ae77fdf26155296f17bb01dc8f5dd6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|20|11|V|scss
+		opacity: 0.2;
+897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|8|11|v|scss
+	flex
+45632c448addec55a453586857f80da7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|9|1|V|scss
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+dddfb308b7ba80affe34ba46ca6f0402|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|18|14|V|scss
+		max-height: 1fr;
+e900bdf08971e2acf335ca12f19a2eef|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|20|3|V|scss
+			max
+db116c009ca486412b21add57ba3ea81|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|1|V|scss
+			max-height: 1fr;
+	
+5ef28c1da6c1cb60e3ba123743957624|file:///home/jdv/js/reactDice/src/sass/App.scss|27|1|V|scss
+	    display: grid;
+	    grid-template-columns:  3fr 1fr;
+	    grid-template-rows: 1fr 1fr 1fr;
+	    grid-auto-flow: row;
+	    grid-template-areas:
+	        "dice		timer"
+	        "map		tabbox"
+	        "command	tabbox";
+	
+	    column-gap: 1%;
+	    row-gap: 1%;
+7765e45b0472532f1c762d087eb9b6bc|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|8|1|V|scss
+		display: grid;
+6fed8ed92ef60e0ee1c981266b09887e|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|16|^v|scss
+	timer
+	tabbo
+	tabbo
+1dccadfed7bcbb036c56a4afb97e906f|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|15|10|v|scss
+	command
+00e82ada108e167024e87d4aa0a2c475|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|29|4|V|scss
+			max-height: 1fr;
+02d1cc8d1d501e76fe8b23ddd5a789bf|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|29|1|V|scss
+	
+			border-bottom: 1px solid colors.$Light-Gray;
+9b2d3a47401e55e7a1e20ef29873370d|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|75|1|V|scss
+			grid-area: "tab-panel"
+7ede1256c6d8a203d2b9ff3a5602483e|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|10|V|scss
+	        ""
+f1e5d7a5fe13498abbdeb0f1f19136a8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|15|v|scss
+	panel
+e354c877c19014a388fe093a01b38f9c|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|1|V|scss
+		// -webkit-tap-highlight-color: transparent;
+b73219fc7756bc742de2d4aea0fc7f5f|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|28|24|V|scss
+			grid-area: "tab-list";
+e72e8b27f19b2c5c4bbdfb64b1388acc|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|25|2|V|scss
+		background-color: colors.$Orange;
+105d84bfae4c8b58fcafc9d1449f66e8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|78|16|V|scss
+			display: none;
+9914a0ce04a7b7b6a8e39bec55064b82|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|28|v|scss
+	Light
+9ed7827a0e311b4c47f4249bb32e0cdc|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|28|v|scss
+	Light-Gray
+4cffd1420f1d54fef04a0b3da61ed450|file:///home/jdv/js/reactDice/src/sass/_colors.scss|2|1|V|scss
+	$Background-Dark: #16171d;
+	$Background: #282a36;
+	$Medium-Gray: #44475a;
+	$White: #f8f8f2;
+	$Light-Gray: #6272a4;
+	$Cyan: #8be9fd;
+	$Blue: #8be9fd;
+	$Green: #50fa7b;
+	$Orange: #ffb86c;
+	$Pink:	#ff79c6;
+	$Purple: #bd93f9;
+	$Red: #ff5555;
+	$Yellow: #f1fa8c;
+d5417331177d813cc2b72d49491ce44b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|18|1|V|scss
+	$Medium-Gray: #44475a;
+	$White: #f8f8f2;
+	$Light-Gray: #6272a4;
+	$Cyan: #8be9fd;
+	$Blue: #8be9fd;
+	$Green: #50fa7b;
+	$Orange: #ffb86c;
+	$Pink:	#ff79c6;
+	$Purple: #bd93f9;
+	$Red: #ff5555;
+	$Yellow: #f1fa8c;
+dcd6398b2e7b251a72b2c43a4b780808|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|29|v|scss
+	#282a36
+56ccffda33776371294dbbc040a3faa7|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
+	/* Dracula Color Scheme */
+	$Background-Dark: #16171d;
+	$Background: #282a36;
+	$Medium-Gray: #44475a;
+	$White: #f8f8f2;
+	$Light-Gray: #6272a4;
+	$Cyan: #8be9fd;
+	$Blue: #8be9fd;
+	$Green: #50fa7b;
+	$Orange: #ffb86c;
+	$Pink:	#ff79c6;
+	$Purple: #bd93f9;
+	$Red: #ff5555;
+	$Yellow: #f1fa8c;
+3791bdd4378316c70c3e87ffe198884f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|10|15|V|scss
+	$Light-Gray: #6272a4;
+a9f0a7f6eee70b782d075370e92f55e3|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Red: #ff5555;
+7260436a05a23e61c53553be11f4b152|file:///home/jdv/js/reactDice/src/sass/_colors.scss|15|1|V|scss
+	$Orange: #ffb86c;
+48c6205999d8b3591ad15de53af5411f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Yellow: #f1fa8c;
+1f2577417ff39acb883a440402f74d0b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|15|1|V|scss
+	$Green: #50fa7b;
+1bca319f9e8ce485c6751b93d191af61|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Purple: #bd93f9;
+c6232c558d26f60b21db12d01787d4ae|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
+	$Pink:	#ff79c6;
+e89b9e64e13b7317c0b3a1983160bc1f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|8|1|V|scss
+	$Dracula-Medium-Gray: #44475a;
+	$Dracula-Light-Gray: #6272a4;
+	$Dracula-White: #f8f8f2;
+	$Dracula-Red: #ff5555;
+	$Dracula-Orange: #ffb86c;
+	$Dracula-Yellow: #f1fa8c;
+	$Dracula-Green: #50fa7b;
+	$Dracula-Blue: #8be9fd;
+	$Dracula-Purple: #bd93f9;
+	$Dracula-Pink:	#ff79c6;
+74948390dda958630022b1868489ce18|file:///home/jdv/js/reactDice/src/sass/_colors.scss|4|2|^v|scss
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+	Dracula-
+bcdf63ee1dcb5d9deb1f772d13a63fe3|file:///home/jdv/js/reactDice/src/sass/_colors.scss|4|15|v|scss
+	44475a
+33ff2cdd577d25fc81e898f86e4cd197|file:///home/jdv/js/reactDice/src/sass/_colors.scss|5|14|v|scss
+	#6272a
+9d99c9d67f6c8535ce7f287914ada5da|file:///home/jdv/js/reactDice/src/sass/_colors.scss|6|9|v|scss
+	#f8f8f2
+5297d5ce7e329116a286206704560542|file:///home/jdv/js/reactDice/src/sass/_colors.scss|7|7|v|scss
+	#ff5555
+a9a7260d0159e4181282b2743e6ce96d|file:///home/jdv/js/reactDice/src/sass/_colors.scss|8|10|v|scss
+	#ffb86c
+0574d485ebba0b1e632677c95d8cad57|file:///home/jdv/js/reactDice/src/sass/_colors.scss|9|10|v|scss
+	#f1fa8c
+473e02b59dd6288fc66d859871ced5cb|file:///home/jdv/js/reactDice/src/sass/_colors.scss|10|9|v|scss
+	#50fa7b
+4056d6a60880301524b0c7ec4a36dabc|file:///home/jdv/js/reactDice/src/sass/_colors.scss|11|8|v|scss
+	#8be9fd
+d77a111383d047c11d518553e08cd68b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|12|10|v|scss
+	#bd93f9
+b4ee368d86adfa024e48758d626b508a|file:///home/jdv/js/reactDice/src/sass/_colors.scss|13|8|v|scss
+	#ff79c6
+9594eec95be70e7b1710f730fdda33d9|file:///home/jdv/js/reactDice/src/sass/_colors.scss|26|10|v|scss
+	Blue
+1b91b5e6c4e45dcfdcdba7957bd8ad25|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
+	/* Main Color Definitions, update with theme colors */
+	$Body-Background: $Dracula-Background-Dark;
+	$Grid-Container-Background: $Dracula-Background;
+	$Medium-Gray: $Dracula-Medium-Gray;
+	$Light-Gray: $Dracula-Light-Gray;
+	$White: $Dracula-White;
+	$Red: $Dracula-Red;
+	$Orange: $Dracula-Orange;
+	$Yellow: $Dracula-Yellow;
+	$Green: $Dracula-Green;
+	$Blue: $Dracula-Cyan;
+	$Cyan: $Dracula-Cyan;
+	$Purple: $Dracula-Purple;
+	$Pink:	$Dracula-Pink;
+	
+221964facffc60a2c15449fcfd5b294b|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
+	.dice-container {
+	    display: flex;
+	    flex-direction: row;
+		justify-content: space-evenly;
+	    align-items: center;
+	
+		background-color: colors.$Red;
 	}
-9f3b437c7a6b9a584517b5cd1329cb92|file:///home/jdv/js/reactDice/src/App.css|226|1|V|css
-	    animation-name: timebar;
-	    animation-duration: 60s;
-720ac0a19732ddb277a463134135fbf3|file:///home/jdv/js/reactDice/src/App.css|228|1|V|css
-	    font-family: 'Bungee', cursive;
-	    text-align: center;
-	    color: var(--White);
-cf758710ba0067e4d20f4ad1d21e6cca|file:///home/jdv/js/reactDice/src/App.css|228|1|V|css
-	    background-color: var(--Light-Gray);
-718928833edc2894b2cf33413de03476|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|53|v|javascript
-	selectors
-2dc5ed5b9b6e5a259b4c2c83d609d1ce|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|26|20|v|javascript
-	oneMinute
-463637958afedde8795e2fcfdd43f960|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|27|V|javascript
-	        const timeInMs = document.querySelector("#time").innerHTML
-77a04da066daf1ed171732f7527b0810|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    function startTimer(duration, display) {
-	        var timer = duration, minutes, seconds;
-	        setInterval(function () {
-	            minutes = parseInt(timer / 60, 10);
-	            seconds = parseInt(timer % 60, 10);
-	    
-	            minutes = minutes < 10 ? "0" + minutes : minutes;
-	            seconds = seconds < 10 ? "0" + seconds : seconds;
-	    
-	    
-	            if (--timer < 0) {
-	                timer = 0
-	                display.innerHTML = "Turn Over";
-	            } else {
-	                display.innerHTML = minutes + ":" + seconds;
-	            }
 	
-	        }, 1000);
-	    }
-7c1fb3224b28493feff8fd5a1edd546c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|30|26|V|javascript
-	            <div id="timebar"></div>
-e063b77ff0b7902eca8150004bbd0367|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|20|20|v|javascript
-	oneMinute, display
-d38672c4f3cb959f9588789e64a7a3aa|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|19|20|V|javascript
-	        display = document.querySelector('#time');
-b3851da802d2d7169f48df0d842460a9|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|18|20|V|javascript
-	        var oneMinute = 60 * 1,
-265739c67f879498e84f3a3b2dd8c46e|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|17|1|V|javascript
-	    window.onload = function () {
-a635f48c8a1543ade7ef09415c826999|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|18|6|V|javascript
-	    };
-802437ea2e0ac6faeeb0c8de49d6e875|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|17|17|V|javascript
-	    startTimer();
-7bb0edd98f22430a03b67f853e83c2ca|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|16|1|V|javascript
-	        
-d5a4ba0949c5606d822cca97fc7edbad|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|29|V|javascript
-	    let timerInterval = null;
-27632b84ac9b4e47a42661eca00811ea|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|13|V|javascript
-	        let timerInterval = null;
-118c0307bfde4600371e7eaf78c358f9|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|7|25|v|javascript
-	timerInterval
-08e6f2ada686768baedea6d61b98f9fd|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|23|34|v|javascript
-	base-timer-label
-a113a8e42ee8cb1ad7b15a60b4e7520d|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|37|13|V|javascript
-	                <!-- Remaining time label -->
-089e157c385b048aab6548c6acd674f4|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|38|13|V|javascript
-	            <div id="timerTitle">It's {playerName} turn!</div>
-cc1b2a3e88153b49bae8c9b8adebbd61|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|26|1|V|javascript
-	    const playerName = "your"
-e4c3301af771a8cf7ec6a381b5d1af5a|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|13|1|V|javascript
-	    let timerInterval = null;
-	
-	    const startTimer = () => {
-	        timerInterval = setInterval(() => {
-	        
-	        // The amount of time passed increments by one
-	        timePassed = timePassed += 1;
-	        timeLeft = TIME_LIMIT - timePassed;
-	        
-	        // // The time left label is updated
-	        // document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
-	     }, 1000);
-	
-ea5a1cbe764918679997181a3ea281d3|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|25|1|V|javascript
-	    }
-f079b1128a7790991bfc81c103f1103e|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|22|1|V|javascript
-	            <div id="timer" onload={startTimer}></div>
-a5fef2945f1a67a5b57297cdf0682168|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|3|5|V|javascript
-	    document.getElementById("timer").innerHTML = `...`
-05c10569fcb7adc2c3670fe987ef2624|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|28|1|V|javascript
-	            <svg class="base-timer__svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-	                <g class="base-timer__circle">
-	                  <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-	                </g>
-	              </svg>
-	              <span>
-	              </span>
-2f2cd54cc245d38e50a56827c5d6952a|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|35|32|v|javascript
-	timeLeft
-b4c62d7792baf178273feba80b203aa2|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    // Start with an initial value of 20 seconds
-	    const TIME_LIMIT = 20;
-	
-	    // Initially, no time has passed, but this will count up
-	    // and subtract from the TIME_LIMIT
-	    let timePassed = 0;
-	    let timeLeft = TIME_LIMIT;
-acb802a188ee447973c0ce19bbb8e6e1|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|3|4|^v|javascript
-	     
-	     
-	     
-	     
-	     
-	     
-0733c0306dcacac7aea5c141eebb6ae8|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|5|V|javascript
-	    // Start with an initial value of 20 seconds
-6304c38b0fdbd103c58cec2f3fb4ecc2|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|56|1|V|javascript
-	            <div class="base-timer">
-	              <svg class="base-timer__svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-	                <g class="base-timer__circle">
-	                  <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-	                </g>
-	              </svg>
-	              <span id="base-timer-label" class="base-timer__label">
-	               {formatTime({timeLeft})}
-	              </span>
-	            </div>
-a389ea8d1edc025451c6027692678951|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|35|V|javascript
-	    document.getElementById("timerApp").innerHTML = `...`
-1284b8a036925b4f13dd6642b7c3f8da|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    document.getElementById("timerApp").innerHTML = `
-	    <div class="base-timer">
-	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-	        <g class="base-timer__circle">
-	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-	        </g>
-	      </svg>
-	      <span>
-	        <!-- Remaining time label -->
-	      </span>
-	    </div>
-	    `;
-	    
-04d9860e5a3b7558d69d569a5c56f7a3|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|59|32|v|javascript
-	onload={timeStart()}
-dc79b556a9563dfbdd93d839313fa60f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|61|44|V|javascript
-	            <div onload={timeStart()}></div>
-d890d813229e6bbfc12805866b63423c|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|29|V|javascript
-	    const timeStart = () => {
-bfd6fdda2f1b3f1c5dbe8fd7fb1140dd|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|14|21|V|javascript
-	        startTimer();
-0e252fe8f421e96096fc9f7a8a6656c3|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|15|4|V|javascript
-	    document.getElementById('timerApp').onload = () => {timeStart()}
-ffb2be84c7e07fa9e99ab9c22a926b0b|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|1|1|V|javascript
-	import PropTypes from 'prop-types'
-21d5ee49033fa8b12439298d54a56a1e|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|7|1|V|javascript
-	.defaultProps = {
+	.unheld {
+	    transition: 0.4s;
+	    opacity: 100%;
 	}
 	
-	.propTypes = {
+	.unheld:hover {
+	    height: 150%;
+	    width: auto;
 	}
-383980f42c37637587f1eb2174e9e389|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|2|1|V|javascript
-	    document.getElementById("timerApp").innerHTML = `
-	    <div class="base-timer">
-	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-	        <g class="base-timer__circle">
-	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-	        </g>
-	      </svg>
-	      <span>
-	        <!-- Remaining time label -->
-	      </span>
-	    </div>
-	    `;
-	    
-	    // Start with an initial value of 20 seconds
-	    const TIME_LIMIT = 20;
-	    
-	    // Initially, no time has passed, but this will count up
-	    // and subtract from the TIME_LIMIT
-	    let timePassed = 0;
-	    let timeLeft = TIME_LIMIT;
+	
+	.held {
+	    box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+	}
+	
+	.saved {
+		opacity: 100%;
+	}
+19f84d8351d0b77f923b9d2e810f9498|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|1|V|scss
+		.unheld:hover {
+			height: 150%;
+			width: auto;
+		}
+8b56cdf48109ed4cb5b930aa8b310936|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
+			background-color: colors.$Red;
+bd47c79395059324b90fc6f24bd0490f|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|8|19|v|scss
+	space-around
+4fe9c15f2ce177b8989affafdef682fd|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|17|V|scss
+			// flex-shrink: 1;
+5385d0aaf3228767b1ddfc8c2dd63fb6|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|23|1|V|scss
+		.unheld {
+			transition: 0.4s;
+			opacity: 100%;
+	
+			.unheld:hover {
+				height: 150%;
+				width: auto;
+			}
+		}
+		
+		
+		.held {
+			box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+		}
+		
+		.saved {
+			opacity: 100%;
+		}
+171ccc9ab86c15e06331c0d18eb2997a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|5|1|V|scss
+		grid-area: dice;
+e4ad444d516635e1b009b3f8e6d2e3ae|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|1|V|scss
+		justify-content: flex-start;
+f898db45df9f2767e31368fe5de0f426|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|4|V|scss
+			justify-content: flex-start;
+ceba66c97e83473d4b3070b6ebb06418|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|18|1|V|scss
+			justify-content: space-evenly;
+2b3b1c954f84bdbb586ac789b6e4b4a3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|4|9|V|scss
+	.tray-grid-container {
+	
+		display: flex;
+	
+		font-family: 'Lato', sans-serif;
+		// background-color: colors.$Background;
+		background-color: colors.$Orange;
+	
+4a95f0eb3aa1656cce570ef9554c6848|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|5|19|v|javascript
+	timer-grid-container
+2293eb844f3cbce85ce1c1de89e33f19|file:///home/jdv/js/reactDice/src/sass/App.scss|40|16|V|scss
+	    opacity: 0.9;
+fbeb3f386479dceb26badf488ec0acd4|file:///home/jdv/js/reactDice/src/App.js|12|1|V|javascript
+			<Timer />
+			<TabComponent />
+	        <Map />
+	        <Tray />
+	        <Command />
+23effc0059f8fec90a4358463e222e6f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|37|V|javascript
+				<Time duration={30} delay={2000}/>
+060fd336f1541c19b99fb530d54dff12|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|4|v|javascript
+	<Time duration={30} delay={2000}/>
+72f541b2b0f4d6ec5fd64ba393d2cc7a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|57|1|V|vim
+	"*****************************************************************************
+	" Enable NERDCommenterToggle to check all selected lines is commented or not 
+	"*****************************************************************************
+b475bfc1187c3bf5b41c63f56c67a87a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|64|3|v|vim
+	Enable NERDCommenterToggle to check all selected lines is commented or not 
+e0af170f2a113675e706bef9fecf2d5b|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|10|3|V|javascript
+			<div>
+2d0596a45e302740020ccb5a8eb2a382|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|67|1|V|vim
+	let g:NERDCustomDelimiters = {'javascriptreact': { 'leftAlt': '{/*', 'rightAlt': '*/}' }}
+	let g:NERDAltDelims_javascriptreact = 1
+19ee4f81d83293b484e0a50b56a83714|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|62|1|V|vim
+	
+	"*****************************************************************************
+	" Custom Delimiters
+	"*****************************************************************************
+2a85066d77b69d0d9171825a0f0c7dc1|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|4|V|javascript
+				<SavedDice />
+4c33b750ffe7bc42c10ca45c710e3190|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|3|V|javascript
+				<SavedDice  />
+839c330a6267c55e0d3c15bff8dc736a|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|4|^v|javascript
+	<SavedDice  />
+b8090c7f060668db54f5d7b21f58d1d5|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|1|^v|javascript
+	*			<SavedDice  />*
+df8c02724e16f1e03f48d9685ac21a09|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|1|^v|javascript
+	/*			<SavedDice  />*/
+214f42eba1ef948856347ce8ade9198d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
+	nnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
+	vnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
+1d32bb013c28a30ec6b013858a95c51e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
+	nnoremap <silent> <leader><leader>c 0<C-v>$S*<C-v>$S/<C-v>$S}
+2361e79d0e283f99143a208d113df1a2|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|V|javascript
+			<div className='grid-container' id='map-grid-container'>
+6ebefa51b0c5733f091a84832716cecc|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|^v|javascript
+	*		<div className='grid-container' id='map-grid-container'>*
+1ca5e71f9aa269bbab29d86dabb55381|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|^v|javascript
+	/*		<div className='grid-container' id='map-grid-container'>*/
+a8957ccf91a8c8b3ca1515cbe7712677|file:///home/jdv/js/reactDice/src/components/Map/Map.js|5|1|V|javascript
+		return (
+fea087517c26fadd409bd4b9dc642555|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|23|v|vim
+	normal
+1b0b755bcaa9f2b5bab321ad45cf02a4|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|62|v|javascript
+			{/
+948f64e6082600dfe831ef5c1f49ee09|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|136|1|V|vim
+	nnoremap <silent> <leader><leader>u 0dt*x$F*xxx
+8b8a360d6b63fcfcf4c9e6d8f96d4431|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|31|V|vim
+	:command Vb :execute "insert! "
+1d5549871765bbfeb92be9a406a5c36d|file:///home/jdv/js/reactDice/src/components/Map/Map.js|9|15|v|javascript
+				{/
+a12bde56c97d53c4e88bcd19180429df|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|38|V|javascript
+		// let imageWidth = window.innerWidth;
+d0dc5c430cfbc322e981d6da541f576d|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|48|V|javascript
+		// let horizontalMargin = (windowWidth - imageWidth);
+60e7fb6b52f24dcb9e6028fe28d5c829|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|12|V|javascript
+		let imageWidth = window.innerWidth;
+e4bb6f6eaafb51c4cf418a7602f22cca|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|37|V|javascript
+		let windowWidth = window.innerWidth;
+a981b0fe78efbeff463cfbe2fbc6b67c|file:///home/jdv/js/reactDice/src/components/Map/Image.js|17|12|v|javascript
+	windowWidthString
+a0ab0e51b58e49c75bfc144140b68f36|file:///home/jdv/js/reactDice/src/components/Map/Image.js|17|34|V|javascript
+					width={imageWidthScaledString}
+a0c8751244dbf7b346c3f730f72f4511|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|11|V|javascript
+		let imageWidthScaled = window.innerWidth * 0.1
+		let imageWidthScaledString = toString(imageWidthScaled)
+6ba5ed8767721c1d1f2921d466db2ef7|file:///home/jdv/js/reactDice/src/sass/_map.scss|17|1|V|scss
+	.mapImage {
+	    grid-area: mapimage;
+		max-width: 100%; // Contains the image of the map to at most, the size of it's container
+	    box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	}
+	
+	.saved-dice-grid-container {
+	    grid-area: saveddice;
+		background-color: colors.$Yellow;
+	}
+	
+	.saved-dice-container {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-evenly;
+	    align-content: center;
 	
 	
-	    function startTimer() {
-	        setInterval(() => {
-	        
-	        // The amount of time passed increments by one
-	        timePassed = timePassed += 1;
-	        timeLeft = TIME_LIMIT - timePassed;
-	        
-	        // The time left label is updated
-	        document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
-	      }, 1000);
-	    }
-	    
-	    
+	    animation: pulse 60s ease-in-out 0s infinite;
+	}
 	
-	    function formatTime(time) {
-	        // The largest round integer less than or equal to the result of time divided being by 60.
-	        const minutes = Math.floor(time / 60);
-	        
-	        // Seconds are the remainder of the time divided by 60 (modulus operator)
-	        let seconds = time % 60;
-	        
-	        // If the value of seconds is less than 10, then display seconds with a leading zero
-	        if (seconds < 10) {
-	          seconds = `0${seconds}`;
-	        }
-	    
-	        // The output in MM:SS format
-	        return `${minutes}:${seconds}`;
-	    }
-a782b3953605687dea0596db031e20e2|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|5|1|V|javascript
-	            <div id='timerApp'>Time</div>
-	            <input type='button' onClick={startTimer}>Start Timer</input>
-0ceb76568efb9e104c6fe6a726c0a581|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|55|5|V|javascript
-	        <input type='button' onClick={startTimer}>Start Timer</input>
-10238a0b2b71760eeedee7b1240e11ce|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|3|1|V|javascript
-	    `
-	    <div class="base-timer">
-	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-	        <g class="base-timer__circle">
-	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-	        </g>
-	      </svg>
-	      <span>
-	        <!-- Remaining time label -->
-	      </span>
-	    </div>
-	    `;
-f49da96d330a8712c55e19311f3aa7be|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|68|5|V|javascript
-	        <!-- Remaining time label -->
-b5aab04fe7895b669d643878da9535df|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|2|1|V|javascript
-	    document.getElementById("timerApp").innerHTML = 
-	    `
-	    <div class="base-timer">
-	      <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-	        <g class="base-timer__circle">
-	          <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-	        </g>
-	      </svg>
-	      <span>
-	        <!-- Remaining time label -->
-	      </span>
-	    </div>
-	    `;
-0cf31b2c283ce3431794586df7b0996d|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|2|4|V|javascript
-	    
+	@keyframes pulse {
+	  0%, 100% {
+	    box-shadow: 0 80%px 2px rgba(colors.$White, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  8% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Red, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  16% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  24% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Orange, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  32% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  40% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Yellow, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  48% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  56% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Green, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  64% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  72% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Blue, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  80% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  88% {
+	    box-shadow: 0 80%px 2px rgba(colors.$Purple, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	  96% {
+	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+	  }
+	}
+	
+c27bc1d37a0654ad31b968e67588ce3d|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
+			border: 10px solid colors.$Yellow;
+423a3e3f20a506f243a287c5b882b839|file:///home/jdv/js/reactDice/src/sass/_map.scss|14|32|V|scss
+			border: 10px solid colors.$Red;
+9cf1c243edd475c189bb74a268d3154c|file:///home/jdv/js/reactDice/src/sass/_map.scss|5|1|^v|scss
+		
+	
+		
+		
+		
+		
+		
+b7c4d520ed93ed0054bf9c8b6a42f108|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|^v|scss
+		
+		
+		
+		
+		
+		
+		
+d522089bade75ca6b0edb0e697c28e2d|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|15|V|scss
+			max-height: ;
+9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/sass/_map.scss|8|25|v|scss
+	auto
+0391dc362bd684bb7c7dec4d528eb4eb|file:///home/jdv/js/reactDice/src/components/Map/Map.js|9|14|V|javascript
+	 			<Image /> 
+e752e71d5aa0857d9e988f8d874229e1|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|1|V|scss
+		.mapImage {
+			grid-area: mapimage;
+			max-width: 100%; // Contains the image of the map to at most, the size of it's container
+			box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+		}
+714675ed59fcda137fb017761d125215|file:///home/jdv/js/reactDice/src/sass/_map.scss|15|2|V|scss
+				grid-area: mapimage;
+b0af37cb60f6a42f7cc5f8346bf6cbe5|file:///home/jdv/js/reactDice/src/sass/_map.scss|15|4|V|scss
+			border: 10px solid blue;
+6f66e878c62db60568a3487869695820|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|10|8|v|javascript
+	className
+ace4ef673d09a1a0ec5b93629a7cffa5|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|11|15|V|javascript
+				<div className='saved-dice-container'>
+1e814360255b609cf703bd260d91bbae|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|14|9|V|javascript
+				</div>
+88e2ba100e2706bf47aefc7329463d26|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|23|V|scss
+			grid-area: saveddice;
+baf54f86202a71961fa104e58e9274b4|file:///home/jdv/js/reactDice/src/sass/_map.scss|23|6|V|scss
+		.saved-dice-grid-container {
+		}
+dbb5cf64f8b055ff302f4f922ba6b2d9|file:///home/jdv/js/reactDice/src/sass/_map.scss|25|23|V|scss
+			background-color: red;
+f0039f1f634f0d3ca7e7b6017b8dc03a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|12|V|scss
+				height: 50%;
+268357e522819fd9394ead025c40ce6d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|29|13|V|scss
+					width: auto;
+2188f7c4dd4a5f4344a0c6d141b7253b|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|17|V|scss
+					height: auto;
+8caaad0713b05bf86bf2685a0fce3775|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|17|V|scss
+				opacity: 100%;
+bda86ac49c8f13de75bee9ab4eaf2dc9|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|11|11|V|javascript
+				<div className='dice-container'>
+					{dice.map((die) => (
+4778cc9c38b0d45eac1d25bd5378d758|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|11|11|V|javascript
+				<div className='dice-container'>
+707032f1926322ba1dfda7f94b0cbbde|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|13|1|V|scss
+		.dice-container {
+70ff0f737f672377740656bb2299d3dd|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|^v|scss
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+5ff5d0dd18c73077c68938c2f017f8b3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|1|V|scss
+		display: flex;
+		justify-content: flex-start;
+	
+fbc289924503467fb325a20f35d0145e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
+		background-color: colors.$Medium-Gray;
+b0fcf2597677a112c68cb4db4eae9c17|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
+			.unheld:hover {
+				opacity: 20%;
+			}
+3e4914de665fca658ababa00296808ab|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|3|V|scss
+			height: auto;
+5d7b0ddc5d7496e623e3eb1904474091|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|16|1|V|scss
+			// max-width: 5%;
+			min-width: 05%;
+			max-width: 100%;
+			height: auto;
+a2a4f601f8f8c7a4e7ccd3edd06ce712|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
+			height: 105%;
+			width: auto;
+a9d8be22a749eaff46b448890eb7c405|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|11|V|scss
+			height: ;
+9e9a9028082d740acba9e07d44934eef|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|11|V|scss
+			width: auto;
+d5b5755fc7d751d63d88a870eb5bebfb|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|9|1|V|javascript
+		const dice = UseStore(state => state.dice)
+f91614c13b0e6659f9b16a1d6f22f2db|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|9|8|v|javascript
+	dice
+7fe2471e11eed2d0ac37ad077653c131|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|29|1|V|scss
+			box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+c6bee7a73842fe6e0539e9233b30205e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|10|v|scss
+	box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */
+2209179b9937dbeb613af2a8dcace90a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|25|V|scss
+				opacity: $default-opacity * 2;
+1a721faf2df53972bfd0831c64b6146d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|20|v|scss
+	collapse
+68e2bf1cd16d919e04bd6507e850d203|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|5|V|scss
+				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.1); /* hoffset voffset blur spread color */}
+f5f283356cd1564e879c46d067e1f145|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|33|39|V|scss
+				20% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
+b21091d7b029c7a5f6e3cd010df11fd4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|1|V|scss
+			@keyframes grow-glow {
+				0% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.1); /* hoffset voffset blur spread color */}
+				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
+			}
+b254f0b42b020f446c2a8b6299617b1a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|19|V|scss
+			transition: 0.4s;
+9fbc6d522115fd475631839f94cf09a4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|26|32|V|scss
+				animation-iteration-count: 1;
+acf635689def18ebb0f0c49e0a302bdc|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|26|25|v|scss
+	forwards
+c9e7e975f62c2a389107d220b8b0cc26|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
+			.unheld:hover {
+				animation-name: grow-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+			}
+85ed998c9203767af5ec409f07cdfcab|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|40|19|v|scss
+	glow
+4d200fce73a8e1cc965cfc2c43343824|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|40|14|v|scss
+	grow
+44a96d323d3caafc45174c4c0ac55264|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|42|4|V|scss
+				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
+7198cb51ed3efe8a3c23b84c3065ec7a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|1|V|scss
+			.unheld:hover:after {
+				animation-name: shrink-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+			}
+6b3d5872c460ed5f8f92078ff1055c0a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|1|V|scss
+				animation-name: grow-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+ee5c35ce3d081da90622a10d2272ed5e|file:///home/jdv/js/reactDice/src/Store.js|4|14|v|javascript
+	numbers
+9a31962b953d38f5702495fdf5b44ad0|file:///home/jdv/js/reactDice/src/Store.js|4|25|v|javascript
+	letters
+be42eac213dab0e3be3ef74a0a788f13|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|37|29|V|javascript
+			if (diceTheme === "numbers")
+03266012fd9684f6c53439411b5b2a50|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|41|1|V|javascript
+			1: Die1,
+			2: Die2,
+			3: Die3,
+			4: Die4,
+			5: Die5,
+			6: Die6,
+4f2fbf2e55136fae7a172c6dae0d13be|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|45|3|V|javascript
+					
+20b7bce317b9feb2f50815d5dd952367|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|36|6|V|javascript
+		let source = {
+3d0950243423fd223749e8f1ad01ce9b|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|36|2|^v|javascript
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+737db3e5627936cf3e5fa59d96891651|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|47|^v|javascript
+	png
+	png
+	png
+	png
+	png
+	png
+8657d0df5c3969c5d92c69f1fadb7fbf|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|1|V|javascript
+	import DieI from "../../resources/dice/die-infantry.svg"
+d581dda39ce2a1986387a2fb0e83aae4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|44|v|javascript
+	infantry
+18a40c7efe20efda16beedddc28f3a0a|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|43|1|V|javascript
+					1: Die1,
+					2: Die2,
+					3: Die3,
+					4: Die4,
+					5: Die5,
+					6: Die6,
+9faad0d3963e19ee9fc6fe19f8274d99|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|52|1|V|javascript
+					1: 
+5cc9eb54f98234c219bb885c2989dde4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|42|1|V|javascript
+				let source = {
+					1: Die1,
+					2: Die2,
+					3: Die3,
+					4: Die4,
+					5: Die5,
+					6: Die6,
+				}
+ab429e893ea13cdf53b38b4b9b08a426|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|59|1|V|javascript
+				break;
+04a780af49382e0d8746980225358976|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|40|9|v|javascript
+	diceTheme
+b7c29df4bc67fd94dfb185c917aed843|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|2|1|V|scss
+	    font-family: 'Sofia', cursive;
+	    @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+d248b3954dc5c5aaaef1407ce1e8d208|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|16|v|scss
+	Lato
+af8ea364aff09dd78bf9a9f7e2634815|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|24|v|scss
+	cursive
+956bb84bea9943fa8df62af66b655798|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|28|V|scss
+		font-family: 'Sofia', sans-serif;
+9bc8064e919fecfcfb999444dfb15fca|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|11|V|scss
+			@extend die;
+3f8c0f1c77081341c2b322d5a333205f|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|7|V|scss
+		.die {
+21ac93373efa494086dcf261fce322ba|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|1|V|scss
+			font-family: 'Sofia', sans-serif;
+654cd76590cebe0ba37e8d4cce8a96ee|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|17|v|scss
+	Sofia
+44f535286b4e6e42dd8cc3f52a0fd738|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|V|scss
+			font-family: 'Lato', sans-serif;
+2866d2df751441ce69926bfcea14a0f6|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|1|1|V|scss
+	@font-face {
+		font-family: 'Sofia';
+		src: local('Sofia'), url(./resources/fonts/Sofia-Regular.ttf) format('truetype');
+	}
+	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
+8f1751be3863a58e0c8c098191f23d86|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|31|1|V|scss
+	@font-face {
+		font-family: '';
+		src: local('Sofia'), url(./resources/fonts/Sofia-Regular.ttf) format('truetype');
+	}
+	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
+fb8ee9715a328403724f64ede0a96937|file:///home/jdv/js/reactDice/src/sass/App.scss|18|1|V|scss
+		font-family: 'Fira Sans', sans-serif;
+1e2a387047f27ee6d014061a1f33c27b|file:///home/jdv/js/reactDice/src/sass/App.scss|19|2|V|scss
+		font-family: 'Fira Sans', sans-serif;
+	}
+dcdfe917484762f0b3f72dc16763682c|file:///home/jdv/js/reactDice/src/sass/App.scss|19|5|V|scss
+	body {
+e30e5b95e525862bca33a28ba48c3c5b|file:///home/jdv/js/reactDice/src/sass/App.scss|19|1|V|scss
+	font-family: 'Fira Sans', sans-serif;
+7a38a1435c419210954c4a88f0cb8136|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|2|V|scss
+			font-family: $fontName, $fontStyle;
+213f8330021765156b2e8461c475f900|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|2|V|scss
+		$fontStyle: 'sans-serif';
+713f72c51dffeca92e5346f07305971d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|16|2|V|scss
+		$fontName: 'Lato';
+73c79c49be16af538055469a9747d7c3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|V|scss
+			font-family: 'Fira Sans', sans-serif;
+1fd5098a74270513410bf5f3950a5e99|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|8|v|javascript
+	Die1
+1b919f374ad63de6a1cf145231cb9a31|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|7|8|v|javascript
+	Die2
+5b43d14d5365e477f2044c609a7f3602|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|8|8|v|javascript
+	Die3
+7a75ec1743531e0c5b00379b66597147|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|9|8|v|javascript
+	Die4
+7d7eda23cc5551890d7c41496b0a56b5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|10|8|v|javascript
+	Die5
+034f64b9be3a4adfb6b9e5e19033dd72|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|11|8|v|javascript
+	Die6
+69b9035ec4d8d87f2d52add027cded19|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|8|v|javascript
+	DieI
+5373a83713486412cde7b93af68e0489|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|8|v|javascript
+	DieC
+81c5dde936e5a867f7185e430c2a43e5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|14|8|v|javascript
+	DieA
+b9b5417f657b0e024382509c3ac97608|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|15|8|v|javascript
+	DieG
+fa366341bed3417ad9dc90e200178356|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|88|8|V|javascript
+			 <div 
+2186c5bc01af5b4fe370a2a43c84e904|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|88|4|V|javascript
+			 {/*<img className={dieClass} id={id} src={source[val]} alt={alt} width="100" height="100" onClick={handleClick}></img>*/}
+bef02ee05084b9727d15686383b2b538|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|15|14|V|javascript
+	import { ReactComponent as DieG } from "../../resources/dice/die-general.svg"
+f5feb621a624e40ecdfd213d58bea9c6|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|14|14|V|javascript
+	import { ReactComponent as DieA } from "../../resources/dice/die-artillery.svg"
+75c7ff0566ce9676cbbbd07536bc3153|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|14|V|javascript
+	import { ReactComponent as DieC } from "../../resources/dice/die-cavalry.svg"
+e37f59537166224f42b58d9d6c943743|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|1|V|javascript
+	import { ReactComponent as DieI } from "../../resources/dice/die-infantry.svg"
+ee7e984227b5817e11b8d28a33c93abe|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|3|1|V|svg
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:cc="http://creativecommons.org/ns#"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:svg="http://www.w3.org/2000/svg"
+	   xmlns="http://www.w3.org/2000/svg"
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+fd007593ca9e5674e8edaa21506ba9ee|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|8|1|V|svg
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+6dffd61d499ab04a8b6593ddfda2eea4|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|8|1|V|svg
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+b9855020634296c62b1c588b499e2ea8|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|6|1|V|svg
+	   xmlns:svg="http://www.w3.org/2000/svg"
+70e44a0a2d24dfb84c79a317c0ec9e38|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+201fbe02fc7fb2ad7cf02e18123b0483|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|4|1|V|svg
+	   xmlns:cc="http://creativecommons.org/ns#"
+255f3939f7b57de4ab44328b18d068d6|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|3|1|V|svg
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+3d86cf5f976d0d5bded056387240ad5d|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|114|^v|svg
+	xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+447d423b62bc6692ce2266e1dfb0a3b5|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|1|38|V|svg
+	<?xml version="1.0" encoding="UTF-8"?>
+9b902d1b93b80d294625106bd9c669a8|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|71|V|svg
+	 <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019
+61d0a3b8e4cd3f7d43e45f9e9a982543|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|1|V|svg
+	  <rdf:RDF>
+	   <cc:Work rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+	    <dc:title/>
+	   </cc:Work>
+	  </rdf:RDF>
+	 </metadata>
+ec67f3fd692e9bad415a84d1a4eeb3b4|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|1|1|V|svg
+	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+22f95ba43d3cf9cdbd3cd88b9d2d851d|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|3|1|V|svg
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+06815cc7d5c9c6074348af99331548b0|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|V|svg
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+7b871b9e120e375fc469709b211c3e53|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|3|1|V|svg
+	   xmlns="http://www.w3.org/2000/svg"
+e5901c685b3099884ae78a726cd75e15|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|9|1|V|svg
+	   sodipodi:docname="die6-6.svg"
+c3672b885880ce6ba927aa05d4124655|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1440"
+	     inkscape:window-height="900"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="124.8799"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="1366"
+	     inkscape:window-y="0"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+41968dcb6ec56679a3e6cad8ac698010|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title></dc:title>
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+3217fdd4704cc0bbadaf6aea2abaa413|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+015c093fc91978a8c58861395abbc7d4|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|10|1|V|svg
+	  <defs
+	     id="defs17" />
+68377edcd92016f65c49ed7f41be2f45|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+2713562aced192cee02cb1a25f4ce99d|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
+	   preserveAspectRatio="xMidYMid meet"
+3e2fb1abed9eb7b5ebbdd8b4fb7bf690|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|6|1|V|svg
+	   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+d66c555b73715b4d2f4cd3542827dc7e|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
+	   id="svg13"
+cba1fc3aa4d284ca1839d19b60ca6d83|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|2|1|V|svg
+	   version="1.0"
+	   baseProfile="full"
+	   width="187.5pt"
+	   height="187.50002pt"
+8b3955664a05ff7a9c084453345e6533|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|1|1|V|svg
+	<svg
+	   version="1.0"
+	   baseProfile="full"
+	   width="187.5pt"
+	   height="187.50002pt"
+	   >
+	  <rect
+	     style="fill:none;fill-opacity:0.75;stroke:#6272a4;stroke-width:2.37519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="rect23"
+	     width="185.12482"
+	     height="185.12483"
+	     x="1.187595"
+	     y="1.187595"
+	     ry="27.943369" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="path852"
+	     cx="35.625"
+	     cy="35.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle16"
+	     cx="155.625"
+	     cy="155.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1523"
+	     cx="34.175251"
+	     cy="154.17525"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1587"
+	     cx="154.17525"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1618"
+	     cx="93.75"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1650"
+	     cx="93.75"
+	     cy="154.17525"
+	     r="19.175249" />
+	</svg>
+e5bb72e368f6fb17a88f7be657851564|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
+	   sodipodi:docname="die6-2.svg"
+6cda467e060661c813a18c61c1c74ecb|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
+	  <defs
+	     id="defs17" />
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1440"
+	     inkscape:window-height="900"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="124.8799"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="1366"
+	     inkscape:window-y="0"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title></dc:title>
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+4babe9ef6ea99d3a53c134f31786fc30|file:///home/jdv/js/reactDice/src/resources/dice/die6-3.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die6-3.svg"
+26e57f49e5dd3b5f529e07ad45f06aee|file:///home/jdv/js/reactDice/src/resources/dice/die6-3.svg|5|1|v|svg
+	   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+2d96edffcecd2284066a2c84ae458e74|file:///home/jdv/js/reactDice/src/resources/dice/die6-4.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die6-4.svg"
+f1bb203acdff99f24b877f3390e32940|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die6-5.svg"
+0da0ad8e86badede6b5d88a922397bbc|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|v|svg
+	   inkscape:ve
+77624d2b8ffd03809684a6d0414d908e|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|v|svg
+	rsion="1.0.2 (e86c870879, 2021-01-15)"
+79834ef0039053fbf3ae8db9bb53a3e2|file:///home/jdv/js/reactDice/src/resources/dice/die-artillery.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-artillery.svg"
+a70a64e07b65adbc8a7b419373255413|file:///home/jdv/js/reactDice/src/resources/dice/die-artillery.svg|6|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="124.8799"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+517cb42e0258f93fcfac6ff1dc4d557d|file:///home/jdv/js/reactDice/src/resources/dice/die-cavalry.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-cavalry.svg"
+c52a7a23ded9595d885574e92459b139|file:///home/jdv/js/reactDice/src/resources/dice/die-cavalry.svg|6|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="127.40351"
+	     inkscape:cy="124.84027"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+1479f6f4c742df41c857f41a3a3d1124|file:///home/jdv/js/reactDice/src/resources/dice/die-general.svg|3|1|V|svg
+	   width="187.5pt"
+	   height="187.50002pt"
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-general.svg"
+c318d7f8dfc18b6c23eea1d300229fca|file:///home/jdv/js/reactDice/src/resources/dice/die-general.svg|4|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="-24.912189"
+	     inkscape:cy="121.96064"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+f918d2a38d40333bb1af71feda9dba3c|file:///home/jdv/js/reactDice/src/resources/dice/die-infantry.svg|5|1|V|svg
+	   viewBox="0 0 187.5 187.50002"
+	   preserveAspectRatio="xMidYMid meet"
+	   id="svg13"
+	   sodipodi:docname="die-infantry.svg"
+edb087b0c29f738e4546382b2dec7377|file:///home/jdv/js/reactDice/src/resources/dice/die-infantry.svg|6|1|V|svg
+	  <defs
+	     id="defs17">
+	    <rect
+	       x="11.926103"
+	       y="11.084248"
+	       width="164.28423"
+	       height="166.51176"
+	       id="rect1691" />
+	    <rect
+	       x="47.732096"
+	       y="53.411544"
+	       width="90.111844"
+	       height="91.437863"
+	       id="rect1685" />
+	  </defs>
+	  <sodipodi:namedview
+	     pagecolor="#ffffff"
+	     bordercolor="#666666"
+	     borderopacity="1"
+	     objecttolerance="10"
+	     gridtolerance="10"
+	     guidetolerance="10"
+	     inkscape:pageopacity="0"
+	     inkscape:pageshadow="2"
+	     inkscape:window-width="1366"
+	     inkscape:window-height="732"
+	     id="namedview15"
+	     showgrid="false"
+	     inkscape:zoom="1.418633"
+	     inkscape:cx="151.64303"
+	     inkscape:cy="122.34211"
+	     inkscape:window-x="0"
+	     inkscape:window-y="36"
+	     inkscape:window-maximized="0"
+	     inkscape:current-layer="svg13"
+	     inkscape:document-rotation="0"
+	     inkscape:pagecheckerboard="true">
+	    <inkscape:grid
+	       type="xygrid"
+	       id="grid19"
+	       originx="0.65000567"
+	       originy="0.65001333" />
+	  </sodipodi:namedview>
+	  <metadata
+	     id="metadata7">
+	Created by potrace 1.16, written by Peter Selinger 2001-2019
+	<rdf:RDF>
+	  <cc:Work
+	     rdf:about="">
+	    <dc:format>image/svg+xml</dc:format>
+	    <dc:type
+	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	    <dc:title />
+	  </cc:Work>
+	</rdf:RDF>
+	</metadata>
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer1"
+	     inkscape:label="Dots"
+	     transform="translate(0.6500057,0.65001333)" />
+	  <g
+	     inkscape:groupmode="layer"
+	     id="layer2"
+	     inkscape:label="Border"
+	     transform="translate(0.6500057,0.65001333)" />
+f889472590a0e269a353e5bb0a6be366|file:///home/jdv/js/reactDice/src/resources/dice/README.md|2|1|V|markdown
+	
+	   xmlns="http://www.w3.org/2000/svg"
+	   xmlns:svg="http://www.w3.org/2000/svg"
+	   xmlns:cc="http://creativecommons.org/ns#"
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+10813eb8c79879a8092204f2125ed3ca|file:///home/jdv/js/reactDice/src/resources/dice/README.md|5|1|V|markdown
+	
+	
+	<svg
+	   version="1.0"
+	   baseProfile="full"
+	   width="187.5pt"
+	   height="187.50002pt"
+	   >
+	  <rect
+	     style="fill:none;fill-opacity:0.75;stroke:#6272a4;stroke-width:2.37519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="rect23"
+	     width="185.12482"
+	     height="185.12483"
+	     x="1.187595"
+	     y="1.187595"
+	     ry="27.943369" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="path852"
+	     cx="35.625"
+	     cy="35.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle16"
+	     cx="155.625"
+	     cy="155.625"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1523"
+	     cx="34.175251"
+	     cy="154.17525"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1587"
+	     cx="154.17525"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1618"
+	     cx="93.75"
+	     cy="34.175251"
+	     r="19.175249" />
+	  <circle
+	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+	     id="circle1650"
+	     cx="93.75"
+	     cy="154.17525"
+	     r="19.175249" />
+	</svg>
+79f2634563346580cd05fa2e849e3557|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
+	</svg>
+f31bbdd1b3e85bccd652680e16935819|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|90|5|v|javascript
+	Source
+35af0a1ef14aae0d4b4840fc7fe1e4d5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|89|1|V|javascript
+			<div>
+				<DieA className={dieClass} id={id} onClick={handleClick}/>
+			</div>
+be1c253293efc9f3da72da537173d45f|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|87|2|V|javascript
+			 /*<img className={dieClass} id={id} src={source[val]} alt={alt} width="100" height="100" onClick={handleClick}></img>*/
+2b2cd60e1667782e22847dbadb22b359|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|32|^v|javascript
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+	 }
+3c7630074790a251435d6dd4583b5cb4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|8|^v|javascript
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 
+	{ ReactComponent as 

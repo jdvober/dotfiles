@@ -1,4 +1,21 @@
+snippet >> "Auto-shortcut for =>" A
+=> $0
+endsnippet
+
 snippet fc "React Functional Component with PropTypes"
+const $1 = () => {
+    return (
+		<div>
+			$0
+		</div>
+    )
+}
+
+export default $1
+endsnippet
+
+
+snippet fcp "React Functional Component with PropTypes"
 import PropTypes from 'prop-types'
 
 const $1 = ({ $2 }) => {
@@ -16,3 +33,14 @@ $1.propTypes = {
 export default $1
 
 endsnippet
+
+snippet zf "A zustand function"
+$1: ($2) => 
+    set(state =>  {
+        // Code you want to execute here
+        // Example:
+		// state.dice[id].held = !state.dice[id].held;
+		$0
+    }),
+endsnippet
+

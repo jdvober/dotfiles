@@ -178,6 +178,7 @@ alias dotfiles="cd ~/github.com/jdvober/dotfiles && ls"
 alias -g GODIR="~/go/src/github.com/jdvober"
 alias -g DOTS="~/github.com/jdvober/dotfiles/.config"
 alias -g DOTFILES="~/github.com/jdvober/dotfiles/.config"
+alias -g NVIMSWAP="local/share/nvim/swap"
 
 # Config shortcuts
 alias -g ZSHRC="~/.zshrc"
@@ -202,4 +203,20 @@ gpush() {
     git push
 }
 
-source /home/jdv/.config/broot/launcher/bash/br
+# Spaces to Tabs.  Pass the extension name.
+# Recurse replaces 2 leading spaces with a tab
+space2tab() {
+	find . -name "*.$1" ! -type d -exec bash -c 'unexpand -t 2 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
+}
+
+# Recurse replaces 4 leading spaces with a tab
+space4tab() {
+	find . -name "*.$1" ! -type d -exec bash -c 'unexpand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
+}
+
+# Recurse replaces 8 leading spaces with a tab
+space8tab() {
+	find . -name "*.$1" ! -type d -exec bash -c 'unexpand -t 8 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
+}
+
+export PATH="~/js/sass/dart-sass/:$PATH"

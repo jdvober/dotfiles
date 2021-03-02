@@ -39,17 +39,15 @@ source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/startify.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vimtex.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/tex-conceal.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/sneak.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
+source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
+source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lspsaga.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/completion-nvim.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/compe.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/language-servers.vim
-" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
 
 
 "  /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$                                

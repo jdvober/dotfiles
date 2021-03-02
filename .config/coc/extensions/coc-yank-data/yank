@@ -1,577 +1,1046 @@
-c14210b5dbd8d5d2243616d6abd19148|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|20|18|v|javascript
-	repeats * ( duration + pause)
-63480f2e3055fdf90539ed8ff31b48ac|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|7|4|V|javascript
-				repeats++;
-8f8222326e8ff494c55fc61d88dbd9d0|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|4|10|V|javascript
-		let repeats = 0
-ec1b81965109165de6b38cd92c1e39f9|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|3|27|v|javascript
-	pause
-c2e33d9bed17247ad63b5fc52b0e42fb|file:///home/jdv/js/reactDice/src/sass/App.scss|13|8|V|scss
-	@use 'tabs';
-318eacee22d216048f84fe25581ac084|file:///home/jdv/js/reactDice/src/sass/_map.scss|5|1|V|scss
-		// background-color: colors.$Background;
-4d0836388d7f040b1f7082bd48cd9ef9|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
-	    padding: 2%;
-5c6d0efaa5e9d6f63a08c670681b8e7d|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
-	    padding-right: 10%;
-11b8fdbd493f05616e2e6c4e67cbaf04|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
-	    /* padding-left: 10%; */
-eefe05b5f63320590cc7ac6880675e10|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
-	    margin-top: 1%;
-20500e00d2bf4c607e9c78523a66e0db|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|16|V|scss
-	    /* margin-right: 0%; */
-bfb187ee3df68e2744d96942b1eb0975|file:///home/jdv/js/reactDice/src/sass/_timer.scss|16|15|V|scss
-	    width: 85%;
-6ac1985fae2f71b2ec281573b20c6fb9|file:///home/jdv/js/reactDice/src/sass/_map.scss|7|1|V|scss
-		border-style: rounded;
-		border-radius: 20px;
-		padding: 2%;
-		margin-left: 2%;
-d74668d8ba4d0d9885ec15043169d49d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|13|1|V|scss
-	    border-style: rounded;
-	    border-radius: 20px;
-	    padding: 2%;
-	    margin-left: 1.5%;
-	    margin-top: 0.5%;
-a53ee7da495853e861e5f53962d69300|file:///home/jdv/js/reactDice/src/sass/_command.scss|9|1|V|scss
-	    border-style: rounded;
-	    border-radius: 20px;
-	    padding: 2%;
-	    margin-left: 2%;
-	    height: 56%;
-3db215353ac27b91977accd18578d152|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|15|1|V|scss
-		border-style: rounded;
-		border-radius: 20px;
-		height: 121%;
-		width: 93%;
-		padding: 2%;
-8f2b3cb4dbe9725c6d5919a2171246e1|file:///home/jdv/js/reactDice/src/sass/_map.scss|93|1|V|scss
-	    width: auto;
-	    height: 83%;
-8f5e3a9c3732d0562e91b0ba7f71941a|file:///home/jdv/js/reactDice/src/sass/_map.scss|91|1|V|scss
-	    margin-top: auto;
-	    margin-bottom: auto;
-26e2fc4a213684e567fad8af851004a7|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
-	    margin: auto;
-	    height: 80%;
-	    width: 80%;
-9400a308b390c2fcbf0e066348e95f7a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|1|V|scss
-	    height: 125%;
-	    width: auto;
-	    transition: 0.4s;
-	    opacity: 100%;
-60c4bd444208c4734af1bab465cbdbaf|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|1|V|scss
-	    height: 125%;
-	    width: auto;
-e8458c2fe05834d9c6cdd13bec4954b4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|35|1|V|scss
-	    height: 150%;
-	    width: auto;
-84df2fde031cbda765b806e3012eea84|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|39|16|V|scss
-	    height: 25%;
-cb6a37c202ba7c0c7154836e9582c5e0|file:///home/jdv/js/reactDice/src/sass/_map.scss|19|1|V|scss
-	    max-height: 100vh;
-	    column-gap: 4%;
-dfb6227c8365b5f3d8ae2afa3f281b4f|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|1|V|scss
-	    margin: auto;
-358944c71477f05eacc67c923985618f|file:///home/jdv/js/reactDice/src/sass/_map.scss|36|1|V|scss
-	    height: 100%;
-	    width: 100%;
-	    padding: 2%;
-8ae6a61beef67835874013fd263a685b|file:///home/jdv/js/reactDice/src/sass/_map.scss|82|1|V|scss
-	.mapImage {
-	    grid-area: mapimage;
-	    /* margin: auto; */
-	    box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+62be66a5a334b7c277f25c6b0ebd0d5e|file:///home/jdv/js/reactDice/src/App.js|20|1|V|javascript
+			// socket.onmessage = (message) => {
+				// console.log(message);
+			// };
+55051dbac8e4623b728092881a4edb27|file:///home/jdv/js/reactDice/src/App.js|26|59|v|javascript
+	 || contentDefaultMessage
+6d4afa8bf3685d01aad801a890049741|file:///home/jdv/js/reactDice/src/App.js|22|1|V|javascript
+				const dataFromServer = JSON.parse(message.data);
+				const stateToChange = {};
+				if (dataFromServer.type === "userevent") {
+					stateToChange.currentUsers = Object.values(dataFromServer.data.users);
+				} else if (dataFromServer.type === "contentchange") {
+					stateToChange.text = dataFromServer.data.editorContent;
+				}
+				stateToChange.userActivity = dataFromServer.data.userActivity;
+				this.setState({
+					...stateToChange
+				});
+4aa1ba31e75a69058940131c2c82ef7f|file:///home/jdv/js/reactDice/src/App.js|24|1|V|javascript
+		/* When a user joins, I notify the server that a new user has joined to edit the document. */
+		const logInUser = () => {
+			const username = this.username.value;
+			if (username.trim()) {
+				const data = {
+					username
+				};
+				this.setState({
+					...data
+				}, () => {
+					socket.send(JSON.stringify({
+						...data,
+						type: "userevent"
+					}));
+				});
+			}
+		}
+efd048971c2e7bb401d855576e22a351|file:///home/jdv/js/reactDice/src/App.js|18|2|V|javascript
+				logInUser();
+f528764d624db129b32c21fbca0cb8d6|file:///home/jdv/js/reactDice/src/App.js|11|34|v|javascript
+	127.0.0.1
+e7f1120b33c9c2a41fced90c505c4328|file:///home/jdv/js/reactDice/server/main.go|47|20|V|go
+				log.Fatalf("\n\n==> Error reading message:\n\n%v\n\n", err)
+			}
+832cecfe7eaa5ebf67759f364af5f8a8|file:///home/jdv/js/reactDice/server/main.go|47|3|V|go
+				log.Fatalf("\n\n==> Error reading message:\n\n%v\n\n", err)
+daca230c8a7a53e9f4c86ba52f2e129d|file:///home/jdv/js/reactDice/server/main.go|53|3|V|go
+				log.Fatalf("\n==> Error :\n\n%v\n\n", err)
+9f3d2135e1122ac9369015292624bb0d|file:///home/jdv/js/reactDice/package.json|21|1|V|json
+		"start": "concurrently \"sass --watch ./style/sass:./style/css\" "
+3bb1fd986097336594697d9aae4d134f|file:///home/jdv/js/reactDice/package.json|21|70|v|json
+	npm run tsc:w
+0fdc336911a6b4473390edda26862c98|file:///home/jdv/js/reactDice/package.json|22|33|V|json
+			"start": "react-scripts start",
+a1b01e734b573fca08eb1a65e6df9a38|file:///home/jdv/js/reactDice/package.json|21|43|v|json
+	style
+8166fac00e9778b1bb7628f2eeec2259|file:///home/jdv/js/reactDice/package.json|23|1|V|json
+			""concurrently \"cd server && npm run start\" \"npm run start\""
+2f0403d8ed883223a8d76fd2dcb85f9b|file:///home/jdv/js/reactDice/package.json|23|27|v|json
+	cd server && npm run start
+3d2c42f5ad77e2edaa6819f03e4b36a1|file:///home/jdv/js/reactDice/package.json|22|72|V|json
+			"start-dev": ""concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"./server/make watch\" \"npm run start\"", 
+87d30ed976956d26577d6955789f3eba|file:///home/jdv/js/reactDice/package.json|22|12|V|json
+			"dev": ""concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"npm run start\"",
+cad578b87a2842935b7a9e4b265c0f7c|file:///home/jdv/js/reactDice/package.json|23|12|v|json
+	concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"npm run start\"
+8bf02c416ffc3742066dd923429b4dd2|file:///home/jdv/js/reactDice/package.json|23|27|v|json
+	sass --watch ./src/sass/App.scss ./src/App.css
+fe28bba7af127a34375709c6118d6401|file:///home/jdv/js/reactDice/package.json|23|38|V|json
+			"dev": ""concurrently \"npm run sass\" \"npm run start\"",
+			"sass": "sass --watch ./src/sass/App.scss ./src/App.css"
+ea2b2676c28c0db26d39331a336c6b92|file:///home/jdv/js/reactDice/package.json|24|4|v|json
+	start
+09492b40f9f9ebe421722fa7b7634c9d|file:///home/jdv/js/reactDice/package.json|24|26|v|json
+	command1
+049ef08c70c6fc4e27003a1244cdbf0e|file:///home/jdv/js/reactDice/package.json|24|77|v|json
+	command2
+f072175e5ef1aa4835bd449a42dd1db3|file:///home/jdv/js/reactDice/package.json|24|31|V|json
+			"dev": "concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"npm run start\""
+7556a08efaa166a133a179a7fadeed7c|file:///home/jdv/js/reactDice/package.json|23|3|V|json
+			""
+c438cf574484c70ecdb82a41e00e4d23|file:///home/jdv/js/reactDice/package.json|23|1|V|json
+			"dev-start": "concurrently \"npm run watch-server\" \"npm run watch-sass\" \"npm run start\"",
+7b5f252a8bb22700a111f006251f4325|file:///home/jdv/js/reactDice/package.json|23|26|v|json
+	\"npm run watch-server
+1d7a2000e4a3962dc60b112fbc40bd51|file:///home/jdv/js/reactDice/package.json|23|51|v|json
+	npm run start
+33bf66f9795eca122171e119700b493d|file:///home/jdv/js/reactDice/server/main.go|46|8|v|go
+	Fatalf
+0fdb49974da67f4673f5b48e0464424c|file:///home/jdv/js/reactDice/server/main.go|54|1|V|go
+		for {
+			messageType, p, err := conn.ReadMessage()
+			if err != nil {
+				log.Fatalf("\n\n==> Error reading message:\n\n%v\n\n", err)
+			}
+	
+			fmt.Println(string(p))
+	
+			if err := conn.WriteMessage(messageType, p); err != nil {
+				log.Fatalf("\n==> Error :\n\n%v\n\n", err)
+			}
+		}
+4102f005ffccd0fea4a45ff165dbc49f|file:///home/jdv/js/reactDice/src/App.js|16|1|V|javascript
+		socket.onopen = () => {
+			console.log('WebSocket Client Connected');
+		};
+	
+		socket.onmessage = (msg) => {
+			console.log(msg)
+		};
+bdf5167836986922925c35cc1009f417|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
+		// Set up the handshake with server
+50b159defd151c35b54ab906479c254f|file:///home/jdv/js/reactDice/src/App.js|15|2|v|javascript
+	exampleSocket
+8bc91e4653aeceb5a48131e6bc7b54b9|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
+		socket.onopen = function (event) {
+			socket.send("Here's some text that the server is urgently awaiting!");
+		};
+eb3503f1aebbe37c3dfb3308a5aafb21|file:///home/jdv/js/reactDice/server/main.go|40|1|V|go
+	// Listen for new websocket messages
+	func reader(conn *websocket.Conn) {
+		fmt.Println("Listening for messages on websocket connection...")
+		for {
+			messageType, p, err := conn.ReadMessage()
+			if err != nil {
+				log.Printf("\n\n==> Error reading message:\n\n%v\n\n", err)
+				return
+			}
+			if err := conn.WriteMessage(messageType, p); err != nil {
+				log.Printf("\n==> Error :\n\n%v\n\n", err)
+				return
+			}
+		}
 	}
-ae35e51ecfcc9c36020563f4cef7ef85|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|1|V|scss
-	    /* margin: auto; */
-752a712b122f491714dd7670aa9232c8|file:///home/jdv/js/reactDice/src/sass/_map.scss|6|1|V|scss
-		background-color: colors.$Green;
-35b712a18de45bc05216221bc7b70764|file:///home/jdv/js/reactDice/src/sass/_map.scss|4|5|V|scss
-	.grid-container {
-		// background-color: colors.$Background;
+cae7dce5466fc31ca3cfa0ab52161282|file:///home/jdv/js/reactDice/server/main.go|15|1|V|go
+		fmt.Fprintf(w, "Hello from the Websocket Endpoint")
+		// Deal with CORS, which is skipped for now.  TODO
+		upgrader.CheckOrigin = func(r *http.Request) bool { return true }
+	
+		// Upgrade the http connection to websocket connection.
+		ws, err := upgrader.Upgrade(w, r, nil)
+		if err != nil {
+			fmt.Printf("\n==> Error in websocket upgrader:\n\n%v\n\n", err)
+			log.Fatalf("\n==> Error in websocket upgrader:\n\n%v\n\n", err)
+		}
+	
+		// Show a client has connected
+		log.Println("Client Connected")
+	
+		// Write a message to the client
+		err = ws.WriteMessage(1, []byte("Greetings, Client.  This is your message verifying your connection to the ws server!"))
+		if err != nil {
+			log.Println(err)
+		}
+	
+		// Start listening for messages on the passed in websocket
+		reader(ws)
+	
+7a1476e0cdef0da0653ba8addb71704b|file:///home/jdv/js/reactDice/server/main.go|14|1|V|go
+	func wsEndpoint(w http.ResponseWriter, r *http.Request) {
+	}
+cf134fde571e96ed5c6b6617113349e2|file:///home/jdv/js/reactDice/server/main.go|10|1|V|go
+	func homePage(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Home Page")
 	}
 	
-5803d77e7ffc1369b86a3f77013fae0b|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
-		background-color: colors.$Red;
-27a816ca12669aef53edab259d82277d|file:///home/jdv/js/reactDice/src/components/Map/Image.js|19|12|v|javascript
-	imageWidthString
-de889dfbdafa63cca2341d81b720fbe1|file:///home/jdv/.zshrc|181|19|v|zsh
-	local/share/nvim/swap
+1d6657d9bbb30ae9432f870cc3bf8964|file:///home/jdv/js/reactDice/server/main.go|14|6|v|go
+	homePage
+8cf04a9734132302f96da8e113e80ce5|file:///home/jdv/js/reactDice/server/main.go|15|18|v|go
+	Home
+1f39397b509a03df3decbf0370d5fd4a|file:///home/jdv/js/reactDice/server/main.go|14|1|V|go
 	
-fc8213b774d36b00434fd9b5c557ef6d|file:///home/jdv/.zshrc|203|5|V|zsh
-	    git push
-e0d6cf6665d50acce72ad152ae990665|file:///home/jdv/js/reactDice/src/sass/App.scss|20|10|V|scss
-		max-height: 100vh;
-c305432a89972e0430d7f65908265720|file:///home/jdv/js/reactDice/src/sass/App.scss|40|1|V|scss
-	    /* gap: 1% 1%; */
-	    /* align-items: start; */
-51e6cd92b6c45f9affdc158ecca2b8b8|file:///home/jdv/js/reactDice/src/sass/_command.scss|8|28|v|scss
-	Yellow
-02da871292896f27bacd506e0ecc5222|file:///home/jdv/js/reactDice/src/sass/_chat.scss|14|1|V|scss
-		width: 96%;
-		min-height: 72vh;
-		max-height: 72vh;
-887b41bab4da12434c0ef1ae2ee83c04|file:///home/jdv/js/reactDice/src/sass/_chat.scss|13|1|V|scss
-	    // height: 62%;
-ab66a21e4cc5da801a06b01ca3891a99|file:///home/jdv/js/reactDice/src/sass/_chat.scss|43|1|V|scss
-	    min-width: 51%;
-	    max-width: 100%;
-063abb0ab32be7b3046e1f5d33a0f1af|file:///home/jdv/js/reactDice/src/sass/_chat.scss|47|1|V|scss
-	    padding: 2%;
-	    padding-left: 5%;
-	    margin-left: 2.5%;
-	    margin-right: 5%;
-	    margin-top: 2%;
-	    margin-bottom: 2%;
-	    font-size: 20px;
-	    border-radius: 0px 20px 0px 20px;
-67a989e7b31f1dd4b2e457de4dc5e0e5|file:///home/jdv/js/reactDice/src/sass/_chat.scss|55|1|V|scss
-	    min-height: 3em;
-	    max-height: 3em;
-83facfbe063c40fc6ecae8645860db50|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|37|1|V|vim
-	"*****************************************************************************
-	" Used for moving one space in insert mode
-	"*****************************************************************************
-92c568a95f98dadfb5533e493ff97bcc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|36|3|v|vim
-	Used for moving one space in insert mode
-040d2b074e3a99c9ba34f12588152bb7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|117|1|V|vim
+	func wsEndpoint(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "WS Endpoint Reached")
+	}
 	
-	"*****************************************************************************
-	" This unsets the "last search pattern" register by hitting return
-	"*****************************************************************************
+	var upgrader = websocket.Upgrader{
+		ReadBufferSize:  1024,
+		WriteBufferSize: 1024,
+	}
 	
-d0457fece2625a12d9ed2d2846cf6be0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|128|3|v|vim
-	This unsets the "last search pattern" register by hitting return
-e00c176ccd293cd85cfe6c473caaf869|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|26|24|v|vim
-	"\<Space>"
+	func wsHandler(w http.ResponseWriter, r *http.Request) {
+		conn, err := upgrader.Upgrade(w, r, nil)
+		if err != nil {
+			log.Println(err)
+			return
+		}
+		// ... Use conn to send and receive messages.
+		for {
+			messageType, p, err := conn.ReadMessage()
+			if err != nil {
+				log.Println(err)
+				return
+			}
+			if err := conn.WriteMessage(messageType, p); err != nil {
+				log.Println(err)
+				return
+			}
+		}
+	}
+d1cb9166d6f45b954d93b65d3a5b2ead|file:///home/jdv/js/reactDice/server/main.go|27|1|V|go
+		setupRoutes()
+		log.Fatal(http.ListenAndServe(":8080", nil))
+840974ba6a04d83fbabb1184ae8ab5d0|file:///home/jdv/js/reactDice/server/main.go|19|6|v|go
+	handleWS
+def649c99ffee2edb54f738a98ae0ae6|file:///home/jdv/js/reactDice/server/main.go|6|10|V|go
+		"github.com/gorilla/websocket"
+88c3338e95a9fed8d034a3cbd217c5c1|file:///home/jdv/js/reactDice/server/main.go|1|1|V|go
+	package main
 	
-d4a60019da160430384c32420d024684|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|25|v|vim
-	<leader>c"\<Space>"
-c26d6cccab8bcb33306c4ab04abae4b8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
-	nnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
-9f27410725ab8cc8854a2769c7a516b8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|69|21|v|scss
-	green
-2e42eeb832e48803e769a3db540200c5|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|70|17|V|scss
-			max-height: 50%;
-fd6ca751c3718288c455a0974b1fbac6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|21|1|V|scss
-		flex-grow: 1;
-e30550d8bc02813c56be7dd98e7b5a06|file:///home/jdv/js/reactDice/src/sass/_chat.scss|15|1|V|scss
-		min-height: 72vh;
-		max-height: 72vh;
-bc5a782b79d401a3b43680fac314c6a4|file:///home/jdv/js/reactDice/src/sass/_chat.scss|14|1|V|scss
-		width: 96%;
-ccc3d992926f675652d01957c953039e|file:///home/jdv/js/reactDice/src/sass/_chat.scss|9|1|V|scss
-		align-self: center;
-0e497cbb33cb29fb7cfcc10f68a041de|file:///home/jdv/js/reactDice/src/sass/_chat.scss|52|1|V|scss
-	    margin-left: 2.5%;
-	    margin-right: 5%;
-	    margin-top: 2%;
-	    margin-bottom: 2%;
-1a5df828e8c122cbfcd9defdbb683ca7|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|15|10|V|javascript
-					<Chat />
-d3d622c0d448f93b28dd441d24130f56|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|17|10|V|javascript
-					<Scoreboard />
-2d2423ea0e2973e17c95f256d773d240|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|18|7|V|scss
+	import (
+		"fmt"
+		socketio "github.com/googollee/go-socket.io"
+		"log"
+		"net/http"
+	)
+	
+	func homePage(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Home Page")
+	}
+	
+	func diceEndpoint(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Dice Login Page")
+	}
+	
+	func wsHandler() {
+		// Define a new socketio server instance
+		server, err := socketio.NewServer(nil)
+		if err != nil {
+			log.Fatal(err)
+		}
+	
+		server.On("connection", func(so socketio.Socket) {
+	
+			log.Println("on connection")
+	
+			so.Join("chat")
+	
+			so.On("chat message", func(msg string) {
+				log.Println("emit:", so.Emit("chat message", msg))
+				so.BroadcastTo("chat", "chat message", msg)
+			})
+	
+			so.On("disconnection", func() {
+				log.Println("on disconnect")
+			})
+		})
+	
+		server.On("error", func(so socketio.Socket, err error) {
+			log.Println("error:", err)
+		})
+	
+		http.Handle("/socket.io/", server)
+	
+		fs := http.FileServer(http.Dir("static"))
+		http.Handle("/", fs)
+	
+		log.Println("Serving at localhost:5000...")
+		log.Fatal(http.ListenAndServe(":5000", nil))
+	
+	}
+	
+	func setupRoutes() {
+		http.HandleFunc("/", homePage)
+		http.HandleFunc("/ws", wsHandler)
+		http.HandleFunc("/dice", diceEndpoint)
+	}
+	
+	func main() {
+		fmt.Println("Go WS Server started on port 8080")
+		setupRoutes()
+		log.Fatal(http.ListenAndServe(":8080", nil))
+	}
+7b98980e6ea07875ce2d7c8d9adc1629|file:///home/jdv/js/reactDice/server/asset/index.html|21|1|V|html
+	    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+a47fe3f7a607509d5eb19a7d0ca2c9d6|file:///home/jdv/js/reactDice/public/index.html|14|1|V|html
+	    <!--
+	      manifest.json provides metadata used when your web app is installed on a
+	      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+	    -->
+d2ae7389a7d720376c0232d191aead4a|file:///home/jdv/js/reactDice/public/index.html|15|1|V|html
+	    <!--
+	      Notice the use of %PUBLIC_URL% in the tags above.
+	      It will be replaced with the URL of the `public` folder during the build.
+	      Only files inside the `public` folder can be referenced from the HTML.
+	
+	      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+	      work correctly both with client-side routing and a non-root public URL.
+	      Learn how to configure a non-root public URL by running `npm run build`.
+	    -->
+c35d5201b5aa8963cfe7d430e26a36e8|file:///home/jdv/js/reactDice/public/index.html|23|1|V|html
+	    <!--
+	      This HTML file is a template.
+	      If you open it directly in the browser, you will see an empty page.
+	
+	      You can add webfonts, meta tags, or analytics to this file.
+	      The build step will place the bundled scripts into the <body> tag.
+	
+	      To begin the development, run `npm start` or `yarn start`.
+	      To create a production bundle, use `npm run build` or `yarn build`.
+	    -->
+a3a6e2e3d742bb71bb34f16bf7fb9f77|file:///home/jdv/js/reactDice/public/index.html|12|2|V|html
+		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+48e11b0aee0727e0b52db5cf0cb2fb57|file:///home/jdv/js/reactDice/src/App.js|11|48|V|javascript
+	let socket = new WebSocket("ws://localhost:8000");
+ec264998e7729f538548ea403ab5c0c6|file:///home/jdv/js/reactDice/src/App.js|12|1|V|javascript
+		console.log(`Socket information:\n`)
+		console.log(socket)
+8e8bd8e6c3032b9a39846bd6e86f553b|file:///home/jdv/js/reactDice/src/App.js|13|1|V|javascript
+		var socket = io();
+	
+		var form = document.getElementById('form');
+		var input = document.getElementById('input');
+	
+		form.addEventListener('submit', function(e) {
+		  e.preventDefault();
+		  if (input.value) {
+			socket.emit('chat message', input.value);
+			input.value = '';
+		  }
+		});
+7cc79bb8a13bd8a6d5e8ea28a4859291|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
+		var form = document.getElementById('form');
+		var input = document.getElementById('input');
+	
+230c7211ea7a1747d80123964ab1800b|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
+		var form = document.getElementById('form');
+		var input = document.getElementById('input');
+	
+		form.addEventListener('submit', function(e) {
+			e.preventDefault();
+			if (input.value) {
+				socket.emit('chat message', input.value);
+				input.value = '';
+			}
+		});
+a835c68262f808a69ae65dd2496aaf75|file:///home/jdv/js/reactDice/src/App.js|13|1|V|javascript
+		const socket = openSocket('http://localhost:8000');
+3b8130753913dd1a00cb37af32376555|file:///home/jdv/js/reactDice/src/Store.js|126|1|V|javascript
+	    sortDice: () => 
+	        set(state =>  {
+	            state.dice.sort((a, b) =>  a.val - b.val)
+	        }),
+10d0842d12683d27bb1fd376bdd3fd76|file:///home/jdv/js/reactDice/src/Store.js|49|2|v|javascript
+	sortDice
+fb601e84d2bcce28aa2c32d2c8434797|file:///home/jdv/js/reactDice/src/Store.js|48|9|V|javascript
+		socket: 
+8d93c5c43244607ff0d0e21a34a2b292|file:///home/jdv/js/reactDice/src/Store.js|49|1|V|javascript
+		getSocket: () => 
+			set(state =>  {
+				state.dice.sort((a, b) =>  a.val - b.val)
+			}),
+4f70674b7a4f0ed20282b06199b1f7c9|file:///home/jdv/js/reactDice/src/App.js|3|1|V|javascript
+	import openSocket from 'socket.io-client'; // npm i --save socket.io-client
+5b3723ea92941e230df2312572a60cd2|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|14|1|V|javascript
+			if (input.value) {
+				socket.emit('chat message', input.value);
+				input.value = '';
+			}
+bc04ccb8706c1f17c962714287a7a72b|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|7|1|V|javascript
+		const addMessageToHistory = UseStore(state => state.addMessageToHistory) 
+3cf461aef5f619ca7651f33efb9f170c|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
+		const latestMessage = UseStore(state => state.latestMessage)
+64c6d999a1a1ec945f6403103fe04e15|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|8|v|javascript
+	latestMessage
+c25e7f31f1bfd95652f6326aee9332b8|file:///home/jdv/js/reactDice/server/main.go|40|1|V|go
+	
+		server.OnError("/", func(s socketio.Conn, e error) {
+			fmt.Println("meet error:", e)
+		})
+36879b2d10ba75670a6394db7b29a6d6|file:///home/jdv/js/reactDice/server/main.go|41|1|V|go
+		server.OnError("/", func(s socketio.Conn, e error) {
+			fmt.Println("meet error:", e)
+		})
+	
+22d21aea2bd2cb6851d044f40af556ad|file:///home/jdv/js/reactDice/server/main.go|34|1|V|go
+		server.OnEvent("/", "bye", func(s socketio.Conn) string {
+			last := s.Context().(string)
+			s.Emit("bye", last)
+			s.Close()
+			return last
+		})
+9d233a1ddebd43618349a022c9d9b9d0|file:///home/jdv/js/reactDice/server/main.go|41|1|V|go
+		server.OnEvent("/", "chat message", func(s socketio.Conn) string {
+			last := s.Context().(string)
+			s.Emit("bye", last)
+			s.Close()
+			return last
+		})
+	
+b6533591522395806f5dcc7d70cc6789|file:///home/jdv/js/reactDice/server/main.go|29|1|V|go
+		server.OnEvent("/chat", "msg", func(s socketio.Conn, msg string) string {
+			s.SetContext(msg)
+			return "recv " + msg
+		})
+	
+f899165063f6d5f5fdd0d05dc5fe138e|file:///home/jdv/js/reactDice/server/main.go|35|19|V|go
+			s.SetContext(msg)
+52159af980f1391e0acb83c40ac86c85|file:///home/jdv/js/reactDice/server/asset/index.html|24|1|V|html
+	      var socket = io();
+	      // socket.emit('msg', 'hello');
+	      var s2 = io("/chat");
+	      socket.on('reply', function(msg){
+	        $('#messages').append($('<li>').text(msg));
+	      });
+	      $('form').submit(function(){
+	        s2.emit('msg', $('#m').val(), function(data){
+	          $('#messages').append($('<li>').text(data));
+	        });
+	        socket.emit('notice', $('#m').val());
+	        $('#m').val('');
+	        return false;
+	      });
+f8fed6e60ba3656ce69b8e95eb394f50|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|10|1|V|javascript
+		// var form = document.getElementById('form');
+		// var input = document.getElementById('chatInputBox');
+	
+		// form.addEventListener('submit', function(e) {
+			// e.preventDefault();
+			// if (input.value) {
+				// socket.emit('chat message', input.value);
+				// input.value = '';
+			// }
+		// });
+442aef26447a8174c98efb20250a93ab|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|10|1|^v|javascript
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+aee92d4f4a46d0ab5aeff76ea10b3d62|file:///home/jdv/js/reactDice/src/Store.js|49|1|V|javascript
+		socket: openSocket('http://localhost:8000'),
+52b1d357a664914d95860372794a6f35|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
+		const socket = UseStore(state => state.socket)
+79daba92cd19e7b8444da337cdec990a|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|80|1|V|scss
+			max-height: 200px;
+21bf18f2c70703b526ee23bab9672fd1|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|75|1|V|scss
+			grid-area: "tab-panel";
+f1e5d7a5fe13498abbdeb0f1f19136a8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|26|19|v|scss
+	panel
+940d4fc4143cc460dd6d2f453522eab6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|81|1|V|scss
+			// max-height: 200px;
+99a31ab8ab8648633762226222791cf0|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|83|19|V|scss
+			min-height: $chatHeight;
+ef09f011f2a5c59d4ea5b326eaa4aa1f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|4|1|V|javascript
+				// <Time duration={30} delay={2000}/>
+70bb2287548997833aed92f8f881b502|file:///home/jdv/js/reactDice/src/sass/_map.scss|13|1|V|scss
+		max-height: 10em;
+894eb1d6cad7a233ce7d04cd63dcf03d|file:///home/jdv/js/reactDice/src/sass/_map.scss|13|17|V|scss
+		// max-height: 10em;
+5b92822e4c3345a5e777ae5faedfeaa1|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|23|1|V|scss
+	.react-tabs {
 		// -webkit-tap-highlight-color: transparent;
-		// background-color: colors.$Orange;
-e3ae77fdf26155296f17bb01dc8f5dd6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|20|11|V|scss
-		opacity: 0.2;
-897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|8|11|v|scss
-	flex
-45632c448addec55a453586857f80da7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|9|1|V|scss
-		flex-direction: column;
-		justify-content: start;
-		align-items: center;
-dddfb308b7ba80affe34ba46ca6f0402|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|18|14|V|scss
-		max-height: 1fr;
-e900bdf08971e2acf335ca12f19a2eef|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|20|3|V|scss
-			max
-db116c009ca486412b21add57ba3ea81|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|1|V|scss
-			max-height: 1fr;
 	
-5ef28c1da6c1cb60e3ba123743957624|file:///home/jdv/js/reactDice/src/sass/App.scss|27|1|V|scss
+		&__tab-list {
+			grid-area: "tab-list";
+			background-color: colors.$Orange;
+	
+			border-bottom: 1px solid colors.$Light-Gray;
+			margin: 0 0 10px;
+			padding: 0;
+		}
+	
+		&__tab {
+			background-color: green;
+			display: inline-block;
+			border: 1px solid transparent;
+			border-bottom: none;
+			bottom: -1px;
+			position: relative;
+			list-style: none;
+			padding: 6px 12px;
+			cursor: pointer;
+			color: colors.$White;
+	
+			&--selected {
+				background: colors.$Purple;
+				border-color: colors.$Body-Background;
+				color: colors.$Body-Background;
+				border-radius: 5px 5px 0 0;
+			}
+	
+			&--disabled {
+				color: GrayText;
+				cursor: default;
+			}
+	
+			&:focus {
+				box-shadow: 0 0 5px colors.$Cyan;
+				border-color: colors.$Cyan;
+				outline: none;
+	
+				&:after {
+					content: "";
+					position: absolute;
+					height: 5px;
+					left: -4px;
+					right: -4px;
+					bottom: -5px;
+					background: colors.$White;
+				}
+			}
+		}
+	
+		&__tab-panel {
+			grid-area: "tab-panel";
+	
+			display: none;
+	
+			background-color: colors.$Yellow;
+			$chatHeight: 20em;
+			max-height: $chatHeight;
+			min-height: $chatHeight;
+			// -webkit-tap-highlight-color: transparent;
+	
+			&--selected {
+				// display: block;
+				display: flex;
+			}
+		}
+f6b3601c6feb06eabecde726164dc1a0|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|23|1|V|scss
+	.react-tabs {
+		// -webkit-tap-highlight-color: transparent;
+	
+		&__tab-list {
+			grid-area: "tab-list";
+			background-color: colors.$Orange;
+	
+			border-bottom: 1px solid colors.$Light-Gray;
+			margin: 0 0 10px;
+			padding: 0;
+		}
+	
+		&__tab {
+			background-color: green;
+			display: inline-block;
+			border: 1px solid transparent;
+			border-bottom: none;
+			bottom: -1px;
+			position: relative;
+			list-style: none;
+			padding: 6px 12px;
+			cursor: pointer;
+			color: colors.$White;
+	
+			&--selected {
+				background: colors.$Purple;
+				border-color: colors.$Body-Background;
+				color: colors.$Body-Background;
+				border-radius: 5px 5px 0 0;
+			}
+	
+			&--disabled {
+				color: GrayText;
+				cursor: default;
+			}
+	
+			&:focus {
+				box-shadow: 0 0 5px colors.$Cyan;
+				border-color: colors.$Cyan;
+				outline: none;
+	
+				&:after {
+					content: "";
+					position: absolute;
+					height: 5px;
+					left: -4px;
+					right: -4px;
+					bottom: -5px;
+					background: colors.$White;
+				}
+			}
+		}
+	
+		&__tab-panel {
+			grid-area: "tab-panel";
+	
+			display: none;
+	
+			background-color: colors.$Yellow;
+			$chatHeight: 20em;
+			max-height: $chatHeight;
+			min-height: $chatHeight;
+			// -webkit-tap-highlight-color: transparent;
+	
+			&--selected {
+				// display: block;
+				display: flex;
+			}
+		}
+	}
+67aa6ad8a0ff0192f8cccd8dd8eab19a|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|6|1|V|scss
+		grid-area: tabbox;
+	
 	    display: grid;
-	    grid-template-columns:  3fr 1fr;
-	    grid-template-rows: 1fr 1fr 1fr;
+	    grid-template-columns:  1fr;
+	    grid-template-rows: 1fr 1fr;
 	    grid-auto-flow: row;
 	    grid-template-areas:
-	        "dice		timer"
-	        "map		tabbox"
-	        "command	tabbox";
+	        "tab-list"
+	        "tab-panel";
 	
 	    column-gap: 1%;
 	    row-gap: 1%;
-7765e45b0472532f1c762d087eb9b6bc|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|8|1|V|scss
-		display: grid;
-6fed8ed92ef60e0ee1c981266b09887e|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|16|^v|scss
-	timer
-	tabbo
-	tabbo
-1dccadfed7bcbb036c56a4afb97e906f|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|15|10|v|scss
-	command
-00e82ada108e167024e87d4aa0a2c475|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|29|4|V|scss
-			max-height: 1fr;
-02d1cc8d1d501e76fe8b23ddd5a789bf|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|29|1|V|scss
-	
-			border-bottom: 1px solid colors.$Light-Gray;
-9b2d3a47401e55e7a1e20ef29873370d|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|75|1|V|scss
-			grid-area: "tab-panel"
-7ede1256c6d8a203d2b9ff3a5602483e|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|10|V|scss
-	        ""
-f1e5d7a5fe13498abbdeb0f1f19136a8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|13|15|v|scss
-	panel
-e354c877c19014a388fe093a01b38f9c|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|1|V|scss
-		// -webkit-tap-highlight-color: transparent;
-b73219fc7756bc742de2d4aea0fc7f5f|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|28|24|V|scss
-			grid-area: "tab-list";
-e72e8b27f19b2c5c4bbdfb64b1388acc|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|25|2|V|scss
-		background-color: colors.$Orange;
-105d84bfae4c8b58fcafc9d1449f66e8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|78|16|V|scss
-			display: none;
-9914a0ce04a7b7b6a8e39bec55064b82|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|28|v|scss
-	Light
-9ed7827a0e311b4c47f4249bb32e0cdc|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|28|v|scss
-	Light-Gray
-4cffd1420f1d54fef04a0b3da61ed450|file:///home/jdv/js/reactDice/src/sass/_colors.scss|2|1|V|scss
-	$Background-Dark: #16171d;
-	$Background: #282a36;
-	$Medium-Gray: #44475a;
-	$White: #f8f8f2;
-	$Light-Gray: #6272a4;
-	$Cyan: #8be9fd;
-	$Blue: #8be9fd;
-	$Green: #50fa7b;
-	$Orange: #ffb86c;
-	$Pink:	#ff79c6;
-	$Purple: #bd93f9;
-	$Red: #ff5555;
-	$Yellow: #f1fa8c;
-d5417331177d813cc2b72d49491ce44b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|18|1|V|scss
-	$Medium-Gray: #44475a;
-	$White: #f8f8f2;
-	$Light-Gray: #6272a4;
-	$Cyan: #8be9fd;
-	$Blue: #8be9fd;
-	$Green: #50fa7b;
-	$Orange: #ffb86c;
-	$Pink:	#ff79c6;
-	$Purple: #bd93f9;
-	$Red: #ff5555;
-	$Yellow: #f1fa8c;
-dcd6398b2e7b251a72b2c43a4b780808|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|29|v|scss
-	#282a36
-56ccffda33776371294dbbc040a3faa7|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
-	/* Dracula Color Scheme */
-	$Background-Dark: #16171d;
-	$Background: #282a36;
-	$Medium-Gray: #44475a;
-	$White: #f8f8f2;
-	$Light-Gray: #6272a4;
-	$Cyan: #8be9fd;
-	$Blue: #8be9fd;
-	$Green: #50fa7b;
-	$Orange: #ffb86c;
-	$Pink:	#ff79c6;
-	$Purple: #bd93f9;
-	$Red: #ff5555;
-	$Yellow: #f1fa8c;
-3791bdd4378316c70c3e87ffe198884f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|10|15|V|scss
-	$Light-Gray: #6272a4;
-a9f0a7f6eee70b782d075370e92f55e3|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
-	$Red: #ff5555;
-7260436a05a23e61c53553be11f4b152|file:///home/jdv/js/reactDice/src/sass/_colors.scss|15|1|V|scss
-	$Orange: #ffb86c;
-48c6205999d8b3591ad15de53af5411f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
-	$Yellow: #f1fa8c;
-1f2577417ff39acb883a440402f74d0b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|15|1|V|scss
-	$Green: #50fa7b;
-1bca319f9e8ce485c6751b93d191af61|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
-	$Purple: #bd93f9;
-c6232c558d26f60b21db12d01787d4ae|file:///home/jdv/js/reactDice/src/sass/_colors.scss|17|1|V|scss
-	$Pink:	#ff79c6;
-e89b9e64e13b7317c0b3a1983160bc1f|file:///home/jdv/js/reactDice/src/sass/_colors.scss|8|1|V|scss
-	$Dracula-Medium-Gray: #44475a;
-	$Dracula-Light-Gray: #6272a4;
-	$Dracula-White: #f8f8f2;
-	$Dracula-Red: #ff5555;
-	$Dracula-Orange: #ffb86c;
-	$Dracula-Yellow: #f1fa8c;
-	$Dracula-Green: #50fa7b;
-	$Dracula-Blue: #8be9fd;
-	$Dracula-Purple: #bd93f9;
-	$Dracula-Pink:	#ff79c6;
-74948390dda958630022b1868489ce18|file:///home/jdv/js/reactDice/src/sass/_colors.scss|4|2|^v|scss
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-	Dracula-
-bcdf63ee1dcb5d9deb1f772d13a63fe3|file:///home/jdv/js/reactDice/src/sass/_colors.scss|4|15|v|scss
-	44475a
-33ff2cdd577d25fc81e898f86e4cd197|file:///home/jdv/js/reactDice/src/sass/_colors.scss|5|14|v|scss
-	#6272a
-9d99c9d67f6c8535ce7f287914ada5da|file:///home/jdv/js/reactDice/src/sass/_colors.scss|6|9|v|scss
-	#f8f8f2
-5297d5ce7e329116a286206704560542|file:///home/jdv/js/reactDice/src/sass/_colors.scss|7|7|v|scss
-	#ff5555
-a9a7260d0159e4181282b2743e6ce96d|file:///home/jdv/js/reactDice/src/sass/_colors.scss|8|10|v|scss
-	#ffb86c
-0574d485ebba0b1e632677c95d8cad57|file:///home/jdv/js/reactDice/src/sass/_colors.scss|9|10|v|scss
-	#f1fa8c
-473e02b59dd6288fc66d859871ced5cb|file:///home/jdv/js/reactDice/src/sass/_colors.scss|10|9|v|scss
-	#50fa7b
-4056d6a60880301524b0c7ec4a36dabc|file:///home/jdv/js/reactDice/src/sass/_colors.scss|11|8|v|scss
-	#8be9fd
-d77a111383d047c11d518553e08cd68b|file:///home/jdv/js/reactDice/src/sass/_colors.scss|12|10|v|scss
-	#bd93f9
-b4ee368d86adfa024e48758d626b508a|file:///home/jdv/js/reactDice/src/sass/_colors.scss|13|8|v|scss
-	#ff79c6
-9594eec95be70e7b1710f730fdda33d9|file:///home/jdv/js/reactDice/src/sass/_colors.scss|26|10|v|scss
-	Blue
-1b91b5e6c4e45dcfdcdba7957bd8ad25|file:///home/jdv/js/reactDice/src/sass/_colors.scss|1|1|V|scss
-	/* Main Color Definitions, update with theme colors */
-	$Body-Background: $Dracula-Background-Dark;
-	$Grid-Container-Background: $Dracula-Background;
-	$Medium-Gray: $Dracula-Medium-Gray;
-	$Light-Gray: $Dracula-Light-Gray;
-	$White: $Dracula-White;
-	$Red: $Dracula-Red;
-	$Orange: $Dracula-Orange;
-	$Yellow: $Dracula-Yellow;
-	$Green: $Dracula-Green;
-	$Blue: $Dracula-Cyan;
-	$Cyan: $Dracula-Cyan;
-	$Purple: $Dracula-Purple;
-	$Pink:	$Dracula-Pink;
-	
-221964facffc60a2c15449fcfd5b294b|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
-	.dice-container {
-	    display: flex;
-	    flex-direction: row;
-		justify-content: space-evenly;
-	    align-items: center;
 	
 		background-color: colors.$Red;
-	}
+		max-height: 20vh;
+ae97c411eee624d190ee8a8d8cb284c7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|5|5|V|scss
+	#tabs-grid-container {
+cacc459020f831c7faec1705cbd45249|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|27|1|^v|scss
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+6262f2cd02f1b381f13300754b83b864|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|74|1|V|scss
+		&__tab-panel {
+			grid-area: "tab-panel";
 	
-	.unheld {
-	    transition: 0.4s;
-	    opacity: 100%;
-	}
+			display: none;
 	
-	.unheld:hover {
-	    height: 150%;
-	    width: auto;
-	}
+			opacity: 20%;
+			background-color: colors.$Yellow;
+			$chatHeight: 20em;
+			max-height: $chatHeight;
+			min-height: $chatHeight;
+			// -webkit-tap-highlight-color: transparent;
 	
-	.held {
-	    box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
-	}
-	
-	.saved {
-		opacity: 100%;
-	}
-19f84d8351d0b77f923b9d2e810f9498|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|1|V|scss
-		.unheld:hover {
-			height: 150%;
-			width: auto;
-		}
-8b56cdf48109ed4cb5b930aa8b310936|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
-			background-color: colors.$Red;
-bd47c79395059324b90fc6f24bd0490f|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|8|19|v|scss
-	space-around
-4fe9c15f2ce177b8989affafdef682fd|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|17|V|scss
-			// flex-shrink: 1;
-5385d0aaf3228767b1ddfc8c2dd63fb6|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|23|1|V|scss
-		.unheld {
-			transition: 0.4s;
-			opacity: 100%;
-	
-			.unheld:hover {
-				height: 150%;
-				width: auto;
+			&--selected {
+				// display: block;
+				display: flex;
 			}
 		}
-		
-		
-		.held {
-			box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
+2455125d6d28fc5fe5f854275a733862|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|25|V|scss
+			background-color: green;
+9f27410725ab8cc8854a2769c7a516b8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|21|v|scss
+	green
+ac101b32dda4448cf13a93fe283dddd8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|29|v|scss
+	Body
+87f8a6ab85c9ced3702b4ea641ad4bb5|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|29|v|scss
+	Medium
+d274a701511a163ec1b780b401f3fcf4|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|65|26|v|scss
+	Body-Background
+a9df07a59924474cceb6f542136609da|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|65|1|V|scss
+				border-color: colors.$White;
+				color: colors.$Body-Background;
+				border-radius: 5px 5px 0 0;
+97d2e881429431845817b16eec73c765|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|63|2|V|scss
+			color: colors.$Body-Background;
+334c4a4c42fdb79d7ebc3e73b517e6f8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|27|12|v|scss
+	none
+16bb14d968a238c6d9c84a1e64901aca|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|6|2|v|scss
+	react-tabs
+897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|27|12|v|scss
+	flex
+111e9cd6f4830ca483a4ff494d8bbfb7|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|7|39|v|javascript
+	tabs-grid
+5db8dca30c2d7f0c2bc225ae852c5053|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|7|45|v|javascript
+	tabs
+0a89a44e057df060ea29ee810dbaba97|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|80|15|v|scss
+	200px
+e0bf74e27dca56f6e02672bc4957d0b7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|14|V|scss
+		max-height: ;
+5803d77e7ffc1369b86a3f77013fae0b|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|28|V|scss
+		background-color: colors.$Red;
+105d84bfae4c8b58fcafc9d1449f66e8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|77|12|V|scss
+			display: none;
+50666f8280438958ce87e8509a5bcd73|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|17|V|scss
+		max-height: 50%;
+167592f0674a70c45a0ec71fb2247c71|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|47|30|V|scss
+				border-color: colors.$White;
+6eb956e5bbcfb65f67c635cc8b0a24bb|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|49|3|V|scss
+				border-radius: 5px 5px 0 0;
+25a81701fbfa4a1efdf660a950c1d006|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|44|25|v|scss
+	White
+8db513d186acfba0159626d23a8fd015|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|79|14|V|scss
+			opacity: 40%;
+d4e00ed8c1e130c08557f72f3f1e33a6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|17|V|scss
+		// background-color: colors.$Grid-Container-Background;
+7443b1586cc85feaaf22815426508111|file:///home/jdv/js/reactDice/src/sass/_timer.scss|15|1|V|scss
+	    background-color: colors.$Purple;
+19085405564140c70808099f11cfaa60|file:///home/jdv/js/reactDice/src/sass/_timer.scss|17|1|V|scss
+	
+	.countdown-timer-container {
+	    display: flex;
+	    margin: auto;
+	    background-color: colors.$Purple;
+	}
+53e62e359d40e0cec0565bf3e5f74d26|file:///home/jdv/js/reactDice/src/sass/_timer.scss|14|1|V|scss
+	    // background-color: colors.$Background;
+cb32674f9f9c763bbebc1c83fd486d23|file:///home/jdv/js/reactDice/src/sass/_map.scss|38|1|V|scss
+		@keyframes pulse {
+			0%, 100% {
+				box-shadow: 0 80%px 2px rgba(colors.$White, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			8% {
+				box-shadow: 0 80%px 2px rgba(colors.$Red, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			16% {
+				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			24% {
+				box-shadow: 0 80%px 2px rgba(colors.$Orange, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			32% {
+				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			40% {
+				box-shadow: 0 80%px 2px rgba(colors.$Yellow, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			48% {
+				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			56% {
+				box-shadow: 0 80%px 2px rgba(colors.$Green, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			64% {
+				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			72% {
+				box-shadow: 0 80%px 2px rgba(colors.$Blue, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			80% {
+				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			88% {
+				box-shadow: 0 80%px 2px rgba(colors.$Purple, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
+			96% {
+				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
+			}
 		}
+515e7ad8e041d162d8433d000a0f34a5|file:///home/jdv/js/reactDice/src/sass/_map.scss|35|1|V|scss
+			// animation: pulse 60s ease-in-out 0s infinite;
+b7e534bb5fe6356ff56c7ccdcd07fe11|file:///home/jdv/js/reactDice/src/sass/_map.scss|21|1|V|scss
+				margin-top: auto;
+5647ddb7ac66880717a930455e75be37|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|1|V|scss
+			display: flex;
+4b63e495e0a3e9a1a2441fd8d07598f3|file:///home/jdv/js/reactDice/src/sass/_map.scss|38|12|V|scss
+			padding: 6px;
+e6cded5d049ac8706bd164613b622d53|file:///home/jdv/js/reactDice/src/sass/_map.scss|17|2|V|scss
+			background-color: blue;
+eaae26a6fb20ed3ef54fb23bfa0b1fcc|file:///home/jdv/js/reactDice/src/sass/_map.scss|30|7|v|scss
+	width
+4a251318f476fb8cd908bb2b10748dfb|file:///home/jdv/js/reactDice/src/sass/_map.scss|1|1|V|scss
+			margin: auto;
+bfc27cae5aff0e236a639aaea0556404|file:///home/jdv/js/reactDice/src/sass/_map.scss|34|1|V|scss
+			margin-top: 1fr;
+ea7156050a6d1023b33d8d29f46dd8ef|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
+	lighten
+e20f352f07dfbda67b934760a1aeac82|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
+	darken
+d90ba124b24dbeb1abbe2884027171ff|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
+	color.
+ea5e8865a573dc5a3b2f9682bb3d9525|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
+	change(
+e0d047111b9ff9dd1ce8544fb9b7fa1b|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|32|v|scss
+	, $blackness: 25%)
+8b56cdf48109ed4cb5b930aa8b310936|file:///home/jdv/js/reactDice/src/sass/_map.scss|1|1|V|scss
+			background-color: colors.$Red;
+d7283436a2e57e0192bc0ff1a21cea34|file:///home/jdv/js/reactDice/src/sass/_map.scss|1|1|V|scss
+			border-color: black;
+ff2364a0be3d20e46cc69efb36afe9a5|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|11|19|v|scss
+	space
+adb115059e28d960fa8badfac5516667|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|12|15|v|scss
+	center
+36f7bf45d87eefac69ade303e73a8fb8|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|11|19|v|scss
+	space-evenly
+ec6ec1998fc5b85039741f62688f0fb0|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|17|V|scss
+		margin-left: 1%;
+04fec5cdd7efb3af46b9f5eba66f182e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
+			margin-left: 2%;
+811882fecd5c7618d7099ebbd39ea254|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|10|v|scss
+	left
+f94e3061a8c0e261295dbfe07e0b0687|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|1|V|scss
+		padding-left: 2%;
+c394bb3135c8d4531153dd854e3658da|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|9|V|scss
+		padding%;
+174d557cdec066535e2fd68d32e8cd04|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
+			margin-left: 1%;
+			margin-right: 1%;
+078ec2cfd9e5d9e7de2f4ff36af0a34c|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|18|1|V|scss
+			height: 5em;
+			width: auto;
+69eece78976588b4b27c8308e65bd991|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|36|1|V|scss
+			@keyframes grow-glow {
+				0% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
+				100% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
+			}
+	
+51e6cd92b6c45f9affdc158ecca2b8b8|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|38|48|v|scss
+	Yellow
+e7ae380e4d4de361414f0d3381ad033c|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|30|1|V|scss
+				animation-name: hover-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+e0542f579df8e8138ade69f8f5310bf2|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|54|19|v|scss
+	hover
+d442ba67bc0e302715a7620c79ec3931|file:///home/jdv/js/reactDice/src/components/Map/Image.js|1|39|V|javascript
+	import Zoom from 'react-medium-image-zoom'
+b80f8645ade59ffc779c0bc125f7a0f6|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|21|V|javascript
+				{/* 			<Zoom overlayBgColorEnd='rgba(255,255,255, 0)' zoomMargin={80} > */}
+2d5baee0b47509b2a5d8f70a6d6babde|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|8|V|javascript
+				{/* 			</Zoom> */}
+19d9c601e4762e2cedb40986145cc459|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|4|^v|javascript
 		
+		
+		
+		
+		
+		
+fb0acfc11e600d591ffbe065f7a19963|file:///home/jdv/js/reactDice/src/components/Map/Image.js|21|1|V|javascript
+				  </div>
+877e569db07520884c36df5183375780|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|25|v|javascript
+	My Name is John
+176c88215c5a67ff55136286b9a67fc8|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|29|v|javascript
+	map-zoom-overlay
+380e537acdaedd487ca1adb49d020f7e|file:///home/jdv/js/reactDice/src/sass/_map.scss|26|4|v|scss
+	overlay
+dc4d53aa0d117d8b189b36d161af4e96|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|14|v|scss
+	absolute
+cec315e3d0975e5cc2811d5d8725f149|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|14|v|scss
+	fixed
+f70a7cfc85ea81c91b71bd2ce56cc96a|file:///home/jdv/js/reactDice/src/sass/_map.scss|28|14|V|scss
+				bottom: 15;
+a5936edbdeeaed1b75c52311d9f52611|file:///home/jdv/js/reactDice/src/sass/_map.scss|29|1|V|scss
+				left: 50px;
+0048edbb481c59c6cfd3734af16a3556|file:///home/jdv/js/reactDice/src/sass/_map.scss|43|3|v|scss
+	#map-image-container
+58bb7ffa9db653dbd0fd7024df6d43eb|file:///home/jdv/js/reactDice/src/sass/_map.scss|26|3|v|scss
+	#map-zoom-overlay
+61636574b06c856920e9157221a0763a|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|25|v|javascript
+	id="map-zoom-overlay"
+15f29a76fe2f64c60520b5e5cc00a5ac|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|19|v|javascript
+	map-image-container
+886c3dafc3c19725697583afe33e9abb|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|39|v|javascript
+	 id='map-image-container'
+3b3307d53679043e7decfe414fd425bb|file:///home/jdv/js/reactDice/src/sass/_map.scss|43|1|V|scss
+			.map-image-container:hover .overlay {
+				opacity: 1;
+			}
+072c4dfc494910ade8b1f97c9a20c787|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
+	
+			/* The overlay effect - lays on top of the container and over the image */
+			.overlay {
+				position: absolute;
+				left: 22%;
+				top: 73%;
+				background: rgb(0, 0, 0);
+				background: rgba(0, 0, 0, 0.5); /* Black see-through */
+				color: #f1f1f1;
+				width: 49%;
+				transition: .5s ease;
+				opacity:0.2;
+				color: white;
+				font-size: 20px;
+				padding: 20px;
+				text-align: center;
+			}
+	
+			/* When you mouse over the container, fade in the overlay title */
+5a62f48b53c1cc089b01ea8880d417fe|file:///home/jdv/js/reactDice/src/sass/_map.scss|26|1|^v|scss
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+bb3dcbe3837a011a140919bd4e04f9aa|file:///home/jdv/js/reactDice/src/sass/_map.scss|28|1|V|scss
+			position: absolute;
+			left: 22%;
+			top: 73%;
+9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/sass/_map.scss|21|16|v|scss
+	auto
+7364adbdf5e4dc7086762918c9d3e613|file:///home/jdv/js/reactDice/src/sass/_map.scss|29|15|V|scss
+			background: rgb(0, 0, 0);
+fe04fe652005be163bebf9e86e182818|file:///home/jdv/js/reactDice/src/sass/_map.scss|33|1|V|scss
+			margin: auto;
+			margin-top: ;
+f0edd0d3a882c802cd622617cdba0157|file:///home/jdv/js/reactDice/src/sass/_map.scss|33|19|V|scss
+			background: rgba(0, 0, 0, 0.5); /* Black see-through */
+fc021d54683383e5078ab9fefc4d53c8|file:///home/jdv/js/reactDice/src/sass/_map.scss|48|10|v|scss
+	radius
+a4b42cb4283184af700cabf2ad982b93|file:///home/jdv/js/reactDice/src/sass/_map.scss|49|20|V|scss
+			text-shadow: 0 0 8px #000000;
+d1b2c5b2d1c85df8153b9c01ce573f57|file:///home/jdv/js/reactDice/src/sass/_map.scss|48|19|V|scss
+			border-width: 5px;
+ed04ac9b03cbd0fbb57eca91007a4de5|file:///home/jdv/js/reactDice/src/sass/_map.scss|37|15|V|scss
+			color: white;
+83bbe38b268441a3fca89ccc80e69ad2|file:///home/jdv/js/reactDice/src/sass/_map.scss|41|1|V|scss
+			-webkit-text-stroke-width: 3px;
+41159ce7c4713eb9f12ec4ea894a9595|file:///home/jdv/js/reactDice/src/sass/_map.scss|48|31|V|scss
+			text-shadow: 2px 2px 2px #000000;
+e3138dd57f443388115aafc9fa6dce1c|file:///home/jdv/js/reactDice/src/sass/_map.scss|22|1|V|scss
+				max-height: 50%;
+32c0de9cbab0166cfebffcf3004fcc4b|file:///home/jdv/js/reactDice/src/sass/_map.scss|22|21|V|scss
+				margin-top: auto;
+				margin-bottom: auto;
+224f1b4e5ce35efdb6bd020a357230b9|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
+	
+		$default-opacity: 100%;
+		.unheld {
+			height: 5em;
+			width: auto;
+			margin-left: 1%;
+			margin-right: 1%;
+			opacity: $default-opacity;
+			animation-name: shrink-glow;
+			animation-duration: 0.5s;
+			animation-timing-function: ease-in;
+			animation-fill-mode: forwards;
+		}
+	
+			.unheld:hover {
+				animation-name: hover-glow;
+				animation-duration: 0.5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+			}
+	
+			@keyframes hover-glow {
+				0% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
+				100% {box-shadow: 0 0 10px 5px rgba(colors.$Green, 0.8); /* hoffset voffset blur spread color */}
+			}
+	
+			@keyframes grow-glow {
+				0% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
+				100% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
+			}
+	
+			@keyframes shrink-glow {
+				0% {box-shadow: 0 0 10px 5px rgba(colors.$Green, 0.8); /* hoffset voffset blur spread color */}
+				100% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.2); /* hoffset voffset blur spread color */}
+			}
+	
+		.held {
+			opacity: $default-opacity;
+			transition: 0.1s;
+			animation-name: grow-glow;
+			animation-duration: 0.5s;
+			animation-timing-function: ease-out;
+			animation-fill-mode: forwards;
+	
+			height: 5em;
+			width: auto;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+	
 		.saved {
 			opacity: 100%;
 		}
-171ccc9ab86c15e06331c0d18eb2997a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|5|1|V|scss
-		grid-area: dice;
-e4ad444d516635e1b009b3f8e6d2e3ae|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|1|V|scss
-		justify-content: flex-start;
-f898db45df9f2767e31368fe5de0f426|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|4|V|scss
-			justify-content: flex-start;
-ceba66c97e83473d4b3070b6ebb06418|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|18|1|V|scss
-			justify-content: space-evenly;
-2b3b1c954f84bdbb586ac789b6e4b4a3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|4|9|V|scss
-	.tray-grid-container {
 	
-		display: flex;
-	
-		font-family: 'Lato', sans-serif;
-		// background-color: colors.$Background;
-		background-color: colors.$Orange;
-	
-4a95f0eb3aa1656cce570ef9554c6848|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|5|19|v|javascript
-	timer-grid-container
-2293eb844f3cbce85ce1c1de89e33f19|file:///home/jdv/js/reactDice/src/sass/App.scss|40|16|V|scss
-	    opacity: 0.9;
-fbeb3f386479dceb26badf488ec0acd4|file:///home/jdv/js/reactDice/src/App.js|12|1|V|javascript
-			<Timer />
-			<TabComponent />
-	        <Map />
-	        <Tray />
-	        <Command />
-23effc0059f8fec90a4358463e222e6f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|37|V|javascript
-				<Time duration={30} delay={2000}/>
-060fd336f1541c19b99fb530d54dff12|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|6|4|v|javascript
-	<Time duration={30} delay={2000}/>
-72f541b2b0f4d6ec5fd64ba393d2cc7a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|57|1|V|vim
-	"*****************************************************************************
-	" Enable NERDCommenterToggle to check all selected lines is commented or not 
-	"*****************************************************************************
-b475bfc1187c3bf5b41c63f56c67a87a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|64|3|v|vim
-	Enable NERDCommenterToggle to check all selected lines is commented or not 
-e0af170f2a113675e706bef9fecf2d5b|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|10|3|V|javascript
-			<div>
-2d0596a45e302740020ccb5a8eb2a382|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|67|1|V|vim
-	let g:NERDCustomDelimiters = {'javascriptreact': { 'leftAlt': '{/*', 'rightAlt': '*/}' }}
-	let g:NERDAltDelims_javascriptreact = 1
-19ee4f81d83293b484e0a50b56a83714|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim|62|1|V|vim
-	
-	"*****************************************************************************
-	" Custom Delimiters
-	"*****************************************************************************
-2a85066d77b69d0d9171825a0f0c7dc1|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|4|V|javascript
-				<SavedDice />
-4c33b750ffe7bc42c10ca45c710e3190|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|3|V|javascript
-				<SavedDice  />
-839c330a6267c55e0d3c15bff8dc736a|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|4|^v|javascript
-	<SavedDice  />
-b8090c7f060668db54f5d7b21f58d1d5|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|1|^v|javascript
-	*			<SavedDice  />*
-df8c02724e16f1e03f48d9685ac21a09|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|1|^v|javascript
-	/*			<SavedDice  />*/
-214f42eba1ef948856347ce8ade9198d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
-	nnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
-	vnoremap <silent> <C-/> :call NERDComment('x', 'toggle')<CR>
-1d32bb013c28a30ec6b013858a95c51e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|131|1|V|vim
-	nnoremap <silent> <leader><leader>c 0<C-v>$S*<C-v>$S/<C-v>$S}
-2361e79d0e283f99143a208d113df1a2|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|V|javascript
-			<div className='grid-container' id='map-grid-container'>
-6ebefa51b0c5733f091a84832716cecc|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|^v|javascript
-	*		<div className='grid-container' id='map-grid-container'>*
-1ca5e71f9aa269bbab29d86dabb55381|file:///home/jdv/js/reactDice/src/components/Map/Map.js|6|1|^v|javascript
-	/*		<div className='grid-container' id='map-grid-container'>*/
-a8957ccf91a8c8b3ca1515cbe7712677|file:///home/jdv/js/reactDice/src/components/Map/Map.js|5|1|V|javascript
-		return (
-fea087517c26fadd409bd4b9dc642555|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|23|v|vim
-	normal
-1b0b755bcaa9f2b5bab321ad45cf02a4|file:///home/jdv/js/reactDice/src/components/Map/Map.js|7|62|v|javascript
-			{/
-948f64e6082600dfe831ef5c1f49ee09|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|136|1|V|vim
-	nnoremap <silent> <leader><leader>u 0dt*x$F*xxx
-8b8a360d6b63fcfcf4c9e6d8f96d4431|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|31|V|vim
-	:command Vb :execute "insert! "
-1d5549871765bbfeb92be9a406a5c36d|file:///home/jdv/js/reactDice/src/components/Map/Map.js|9|15|v|javascript
-				{/
-a12bde56c97d53c4e88bcd19180429df|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|38|V|javascript
-		// let imageWidth = window.innerWidth;
-d0dc5c430cfbc322e981d6da541f576d|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|48|V|javascript
-		// let horizontalMargin = (windowWidth - imageWidth);
-60e7fb6b52f24dcb9e6028fe28d5c829|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|12|V|javascript
-		let imageWidth = window.innerWidth;
-e4bb6f6eaafb51c4cf418a7602f22cca|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|37|V|javascript
-		let windowWidth = window.innerWidth;
-a981b0fe78efbeff463cfbe2fbc6b67c|file:///home/jdv/js/reactDice/src/components/Map/Image.js|17|12|v|javascript
-	windowWidthString
-a0ab0e51b58e49c75bfc144140b68f36|file:///home/jdv/js/reactDice/src/components/Map/Image.js|17|34|V|javascript
-					width={imageWidthScaledString}
-a0c8751244dbf7b346c3f730f72f4511|file:///home/jdv/js/reactDice/src/components/Map/Image.js|7|11|V|javascript
-		let imageWidthScaled = window.innerWidth * 0.1
-		let imageWidthScaledString = toString(imageWidthScaled)
-6ba5ed8767721c1d1f2921d466db2ef7|file:///home/jdv/js/reactDice/src/sass/_map.scss|17|1|V|scss
-	.mapImage {
-	    grid-area: mapimage;
-		max-width: 100%; // Contains the image of the map to at most, the size of it's container
-	    box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	}
-	
-	.saved-dice-grid-container {
-	    grid-area: saveddice;
-		background-color: colors.$Yellow;
-	}
-	
-	.saved-dice-container {
-	    display: flex;
-	    flex-direction: row;
-	    flex-wrap: wrap;
-	    justify-content: space-evenly;
-	    align-content: center;
-	
-	
-	    animation: pulse 60s ease-in-out 0s infinite;
-	}
-	
-	@keyframes pulse {
-	  0%, 100% {
-	    box-shadow: 0 80%px 2px rgba(colors.$White, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  8% {
-	    box-shadow: 0 80%px 2px rgba(colors.$Red, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  16% {
-	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  24% {
-	    box-shadow: 0 80%px 2px rgba(colors.$Orange, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  32% {
-	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  40% {
-	    box-shadow: 0 80%px 2px rgba(colors.$Yellow, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  48% {
-	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  56% {
-	    box-shadow: 0 80%px 2px rgba(colors.$Green, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  64% {
-	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  72% {
-	    box-shadow: 0 80%px 2px rgba(colors.$Blue, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  80% {
-	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  88% {
-	    box-shadow: 0 80%px 2px rgba(colors.$Purple, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	  96% {
-	    box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-	  }
-	}
-	
-c27bc1d37a0654ad31b968e67588ce3d|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
-			border: 10px solid colors.$Yellow;
-423a3e3f20a506f243a287c5b882b839|file:///home/jdv/js/reactDice/src/sass/_map.scss|14|32|V|scss
-			border: 10px solid colors.$Red;
-9cf1c243edd475c189bb74a268d3154c|file:///home/jdv/js/reactDice/src/sass/_map.scss|5|1|^v|scss
+1487bfdbff6981cb610a29a19f75d42d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|^v|scss
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	
 		
@@ -579,59 +1048,18 @@ c27bc1d37a0654ad31b968e67588ce3d|file:///home/jdv/js/reactDice/src/sass/_map.scs
 		
 		
 		
-b7c4d520ed93ed0054bf9c8b6a42f108|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|^v|scss
+		
+	
 		
 		
 		
 		
+	
 		
 		
 		
-d522089bade75ca6b0edb0e697c28e2d|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|15|V|scss
-			max-height: ;
-9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/sass/_map.scss|8|25|v|scss
-	auto
-0391dc362bd684bb7c7dec4d528eb4eb|file:///home/jdv/js/reactDice/src/components/Map/Map.js|9|14|V|javascript
-	 			<Image /> 
-e752e71d5aa0857d9e988f8d874229e1|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|1|V|scss
-		.mapImage {
-			grid-area: mapimage;
-			max-width: 100%; // Contains the image of the map to at most, the size of it's container
-			box-shadow: 0 4px 8px 0 rgba(black, 20%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-		}
-714675ed59fcda137fb017761d125215|file:///home/jdv/js/reactDice/src/sass/_map.scss|15|2|V|scss
-				grid-area: mapimage;
-b0af37cb60f6a42f7cc5f8346bf6cbe5|file:///home/jdv/js/reactDice/src/sass/_map.scss|15|4|V|scss
-			border: 10px solid blue;
-6f66e878c62db60568a3487869695820|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|10|8|v|javascript
-	className
-ace4ef673d09a1a0ec5b93629a7cffa5|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|11|15|V|javascript
-				<div className='saved-dice-container'>
-1e814360255b609cf703bd260d91bbae|file:///home/jdv/js/reactDice/src/components/Map/SavedDice.js|14|9|V|javascript
-				</div>
-88e2ba100e2706bf47aefc7329463d26|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|23|V|scss
-			grid-area: saveddice;
-baf54f86202a71961fa104e58e9274b4|file:///home/jdv/js/reactDice/src/sass/_map.scss|23|6|V|scss
-		.saved-dice-grid-container {
-		}
-dbb5cf64f8b055ff302f4f922ba6b2d9|file:///home/jdv/js/reactDice/src/sass/_map.scss|25|23|V|scss
-			background-color: red;
-f0039f1f634f0d3ca7e7b6017b8dc03a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|12|V|scss
-				height: 50%;
-268357e522819fd9394ead025c40ce6d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|29|13|V|scss
-					width: auto;
-2188f7c4dd4a5f4344a0c6d141b7253b|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|17|V|scss
-					height: auto;
-8caaad0713b05bf86bf2685a0fce3775|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|17|V|scss
-				opacity: 100%;
-bda86ac49c8f13de75bee9ab4eaf2dc9|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|11|11|V|javascript
-				<div className='dice-container'>
-					{dice.map((die) => (
-4778cc9c38b0d45eac1d25bd5378d758|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|11|11|V|javascript
-				<div className='dice-container'>
-707032f1926322ba1dfda7f94b0cbbde|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|13|1|V|scss
-		.dice-container {
-70ff0f737f672377740656bb2299d3dd|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|^v|scss
+		
+	
 		
 		
 		
@@ -644,107 +1072,49 @@ bda86ac49c8f13de75bee9ab4eaf2dc9|file:///home/jdv/js/reactDice/src/components/Di
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-5ff5d0dd18c73077c68938c2f017f8b3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|1|V|scss
-		display: flex;
-		justify-content: flex-start;
 	
-fbc289924503467fb325a20f35d0145e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
-		background-color: colors.$Medium-Gray;
-b0fcf2597677a112c68cb4db4eae9c17|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
-			.unheld:hover {
-				opacity: 20%;
-			}
-3e4914de665fca658ababa00296808ab|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|3|V|scss
-			height: auto;
-5d7b0ddc5d7496e623e3eb1904474091|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|16|1|V|scss
-			// max-width: 5%;
-			min-width: 05%;
-			max-width: 100%;
-			height: auto;
-a2a4f601f8f8c7a4e7ccd3edd06ce712|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
-			height: 105%;
-			width: auto;
-a9d8be22a749eaff46b448890eb7c405|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|11|V|scss
-			height: ;
-9e9a9028082d740acba9e07d44934eef|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|11|V|scss
-			width: auto;
-d5b5755fc7d751d63d88a870eb5bebfb|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|9|1|V|javascript
-		const dice = UseStore(state => state.dice)
-f91614c13b0e6659f9b16a1d6f22f2db|file:///home/jdv/js/reactDice/src/components/Dicetray/Tray.js|9|8|v|javascript
-	dice
-7fe2471e11eed2d0ac37ad077653c131|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|29|1|V|scss
-			box-shadow: 0 0 100px 5px rgba(98, 114, 164, 0.5); /* hoffset voffset blur spread color */
-c6bee7a73842fe6e0539e9233b30205e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|10|v|scss
-	box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */
-2209179b9937dbeb613af2a8dcace90a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|25|V|scss
-				opacity: $default-opacity * 2;
-1a721faf2df53972bfd0831c64b6146d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|20|v|scss
-	collapse
-68e2bf1cd16d919e04bd6507e850d203|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|5|V|scss
-				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.1); /* hoffset voffset blur spread color */}
-f5f283356cd1564e879c46d067e1f145|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|33|39|V|scss
-				20% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
-b21091d7b029c7a5f6e3cd010df11fd4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|32|1|V|scss
-			@keyframes grow-glow {
-				0% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.1); /* hoffset voffset blur spread color */}
-				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
-			}
-b254f0b42b020f446c2a8b6299617b1a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|19|V|scss
-			transition: 0.4s;
-9fbc6d522115fd475631839f94cf09a4|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|26|32|V|scss
-				animation-iteration-count: 1;
-acf635689def18ebb0f0c49e0a302bdc|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|26|25|v|scss
-	forwards
-c9e7e975f62c2a389107d220b8b0cc26|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
-			.unheld:hover {
-				animation-name: grow-glow;
-				animation-duration: 0.5s;
-				animation-timing-function: ease-out;
-				animation-fill-mode: forwards;
-			}
-85ed998c9203767af5ec409f07cdfcab|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|40|19|v|scss
-	glow
-4d200fce73a8e1cc965cfc2c43343824|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|40|14|v|scss
-	grow
-44a96d323d3caafc45174c4c0ac55264|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|42|4|V|scss
-				100% {box-shadow: 0 0 100px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
-7198cb51ed3efe8a3c23b84c3065ec7a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|28|1|V|scss
-			.unheld:hover:after {
-				animation-name: shrink-glow;
-				animation-duration: 0.5s;
-				animation-timing-function: ease-out;
-				animation-fill-mode: forwards;
-			}
-6b3d5872c460ed5f8f92078ff1055c0a|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|24|1|V|scss
-				animation-name: grow-glow;
-				animation-duration: 0.5s;
-				animation-timing-function: ease-out;
-				animation-fill-mode: forwards;
-ee5c35ce3d081da90622a10d2272ed5e|file:///home/jdv/js/reactDice/src/Store.js|4|14|v|javascript
-	numbers
-9a31962b953d38f5702495fdf5b44ad0|file:///home/jdv/js/reactDice/src/Store.js|4|25|v|javascript
-	letters
-be42eac213dab0e3be3ef74a0a788f13|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|37|29|V|javascript
-			if (diceTheme === "numbers")
-03266012fd9684f6c53439411b5b2a50|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|41|1|V|javascript
-			1: Die1,
-			2: Die2,
-			3: Die3,
-			4: Die4,
-			5: Die5,
-			6: Die6,
-4f2fbf2e55136fae7a172c6dae0d13be|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|45|3|V|javascript
-					
-20b7bce317b9feb2f50815d5dd952367|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|36|6|V|javascript
-		let source = {
-3d0950243423fd223749e8f1ad01ce9b|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|36|2|^v|javascript
+		
+		
+		
+		
+		
+	
+		
+		
+		
+3162ad2bdc832b7a4cb9f38a4f9455aa|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
+		margin-top: 1%;
+3b4da4576b3a509cfe22ad3dca24cfc9|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|2|v|scss
+	animation-duration
+d2c8ddb957be6c2853a9e7462780c625|file:///home/jdv/js/reactDice/package.json|23|1|V|json
+			"start": "concurrently \"clear && echo 'Starting React Dev Server and watching Sass'\" \"npm run watch-sass\" \"react-scripts start\"",
+7a0b4be5325a98c61c407bef16b74293|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	concurrently
+8e876bf5526a072d5e8f646c3295cefc|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 \"clear
+0172f2bb81318b143f95516431cc2045|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 echo
+3c5a35f21a4f39bb2249349a59bae8dd|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 'Starting
+468f655b5612243fa903a071ec2cc7b0|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 React
+2e655959910325f7670037ea68e0c248|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 Dev
+2956a84f99681d49778add10db1c9c20|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 Server
+74c04431683b26b598564ea06fcf16c3|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 and
+2a0f7cfd645b2f5c13915876b83f5228|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 watching
+76f578a77a1a172781a22cc010cd4b08|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 Sass'\"
+85f9a9df6853f7e9b44dc58f862121d8|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 \"npm
+5485dddbce3115a704d7e5160b63bf7e|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 run
+a8865bf50048535b6917db59bf947c62|file:///home/jdv/js/reactDice/package.json|23|13|v|json
+	 watch-sass\"
+6d56af197f25ca729df0bb7ec096e6b0|file:///home/jdv/js/reactDice/src/Store.js|6|1|^v|javascript
 		
 		
 		
@@ -756,750 +1126,1138 @@ be42eac213dab0e3be3ef74a0a788f13|file:///home/jdv/js/reactDice/src/components/Di
 		
 		
 		
-737db3e5627936cf3e5fa59d96891651|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|47|^v|javascript
-	png
-	png
-	png
-	png
-	png
-	png
-8657d0df5c3969c5d92c69f1fadb7fbf|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|1|V|javascript
-	import DieI from "../../resources/dice/die-infantry.svg"
-d581dda39ce2a1986387a2fb0e83aae4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|44|v|javascript
-	infantry
-18a40c7efe20efda16beedddc28f3a0a|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|43|1|V|javascript
-					1: Die1,
-					2: Die2,
-					3: Die3,
-					4: Die4,
-					5: Die5,
-					6: Die6,
-9faad0d3963e19ee9fc6fe19f8274d99|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|52|1|V|javascript
-					1: 
-5cc9eb54f98234c219bb885c2989dde4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|42|1|V|javascript
-				let source = {
-					1: Die1,
-					2: Die2,
-					3: Die3,
-					4: Die4,
-					5: Die5,
-					6: Die6,
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+cea657c89c83d7cf89b14a0aaac03f7b|file:///home/jdv/js/reactDice/src/Store.js|59|1|^v|javascript
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+cdaf0fd4acd551933c76e2dd19962ff8|file:///home/jdv/js/reactDice/src/Store.js|72|1|^v|javascript
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ee05bf1438e5ca9b87fe95c367c4db69|file:///home/jdv/js/reactDice/src/Store.js|73|1|^v|javascript
+		
+		
+		
+		
+10bd363b42aa29a924c195963d092888|file:///home/jdv/js/reactDice/src/Store.js|157|1|V|javascript
+											
+523c1ee4a2579ecd38ec73ae43623751|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
+		// const socket = UseStore(state => state.socket)
+e7e56345fbe2774b6a8e0bf0981f673d|file:///home/jdv/js/reactDice/server/main.go|58|1|V|go
+		http.Handle("/", http.FileServer(http.Dir("./asset")))
+dba32610837effe01e581a1a4e638ea6|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|9|1|V|javascript
+	
+		// Example from Socket.io, originally in the index.html of server assets folder for their example chat
+		// var socket = io();
+		// // socket.emit('msg', 'hello');
+		// var s2 = io("/chat");
+		// socket.on('reply', function(msg){
+			// $('#messages').append($('<li>').text(msg));
+		// });
+		// $('form').submit(function(){
+			// s2.emit('msg', $('#m').val(), function(data){
+				// $('#messages').append($('<li>').text(data));
+			// });
+			// socket.emit('notice', $('#m').val());
+			// $('#m').val('');
+			// return false;
+		// });
+	
+480f81b5d6700a9076eed34012dfcbf8|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
+		const chatSocket = UseStore(state => state.chatSocket)
+7b8c5d48e48b46a9bcd18f0e4af981ac|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|17|1|V|javascript
+				if (inputBox.value) {
+					chatSocket.emit('msg', inputBox.value);
+					inputBox.value = '';
 				}
-ab429e893ea13cdf53b38b4b9b08a426|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|59|1|V|javascript
-				break;
-04a780af49382e0d8746980225358976|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|40|9|v|javascript
-	diceTheme
-b7c29df4bc67fd94dfb185c917aed843|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|2|1|V|scss
-	    font-family: 'Sofia', cursive;
-	    @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-d248b3954dc5c5aaaef1407ce1e8d208|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|16|v|scss
-	Lato
-af8ea364aff09dd78bf9a9f7e2634815|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|24|v|scss
-	cursive
-956bb84bea9943fa8df62af66b655798|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|7|28|V|scss
-		font-family: 'Sofia', sans-serif;
-9bc8064e919fecfcfb999444dfb15fca|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|11|V|scss
-			@extend die;
-3f8c0f1c77081341c2b322d5a333205f|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|7|V|scss
-		.die {
-21ac93373efa494086dcf261fce322ba|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|1|V|scss
-			font-family: 'Sofia', sans-serif;
-654cd76590cebe0ba37e8d4cce8a96ee|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|17|v|scss
-	Sofia
-44f535286b4e6e42dd8cc3f52a0fd738|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|V|scss
-			font-family: 'Lato', sans-serif;
-2866d2df751441ce69926bfcea14a0f6|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|1|1|V|scss
-	@font-face {
-		font-family: 'Sofia';
-		src: local('Sofia'), url(./resources/fonts/Sofia-Regular.ttf) format('truetype');
-	}
-	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
-8f1751be3863a58e0c8c098191f23d86|file:///home/jdv/js/reactDice/src/sass/_fonts.scss|31|1|V|scss
-	@font-face {
-		font-family: '';
-		src: local('Sofia'), url(./resources/fonts/Sofia-Regular.ttf) format('truetype');
-	}
-	@mixin font-Sofia() {font-family: 'Sofia', cursive;}
-fb8ee9715a328403724f64ede0a96937|file:///home/jdv/js/reactDice/src/sass/App.scss|18|1|V|scss
-		font-family: 'Fira Sans', sans-serif;
-1e2a387047f27ee6d014061a1f33c27b|file:///home/jdv/js/reactDice/src/sass/App.scss|19|2|V|scss
-		font-family: 'Fira Sans', sans-serif;
-	}
-dcdfe917484762f0b3f72dc16763682c|file:///home/jdv/js/reactDice/src/sass/App.scss|19|5|V|scss
-	body {
-e30e5b95e525862bca33a28ba48c3c5b|file:///home/jdv/js/reactDice/src/sass/App.scss|19|1|V|scss
-	font-family: 'Fira Sans', sans-serif;
-7a38a1435c419210954c4a88f0cb8136|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|2|V|scss
-			font-family: $fontName, $fontStyle;
-213f8330021765156b2e8461c475f900|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|2|V|scss
-		$fontStyle: 'sans-serif';
-713f72c51dffeca92e5346f07305971d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|16|2|V|scss
-		$fontName: 'Lato';
-73c79c49be16af538055469a9747d7c3|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|V|scss
-			font-family: 'Fira Sans', sans-serif;
-1fd5098a74270513410bf5f3950a5e99|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|8|v|javascript
-	Die1
-1b919f374ad63de6a1cf145231cb9a31|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|7|8|v|javascript
-	Die2
-5b43d14d5365e477f2044c609a7f3602|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|8|8|v|javascript
-	Die3
-7a75ec1743531e0c5b00379b66597147|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|9|8|v|javascript
-	Die4
-7d7eda23cc5551890d7c41496b0a56b5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|10|8|v|javascript
-	Die5
-034f64b9be3a4adfb6b9e5e19033dd72|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|11|8|v|javascript
-	Die6
-69b9035ec4d8d87f2d52add027cded19|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|8|v|javascript
-	DieI
-5373a83713486412cde7b93af68e0489|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|8|v|javascript
-	DieC
-81c5dde936e5a867f7185e430c2a43e5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|14|8|v|javascript
-	DieA
-b9b5417f657b0e024382509c3ac97608|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|15|8|v|javascript
-	DieG
-fa366341bed3417ad9dc90e200178356|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|88|8|V|javascript
-			 <div 
-2186c5bc01af5b4fe370a2a43c84e904|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|88|4|V|javascript
-			 {/*<img className={dieClass} id={id} src={source[val]} alt={alt} width="100" height="100" onClick={handleClick}></img>*/}
-bef02ee05084b9727d15686383b2b538|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|15|14|V|javascript
-	import { ReactComponent as DieG } from "../../resources/dice/die-general.svg"
-f5feb621a624e40ecdfd213d58bea9c6|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|14|14|V|javascript
-	import { ReactComponent as DieA } from "../../resources/dice/die-artillery.svg"
-75c7ff0566ce9676cbbbd07536bc3153|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|14|V|javascript
-	import { ReactComponent as DieC } from "../../resources/dice/die-cavalry.svg"
-e37f59537166224f42b58d9d6c943743|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|12|1|V|javascript
-	import { ReactComponent as DieI } from "../../resources/dice/die-infantry.svg"
-ee7e984227b5817e11b8d28a33c93abe|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|3|1|V|svg
-	   xmlns:dc="http://purl.org/dc/elements/1.1/"
-	   xmlns:cc="http://creativecommons.org/ns#"
-	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	   xmlns:svg="http://www.w3.org/2000/svg"
-	   xmlns="http://www.w3.org/2000/svg"
-	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-fd007593ca9e5674e8edaa21506ba9ee|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|8|1|V|svg
-	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-6dffd61d499ab04a8b6593ddfda2eea4|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|8|1|V|svg
-	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-b9855020634296c62b1c588b499e2ea8|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|6|1|V|svg
-	   xmlns:svg="http://www.w3.org/2000/svg"
-70e44a0a2d24dfb84c79a317c0ec9e38|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
-	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-201fbe02fc7fb2ad7cf02e18123b0483|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|4|1|V|svg
-	   xmlns:cc="http://creativecommons.org/ns#"
-255f3939f7b57de4ab44328b18d068d6|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|3|1|V|svg
-	   xmlns:dc="http://purl.org/dc/elements/1.1/"
-3d86cf5f976d0d5bded056387240ad5d|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|114|^v|svg
-	xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-447d423b62bc6692ce2266e1dfb0a3b5|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|1|38|V|svg
-	<?xml version="1.0" encoding="UTF-8"?>
-9b902d1b93b80d294625106bd9c669a8|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|71|V|svg
-	 <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019
-61d0a3b8e4cd3f7d43e45f9e9a982543|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|2|1|V|svg
-	  <rdf:RDF>
-	   <cc:Work rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-	    <dc:title/>
-	   </cc:Work>
-	  </rdf:RDF>
-	 </metadata>
-ec67f3fd692e9bad415a84d1a4eeb3b4|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|1|1|V|svg
-	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-22f95ba43d3cf9cdbd3cd88b9d2d851d|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|3|1|V|svg
-	   xmlns:dc="http://purl.org/dc/elements/1.1/"
-	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-06815cc7d5c9c6074348af99331548b0|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|V|svg
-	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-7b871b9e120e375fc469709b211c3e53|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|3|1|V|svg
-	   xmlns="http://www.w3.org/2000/svg"
-e5901c685b3099884ae78a726cd75e15|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|9|1|V|svg
-	   sodipodi:docname="die6-6.svg"
-c3672b885880ce6ba927aa05d4124655|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
-	  <sodipodi:namedview
-	     pagecolor="#ffffff"
-	     bordercolor="#666666"
-	     borderopacity="1"
-	     objecttolerance="10"
-	     gridtolerance="10"
-	     guidetolerance="10"
-	     inkscape:pageopacity="0"
-	     inkscape:pageshadow="2"
-	     inkscape:window-width="1440"
-	     inkscape:window-height="900"
-	     id="namedview15"
-	     showgrid="false"
-	     inkscape:zoom="1.418633"
-	     inkscape:cx="124.8799"
-	     inkscape:cy="121.96064"
-	     inkscape:window-x="1366"
-	     inkscape:window-y="0"
-	     inkscape:window-maximized="0"
-	     inkscape:current-layer="svg13"
-	     inkscape:document-rotation="0"
-	     inkscape:pagecheckerboard="true">
-	    <inkscape:grid
-	       type="xygrid"
-	       id="grid19"
-	       originx="0.65000567"
-	       originy="0.65001333" />
-	  </sodipodi:namedview>
-41968dcb6ec56679a3e6cad8ac698010|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
-	  <metadata
-	     id="metadata7">
-	Created by potrace 1.16, written by Peter Selinger 2001-2019
-	<rdf:RDF>
-	  <cc:Work
-	     rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type
-	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-	    <dc:title></dc:title>
-	  </cc:Work>
-	</rdf:RDF>
-	</metadata>
-3217fdd4704cc0bbadaf6aea2abaa413|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|12|1|V|svg
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer1"
-	     inkscape:label="Dots"
-	     transform="translate(0.6500057,0.65001333)" />
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer2"
-	     inkscape:label="Border"
-	     transform="translate(0.6500057,0.65001333)" />
-015c093fc91978a8c58861395abbc7d4|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|10|1|V|svg
-	  <defs
-	     id="defs17" />
-68377edcd92016f65c49ed7f41be2f45|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-2713562aced192cee02cb1a25f4ce99d|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
-	   preserveAspectRatio="xMidYMid meet"
-3e2fb1abed9eb7b5ebbdd8b4fb7bf690|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|6|1|V|svg
-	   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
-d66c555b73715b4d2f4cd3542827dc7e|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|5|1|V|svg
-	   id="svg13"
-cba1fc3aa4d284ca1839d19b60ca6d83|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|2|1|V|svg
-	   version="1.0"
-	   baseProfile="full"
-	   width="187.5pt"
-	   height="187.50002pt"
-8b3955664a05ff7a9c084453345e6533|file:///home/jdv/js/reactDice/src/resources/dice/die6-6.svg|1|1|V|svg
-	<svg
-	   version="1.0"
-	   baseProfile="full"
-	   width="187.5pt"
-	   height="187.50002pt"
-	   >
-	  <rect
-	     style="fill:none;fill-opacity:0.75;stroke:#6272a4;stroke-width:2.37519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="rect23"
-	     width="185.12482"
-	     height="185.12483"
-	     x="1.187595"
-	     y="1.187595"
-	     ry="27.943369" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="path852"
-	     cx="35.625"
-	     cy="35.625"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle16"
-	     cx="155.625"
-	     cy="155.625"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1523"
-	     cx="34.175251"
-	     cy="154.17525"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1587"
-	     cx="154.17525"
-	     cy="34.175251"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1618"
-	     cx="93.75"
-	     cy="34.175251"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1650"
-	     cx="93.75"
-	     cy="154.17525"
-	     r="19.175249" />
-	</svg>
-e5bb72e368f6fb17a88f7be657851564|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
-	   sodipodi:docname="die6-2.svg"
-6cda467e060661c813a18c61c1c74ecb|file:///home/jdv/js/reactDice/src/resources/dice/die6-2.svg|5|1|V|svg
-	  <defs
-	     id="defs17" />
-	  <sodipodi:namedview
-	     pagecolor="#ffffff"
-	     bordercolor="#666666"
-	     borderopacity="1"
-	     objecttolerance="10"
-	     gridtolerance="10"
-	     guidetolerance="10"
-	     inkscape:pageopacity="0"
-	     inkscape:pageshadow="2"
-	     inkscape:window-width="1440"
-	     inkscape:window-height="900"
-	     id="namedview15"
-	     showgrid="false"
-	     inkscape:zoom="1.418633"
-	     inkscape:cx="124.8799"
-	     inkscape:cy="121.96064"
-	     inkscape:window-x="1366"
-	     inkscape:window-y="0"
-	     inkscape:window-maximized="0"
-	     inkscape:current-layer="svg13"
-	     inkscape:document-rotation="0"
-	     inkscape:pagecheckerboard="true">
-	    <inkscape:grid
-	       type="xygrid"
-	       id="grid19"
-	       originx="0.65000567"
-	       originy="0.65001333" />
-	  </sodipodi:namedview>
-	  <metadata
-	     id="metadata7">
-	Created by potrace 1.16, written by Peter Selinger 2001-2019
-	<rdf:RDF>
-	  <cc:Work
-	     rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type
-	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-	    <dc:title></dc:title>
-	  </cc:Work>
-	</rdf:RDF>
-	</metadata>
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer1"
-	     inkscape:label="Dots"
-	     transform="translate(0.6500057,0.65001333)" />
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer2"
-	     inkscape:label="Border"
-	     transform="translate(0.6500057,0.65001333)" />
-4babe9ef6ea99d3a53c134f31786fc30|file:///home/jdv/js/reactDice/src/resources/dice/die6-3.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die6-3.svg"
-26e57f49e5dd3b5f529e07ad45f06aee|file:///home/jdv/js/reactDice/src/resources/dice/die6-3.svg|5|1|v|svg
-	   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
-2d96edffcecd2284066a2c84ae458e74|file:///home/jdv/js/reactDice/src/resources/dice/die6-4.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die6-4.svg"
-f1bb203acdff99f24b877f3390e32940|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die6-5.svg"
-0da0ad8e86badede6b5d88a922397bbc|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|v|svg
-	   inkscape:ve
-77624d2b8ffd03809684a6d0414d908e|file:///home/jdv/js/reactDice/src/resources/dice/die6-5.svg|5|1|v|svg
-	rsion="1.0.2 (e86c870879, 2021-01-15)"
-79834ef0039053fbf3ae8db9bb53a3e2|file:///home/jdv/js/reactDice/src/resources/dice/die-artillery.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die-artillery.svg"
-a70a64e07b65adbc8a7b419373255413|file:///home/jdv/js/reactDice/src/resources/dice/die-artillery.svg|6|1|V|svg
-	  <defs
-	     id="defs17">
-	    <rect
-	       x="11.926103"
-	       y="11.084248"
-	       width="164.28423"
-	       height="166.51176"
-	       id="rect1691" />
-	    <rect
-	       x="47.732096"
-	       y="53.411544"
-	       width="90.111844"
-	       height="91.437863"
-	       id="rect1685" />
-	  </defs>
-	  <sodipodi:namedview
-	     pagecolor="#ffffff"
-	     bordercolor="#666666"
-	     borderopacity="1"
-	     objecttolerance="10"
-	     gridtolerance="10"
-	     guidetolerance="10"
-	     inkscape:pageopacity="0"
-	     inkscape:pageshadow="2"
-	     inkscape:window-width="1366"
-	     inkscape:window-height="732"
-	     id="namedview15"
-	     showgrid="false"
-	     inkscape:zoom="1.418633"
-	     inkscape:cx="124.8799"
-	     inkscape:cy="121.96064"
-	     inkscape:window-x="0"
-	     inkscape:window-y="36"
-	     inkscape:window-maximized="0"
-	     inkscape:current-layer="svg13"
-	     inkscape:document-rotation="0"
-	     inkscape:pagecheckerboard="true">
-	    <inkscape:grid
-	       type="xygrid"
-	       id="grid19"
-	       originx="0.65000567"
-	       originy="0.65001333" />
-	  </sodipodi:namedview>
-	  <metadata
-	     id="metadata7">
-	Created by potrace 1.16, written by Peter Selinger 2001-2019
-	<rdf:RDF>
-	  <cc:Work
-	     rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type
-	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-	    <dc:title />
-	  </cc:Work>
-	</rdf:RDF>
-	</metadata>
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer1"
-	     inkscape:label="Dots"
-	     transform="translate(0.6500057,0.65001333)" />
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer2"
-	     inkscape:label="Border"
-	     transform="translate(0.6500057,0.65001333)" />
-517cb42e0258f93fcfac6ff1dc4d557d|file:///home/jdv/js/reactDice/src/resources/dice/die-cavalry.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die-cavalry.svg"
-c52a7a23ded9595d885574e92459b139|file:///home/jdv/js/reactDice/src/resources/dice/die-cavalry.svg|6|1|V|svg
-	  <defs
-	     id="defs17">
-	    <rect
-	       x="11.926103"
-	       y="11.084248"
-	       width="164.28423"
-	       height="166.51176"
-	       id="rect1691" />
-	    <rect
-	       x="47.732096"
-	       y="53.411544"
-	       width="90.111844"
-	       height="91.437863"
-	       id="rect1685" />
-	  </defs>
-	  <sodipodi:namedview
-	     pagecolor="#ffffff"
-	     bordercolor="#666666"
-	     borderopacity="1"
-	     objecttolerance="10"
-	     gridtolerance="10"
-	     guidetolerance="10"
-	     inkscape:pageopacity="0"
-	     inkscape:pageshadow="2"
-	     inkscape:window-width="1366"
-	     inkscape:window-height="732"
-	     id="namedview15"
-	     showgrid="false"
-	     inkscape:zoom="1.418633"
-	     inkscape:cx="127.40351"
-	     inkscape:cy="124.84027"
-	     inkscape:window-x="0"
-	     inkscape:window-y="36"
-	     inkscape:window-maximized="0"
-	     inkscape:current-layer="svg13"
-	     inkscape:document-rotation="0"
-	     inkscape:pagecheckerboard="true">
-	    <inkscape:grid
-	       type="xygrid"
-	       id="grid19"
-	       originx="0.65000567"
-	       originy="0.65001333" />
-	  </sodipodi:namedview>
-	  <metadata
-	     id="metadata7">
-	Created by potrace 1.16, written by Peter Selinger 2001-2019
-	<rdf:RDF>
-	  <cc:Work
-	     rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type
-	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-	    <dc:title />
-	  </cc:Work>
-	</rdf:RDF>
-	</metadata>
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer1"
-	     inkscape:label="Dots"
-	     transform="translate(0.6500057,0.65001333)" />
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer2"
-	     inkscape:label="Border"
-	     transform="translate(0.6500057,0.65001333)" />
-1479f6f4c742df41c857f41a3a3d1124|file:///home/jdv/js/reactDice/src/resources/dice/die-general.svg|3|1|V|svg
-	   width="187.5pt"
-	   height="187.50002pt"
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die-general.svg"
-c318d7f8dfc18b6c23eea1d300229fca|file:///home/jdv/js/reactDice/src/resources/dice/die-general.svg|4|1|V|svg
-	  <defs
-	     id="defs17">
-	    <rect
-	       x="11.926103"
-	       y="11.084248"
-	       width="164.28423"
-	       height="166.51176"
-	       id="rect1691" />
-	    <rect
-	       x="47.732096"
-	       y="53.411544"
-	       width="90.111844"
-	       height="91.437863"
-	       id="rect1685" />
-	  </defs>
-	  <sodipodi:namedview
-	     pagecolor="#ffffff"
-	     bordercolor="#666666"
-	     borderopacity="1"
-	     objecttolerance="10"
-	     gridtolerance="10"
-	     guidetolerance="10"
-	     inkscape:pageopacity="0"
-	     inkscape:pageshadow="2"
-	     inkscape:window-width="1366"
-	     inkscape:window-height="732"
-	     id="namedview15"
-	     showgrid="false"
-	     inkscape:zoom="1.418633"
-	     inkscape:cx="-24.912189"
-	     inkscape:cy="121.96064"
-	     inkscape:window-x="0"
-	     inkscape:window-y="36"
-	     inkscape:window-maximized="0"
-	     inkscape:current-layer="svg13"
-	     inkscape:document-rotation="0"
-	     inkscape:pagecheckerboard="true">
-	    <inkscape:grid
-	       type="xygrid"
-	       id="grid19"
-	       originx="0.65000567"
-	       originy="0.65001333" />
-	  </sodipodi:namedview>
-	  <metadata
-	     id="metadata7">
-	Created by potrace 1.16, written by Peter Selinger 2001-2019
-	<rdf:RDF>
-	  <cc:Work
-	     rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type
-	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-	    <dc:title />
-	  </cc:Work>
-	</rdf:RDF>
-	</metadata>
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer1"
-	     inkscape:label="Dots"
-	     transform="translate(0.6500057,0.65001333)" />
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer2"
-	     inkscape:label="Border"
-	     transform="translate(0.6500057,0.65001333)" />
-f918d2a38d40333bb1af71feda9dba3c|file:///home/jdv/js/reactDice/src/resources/dice/die-infantry.svg|5|1|V|svg
-	   viewBox="0 0 187.5 187.50002"
-	   preserveAspectRatio="xMidYMid meet"
-	   id="svg13"
-	   sodipodi:docname="die-infantry.svg"
-edb087b0c29f738e4546382b2dec7377|file:///home/jdv/js/reactDice/src/resources/dice/die-infantry.svg|6|1|V|svg
-	  <defs
-	     id="defs17">
-	    <rect
-	       x="11.926103"
-	       y="11.084248"
-	       width="164.28423"
-	       height="166.51176"
-	       id="rect1691" />
-	    <rect
-	       x="47.732096"
-	       y="53.411544"
-	       width="90.111844"
-	       height="91.437863"
-	       id="rect1685" />
-	  </defs>
-	  <sodipodi:namedview
-	     pagecolor="#ffffff"
-	     bordercolor="#666666"
-	     borderopacity="1"
-	     objecttolerance="10"
-	     gridtolerance="10"
-	     guidetolerance="10"
-	     inkscape:pageopacity="0"
-	     inkscape:pageshadow="2"
-	     inkscape:window-width="1366"
-	     inkscape:window-height="732"
-	     id="namedview15"
-	     showgrid="false"
-	     inkscape:zoom="1.418633"
-	     inkscape:cx="151.64303"
-	     inkscape:cy="122.34211"
-	     inkscape:window-x="0"
-	     inkscape:window-y="36"
-	     inkscape:window-maximized="0"
-	     inkscape:current-layer="svg13"
-	     inkscape:document-rotation="0"
-	     inkscape:pagecheckerboard="true">
-	    <inkscape:grid
-	       type="xygrid"
-	       id="grid19"
-	       originx="0.65000567"
-	       originy="0.65001333" />
-	  </sodipodi:namedview>
-	  <metadata
-	     id="metadata7">
-	Created by potrace 1.16, written by Peter Selinger 2001-2019
-	<rdf:RDF>
-	  <cc:Work
-	     rdf:about="">
-	    <dc:format>image/svg+xml</dc:format>
-	    <dc:type
-	       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-	    <dc:title />
-	  </cc:Work>
-	</rdf:RDF>
-	</metadata>
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer1"
-	     inkscape:label="Dots"
-	     transform="translate(0.6500057,0.65001333)" />
-	  <g
-	     inkscape:groupmode="layer"
-	     id="layer2"
-	     inkscape:label="Border"
-	     transform="translate(0.6500057,0.65001333)" />
-f889472590a0e269a353e5bb0a6be366|file:///home/jdv/js/reactDice/src/resources/dice/README.md|2|1|V|markdown
+d034dcd770ef6e6de53c4c5d1b8436bc|file:///home/jdv/js/reactDice/src/Store.js|49|1|V|javascript
+		socket: openSocket('http://localhost:8000'),
+		chatSocket: openSocket('http://localhost:8000/'),
+0f68c13b19af96d3e707cc7571069acc|file:///home/jdv/js/reactDice/server/main.go|8|2|V|go
+		"github.com/googollee/go-socket.io"
+b8839f0225f21dcc04b17dfe992b2804|file:///home/jdv/js/reactDice/server/main.go|11|1|V|go
+		// Start a new socketio server
+		server, serveError := socketio.NewServer(nil)
+		if serveError != nil {
+			log.Fatalln(serveError)
+		}
 	
-	   xmlns="http://www.w3.org/2000/svg"
-	   xmlns:svg="http://www.w3.org/2000/svg"
-	   xmlns:cc="http://creativecommons.org/ns#"
-	   xmlns:dc="http://purl.org/dc/elements/1.1/"
-	   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-	   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-10813eb8c79879a8092204f2125ed3ca|file:///home/jdv/js/reactDice/src/resources/dice/README.md|5|1|V|markdown
+		server.OnConnect("/", func(s socketio.Conn) error {
+			s.SetContext("")
+			fmt.Println("Client connected:", s.ID())
+			return nil
+		})
+	
+		server.OnEvent("/", "notice", func(s socketio.Conn, msg string) {
+			fmt.Println("notice:", msg)
+			s.Emit("reply", "You: "+msg)
+		})
+	
+		server.OnEvent("/chat", "msg", func(s socketio.Conn, msg string) string {
+			s.SetContext(msg)
+			return "Server Received Message: " + msg
+		})
+	
+		server.OnEvent("/", "chat message", func(s socketio.Conn, msg string) string {
+			return "React sent a message: " + msg
+		})
+	
+		server.OnEvent("/", "bye", func(s socketio.Conn) string {
+			last := s.Context().(string)
+			s.Emit("bye", last)
+			s.Close()
+			return last
+		})
+	
+		server.OnError("/", func(s socketio.Conn, e error) {
+			fmt.Println("meet error:", e)
+		})
+	
+		server.OnDisconnect("/", func(s socketio.Conn, reason string) {
+			fmt.Println("closed", reason)
+		})
+	
+		go server.Serve()
+		defer server.Close()
+	
+		http.Handle("/socket.io/", server)
+		// When visiting localhost:8000, sends contents of /server/asset, which includes an index.html
+		fmt.Println("Server started on localhost:8000...")
+		log.Fatal(http.ListenAndServe(":8000", nil))
+29204d45751cf986e567e4e21746c7cb|file:///home/jdv/js/reactDice/public/index.html|20|1|V|html
+		<!-- Include socket.io for realtime communication -->
+		<!-- <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script> -->
+d3974844675491dfe14233d861cb8342|file:///home/jdv/js/reactDice/firebase/firebase.json|15|1|V|json
+	    "public": "",
+27573d806990ac47c71ef6ec1fcbfecc|file:///home/jdv/js/reactDice/.gitignore|107|1|V|conf
+	./src/services/firebase.js
+5120eb65b7751f47a36fd832fa4a5a4a|file:///home/jdv/js/reactDice/.gitignore|107|1|V|conf
+	/src/services/firebase.js
+b68a9279ce1668f42dad299f322581eb|file:///home/jdv/js/reactDice/src/services/firebase.js|5|12|v|javascript
+	ADD-YOUR-DETAILS-HERE
+8dc11dfa414f9e9ee71fbffc3fa61e87|file:///home/jdv/js/reactDice/src/services/firebase.js|4|1|V|javascript
+	const config = {
+	  apiKey: "AIzaSyAJNO5gYtMDf30V4ONR3BlasbyvKBYLCok",
+	  authDomain: "reactdice-5f1e2.firebaseapp.com",
+	  databaseURL: "ADD-YOUR-DETAILS-HERE"
+	};
+5b8a4ff75f53e886206af17ed4ff1b30|file:///home/jdv/js/reactDice/src/websocket.js|17|1|V|javascript
+	console.log();
+00a15d70bb758a2239cfbe644e5499a5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|64|1|V|vim
+	
+	"*****************************************************************************
+	" Center line in middle of screen while in insert mode
+	"*****************************************************************************
+c29eb8c3e5fd223e46abb0e053c9c8d7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|66|3|v|vim
+	Center line in middle of screen while in insert mode
+f056a52e430c4d8bfcadd37c1a9bb5ff|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|69|1|V|vim
+	inoremap <silent> <C-h> $
+e20ec8543f23bedc2c60018812f9df0e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|69|1|V|vim
+	inoremap <silent> <C-h> $
+	nnoremap <silent> <C-h> $
+	
+2e5593bf064acf73e73cdcee5fde8406|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|70|1|V|vim
+	nnoremap <silent> <C-h> 0
+b5333e510b5916cde34867830b5667a5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|74|1|V|vim
+	nnoremap <silent> <C-l> $
+6a8301a1d0ead721bcd29d98f5f1752e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|75|1|V|vim
+	vnoremap <silent> <C-l> $
+9c5a9f9bde157cc43e757958cae2fc46|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|76|1|V|vim
+	
+	inoremap <silent> <C-j> $
+	nnoremap <silent> <C-j> $
+	vnoremap <silent> <C-j> $
+1fbd6ad13295874d5f928e9dd4f32fdf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|84|1|V|vim
+	" Left Curly Brace
+	inoremap <silent> <C-k> {
+	nnoremap <silent> <C-k> {
+	vnoremap <silent> <C-k> {
+	
+a866af19e97ce41601038c316eb0d36b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|54|1|V|vim
+	inoremap qa <Esc>la
+37eba660a2f8b7a4bdc70392087d9f6b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|95|3|v|vim
+	Left Curly Brace
+86f83f99bf9ed8afd2251e834a6d919b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|95|1|V|vim
+	" Percent
+	inoremap <silent> <C-n> %
+	nnoremap <silent> <C-n> %
+	vnoremap <silent> <C-n> %
+	
+adaaee4b22041c27198d410c68d952c9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|100|3|v|vim
+	Percent
+556135225066d7d28ffd3c5ad49c30ee|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|89|1|V|vim
+	
+	" Left Curly Brace
+	inoremap <silent> <C-k> {
+	nnoremap <silent> <C-k> {
+	vnoremap <silent> <C-k> {
+ec8df9cf549ed7e080da00618536e059|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|93|1|V|vim
+	" Backtick
+	inoremap <silent> <C-'> `
+	nnoremap <silent> <C-'> `
+	vnoremap <silent> <C-'> `
+	
+efa64052a8f0a142860105a21f19c2b1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|98|3|v|vim
+	Backtick
+b09c98c62e09be6ebb40c2bd63ea2fde|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|68|1|V|vim
+	" Home
+	inoremap <silent> <C-h> 0
+	nnoremap <silent> <C-h> 0
+	vnoremap <silent> <C-h> 0
+	
+1e153310f379d2ff2ecdbff2132c7294|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|126|1|V|vim
+	"*****************************************************************************
+	" Move line to bottom of screen
+	"*****************************************************************************
+	
+	nnoremap <silent> zj zb2j2k
+	
+6ff4a3634fa27315ad7c6ac324c4ed96|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|3|v|vim
+	Move line to bottom of screen
+b34901222c5db48566f831ea504f5a52|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|132|1|V|vim
+	"*****************************************************************************
+	" Select All
+	"*****************************************************************************
+	
+	nnoremap <silent> <C-a> ggVG
+	
+45e96c0a422ce8a1a6ec1bd5eb9625c6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|139|3|v|vim
+	Select All
+3c343ccd737540b1999b325724e197b3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|142|1|V|vim
+	nnoremap <silent> ct$ c$
+632dc6a1df0c18c6a3268af704c356d3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|140|23|v|vim
+	********************************************************
+b3ffec024cf6d48e4353de138268130a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|140|23|v|vim
+	********************************************************
+	
+	nnoremap <silent> ct$
+29aa5cca54ba6bfee8f45461fbeacfc8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|140|23|v|vim
+	********************************************************
+	
+	n
+c4a02d86f7096cf3e0e4cad3edaadc6a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|138|1|V|vim
+	"*****************************************************************************
+	" Change till end of line / Delete till end of line
+	"*****************************************************************************
+	
+	nnoremap <silent> ct$ c$
+	nnoremap <silent> dt$ d$
+9ed657cf2bd58455de91bb53f05e2186|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|28|1|V|vim
+	map s <Plug>(easymotion-overwin-f)
+cd160fa36c94ed8101c47f3cd39f99a2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|29|1|V|vim
+	vnoremap s <Plug>(easymotion-overwin-f)
+1f8bd2c6fc6daad40f0a429748e79f4a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|29|4|V|vim
+	vmap s <Plug>(easymotion-overwin-line)
+2cc30c8129df4602413b4f3043849f19|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|43|1|V|vim
 	
 	
-	<svg
-	   version="1.0"
-	   baseProfile="full"
-	   width="187.5pt"
-	   height="187.50002pt"
-	   >
-	  <rect
-	     style="fill:none;fill-opacity:0.75;stroke:#6272a4;stroke-width:2.37519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="rect23"
-	     width="185.12482"
-	     height="185.12483"
-	     x="1.187595"
-	     y="1.187595"
-	     ry="27.943369" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="path852"
-	     cx="35.625"
-	     cy="35.625"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle16"
-	     cx="155.625"
-	     cy="155.625"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1523"
-	     cx="34.175251"
-	     cy="154.17525"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1587"
-	     cx="154.17525"
-	     cy="34.175251"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1618"
-	     cx="93.75"
-	     cy="34.175251"
-	     r="19.175249" />
-	  <circle
-	     style="fill:#bd93f9;fill-opacity:1;stroke:none;stroke-width:2.8995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-	     id="circle1650"
-	     cx="93.75"
-	     cy="154.17525"
-	     r="19.175249" />
-	</svg>
-79f2634563346580cd05fa2e849e3557|file:///home/jdv/js/reactDice/src/resources/dice/die6-1.svg|1|1|V|svg
-	<svg width="187.5pt" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
-	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
-	 <circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
-	</svg>
-f31bbdd1b3e85bccd652680e16935819|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|90|5|v|javascript
-	Source
-35af0a1ef14aae0d4b4840fc7fe1e4d5|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|89|1|V|javascript
-			<div>
-				<DieA className={dieClass} id={id} onClick={handleClick}/>
-			</div>
-be1c253293efc9f3da72da537173d45f|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|87|2|V|javascript
-			 /*<img className={dieClass} id={id} src={source[val]} alt={alt} width="100" height="100" onClick={handleClick}></img>*/
-2b2cd60e1667782e22847dbadb22b359|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|32|^v|javascript
-	 }
-	 }
-	 }
-	 }
-	 }
-	 }
-	 }
-	 }
-	 }
-	 }
-3c7630074790a251435d6dd4583b5cb4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|6|8|^v|javascript
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
-	{ ReactComponent as 
+	"*****************************************************************************
+	" JK motions: Line motions
+	"*****************************************************************************
+	
+	map <Leader>j <Plug>(easymotion-j)
+	map <Leader>k <Plug>(easymotion-k)
+377568432b054d0e3a8c4186286ff4d0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|47|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
+5edc86789965f09629e667ed23384cb5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|53|1|V|vim
+	" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
+423b08e904df8a70975dff4adc7c4561|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|53|26|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
+773f86b9bf9f451e07779149473e4a5d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|48|59|v|vim
+	lexima
+d8dcd89453c2f8c6745c110fa95c911f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim|20|1|V|vim
+	                                                                    
+4b25018873c5c230879bf5bfbbd0d517|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|62|5|V|vim
+	map <S-k> <Nop>
+7fb32e831c64079ca854ef5cdf72e615|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|61|1|V|vim
+	" Remove default binding for P first
+5572028c3590e85aeaa9ef72a32c7d0d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|42|34|v|vim
+	, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+6eed751a399560f9e201a822c93bc0e7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|110|24|V|vim
+	onoremap <silent> dt$ d$
+0b9ffce25e4e8e70315377b816381b12|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|110|22|V|vim
+	onoremap <silent> t$ $
+1b7c627f713a6cbd4459eba758df63df|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|44|19|v|vim
+	              -- false will disable the whole extension
+3984493a5b7b1bf47c0133aa8c119a5f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|45|18|V|vim
+	    disable = { "c", "rust" },  -- list of language that will be disabled
+30e7c17d953071af4f0a5d3dcc05be89|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|16|4|V|vim
+	lua <<EOF
+	require'nvim-treesitter.configs'.setup {
+	" highlight = {
+	  " enable = true,
+	  " custom_captures = {
+	    " -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+	    " ["foo.bar"] = "Identifier",
+	  " },
+	" },
+	" incremental_selection = {
+	  " enable = true,
+	  " keymaps = {
+	    " init_selection = "gnn",
+	    " node_incremental = "grn",
+	    " scope_incremental = "grc",
+	    " node_decremental = "grm",
+	  " },
+	" },
+	" indent = {
+	  " enable = true
+	" },
+	}
+	EOF
+	
+530aa35af867233729d4d1a3b00c20df|file:///home/jdv/js/reactDice/src/websocket.js|31|1|V|javascript
+		// This function is called by our React application to register a callback that needs to be called everytime a new message is received
+		export const registerOnMessageCallback = (fn) => {
+			// The callback function is supplied as an argument and assigned to the `onMessageCallback` variable we declared earlier
+			onMessageCallback = fn
+5f1f645d39e38ad1e6f8d3c3236cd9fb|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|7|1|V|javascript
+		// Store
+		const chatHistory = Store(state => state.chatHistory)
+53b3a5f7103607bbd908aa9c53e8bd26|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|4|1|V|javascript
+	import { v4 as uuid } from 'uuid';
+82e1b7da6bf87b4eefd9586e87e2412b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|90|1|V|vim
+	" Left Curly Brace
+	inoremap <silent> <C-k> {}<C-o>i
+	nnoremap <silent> <C-k> {
+	vnoremap <silent> <C-k> {
+	
+8d14c67344ae64f61fbebc1b5fba89e4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|42|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vimtex.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/tex-conceal.vim
+de4d66c65bb00b6ae71e0fa00ab9689b|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|18|35|V|javascript
+			console.log(`onMessageReceived: $`);
+1cb251ec0d568de6a929b520c4aed8d1|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|18|20|v|javascript
+	text
+2de932c18c75a61e1dbb0d42782ea001|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|6|16|V|javascript
+		diceTheme: ["numbers", "letters"],
+10cf84e6db2636bacd21de7d0bbed04e|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|57|1|V|javascript
+		dice: [
+			{
+				id: 0,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 1,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 2,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 3,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 4,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 5,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 6,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 7,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 8,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 9,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 10,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+		], 
+	
+		sortDice: () => 
+			set(state =>  {
+				state.dice.sort((a, b) =>  a.val - b.val)
+			}),
+	
+		toggleHeld: (id) => 
+			set(state =>  {
+				//toggle the value if not saved
+				if (state.dice[id].saved === true) {
+					console.log(`\tZustand -- Die${id} was already saved, so it's held state was not flipped.`);
+				} else {
+					state.dice[id].held = !state.dice[id].held;
+					console.log(`\tZustand -- held state of Die${id}: ${state.dice[id].held}`);
+				}
+			}),
+		toggleSaved: (id) => 
+			set(state =>  {
+				//toggle the value
+				state.dice[id].saved = !state.dice[id].saved;
+				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
+			}),
+		rollDice: () => 
+			set(state =>  {
+				// Roll the dice that are not held
+				console.log(`Zustand -- Roll Dice Button Pressed`);
+				state.dice.forEach(
+					(die) => {
+						if (!die.held === true && !die.saved === true) { // If a die is not held and not saved, reroll it.
+							die.val = Math.floor(Math.random() * (7 - 1) + 1)
+							// Reset the held status to trigger useEffect
+							die.held = false;
+	
+							console.log(`Zustand -- Die${die.id} val updated: ${die.val}`); 
+						} else { // If the die is either held or saved, do not reroll it, and make sure it is set to saved and reset it to not be held for CSS purposes
+							if (die.held) {
+								console.log(`Zustand -- Die${die.id} was saved because it was marked as held`); 
+							}                        
+							if (die.saved) {
+								console.log(`Zustand -- Die${die.id} was saved because it was previously saved`); 
+							}
+							die.held = false;
+							die.saved = true;
+						} 
+					}
+				)
+			}),
+d2fd4abffdb4f128bb0fe4b7974dd26a|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|48|1|V|javascript
+	
+		latestMessage: "This is the initial latest message.",
+		updateLatestMessage: (text) => set(() => ({
+			latestMessage: text
+		})),
+		addMessageToHistory: () => set(state => ({ 
+			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
+		})),
+	
+3b7d71f9954faf6c4c8779d201bf6150|file:///home/jdv/js/reactDice/src/stores/DiceStore.js|6|1|V|javascript
+		chatHistory: [
+			{
+				id: 0,
+				key: 0,
+				content: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 1,
+				key: 1,
+				content: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 2,
+				key: 2,
+				content: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 3,
+				key: 3,
+				content: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+			{
+				id: 4,
+				key: 4,
+				content: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 5,
+				key: 5,
+				content: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 6,
+				key: 6,
+				content: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 7,
+				key: 7,
+				content: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+		],
+	
+		latestMessage: "This is the initial latest message.",
+		updateLatestMessage: (text) => set(() => ({
+			latestMessage: text
+		})),
+		addMessageToHistory: () => set(state => ({ 
+			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
+		})),
+	
+fe63644a3734fac468d11ff5ecbb089d|file:///home/jdv/js/reactDice/src/stores/UI.js|5|1|V|javascript
+		chatHistory: [
+6f79cb697a4f21ec35f34b0466e3df19|file:///home/jdv/js/reactDice/src/stores/UI.js|5|1|V|javascript
+	
+				id: 0,
+				key: 0,
+				content: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 1,
+				key: 1,
+				content: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 2,
+				key: 2,
+				content: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 3,
+				key: 3,
+				content: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+			{
+				id: 4,
+				key: 4,
+				content: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 5,
+				key: 5,
+				content: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 6,
+				key: 6,
+				content: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 7,
+				key: 7,
+				content: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+		],
+	
+		latestMessage: "This is the initial latest message.",
+		updateLatestMessage: (text) => set(() => ({
+			latestMessage: text
+		})),
+		addMessageToHistory: () => set(state => ({ 
+			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
+		})),
+	
+		dice: [
+			{
+				id: 0,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 1,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 2,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 3,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 4,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 5,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 6,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 7,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 8,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 9,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 10,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+		], 
+	
+		sortDice: () => 
+			set(state =>  {
+				state.dice.sort((a, b) =>  a.val - b.val)
+			}),
+	
+		toggleHeld: (id) => 
+			set(state =>  {
+				//toggle the value if not saved
+				if (state.dice[id].saved === true) {
+					console.log(`\tZustand -- Die${id} was already saved, so it's held state was not flipped.`);
+				} else {
+					state.dice[id].held = !state.dice[id].held;
+					console.log(`\tZustand -- held state of Die${id}: ${state.dice[id].held}`);
+				}
+			}),
+		toggleSaved: (id) => 
+			set(state =>  {
+				//toggle the value
+				state.dice[id].saved = !state.dice[id].saved;
+				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
+			}),
+		rollDice: () => 
+			set(state =>  {
+				// Roll the dice that are not held
+				console.log(`Zustand -- Roll Dice Button Pressed`);
+				state.dice.forEach(
+					(die) => {
+						if (!die.held === true && !die.saved === true) { // If a die is not held and not saved, reroll it.
+							die.val = Math.floor(Math.random() * (7 - 1) + 1)
+							// Reset the held status to trigger useEffect
+							die.held = false;
+	
+							console.log(`Zustand -- Die${die.id} val updated: ${die.val}`); 
+						} else { // If the die is either held or saved, do not reroll it, and make sure it is set to saved and reset it to not be held for CSS purposes
+							if (die.held) {
+								console.log(`Zustand -- Die${die.id} was saved because it was marked as held`); 
+							}                        
+							if (die.saved) {
+								console.log(`Zustand -- Die${die.id} was saved because it was previously saved`); 
+							}
+							die.held = false;
+							die.saved = true;
+						} 
+					}
+				)
+			}),
+956b54af52da3cadf44ac66447745874|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|5|1|V|javascript
+		diceTheme: ["numbers", "letters"],
+		chatHistory: [
+			{
+				id: 0,
+				key: 0,
+				content: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 1,
+				key: 1,
+				content: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 2,
+				key: 2,
+				content: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 3,
+				key: 3,
+				content: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+			{
+				id: 4,
+				key: 4,
+				content: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 5,
+				key: 5,
+				content: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 6,
+				key: 6,
+				content: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 7,
+				key: 7,
+				content: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+		],
+	
+		latestMessage: "This is the initial latest message.",
+		updateLatestMessage: (text) => set(() => ({
+			latestMessage: text
+		})),
+		addMessageToHistory: () => set(state => ({ 
+			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
+		})),
+	
+		dice: [
+			{
+				id: 0,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 1,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 2,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 3,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 4,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 5,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 6,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 7,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 8,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 9,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+			{
+				id: 10,
+				val: Math.floor(Math.random() * (7 - 1) + 1),
+				held: false,
+				saved: false,
+			},
+		], 
+	
+		sortDice: () => 
+			set(state =>  {
+				state.dice.sort((a, b) =>  a.val - b.val)
+			}),
+	
+		toggleHeld: (id) => 
+			set(state =>  {
+				//toggle the value if not saved
+				if (state.dice[id].saved === true) {
+					console.log(`\tZustand -- Die${id} was already saved, so it's held state was not flipped.`);
+				} else {
+					state.dice[id].held = !state.dice[id].held;
+					console.log(`\tZustand -- held state of Die${id}: ${state.dice[id].held}`);
+				}
+			}),
+		toggleSaved: (id) => 
+			set(state =>  {
+				//toggle the value
+				state.dice[id].saved = !state.dice[id].saved;
+				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
+			}),
+		rollDice: () => 
+			set(state =>  {
+				// Roll the dice that are not held
+				console.log(`Zustand -- Roll Dice Button Pressed`);
+				state.dice.forEach(
+					(die) => {
+						if (!die.held === true && !die.saved === true) { // If a die is not held and not saved, reroll it.
+							die.val = Math.floor(Math.random() * (7 - 1) + 1)
+							// Reset the held status to trigger useEffect
+							die.held = false;
+	
+							console.log(`Zustand -- Die${die.id} val updated: ${die.val}`); 
+						} else { // If the die is either held or saved, do not reroll it, and make sure it is set to saved and reset it to not be held for CSS purposes
+							if (die.held) {
+								console.log(`Zustand -- Die${die.id} was saved because it was marked as held`); 
+							}                        
+							if (die.saved) {
+								console.log(`Zustand -- Die${die.id} was saved because it was previously saved`); 
+							}
+							die.held = false;
+							die.saved = true;
+						} 
+					}
+				)
+			}),
+145a7089ffc82b677cd1259b8cdf3e8d|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|3|1|V|javascript
+	import ChatStore from '../../Store'
+f6877ca38b0215c7827642896a595c60|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|7|1|V|javascript
+	import { registerOnMessageCallback, send, startWebsocketConnection } from '../../websocket'
+9a0364b9e99bb480dd25e1f0284c8555|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|24|75|v|javascript
+	content
+b072de6d2511b8f273e770fe480beb39|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|13|1|V|javascript
+		const chatHistory = ChatStore(state => state.chatHistory)
+54c215d6f47f9ebc15a5e035711d5e07|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|14|8|v|javascript
+	chatHistory
+cb49dba933a5594b273bf360d9b4f0f0|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|25|18|V|javascript
+			let newMessages = chatHistory.concat(msg)
+de70938849b75d3db63bba421c93e018|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|32|6|v|javascript
+	messages
+50908acfffd0cd10637e04ab934a6b5b|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|14|1|V|javascript
+		const updateLatestMessage = ChatStore(state => state.updateLatestMessage)
+1defe810cbc80d3f04ad25957a9aad1d|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|15|8|v|javascript
+	updateLatestMessage
+78e731027d8fd50ed642340b7c9a63b3|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|39|9|v|javascript
+	message
+3ab8d60f3f03fe4b32f51bb24ed22806|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|20|1|V|javascript
+				uuid: uuid(),
+a7cf9677ebfeae3e4d581357a6655449|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|17|1|V|javascript
+		chatHistory: [
+			{
+				id: 0,
+				uuid: uuid(),
+				key: 0,
+				data: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 1,
+				uuid: uuid(),
+				key: 1,
+				data: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 2,
+				uuid: uuid(),
+				key: 2,
+				data: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 3,
+				uuid: uuid(),
+				key: 3,
+				data: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+			{
+				id: 4,
+				uuid: uuid(),
+				key: 4,
+				data: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 5,
+				uuid: uuid(),
+				key: 5,
+				data: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 6,
+				uuid: uuid(),
+				key: 6,
+				data: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 7,
+				uuid: uuid(),
+				key: 7,
+				data: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+		],
+e47d9bd3254c942d9e1a0fa0a3214bbc|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|12|1|v|javascript
+				id: 1,
+3e5e877ef28f376720e449412e402ba2|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|12|1|V|javascript
+	
+				uuid: uuid(),
+				key: 1,
+				data: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 2,
+				uuid: uuid(),
+				key: 2,
+				data: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 3,
+				uuid: uuid(),
+				key: 3,
+				data: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+			{
+				id: 4,
+				uuid: uuid(),
+				key: 4,
+				data: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+			},
+			{
+				id: 5,
+				uuid: uuid(),
+				key: 5,
+				data: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
+			},
+			{
+				id: 6,
+				uuid: uuid(),
+				key: 6,
+				data: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
+			},
+			{
+				id: 7,
+				uuid: uuid(),
+				key: 7,
+				data: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
+			},
+eda5faddc7e0ca843883ffa02b22affa|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|11|19|V|javascript
+				data: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
+9a5b3387fbd11445deafd59294b38fef|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|6|1|V|javascript
+			{
+				id: 0,
+				uuid: uuid(),
+				key: 0,
+				username: "Joe",
+			},
+095d15cc3795d23cfda1642a59a81e3b|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|7|22|V|javascript
+		// TODO: Temporart hard-coded username is applied
+		let username = "Joe";
+decaae1e472274291adee6f3a0ecb758|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|13|1|V|javascript
+		// TODO: Temporart hard-coded username is applied
+		let username = "Joe";
+	
+26c0c61e603ac621a5f5f46a12d818f4|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|17|24|v|javascript
+	ChatStore(state => state.latestMessage)
+	
+55f6507b8e39426e7d559db45ab1fdd0|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|15|19|v|javascript
+	"Joe"
+0e3ec4e8d9cad03cff1d2104d0ffaf6b|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|42|1|V|javascript
+		// This method accepts the message text or data.  It then constructs the message object, stringifies it and sends the string to the server using the `send` function imported from the websockets package
+		let sendMessage = (data) => {
+			const chatMessage = {
+				username: username,
+				data: data,
+				uuid: uuid()
+			}
+			console.log("Message: ", chatMessage)
+			console.log("Send: ", send)
+			send(JSON.stringify(chatMessage))
+		}
+	
+732014da85ecc32606d30f80f4d3e038|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|1|1|V|javascript
+	import ChatStore from '../../ChatStore'
+ec8c7390c9756e281c9b3904d9aaf96c|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|4|1|V|javascript
+	import GamestateStore from '../../GamestateStore'
+7e3bdf57a0bfad5ec0ff02a2866bf81f|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|14|1|V|javascript
+		// TODO: Temporary hard-coded username is applied
+		const username = GamestateStore(state => state.username);
+	
+447c59d921a5e0311049a1a2ef6e69b5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|181|1|V|vim
+	"*****************************************************************************
+	" Toggle comments
+	"*****************************************************************************
+	
+c7136f91c65adb1d534ebb64a954aaf8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|182|3|v|vim
+	Toggle comments
+6a85a673032024317dbf991b9f4fa555|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|185|1|V|vim
+	nnoremap ? :%s/

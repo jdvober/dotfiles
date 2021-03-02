@@ -52,22 +52,72 @@ inoremap ql <C-o>l
 "*****************************************************************************
 
 inoremap qa <Esc>la
-
+inoremap jk <Esc>la
 
 "*****************************************************************************
 " Paste on line below / line above
 "*****************************************************************************
 
+" Remove default binding for P first
+map P <Nop>
 nnoremap <silent> Pj ]p
 nnoremap <silent> Pk [p
 
+"*****************************************************************************
+" Experimentally putting characters on/near home row with <C- > 
+"*****************************************************************************
 
+" Home
+inoremap <silent> <C-g> 0
+nnoremap <silent> <C-g> 0
+vnoremap <silent> <C-g> 0
+
+" First Character
+inoremap <silent> <C-h> ^
+nnoremap <silent> <C-h> ^
+vnoremap <silent> <C-h> ^
+
+" End
+inoremap <silent> <C-l> $
+nnoremap <silent> <C-l> $
+vnoremap <silent> <C-l> $
+
+" Left Paren
+inoremap <silent> <C-j> ()<C-o>i
+nnoremap <silent> <C-j> (
+vnoremap <silent> <C-j> (
+
+" Left Curly Brace
+inoremap <silent> <C-k> {}<C-o>i
+nnoremap <silent> <C-k> {
+vnoremap <silent> <C-k> {
+
+" Left Square Bracket
+inoremap <silent> <C-i> []<C-o>i
+nnoremap <silent> <C-i> [
+vnoremap <silent> <C-i> [
+
+" Percent
+inoremap <silent> <C-n> %
+nnoremap <silent> <C-n> %
+vnoremap <silent> <C-n> %
+
+" Backtick
+inoremap <silent> <C-'> `
+nnoremap <silent> <C-'> `
+vnoremap <silent> <C-'> `
+
+" Equals
+inoremap <silent> <C-e> =
+nnoremap <silent> <C-e> =
+vnoremap <silent> <C-e> =
+
+onoremap <silent> t$ $
 "*****************************************************************************
 " Center line in middle of screen while in insert mode
 "*****************************************************************************
 
 inoremap <silent> zz <C-o>zz
-
 
 "*****************************************************************************
 " Move line to middle of screen
@@ -79,22 +129,27 @@ nnoremap <silent> zl zz
 " Move line to top of screen
 "*****************************************************************************
 
-nnoremap <silent> zk zt
+nnoremap <silent> zk zt2k2j
 
 "*****************************************************************************
 " Move line to bottom of screen
 "*****************************************************************************
 
-nnoremap <silent> zj zb
+nnoremap <silent> zj zb2j2k
 
+"*****************************************************************************
+" Select All
+"*****************************************************************************
+
+nnoremap <silent> <C-a> ggVG
 
 "*****************************************************************************
 " Spaces to Tabs
 "*****************************************************************************
 
-	" Four spaces -> tab
+" Four spaces -> tab
 nnoremap <silent> <leader><leader>t :%%!unexpand -t 4 --first-only<CR>
-	" Two spaces -> tab
+" Two spaces -> tab
 nnoremap <silent> <leader><leader>t :%%!unexpand -t 2 --first-only<CR>
 
 
@@ -123,6 +178,12 @@ nnoremap <silent> <Esc> :noh<CR><Esc>
 " nnoremap <silent> <CR> :noh<CR><CR>
 nnoremap <silent> <CR> :noh<CR>
 
+"*****************************************************************************
+" Find and Replace
+"*****************************************************************************
+
+nnoremap ? :%s/
+vnoremap ? :%s/\%V
 
 "*****************************************************************************
 " Toggle comments

@@ -9,6 +9,10 @@
 " |________/ \_______/|__/ \_______/|__/  |__/
 "                                             
  
+source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vimtex.vim
+source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim
+source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/tex-conceal.vim
+
 "*****************************************************************************
 " For support of figures from Inkscape in LaTeX documents
 "*****************************************************************************

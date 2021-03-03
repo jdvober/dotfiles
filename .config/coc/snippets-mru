@@ -1,5 +1,6 @@
-cl
->>
-ln
-err
 fc
+cl
+ln
+f
+>>
+err

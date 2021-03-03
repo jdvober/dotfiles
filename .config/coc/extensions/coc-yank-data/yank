@@ -1,1113 +1,3 @@
-62be66a5a334b7c277f25c6b0ebd0d5e|file:///home/jdv/js/reactDice/src/App.js|20|1|V|javascript
-			// socket.onmessage = (message) => {
-				// console.log(message);
-			// };
-55051dbac8e4623b728092881a4edb27|file:///home/jdv/js/reactDice/src/App.js|26|59|v|javascript
-	 || contentDefaultMessage
-6d4afa8bf3685d01aad801a890049741|file:///home/jdv/js/reactDice/src/App.js|22|1|V|javascript
-				const dataFromServer = JSON.parse(message.data);
-				const stateToChange = {};
-				if (dataFromServer.type === "userevent") {
-					stateToChange.currentUsers = Object.values(dataFromServer.data.users);
-				} else if (dataFromServer.type === "contentchange") {
-					stateToChange.text = dataFromServer.data.editorContent;
-				}
-				stateToChange.userActivity = dataFromServer.data.userActivity;
-				this.setState({
-					...stateToChange
-				});
-4aa1ba31e75a69058940131c2c82ef7f|file:///home/jdv/js/reactDice/src/App.js|24|1|V|javascript
-		/* When a user joins, I notify the server that a new user has joined to edit the document. */
-		const logInUser = () => {
-			const username = this.username.value;
-			if (username.trim()) {
-				const data = {
-					username
-				};
-				this.setState({
-					...data
-				}, () => {
-					socket.send(JSON.stringify({
-						...data,
-						type: "userevent"
-					}));
-				});
-			}
-		}
-efd048971c2e7bb401d855576e22a351|file:///home/jdv/js/reactDice/src/App.js|18|2|V|javascript
-				logInUser();
-f528764d624db129b32c21fbca0cb8d6|file:///home/jdv/js/reactDice/src/App.js|11|34|v|javascript
-	127.0.0.1
-e7f1120b33c9c2a41fced90c505c4328|file:///home/jdv/js/reactDice/server/main.go|47|20|V|go
-				log.Fatalf("\n\n==> Error reading message:\n\n%v\n\n", err)
-			}
-832cecfe7eaa5ebf67759f364af5f8a8|file:///home/jdv/js/reactDice/server/main.go|47|3|V|go
-				log.Fatalf("\n\n==> Error reading message:\n\n%v\n\n", err)
-daca230c8a7a53e9f4c86ba52f2e129d|file:///home/jdv/js/reactDice/server/main.go|53|3|V|go
-				log.Fatalf("\n==> Error :\n\n%v\n\n", err)
-9f3d2135e1122ac9369015292624bb0d|file:///home/jdv/js/reactDice/package.json|21|1|V|json
-		"start": "concurrently \"sass --watch ./style/sass:./style/css\" "
-3bb1fd986097336594697d9aae4d134f|file:///home/jdv/js/reactDice/package.json|21|70|v|json
-	npm run tsc:w
-0fdc336911a6b4473390edda26862c98|file:///home/jdv/js/reactDice/package.json|22|33|V|json
-			"start": "react-scripts start",
-a1b01e734b573fca08eb1a65e6df9a38|file:///home/jdv/js/reactDice/package.json|21|43|v|json
-	style
-8166fac00e9778b1bb7628f2eeec2259|file:///home/jdv/js/reactDice/package.json|23|1|V|json
-			""concurrently \"cd server && npm run start\" \"npm run start\""
-2f0403d8ed883223a8d76fd2dcb85f9b|file:///home/jdv/js/reactDice/package.json|23|27|v|json
-	cd server && npm run start
-3d2c42f5ad77e2edaa6819f03e4b36a1|file:///home/jdv/js/reactDice/package.json|22|72|V|json
-			"start-dev": ""concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"./server/make watch\" \"npm run start\"", 
-87d30ed976956d26577d6955789f3eba|file:///home/jdv/js/reactDice/package.json|22|12|V|json
-			"dev": ""concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"npm run start\"",
-cad578b87a2842935b7a9e4b265c0f7c|file:///home/jdv/js/reactDice/package.json|23|12|v|json
-	concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"npm run start\"
-8bf02c416ffc3742066dd923429b4dd2|file:///home/jdv/js/reactDice/package.json|23|27|v|json
-	sass --watch ./src/sass/App.scss ./src/App.css
-fe28bba7af127a34375709c6118d6401|file:///home/jdv/js/reactDice/package.json|23|38|V|json
-			"dev": ""concurrently \"npm run sass\" \"npm run start\"",
-			"sass": "sass --watch ./src/sass/App.scss ./src/App.css"
-ea2b2676c28c0db26d39331a336c6b92|file:///home/jdv/js/reactDice/package.json|24|4|v|json
-	start
-09492b40f9f9ebe421722fa7b7634c9d|file:///home/jdv/js/reactDice/package.json|24|26|v|json
-	command1
-049ef08c70c6fc4e27003a1244cdbf0e|file:///home/jdv/js/reactDice/package.json|24|77|v|json
-	command2
-f072175e5ef1aa4835bd449a42dd1db3|file:///home/jdv/js/reactDice/package.json|24|31|V|json
-			"dev": "concurrently \"sass --watch ./src/sass/App.scss ./src/App.css\" \"npm run start\""
-7556a08efaa166a133a179a7fadeed7c|file:///home/jdv/js/reactDice/package.json|23|3|V|json
-			""
-c438cf574484c70ecdb82a41e00e4d23|file:///home/jdv/js/reactDice/package.json|23|1|V|json
-			"dev-start": "concurrently \"npm run watch-server\" \"npm run watch-sass\" \"npm run start\"",
-7b5f252a8bb22700a111f006251f4325|file:///home/jdv/js/reactDice/package.json|23|26|v|json
-	\"npm run watch-server
-1d7a2000e4a3962dc60b112fbc40bd51|file:///home/jdv/js/reactDice/package.json|23|51|v|json
-	npm run start
-33bf66f9795eca122171e119700b493d|file:///home/jdv/js/reactDice/server/main.go|46|8|v|go
-	Fatalf
-0fdb49974da67f4673f5b48e0464424c|file:///home/jdv/js/reactDice/server/main.go|54|1|V|go
-		for {
-			messageType, p, err := conn.ReadMessage()
-			if err != nil {
-				log.Fatalf("\n\n==> Error reading message:\n\n%v\n\n", err)
-			}
-	
-			fmt.Println(string(p))
-	
-			if err := conn.WriteMessage(messageType, p); err != nil {
-				log.Fatalf("\n==> Error :\n\n%v\n\n", err)
-			}
-		}
-4102f005ffccd0fea4a45ff165dbc49f|file:///home/jdv/js/reactDice/src/App.js|16|1|V|javascript
-		socket.onopen = () => {
-			console.log('WebSocket Client Connected');
-		};
-	
-		socket.onmessage = (msg) => {
-			console.log(msg)
-		};
-bdf5167836986922925c35cc1009f417|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
-		// Set up the handshake with server
-50b159defd151c35b54ab906479c254f|file:///home/jdv/js/reactDice/src/App.js|15|2|v|javascript
-	exampleSocket
-8bc91e4653aeceb5a48131e6bc7b54b9|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
-		socket.onopen = function (event) {
-			socket.send("Here's some text that the server is urgently awaiting!");
-		};
-eb3503f1aebbe37c3dfb3308a5aafb21|file:///home/jdv/js/reactDice/server/main.go|40|1|V|go
-	// Listen for new websocket messages
-	func reader(conn *websocket.Conn) {
-		fmt.Println("Listening for messages on websocket connection...")
-		for {
-			messageType, p, err := conn.ReadMessage()
-			if err != nil {
-				log.Printf("\n\n==> Error reading message:\n\n%v\n\n", err)
-				return
-			}
-			if err := conn.WriteMessage(messageType, p); err != nil {
-				log.Printf("\n==> Error :\n\n%v\n\n", err)
-				return
-			}
-		}
-	}
-cae7dce5466fc31ca3cfa0ab52161282|file:///home/jdv/js/reactDice/server/main.go|15|1|V|go
-		fmt.Fprintf(w, "Hello from the Websocket Endpoint")
-		// Deal with CORS, which is skipped for now.  TODO
-		upgrader.CheckOrigin = func(r *http.Request) bool { return true }
-	
-		// Upgrade the http connection to websocket connection.
-		ws, err := upgrader.Upgrade(w, r, nil)
-		if err != nil {
-			fmt.Printf("\n==> Error in websocket upgrader:\n\n%v\n\n", err)
-			log.Fatalf("\n==> Error in websocket upgrader:\n\n%v\n\n", err)
-		}
-	
-		// Show a client has connected
-		log.Println("Client Connected")
-	
-		// Write a message to the client
-		err = ws.WriteMessage(1, []byte("Greetings, Client.  This is your message verifying your connection to the ws server!"))
-		if err != nil {
-			log.Println(err)
-		}
-	
-		// Start listening for messages on the passed in websocket
-		reader(ws)
-	
-7a1476e0cdef0da0653ba8addb71704b|file:///home/jdv/js/reactDice/server/main.go|14|1|V|go
-	func wsEndpoint(w http.ResponseWriter, r *http.Request) {
-	}
-cf134fde571e96ed5c6b6617113349e2|file:///home/jdv/js/reactDice/server/main.go|10|1|V|go
-	func homePage(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Home Page")
-	}
-	
-1d6657d9bbb30ae9432f870cc3bf8964|file:///home/jdv/js/reactDice/server/main.go|14|6|v|go
-	homePage
-8cf04a9734132302f96da8e113e80ce5|file:///home/jdv/js/reactDice/server/main.go|15|18|v|go
-	Home
-1f39397b509a03df3decbf0370d5fd4a|file:///home/jdv/js/reactDice/server/main.go|14|1|V|go
-	
-	func wsEndpoint(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "WS Endpoint Reached")
-	}
-	
-	var upgrader = websocket.Upgrader{
-		ReadBufferSize:  1024,
-		WriteBufferSize: 1024,
-	}
-	
-	func wsHandler(w http.ResponseWriter, r *http.Request) {
-		conn, err := upgrader.Upgrade(w, r, nil)
-		if err != nil {
-			log.Println(err)
-			return
-		}
-		// ... Use conn to send and receive messages.
-		for {
-			messageType, p, err := conn.ReadMessage()
-			if err != nil {
-				log.Println(err)
-				return
-			}
-			if err := conn.WriteMessage(messageType, p); err != nil {
-				log.Println(err)
-				return
-			}
-		}
-	}
-d1cb9166d6f45b954d93b65d3a5b2ead|file:///home/jdv/js/reactDice/server/main.go|27|1|V|go
-		setupRoutes()
-		log.Fatal(http.ListenAndServe(":8080", nil))
-840974ba6a04d83fbabb1184ae8ab5d0|file:///home/jdv/js/reactDice/server/main.go|19|6|v|go
-	handleWS
-def649c99ffee2edb54f738a98ae0ae6|file:///home/jdv/js/reactDice/server/main.go|6|10|V|go
-		"github.com/gorilla/websocket"
-88c3338e95a9fed8d034a3cbd217c5c1|file:///home/jdv/js/reactDice/server/main.go|1|1|V|go
-	package main
-	
-	import (
-		"fmt"
-		socketio "github.com/googollee/go-socket.io"
-		"log"
-		"net/http"
-	)
-	
-	func homePage(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Home Page")
-	}
-	
-	func diceEndpoint(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Dice Login Page")
-	}
-	
-	func wsHandler() {
-		// Define a new socketio server instance
-		server, err := socketio.NewServer(nil)
-		if err != nil {
-			log.Fatal(err)
-		}
-	
-		server.On("connection", func(so socketio.Socket) {
-	
-			log.Println("on connection")
-	
-			so.Join("chat")
-	
-			so.On("chat message", func(msg string) {
-				log.Println("emit:", so.Emit("chat message", msg))
-				so.BroadcastTo("chat", "chat message", msg)
-			})
-	
-			so.On("disconnection", func() {
-				log.Println("on disconnect")
-			})
-		})
-	
-		server.On("error", func(so socketio.Socket, err error) {
-			log.Println("error:", err)
-		})
-	
-		http.Handle("/socket.io/", server)
-	
-		fs := http.FileServer(http.Dir("static"))
-		http.Handle("/", fs)
-	
-		log.Println("Serving at localhost:5000...")
-		log.Fatal(http.ListenAndServe(":5000", nil))
-	
-	}
-	
-	func setupRoutes() {
-		http.HandleFunc("/", homePage)
-		http.HandleFunc("/ws", wsHandler)
-		http.HandleFunc("/dice", diceEndpoint)
-	}
-	
-	func main() {
-		fmt.Println("Go WS Server started on port 8080")
-		setupRoutes()
-		log.Fatal(http.ListenAndServe(":8080", nil))
-	}
-7b98980e6ea07875ce2d7c8d9adc1629|file:///home/jdv/js/reactDice/server/asset/index.html|21|1|V|html
-	    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-a47fe3f7a607509d5eb19a7d0ca2c9d6|file:///home/jdv/js/reactDice/public/index.html|14|1|V|html
-	    <!--
-	      manifest.json provides metadata used when your web app is installed on a
-	      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-	    -->
-d2ae7389a7d720376c0232d191aead4a|file:///home/jdv/js/reactDice/public/index.html|15|1|V|html
-	    <!--
-	      Notice the use of %PUBLIC_URL% in the tags above.
-	      It will be replaced with the URL of the `public` folder during the build.
-	      Only files inside the `public` folder can be referenced from the HTML.
-	
-	      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-	      work correctly both with client-side routing and a non-root public URL.
-	      Learn how to configure a non-root public URL by running `npm run build`.
-	    -->
-c35d5201b5aa8963cfe7d430e26a36e8|file:///home/jdv/js/reactDice/public/index.html|23|1|V|html
-	    <!--
-	      This HTML file is a template.
-	      If you open it directly in the browser, you will see an empty page.
-	
-	      You can add webfonts, meta tags, or analytics to this file.
-	      The build step will place the bundled scripts into the <body> tag.
-	
-	      To begin the development, run `npm start` or `yarn start`.
-	      To create a production bundle, use `npm run build` or `yarn build`.
-	    -->
-a3a6e2e3d742bb71bb34f16bf7fb9f77|file:///home/jdv/js/reactDice/public/index.html|12|2|V|html
-		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-48e11b0aee0727e0b52db5cf0cb2fb57|file:///home/jdv/js/reactDice/src/App.js|11|48|V|javascript
-	let socket = new WebSocket("ws://localhost:8000");
-ec264998e7729f538548ea403ab5c0c6|file:///home/jdv/js/reactDice/src/App.js|12|1|V|javascript
-		console.log(`Socket information:\n`)
-		console.log(socket)
-8e8bd8e6c3032b9a39846bd6e86f553b|file:///home/jdv/js/reactDice/src/App.js|13|1|V|javascript
-		var socket = io();
-	
-		var form = document.getElementById('form');
-		var input = document.getElementById('input');
-	
-		form.addEventListener('submit', function(e) {
-		  e.preventDefault();
-		  if (input.value) {
-			socket.emit('chat message', input.value);
-			input.value = '';
-		  }
-		});
-7cc79bb8a13bd8a6d5e8ea28a4859291|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
-		var form = document.getElementById('form');
-		var input = document.getElementById('input');
-	
-230c7211ea7a1747d80123964ab1800b|file:///home/jdv/js/reactDice/src/App.js|15|1|V|javascript
-		var form = document.getElementById('form');
-		var input = document.getElementById('input');
-	
-		form.addEventListener('submit', function(e) {
-			e.preventDefault();
-			if (input.value) {
-				socket.emit('chat message', input.value);
-				input.value = '';
-			}
-		});
-a835c68262f808a69ae65dd2496aaf75|file:///home/jdv/js/reactDice/src/App.js|13|1|V|javascript
-		const socket = openSocket('http://localhost:8000');
-3b8130753913dd1a00cb37af32376555|file:///home/jdv/js/reactDice/src/Store.js|126|1|V|javascript
-	    sortDice: () => 
-	        set(state =>  {
-	            state.dice.sort((a, b) =>  a.val - b.val)
-	        }),
-10d0842d12683d27bb1fd376bdd3fd76|file:///home/jdv/js/reactDice/src/Store.js|49|2|v|javascript
-	sortDice
-fb601e84d2bcce28aa2c32d2c8434797|file:///home/jdv/js/reactDice/src/Store.js|48|9|V|javascript
-		socket: 
-8d93c5c43244607ff0d0e21a34a2b292|file:///home/jdv/js/reactDice/src/Store.js|49|1|V|javascript
-		getSocket: () => 
-			set(state =>  {
-				state.dice.sort((a, b) =>  a.val - b.val)
-			}),
-4f70674b7a4f0ed20282b06199b1f7c9|file:///home/jdv/js/reactDice/src/App.js|3|1|V|javascript
-	import openSocket from 'socket.io-client'; // npm i --save socket.io-client
-5b3723ea92941e230df2312572a60cd2|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|14|1|V|javascript
-			if (input.value) {
-				socket.emit('chat message', input.value);
-				input.value = '';
-			}
-bc04ccb8706c1f17c962714287a7a72b|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|7|1|V|javascript
-		const addMessageToHistory = UseStore(state => state.addMessageToHistory) 
-3cf461aef5f619ca7651f33efb9f170c|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
-		const latestMessage = UseStore(state => state.latestMessage)
-64c6d999a1a1ec945f6403103fe04e15|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|8|v|javascript
-	latestMessage
-c25e7f31f1bfd95652f6326aee9332b8|file:///home/jdv/js/reactDice/server/main.go|40|1|V|go
-	
-		server.OnError("/", func(s socketio.Conn, e error) {
-			fmt.Println("meet error:", e)
-		})
-36879b2d10ba75670a6394db7b29a6d6|file:///home/jdv/js/reactDice/server/main.go|41|1|V|go
-		server.OnError("/", func(s socketio.Conn, e error) {
-			fmt.Println("meet error:", e)
-		})
-	
-22d21aea2bd2cb6851d044f40af556ad|file:///home/jdv/js/reactDice/server/main.go|34|1|V|go
-		server.OnEvent("/", "bye", func(s socketio.Conn) string {
-			last := s.Context().(string)
-			s.Emit("bye", last)
-			s.Close()
-			return last
-		})
-9d233a1ddebd43618349a022c9d9b9d0|file:///home/jdv/js/reactDice/server/main.go|41|1|V|go
-		server.OnEvent("/", "chat message", func(s socketio.Conn) string {
-			last := s.Context().(string)
-			s.Emit("bye", last)
-			s.Close()
-			return last
-		})
-	
-b6533591522395806f5dcc7d70cc6789|file:///home/jdv/js/reactDice/server/main.go|29|1|V|go
-		server.OnEvent("/chat", "msg", func(s socketio.Conn, msg string) string {
-			s.SetContext(msg)
-			return "recv " + msg
-		})
-	
-f899165063f6d5f5fdd0d05dc5fe138e|file:///home/jdv/js/reactDice/server/main.go|35|19|V|go
-			s.SetContext(msg)
-52159af980f1391e0acb83c40ac86c85|file:///home/jdv/js/reactDice/server/asset/index.html|24|1|V|html
-	      var socket = io();
-	      // socket.emit('msg', 'hello');
-	      var s2 = io("/chat");
-	      socket.on('reply', function(msg){
-	        $('#messages').append($('<li>').text(msg));
-	      });
-	      $('form').submit(function(){
-	        s2.emit('msg', $('#m').val(), function(data){
-	          $('#messages').append($('<li>').text(data));
-	        });
-	        socket.emit('notice', $('#m').val());
-	        $('#m').val('');
-	        return false;
-	      });
-f8fed6e60ba3656ce69b8e95eb394f50|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|10|1|V|javascript
-		// var form = document.getElementById('form');
-		// var input = document.getElementById('chatInputBox');
-	
-		// form.addEventListener('submit', function(e) {
-			// e.preventDefault();
-			// if (input.value) {
-				// socket.emit('chat message', input.value);
-				// input.value = '';
-			// }
-		// });
-442aef26447a8174c98efb20250a93ab|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|10|1|^v|javascript
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-aee92d4f4a46d0ab5aeff76ea10b3d62|file:///home/jdv/js/reactDice/src/Store.js|49|1|V|javascript
-		socket: openSocket('http://localhost:8000'),
-52b1d357a664914d95860372794a6f35|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
-		const socket = UseStore(state => state.socket)
-79daba92cd19e7b8444da337cdec990a|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|80|1|V|scss
-			max-height: 200px;
-21bf18f2c70703b526ee23bab9672fd1|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|75|1|V|scss
-			grid-area: "tab-panel";
-f1e5d7a5fe13498abbdeb0f1f19136a8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|26|19|v|scss
-	panel
-940d4fc4143cc460dd6d2f453522eab6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|81|1|V|scss
-			// max-height: 200px;
-99a31ab8ab8648633762226222791cf0|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|83|19|V|scss
-			min-height: $chatHeight;
-ef09f011f2a5c59d4ea5b326eaa4aa1f|file:///home/jdv/js/reactDice/src/components/Timer/Timer.js|4|1|V|javascript
-				// <Time duration={30} delay={2000}/>
-70bb2287548997833aed92f8f881b502|file:///home/jdv/js/reactDice/src/sass/_map.scss|13|1|V|scss
-		max-height: 10em;
-894eb1d6cad7a233ce7d04cd63dcf03d|file:///home/jdv/js/reactDice/src/sass/_map.scss|13|17|V|scss
-		// max-height: 10em;
-5b92822e4c3345a5e777ae5faedfeaa1|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|23|1|V|scss
-	.react-tabs {
-		// -webkit-tap-highlight-color: transparent;
-	
-		&__tab-list {
-			grid-area: "tab-list";
-			background-color: colors.$Orange;
-	
-			border-bottom: 1px solid colors.$Light-Gray;
-			margin: 0 0 10px;
-			padding: 0;
-		}
-	
-		&__tab {
-			background-color: green;
-			display: inline-block;
-			border: 1px solid transparent;
-			border-bottom: none;
-			bottom: -1px;
-			position: relative;
-			list-style: none;
-			padding: 6px 12px;
-			cursor: pointer;
-			color: colors.$White;
-	
-			&--selected {
-				background: colors.$Purple;
-				border-color: colors.$Body-Background;
-				color: colors.$Body-Background;
-				border-radius: 5px 5px 0 0;
-			}
-	
-			&--disabled {
-				color: GrayText;
-				cursor: default;
-			}
-	
-			&:focus {
-				box-shadow: 0 0 5px colors.$Cyan;
-				border-color: colors.$Cyan;
-				outline: none;
-	
-				&:after {
-					content: "";
-					position: absolute;
-					height: 5px;
-					left: -4px;
-					right: -4px;
-					bottom: -5px;
-					background: colors.$White;
-				}
-			}
-		}
-	
-		&__tab-panel {
-			grid-area: "tab-panel";
-	
-			display: none;
-	
-			background-color: colors.$Yellow;
-			$chatHeight: 20em;
-			max-height: $chatHeight;
-			min-height: $chatHeight;
-			// -webkit-tap-highlight-color: transparent;
-	
-			&--selected {
-				// display: block;
-				display: flex;
-			}
-		}
-f6b3601c6feb06eabecde726164dc1a0|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|23|1|V|scss
-	.react-tabs {
-		// -webkit-tap-highlight-color: transparent;
-	
-		&__tab-list {
-			grid-area: "tab-list";
-			background-color: colors.$Orange;
-	
-			border-bottom: 1px solid colors.$Light-Gray;
-			margin: 0 0 10px;
-			padding: 0;
-		}
-	
-		&__tab {
-			background-color: green;
-			display: inline-block;
-			border: 1px solid transparent;
-			border-bottom: none;
-			bottom: -1px;
-			position: relative;
-			list-style: none;
-			padding: 6px 12px;
-			cursor: pointer;
-			color: colors.$White;
-	
-			&--selected {
-				background: colors.$Purple;
-				border-color: colors.$Body-Background;
-				color: colors.$Body-Background;
-				border-radius: 5px 5px 0 0;
-			}
-	
-			&--disabled {
-				color: GrayText;
-				cursor: default;
-			}
-	
-			&:focus {
-				box-shadow: 0 0 5px colors.$Cyan;
-				border-color: colors.$Cyan;
-				outline: none;
-	
-				&:after {
-					content: "";
-					position: absolute;
-					height: 5px;
-					left: -4px;
-					right: -4px;
-					bottom: -5px;
-					background: colors.$White;
-				}
-			}
-		}
-	
-		&__tab-panel {
-			grid-area: "tab-panel";
-	
-			display: none;
-	
-			background-color: colors.$Yellow;
-			$chatHeight: 20em;
-			max-height: $chatHeight;
-			min-height: $chatHeight;
-			// -webkit-tap-highlight-color: transparent;
-	
-			&--selected {
-				// display: block;
-				display: flex;
-			}
-		}
-	}
-67aa6ad8a0ff0192f8cccd8dd8eab19a|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|6|1|V|scss
-		grid-area: tabbox;
-	
-	    display: grid;
-	    grid-template-columns:  1fr;
-	    grid-template-rows: 1fr 1fr;
-	    grid-auto-flow: row;
-	    grid-template-areas:
-	        "tab-list"
-	        "tab-panel";
-	
-	    column-gap: 1%;
-	    row-gap: 1%;
-	
-		background-color: colors.$Red;
-		max-height: 20vh;
-ae97c411eee624d190ee8a8d8cb284c7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|5|5|V|scss
-	#tabs-grid-container {
-cacc459020f831c7faec1705cbd45249|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|27|1|^v|scss
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-6262f2cd02f1b381f13300754b83b864|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|74|1|V|scss
-		&__tab-panel {
-			grid-area: "tab-panel";
-	
-			display: none;
-	
-			opacity: 20%;
-			background-color: colors.$Yellow;
-			$chatHeight: 20em;
-			max-height: $chatHeight;
-			min-height: $chatHeight;
-			// -webkit-tap-highlight-color: transparent;
-	
-			&--selected {
-				// display: block;
-				display: flex;
-			}
-		}
-2455125d6d28fc5fe5f854275a733862|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|25|V|scss
-			background-color: green;
-9f27410725ab8cc8854a2769c7a516b8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|21|v|scss
-	green
-ac101b32dda4448cf13a93fe283dddd8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|29|v|scss
-	Body
-87f8a6ab85c9ced3702b4ea641ad4bb5|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|52|29|v|scss
-	Medium
-d274a701511a163ec1b780b401f3fcf4|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|65|26|v|scss
-	Body-Background
-a9df07a59924474cceb6f542136609da|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|65|1|V|scss
-				border-color: colors.$White;
-				color: colors.$Body-Background;
-				border-radius: 5px 5px 0 0;
-97d2e881429431845817b16eec73c765|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|63|2|V|scss
-			color: colors.$Body-Background;
-334c4a4c42fdb79d7ebc3e73b517e6f8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|27|12|v|scss
-	none
-16bb14d968a238c6d9c84a1e64901aca|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|6|2|v|scss
-	react-tabs
-897a779351421523cadbafccdce22efe|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|27|12|v|scss
-	flex
-111e9cd6f4830ca483a4ff494d8bbfb7|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|7|39|v|javascript
-	tabs-grid
-5db8dca30c2d7f0c2bc225ae852c5053|file:///home/jdv/js/reactDice/src/components/Tabs/TabComponent.js|7|45|v|javascript
-	tabs
-0a89a44e057df060ea29ee810dbaba97|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|80|15|v|scss
-	200px
-e0bf74e27dca56f6e02672bc4957d0b7|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|14|V|scss
-		max-height: ;
-5803d77e7ffc1369b86a3f77013fae0b|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|28|V|scss
-		background-color: colors.$Red;
-105d84bfae4c8b58fcafc9d1449f66e8|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|77|12|V|scss
-			display: none;
-50666f8280438958ce87e8509a5bcd73|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|24|17|V|scss
-		max-height: 50%;
-167592f0674a70c45a0ec71fb2247c71|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|47|30|V|scss
-				border-color: colors.$White;
-6eb956e5bbcfb65f67c635cc8b0a24bb|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|49|3|V|scss
-				border-radius: 5px 5px 0 0;
-25a81701fbfa4a1efdf660a950c1d006|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|44|25|v|scss
-	White
-8db513d186acfba0159626d23a8fd015|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|79|14|V|scss
-			opacity: 40%;
-d4e00ed8c1e130c08557f72f3f1e33a6|file:///home/jdv/js/reactDice/src/sass/_tabs.scss|19|17|V|scss
-		// background-color: colors.$Grid-Container-Background;
-7443b1586cc85feaaf22815426508111|file:///home/jdv/js/reactDice/src/sass/_timer.scss|15|1|V|scss
-	    background-color: colors.$Purple;
-19085405564140c70808099f11cfaa60|file:///home/jdv/js/reactDice/src/sass/_timer.scss|17|1|V|scss
-	
-	.countdown-timer-container {
-	    display: flex;
-	    margin: auto;
-	    background-color: colors.$Purple;
-	}
-53e62e359d40e0cec0565bf3e5f74d26|file:///home/jdv/js/reactDice/src/sass/_timer.scss|14|1|V|scss
-	    // background-color: colors.$Background;
-cb32674f9f9c763bbebc1c83fd486d23|file:///home/jdv/js/reactDice/src/sass/_map.scss|38|1|V|scss
-		@keyframes pulse {
-			0%, 100% {
-				box-shadow: 0 80%px 2px rgba(colors.$White, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			8% {
-				box-shadow: 0 80%px 2px rgba(colors.$Red, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			16% {
-				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			24% {
-				box-shadow: 0 80%px 2px rgba(colors.$Orange, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			32% {
-				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			40% {
-				box-shadow: 0 80%px 2px rgba(colors.$Yellow, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			48% {
-				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			56% {
-				box-shadow: 0 80%px 2px rgba(colors.$Green, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			64% {
-				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			72% {
-				box-shadow: 0 80%px 2px rgba(colors.$Blue, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			80% {
-				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			88% {
-				box-shadow: 0 80%px 2px rgba(colors.$Purple, 80%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-			96% {
-				box-shadow: 0 80%px 0px rgba(black, 10%), 0 6px 20px 0 rgba(black, 20%); /* hoffset voffset blur spread color */
-			}
-		}
-515e7ad8e041d162d8433d000a0f34a5|file:///home/jdv/js/reactDice/src/sass/_map.scss|35|1|V|scss
-			// animation: pulse 60s ease-in-out 0s infinite;
-b7e534bb5fe6356ff56c7ccdcd07fe11|file:///home/jdv/js/reactDice/src/sass/_map.scss|21|1|V|scss
-				margin-top: auto;
-5647ddb7ac66880717a930455e75be37|file:///home/jdv/js/reactDice/src/sass/_map.scss|16|1|V|scss
-			display: flex;
-4b63e495e0a3e9a1a2441fd8d07598f3|file:///home/jdv/js/reactDice/src/sass/_map.scss|38|12|V|scss
-			padding: 6px;
-e6cded5d049ac8706bd164613b622d53|file:///home/jdv/js/reactDice/src/sass/_map.scss|17|2|V|scss
-			background-color: blue;
-eaae26a6fb20ed3ef54fb23bfa0b1fcc|file:///home/jdv/js/reactDice/src/sass/_map.scss|30|7|v|scss
-	width
-4a251318f476fb8cd908bb2b10748dfb|file:///home/jdv/js/reactDice/src/sass/_map.scss|1|1|V|scss
-			margin: auto;
-bfc27cae5aff0e236a639aaea0556404|file:///home/jdv/js/reactDice/src/sass/_map.scss|34|1|V|scss
-			margin-top: 1fr;
-ea7156050a6d1023b33d8d29f46dd8ef|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
-	lighten
-e20f352f07dfbda67b934760a1aeac82|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
-	darken
-d90ba124b24dbeb1abbe2884027171ff|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
-	color.
-ea5e8865a573dc5a3b2f9682bb3d9525|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|21|v|scss
-	change(
-e0d047111b9ff9dd1ce8544fb9b7fa1b|file:///home/jdv/js/reactDice/src/sass/_map.scss|32|32|v|scss
-	, $blackness: 25%)
-8b56cdf48109ed4cb5b930aa8b310936|file:///home/jdv/js/reactDice/src/sass/_map.scss|1|1|V|scss
-			background-color: colors.$Red;
-d7283436a2e57e0192bc0ff1a21cea34|file:///home/jdv/js/reactDice/src/sass/_map.scss|1|1|V|scss
-			border-color: black;
-ff2364a0be3d20e46cc69efb36afe9a5|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|11|19|v|scss
-	space
-adb115059e28d960fa8badfac5516667|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|12|15|v|scss
-	center
-36f7bf45d87eefac69ade303e73a8fb8|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|11|19|v|scss
-	space-evenly
-ec6ec1998fc5b85039741f62688f0fb0|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|17|V|scss
-		margin-left: 1%;
-04fec5cdd7efb3af46b9f5eba66f182e|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
-			margin-left: 2%;
-811882fecd5c7618d7099ebbd39ea254|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|21|10|v|scss
-	left
-f94e3061a8c0e261295dbfe07e0b0687|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|1|V|scss
-		padding-left: 2%;
-c394bb3135c8d4531153dd854e3658da|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|14|9|V|scss
-		padding%;
-174d557cdec066535e2fd68d32e8cd04|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|20|1|V|scss
-			margin-left: 1%;
-			margin-right: 1%;
-078ec2cfd9e5d9e7de2f4ff36af0a34c|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|18|1|V|scss
-			height: 5em;
-			width: auto;
-69eece78976588b4b27c8308e65bd991|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|36|1|V|scss
-			@keyframes grow-glow {
-				0% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
-				100% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
-			}
-	
-51e6cd92b6c45f9affdc158ecca2b8b8|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|38|48|v|scss
-	Yellow
-e7ae380e4d4de361414f0d3381ad033c|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|30|1|V|scss
-				animation-name: hover-glow;
-				animation-duration: 0.5s;
-				animation-timing-function: ease-out;
-				animation-fill-mode: forwards;
-e0542f579df8e8138ade69f8f5310bf2|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|54|19|v|scss
-	hover
-d442ba67bc0e302715a7620c79ec3931|file:///home/jdv/js/reactDice/src/components/Map/Image.js|1|39|V|javascript
-	import Zoom from 'react-medium-image-zoom'
-b80f8645ade59ffc779c0bc125f7a0f6|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|21|V|javascript
-				{/* 			<Zoom overlayBgColorEnd='rgba(255,255,255, 0)' zoomMargin={80} > */}
-2d5baee0b47509b2a5d8f70a6d6babde|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|8|V|javascript
-				{/* 			</Zoom> */}
-19d9c601e4762e2cedb40986145cc459|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|4|^v|javascript
-		
-		
-		
-		
-		
-		
-fb0acfc11e600d591ffbe065f7a19963|file:///home/jdv/js/reactDice/src/components/Map/Image.js|21|1|V|javascript
-				  </div>
-877e569db07520884c36df5183375780|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|25|v|javascript
-	My Name is John
-176c88215c5a67ff55136286b9a67fc8|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|29|v|javascript
-	map-zoom-overlay
-380e537acdaedd487ca1adb49d020f7e|file:///home/jdv/js/reactDice/src/sass/_map.scss|26|4|v|scss
-	overlay
-dc4d53aa0d117d8b189b36d161af4e96|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|14|v|scss
-	absolute
-cec315e3d0975e5cc2811d5d8725f149|file:///home/jdv/js/reactDice/src/sass/_map.scss|27|14|v|scss
-	fixed
-f70a7cfc85ea81c91b71bd2ce56cc96a|file:///home/jdv/js/reactDice/src/sass/_map.scss|28|14|V|scss
-				bottom: 15;
-a5936edbdeeaed1b75c52311d9f52611|file:///home/jdv/js/reactDice/src/sass/_map.scss|29|1|V|scss
-				left: 50px;
-0048edbb481c59c6cfd3734af16a3556|file:///home/jdv/js/reactDice/src/sass/_map.scss|43|3|v|scss
-	#map-image-container
-58bb7ffa9db653dbd0fd7024df6d43eb|file:///home/jdv/js/reactDice/src/sass/_map.scss|26|3|v|scss
-	#map-zoom-overlay
-61636574b06c856920e9157221a0763a|file:///home/jdv/js/reactDice/src/components/Map/Image.js|15|25|v|javascript
-	id="map-zoom-overlay"
-15f29a76fe2f64c60520b5e5cc00a5ac|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|19|v|javascript
-	map-image-container
-886c3dafc3c19725697583afe33e9abb|file:///home/jdv/js/reactDice/src/components/Map/Image.js|8|39|v|javascript
-	 id='map-image-container'
-3b3307d53679043e7decfe414fd425bb|file:///home/jdv/js/reactDice/src/sass/_map.scss|43|1|V|scss
-			.map-image-container:hover .overlay {
-				opacity: 1;
-			}
-072c4dfc494910ade8b1f97c9a20c787|file:///home/jdv/js/reactDice/src/sass/_map.scss|24|1|V|scss
-	
-			/* The overlay effect - lays on top of the container and over the image */
-			.overlay {
-				position: absolute;
-				left: 22%;
-				top: 73%;
-				background: rgb(0, 0, 0);
-				background: rgba(0, 0, 0, 0.5); /* Black see-through */
-				color: #f1f1f1;
-				width: 49%;
-				transition: .5s ease;
-				opacity:0.2;
-				color: white;
-				font-size: 20px;
-				padding: 20px;
-				text-align: center;
-			}
-	
-			/* When you mouse over the container, fade in the overlay title */
-5a62f48b53c1cc089b01ea8880d417fe|file:///home/jdv/js/reactDice/src/sass/_map.scss|26|1|^v|scss
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-bb3dcbe3837a011a140919bd4e04f9aa|file:///home/jdv/js/reactDice/src/sass/_map.scss|28|1|V|scss
-			position: absolute;
-			left: 22%;
-			top: 73%;
-9df22f196a33acd0b372fe502de51211|file:///home/jdv/js/reactDice/src/sass/_map.scss|21|16|v|scss
-	auto
-7364adbdf5e4dc7086762918c9d3e613|file:///home/jdv/js/reactDice/src/sass/_map.scss|29|15|V|scss
-			background: rgb(0, 0, 0);
-fe04fe652005be163bebf9e86e182818|file:///home/jdv/js/reactDice/src/sass/_map.scss|33|1|V|scss
-			margin: auto;
-			margin-top: ;
-f0edd0d3a882c802cd622617cdba0157|file:///home/jdv/js/reactDice/src/sass/_map.scss|33|19|V|scss
-			background: rgba(0, 0, 0, 0.5); /* Black see-through */
-fc021d54683383e5078ab9fefc4d53c8|file:///home/jdv/js/reactDice/src/sass/_map.scss|48|10|v|scss
-	radius
-a4b42cb4283184af700cabf2ad982b93|file:///home/jdv/js/reactDice/src/sass/_map.scss|49|20|V|scss
-			text-shadow: 0 0 8px #000000;
-d1b2c5b2d1c85df8153b9c01ce573f57|file:///home/jdv/js/reactDice/src/sass/_map.scss|48|19|V|scss
-			border-width: 5px;
-ed04ac9b03cbd0fbb57eca91007a4de5|file:///home/jdv/js/reactDice/src/sass/_map.scss|37|15|V|scss
-			color: white;
-83bbe38b268441a3fca89ccc80e69ad2|file:///home/jdv/js/reactDice/src/sass/_map.scss|41|1|V|scss
-			-webkit-text-stroke-width: 3px;
-41159ce7c4713eb9f12ec4ea894a9595|file:///home/jdv/js/reactDice/src/sass/_map.scss|48|31|V|scss
-			text-shadow: 2px 2px 2px #000000;
-e3138dd57f443388115aafc9fa6dce1c|file:///home/jdv/js/reactDice/src/sass/_map.scss|22|1|V|scss
-				max-height: 50%;
-32c0de9cbab0166cfebffcf3004fcc4b|file:///home/jdv/js/reactDice/src/sass/_map.scss|22|21|V|scss
-				margin-top: auto;
-				margin-bottom: auto;
-224f1b4e5ce35efdb6bd020a357230b9|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|15|1|V|scss
-	
-		$default-opacity: 100%;
-		.unheld {
-			height: 5em;
-			width: auto;
-			margin-left: 1%;
-			margin-right: 1%;
-			opacity: $default-opacity;
-			animation-name: shrink-glow;
-			animation-duration: 0.5s;
-			animation-timing-function: ease-in;
-			animation-fill-mode: forwards;
-		}
-	
-			.unheld:hover {
-				animation-name: hover-glow;
-				animation-duration: 0.5s;
-				animation-timing-function: ease-out;
-				animation-fill-mode: forwards;
-			}
-	
-			@keyframes hover-glow {
-				0% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
-				100% {box-shadow: 0 0 10px 5px rgba(colors.$Green, 0.8); /* hoffset voffset blur spread color */}
-			}
-	
-			@keyframes grow-glow {
-				0% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.5); /* hoffset voffset blur spread color */}
-				100% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.8); /* hoffset voffset blur spread color */}
-			}
-	
-			@keyframes shrink-glow {
-				0% {box-shadow: 0 0 10px 5px rgba(colors.$Green, 0.8); /* hoffset voffset blur spread color */}
-				100% {box-shadow: 0 0 10px 5px rgba(colors.$Yellow, 0.2); /* hoffset voffset blur spread color */}
-			}
-	
-		.held {
-			opacity: $default-opacity;
-			transition: 0.1s;
-			animation-name: grow-glow;
-			animation-duration: 0.5s;
-			animation-timing-function: ease-out;
-			animation-fill-mode: forwards;
-	
-			height: 5em;
-			width: auto;
-			margin-left: 1%;
-			margin-right: 1%;
-		}
-	
-		.saved {
-			opacity: 100%;
-		}
-	
-1487bfdbff6981cb610a29a19f75d42d|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|17|1|^v|scss
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-	
-		
-		
-		
-		
-	
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-	
-		
-		
-		
-3162ad2bdc832b7a4cb9f38a4f9455aa|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|22|1|V|scss
-		margin-top: 1%;
-3b4da4576b3a509cfe22ad3dca24cfc9|file:///home/jdv/js/reactDice/src/sass/_dicetray.scss|25|2|v|scss
-	animation-duration
-d2c8ddb957be6c2853a9e7462780c625|file:///home/jdv/js/reactDice/package.json|23|1|V|json
-			"start": "concurrently \"clear && echo 'Starting React Dev Server and watching Sass'\" \"npm run watch-sass\" \"react-scripts start\"",
-7a0b4be5325a98c61c407bef16b74293|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	concurrently
-8e876bf5526a072d5e8f646c3295cefc|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 \"clear
-0172f2bb81318b143f95516431cc2045|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 echo
-3c5a35f21a4f39bb2249349a59bae8dd|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 'Starting
-468f655b5612243fa903a071ec2cc7b0|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 React
-2e655959910325f7670037ea68e0c248|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 Dev
-2956a84f99681d49778add10db1c9c20|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 Server
-74c04431683b26b598564ea06fcf16c3|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 and
-2a0f7cfd645b2f5c13915876b83f5228|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 watching
-76f578a77a1a172781a22cc010cd4b08|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 Sass'\"
 85f9a9df6853f7e9b44dc58f862121d8|file:///home/jdv/js/reactDice/package.json|23|13|v|json
 	 \"npm
 5485dddbce3115a704d7e5160b63bf7e|file:///home/jdv/js/reactDice/package.json|23|13|v|json
@@ -2261,3 +1151,753 @@ c7136f91c65adb1d534ebb64a954aaf8|file:///home/jdv/github.com/jdvober/dotfiles/.c
 	Toggle comments
 6a85a673032024317dbf991b9f4fa555|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|185|1|V|vim
 	nnoremap ? :%s/
+5db7268e9acb09ecb0e46e32a71d45f5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|95|1|V|vim
+	" Left Square Bracket
+	inoremap <silent> <C-i> []<C-o>i
+	nnoremap <silent> <C-i> [
+	vnoremap <silent> <C-i> [
+	
+e96d8afc259593a20838480dfb84400b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|197|1|v|vim
+	endif
+859c82c8b243176bd022e1d91f88c2a4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|151|1|V|vim
+		  \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
+cfda52fc1cbf7a4f0b9c7823d1e59b60|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|1|10|v|javascript
+	registerOnMessageCallback
+7785aef01f6a3a7d8cbc873376aeef8f|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|1|14|v|javascript
+	 startWebsocketConnection
+3fd51a6cb20a04c62a8282b46e6837b4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|19|1|V|javascript
+		const diceTheme = UIStore(state => state.diceTheme[1])
+14b27b3db8a2933091b5d5e38205c4ab|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|2|1|V|javascript
+	import DiceStore from '../../stores/DiceStore'
+80a1652ce8855605373132ac3c34fb6c|file:///home/jdv/js/reactDice/src/components/Map/SavedDie.js|2|1|V|javascript
+	import DiceStore from '../../DiceStore'
+02f37874ec63ffb69d5fe98a85594480|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|3|22|v|javascript
+	../../stores/UIStore
+566f03ab4d6c06f4eb15d49c8c698f34|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|5|1|V|javascript
+	const GamestateStore = create(set => ({
+19437dbc3c109439ac3bbc3638a9ba65|file:///home/jdv/js/reactDice/src/stores/UIStore.js|4|1|V|javascript
+	const UIStore = create({
+41c825f2a240023f7619d071b6cf0ba9|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|22|1|V|javascript
+	}));
+446f9f7bc089fffd63aef27c23ebdf0f|file:///home/jdv/js/reactDice/src/websocket.js|10|1|V|javascript
+		const ws = new window.WebSocket(`ws://${host}/chat` || {})
+93f613f2b9f105605c3a251bd9666212|file:///home/jdv/js/reactDice/src/websocket.js|2|1|V|javascript
+	const host = process.env.NODE_ENV === 'production' ? window.location.host : 'localhost:8080'
+0d7fab254ed4891b0497915333e8e059|file:///home/jdv/js/reactDice/src/websocket.js|3|14|v|javascript
+	process.env.NODE_ENV === 
+9af6ee24cbe1ad7be9d0fa1baa9e0639|file:///home/jdv/js/reactDice/src/websocket.js|3|14|v|javascript
+	'production
+f311c827e64502575f1044bb3771d4c4|file:///home/jdv/js/reactDice/src/websocket.js|3|14|v|javascript
+	' ? window.location.host : 
+605895aa396d96e67bfb5c244807afa3|file:///home/jdv/js/reactDice/src/websocket.js|12|24|V|javascript
+		const ws = new window.WebSocket(`ws://10.34.70.49/chat` || {})
+64851825fe821c0fa14429c1f779a175|file:///home/jdv/js/reactDice/src/websocket.js|12|66|V|javascript
+		console.log(`Attempting Websocket connection on ws://${host}/chat`);
+cd1f99543f0462caabf9b2c6929cbd19|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|32|1|V|javascript
+						uuid: uuid()
+ef7c876f00f3acddd00fa671f52d0b1f|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|33|6|v|javascript
+	uuid
+5e58270e4ca58e61eb9e98edee57d6ac|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|21|1|V|javascript
+				key: uuid(),
+93d89534969f72ecc30ad17887ebcf5e|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|27|1|V|javascript
+				key: 1,
+45063b1a564922260665e647ba473bdd|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|33|1|V|javascript
+				key: 2,
+05d6c2fb3454e8532331ff2ae282a3cb|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|39|1|V|javascript
+				key: 3,
+57d3347405b07b595855ff790c27f1e3|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|45|1|V|javascript
+				key: 4,
+fc6b04dd39d1113a6c481b5c947dc1bc|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|51|1|V|javascript
+				key: 5,
+6b9b76c6d4abe5ae9e5a3946def525b2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|57|1|V|javascript
+				key: 6,
+93177a4ae7cb5a378f796adc1cc4beff|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|63|1|V|javascript
+				key: 7,
+00c4438ecfc01bf7dbb5f639ed6fe6c3|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|24|37|^v|javascript
+	id={val.key} key={val.key} value={val.data}
+bb0cac9916d904ce439e1d50644e5b23|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|19|1|V|vim
+	  highlight = {
+	    enable = true,
+	  },
+225ca516bcba9d4242e8992bd79f0c25|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|46|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
+257db93ae143b58f13aee4afffe61104|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|19|1|V|javascript
+				id: 0,
+7c56353d7c8fc31ea3f8e73292ecd8d2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|29|1|V|javascript
+				id: 2,
+feda3794769a339d15b10fc8eb68897e|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|34|1|V|javascript
+				id: 3,
+c893cb47317a465004b6ef723e4e1803|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|39|1|V|javascript
+				id: 4,
+ed46fa74eaf24694914b55de1635d8c2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|44|1|V|javascript
+				id: 5,
+fd86ec0f457dff38c2b0b354a5536c71|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|49|1|V|javascript
+				id: 6,
+8add93a995992d9e94ec6aaf384fd0a0|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|54|1|V|javascript
+				id: 7,
+6ae2571db0bbce50abe1420134b060dc|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|24|64|V|javascript
+				<Message id={index} key={index} value={message.data} className='chat-message'  />
+3a1c66ad0f0ef51c2dd42341bf5076a7|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|19|1|V|javascript
+				key: 0,
+e29d3a846c96466bdaf945fcafbf42a7|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|20|14|V|javascript
+				id: uuid(),
+e32de3eba6513ecb84e0de5c2ffc9d21|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|47|4|V|javascript
+				key: ,
+c2c61007856077badb869343ccc358f2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|19|9|v|javascript
+	uuid()
+818682943af87aebb6afed3ea7d6b179|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|21|21|V|javascript
+				// <Message id={index} key={index} value={message.data} className='chat-message'  />
+9fc9e61f22caafaad541b748c541e6d0|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|25|56|V|javascript
+				<div key={message.id} className='chat-message'>{message.data}</div>
+d89b0cf748226596e2295f9fac6c1415|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|18|1|V|javascript
+			{
+				id: uuid(),
+				data: `Welcome to the Dice Game.For help, type /help in chat.`
+			}
+8f375db0c80ade5bfe12bdb27d6a414d|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|24|11|v|javascript
+	Welcome to the Dice Game.
+b13ed0240c58097347a6a55dbf246ad7|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|20|36|v|javascript
+	For help, type /help in chat.
+173e3380255ef30a4179dad3eeb8d44a|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|42|1|V|javascript
+				// updateLatestMessage(text)
+				// addLatestMessageToHistory()
+14c408bb11c8583ffec7acc9b8367009|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|15|1|V|javascript
+		const updateLatestMessage = ChatStore(state => state.updateLatestMessage)
+		const addLatestMessageToHistory = ChatStore(state => state.addLatestMessageToHistory) 
+685c39f4e65df13f2fa1ced6394b152b|file:///home/jdv/js/reactDice/server/main.go|1|1|V|go
+	package main
+	
+	import (
+		"fmt"
+		"log"
+		"net/http"
+	)
+	
+	func main() {
+	}
+549c5b693a5065265e9ccbe753bcdd17|file:///home/jdv/js/reactDice/server/main.go|1|1|V|go
+	func main() {
+	   go h.run()
+	
+	   router := gin.New()
+	   router.LoadHTMLFiles("index.html")
+	
+	   router.GET("/room/:roomId", func(c *gin.Context) {
+	      c.HTML(200, "index.html", nil)
+	   })
+	
+	   router.GET("/ws/:roomId", func(c *gin.Context) {
+	      roomId := c.Param("roomId")
+	      serveWs(c.Writer, c.Request, roomId)
+	   })   router.Run("0.0.0.0:8080")
+	}
+dba5d91846ce1a5e63734dfcbcb481cb|file:///home/jdv/js/reactDice/server/main.go|14|17|v|go
+	articles
+a07a95a9bff02cf48484246076a7b0fa|file:///home/jdv/js/reactDice/server/main.go|14|1|V|go
+		r.HandleFunc("/login", LoginHandler)
+eb7a9267a3ffea285aa797264efc2ce8|file:///home/jdv/js/reactDice/server/main.go|3|1|V|go
+	import (
+		"github.com/gorilla/mux"
+	)
+d10c978d8dc3d5c560135c02cb1bc0ad|file:///home/jdv/js/reactDice/server/homeHandler.go|11|21|V|go
+	    fmt.Fprintf(w, "tegory: %v\n", vars["category"])
+27118326006d3829667a400ad23d5d98|file:///home/jdv/js/reactDice/server/homeHandler.go|13|14|v|go
+	String
+fad58de7366495db4650cfefac2fcd61|file:///home/jdv/js/reactDice/server/main.go|1|9|v|go
+	main
+cf1e8c14e54505f60aa10ceb8d5d8ab3|file:///home/jdv/js/reactDice/server/homeHandler.go|1|9|v|go
+	server
+b4c259f9e82e47e0f4bb145116998319|file:///home/jdv/js/reactDice/server/homeHandler.go|1|1|V|go
+	package server
+	
+	import (
+		"fmt"
+		"github.com/gorilla/mux"
+		"net/http"
+	)
+	
+	// HomeHandler server the homepage to the site
+	func HomeHandler(w http.ResponseWriter, r *http.Request) {
+		vars := mux.Vars(r)
+		w.WriteHeader(http.StatusOK)
+		fmt.Println("Home Page")
+		fmt.Printf("Vars: %q\n", vars)
+	}
+e0e96984ad1a23d37abb397f2efec601|file:///home/jdv/js/reactDice/server/signupHandler.go|1|1|V|go
+	package server
+bf5e5f4b50d86cb76d6adb5f892de938|file:///home/jdv/js/reactDice/server/loginHandler.go|9|4|v|go
+	HomeHandler
+ba3988db0a3167093b1f74e8ae4a8e83|file:///home/jdv/js/reactDice/server/signupHandler.go|9|29|v|go
+	homepage
+72bb0f7b5fab56a8c522c56a7731e296|file:///home/jdv/js/reactDice/server/homeHandler.go|1|1|V|go
+	package server
+	
+	import (
+		"fmt"
+		"github.com/gorilla/mux"
+		"net/http"
+	)
+	
+	// HomeHandler serves the homepage to the site
+	func HomeHandler(w http.ResponseWriter, r *http.Request) {
+		vars := mux.Vars(r)
+		w.WriteHeader(http.StatusOK)
+		fmt.Println("Home Page")
+		fmt.Printf("Vars: %q\n", vars)
+	}
+99896d79427ccfe443612d3638b72a3d|file:///home/jdv/js/reactDice/server/server.go|15|1|V|go
+		r.HandleFunc("/diceGame/{gameID}", DiceGameHandler)
+f32ceb402c2e60536c5f2ba6e84099da|file:///home/jdv/js/reactDice/server/server.go|14|1|V|go
+	http.HandleFunc("/", serveHome)
+50cdb2abfac61e931efb69d46708d8e0|file:///home/jdv/js/reactDice/server/server.go|14|1|V|go
+		var addr = flag.String("addr", ":8080", "http service address")
+5a2f2f60d54c334324bc3eb64d713a44|file:///home/jdv/js/reactDice/server/server.go|16|1|V|go
+		flag.Parse()
+		hub := newHub()
+		go hub.run()
+		http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
+			serveWs(hub, w, r)
+		})
+		err := http.ListenAndServe(*addr, nil)
+		if err != nil {
+			log.Fatal("ListenAndServe: ", err)
+		}
+	
+c8892998761e4c643f537b0e4311eb08|file:///home/jdv/js/reactDice/server/server.go|10|1|V|go
+	var addr = flag.String("addr", ":8080", "http service address")
+75e102bcb0f2e12c2c36d9dfab5d93ef|file:///home/jdv/js/reactDice/server/conn.go|31|1|V|go
+		// readPump pumps the message from socket to hub
+61f2529360aec54f5dc9804b842cf3fa|file:///home/jdv/js/reactDice/server/conn.go|30|38|v|go
+	socket
+d18fb19d12d28417fcd4ff5961b6c8d7|file:///home/jdv/js/reactDice/server/hub.go|1|1|V|go
+	package server
+	
+	import ()
+	
+	type hub struct {
+		rooms      map[string]map[*connection]bool
+		broadcast  chan message
+		register   chan subscription
+		unregister chan subscription
+	}
+	
+	type subscription struct {
+		conn *connection
+		room string
+	}
+	
+	type subscription struct {
+		conn *connection
+		room string
+	}
+	
+	func (h *hub) run() {
+		for {
+			select {
+			case s := <-h.register:
+				connections := h.rooms[s.room]
+				if connections == nil {
+					connections = make(map[*connection]bool)
+					h.rooms[s.room] = connections
+				}
+				h.rooms[s.room][s.conn] = true
+			case s := <-h.unregister:
+				connections := h.rooms[s.room]
+				if connections != nil {
+					if _, ok := connections[s.conn]; ok {
+						delete(connections, s.conn)
+						close(s.conn.send)
+						if len(connections) == 0 {
+							delete(h.rooms, s.room)
+						}
+					}
+				}
+			case m := <-h.broadcast:
+				connections := h.rooms[m.room]
+				for c := range connections {
+					select {
+					case c.send <- m.data:
+					default:
+						close(c.send)
+						delete(connections, c)
+						if len(connections) == 0 {
+							delete(h.rooms, m.room)
+						}
+					}
+				}
+			}
+		}
+	}
+7c8f3fe845a396b684e26131a03c7925|file:///home/jdv/js/reactDice/server/server.go|10|1|V|go
+		// Startup a new router with gorilla/mux
+		r := mux.NewRouter()
+367e081fad28fc032eea8738317608ca|file:///home/jdv/js/reactDice/server/server.go|6|1|V|go
+		"github.com/gorilla/mux"
+bced2bd84571221bbe59d0f683cf6d92|file:///home/jdv/js/reactDice/server/server.go|13|1|V|go
+	
+		// If using gorilla/mux
+	
+		// // Register three routes mapping URL paths to handlers.  If the incoming path matches one of the ones listed below, the corresponding handler is called.
+		// r.HandleFunc("/", HomeHandler)
+		// r.HandleFunc("/signup", SignupHandler)
+		// r.HandleFunc("/login", LoginHandler)
+		// r.HandleFunc("/diceGame", DiceGameHandler) // For testing TODO
+		// r.HandleFunc("/diceGame/{gameID}", DiceGameHandler)
+		//
+		// http.Handle("/", r)
+	
+c3ac34e03118756d8e5b3601c1be7cd3|file:///home/jdv/js/reactDice/server/server.go|9|1|V|go
+		// // Startup a new router with gorilla/mux
+		// r := mux.NewRouter()
+d15f91259ee0e8e413f3252cc8e4bdf7|file:///home/jdv/js/reactDice/server/server.go|11|1|V|go
+		// If using gin instead of gorilla/mux
+3abc5d6796746643456798d4c8b8a66d|file:///home/jdv/js/reactDice/server/server.go|35|1|V|go
+		// If using gorilla/mux
+	
+		// // Startup a new router with gorilla/mux
+		// r := mux.NewRouter()
+	
+		// // Register three routes mapping URL paths to handlers.  If the incoming path matches one of the ones listed below, the corresponding handler is called.
+		// r.HandleFunc("/", HomeHandler)
+		// r.HandleFunc("/signup", SignupHandler)
+		// r.HandleFunc("/login", LoginHandler)
+		// r.HandleFunc("/diceGame", DiceGameHandler) // For testing TODO
+		// r.HandleFunc("/diceGame/{gameID}", DiceGameHandler)
+		//
+		// http.Handle("/", r)
+f46ac65714009feff0ba82f76964dc91|file:///home/jdv/js/reactDice/server/server.go|4|1|V|go
+		// "github.com/gorilla/mux"
+cc9831b8239971fb17683afd5a92e373|file:///home/jdv/js/reactDice/server/hub.go|58|21|v|go
+	rooms
+b605ea609b9dfcf295cfd5a7803dcd37|file:///home/jdv/js/reactDice/server/hub.go|57|17|v|go
+	broadcast
+2d5b4ceaa257864b8e8d83279471e889|file:///home/jdv/js/reactDice/server/conn.go|54|27|v|go
+	pingPeriod
+0884a10c3c9e39bc8ebaf89821a851fa|file:///home/jdv/js/reactDice/server/conn.go|31|17|v|go
+	time.ParseDuration("60s")
+	
+bb34122ceb1c571d346ab7007517ec03|file:///home/jdv/js/reactDice/server/conn.go|55|1|V|go
+		pingPeriod, _ := time.ParseDuration("60s")
+70d427255bb493aed6a9227a8dc77e7f|file:///home/jdv/js/reactDice/server/hub.go|3|1|V|go
+	type message struct {
+		data []byte
+		room string
+	}
+	
+	type subscription struct {
+		conn *connection
+		room string
+	}
+	
+	// Hub maintains the set of active connections and broadcasts messages to the
+	// connections.
+	type Hub struct {
+		// Registered connections.
+		rooms map[string]map[*connection]bool
+	
+		// Inbound messages from the connections.
+		broadcast chan message
+	
+		// Register requests from the connections.
+		register chan subscription
+	
+		// Unregister requests from connections.
+		unregister chan subscription
+	}
+	
+	var h = Hub{
+		broadcast:  make(chan message),
+		register:   make(chan subscription),
+		unregister: make(chan subscription),
+		rooms:      make(map[string]map[*connection]bool),
+	}
+	
+	func newHub() *Hub {
+		return &Hub{
+			broadcast:  make(chan []byte),
+			register:   make(chan *Client),
+			unregister: make(chan *Client),
+			clients:    make(map[*Client]bool),
+		}
+	}
+	
+	func (h *Hub) run() {
+		for {
+			select {
+			case s := <-h.register:
+				connections := h.rooms[s.room]
+				if connections == nil {
+					connections = make(map[*connection]bool)
+					h.rooms[s.room] = connections
+				}
+				h.rooms[s.room][s.conn] = true
+			case s := <-h.unregister:
+				connections := h.rooms[s.room]
+				if connections != nil {
+					if _, ok := connections[s.conn]; ok {
+						delete(connections, s.conn)
+						close(s.conn.send)
+						if len(connections) == 0 {
+							delete(h.rooms, s.room)
+						}
+					}
+				}
+			case m := <-h.broadcast:
+				connections := h.rooms[m.room]
+				for c := range connections {
+					select {
+					case c.send <- m.data:
+					default:
+						close(c.send)
+						delete(connections, c)
+						if len(connections) == 0 {
+							delete(h.rooms, m.room)
+						}
+					}
+				}
+			}
+		}
+	}
+d13489e09132e442c3f53af8a47d0099|file:///home/jdv/js/reactDice/server/server.go|4|1|V|go
+	import (
+		"fmt"
+		"github.com/gin-gonic/gin"
+	)
+	
+	func main() {
+		hub := newHub()
+	
+		// Starts up the hub as a goroutine
+		go h.run()
+	
+		// Start a new router
+		router := gin.New()
+	
+		// Load Files to serve
+		router.LoadHTMLFiles("index.html")
+	
+		// Handle GET Requests from client
+		router.GET("/room/:roomId", func(c *gin.Context) {
+			c.HTML(200, "index.html", nil)
+		})
+	
+		// Send back the WS that matches their room id.
+		router.GET("/ws/:roomId", func(c *gin.Context) {
+			roomId := c.Param("roomId")
+			serveWs(c.Writer, c.Request, roomId)
+		})
+	
+		// Start router on port 8080
+		router.Run("0.0.0.0:8080")
+		fmt.Println("Started router on port 8080")
+	}
+aa8af3ebe14831a7cd1b6d1383a03755|file:///home/jdv/js/reactDice/src/websocket.js|12|48|v|javascript
+	chat
+ae772ad3e953180d60c7c7e8b531780f|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|1|1|V|javascript
+	// Store for managing the Gamestate, leaderboards, round, points etc.
+	import create from 'zustand'
+	import { v4 as uuid } from 'uuid';
+	
+	const GamestateStore = create(set => ({
+		username: "Joe",
+		users: [
+			{
+				id: 0,
+				uuid: uuid(),
+				key: 0,
+				username: "Joe",
+			},
+			{
+				id: 1,
+				uuid: uuid(),
+				key: 1,
+				username: "Matt",
+			},
+		],
+	
+	}));
+	
+	export default GamestateStore
+63d72051e901c069f8aa1b32aa0c43bb|file:///home/jdv/js/reactDice/src/stores/AppStateStore.js|24|16|v|javascript
+	Game
+be6b81dbd4c98cbdb550561a84dce091|file:///home/jdv/js/reactDice/src/stores/AccountStore.js|7|1|V|javascript
+		users: [
+			{
+				id: 0,
+				uuid: uuid(),
+				key: 0,
+				username: "Joe",
+			},
+			{
+				id: 1,
+				uuid: uuid(),
+				key: 1,
+				username: "Matt",
+			},
+		],
+58231756204104536b0a0fb61ab4a162|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|6|1|V|javascript
+		username: "Joe",
+c7792c3a6827b7a03a51e78f23c59259|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|3|1|V|javascript
+	import ChatStore from '../../stores/ChatStore'
+45cdfbf1e76c315dd6280d2aaa93cd45|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|3|23|v|javascript
+	'../../
+9cf45dba8b81046829605901a4e41b2d|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|7|1|V|javascript
+		// Store
+		const chatHistory = ChatStore(state => state.chatHistory)
+5ce552794d5417965af288e56d20fa76|file:///home/jdv/js/reactDice/src/websocket.js|5|1|V|javascript
+	const room := 
+fef2576d54dbde017a3a8e4df699ef6d|file:///home/jdv/js/reactDice/src/websocket.js|17|63|v|javascript
+	room
+dba881a460b5d6e276963ada1706c135|file:///home/jdv/js/reactDice/src/websocket.js|1|47|V|javascript
+	import AccountStore from '../src/stores/AccountStore'
+	
+	// Store
+	const roomID = AccountStore(state => state.roomID)
+153c8ff689954343e174adf250d2818b|file:///home/jdv/js/reactDice/src/websocket.js|1|42|V|javascript
+	import AccountStore from '../src/stores/AccountStore'
+	
+	// Store
+	const roomID = AccountStore(state => state.roomID)
+	
+43fcb1932f559a8d41da2b7f99765cd6|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|9|1|V|javascript
+	import AccountStore from '../src/stores/AccountStore'
+fa4b3538f6a6e7f8bf6680ab63749518|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|11|1|V|javascript
+	// Store
+707552962e2d2b8c6f9a047c77d616e5|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|11|1|V|javascript
+	const roomID = AccountStore(state => state.roomID)
+255567cf4b2aef2b3f6da7e041e5ebbb|file:///home/jdv/js/reactDice/src/websocket.js|11|39|V|javascript
+		// console.log(`Attempting Websocket connection on ws://${host}/chat`);
+c78ddffb9bdf0e822d5d86e00b10c696|file:///home/jdv/js/reactDice/src/websocket.js|12|2|V|javascript
+		// const ws = new window.WebSocket(`ws://${host}/chat` || {}) // //if using Express server
+		// console.log(`Attempting Websocket connection on ws://${host}/chat`);
+502b90fb929185f602aaf5f428a9f652|file:///home/jdv/js/reactDice/server/Makefile|13|1|V|make
+		reflex -s -r '\.go$$' make run
+99bd6eeaac29330d5284ac718c20d7dd|file:///home/jdv/js/reactDice/server/Makefile|14|18|V|make
+		reflex -s -r '..\\.go$$' make run
+0fdc336911a6b4473390edda26862c98|file:///home/jdv/js/reactDice/package.json|25|1|V|json
+			"start": "react-scripts start",
+a74cfb732376264b623c721d25ba043d|file:///home/jdv/js/reactDice/package.json|27|1|V|json
+			"start-watch": "concurrently \"clear && echo 'Starting React Dev Server and watching Sass'\" \"npm run watch-sass\" \"react-scripts start\"",
+c438cf574484c70ecdb82a41e00e4d23|file:///home/jdv/js/reactDice/package.json|28|1|V|json
+			"dev-start": "concurrently \"npm run watch-server\" \"npm run watch-sass\" \"npm run start\"",
+d85773cd2923c0c580dac362dd8b1fad|file:///home/jdv/js/reactDice/package.json|26|1|V|json
+			"start-core": "conc"react-scripts start",
+c9d85b914df64c7ac484c5a42876c967|file:///home/jdv/js/reactDice/package.json|26|56|V|json
+			"start-core": "concurrently \"npm run watch-server\" \"npm run start\"",
+11139f77b8d410e3bd1c36c79d828716|file:///home/jdv/js/reactDice/server/server.go|33|1|V|go
+		router.LoadHTMLFiles("index.html")
+3cc205626d100d147266979fb78cd417|file:///home/jdv/js/reactDice/server/server.go|39|1|V|go
+		// router.GET("/room/:roomId", func(c *gin.Context) {
+			// c.HTML(200, "index.html", nil)
+		// })
+	
+25347504f4a06743b428fdf116e9027d|file:///home/jdv/js/reactDice/server/server.go|41|1|V|go
+		router.Use(static.Serve("/", static.LocalFile("../build", true)))
+27a58a60a0d5bc45cdfd1633d0a39d4f|file:///home/jdv/js/reactDice/server/server.go|42|1|V|go
+		router.Use(static.Serve("/", static.LocalFile("../build/index.html", true)))
+2915a0a95b79662f84d3d37c0e5f6d58|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|1|V|javascript
+	import DieI from "../../resources/dice/die-infantry.svg"
+	import DieC from "../../resources/dice/die-cavalry.svg"
+	import DieA from "../../resources/dice/die-artillery.svg"
+	import DieG from "../../resources/dice/die-general.svg"
+1580f694ed6b54638f198a62b6cfcd2f|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|1|V|javascript
+	import DieI from "../../resources/dice/die-infantry.svg"
+	import DieC from "../../resources/dice/die-cavalry.svg"
+ee0765eff8ddafa32e357ff671eb997d|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|18|19|^v|javascript
+	../../
+	../../
+	../../
+ffb1c6745b1c3e5217d544728f028761|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|18|33|^v|javascript
+	resources/dice/
+	resources/dice/
+	resources/dice/
+27d37dde799b4b2a6049f1d7df8bc7d8|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|7|47|^v|javascript
+	svg
+	svg
+	svg
+	svg
+	svg
+	svg
+cd02efa43db4e20724d05a58c6b97480|file:///home/jdv/js/reactDice/server/server.go|41|38|v|go
+	LocalFile
+0e092f01a3cfc11e202c30f109230b4c|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|19|1|V|javascript
+		const roomID = AccountStore(state => state.roomID)
+b326b5062b2f0e69046810717534cb09|file:///home/jdv/js/reactDice/src/stores/AccountStore.js|10|10|v|javascript
+	true
+9425b8c9978a2dc3c26c5485d04a1754|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|20|8|v|javascript
+	roomID
+b706d6ab33ec10a8ee18a24148fce97f|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|24|7|v|javascript
+	!startWebsocketConnection
+1678dc81b77cef5fb538da6094eb46d5|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|1|V|javascript
+			startWebsocketConnection(roomID)
+f02a3998a2439fe9544a75d90427ce76|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|22|8|v|javascript
+	countRender
+9a5c9683109d4209c495eda993e18bee|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|22|51|V|javascript
+		const ws = useRef(startWebsocketConnection(roomID));
+4d8547c10beeece49fbeb01be4a5104d|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|20|51|V|javascript
+		const inGame = AccountStore(state => state.inGame)
+66e0f13b49ec292b11bf5c045e1054b1|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|23|1|V|javascript
+			if (!inGame){
+				inGame = true;
+d95e1af4dd643efc71f67051d6143f53|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|28|1|V|javascript
+				startWebsocketConnection(roomID)
+c9e04d7101023d86e20df39fe3a453f3|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|25|3|V|javascript
+				if (!didStartWS.current){
+2bb375907d45e2ed40fb0a62d70ea7da|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|3|V|javascript
+					didStartWS.current = true
+b51710b1651876981cb5401531a3f08d|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|23|6|V|javascript
+		const didStartWS = useRef(false)
+d033a1018f3498fe0fa9b663f523f06c|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|26|6|v|javascript
+	else {
+					console.log("Already established WS connection!");
+				}
+	
+6a7d4800e34ba60abad688cccedeefea|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|4|V|javascript
+					console.log("Already established WS connection!");
+40985e24734e7c2edc3ce26e56f94064|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|4|V|javascript
+				}
+41aeaead47798241656e2a4f2ebf866a|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|26|3|V|javascript
+				} 
+e13ee5356480f453d924f0f1b8d665bc|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|28|1|V|javascript
+					startWebsocketConnection(roomID)
+					console.log("Started a new WS connection.");
+631d35269a3b90086d13ee2434e42f3b|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|13|1|V|javascript
+		addLatestMessageToHistory: () => set(state => ({ 
+			chatHistory: [...state.chatHistory, {id: uuid(), data: state.latestMessage}]
+		})),
+ef8bebc819ce84169b16d37681072162|file:///home/jdv/js/reactDice/src/stores/AccountStore.js|13|2|v|javascript
+	addLatestMessageToHistory
+63d7d28cfc37748b1fd753d372a0e0fb|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|21|8|v|javascript
+	inGame
+cd8640a7101a41ada929b4de5948d1b7|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|30|1|V|javascript
+				console.log(`inGame: ${inGame}`);
+e01f37298a3f53ef247da03929b8f193|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|23|1|V|javascript
+		// Start a websocket connection that is not reloaded after every render, but is loaded on component's first and last render, hence the empty square brackets showing no dependencies
+		// Starts as false, and is set to true after first render.
+e285e24219e99401cb84707591b18969|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|182|1|V|vim
+	
+	"*****************************************************************************
+	" Toggle comments
+	"*****************************************************************************
+033caa928bfea0bf7c5738987db83ef7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|204|1|V|vim
+	nnoremap <silent> <leader><Tab> >i}
+25e17f12e05cb7d297b065923128981f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|39|1|V|vim
+	inoremap jj <Esc>
+64edeee49fad6419a7b7102fab10011f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|43|21|V|vim
+	map <Esc> :e<CR><Esc>
+42a32660c0768537e535e40329e13e74|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|41|17|V|vim
+	" Super-hacky work around for treesitter highlighting problems that require :e
+921f32b8dd475d3dd4593171fc752b2d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|41|9|V|vim
+	" to fix.
+5fadaa87b28cb011e1284097989e894e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|196|1|V|vim
+	"*****************************************************************************
+5fda7fefd1207886f7adfc34bdcde679|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|196|1|V|vim
+	"*****************************************************************************
+	" Indenting
+	"*****************************************************************************
+ead5d0e9ae810ebf23ac1a8ac332f109|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|210|2|v|vim
+	*****************************************************************************
+	
+0525600c90333731a9b34300c44aa9c4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|210|2|v|vim
+	=============================================================================
+	
+427d7aa2086cdcd5409fa24d2e083d4b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|210|2|V|vim
+	"=============================================================================
+278e2cccd21aca74122020392f160688|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|45|1|v|vim
+	ource ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
+1ad30212a71df01b64ebd584f9c04a68|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|74|1|V|vim
+	" ================================================================================
+720924034712152f5822362542eb75e2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|103|1|V|vim
+	" inoremap <silent> <C-'> `
+59822f5b19c6d90bd2584f6a9d1e7f3b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|103|1|V|vim
+	" nnoremap <silent> <C-'> `
+b5ae4be43ce1eac59bba52df2f1966a7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|103|1|V|vim
+	" vnoremap <silent> <C-'> `
+2890bac50cf1e71127516e4cca79575a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|68|1|V|vim
+	" "*****************************************************************************
+bcf6234f4a562fe6924426013da0b8fc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|74|2|v|vim
+	 ================================================================================
+dee2529b90d34cf8dab3bc6416d3c426|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|211|3|v|vim
+	Indenting
+541cc321fa8e2e1228a651648b32b33e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|213|1|V|vim
+	nnoremap <silent> <S-D> <nop>
+8ab3187c3275651042cf1726c2075c36|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|211|41|v|vim
+	deleting line / Undo (I do it accidentlly too often)
+6d31b0768a5b41092fd183a1bec000d3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|47|1|V|vim
+	"*****************************************************************************
+	" Fix backspace indent
+	"*****************************************************************************
+ef2c5108bbfa8cf8151a10e5c122f438|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|48|3|v|vim
+	Fix backspace indent
+0943f0ee6b55163fe4077dc3d4dbca84|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|47|1|V|vim
+	"*****************************************************************************
+	" Indentation Settings
+	"*****************************************************************************
+	
+	
+	
+dcfce4c789177b2e4268fcacb0d5a2f9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|81|2|V|vim
+	set shiftwidth=4 " Set shiftwidth to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation. 
+03583ab88dea25718088ab1f77c9cccb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|32|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
+691bdef5bf2a312bb13c8ac1c99888d6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|59|v|vim
+	keybindings
+4763107ec64e92a517d228fb2743cb96|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|1|1|V|vim
+	                                                                
+ff38554a89763a21b784374add0e3390|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|16|1|V|vim
+	=================================================================
+7635c1d59250a80785272b7ce9495c80|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|17|3|v|vim
+	Test Heading Text
+cf95880b7b3d8c8c48a38c4549f29991|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|19|103|V|vim
+	let @h = \'O=================================================================jjyyj]pVkk,ccjjo�kb�kbjj\'
+1034a941fe1b09bdfcd91496a367cbca|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|22|1|V|vim
+	" =================================================================
+	" Format text to header with = signs
+	" =================================================================
+	                                                                
+	" =================================================================
+	" Test 2
+	" =================================================================
+ff2364a0be3d20e46cc69efb36afe9a5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|69|v|vim
+	space
+53b1f32fae32847238932783b4d57711|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|1|V|vim
+	===================================================================
+188cefb1a073ec90281d8b37f4dfa7bf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|1|V|vim
+	" ===================================================================
+161ba2dafcbb9a3885dac4c4c9911e65|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|43|V|vim
+	let g:marvim_store_key = '<leader><leader>m'     " change store key from <F3> to '<leader><leader>m'
+178d0ce4936ebb1574c17cbbf4064e1a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|27|v|vim
+	<leader><leader>m
+9972a03462eb2b8f54365d73c7470ec5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|26|v|vim
+	<leader>m
+c444858e0aaeb727da73d2eae62321ad|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|72|v|vim
+	leader
+5d7eebc3a2ad8b65726d6c02571585f0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|72|v|vim
+	><leader
+8a1233092c1ea26f456d11c00144f9b0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|28|v|vim
+	S-F12
+8565c66d0af2a8a7fc34ab0148096f6a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|27|v|vim
+	S-F11
+60441896d60857d28f18aad420e0687f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|80|v|vim
+	<F12>
+ce8e46c37e99aa5dd7d170cbfcf6745c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|100|1|V|vim
+	let g:which_key_map['R'] = { 'name' : 'source %' }
+	nnoremap <silent> <localleader>R :source %<CR>
+	
+abbef5a6ed0c78abe917f5d7cf53f8a6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|103|40|v|vim
+	source %
+88b73cabbd4bd53ba513cd1ba12bcb54|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|104|34|v|vim
+	:source %<CR>
+e57999edbcebda7dc10c0ffa3f5ebb07|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|102|1|V|vim
+	
+	let g:which_key_map['m'] = { 'name' : 'Use Macros' }
+	nnoremap <silent> <localleader>m call marvim#search()
+	
+	let g:which_key_map['M'] = { 'name' : 'Store Macro' }
+	nnoremap <silent> <localleader>M call marvim#macro_store()
+65df4e935d3ec11816e6db80c5969bfb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|100|1|V|vim
+	let g:which_key_map['R'] = { 'name' : 'source %' }
+4771b4c2ed9327bea42ebb368bb2c1ae|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|102|1|V|vim
+	
+	let g:which_key_map['m'] = { 'name' : 'Use Macro' }
+	let g:which_key_map['M'] = { 'name' : 'Store Macro' }

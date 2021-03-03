@@ -19,17 +19,18 @@
 "                                                                                                              |  $$$$$$/
 "                                                                                                               \______/ 
 
-"*****************************************************************************
+" ================================================================================
 " Sourcing files (order matters!)
 "
 " Use gf to open the config file for a particular plugin
-"*****************************************************************************
+" ================================================================================
 
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/platform.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/highlight.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
+source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim
@@ -42,8 +43,8 @@ source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/sneak.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
 source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
+" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lspsaga.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/completion-nvim.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/compe.vim
@@ -64,16 +65,16 @@ source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
 " |______/|______/|______/|______/|______/|______/                                
 "                                                                                 
 
-"*****************************************************************************
-"" Filetype Specific Formatting
-"*****************************************************************************
+" ================================================================================
+" Filetype Specific Formatting
+" ================================================================================
 " Create a filetype plugin in /ftplugin.
 " To see a list of filetypes, use :setfiletype CTRL-D
 
 
-"*****************************************************************************
+" ================================================================================
 " Embedding in VSCode
-"*****************************************************************************
+" ================================================================================
 
 " Some settings are only needed when running Neovim in a terminal.  They
 " should be excluded when using the Neovim VSCode extension.
@@ -85,9 +86,9 @@ source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
 " endif
 
 
-"*****************************************************************************
+" ================================================================================
 " Headers
-"*****************************************************************************
+" ================================================================================
 
 " Headers are provided from http://www.patorjk.com/software/taag/#p=display&h=1&v=2&f=Big%20Money-ne&t=LaTeX
 

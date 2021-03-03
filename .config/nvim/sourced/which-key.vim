@@ -149,6 +149,7 @@ let g:which_key_map['f'] = {
 	  \ 'd' : ['FZF'        , 'Open in current directory']        ,
 	  \ 'w' : [':w !sudo tee %'        , 'Sudo Save (Read-Only Override)']        ,
 	  \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
+	  \ 'k' : [':e ~/github.com/jdvober/dotfiles.config/nvim/sourced/keybindings.vim'        , 'open keybindings.vim']        ,
 	  \ 'q' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/qtile/config.py'        , 'open qtile config']        ,
 	  \ 'z' : [':e /home/jdv/github.com/jdvober/dotfiles/.config/.zshrc'        , 'open zshrc']        ,
 	  \ 's' : [':setlocal spell'        , 'turn on spell check']        ,

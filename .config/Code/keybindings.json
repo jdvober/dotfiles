@@ -1,66 +1,42 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-    "key": "q k",
-    "command": "cursorUp",
-    "when": "editorTextFocus && neovim.init"
-  },
-  {
-    "command": "vscode-neovim.escape",
-    "key": "j j",
-    "when": "neovim.mode == insert && editorTextFocus"
-  },
-  {
-    "command": "vscode-neovim.compositeEscape1",
-    "key": "j",
-    "when": "neovim.mode == insert && editorTextFocus",
-    "args": "j"
-  },
-  {
-    "key": "q h",
-    "command": "cursorLeft",
-    "when": "editorTextFocus && neovim.init"
-  },
-  {
-    "key": "q j",
-    "command": "cursorDown",
-    "when": "editorTextFocus && neovim.init"
-  },
-  {
-    "key": "q l",
-    "command": "cursorRight",
-    "when": "editorTextFocus && neovim.init"
-  },
-  {
-    "key": "q a",
-    "command": "cursorRight",
-    "when": "editorTextFocus && neovim.init"
-  },
-  {
-    "key": "space",
-    "command": "whichkey.show",
-    "when": "editorTextFocus && neovim.init && neovim.mode != insert"
-  },
-  {
-    "key": "f2",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "f1",
-    "command": "-workbench.action.showCommands"
-  },
-  {
-    "key": "f1",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "f11",
-    "command": "editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "f2",
-    "command": "-editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  }
+	{
+		"command": "vscode-neovim.escape",
+		"key": "j j",
+		"when": "neovim.mode == insert && editorTextFocus"
+	},
+	{
+		"command": "vscode-neovim.compositeEscape1",
+		"key": "j",
+		"when": "neovim.mode == insert && editorTextFocus",
+		"args": "j"
+	},
+	{
+		"key": "f1",
+		"command": "-workbench.action.showCommands"
+	},
+	{
+		"key": "f1",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "f11",
+		"command": "editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "f2",
+		"command": "-editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+/",
+		"command": "-editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+/",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
 ]

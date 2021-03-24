@@ -1,0 +1,68 @@
+snippet fc "functional component" iA
+import * as React from "react"
+//import { 
+//	Box, 
+//} from "@chakra-ui/react"
+
+// Components
+
+// Props
+//type $1Props = {
+//	name: type;
+//}
+
+const $1${2::React.FC<$1Props>} = () => {
+	return (
+		$0
+	)
+}
+
+export default $1
+endsnippet
+
+snippet cfc "Chakra UI Functional Component" iA
+import * as React from "react"
+import {
+	VStack,
+} from "@chakra-ui/react"
+
+// Components
+import Navbar from "../Navbar/Navbar"
+
+// Props
+//type $1Props = {
+//	name: type;
+//}
+
+const $1${2::React.FC<$1Props>} = () => {
+	return (
+		<VStack>
+			<Navbar />
+			$0
+		</VStack>
+	)
+
+export default $1
+endsnippet
+
+snippet im "import statement"
+import $1 from "$2"
+$0
+endsnippet
+
+snippet >> "arrow" iA
+=> $0
+endsnippet
+
+snippet <div "div" 
+<div>$0</div>
+endsnippet
+
+snippet zf "A zustand function"
+$1: ($2) => 
+		set(state =>  {
+			${0:Code You Want To Execute Here}
+		}),
+endsnippet
+
+

@@ -24,8 +24,8 @@ let g:EasyMotion_do_mapping = 0
 " `s{char}{label}`
 "*****************************************************************************
 
-map S <Plug>(easymotion-overwin-line)
-map s <Plug>(easymotion-overwin-f)
+" map S <Plug>(easymotion-overwin-line)
+map s <Plug>(easymotion-bd-f)
 
 " or
 " `s{char}{char}{label}`

@@ -21,11 +21,6 @@
 let mapleader=','
 
 " ================================================================================
-" Set localleader to Space (used for WhichKey)
-" ================================================================================
-let g:maplocalleader = "\<Space>"
-
-" ================================================================================
 " Remap W and E for backwards versions of w and e, respectively.
 " ================================================================================
 
@@ -36,25 +31,23 @@ nnoremap E ge
 " jj exits insert mode
 " ================================================================================
 
-" inoremap jj <Esc>
-
 inoremap jj <Esc>
 
 " ================================================================================
 " Used for moving one space in insert mode
 " ================================================================================
 
-inoremap qh <C-o>h
-inoremap qj <C-o>j
-inoremap qk <C-o>k
-inoremap ql <C-o>l
+inoremap <C-h> <C-o>h
+inoremap <C-j> <C-o>j
+inoremap <C-k> <C-o>k
+inoremap <C-l> <C-o>l
 
 " ================================================================================
 " Used for breaking out of brackets
 " ================================================================================
 
-inoremap qa <Esc>la
 inoremap jk <Esc>la
+inoremap kj <Esc>ha
 
 " ================================================================================
 " Paste on line below / line above
@@ -145,7 +138,7 @@ nnoremap <silent> <C-a> ggVG
 " ================================================================================
 
 " Four spaces -> tab
-nnoremap <silent> <leader><leader>t :%%!unexpand -t 4 --first-only<CR>
+nnoremap <silent> <leader><leader>t mm:%%!unexpand -t 4 --first-only<CR><localleader><Tab>'m
 " Two spaces -> tab
 nnoremap <silent> <leader><leader>t :%%!unexpand -t 2 --first-only<CR>
 
@@ -192,6 +185,8 @@ nnoremap <silent> <leader><leader>c 0i{/* <C-o>$<C-o>a */}<Esc>
 nnoremap <silent> <leader><leader>u 0dt*x$F*xxx
 nnoremap <silent> <leader><leader>v 0dt*x$F*xxx
 
+nnoremap <silent> <C-\/> <leader>c\<Space>
+
 " ================================================================================
 " Indenting
 " ================================================================================
@@ -211,3 +206,61 @@ nnoremap <silent> <S-Tab> mm<i}'m
 " ================================================================================
 nnoremap <silent> <C-j> }
 nnoremap <silent> <C-k> {
+
+
+" ================================================================================
+" Quick Surrounding
+" ================================================================================
+"
+"Don't forget:
+"cs  ...  change surround
+"ds  ...  delete surround
+"yss ...  surround entire line
+
+" Surround with "..."
+nnoremap S" g@iw"
+
+" Surround with {...}
+nnoremap S{ g@iw{
+
+" Surround with { ... }
+nnoremap S} g@iw}
+
+" Surround with (...)
+nnoremap S( g@iw(
+
+" Surround with ( ... )
+nnoremap S) g@iw)
+
+" Surround with [...]
+nnoremap S[ g@iw[
+
+" Surround with [ ... ]
+nnoremap S] g@iw]
+
+" Surround with <div>...</div>
+nnoremap S<d g@iw<div><CR>
+nnoremap S<D g@iw<div><CR>
+
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"

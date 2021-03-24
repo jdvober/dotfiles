@@ -1,1903 +1,1487 @@
-85f9a9df6853f7e9b44dc58f862121d8|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 \"npm
-5485dddbce3115a704d7e5160b63bf7e|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 run
-a8865bf50048535b6917db59bf947c62|file:///home/jdv/js/reactDice/package.json|23|13|v|json
-	 watch-sass\"
-6d56af197f25ca729df0bb7ec096e6b0|file:///home/jdv/js/reactDice/src/Store.js|6|1|^v|javascript
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-cea657c89c83d7cf89b14a0aaac03f7b|file:///home/jdv/js/reactDice/src/Store.js|59|1|^v|javascript
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-cdaf0fd4acd551933c76e2dd19962ff8|file:///home/jdv/js/reactDice/src/Store.js|72|1|^v|javascript
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-ee05bf1438e5ca9b87fe95c367c4db69|file:///home/jdv/js/reactDice/src/Store.js|73|1|^v|javascript
-		
-		
-		
-		
-10bd363b42aa29a924c195963d092888|file:///home/jdv/js/reactDice/src/Store.js|157|1|V|javascript
-											
-523c1ee4a2579ecd38ec73ae43623751|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
-		// const socket = UseStore(state => state.socket)
-e7e56345fbe2774b6a8e0bf0981f673d|file:///home/jdv/js/reactDice/server/main.go|58|1|V|go
-		http.Handle("/", http.FileServer(http.Dir("./asset")))
-dba32610837effe01e581a1a4e638ea6|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|9|1|V|javascript
+e0067ebc7a46a2a8bb6d715391a1a372|file:///home/jdv/js/vedhub/src/assets/die6-2.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <circle cx="35.625" cy="35.625" r="19.175" fill="#50fa7b"/>
+	 <circle cx="155.62" cy="155.62" r="19.175" fill="#50fa7b"/>
+	</svg>
+a7cd14a97ec55ca5963038f925dbbcd8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|59|1|V|typescriptreact
+						<svg width="187.5pt" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
+	</svg>
+5c512f6d52d6f99962924a5238bae380|file:///home/jdv/js/vedhub/src/assets/die6-3.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <g fill="#ffb86c">
+	  <circle cx="35.625" cy="35.625" r="19.175"/>
+	  <circle cx="155.62" cy="155.62" r="19.175"/>
+	  <circle cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+6738e84eb0348596a7986fa38e64a466|file:///home/jdv/js/vedhub/src/assets/die6-4.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <g fill="#8be9fd">
+	  <circle cx="35.625" cy="35.625" r="19.175"/>
+	  <circle cx="155.62" cy="155.62" r="19.175"/>
+	  <circle cx="34.175" cy="154.18" r="19.175"/>
+	  <circle cx="154.18" cy="34.175" r="19.175"/>
+	 </g>
+	</svg>
+2b61e4db4c9c51d5335990c37a08a08e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|72|1|V|typescriptreact
+						<svg width="100px" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
+	</svg>
+c9423b5887e6942f382a07df9c807350|file:///home/jdv/js/vedhub/src/assets/die6-5.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <g fill="#f1fa8c">
+	  <circle cx="35.625" cy="35.625" r="19.175"/>
+	  <circle cx="155.62" cy="155.62" r="19.175"/>
+	  <circle cx="34.175" cy="154.18" r="19.175"/>
+	  <circle cx="154.18" cy="34.175" r="19.175"/>
+	  <circle cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+2dbb81c786747229e0aaa3ec43197c1c|file:///home/jdv/js/vedhub/src/assets/die6-6.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+	 <g fill="#bd93f9">
+	  <circle cx="35.625" cy="35.625" r="19.175"/>
+	  <circle cx="155.62" cy="155.62" r="19.175"/>
+	  <circle cx="34.175" cy="154.18" r="19.175"/>
+	  <circle cx="154.18" cy="34.175" r="19.175"/>
+	  <circle cx="93.75" cy="34.175" r="19.175"/>
+	  <circle cx="93.75" cy="154.18" r="19.175"/>
+	 </g>
+	</svg>
+ca33c18cb37c0c8ed3cd130c3f8f9a8d|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|119|2|V|typescriptreact
+	 <circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
+7fdac8c8e49054d2e7abba36a00cf858|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|41|1|V|typescriptreact
+						<svg width="auto" height="50px" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+adba7fcae5bb48f39459d741fd9c20d0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|50|1|V|typescriptreact
+						<svg width="187.5pt" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+15b477b5889ad94c3265373bab5e6afc|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|37|1|V|typescriptreact
+		const svgWidth:string = "50px"
+b1c2561406d71dfa56c77a66c2a25aac|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|62|1|V|typescriptreact
+						<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+c6949d174af93afaf60272b16b5a52b4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|1|V|typescriptreact
+						<svg width={svgWidth} height={svgHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+							<rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+							<circle cx="93.75" cy="93.75" r="19.175" fill="#f55"/>
+						</svg>
+94c82ffbcf35c6948795b66fc449ceb1|file:///home/jdv/js/vedhub/src/assets/die6-6_2.svg|1|6|v|svg
+	width="187.5pt" height="187.5pt" 
+a9f9ef3c4e67821d02c95b8eae05b6ba|file:///home/jdv/js/vedhub/src/assets/die6-6_2.svg|2|30|v|svg
+	width="185.12" height="185.12" 
+ce8b3b87a0825c7846a42a8eafe06c21|file:///home/jdv/js/vedhub/src/assets/die6-1_1.svg|1|1|V|svg
+	<svg id="svg1053" width="37.5pt" height="37.5pt" version="1.0" viewBox="0 0 37.5 37.5" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".23753" y=".23753" width="37.025" height="37.025" ry="5.5887" fill="none" stroke="#6272a4" stroke-width=".47505"/>
+	 <ellipse id="circle1051" cx="18.75" cy="18.75" rx="3.8351" ry="3.8351" fill="#ff5555" style="stroke-width:.2"/>
+	</svg>
+88518072c8f6aca8420058c2c6dee11e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|46|1|V|typescriptreact
+						<Die1 />
+eafd86d3503ec278690d23f51aa203bc|file:///home/jdv/js/vedhub/src/assets/die6-6_2.svg|1|1|V|svg
+	<svg id="svg934" width="50" height="50" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect918" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g932" transform="matrix(.26667 0 0 .26667 1.3946e-6 1.3654e-6)" fill="#bd93f9">
+	  <circle id="circle920" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle922" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle924" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle926" cx="154.18" cy="34.175" r="19.175"/>
+	  <circle id="circle928" cx="93.75" cy="34.175" r="19.175"/>
+	  <circle id="circle930" cx="93.75" cy="154.18" r="19.175"/>
+	 </g>
+	</svg>
+64017a3a0e42ee115864fd1b0b7690cd|file:///home/jdv/js/vedhub/src/assets/die6-2_2.svg|1|1|V|svg
+	<svg id="svg1146" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1140" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <circle id="circle1142" cx="9.5002" cy="9.5002" r="5.1135" fill="#50fa7b" style="stroke-width:.26667"/>
+	 <circle id="circle1144" cx="41.5" cy="41.5" r="5.1135" fill="#50fa7b" style="stroke-width:.26667"/>
+	</svg>
+50a96de9a08fe55c0a9f1f48997f476f|file:///home/jdv/js/vedhub/src/assets/die6-3_2.svg|1|1|V|svg
+	<svg id="svg1217" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+45d65f6233ecfd7e359c596aa8ee53a5|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|79|1|V|typescriptreact
+							<rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+							<g fill="#8be9fd">
+								<circle cx="35.625" cy="35.625" r="19.175"/>
+								<circle cx="155.62" cy="155.62" r="19.175"/>
+								<circle cx="34.175" cy="154.18" r="19.175"/>
+								<circle cx="154.18" cy="34.175" r="19.175"/>
+							</g>
+						</svg>
+86b9f9d745edda3c8d5b79ed176f8983|file:///home/jdv/js/vedhub/src/assets/die6-4_2.svg|1|1|V|svg
+	<svg id="svg1292" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1280" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1290" transform="scale(.26667)" fill="#8be9fd">
+	  <circle id="circle1282" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1284" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1286" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle1288" cx="154.18" cy="34.175" r="19.175"/>
+	 </g>
+	</svg>
+6627d4d298be6792bf8b1a185876180a|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|78|1|V|typescriptreact
+						<svg width={svgWidth} height={svgHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+	<svg id="svg1217" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+06f903bd0e1c52ed4ad1e325db592745|file:///home/jdv/js/vedhub/src/assets/die6-5_2.svg|1|1|V|svg
+	<svg id="svg1371" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1357" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1369" transform="scale(.26667)" fill="#f1fa8c">
+	  <circle id="circle1359" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1361" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1363" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle1365" cx="154.18" cy="34.175" r="19.175"/>
+	  <circle id="circle1367" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+1b08780758c2f46d9c0feac99c785f87|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|91|1|V|typescriptreact
+					<Box onClick={handleClick}>
+						<svg width={svgWidth} height={svgHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+							<rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+							<g fill="#f1fa8c">
+								<circle cx="35.625" cy="35.625" r="19.175"/>
+								<circle cx="155.62" cy="155.62" r="19.175"/>
+								<circle cx="34.175" cy="154.18" r="19.175"/>
+								<circle cx="154.18" cy="34.175" r="19.175"/>
+								<circle cx="93.75" cy="93.75" r="19.175"/>
+							</g>
+						</svg>
+92ec02720de14b68e3d4ea29758ec13e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|106|1|V|typescriptreact
+						<svg width={svgWidth} height={svgHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+							<rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+							<g fill="#bd93f9">
+								<circle cx="35.625" cy="35.625" r="19.175"/>
+								<circle cx="155.62" cy="155.62" r="19.175"/>
+								<circle cx="34.175" cy="154.18" r="19.175"/>
+								<circle cx="154.18" cy="34.175" r="19.175"/>
+								<circle cx="93.75" cy="34.175" r="19.175"/>
+								<circle cx="93.75" cy="154.18" r="19.175"/>
+							</g>
+						</svg>
+cdba65622dae2926e85e624cc0199dd8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|65|1|V|typescriptreact
+						<svg width={svgWidth} height={svgHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+							<rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+							<g fill="#ffb86c">
+								<circle cx="35.625" cy="35.625" r="19.175"/>
+								<circle cx="155.62" cy="155.62" r="19.175"/>
+								<circle cx="93.75" cy="93.75" r="19.175"/>
+							</g>
+						</svg>
+dcf447b24466729de0224c7c5a9252d0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|48|93|v|typescriptreact
+	style="stroke-width:.2"
+a4e0fdd1013e8e2a7c560ec99627a91d|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|57|81|v|typescriptreact
+	style="stroke-width:.26667"
+98b7a8a5007a0032d487e05c94edbb54|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|8|21|V|typescriptreact
+	import Die1 from "../../../assets/die6-1_1.svg"
+bf7069b4ef3680be258951252163bbe6|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|1|V|typescriptreact
+							<svg id="svg1053" width="37.5pt" height="37.5pt" version="1.0" viewBox="0 0 37.5 37.5" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect1049" x=".23753" y=".23753" width="37.025" height="37.025" ry="5.5887" fill="none" stroke="#6272a4" stroke-width=".47505"/>
+								<ellipse id="circle1051" cx="18.75" cy="18.75" rx="3.8351" ry="3.8351" fill="#ff5555" />
+							</svg>
+41fae09897ea3102e003e13cff88fc6c|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|121|1|V|typescriptreact
+							<svg width={svgWidth} height={svgHeight} version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+								<rect x="1.1876" y="1.1876" width="185.12" height="185.12" ry="27.943" fill="none" stroke="#6272a4" stroke-width="2.3752"/>
+							</svg>
+2b6288f231b86e47c7e793047d95857e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|123|28|V|typescriptreact
+								<ellipse id="circle10" cx="18.75" cy="18.75" rx="3.8351" ry="3.8351" fill="#ff5555" />
+be0fe0b1f90fb5a11fb1d940bd6cb099|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|36|1|V|typescriptreact
 	
-		// Example from Socket.io, originally in the index.html of server assets folder for their example chat
-		// var socket = io();
-		// // socket.emit('msg', 'hello');
-		// var s2 = io("/chat");
-		// socket.on('reply', function(msg){
-			// $('#messages').append($('<li>').text(msg));
-		// });
-		// $('form').submit(function(){
-			// s2.emit('msg', $('#m').val(), function(data){
-				// $('#messages').append($('<li>').text(data));
-			// });
-			// socket.emit('notice', $('#m').val());
-			// $('#m').val('');
-			// return false;
-		// });
+		const svgWidth:string = "50px"
+		const svgHeight:string = "50px"
+73dcf0ce3b87b521e4d1c0d73362ff46|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|30|1|V|typescriptreact
+						<GridItem colSpan={10} rowSpan={1} bg="red" />
+b28c532cf1a4e63a75f852d1bed36e5e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|41|32|v|typescriptreact
+	37.5pt
+23125f448310f0607029ce05015c2797|file:///home/jdv/js/vedhub/src/assets/die6-1_1.svg|1|1|V|svg
+	<svg id="svg1053" width="50" height="50" version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <circle id="circle1051" cx="12.5" cy="12.5" r="2.5567" fill="#ff5555" stroke-width=".13333"/>
+	</svg>
+f60680ff183bfbdcdffa2c6549d8888a|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|41|1|V|typescriptreact
+							<svg id="svg1053" width="100%" height="100%" version="1.0" viewBox="0 0 50% 50%" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect1049" x=".23753" y=".23753" width="37.025" height="37.025" ry="5.5887" fill="none" stroke="#6272a4" stroke-width=".47505"/>
+								<ellipse id="circle1051" cx="18.75" cy="18.75" rx="3.8351" ry="3.8351" fill="#ff5555" />
+							</svg>
+7a8a0f3aa2dd6c5bab49bec5e0e903be|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|37|1|V|typescriptreact
+		let dieWidth = 50
+464e9bc9924ada9f06588eacd93ea0e0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|82|v|typescriptreact
+	{dieWidth/2
+9a2b9136d5d7bcd266d16ed25e4ed8f5|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|85|v|typescriptreact
+	{dieHeight/2
+23ed734233aabe7e49f87043cb5a219d|file:///home/jdv/js/vedhub/src/assets/die6-2_2.svg|1|1|V|svg
+	<svg id="svg1146" version="1.0" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1140" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <circle id="circle1142" cx="9.5042" cy="9.5042" r="5.1135" fill="#50fa7b" stroke-width=".26667"/>
+	 <circle id="circle1144" cx="41.504" cy="41.504" r="5.1135" fill="#50fa7b" stroke-width=".26667"/>
+	</svg>
+46c725de1f1adef2cc9405b05131d4f1|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|53|1|V|typescriptreact
+							<svg id="svg1146" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect1140" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+								<circle id="circle1142" cx="9.5002" cy="9.5002" r="5.1135" fill="#50fa7b" />
+								<circle id="circle1144" cx="41.5" cy="41.5" r="5.1135" fill="#50fa7b" />
+							</svg>
+9c89a0acf86d211f1c6887caa5669aab|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|19|v|typescriptreact
+	width={dieWidth} height={dieHeight} 
+f9629c19a8348bdbf25c2dda3cb46e19|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|63|1|V|typescriptreact
+							<svg id="svg1217" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+								<g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+									<circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+									<circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+									<circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+								</g>
+							</svg>
+536ceab5965b0e4bea6d8a6a59a2e403|file:///home/jdv/js/vedhub/src/assets/die6-3_2.svg|1|1|V|svg
+	<svg id="svg1217" width="50" height="50" version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+922e1487610f653ab49539dd3a03a0f1|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|63|1|V|typescriptreact
+	<svg id="svg1217" width="50" height="50" version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+ab5ae9e75b8b627c1bd9402b4b5195e4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|53|1|V|typescriptreact
+	<svg id="svg1146" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+eafcf8822a639cea9d44953d4caa7a84|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|76|1|V|typescriptreact
+							<svg id="svg1292" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+48e9f58346b17253f88978c8c641504d|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|90|1|V|typescriptreact
+						<svg id="svg1371" width="37.5pt" height="37.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+bf713562b2c5522709eec4cdc0558731|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|105|1|V|typescriptreact
+							<svg id="svg934" width="50" height="50" version="1.0" xmlns="http://www.w3.org/2000/svg">
+b9058901572e543478cb505e417c2788|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|121|1|V|typescriptreact
+							<svg id="svg1000" width="37.5pt" height="37.5pt" version="1.0" viewBox="0 0 37.5 37.5" xmlns="http://www.w3.org/2000/svg">
+7f85e9914cdc6631115f5140c670a649|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+12182fc4fea42340437fffb1ad2a4433|file:///home/jdv/js/vedhub/src/assets/die6-3_2.svg|1|19|v|svg
+	width="50" height="50" 
+aadbcf6a5f5f2e9c39d0425c9ae3d53a|file:///home/jdv/js/vedhub/src/assets/die6-4_2.svg|1|19|v|svg
+	width="37.5pt" height="37.5pt" 
+a39941c86fbc79b31186d1fec93e7c9c|file:///home/jdv/js/vedhub/src/assets/die6-3_2.svg|1|1|V|svg
+	<svg id="svg1217" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+13e9027c732b157dae852248a00049a3|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|63|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+22ebb8a35212cbbe682324476752eea6|file:///home/jdv/js/vedhub/src/assets/die6-6_2.svg|1|1|V|svg
+	<svg id="svg934" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect918" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g932" transform="matrix(.26667 0 0 .26667 1.3946e-6 1.3654e-6)" fill="#bd93f9">
+	  <circle id="circle920" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle922" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle924" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle926" cx="154.18" cy="34.175" r="19.175"/>
+	  <circle id="circle928" cx="93.75" cy="34.175" r="19.175"/>
+	  <circle id="circle930" cx="93.75" cy="154.18" r="19.175"/>
+	 </g>
+	</svg>
+953ec09ec983b409ca526f4c0f072094|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|105|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect918" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+								<g id="g932" transform="matrix(.26667 0 0 .26667 1.3946e-6 1.3654e-6)" fill="#bd93f9">
+									<circle id="circle920" cx="35.625" cy="35.625" r="19.175"/>
+									<circle id="circle922" cx="155.62" cy="155.62" r="19.175"/>
+									<circle id="circle924" cx="34.175" cy="154.18" r="19.175"/>
+									<circle id="circle926" cx="154.18" cy="34.175" r="19.175"/>
+									<circle id="circle928" cx="93.75" cy="34.175" r="19.175"/>
+									<circle id="circle930" cx="93.75" cy="154.18" r="19.175"/>
+								</g>
+							</svg>
+919d0dd01f34e715f95846979aa71c5a|file:///home/jdv/js/vedhub/src/assets/die6-4_2.svg|1|1|V|svg
+	<svg id="svg1292" width={dieWidth} height={dieHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1280" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+	 <g id="g1290" transform="scale(.26667)" fill="#8be9fd">
+	  <circle id="circle1282" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1284" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1286" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle1288" cx="154.18" cy="34.175" r="19.175"/>
+	 </g>
+	</svg>
+a8ade562feb2d1b87461ae77854ea6d4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|76|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect1280" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+								<g id="g1290" transform="scale(.26667)" fill="#8be9fd">
+									<circle id="circle1282" cx="35.625" cy="35.625" r="19.175"/>
+									<circle id="circle1284" cx="155.62" cy="155.62" r="19.175"/>
+									<circle id="circle1286" cx="34.175" cy="154.18" r="19.175"/>
+									<circle id="circle1288" cx="154.18" cy="34.175" r="19.175"/>
+								</g>
+							</svg>
+fd9449a99af889bf7c22fd0096ab13e9|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|45|1|V|typescriptreact
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+5a71a59040bd99fad94cd65be7c55a67|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|54|1|V|typescriptreact
+	 <rect id="rect1140" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+8707f4725711fb751e8075dcbd127294|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|64|1|V|typescriptreact
+	 <rect id="rect1207" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+0c5aea724348d9d3abcc24cd4e145e82|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|77|1|V|typescriptreact
+	 <rect id="rect1280" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+aa70d3b54e1c85f839404c350f137ac3|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|91|1|V|typescriptreact
+							<rect id="rect1357" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+517ad9c9f264bde42c21f9c44e2ded61|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|106|1|V|typescriptreact
+	 <rect id="rect918" x=".3167" y=".3167" width="49.367" height="49.367" ry="7.4517" fill="none" stroke="#6272a4" stroke-width=".6334"/>
+475bd94b2186f115d556d2f4a89d6fa8|file:///home/jdv/js/vedhub/src/assets/die6-2_2.svg|1|1|V|svg
+	<svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="Mask Group">
+	<g id="die6-2">
+	<path id="Die-6-2_Outline" d="M158.365 1.1876H29.1306C13.6981 1.1876 1.18761 13.6981 1.18761 29.1306V158.365C1.18761 173.797 13.6981 186.308 29.1306 186.308H158.365C173.797 186.308 186.308 173.797 186.308 158.365V29.1306C186.308 13.6981 173.797 1.1876 158.365 1.1876Z" stroke="#6272A4" stroke-width="2.3752"/>
+	<path id="Die-6-2_Dot-1" d="M35.625 54.8C46.2151 54.8 54.8 46.2151 54.8 35.625C54.8 25.0349 46.2151 16.45 35.625 16.45C25.0349 16.45 16.45 25.0349 16.45 35.625C16.45 46.2151 25.0349 54.8 35.625 54.8Z" fill="#50FA7B"/>
+	<path id="Die-6-2_Dot-2" d="M155.62 174.795C166.21 174.795 174.795 166.21 174.795 155.62C174.795 145.03 166.21 136.445 155.62 136.445C145.03 136.445 136.445 145.03 136.445 155.62C136.445 166.21 145.03 174.795 155.62 174.795Z" fill="#50FA7B"/>
+	</g>
+	</g>
+	</svg>
+4861e2140bcf21c73b4519ded5ccbfba|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|53|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <circle id="circle1142" cx="9.5042" cy="9.5042" r="5.1135" fill="#50fa7b" stroke-width=".26667"/>
+	 <circle id="circle1144" cx="41.504" cy="41.504" r="5.1135" fill="#50fa7b" stroke-width=".26667"/>
+	</svg>
+1813904742d5edef72e6b1455fe83384|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|3|10|v|typescriptreact
+	SvgComponent
+80d562c4791a48ddd4a97f3b6b583617|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|44|3|V|typescriptreact
+			<VStack>
+				<Navbar />
+				
+			</VStack>
+ca359d074ccc097ab8e33a1cccb5178e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|5|1|V|typescriptreact
+	    <svg
+	      width={250}
+	      height={250}
+	      viewBox="0 0 187.5 187.5"
+	      xmlns="http://www.w3.org/2000/svg"
+	      {...props}
+	    >
+	      <rect
+	        x={1.188}
+	        y={1.188}
+	        width={185.12}
+	        height={185.12}
+	        ry={27.943}
+	        fill="none"
+	        stroke="#6272a4"
+	        strokeWidth={2.375}
+	      />
+	      <circle cx={93.75} cy={93.75} r={19.175} fill="#f55" />
+	    </svg>
+8257eb8ae9818813c67d9affb2ca3c43|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|30|5|V|typescriptreact
+	import {
+	} from "@chakra-ui/react"
+afe9cd164754ff5872da3b9d77d02161|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|31|1|V|typescriptreact
+	// Components
+	import Navbar from "../Navbar/Navbar"
+f005a524c9c97b4ec251b8a003f4b7e7|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|32|1|V|typescriptreact
+	//type die62props = {
+	//	name: type;
+	//}
+222ca522684c9038940c5d1ddd7da5fa|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|33|1|V|typescriptreact
+		dieWidth: type;
+32954654ac8fe66a1d09be19001de2d4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|34|5|v|typescriptreact
+	Width
+a924bd9f642790f3dbadf7f1db97fbb8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|1|1|V|typescriptreact
+	import * as React from "react"
 	
-480f81b5d6700a9076eed34012dfcbf8|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|5|1|V|javascript
-		const chatSocket = UseStore(state => state.chatSocket)
-7b8c5d48e48b46a9bcd18f0e4af981ac|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|17|1|V|javascript
-				if (inputBox.value) {
-					chatSocket.emit('msg', inputBox.value);
-					inputBox.value = '';
-				}
-d034dcd770ef6e6de53c4c5d1b8436bc|file:///home/jdv/js/reactDice/src/Store.js|49|1|V|javascript
-		socket: openSocket('http://localhost:8000'),
-		chatSocket: openSocket('http://localhost:8000/'),
-0f68c13b19af96d3e707cc7571069acc|file:///home/jdv/js/reactDice/server/main.go|8|2|V|go
-		"github.com/googollee/go-socket.io"
-b8839f0225f21dcc04b17dfe992b2804|file:///home/jdv/js/reactDice/server/main.go|11|1|V|go
-		// Start a new socketio server
-		server, serveError := socketio.NewServer(nil)
-		if serveError != nil {
-			log.Fatalln(serveError)
+	function Die62(props: React.SVGProps<SVGSVGElement>) {
+	  return (
+	    <svg
+	      width={250}
+	      height={250}
+	      viewBox="0 0 187.5 187.5"
+	      xmlns="http://www.w3.org/2000/svg"
+	      {...props}
+	    >
+	      <rect
+	        x={1.188}
+	        y={1.188}
+	        width={185.12}
+	        height={185.12}
+	        ry={27.943}
+	        fill="none"
+	        stroke="#6272a4"
+	        strokeWidth={2.375}
+	      />
+	      <circle cx={93.75} cy={93.75} r={19.175} fill="#f55" />
+	    </svg>
+	  )
+	}
+	
+	export default Die62
+	
+50fe03ab7bf37089a7e88da9b31ffb3b|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|9|37|v|typescriptreact
+	props
+86f4cfa4e97ebd4111a455c37416a944|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die6-2.tsx|16|16|V|typescriptreact
+	      {...props}
+df4c866d2f6ffa50e0dffc676822068d|file:///home/jdv/js/vedhub/src/assets/die62.svg|4|1|V|svg
+	<path id="Die-6-2_Outline" d="M158.365 1.1876H29.1306C13.6981 1.1876 1.18761 13.6981 1.18761 29.1306V158.365C1.18761 173.797 13.6981 186.308 29.1306 186.308H158.365C173.797 186.308 186.308 173.797 186.308 158.365V29.1306C186.308 13.6981 173.797 1.1876 158.365 1.1876Z" stroke="#6272A4" stroke-width="2.3752"/>
+	<path id="Die-6-2_Dot-1" d="M35.625 54.8C46.2151 54.8 54.8 46.2151 54.8 35.625C54.8 25.0349 46.2151 16.45 35.625 16.45C25.0349 16.45 16.45 25.0349 16.45 35.625C16.45 46.2151 25.0349 54.8 35.625 54.8Z" fill="#50FA7B"/>
+	<path id="Die-6-2_Dot-2" d="M155.62 174.795C166.21 174.795 174.795 166.21 174.795 155.62C174.795 145.03 166.21 136.445 155.62 136.445C145.03 136.445 136.445 145.03 136.445 155.62C136.445 166.21 145.03 174.795 155.62 174.795Z" fill="#50FA7B"/>
+8b79d489edea279ae4120649ac1f4727|unknown:52|8|1|V|typescriptreact
+	    <path
+	      fill="currentColor"
+	      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+	    />
+d620441ce10f31aebe443c11eb11a7cf|unknown:52|1|1|V|typescriptreact
+	import { createIcon } from "@chakra-ui/icons"
+	// using `path`
+	export const Die62 = createIcon({
+	  displayName: "Die62",
+	  viewBox: "0 0 200 200",
+	  // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
+	  path: (
+	<path id="Die-6-2_Outline" d="M158.365 1.1876H29.1306C13.6981 1.1876 1.18761 13.6981 1.18761 29.1306V158.365C1.18761 173.797 13.6981 186.308 29.1306 186.308H158.365C173.797 186.308 186.308 173.797 186.308 158.365V29.1306C186.308 13.6981 173.797 1.1876 158.365 1.1876Z" stroke="#6272A4" stroke-width="2.3752"/>
+	<path id="Die-6-2_Dot-1" d="M35.625 54.8C46.2151 54.8 54.8 46.2151 54.8 35.625C54.8 25.0349 46.2151 16.45 35.625 16.45C25.0349 16.45 16.45 25.0349 16.45 35.625C16.45 46.2151 25.0349 54.8 35.625 54.8Z" fill="#50FA7B"/>
+	<path id="Die-6-2_Dot-2" d="M155.62 174.795C166.21 174.795 174.795 166.21 174.795 155.62C174.795 145.03 166.21 136.445 155.62 136.445C145.03 136.445 136.445 145.03 136.445 155.62C136.445 166.21 145.03 174.795 155.62 174.795Z" fill="#50FA7B"/>
+	  ),
+	})
+4425e7e4efc52550d7bfd639a8b33141|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|8|1|V|typescriptreact
+	// Props
+	type DieProps = {
+		id: number;
+	}
+a31b2abf9b7ddddfb32639f49521eb36|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|7|8|v|typescriptreact
+	Die62
+62ad1a6a91706f2d6e1f83412d6ec8b7|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|53|1|V|typescriptreact
+						<Box onClick={handleClick}>
+	<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="Mask Group">
+	<g id="die6-2">
+	<path id="Die-6-2_Outline" d="M158.365 1.1876H29.1306C13.6981 1.1876 1.18761 13.6981 1.18761 29.1306V158.365C1.18761 173.797 13.6981 186.308 29.1306 186.308H158.365C173.797 186.308 186.308 173.797 186.308 158.365V29.1306C186.308 13.6981 173.797 1.1876 158.365 1.1876Z" stroke="#6272A4" stroke-width="2.3752"/>
+	<path id="Die-6-2_Dot-1" d="M35.625 54.8C46.2151 54.8 54.8 46.2151 54.8 35.625C54.8 25.0349 46.2151 16.45 35.625 16.45C25.0349 16.45 16.45 25.0349 16.45 35.625C16.45 46.2151 25.0349 54.8 35.625 54.8Z" fill="#50FA7B"/>
+	<path id="Die-6-2_Dot-2" d="M155.62 174.795C166.21 174.795 174.795 166.21 174.795 155.62C174.795 145.03 166.21 136.445 155.62 136.445C145.03 136.445 136.445 145.03 136.445 155.62C136.445 166.21 145.03 174.795 155.62 174.795Z" fill="#50FA7B"/>
+	</g>
+	</g>
+	</svg>
+						</Box>
+e13783dc862adc5135d57df4feaa8a5a|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|7|7|V|typescriptreact
+	import { Die62 } from './Die62'
+8d553c918edb9b1924df2fc070bc7540|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|53|10|V|typescriptreact
+						<Box>
+25417d850e470845c26783b94d51ad37|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|54|11|V|typescriptreact
+						</Box>
+4683b63c3f0f8e57d8a1690fc42612a4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|44|1|V|typescriptreact
+						<Box onClick={handleClick}>
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <circle id="circle1051" cx="12.5" cy="12.5" r="2.5567" fill="#ff5555" stroke-width=".13333"/>
+	</svg>
+						</Box>
+532eaf2c8bcfdaecfdeeff83fbeb5acc|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|53|1|V|typescriptreact
+						<Die62 />
+9e7e92978c2aa0d1abaa959fd91c8fe0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|62|1|V|typescriptreact
+						<Box onClick={handleClick}>
+	<svg id="svg1217" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+						</Box>
+75b0de8724aaf98cd9c783b8cfc428c8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|66|1|V|typescriptreact
+						<Box onClick={handleClick}>
+	<svg id="svg1292" width={dieWidth} height={dieHeight} version="1.0" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <g id="g1290" transform="scale(.26667)" fill="#8be9fd">
+	  <circle id="circle1282" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1284" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1286" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle1288" cx="154.18" cy="34.175" r="19.175"/>
+	 </g>
+	</svg>
+6da8c75a353e111619ecd57777d63c13|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|79|1|V|typescriptreact
+						<Box>
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+							<g id="g1369" transform="scale(.26667)" fill="#f1fa8c">
+								<circle id="circle1359" cx="35.625" cy="35.625" r="19.175"/>
+								<circle id="circle1361" cx="155.62" cy="155.62" r="19.175"/>
+								<circle id="circle1363" cx="34.175" cy="154.18" r="19.175"/>
+								<circle id="circle1365" cx="154.18" cy="34.175" r="19.175"/>
+								<circle id="circle1367" cx="93.75" cy="93.75" r="19.175"/>
+							</g>
+						</svg>
+						</Box>
+f693955d372f9396740b1d6d616673f2|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|92|1|V|typescriptreact
+						<Box onClick={handleClick}>
+	<svg id="svg934" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <g id="g932" transform="matrix(.26667 0 0 .26667 1.3946e-6 1.3654e-6)" fill="#bd93f9">
+	  <circle id="circle920" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle922" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle924" cx="34.175" cy="154.18" r="19.175"/>
+	  <circle id="circle926" cx="154.18" cy="34.175" r="19.175"/>
+	  <circle id="circle928" cx="93.75" cy="34.175" r="19.175"/>
+	  <circle id="circle930" cx="93.75" cy="154.18" r="19.175"/>
+	 </g>
+	</svg>
+						</Box>
+64a1d62daec3d2714d16bb328c46b2dd|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|2|1|V|typescriptreact
+	import {
+		Box,
+	} from "@chakra-ui/react"
+	
+844574041e4905226bacd30d6a543e79|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|3|13|V|typescriptreact
+	// Components
+851adb195d533d0bfaed219634a711f4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|1|17|V|typescriptreact
+	import * as React from "react"
+d3682d1f138bc18198291cd3af0c43f4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|3|8|v|typescriptreact
+	Die61
+c78e7dc4911a65b21f0805995a481708|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|7|21|v|typescriptreact
+	styled.svg
+54f96de17f1a0a2b3f449331b503fa38|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|7|34|v|typescriptreact
+	`
+		
+	`
+	
+d25d4c4c4a9b8d0f63fe4f8362f51c51|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|15|1|V|typescriptreact
+	const Die61 = (
+		<StyledDie61
+	)
+ac9448bb4de535544336d93d43ddd50c|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|24|14|V|typescriptreact
+			<div></div>	
+b049efc8320a111c16d33c7ac9d199bd|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|46|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <circle id="circle1051" cx="12.5" cy="12.5" r="2.5567" fill="#ff5555" stroke-width=".13333"/>
+	</svg>
+5e28efc95e52af6849e9798926a2bafb|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|46|1|V|typescriptreact
+							<Die61 />
+b87bdc5ce1608091e1bc39e13d8bc4e0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|57|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"> <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <circle id="circle1051" cx="12.5" cy="12.5" r="2.5567" fill="#ff5555" stroke-width=".13333"/>
+	</svg>
+caff42368ec510bf9062f5045d8e56fb|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|51|1|V|typescriptreact
+						<Box onClick={handleClick}>
+							<Die61 />
+						</Box>
+b6716a0aefbca9d9e0dd91b1672234a0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|70|1|V|typescriptreact
+	<svg id="svg1217" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+	 <rect id="rect1049" x=".15835" y=".15835" width="24.683" height="24.683" ry="3.7258" fill="none" stroke="#6272a4" stroke-width=".3167"/>
+	 <g id="g1215" transform="scale(.26667)" fill="#ffb86c">
+	  <circle id="circle1209" cx="35.625" cy="35.625" r="19.175"/>
+	  <circle id="circle1211" cx="155.62" cy="155.62" r="19.175"/>
+	  <circle id="circle1213" cx="93.75" cy="93.75" r="19.175"/>
+	 </g>
+	</svg>
+be9c08ca50734e53b82ff62279bcc93c|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|82|1|V|typescriptreact
+	<svg id="svg1053" width={dieWidth} height={dieHeight} version="1.0" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+								<rect id="rect1000" x=".23753" y=".23753" width="37.025" height="37.025" ry="5.5887" fill="none" stroke="#6272a4" stroke-width=".47505"/>
+							</svg>
+3cee154a58a86d519f908c42576bee38|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|76|1|V|typescriptreact
+							<Die61 dieWidth="50" dieHeight="50"/>
+787aeded9da58673a4f2cd9b4084cb93|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|52|7|V|typescriptreact
+							<Die61 dieWidth={50} dieHeight=50/>
+beb0039cbe12a4259ab78b7f71152669|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|39|1|V|typescriptreact
+		let dieWidth = "50%"
+		let dieHeight = "50%"
+	
+4a3b4b199b3373495c392ea10e593717|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|11|1|V|typescriptreact
+	type DieProps = {
+		id: number;
+	}
+13f99f9e834775312e8baf0e4a20f7d8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|9|1|V|typescriptreact
+		dieWidth: number;
+830d1014e5958e21fd6d40779a82b28c|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|16|1|V|typescriptreact
+	// Props
+	type Die61Props = {
+		dieWidth: number;
+		dieHeight: number;
+	}
+4f63f4f7f5bf68ab1e849af2d5e34fe4|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|14|1|V|typescriptreact
+	height:{Die61Props.dieHeight};
+8ccb241d07dbc714f8d821e0e219f768|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|16|1|V|typescriptreact
+	width:25rem;
+b435e227d5dd201e1768b2bcb2e0aa81|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|15|1|v|typescriptreact
+	height
+c99c0106c2e6aaaa854dcd257aada852|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|13|10|V|typescriptreact
+	let dw = <Die61Props>.dieWidth
+ae7a99acb62054c486597b8eced3cdb8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|14|8|v|typescriptreact
+	{Die61Props.dieHeight}
+35fe6357ee46b03846ee61de83e4263e|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|15|12|v|typescriptreact
+	{Die61Props.dieWidth}
+1780964f8a0132462752bc45765c83e7|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|13|1|V|typescriptreact
+	const StyledDie61 = styled(Die6_1)`
+	height:${dieHeight};
+	width:25rem;
+	display:block;
+	margin:auto;
+	`
+	
+1d8f841cbbf8cc20230c9dde29003fa9|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|18|8|v|typescriptreact
+	${dieWidth}
+7a6a77d665175b2aba179e9f123853f1|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|17|9|v|typescriptreact
+	${dieHeight}
+b5034045a4c51f775f328f8eb5324ecd|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|1|1|V|typescriptreact
+	import React, { Component } from 'react'
+	import styled from "styled-components"
+	import { ReactComponent as Die6_1 } from '../../../assets/die6-1.svg'
+	
+	// Components
+	
+	// Props
+	type Die61Props = {
+		dieWidth: number;
+		dieHeight: number;
+	}
+	
+	
+	const Die61:React.FC<Die61Props> = ({ dieWidth, dieHeight }) => {
+	
+		const StyledDie61 = styled(Die6_1)`
+		height:${dieHeight};
+		width:${dieWidth};
+		display:block;
+		margin:auto;
+		`
+	
+	
+		return (
+			<StyledDie61 height={dieHeight} width={dieWidth}/>
+		)
+	}
+	
+	export default Die61
+032c07300d429260e8e1b97808c548cd|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|1|14|v|typescriptreact
+	 { Component } 
+457005c9b7bcbd442f8827d56a6f7504|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|1|1|V|typescriptreact
+	import React from 'react'
+	import styled from "styled-components"
+	import { ReactComponent as SixSidedDie } from '../../../assets/die6-2.svg'
+	
+	// Components
+	
+	// Props
+	type Die61Props = {
+		dieWidth: number;
+		dieHeight: number;
+	}
+	
+	
+	const Die61:React.FC<Die61Props> = ({ dieWidth, dieHeight }) => {
+	
+		const StyledDie = styled(SixSidedDie)`
+		height:${dieHeight};
+		width:${dieWidth};
+		display:block;
+		margin:auto;
+		`
+	
+	
+		return (
+			<StyledDie height={dieHeight} width={dieWidth}/>
+		)
+	}
+	
+	export default Die61
+a51032020d5b0520719534e4c1b0e30d|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|3|64|v|typescriptreact
+	die6-2
+c3b033f8ed63d2f952a299b2251c73be|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|1|1|V|typescriptreact
+	import React from 'react'
+	import styled from "styled-components"
+	import { ReactComponent as SixSidedDie } from '../../../assets/Die62.svg'
+	
+	// Components
+	
+	// Props
+	type Die62Props = {
+		dieWidth: number;
+		dieHeight: number;
+	}
+	
+	
+	const Die62:React.FC<Die62Props> = ({ dieWidth, dieHeight }) => {
+	
+		const StyledDie = styled(SixSidedDie)`
+		height:${dieHeight};
+		width:${dieWidth};
+		display:block;
+		margin:auto;
+		`
+	
+	
+		return (
+			<StyledDie height={dieHeight} width={dieWidth}/>
+		)
+	}
+	
+	export default Die62
+5eae763a1e16a6a469b913c8c1463fea|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|8|29|V|typescriptreact
+	import Die62 from '../../../assets/die6-2.svg'
+c906f706e0d0b2e36771ce8f135a5e34|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|7|1|V|typescriptreact
+	import Die61 from './Die61'
+abda426b560f84619f94dbf00d89a6b2|file:///home/jdv/js/vedhub/src/assets/Die61.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+86c02de2e600648a2f02907266d165c9|file:///home/jdv/js/vedhub/src/assets/Die62.svg|1|1|V|svg
+	<svg width="187.5pt" height="187.5pt" version="1.0" xmlns="http://www.w3.org/2000/svg">
+d054f8d60e6be3ae4b182e0f8e528a50|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|49|1|V|typescriptreact
+						<Box margin="0.25vw" onClick={handleClick}>
+a35cb5ae3e6ec2f422f567722ad5b317|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die.tsx|49|27|v|typescriptreact
+	margin="0.25vw" 
+f35c1d7416a1b548202312a410c40ace|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|22|1|V|typescriptreact
+		const pulse = keyframes`
+		0% {
+		  transform: scale(0);
+		  opacity: 1;
+		  transform-origin: center;
 		}
-	
-		server.OnConnect("/", func(s socketio.Conn) error {
-			s.SetContext("")
-			fmt.Println("Client connected:", s.ID())
-			return nil
-		})
-	
-		server.OnEvent("/", "notice", func(s socketio.Conn, msg string) {
-			fmt.Println("notice:", msg)
-			s.Emit("reply", "You: "+msg)
-		})
-	
-		server.OnEvent("/chat", "msg", func(s socketio.Conn, msg string) string {
-			s.SetContext(msg)
-			return "Server Received Message: " + msg
-		})
-	
-		server.OnEvent("/", "chat message", func(s socketio.Conn, msg string) string {
-			return "React sent a message: " + msg
-		})
-	
-		server.OnEvent("/", "bye", func(s socketio.Conn) string {
-			last := s.Context().(string)
-			s.Emit("bye", last)
-			s.Close()
-			return last
-		})
-	
-		server.OnError("/", func(s socketio.Conn, e error) {
-			fmt.Println("meet error:", e)
-		})
-	
-		server.OnDisconnect("/", func(s socketio.Conn, reason string) {
-			fmt.Println("closed", reason)
-		})
-	
-		go server.Serve()
-		defer server.Close()
-	
-		http.Handle("/socket.io/", server)
-		// When visiting localhost:8000, sends contents of /server/asset, which includes an index.html
-		fmt.Println("Server started on localhost:8000...")
-		log.Fatal(http.ListenAndServe(":8000", nil))
-29204d45751cf986e567e4e21746c7cb|file:///home/jdv/js/reactDice/public/index.html|20|1|V|html
-		<!-- Include socket.io for realtime communication -->
-		<!-- <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script> -->
-d3974844675491dfe14233d861cb8342|file:///home/jdv/js/reactDice/firebase/firebase.json|15|1|V|json
-	    "public": "",
-27573d806990ac47c71ef6ec1fcbfecc|file:///home/jdv/js/reactDice/.gitignore|107|1|V|conf
-	./src/services/firebase.js
-5120eb65b7751f47a36fd832fa4a5a4a|file:///home/jdv/js/reactDice/.gitignore|107|1|V|conf
-	/src/services/firebase.js
-b68a9279ce1668f42dad299f322581eb|file:///home/jdv/js/reactDice/src/services/firebase.js|5|12|v|javascript
-	ADD-YOUR-DETAILS-HERE
-8dc11dfa414f9e9ee71fbffc3fa61e87|file:///home/jdv/js/reactDice/src/services/firebase.js|4|1|V|javascript
-	const config = {
-	  apiKey: "AIzaSyAJNO5gYtMDf30V4ONR3BlasbyvKBYLCok",
-	  authDomain: "reactdice-5f1e2.firebaseapp.com",
-	  databaseURL: "ADD-YOUR-DETAILS-HERE"
-	};
-5b8a4ff75f53e886206af17ed4ff1b30|file:///home/jdv/js/reactDice/src/websocket.js|17|1|V|javascript
-	console.log();
-00a15d70bb758a2239cfbe644e5499a5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|64|1|V|vim
-	
-	"*****************************************************************************
-	" Center line in middle of screen while in insert mode
-	"*****************************************************************************
-c29eb8c3e5fd223e46abb0e053c9c8d7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|66|3|v|vim
-	Center line in middle of screen while in insert mode
-f056a52e430c4d8bfcadd37c1a9bb5ff|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|69|1|V|vim
-	inoremap <silent> <C-h> $
-e20ec8543f23bedc2c60018812f9df0e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|69|1|V|vim
-	inoremap <silent> <C-h> $
-	nnoremap <silent> <C-h> $
-	
-2e5593bf064acf73e73cdcee5fde8406|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|70|1|V|vim
-	nnoremap <silent> <C-h> 0
-b5333e510b5916cde34867830b5667a5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|74|1|V|vim
-	nnoremap <silent> <C-l> $
-6a8301a1d0ead721bcd29d98f5f1752e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|75|1|V|vim
-	vnoremap <silent> <C-l> $
-9c5a9f9bde157cc43e757958cae2fc46|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|76|1|V|vim
-	
-	inoremap <silent> <C-j> $
-	nnoremap <silent> <C-j> $
-	vnoremap <silent> <C-j> $
-1fbd6ad13295874d5f928e9dd4f32fdf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|84|1|V|vim
-	" Left Curly Brace
-	inoremap <silent> <C-k> {
-	nnoremap <silent> <C-k> {
-	vnoremap <silent> <C-k> {
-	
-a866af19e97ce41601038c316eb0d36b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|54|1|V|vim
-	inoremap qa <Esc>la
-37eba660a2f8b7a4bdc70392087d9f6b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|95|3|v|vim
-	Left Curly Brace
-86f83f99bf9ed8afd2251e834a6d919b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|95|1|V|vim
-	" Percent
-	inoremap <silent> <C-n> %
-	nnoremap <silent> <C-n> %
-	vnoremap <silent> <C-n> %
-	
-adaaee4b22041c27198d410c68d952c9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|100|3|v|vim
-	Percent
-556135225066d7d28ffd3c5ad49c30ee|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|89|1|V|vim
-	
-	" Left Curly Brace
-	inoremap <silent> <C-k> {
-	nnoremap <silent> <C-k> {
-	vnoremap <silent> <C-k> {
-ec8df9cf549ed7e080da00618536e059|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|93|1|V|vim
-	" Backtick
-	inoremap <silent> <C-'> `
-	nnoremap <silent> <C-'> `
-	vnoremap <silent> <C-'> `
-	
-efa64052a8f0a142860105a21f19c2b1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|98|3|v|vim
-	Backtick
-b09c98c62e09be6ebb40c2bd63ea2fde|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|68|1|V|vim
-	" Home
-	inoremap <silent> <C-h> 0
-	nnoremap <silent> <C-h> 0
-	vnoremap <silent> <C-h> 0
-	
-1e153310f379d2ff2ecdbff2132c7294|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|126|1|V|vim
-	"*****************************************************************************
-	" Move line to bottom of screen
-	"*****************************************************************************
-	
-	nnoremap <silent> zj zb2j2k
-	
-6ff4a3634fa27315ad7c6ac324c4ed96|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|133|3|v|vim
-	Move line to bottom of screen
-b34901222c5db48566f831ea504f5a52|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|132|1|V|vim
-	"*****************************************************************************
-	" Select All
-	"*****************************************************************************
-	
-	nnoremap <silent> <C-a> ggVG
-	
-45e96c0a422ce8a1a6ec1bd5eb9625c6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|139|3|v|vim
-	Select All
-3c343ccd737540b1999b325724e197b3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|142|1|V|vim
-	nnoremap <silent> ct$ c$
-632dc6a1df0c18c6a3268af704c356d3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|140|23|v|vim
-	********************************************************
-b3ffec024cf6d48e4353de138268130a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|140|23|v|vim
-	********************************************************
-	
-	nnoremap <silent> ct$
-29aa5cca54ba6bfee8f45461fbeacfc8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|140|23|v|vim
-	********************************************************
-	
-	n
-c4a02d86f7096cf3e0e4cad3edaadc6a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|138|1|V|vim
-	"*****************************************************************************
-	" Change till end of line / Delete till end of line
-	"*****************************************************************************
-	
-	nnoremap <silent> ct$ c$
-	nnoremap <silent> dt$ d$
-9ed657cf2bd58455de91bb53f05e2186|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|28|1|V|vim
-	map s <Plug>(easymotion-overwin-f)
-cd160fa36c94ed8101c47f3cd39f99a2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|29|1|V|vim
-	vnoremap s <Plug>(easymotion-overwin-f)
-1f8bd2c6fc6daad40f0a429748e79f4a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|29|4|V|vim
-	vmap s <Plug>(easymotion-overwin-line)
-2cc30c8129df4602413b4f3043849f19|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim|43|1|V|vim
-	
-	
-	"*****************************************************************************
-	" JK motions: Line motions
-	"*****************************************************************************
-	
-	map <Leader>j <Plug>(easymotion-j)
-	map <Leader>k <Plug>(easymotion-k)
-377568432b054d0e3a8c4186286ff4d0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|47|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
-5edc86789965f09629e667ed23384cb5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|53|1|V|vim
-	" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
-423b08e904df8a70975dff4adc7c4561|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|53|26|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
-773f86b9bf9f451e07779149473e4a5d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|48|59|v|vim
-	lexima
-d8dcd89453c2f8c6745c110fa95c911f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim|20|1|V|vim
-	                                                                    
-4b25018873c5c230879bf5bfbbd0d517|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|62|5|V|vim
-	map <S-k> <Nop>
-7fb32e831c64079ca854ef5cdf72e615|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|61|1|V|vim
-	" Remove default binding for P first
-5572028c3590e85aeaa9ef72a32c7d0d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|42|34|v|vim
-	, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-6eed751a399560f9e201a822c93bc0e7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|110|24|V|vim
-	onoremap <silent> dt$ d$
-0b9ffce25e4e8e70315377b816381b12|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|110|22|V|vim
-	onoremap <silent> t$ $
-1b7c627f713a6cbd4459eba758df63df|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|44|19|v|vim
-	              -- false will disable the whole extension
-3984493a5b7b1bf47c0133aa8c119a5f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|45|18|V|vim
-	    disable = { "c", "rust" },  -- list of language that will be disabled
-30e7c17d953071af4f0a5d3dcc05be89|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|16|4|V|vim
-	lua <<EOF
-	require'nvim-treesitter.configs'.setup {
-	" highlight = {
-	  " enable = true,
-	  " custom_captures = {
-	    " -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-	    " ["foo.bar"] = "Identifier",
-	  " },
-	" },
-	" incremental_selection = {
-	  " enable = true,
-	  " keymaps = {
-	    " init_selection = "gnn",
-	    " node_incremental = "grn",
-	    " scope_incremental = "grc",
-	    " node_decremental = "grm",
-	  " },
-	" },
-	" indent = {
-	  " enable = true
-	" },
-	}
-	EOF
-	
-530aa35af867233729d4d1a3b00c20df|file:///home/jdv/js/reactDice/src/websocket.js|31|1|V|javascript
-		// This function is called by our React application to register a callback that needs to be called everytime a new message is received
-		export const registerOnMessageCallback = (fn) => {
-			// The callback function is supplied as an argument and assigned to the `onMessageCallback` variable we declared earlier
-			onMessageCallback = fn
-5f1f645d39e38ad1e6f8d3c3236cd9fb|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|7|1|V|javascript
-		// Store
-		const chatHistory = Store(state => state.chatHistory)
-53b3a5f7103607bbd908aa9c53e8bd26|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|4|1|V|javascript
-	import { v4 as uuid } from 'uuid';
-82e1b7da6bf87b4eefd9586e87e2412b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|90|1|V|vim
-	" Left Curly Brace
-	inoremap <silent> <C-k> {}<C-o>i
-	nnoremap <silent> <C-k> {
-	vnoremap <silent> <C-k> {
-	
-8d14c67344ae64f61fbebc1b5fba89e4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|42|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vimtex.vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-latex-live-preview.vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/tex-conceal.vim
-de4d66c65bb00b6ae71e0fa00ab9689b|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|18|35|V|javascript
-			console.log(`onMessageReceived: $`);
-1cb251ec0d568de6a929b520c4aed8d1|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|18|20|v|javascript
-	text
-2de932c18c75a61e1dbb0d42782ea001|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|6|16|V|javascript
-		diceTheme: ["numbers", "letters"],
-10cf84e6db2636bacd21de7d0bbed04e|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|57|1|V|javascript
-		dice: [
-			{
-				id: 0,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 1,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 2,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 3,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 4,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 5,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 6,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 7,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 8,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 9,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 10,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-		], 
-	
-		sortDice: () => 
-			set(state =>  {
-				state.dice.sort((a, b) =>  a.val - b.val)
-			}),
-	
-		toggleHeld: (id) => 
-			set(state =>  {
-				//toggle the value if not saved
-				if (state.dice[id].saved === true) {
-					console.log(`\tZustand -- Die${id} was already saved, so it's held state was not flipped.`);
-				} else {
-					state.dice[id].held = !state.dice[id].held;
-					console.log(`\tZustand -- held state of Die${id}: ${state.dice[id].held}`);
-				}
-			}),
-		toggleSaved: (id) => 
-			set(state =>  {
-				//toggle the value
-				state.dice[id].saved = !state.dice[id].saved;
-				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
-			}),
-		rollDice: () => 
-			set(state =>  {
-				// Roll the dice that are not held
-				console.log(`Zustand -- Roll Dice Button Pressed`);
-				state.dice.forEach(
-					(die) => {
-						if (!die.held === true && !die.saved === true) { // If a die is not held and not saved, reroll it.
-							die.val = Math.floor(Math.random() * (7 - 1) + 1)
-							// Reset the held status to trigger useEffect
-							die.held = false;
-	
-							console.log(`Zustand -- Die${die.id} val updated: ${die.val}`); 
-						} else { // If the die is either held or saved, do not reroll it, and make sure it is set to saved and reset it to not be held for CSS purposes
-							if (die.held) {
-								console.log(`Zustand -- Die${die.id} was saved because it was marked as held`); 
-							}                        
-							if (die.saved) {
-								console.log(`Zustand -- Die${die.id} was saved because it was previously saved`); 
-							}
-							die.held = false;
-							die.saved = true;
-						} 
-					}
-				)
-			}),
-d2fd4abffdb4f128bb0fe4b7974dd26a|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|48|1|V|javascript
-	
-		latestMessage: "This is the initial latest message.",
-		updateLatestMessage: (text) => set(() => ({
-			latestMessage: text
-		})),
-		addMessageToHistory: () => set(state => ({ 
-			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
-		})),
-	
-3b7d71f9954faf6c4c8779d201bf6150|file:///home/jdv/js/reactDice/src/stores/DiceStore.js|6|1|V|javascript
-		chatHistory: [
-			{
-				id: 0,
-				key: 0,
-				content: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 1,
-				key: 1,
-				content: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 2,
-				key: 2,
-				content: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 3,
-				key: 3,
-				content: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-			{
-				id: 4,
-				key: 4,
-				content: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 5,
-				key: 5,
-				content: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 6,
-				key: 6,
-				content: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 7,
-				key: 7,
-				content: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-		],
-	
-		latestMessage: "This is the initial latest message.",
-		updateLatestMessage: (text) => set(() => ({
-			latestMessage: text
-		})),
-		addMessageToHistory: () => set(state => ({ 
-			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
-		})),
-	
-fe63644a3734fac468d11ff5ecbb089d|file:///home/jdv/js/reactDice/src/stores/UI.js|5|1|V|javascript
-		chatHistory: [
-6f79cb697a4f21ec35f34b0466e3df19|file:///home/jdv/js/reactDice/src/stores/UI.js|5|1|V|javascript
-	
-				id: 0,
-				key: 0,
-				content: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 1,
-				key: 1,
-				content: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 2,
-				key: 2,
-				content: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 3,
-				key: 3,
-				content: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-			{
-				id: 4,
-				key: 4,
-				content: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 5,
-				key: 5,
-				content: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 6,
-				key: 6,
-				content: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 7,
-				key: 7,
-				content: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-		],
-	
-		latestMessage: "This is the initial latest message.",
-		updateLatestMessage: (text) => set(() => ({
-			latestMessage: text
-		})),
-		addMessageToHistory: () => set(state => ({ 
-			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
-		})),
-	
-		dice: [
-			{
-				id: 0,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 1,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 2,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 3,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 4,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 5,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 6,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 7,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 8,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 9,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 10,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-		], 
-	
-		sortDice: () => 
-			set(state =>  {
-				state.dice.sort((a, b) =>  a.val - b.val)
-			}),
-	
-		toggleHeld: (id) => 
-			set(state =>  {
-				//toggle the value if not saved
-				if (state.dice[id].saved === true) {
-					console.log(`\tZustand -- Die${id} was already saved, so it's held state was not flipped.`);
-				} else {
-					state.dice[id].held = !state.dice[id].held;
-					console.log(`\tZustand -- held state of Die${id}: ${state.dice[id].held}`);
-				}
-			}),
-		toggleSaved: (id) => 
-			set(state =>  {
-				//toggle the value
-				state.dice[id].saved = !state.dice[id].saved;
-				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
-			}),
-		rollDice: () => 
-			set(state =>  {
-				// Roll the dice that are not held
-				console.log(`Zustand -- Roll Dice Button Pressed`);
-				state.dice.forEach(
-					(die) => {
-						if (!die.held === true && !die.saved === true) { // If a die is not held and not saved, reroll it.
-							die.val = Math.floor(Math.random() * (7 - 1) + 1)
-							// Reset the held status to trigger useEffect
-							die.held = false;
-	
-							console.log(`Zustand -- Die${die.id} val updated: ${die.val}`); 
-						} else { // If the die is either held or saved, do not reroll it, and make sure it is set to saved and reset it to not be held for CSS purposes
-							if (die.held) {
-								console.log(`Zustand -- Die${die.id} was saved because it was marked as held`); 
-							}                        
-							if (die.saved) {
-								console.log(`Zustand -- Die${die.id} was saved because it was previously saved`); 
-							}
-							die.held = false;
-							die.saved = true;
-						} 
-					}
-				)
-			}),
-956b54af52da3cadf44ac66447745874|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|5|1|V|javascript
-		diceTheme: ["numbers", "letters"],
-		chatHistory: [
-			{
-				id: 0,
-				key: 0,
-				content: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 1,
-				key: 1,
-				content: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 2,
-				key: 2,
-				content: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 3,
-				key: 3,
-				content: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-			{
-				id: 4,
-				key: 4,
-				content: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 5,
-				key: 5,
-				content: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 6,
-				key: 6,
-				content: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 7,
-				key: 7,
-				content: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-		],
-	
-		latestMessage: "This is the initial latest message.",
-		updateLatestMessage: (text) => set(() => ({
-			latestMessage: text
-		})),
-		addMessageToHistory: () => set(state => ({ 
-			chatHistory: [...state.chatHistory, {id: state.chatHistory.len, key: state.chatHistory.len, content: state.latestMessage}]
-		})),
-	
-		dice: [
-			{
-				id: 0,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 1,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 2,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 3,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 4,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 5,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 6,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 7,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 8,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 9,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-			{
-				id: 10,
-				val: Math.floor(Math.random() * (7 - 1) + 1),
-				held: false,
-				saved: false,
-			},
-		], 
-	
-		sortDice: () => 
-			set(state =>  {
-				state.dice.sort((a, b) =>  a.val - b.val)
-			}),
-	
-		toggleHeld: (id) => 
-			set(state =>  {
-				//toggle the value if not saved
-				if (state.dice[id].saved === true) {
-					console.log(`\tZustand -- Die${id} was already saved, so it's held state was not flipped.`);
-				} else {
-					state.dice[id].held = !state.dice[id].held;
-					console.log(`\tZustand -- held state of Die${id}: ${state.dice[id].held}`);
-				}
-			}),
-		toggleSaved: (id) => 
-			set(state =>  {
-				//toggle the value
-				state.dice[id].saved = !state.dice[id].saved;
-				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
-			}),
-		rollDice: () => 
-			set(state =>  {
-				// Roll the dice that are not held
-				console.log(`Zustand -- Roll Dice Button Pressed`);
-				state.dice.forEach(
-					(die) => {
-						if (!die.held === true && !die.saved === true) { // If a die is not held and not saved, reroll it.
-							die.val = Math.floor(Math.random() * (7 - 1) + 1)
-							// Reset the held status to trigger useEffect
-							die.held = false;
-	
-							console.log(`Zustand -- Die${die.id} val updated: ${die.val}`); 
-						} else { // If the die is either held or saved, do not reroll it, and make sure it is set to saved and reset it to not be held for CSS purposes
-							if (die.held) {
-								console.log(`Zustand -- Die${die.id} was saved because it was marked as held`); 
-							}                        
-							if (die.saved) {
-								console.log(`Zustand -- Die${die.id} was saved because it was previously saved`); 
-							}
-							die.held = false;
-							die.saved = true;
-						} 
-					}
-				)
-			}),
-145a7089ffc82b677cd1259b8cdf3e8d|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|3|1|V|javascript
-	import ChatStore from '../../Store'
-f6877ca38b0215c7827642896a595c60|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|7|1|V|javascript
-	import { registerOnMessageCallback, send, startWebsocketConnection } from '../../websocket'
-9a0364b9e99bb480dd25e1f0284c8555|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|24|75|v|javascript
-	content
-b072de6d2511b8f273e770fe480beb39|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|13|1|V|javascript
-		const chatHistory = ChatStore(state => state.chatHistory)
-54c215d6f47f9ebc15a5e035711d5e07|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|14|8|v|javascript
-	chatHistory
-cb49dba933a5594b273bf360d9b4f0f0|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|25|18|V|javascript
-			let newMessages = chatHistory.concat(msg)
-de70938849b75d3db63bba421c93e018|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|32|6|v|javascript
-	messages
-50908acfffd0cd10637e04ab934a6b5b|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|14|1|V|javascript
-		const updateLatestMessage = ChatStore(state => state.updateLatestMessage)
-1defe810cbc80d3f04ad25957a9aad1d|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|15|8|v|javascript
-	updateLatestMessage
-78e731027d8fd50ed642340b7c9a63b3|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|39|9|v|javascript
-	message
-3ab8d60f3f03fe4b32f51bb24ed22806|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|20|1|V|javascript
-				uuid: uuid(),
-a7cf9677ebfeae3e4d581357a6655449|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|17|1|V|javascript
-		chatHistory: [
-			{
-				id: 0,
-				uuid: uuid(),
-				key: 0,
-				data: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 1,
-				uuid: uuid(),
-				key: 1,
-				data: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 2,
-				uuid: uuid(),
-				key: 2,
-				data: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 3,
-				uuid: uuid(),
-				key: 3,
-				data: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-			{
-				id: 4,
-				uuid: uuid(),
-				key: 4,
-				data: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 5,
-				uuid: uuid(),
-				key: 5,
-				data: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 6,
-				uuid: uuid(),
-				key: 6,
-				data: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 7,
-				uuid: uuid(),
-				key: 7,
-				data: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-		],
-e47d9bd3254c942d9e1a0fa0a3214bbc|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|12|1|v|javascript
-				id: 1,
-3e5e877ef28f376720e449412e402ba2|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|12|1|V|javascript
-	
-				uuid: uuid(),
-				key: 1,
-				data: "1 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 2,
-				uuid: uuid(),
-				key: 2,
-				data: "2 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 3,
-				uuid: uuid(),
-				key: 3,
-				data: "3 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-			{
-				id: 4,
-				uuid: uuid(),
-				key: 4,
-				data: "4 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-			},
-			{
-				id: 5,
-				uuid: uuid(),
-				key: 5,
-				data: "5 - no sea takimata sanctus est Lorem ipsum dolor sit amet",
-			},
-			{
-				id: 6,
-				uuid: uuid(),
-				key: 6,
-				data: "6 - dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren",
-			},
-			{
-				id: 7,
-				uuid: uuid(),
-				key: 7,
-				data: "7 - 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣",
-			},
-eda5faddc7e0ca843883ffa02b22affa|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|11|19|V|javascript
-				data: "0 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ",
-9a5b3387fbd11445deafd59294b38fef|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|6|1|V|javascript
-			{
-				id: 0,
-				uuid: uuid(),
-				key: 0,
-				username: "Joe",
-			},
-095d15cc3795d23cfda1642a59a81e3b|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|7|22|V|javascript
-		// TODO: Temporart hard-coded username is applied
-		let username = "Joe";
-decaae1e472274291adee6f3a0ecb758|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|13|1|V|javascript
-		// TODO: Temporart hard-coded username is applied
-		let username = "Joe";
-	
-26c0c61e603ac621a5f5f46a12d818f4|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|17|24|v|javascript
-	ChatStore(state => state.latestMessage)
-	
-55f6507b8e39426e7d559db45ab1fdd0|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|15|19|v|javascript
-	"Joe"
-0e3ec4e8d9cad03cff1d2104d0ffaf6b|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|42|1|V|javascript
-		// This method accepts the message text or data.  It then constructs the message object, stringifies it and sends the string to the server using the `send` function imported from the websockets package
-		let sendMessage = (data) => {
-			const chatMessage = {
-				username: username,
-				data: data,
-				uuid: uuid()
-			}
-			console.log("Message: ", chatMessage)
-			console.log("Send: ", send)
-			send(JSON.stringify(chatMessage))
+		100% {
+		  transform: scale(1.5);
+		  opacity: 0;
+		  transform-origin: center;
 		}
+		`;
 	
-732014da85ecc32606d30f80f4d3e038|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|1|1|V|javascript
-	import ChatStore from '../../ChatStore'
-ec8c7390c9756e281c9b3904d9aaf96c|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|4|1|V|javascript
-	import GamestateStore from '../../GamestateStore'
-7e3bdf57a0bfad5ec0ff02a2866bf81f|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|14|1|V|javascript
-		// TODO: Temporary hard-coded username is applied
-		const username = GamestateStore(state => state.username);
-	
-447c59d921a5e0311049a1a2ef6e69b5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|181|1|V|vim
-	"*****************************************************************************
-	" Toggle comments
-	"*****************************************************************************
-	
-c7136f91c65adb1d534ebb64a954aaf8|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|182|3|v|vim
-	Toggle comments
-6a85a673032024317dbf991b9f4fa555|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|185|1|V|vim
-	nnoremap ? :%s/
-5db7268e9acb09ecb0e46e32a71d45f5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|95|1|V|vim
-	" Left Square Bracket
-	inoremap <silent> <C-i> []<C-o>i
-	nnoremap <silent> <C-i> [
-	vnoremap <silent> <C-i> [
-	
-e96d8afc259593a20838480dfb84400b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|197|1|v|vim
-	endif
-859c82c8b243176bd022e1d91f88c2a4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|151|1|V|vim
-		  \ 'i' : [':e $MYVIMRC'        , 'open init.vim']        ,
-cfda52fc1cbf7a4f0b9c7823d1e59b60|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|1|10|v|javascript
-	registerOnMessageCallback
-7785aef01f6a3a7d8cbc873376aeef8f|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|1|14|v|javascript
-	 startWebsocketConnection
-3fd51a6cb20a04c62a8282b46e6837b4|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|19|1|V|javascript
-		const diceTheme = UIStore(state => state.diceTheme[1])
-14b27b3db8a2933091b5d5e38205c4ab|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|2|1|V|javascript
-	import DiceStore from '../../stores/DiceStore'
-80a1652ce8855605373132ac3c34fb6c|file:///home/jdv/js/reactDice/src/components/Map/SavedDie.js|2|1|V|javascript
-	import DiceStore from '../../DiceStore'
-02f37874ec63ffb69d5fe98a85594480|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|3|22|v|javascript
-	../../stores/UIStore
-566f03ab4d6c06f4eb15d49c8c698f34|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|5|1|V|javascript
-	const GamestateStore = create(set => ({
-19437dbc3c109439ac3bbc3638a9ba65|file:///home/jdv/js/reactDice/src/stores/UIStore.js|4|1|V|javascript
-	const UIStore = create({
-41c825f2a240023f7619d071b6cf0ba9|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|22|1|V|javascript
-	}));
-446f9f7bc089fffd63aef27c23ebdf0f|file:///home/jdv/js/reactDice/src/websocket.js|10|1|V|javascript
-		const ws = new window.WebSocket(`ws://${host}/chat` || {})
-93f613f2b9f105605c3a251bd9666212|file:///home/jdv/js/reactDice/src/websocket.js|2|1|V|javascript
-	const host = process.env.NODE_ENV === 'production' ? window.location.host : 'localhost:8080'
-0d7fab254ed4891b0497915333e8e059|file:///home/jdv/js/reactDice/src/websocket.js|3|14|v|javascript
-	process.env.NODE_ENV === 
-9af6ee24cbe1ad7be9d0fa1baa9e0639|file:///home/jdv/js/reactDice/src/websocket.js|3|14|v|javascript
-	'production
-f311c827e64502575f1044bb3771d4c4|file:///home/jdv/js/reactDice/src/websocket.js|3|14|v|javascript
-	' ? window.location.host : 
-605895aa396d96e67bfb5c244807afa3|file:///home/jdv/js/reactDice/src/websocket.js|12|24|V|javascript
-		const ws = new window.WebSocket(`ws://10.34.70.49/chat` || {})
-64851825fe821c0fa14429c1f779a175|file:///home/jdv/js/reactDice/src/websocket.js|12|66|V|javascript
-		console.log(`Attempting Websocket connection on ws://${host}/chat`);
-cd1f99543f0462caabf9b2c6929cbd19|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|32|1|V|javascript
-						uuid: uuid()
-ef7c876f00f3acddd00fa671f52d0b1f|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|33|6|v|javascript
-	uuid
-5e58270e4ca58e61eb9e98edee57d6ac|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|21|1|V|javascript
-				key: uuid(),
-93d89534969f72ecc30ad17887ebcf5e|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|27|1|V|javascript
-				key: 1,
-45063b1a564922260665e647ba473bdd|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|33|1|V|javascript
-				key: 2,
-05d6c2fb3454e8532331ff2ae282a3cb|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|39|1|V|javascript
-				key: 3,
-57d3347405b07b595855ff790c27f1e3|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|45|1|V|javascript
-				key: 4,
-fc6b04dd39d1113a6c481b5c947dc1bc|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|51|1|V|javascript
-				key: 5,
-6b9b76c6d4abe5ae9e5a3946def525b2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|57|1|V|javascript
-				key: 6,
-93177a4ae7cb5a378f796adc1cc4beff|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|63|1|V|javascript
-				key: 7,
-00c4438ecfc01bf7dbb5f639ed6fe6c3|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|24|37|^v|javascript
-	id={val.key} key={val.key} value={val.data}
-bb0cac9916d904ce439e1d50644e5b23|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim|19|1|V|vim
-	  highlight = {
-	    enable = true,
-	  },
-225ca516bcba9d4242e8992bd79f0c25|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|46|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
-257db93ae143b58f13aee4afffe61104|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|19|1|V|javascript
-				id: 0,
-7c56353d7c8fc31ea3f8e73292ecd8d2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|29|1|V|javascript
-				id: 2,
-feda3794769a339d15b10fc8eb68897e|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|34|1|V|javascript
-				id: 3,
-c893cb47317a465004b6ef723e4e1803|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|39|1|V|javascript
-				id: 4,
-ed46fa74eaf24694914b55de1635d8c2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|44|1|V|javascript
-				id: 5,
-fd86ec0f457dff38c2b0b354a5536c71|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|49|1|V|javascript
-				id: 6,
-8add93a995992d9e94ec6aaf384fd0a0|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|54|1|V|javascript
-				id: 7,
-6ae2571db0bbce50abe1420134b060dc|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|24|64|V|javascript
-				<Message id={index} key={index} value={message.data} className='chat-message'  />
-3a1c66ad0f0ef51c2dd42341bf5076a7|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|19|1|V|javascript
-				key: 0,
-e29d3a846c96466bdaf945fcafbf42a7|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|20|14|V|javascript
-				id: uuid(),
-e32de3eba6513ecb84e0de5c2ffc9d21|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|47|4|V|javascript
-				key: ,
-c2c61007856077badb869343ccc358f2|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|19|9|v|javascript
-	uuid()
-818682943af87aebb6afed3ea7d6b179|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|21|21|V|javascript
-				// <Message id={index} key={index} value={message.data} className='chat-message'  />
-9fc9e61f22caafaad541b748c541e6d0|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|25|56|V|javascript
-				<div key={message.id} className='chat-message'>{message.data}</div>
-d89b0cf748226596e2295f9fac6c1415|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|18|1|V|javascript
-			{
-				id: uuid(),
-				data: `Welcome to the Dice Game.For help, type /help in chat.`
-			}
-8f375db0c80ade5bfe12bdb27d6a414d|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|24|11|v|javascript
-	Welcome to the Dice Game.
-b13ed0240c58097347a6a55dbf246ad7|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|20|36|v|javascript
-	For help, type /help in chat.
-173e3380255ef30a4179dad3eeb8d44a|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|42|1|V|javascript
-				// updateLatestMessage(text)
-				// addLatestMessageToHistory()
-14c408bb11c8583ffec7acc9b8367009|file:///home/jdv/js/reactDice/src/components/Chat/ChatInput.js|15|1|V|javascript
-		const updateLatestMessage = ChatStore(state => state.updateLatestMessage)
-		const addLatestMessageToHistory = ChatStore(state => state.addLatestMessageToHistory) 
-685c39f4e65df13f2fa1ced6394b152b|file:///home/jdv/js/reactDice/server/main.go|1|1|V|go
-	package main
-	
-	import (
-		"fmt"
-		"log"
-		"net/http"
-	)
-	
-	func main() {
-	}
-549c5b693a5065265e9ccbe753bcdd17|file:///home/jdv/js/reactDice/server/main.go|1|1|V|go
-	func main() {
-	   go h.run()
-	
-	   router := gin.New()
-	   router.LoadHTMLFiles("index.html")
-	
-	   router.GET("/room/:roomId", func(c *gin.Context) {
-	      c.HTML(200, "index.html", nil)
-	   })
-	
-	   router.GET("/ws/:roomId", func(c *gin.Context) {
-	      roomId := c.Param("roomId")
-	      serveWs(c.Writer, c.Request, roomId)
-	   })   router.Run("0.0.0.0:8080")
-	}
-dba5d91846ce1a5e63734dfcbcb481cb|file:///home/jdv/js/reactDice/server/main.go|14|17|v|go
-	articles
-a07a95a9bff02cf48484246076a7b0fa|file:///home/jdv/js/reactDice/server/main.go|14|1|V|go
-		r.HandleFunc("/login", LoginHandler)
-eb7a9267a3ffea285aa797264efc2ce8|file:///home/jdv/js/reactDice/server/main.go|3|1|V|go
-	import (
-		"github.com/gorilla/mux"
-	)
-d10c978d8dc3d5c560135c02cb1bc0ad|file:///home/jdv/js/reactDice/server/homeHandler.go|11|21|V|go
-	    fmt.Fprintf(w, "tegory: %v\n", vars["category"])
-27118326006d3829667a400ad23d5d98|file:///home/jdv/js/reactDice/server/homeHandler.go|13|14|v|go
-	String
-fad58de7366495db4650cfefac2fcd61|file:///home/jdv/js/reactDice/server/main.go|1|9|v|go
-	main
-cf1e8c14e54505f60aa10ceb8d5d8ab3|file:///home/jdv/js/reactDice/server/homeHandler.go|1|9|v|go
-	server
-b4c259f9e82e47e0f4bb145116998319|file:///home/jdv/js/reactDice/server/homeHandler.go|1|1|V|go
-	package server
-	
-	import (
-		"fmt"
-		"github.com/gorilla/mux"
-		"net/http"
-	)
-	
-	// HomeHandler server the homepage to the site
-	func HomeHandler(w http.ResponseWriter, r *http.Request) {
-		vars := mux.Vars(r)
-		w.WriteHeader(http.StatusOK)
-		fmt.Println("Home Page")
-		fmt.Printf("Vars: %q\n", vars)
-	}
-e0e96984ad1a23d37abb397f2efec601|file:///home/jdv/js/reactDice/server/signupHandler.go|1|1|V|go
-	package server
-bf5e5f4b50d86cb76d6adb5f892de938|file:///home/jdv/js/reactDice/server/loginHandler.go|9|4|v|go
-	HomeHandler
-ba3988db0a3167093b1f74e8ae4a8e83|file:///home/jdv/js/reactDice/server/signupHandler.go|9|29|v|go
-	homepage
-72bb0f7b5fab56a8c522c56a7731e296|file:///home/jdv/js/reactDice/server/homeHandler.go|1|1|V|go
-	package server
-	
-	import (
-		"fmt"
-		"github.com/gorilla/mux"
-		"net/http"
-	)
-	
-	// HomeHandler serves the homepage to the site
-	func HomeHandler(w http.ResponseWriter, r *http.Request) {
-		vars := mux.Vars(r)
-		w.WriteHeader(http.StatusOK)
-		fmt.Println("Home Page")
-		fmt.Printf("Vars: %q\n", vars)
-	}
-99896d79427ccfe443612d3638b72a3d|file:///home/jdv/js/reactDice/server/server.go|15|1|V|go
-		r.HandleFunc("/diceGame/{gameID}", DiceGameHandler)
-f32ceb402c2e60536c5f2ba6e84099da|file:///home/jdv/js/reactDice/server/server.go|14|1|V|go
-	http.HandleFunc("/", serveHome)
-50cdb2abfac61e931efb69d46708d8e0|file:///home/jdv/js/reactDice/server/server.go|14|1|V|go
-		var addr = flag.String("addr", ":8080", "http service address")
-5a2f2f60d54c334324bc3eb64d713a44|file:///home/jdv/js/reactDice/server/server.go|16|1|V|go
-		flag.Parse()
-		hub := newHub()
-		go hub.run()
-		http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
-			serveWs(hub, w, r)
-		})
-		err := http.ListenAndServe(*addr, nil)
-		if err != nil {
-			log.Fatal("ListenAndServe: ", err)
+cf4eb3776feebd0959b1d890556a8f69|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|24|14|V|typescriptreact
+		  opacity: 0;
+b4c37d86ec31bc70dfb3417bb325053c|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|17|1|V|typescriptreact
+		0% {
+		  transform: scale(0.5);
+		  opacity: 1;
+		  transform-origin: center;
 		}
+ab9a0d2be0e2ddd592cba0c100c499e0|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|16|1|V|typescriptreact
+		const pulse = keyframes`
+		0% {
+		  transform: scale(1.2);
+		  opacity: 1;
+		  transform-origin: center;
+		}
+		50% {
+		  transform: scale(0.8);
+		  opacity: 1;
+		  transform-origin: center;
+		}
+		100% {
+		  transform: scale(1.2);
+		  transform-origin: center;
+		}
+		`;
 	
-c8892998761e4c643f537b0e4311eb08|file:///home/jdv/js/reactDice/server/server.go|10|1|V|go
-	var addr = flag.String("addr", ":8080", "http service address")
-75e102bcb0f2e12c2c36d9dfab5d93ef|file:///home/jdv/js/reactDice/server/conn.go|31|1|V|go
-		// readPump pumps the message from socket to hub
-61f2529360aec54f5dc9804b842cf3fa|file:///home/jdv/js/reactDice/server/conn.go|30|38|v|go
-	socket
-d18fb19d12d28417fcd4ff5961b6c8d7|file:///home/jdv/js/reactDice/server/hub.go|1|1|V|go
-	package server
-	
-	import ()
-	
-	type hub struct {
-		rooms      map[string]map[*connection]bool
-		broadcast  chan message
-		register   chan subscription
-		unregister chan subscription
-	}
-	
-	type subscription struct {
-		conn *connection
-		room string
-	}
-	
-	type subscription struct {
-		conn *connection
-		room string
-	}
-	
-	func (h *hub) run() {
-		for {
-			select {
-			case s := <-h.register:
-				connections := h.rooms[s.room]
-				if connections == nil {
-					connections = make(map[*connection]bool)
-					h.rooms[s.room] = connections
-				}
-				h.rooms[s.room][s.conn] = true
-			case s := <-h.unregister:
-				connections := h.rooms[s.room]
-				if connections != nil {
-					if _, ok := connections[s.conn]; ok {
-						delete(connections, s.conn)
-						close(s.conn.send)
-						if len(connections) == 0 {
-							delete(h.rooms, s.room)
-						}
-					}
-				}
-			case m := <-h.broadcast:
-				connections := h.rooms[m.room]
-				for c := range connections {
-					select {
-					case c.send <- m.data:
-					default:
-						close(c.send)
-						delete(connections, c)
-						if len(connections) == 0 {
-							delete(h.rooms, m.room)
-						}
-					}
-				}
+		const StyledDie = styled(SixSidedDie)`
+		height:${dieHeightInVH}vh;
+		width:${dieWidthInVH}vh;
+		display:block;
+		margin:auto;
+		.circle{
+			animation: ${pulse} infinite 2s linear;
+			&:hover{
+				animation-play-state: paused;
+				cursor:pointer;
 			}
 		}
+		`
+baa322f604b505e363900ee19ac2dd95|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|16|1|V|typescriptreact
+		const StyledDie = styled(SixSidedDie)`
+		height:${dieHeightInVH}vh;
+		width:${dieWidthInVH}vh;
+		display:block;
+		margin:auto;
+		`
+e3c6a5f2209cd15546f8f18eb55da2bf|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|2|1|V|typescriptreact
+	import styled, { keyframes } from "styled-components"
+990b6b4e36786359a4512703950fb356|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|2|1|V|typescriptreact
+	import styled from "styled-components"
+9281802e3c99583231f00d0e5ec572a1|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die62.tsx|20|1|V|typescriptreact
+			transform-origin: center;
+154504a4183134f57aedbfe1a07dfe27|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|19|1|V|typescriptreact
+		  opacity: 1;
+b6702cb2040a7f2d38a78e9b8627f3f8|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|40|1|V|typescriptreact
+				cursor:pointer;
+8245056f02d6eb0b42f34fcc1e7b7a89|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|1|1|V|javascript
+	import { CountdownCircleTimer } from 'react-countdown-circle-timer';
+	
+	const Time = ({ duration, delay }) => {
+		const renderTime = ({ remainingTime }) => {
+			if (remainingTime === 0) {
+				return <div className="timeText">Time's Up!</div>;
+			}
+			return <div className='timeText'>{remainingTime}</div>;
+		}
+	
+		return (
+			<div id='countdown-timer-container'>
+				<CountdownCircleTimer
+					isPlaying
+					duration={duration}
+					size={100}
+					strokeWidth={8}
+					onComplete={() => {return [true, delay]}}
+					colors={[
+					['#50fa7b', 0.33],
+					['#f1fa8c', 0.33],
+					['#ff5555', 0.33],
+					]}
+				>
+					{renderTime}
+				</CountdownCircleTimer>
+			</div>
+		)
 	}
-7c8f3fe845a396b684e26131a03c7925|file:///home/jdv/js/reactDice/server/server.go|10|1|V|go
-		// Startup a new router with gorilla/mux
-		r := mux.NewRouter()
-367e081fad28fc032eea8738317608ca|file:///home/jdv/js/reactDice/server/server.go|6|1|V|go
-		"github.com/gorilla/mux"
-bced2bd84571221bbe59d0f683cf6d92|file:///home/jdv/js/reactDice/server/server.go|13|1|V|go
+		
+	export default Time
+b018f68193c65edd3491b5b512a57e20|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|1|1|V|typescriptreact
+	import * as React from "react"
+	//import { 
+	//	Box, 
+	//} from "@chakra-ui/react"
 	
-		// If using gorilla/mux
+	// Components
 	
-		// // Register three routes mapping URL paths to handlers.  If the incoming path matches one of the ones listed below, the corresponding handler is called.
-		// r.HandleFunc("/", HomeHandler)
-		// r.HandleFunc("/signup", SignupHandler)
-		// r.HandleFunc("/login", LoginHandler)
-		// r.HandleFunc("/diceGame", DiceGameHandler) // For testing TODO
-		// r.HandleFunc("/diceGame/{gameID}", DiceGameHandler)
+	// Props
+	//type TimerProps = {
+	//	name: type;
+	//}
+	
+	const Timer = () => {
+		return (
+			<div>This is the timer</div>
+		)
+	}
+	
+	export default Timer
+13dcb6e97ed924c839232382be71f617|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|3|15|v|typescriptreact
+	{ duration, delay }
+b85ec314bf443b797ef8a66b3b03f8a4|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|8|34|v|typescriptreact
+	duration
+ae1ec3b48c4bac7dc03bb65be2121857|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|9|1|V|typescriptreact
+	    // Good!
+46a8b04779770c10cfb428158a8ca1ce|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|9|1|V|typescriptreact
+	    document.title = 'Greetings page'; // Side-effect!  }, []);
+8094442be5d4266989c5f0d3dc4b88db|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|10|2|V|typescriptreact
+	    document.title = 'Greetings page'; // Side-effect
+4797666f5c52193fa10241d4b8c50c06|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|10|1|V|typescriptreact
+		const remainingTime = useEffect({duration})
+10e51314a7eed86b1b229ccdf383502e|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|10|3|v|typescriptreact
+	const 
+6680dba00f3a88f66f8029a93d71d93c|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|7|2|v|typescriptreact
+	const
+ab9b69f140a1e5d13d4862be384ae223|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|13|22|v|typescriptreact
+	remainingTime
+1c25845c9c5a84e33b892ec7127f271a|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|1|14|V|typescriptreact
+	import React from "react"
+28d5459b482c93ce66250c48c0bfe28d|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|7|20|V|typescriptreact
+		let remainingTime;
+	
+		useEffect(() => {
+			remainingTime = duration
+		}, [duration]);
+4ff52ca6f4d3aabb858bdabce1db2771|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|1|13|v|typescriptreact
+	, { useE
+6866c38abcf26ac312b8c9f4fbd6cd1b|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|1|14|v|typescriptreact
+	fect } 
+9990c0561cd315b5a872a2ab3dfd9f3e|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|7|26|V|typescriptreact
+		let remainingTime:number;
+2794c2e7eed135f9e91fd2307455413e|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|30|1|V|typescriptreact
+						<GridItem colSpan={10} rowSpan={1}><Dice /></GridItem>
+a5b6cdb9de0f896d38fbfd5a5f044841|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|31|41|v|typescriptreact
+	Dice
+2851a47c1c2c3e4e3e31e14ad0a7fa11|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|32|45|V|typescriptreact
+						<GridItem colSpan={1} rowSpan={1} bg="yellow" />
+b97c10278212f11f89eb83d14ccbd263|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|13|1|V|typescriptreact
+	import Dice from "../DiceGame/Dice/Dice"
+cd9684dd438ac0a9939cdbb71c44e0cd|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|20|7|v|typescriptreact
+	 id='countdown-timer-container'
+263f61678775078c3f0b23aed3ca89d0|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|27|11|V|typescriptreact
+					size={50}
+a2b1be18f5ae2131aec6bef3f856aa5c|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|27|8|V|typescriptreact
+					size={100}
+848086a15b45cbe4955903c0f554eb5c|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|24|8|V|typescriptreact
+				h="100%"
+e339a09b6e409b6524eab8056ceaa253|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|25|27|V|typescriptreact
+				border="1px solid white"
+52ce0c7dd0854696ca7d38045e17c998|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|25|14|V|typescriptreact
+				margin="0.1vh" 
+f2f4febb6960bfbcdabca308ea40ee65|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Die61.tsx|31|1|V|typescriptreact
+		// Make a special version of the svg that has css attached to it
+		const StyledDie = styled(SixSidedDie)`
+		height:${dieHeightInVH}vh;
+		width:${dieWidthInVH}vh;
+		display:block;
+		margin:auto;
+		.circle{
+			animation: ${pulse} infinite 4s linear;
+			&:hover{
+				animation-play-state: paused;
+			}
+		}
+		`
+fc2f753b8305976a0af1e77c0801a004|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|23|1|V|typescriptreact
+		const styledRenderTime = styled(renderTime)`
+		`
+155a7ce50d56676a066d3acf27a80e8b|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|24|34|v|typescriptreact
+	SixSidedDie
+a285fd08561dab796158acee7beb1ce8|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|11|1|V|typescriptreact
+		const timerHeightInVH = 8
+0a299c9ced93e864902a11fa0a6f61e0|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|31|1|V|typescriptreact
+		.circle{
+			animation: ${pulse} infinite 4s linear;
+			&:hover{
+				animation-play-state: paused;
+			}
+		}
+8578586ee87ffc0cab5cffdfb8cb9730|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|19|1|V|typescriptreact
+		const renderTime:React.FC<renderTimeProps> = ({remainingTime}) => {
+1837ba62b58d28652efa3c4910c05b5b|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|25|1|V|typescriptreact
+		const renderTime = ({ remainingTime }) => {
+c301e3e95c445eabeb768427edf9665b|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|19|1|V|typescriptreact
+		if (remainingTime === 0) {
+			return <div className="timeText">Time's Up!</div>;
+		}
+		return <div className='timeText'>{remainingTime}</div>;
+	}
+37a6259cc0c1dae299a7866489dff0bd|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|21|27|v|typescriptreact
+	null
+ee6de5f8b333fd071e9d0accb294ca40|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|68|1|V|typescriptreact
+			<Box
+			>
+				<CountdownCircleTimer
+					isPlaying
+					duration={duration}
+					size={height}
+					strokeWidth={8}
+					onComplete={() => {return [true, delay]}}
+					colors={[
+						['#50fa7b', 0.33],
+						['#f1fa8c', 0.33],
+						['#ff5555', 0.33],
+					]}
+				>
+					{renderTime}
+				</CountdownCircleTimer>
+			</Box>
+1f1d2f6ab87a53f6cee3c12f9e34cfdb|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|4|1|V|typescriptreact
+	import {
+		Box,
+	} from "@chakra-ui/react"
+90679a45b4788b2ac98d966b199c916d|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|6|1|V|typescriptreact
+		const duration:number = 60;
+		const delay:number = 2000;
+		const height = window.innerHeight * 0.09 // scale to screen size
+1f4a25c2ef47e125c7a3881fad80f3fb|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|66|6|V|typescriptreact
+					colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+3edf6e00aa9369b244bb2cd578a3fc36|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|19|1|V|javascript
+					colors={[
+					['#50fa7b', 0.33],
+					['#f1fa8c', 0.33],
+					['#ff5555', 0.33],
+					]}
+d751095931b7811f274689642a6042ff|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|55|1|V|typescriptreact
+		// height:${timerHeightInVH}vh;
+		// width:${timerWidthInVH}vh;
+		// display:block;
+		// margin:auto;
+157cc3328944a337f7bb03eb474a4512|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|62|1|V|typescriptreact
+			<div className="timer-wrapper">
+				<CountdownCircleTimer
+					isPlaying
+					duration={10}
+					colors={[
+					['#50fa7b', 0.33],
+					['#f1fa8c', 0.33],
+					['#ff5555', 0.33],
+					]}
+				>
+					{RenderTime}
+				</CountdownCircleTimer>
+			</div>
+18523164af45331c66dae0f9ff574da2|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|70|42|v|typescriptreact
+	RenderTime
+91a68d3b6a93dbb5b26141e51d5042bd|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|58|14|V|typescriptreact
+					size={timerHeightInVH}
+e3278509311f5b246be53643635a0eb8|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|59|11|v|typescriptreact
+	timerHeightInVH
+b032a4b13da3e32c8076954dbf221506|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|74|10|v|typescriptreact
+	timerWidthInVH
+3fa78161f6b8218ee94da9949522ca92|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|18|1|V|javascript
+					onComplete={() => {return [true, delay]}}
+7243f8be75253afbadf7477867021f8b|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|65|38|v|typescriptreact
+	delay
+7a6e644e13cada496d6bab585d00251f|file:///home/jdv/js/reactDice/src/components/Timer/Time.js|17|1|V|javascript
+					strokeWidth={8}
+f48610894073ebfe7a53961e2de45589|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|79|1|V|typescriptreact
+		.timer-wrapper {
+			display: flex;
+			justify-content: center;
+		}
+	
+		.time-wrapper {
+			position: relative;
+			width: 80px;
+			height: 60px;
+			font-size: 48px;
+			font-family: "Montserrat";
+		}
+	
+		.time-wrapper .time {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translateY(0);
+			opacity: 1;
+			transition: all 0.2s;
+		}
+	
+		.time-wrapper .time.up {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+	
+		.time-wrapper .time.down {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+fcfdeb2e0b27b5f68b1bae4f8ad66bf3|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|54|15|V|typescriptreact
+		.timer-wrapper {
+			display: flex;
+			justify-content: center;
+		}
+	
+		.time-wrapper {
+			position: relative;
+			width: 80px;
+			height: 60px;
+			font-size: 48px;
+			font-family: "Montserrat";
+		}
+6831edff781e810ff57caa266fb8d7a4|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|53|20|V|typescriptreact
+		const StyledRenderTime = styled(RenderTime)`
+		.time-wrapper .time {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translateY(0);
+			opacity: 1;
+			transition: all 0.2s;
+		}
+	
+		.time-wrapper .time.up {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+	
+		.time-wrapper .time.down {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		`
+80ce81464cfcf199195bfcc25afbbf7b|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|74|1|V|typescriptreact
 		//
-		// http.Handle("/", r)
-	
-c3ac34e03118756d8e5b3601c1be7cd3|file:///home/jdv/js/reactDice/server/server.go|9|1|V|go
-		// // Startup a new router with gorilla/mux
-		// r := mux.NewRouter()
-d15f91259ee0e8e413f3252cc8e4bdf7|file:///home/jdv/js/reactDice/server/server.go|11|1|V|go
-		// If using gin instead of gorilla/mux
-3abc5d6796746643456798d4c8b8a66d|file:///home/jdv/js/reactDice/server/server.go|35|1|V|go
-		// If using gorilla/mux
-	
-		// // Startup a new router with gorilla/mux
-		// r := mux.NewRouter()
-	
-		// // Register three routes mapping URL paths to handlers.  If the incoming path matches one of the ones listed below, the corresponding handler is called.
-		// r.HandleFunc("/", HomeHandler)
-		// r.HandleFunc("/signup", SignupHandler)
-		// r.HandleFunc("/login", LoginHandler)
-		// r.HandleFunc("/diceGame", DiceGameHandler) // For testing TODO
-		// r.HandleFunc("/diceGame/{gameID}", DiceGameHandler)
-		//
-		// http.Handle("/", r)
-f46ac65714009feff0ba82f76964dc91|file:///home/jdv/js/reactDice/server/server.go|4|1|V|go
-		// "github.com/gorilla/mux"
-cc9831b8239971fb17683afd5a92e373|file:///home/jdv/js/reactDice/server/hub.go|58|21|v|go
-	rooms
-b605ea609b9dfcf295cfd5a7803dcd37|file:///home/jdv/js/reactDice/server/hub.go|57|17|v|go
-	broadcast
-2d5b4ceaa257864b8e8d83279471e889|file:///home/jdv/js/reactDice/server/conn.go|54|27|v|go
-	pingPeriod
-0884a10c3c9e39bc8ebaf89821a851fa|file:///home/jdv/js/reactDice/server/conn.go|31|17|v|go
-	time.ParseDuration("60s")
-	
-bb34122ceb1c571d346ab7007517ec03|file:///home/jdv/js/reactDice/server/conn.go|55|1|V|go
-		pingPeriod, _ := time.ParseDuration("60s")
-70d427255bb493aed6a9227a8dc77e7f|file:///home/jdv/js/reactDice/server/hub.go|3|1|V|go
-	type message struct {
-		data []byte
-		room string
-	}
-	
-	type subscription struct {
-		conn *connection
-		room string
-	}
-	
-	// Hub maintains the set of active connections and broadcasts messages to the
-	// connections.
-	type Hub struct {
-		// Registered connections.
-		rooms map[string]map[*connection]bool
-	
-		// Inbound messages from the connections.
-		broadcast chan message
-	
-		// Register requests from the connections.
-		register chan subscription
-	
-		// Unregister requests from connections.
-		unregister chan subscription
-	}
-	
-	var h = Hub{
-		broadcast:  make(chan message),
-		register:   make(chan subscription),
-		unregister: make(chan subscription),
-		rooms:      make(map[string]map[*connection]bool),
-	}
-	
-	func newHub() *Hub {
-		return &Hub{
-			broadcast:  make(chan []byte),
-			register:   make(chan *Client),
-			unregister: make(chan *Client),
-			clients:    make(map[*Client]bool),
+		// Make a special version of the svg that has css attached to it
+		const StyledCountdownContainer = styled(CountdownContainer)`
+		height:${dimensions}vh;
+		width:${dimensions}vh;
+		display:block;
+		margin:auto;
+		`
+a364baff2d7b66eb5837e51191d6d841|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.css|11|1|V|css
+		font-family: "Montserrat";
+8a8036f7f7d6583ba6e0122f64ed61f5|file:///home/jdv/js/vedhub/src/components/DiceGame/Timer/Timer.tsx|13|16|V|typescriptreact
+		const timerWidthInVH = 8
+aacd7cb40c7e5cbb44d4c1bd18b0d412|file:///home/jdv/js/vedhub/src/components/DiceGame/Dice/Dice.tsx|22|25|v|typescriptreact
+	border="1px solid red"
+d29c7bba45c636038228ac57061d6eb9|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|14|10|v|typescriptreact
+	:React.FC<MapProps>
+1eb65831f0bd3c8791897310a7194318|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|7|10|V|typescriptreact
+	import Navbar from "../Navbar/Navbar"
+985d32f6ea3eaf64c2d49b0a38e77ad9|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|3|2|v|typescriptreact
+	VStack
+9f46f6115fa7fb8fd7ad837fc358082b|file:///home/jdv/js/reactDice/src/components/Map/Image.js|9|1|V|javascript
+				<img
+					id="mapImage"
+					className="mapImage"
+					alt="Game Map"
+					src={mapImage}
+				/>
+1fa30ed5d563a5dfcb14759013da09a6|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|32|1|V|typescriptreact
+						<GridItem colSpan={1} rowSpan={1}><Timer durationInS={60} delayInMS={2000} heightInVH={8} /></GridItem>
+efb4777327e6f704fb1519c1882f93ec|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|34|41|v|typescriptreact
+	Timer
+68f592b782de09d610878e17aeb08b7d|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|34|45|v|typescriptreact
+	durationInS={60} delayInMS={2000} heightInVH={8} /
+32e55aec1befdbe77de41c6f1cae20cd|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|14|1|V|typescriptreact
+	import Timer from "../DiceGame/Timer/Timer"
+5d30040bc29167fd3c17d0219e7f7f3c|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|36|2|V|typescriptreact
+						<GridItem colSpan={9} rowSpan={1} bg="green" />
+03abe1e3e49c18ef6bf52cd34f685245|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|9|1|V|typescriptreact
+	// Props
+	//type MapProps = {
+	//	name: type;
+	//}
+30d96133091bdb47724e6d4ed1261585|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|17|1|V|typescriptreact
+					height="100px"
+					width="auto"
+98fb286c3b2291258705e39a2d8e43c9|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|17|1|V|typescriptreact
+			<img
+				id="mapImage"
+				className="mapImage"
+				alt="Game Map"
+				src={image}
+			/>
+20233b2cd257dcba3585924deecb760b|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|12|1|V|typescriptreact
+		const mapImage = () =>  {
+			return (
+				<img alt="Gameboard Map" src={image}></img>
+			)
 		}
-	}
+bcf8a2d53d3324d1b4e0dc02974318b0|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|24|1|V|typescriptreact
+			<StyledImage />
+fa86cceeb848d10684053644484e4237|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|18|1|V|typescriptreact
 	
-	func (h *Hub) run() {
-		for {
-			select {
-			case s := <-h.register:
-				connections := h.rooms[s.room]
-				if connections == nil {
-					connections = make(map[*connection]bool)
-					h.rooms[s.room] = connections
-				}
-				h.rooms[s.room][s.conn] = true
-			case s := <-h.unregister:
-				connections := h.rooms[s.room]
-				if connections != nil {
-					if _, ok := connections[s.conn]; ok {
-						delete(connections, s.conn)
-						close(s.conn.send)
-						if len(connections) == 0 {
-							delete(h.rooms, s.room)
-						}
+		const StyledImage = styled(mapImage)`
+		max-height="50px"
+		`
+00e64400cd9357cebc5afb223245f5d0|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|11|16|V|typescriptreact
+	const mapImage = () =>  {
+		return (
+			<img alt="Gameboard Map" src={image}></img>
+		)
+	}
+b1eb40dcd88ff5f7bca14fae5b5dadeb|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|17|9|v|typescriptreact
+	"https://bit.ly/sage-adebayo"
+2e2f9766eedad62c09e0663486aff380|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|18|10|v|typescriptreact
+	Segun Adebayo
+844a8e33088d7db6115ecd96687b789f|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|14|1|V|typescriptreact
+				<Image 
+					boxSize="100px"
+					objectFit="cover"
+					src={image}
+					alt="Map of Gameboard"
+				/>
+953cd5b93869a03037ae397deb0b86ea|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|2|10|V|typescriptreact
+	import { Image } from "@chakra-ui/react"
+7222e2184432fb8a87550c50b9f1904f|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|16|12|V|typescriptreact
+			boxSize="500px"
+af6d76a88d5ce7607c6d25fbb9c8ef1d|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|16|12|V|typescriptreact
+			objectFit="cover"
+77ac521a9aa7b5911ec96bfb1abe8965|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|18|19|V|typescriptreact
+			htmlHeight="100px"
+98f1f50392b6717817c394daa0636cd3|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|18|18|V|typescriptreact
+			htmlWidth="auto"
+72390a4c550566d03926949adb1fff7f|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|14|30|v|typescriptreact
+	 h="100px"
+b4fdc168c8bf2f7c325b606689033462|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|18|9|v|typescriptreact
+	68vh
+0579de7f66c720c127605c58c1b43b0f|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|18|13|V|typescriptreact
+			maxH="68vh"
+dc4d53aa0d117d8b189b36d161af4e96|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|16|13|v|typescriptreact
+	absolute
+a2266ce981093efedd2d2b166aeb1c39|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|14|17|v|typescriptreact
+	border="2px solid red"
+70e7f9115844a5514da274adede3357b|file:///home/jdv/js/vedhub/src/components/DiceGame/Map/Map.tsx|14|7|v|typescriptreact
+	 h="100%"
+99500988fc804a66f726918a003bbe62|file:///home/jdv/js/vedhub/src/components/DiceGame/DiceGame.tsx|35|1|V|typescriptreact
+						<GridItem colSpan={6} rowSpan={1} border="1px solid red"><Map /></GridItem>
+4311c96ed3eec4b8174057683aa9a3e3|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|11|7|v|typescriptreact
+	Tray
+9dffbf69ffba8bc38bc4e01abf4b1675|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|5|2|v|typescriptreact
+	Text
+53c6ed0942e356d810494f6815eced1b|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|29|3|V|typescriptreact
+				<Center>
+354e8030f22943a8b8c8ceb6f1d6ad78|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|35|3|V|typescriptreact
+				</Center>
+cdc7eeb9fe0ac3fde861ce7c971a0c66|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|25|7|V|typescriptreact
+			<Center>
+d7e9a2d4e228f3476b5cd522424ce8f4|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|7|8|V|typescriptreact
+		Center,
+8ac051b0b23f64ce6453edf9f22d7c36|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|27|16|V|typescriptreact
+				padding="auto"
+09d2bd168181f1e64c2b1651a80a8aa8|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|24|4|v|typescriptreact
+	Flex
+5696743688338de7a336ee3677a7f66b|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|25|4|V|typescriptreact
+				direction="row"
+56878141c657e50bdabbc831b9fab9e9|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|25|4|V|typescriptreact
+				wrap="wrap"
+f792d1afb0399dce47533bead9d71a8a|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|27|4|v|typescriptreact
+	align
+0038550a00313a01a34b816904793b6b|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|29|22|V|typescriptreact
+				align="space-around"
+cc8a5e2a23057d003baa5a16025516ed|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|32|1|V|typescriptreact
+				<Spacer />
+09317b68b17652b2a3e57ac2a90c40e2|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|27|1|V|typescriptreact
+				direction="row"
+				wrap="wrap"
+				justify="center"
+824ef535d16b7c37dd61fdc093d3fa88|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|31|1|V|typescriptreact
+				<Spacer />
+				<Text>Objective 1</Text>
+				<Spacer />
+ac7f75c1d8a6698ef4c8cbadef500e47|file:///home/jdv/js/vedhub/src/components/DiceGame/Info/Info.tsx|34|1|V|typescriptreact
+				<Text>Objective 1</Text>
+				<Spacer />
+86e2a0298bc430a7f50b3ce25afc5e0d|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|27|1|V|typescript
+				objective: null;
+bf9ee847b4fa46e24a114965320ada4d|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|116|1|V|typescript
+		toggleSaved: (id:number) => 
+			set(state =>  {
+				//toggle the value
+				state.dice[id].saved = !state.dice[id].saved;
+				console.log(`\tZustand saved state of Die${id}: ${state.dice[id].saved}`);
+			}),
+47d3175b4985bafded215106da51c786|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|122|2|v|typescript
+	toggleSaved
+41f984bb082af806e510740db289125d|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|124|6|v|typescript
+	toggle
+536a056b710e94b16169efd17a4a657b|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|125|19|v|typescript
+	saved
+c612db4645ab2113247e75472a1bcbb2|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|125|31|v|typescript
+	!state.dice[id].saved
+3e89e546ab095a86f986affc752372d0|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|126|76|v|typescript
+	: ${state.dice[id].saved}
+56f4c0d0e6d30db95b150a9cb68a74af|file:///home/jdv/js/vedhub/src/store/DiceStore.ts|9|1|V|typescript
+		toggleSaved: (id: number) => void;
+e1accb29a27a881c29d761796e74bc04|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|2|2|v|json
+	mapName
+030c55dfd4d77bca0d066354690ca628|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|3|2|v|json
+	regions
+0aab81de5c4c87021772015efc184d67|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|6|5|v|json
+	points
+6a01e4e6c4a3f87bea4d52ccbc3d59ce|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|12|1|V|json
+							{
+								"objectiveID": 1,
+								"requirement": [6, 6]
+							}
+2ada44af845be9499ec2246880770c87|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|12|1|V|json
+							{
+								"objectiveID": 1,
+								"requirement": [6, 6]
+							},
+bec34264f5ea0ab2a99accca3445b9f2|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|20|1|V|json
+							{
+								"objectiveID": 3,
+								"requirement": ["C"]
+							},
+63b6c6465daa43f2a3864792b23fd42e|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|4|1|V|json
+			{
+				"regionName": "Meryton Isle",
+				"controlBonus": 0,
+				"territories": [
+					{
+						"name": "Meryton Isle",
+						"points": 3,
+						"objectives": [
+							{
+								"objectiveID": 1,
+								"requirement": ["G", "G"]
+							},
+							{
+								"objectiveID": 2,
+								"requirement": ["A"]
+							},
+							{
+								"objectiveID": 3,
+								"requirement": ["C"]
+							},
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+						]
 					}
-				}
-			case m := <-h.broadcast:
-				connections := h.rooms[m.room]
-				for c := range connections {
-					select {
-					case c.send <- m.data:
-					default:
-						close(c.send)
-						delete(connections, c)
-						if len(connections) == 0 {
-							delete(h.rooms, m.room)
-						}
-					}
-				}
+				]
 			}
-		}
-	}
-d13489e09132e442c3f53af8a47d0099|file:///home/jdv/js/reactDice/server/server.go|4|1|V|go
-	import (
-		"fmt"
-		"github.com/gin-gonic/gin"
-	)
-	
-	func main() {
-		hub := newHub()
-	
-		// Starts up the hub as a goroutine
-		go h.run()
-	
-		// Start a new router
-		router := gin.New()
-	
-		// Load Files to serve
-		router.LoadHTMLFiles("index.html")
-	
-		// Handle GET Requests from client
-		router.GET("/room/:roomId", func(c *gin.Context) {
-			c.HTML(200, "index.html", nil)
-		})
-	
-		// Send back the WS that matches their room id.
-		router.GET("/ws/:roomId", func(c *gin.Context) {
-			roomId := c.Param("roomId")
-			serveWs(c.Writer, c.Request, roomId)
-		})
-	
-		// Start router on port 8080
-		router.Run("0.0.0.0:8080")
-		fmt.Println("Started router on port 8080")
-	}
-aa8af3ebe14831a7cd1b6d1383a03755|file:///home/jdv/js/reactDice/src/websocket.js|12|48|v|javascript
-	chat
-ae772ad3e953180d60c7c7e8b531780f|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|1|1|V|javascript
-	// Store for managing the Gamestate, leaderboards, round, points etc.
-	import create from 'zustand'
-	import { v4 as uuid } from 'uuid';
-	
-	const GamestateStore = create(set => ({
-		username: "Joe",
-		users: [
+e4f0df397361fb263cd4b7ca7c43a661|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|33|19|v|json
+	Meryton Isle
+11038927809b3fa0ddaf9efca3d7fc46|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|36|1|V|json
+					{
+						"name": "Meryton Isle",
+						"points": 3,
+						"objectives": [
+							{
+								"objectiveID": 1,
+								"requirement": ["G", "G"]
+							},
+							{
+								"objectiveID": 2,
+								"requirement": ["A"]
+							},
+							{
+								"objectiveID": 3,
+								"requirement": ["C"]
+							},
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+						]
+					}
+2b004d60a1610fe98c2ebd5e4b3f45c7|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|79|1|V|json
+					},
+									{
+						"name": "Meryton Isle",
+						"points": 3,
+						"objectives": [
+							{
+								"objectiveID": 1,
+								"requirement": ["G", "G"]
+							},
+							{
+								"objectiveID": 2,
+								"requirement": ["A"]
+							},
+							{
+								"objectiveID": 3,
+								"requirement": ["C"]
+							},
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+						]
+					},
+e1f5f88bce319246bdb85a659f278951|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|102|5|V|json
+									},
+e8fcc0f0a72e9d46f0a662fd90256cb9|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|44|1|V|json
+							{
+								"objectiveID": 2,
+								"requirement": ["A"]
+							},
+							{
+								"objectiveID": 3,
+								"requirement": ["C"]
+							},
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+e2d356abf1a6122fa04e442b306e1cb4|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|42|24|v|json
+	"I", 
+ea23137173d2a7da7b5ee1100f1d4984|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|62|1|V|json
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+760d94318fed589604a08afe13079e37|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|60|24|v|json
+	"I",
+f12f6c6bea6df69cf58803bba4491320|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|79|8|v|json
+	,
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+f1bbaa893efd4fb8c48e4152d5f8989b|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|92|1|V|json
+								"requirement": ["A"]
+4c51df78ae15eb0df835ab08a8cda17b|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|88|1|V|json
+								"requirement": ["G", "G"]
+d503b8e3f53e77df6a4d41cb19672796|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|96|29|v|json
+	"I", "I", "I"
+dc65b9c0976b52cabb34e366a21c986a|file:///home/jdv/js/vedhub/src/components/DiceGame/LaDendria.json|4|1|V|json
 			{
-				id: 0,
-				uuid: uuid(),
-				key: 0,
-				username: "Joe",
+				"regionName": "Meryton Isle",
+				"controlBonus": 0,
+				"territories": [
+					{
+						"name": "Meryton Isle",
+						"points": 3,
+						"objectives": [
+							{
+								"objectiveID": 1,
+								"requirement": ["G", "G"]
+							},
+							{
+								"objectiveID": 2,
+								"requirement": ["A"]
+							},
+							{
+								"objectiveID": 3,
+								"requirement": ["C"]
+							},
+							{
+								"objectiveID": 4,
+								"requirement": ["I", "I", "I", "I"]
+							}
+						]
+					}
+				]
 			},
-			{
-				id: 1,
-				uuid: uuid(),
-				key: 1,
-				username: "Matt",
-			},
-		],
+2cbf4818bfbd74f5c241908102ba37b1|file:///home/jdv/go/src/github.com/jdvober/apexAttendance/config.env|25|12|v|sh
+	TACDistrictJoseph.Vober=%c3%80%c3%adg%e2%82%ac%c3%a1%c3%98%c3%91%21; TACServerJoseph.Vober=q%c3%97j%c2%b3%e2%80%a1%c2%be%e2%80%99%5c%19%c3%90jN%3e%c3%86%7f%c2%b4; TACDatabaseJoseph.Vober=%c3%a2%c3%a8%c3%9a%e2%80%b9%2as%c3%97%c3%b1%7d%c3%94YM%5e%c3%8b%e2%80%9a%15; TACSummerSchoolJoseph.Vober=N; __RequestVerificationToken_L1RBQw2=n-DPY1C_wOpNnS-dNybKjZmrlMfs21yEI6nSmXHVX0mtyf3ul83GJ4KPnKWMzPf5aPQZy5xPwm8KhYsxVRDDQmx4UFoTsTAC1NvbfMaF1qk1; ASP.NET_SessionId=rezztcwtzpt2jqbhgz5ml4w5; eSPADAuthCookie=EDB4B3EADDFF462DA98DF6665065DEC24ABD79E9BB9CAE5348DECD1E339987F7163B428FD3667C9942ECA2A06A30996AA237E5B72ED215D54624912638D6CC08B1DEA3F782A41CF8D79D96B513EFF36F7A31C081DE0D045D830EA2DAFDAF1122424E87CC092D38D0A49585F626EB104D
+739db9959030664dd8452882d35b43fd|file:///home/jdv/go/src/github.com/jdvober/apexAttendance/config.env|25|706|v|sh
+	 TACSummerSchoolJoseph.Vober=N
+12f8f6f48ce852a7934a339eda352c9f|file:///home/jdv/go/src/github.com/jdvober/apexAttendance/config.env|25|13|v|sh
+	TACSummerSchoolJoseph.Vober=N; __RequestVerificationToken_L1RBQw2=VrB-z2Pf9lQzNy7wEhg-euYCETqVGi0LtJbFuQmVp7xuULpyESMA5OxBOIPZSz8j1razUzEjYYvKghNQwawAJCk7PpTPl6MOwjBeKbhaz4k1; ASP.NET_SessionId=guggrltexunxujdcx5nauwkh; eSPADAuthCookie=4E296D68DD1E1EB8A8304756546560A110FC17E6E05ED8BE410A14A989E265BEF0A15237F8DBB65EB01410DDD3F32A578AC0CEBA41958E56920D03549847B640CB43C71DAD2277E9147AE619EDBF06CA2A345AEA20424CCA0AB9BFE7B8F1236CFB8ED4BEFD1D3E67B5194B0389210C97; TACDistrictJoseph.Vober=%c3%80%c3%adg%e2%82%ac%c3%a1%c3%98%c3%91%21; TACServerJoseph.Vober=q%c3%97j%c2%b3%e2%80%a1%c2%be%e2%80%99%5c%19%c3%90jN%3e%c3%86%7f%c2%b4; TACDatabaseJoseph.Vober=%c3%a2%c3%a8%c3%9a%e2%80%b9%2as%c3%97%c3%b1%7d%c3%94YM%5e%c3%8b%e2%80%9a%15;
 	
-	}));
-	
-	export default GamestateStore
-63d72051e901c069f8aa1b32aa0c43bb|file:///home/jdv/js/reactDice/src/stores/AppStateStore.js|24|16|v|javascript
-	Game
-be6b81dbd4c98cbdb550561a84dce091|file:///home/jdv/js/reactDice/src/stores/AccountStore.js|7|1|V|javascript
-		users: [
-			{
-				id: 0,
-				uuid: uuid(),
-				key: 0,
-				username: "Joe",
-			},
-			{
-				id: 1,
-				uuid: uuid(),
-				key: 1,
-				username: "Matt",
-			},
-		],
-58231756204104536b0a0fb61ab4a162|file:///home/jdv/js/reactDice/src/stores/GamestateStore.js|6|1|V|javascript
-		username: "Joe",
-c7792c3a6827b7a03a51e78f23c59259|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|3|1|V|javascript
-	import ChatStore from '../../stores/ChatStore'
-45cdfbf1e76c315dd6280d2aaa93cd45|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|3|23|v|javascript
-	'../../
-9cf45dba8b81046829605901a4e41b2d|file:///home/jdv/js/reactDice/src/components/Chat/Messages.js|7|1|V|javascript
-		// Store
-		const chatHistory = ChatStore(state => state.chatHistory)
-5ce552794d5417965af288e56d20fa76|file:///home/jdv/js/reactDice/src/websocket.js|5|1|V|javascript
-	const room := 
-fef2576d54dbde017a3a8e4df699ef6d|file:///home/jdv/js/reactDice/src/websocket.js|17|63|v|javascript
-	room
-dba881a460b5d6e276963ada1706c135|file:///home/jdv/js/reactDice/src/websocket.js|1|47|V|javascript
-	import AccountStore from '../src/stores/AccountStore'
-	
-	// Store
-	const roomID = AccountStore(state => state.roomID)
-153c8ff689954343e174adf250d2818b|file:///home/jdv/js/reactDice/src/websocket.js|1|42|V|javascript
-	import AccountStore from '../src/stores/AccountStore'
-	
-	// Store
-	const roomID = AccountStore(state => state.roomID)
-	
-43fcb1932f559a8d41da2b7f99765cd6|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|9|1|V|javascript
-	import AccountStore from '../src/stores/AccountStore'
-fa4b3538f6a6e7f8bf6680ab63749518|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|11|1|V|javascript
-	// Store
-707552962e2d2b8c6f9a047c77d616e5|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|11|1|V|javascript
-	const roomID = AccountStore(state => state.roomID)
-255567cf4b2aef2b3f6da7e041e5ebbb|file:///home/jdv/js/reactDice/src/websocket.js|11|39|V|javascript
-		// console.log(`Attempting Websocket connection on ws://${host}/chat`);
-c78ddffb9bdf0e822d5d86e00b10c696|file:///home/jdv/js/reactDice/src/websocket.js|12|2|V|javascript
-		// const ws = new window.WebSocket(`ws://${host}/chat` || {}) // //if using Express server
-		// console.log(`Attempting Websocket connection on ws://${host}/chat`);
-502b90fb929185f602aaf5f428a9f652|file:///home/jdv/js/reactDice/server/Makefile|13|1|V|make
-		reflex -s -r '\.go$$' make run
-99bd6eeaac29330d5284ac718c20d7dd|file:///home/jdv/js/reactDice/server/Makefile|14|18|V|make
-		reflex -s -r '..\\.go$$' make run
-0fdc336911a6b4473390edda26862c98|file:///home/jdv/js/reactDice/package.json|25|1|V|json
-			"start": "react-scripts start",
-a74cfb732376264b623c721d25ba043d|file:///home/jdv/js/reactDice/package.json|27|1|V|json
-			"start-watch": "concurrently \"clear && echo 'Starting React Dev Server and watching Sass'\" \"npm run watch-sass\" \"react-scripts start\"",
-c438cf574484c70ecdb82a41e00e4d23|file:///home/jdv/js/reactDice/package.json|28|1|V|json
-			"dev-start": "concurrently \"npm run watch-server\" \"npm run watch-sass\" \"npm run start\"",
-d85773cd2923c0c580dac362dd8b1fad|file:///home/jdv/js/reactDice/package.json|26|1|V|json
-			"start-core": "conc"react-scripts start",
-c9d85b914df64c7ac484c5a42876c967|file:///home/jdv/js/reactDice/package.json|26|56|V|json
-			"start-core": "concurrently \"npm run watch-server\" \"npm run start\"",
-11139f77b8d410e3bd1c36c79d828716|file:///home/jdv/js/reactDice/server/server.go|33|1|V|go
-		router.LoadHTMLFiles("index.html")
-3cc205626d100d147266979fb78cd417|file:///home/jdv/js/reactDice/server/server.go|39|1|V|go
-		// router.GET("/room/:roomId", func(c *gin.Context) {
-			// c.HTML(200, "index.html", nil)
-		// })
-	
-25347504f4a06743b428fdf116e9027d|file:///home/jdv/js/reactDice/server/server.go|41|1|V|go
-		router.Use(static.Serve("/", static.LocalFile("../build", true)))
-27a58a60a0d5bc45cdfd1633d0a39d4f|file:///home/jdv/js/reactDice/server/server.go|42|1|V|go
-		router.Use(static.Serve("/", static.LocalFile("../build/index.html", true)))
-2915a0a95b79662f84d3d37c0e5f6d58|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|1|V|javascript
-	import DieI from "../../resources/dice/die-infantry.svg"
-	import DieC from "../../resources/dice/die-cavalry.svg"
-	import DieA from "../../resources/dice/die-artillery.svg"
-	import DieG from "../../resources/dice/die-general.svg"
-1580f694ed6b54638f198a62b6cfcd2f|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|13|1|V|javascript
-	import DieI from "../../resources/dice/die-infantry.svg"
-	import DieC from "../../resources/dice/die-cavalry.svg"
-ee0765eff8ddafa32e357ff671eb997d|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|18|19|^v|javascript
-	../../
-	../../
-	../../
-ffb1c6745b1c3e5217d544728f028761|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|18|33|^v|javascript
-	resources/dice/
-	resources/dice/
-	resources/dice/
-27d37dde799b4b2a6049f1d7df8bc7d8|file:///home/jdv/js/reactDice/src/components/Dicetray/Die.js|7|47|^v|javascript
-	svg
-	svg
-	svg
-	svg
-	svg
-	svg
-cd02efa43db4e20724d05a58c6b97480|file:///home/jdv/js/reactDice/server/server.go|41|38|v|go
-	LocalFile
-0e092f01a3cfc11e202c30f109230b4c|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|19|1|V|javascript
-		const roomID = AccountStore(state => state.roomID)
-b326b5062b2f0e69046810717534cb09|file:///home/jdv/js/reactDice/src/stores/AccountStore.js|10|10|v|javascript
-	true
-9425b8c9978a2dc3c26c5485d04a1754|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|20|8|v|javascript
-	roomID
-b706d6ab33ec10a8ee18a24148fce97f|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|24|7|v|javascript
-	!startWebsocketConnection
-1678dc81b77cef5fb538da6094eb46d5|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|1|V|javascript
-			startWebsocketConnection(roomID)
-f02a3998a2439fe9544a75d90427ce76|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|22|8|v|javascript
-	countRender
-9a5c9683109d4209c495eda993e18bee|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|22|51|V|javascript
-		const ws = useRef(startWebsocketConnection(roomID));
-4d8547c10beeece49fbeb01be4a5104d|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|20|51|V|javascript
-		const inGame = AccountStore(state => state.inGame)
-66e0f13b49ec292b11bf5c045e1054b1|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|23|1|V|javascript
-			if (!inGame){
-				inGame = true;
-d95e1af4dd643efc71f67051d6143f53|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|28|1|V|javascript
-				startWebsocketConnection(roomID)
-c9e04d7101023d86e20df39fe3a453f3|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|25|3|V|javascript
-				if (!didStartWS.current){
-2bb375907d45e2ed40fb0a62d70ea7da|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|3|V|javascript
-					didStartWS.current = true
-b51710b1651876981cb5401531a3f08d|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|23|6|V|javascript
-		const didStartWS = useRef(false)
-d033a1018f3498fe0fa9b663f523f06c|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|26|6|v|javascript
-	else {
-					console.log("Already established WS connection!");
-				}
-	
-6a7d4800e34ba60abad688cccedeefea|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|4|V|javascript
-					console.log("Already established WS connection!");
-40985e24734e7c2edc3ce26e56f94064|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|27|4|V|javascript
-				}
-41aeaead47798241656e2a4f2ebf866a|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|26|3|V|javascript
-				} 
-e13ee5356480f453d924f0f1b8d665bc|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|28|1|V|javascript
-					startWebsocketConnection(roomID)
-					console.log("Started a new WS connection.");
-631d35269a3b90086d13ee2434e42f3b|file:///home/jdv/js/reactDice/src/stores/ChatStore.js|13|1|V|javascript
-		addLatestMessageToHistory: () => set(state => ({ 
-			chatHistory: [...state.chatHistory, {id: uuid(), data: state.latestMessage}]
-		})),
-ef8bebc819ce84169b16d37681072162|file:///home/jdv/js/reactDice/src/stores/AccountStore.js|13|2|v|javascript
-	addLatestMessageToHistory
-63d7d28cfc37748b1fd753d372a0e0fb|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|21|8|v|javascript
-	inGame
-cd8640a7101a41ada929b4de5948d1b7|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|30|1|V|javascript
-				console.log(`inGame: ${inGame}`);
-e01f37298a3f53ef247da03929b8f193|file:///home/jdv/js/reactDice/src/components/Chat/Chat.js|23|1|V|javascript
-		// Start a websocket connection that is not reloaded after every render, but is loaded on component's first and last render, hence the empty square brackets showing no dependencies
-		// Starts as false, and is set to true after first render.
-e285e24219e99401cb84707591b18969|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|182|1|V|vim
-	
-	"*****************************************************************************
-	" Toggle comments
-	"*****************************************************************************
-033caa928bfea0bf7c5738987db83ef7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|204|1|V|vim
-	nnoremap <silent> <leader><Tab> >i}
-25e17f12e05cb7d297b065923128981f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|39|1|V|vim
-	inoremap jj <Esc>
-64edeee49fad6419a7b7102fab10011f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|43|21|V|vim
-	map <Esc> :e<CR><Esc>
-42a32660c0768537e535e40329e13e74|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|41|17|V|vim
-	" Super-hacky work around for treesitter highlighting problems that require :e
-921f32b8dd475d3dd4593171fc752b2d|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|41|9|V|vim
-	" to fix.
-5fadaa87b28cb011e1284097989e894e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|196|1|V|vim
-	"*****************************************************************************
-5fda7fefd1207886f7adfc34bdcde679|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|196|1|V|vim
-	"*****************************************************************************
-	" Indenting
-	"*****************************************************************************
-ead5d0e9ae810ebf23ac1a8ac332f109|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|210|2|v|vim
-	*****************************************************************************
-	
-0525600c90333731a9b34300c44aa9c4|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|210|2|v|vim
-	=============================================================================
-	
-427d7aa2086cdcd5409fa24d2e083d4b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|210|2|V|vim
-	"=============================================================================
-278e2cccd21aca74122020392f160688|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|45|1|v|vim
-	ource ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
-1ad30212a71df01b64ebd584f9c04a68|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|74|1|V|vim
+dcf5d6e1d3a2025e52579621b8ac1716|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|24|1|V|vim
+	" if LINUX()
+7fc6e4e24d6b452a52161ce4b4e8c7a3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|28|1|V|vim
+	" endif
+689dffa18b2655f60272e26dea7424c7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim|12|1|V|vim
+	if !exists('g:vscode')
+bb16eb85bec135ecf4dda71c5cb4253c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|47|1|V|vim
+	if !(vscode)
+6cb66ff0527936bbd229691caed8fd56|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|72|1|V|vim
 	" ================================================================================
-720924034712152f5822362542eb75e2|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|103|1|V|vim
-	" inoremap <silent> <C-'> `
-59822f5b19c6d90bd2584f6a9d1e7f3b|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|103|1|V|vim
-	" nnoremap <silent> <C-'> `
-b5ae4be43ce1eac59bba52df2f1966a7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|103|1|V|vim
-	" vnoremap <silent> <C-'> `
-2890bac50cf1e71127516e4cca79575a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|68|1|V|vim
-	" "*****************************************************************************
-bcf6234f4a562fe6924426013da0b8fc|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|74|2|v|vim
-	 ================================================================================
-dee2529b90d34cf8dab3bc6416d3c426|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|211|3|v|vim
-	Indenting
-541cc321fa8e2e1228a651648b32b33e|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|213|1|V|vim
-	nnoremap <silent> <S-D> <nop>
-8ab3187c3275651042cf1726c2075c36|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim|211|41|v|vim
-	deleting line / Undo (I do it accidentlly too often)
-6d31b0768a5b41092fd183a1bec000d3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|47|1|V|vim
-	"*****************************************************************************
-	" Fix backspace indent
-	"*****************************************************************************
-ef2c5108bbfa8cf8151a10e5c122f438|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|48|3|v|vim
-	Fix backspace indent
-0943f0ee6b55163fe4077dc3d4dbca84|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|47|1|V|vim
-	"*****************************************************************************
-	" Indentation Settings
-	"*****************************************************************************
+	" Filetype Specific Formatting
+	" ================================================================================
+e5554237fe1a54880e72c17dfd8d8e69|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|47|1|V|vim
+	" Terminal-only plugins
+da0e9b4afe06cf75e106c5dc2391eba7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|48|3|v|vim
+	Filetype Specific Formatting
+0624ce012483a6cd73475b05e05338ac|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|47|1|V|vim
+	" ================================================================================
+	" Terminal Only Plugins
+	" ================================================================================
+266b495376c8e8e93d9773072c8df512|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|53|3|v|vim
+	Terminal Only Plugins
+d5df24459a719f12e522d317ce608a33|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|41|1|V|vim
+	" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
+0f4cdca8fffe5cf2e841407734ac3465|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|30|62|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/highlight.vim
+d12c1581f429bba90328523af8491330|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|32|5|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim
+be82706242640614c004c828a4f871e1|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|32|5|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim
+8f06428b6e886370ecff10f6e0850aac|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim
+bce8e704e3ad1a21ccd86d97d34d63b9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim
+58debda34975fcf0aeaa43dbb044bda3|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|34|1|v|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/startify.vim
+fca9d15ac970b190e49aef0fb7f199b7|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|34|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
+377568432b054d0e3a8c4186286ff4d0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|36|1|V|vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
+a4bdf4b7ae75a4c439b0577d4c5728cb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|32|1|V|vim
+		source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim
+d45d9013f6937012258cd3351c730393|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|38|1|v|vim
+	Plug 'vim-airline/vim-airline'
+b1885ce7f5dc13c0023dd0ce517e31ec|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim|46|1|v|vim
+	AndrewRadev/tagalong.vim
 	
-	
-	
-dcfce4c789177b2e4268fcacb0d5a2f9|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim|81|2|V|vim
-	set shiftwidth=4 " Set shiftwidth to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation. 
-03583ab88dea25718088ab1f77c9cccb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|32|1|V|vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
-691bdef5bf2a312bb13c8ac1c99888d6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/init.vim|33|59|v|vim
-	keybindings
-4763107ec64e92a517d228fb2743cb96|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|1|1|V|vim
-	                                                                
-ff38554a89763a21b784374add0e3390|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|16|1|V|vim
-	=================================================================
-7635c1d59250a80785272b7ce9495c80|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|17|3|v|vim
-	Test Heading Text
-cf95880b7b3d8c8c48a38c4549f29991|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|19|103|V|vim
-	let @h = \'O=================================================================jjyyj]pVkk,ccjjo�kb�kbjj\'
-1034a941fe1b09bdfcd91496a367cbca|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|22|1|V|vim
-	" =================================================================
-	" Format text to header with = signs
-	" =================================================================
-	                                                                
-	" =================================================================
-	" Test 2
-	" =================================================================
-ff2364a0be3d20e46cc69efb36afe9a5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|69|v|vim
-	space
-53b1f32fae32847238932783b4d57711|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|1|V|vim
-	===================================================================
-188cefb1a073ec90281d8b37f4dfa7bf|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|1|V|vim
-	" ===================================================================
-161ba2dafcbb9a3885dac4c4c9911e65|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|43|V|vim
-	let g:marvim_store_key = '<leader><leader>m'     " change store key from <F3> to '<leader><leader>m'
-178d0ce4936ebb1574c17cbbf4064e1a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|27|v|vim
-	<leader><leader>m
-9972a03462eb2b8f54365d73c7470ec5|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|26|v|vim
-	<leader>m
-c444858e0aaeb727da73d2eae62321ad|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|72|v|vim
-	leader
-5d7eebc3a2ad8b65726d6c02571585f0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|72|v|vim
-	><leader
-8a1233092c1ea26f456d11c00144f9b0|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|28|v|vim
-	S-F12
-8565c66d0af2a8a7fc34ab0148096f6a|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|43|27|v|vim
-	S-F11
-60441896d60857d28f18aad420e0687f|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim|37|80|v|vim
-	<F12>
-ce8e46c37e99aa5dd7d170cbfcf6745c|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|100|1|V|vim
-	let g:which_key_map['R'] = { 'name' : 'source %' }
-	nnoremap <silent> <localleader>R :source %<CR>
-	
-abbef5a6ed0c78abe917f5d7cf53f8a6|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|103|40|v|vim
-	source %
-88b73cabbd4bd53ba513cd1ba12bcb54|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|104|34|v|vim
-	:source %<CR>
-e57999edbcebda7dc10c0ffa3f5ebb07|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|102|1|V|vim
-	
-	let g:which_key_map['m'] = { 'name' : 'Use Macros' }
-	nnoremap <silent> <localleader>m call marvim#search()
-	
-	let g:which_key_map['M'] = { 'name' : 'Store Macro' }
-	nnoremap <silent> <localleader>M call marvim#macro_store()
-65df4e935d3ec11816e6db80c5969bfb|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|100|1|V|vim
-	let g:which_key_map['R'] = { 'name' : 'source %' }
-4771b4c2ed9327bea42ebb368bb2c1ae|file:///home/jdv/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim|102|1|V|vim
-	
-	let g:which_key_map['m'] = { 'name' : 'Use Macro' }
-	let g:which_key_map['M'] = { 'name' : 'Store Macro' }

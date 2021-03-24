@@ -34,12 +34,12 @@ let g:marvim_store = '/home/jdv/github.com/jdvober/dotfiles/.config/nvim'
 " Change the default Store Key (stores macro in register q)
 " =================================================================
 
-let g:marvim_store_key = '<localleader>M'     " change store key from <F3> to 'Space-M'
+" let g:marvim_store_key = '<localleader>M'     " change store key from <F3> to 'Space-M'
 
 " =================================================================
 " Change the default Use Key
 " =================================================================
 
-let g:marvim_find_key = '<localleader>m' " change find key from <F2> to 'Space-m'
+" let g:marvim_find_key = '<localleader>m' " change find key from <F2> to 'Space-m'
 
 

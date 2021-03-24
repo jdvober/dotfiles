@@ -43,13 +43,11 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
 
-
 " ============================================================================*
 " Fix backspace indent
 " ============================================================================*
 
 set backspace=indent,eol,start
-
 
 " ============================================================================*
 " Fix copy/paste?
@@ -72,23 +70,6 @@ if has('macunix')
 endif
 
 
-" ================================================================================
-" Tabs. May be overridden by autocmd rules
-" ================================================================================
-
-set tabstop=4 " Set tabstop to tell vim how many columns a tab counts for. Linux kernel code expects each tab to be eight columns wide.
-set softtabstop=4 " Set softtabstop to control how many columns vim uses when you hit Tab in insert mode. If softtabstop is less than tabstop and expandtab is not set, vim will use a combination of tabs and spaces to make up the desired spacing. If softtabstop equals tabstop and expandtab is not set, vim will always use tabs. When expandtab is set, vim will always use the appropriate number of spaces. 
-set noexpandtab " When expandtab is set, hitting Tab in insert mode will produce the appropriate number of spaces. 
-
-" ================================================================================
-" Indentation Settings
-" ================================================================================
-
-set shiftwidth=4 " Set shiftwidth to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation. 
-set autoindent      "Keep indentation from previous line
-set smartindent     "Automatically inserts indentation in some cases
-set cindent         "Like smartindent, but stricter and more customisable
-
 " ============================================================================*
 " On-the-fly spelling correction
 " ============================================================================*
@@ -102,22 +83,13 @@ augroup END
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-" ============================================================================*
-" Show vertical tab indent guides (manual, no plugin)
-" ============================================================================*
-
-" set list lcs=tab:\|\
-set list lcs=tab:\|┈
-
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
 
 " ============================================================================*
 " Enable hidden buffers
 " ============================================================================*
 
 set hidden
-
 
 " ============================================================================*
 " Searching
@@ -142,13 +114,52 @@ endif
 	" set shell=/bin/sh
 " endif
 
+"  /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$                                
+" |______/|______/|______/|______/|______/|______/|______/|______/                                
+"  /$$    /$$  /$$$$$$   /$$$$$$                  /$$             
+" | $$   | $$ /$$__  $$ /$$__  $$                | $$             
+" | $$   | $$| $$  \__/| $$  \__/  /$$$$$$   /$$$$$$$  /$$$$$$    
+" |  $$ / $$/|  $$$$$$ | $$       /$$__  $$ /$$__  $$ /$$__  $$   
+"  \  $$ $$/  \____  $$| $$      | $$  \ $$| $$  | $$| $$$$$$$$   
+"   \  $$$/   /$$  \ $$| $$    $$| $$  | $$| $$  | $$| $$_____/   
+"    \  $/   |  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$$|  $$$$$$$   
+"     \_/     \______/  \______/  \______/  \_______/ \_______/   
+"  /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$
+" |______/|______/|______/|______/|______/|______/|______/|______/
+                                                                
+if !exists('g:vscode')
+
+set ruler
+set number relativenumber
+
+
+set mousemodel=popup
+" set t_Co=256
+set guioptions=egmrti
+
+" ================================================================================
+" Tabs. May be overridden by autocmd rules
+" ================================================================================
+
+set tabstop=4 " Set tabstop to tell vim how many columns a tab counts for. Linux kernel code expects each tab to be eight columns wide.
+set softtabstop=4 " Set softtabstop to control how many columns vim uses when you hit Tab in insert mode. If softtabstop is less than tabstop and expandtab is not set, vim will use a combination of tabs and spaces to make up the desired spacing. If softtabstop equals tabstop and expandtab is not set, vim will always use tabs. When expandtab is set, vim will always use the appropriate number of spaces. 
+set noexpandtab " When expandtab is set, hitting Tab in insert mode will produce the appropriate number of spaces. 
+
+" ================================================================================
+" Indentation Settings
+" ================================================================================
+
+set shiftwidth=4 " Set shiftwidth to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation. 
+set autoindent      "Keep indentation from previous line
+set smartindent     "Automatically inserts indentation in some cases
+set cindent         "Like smartindent, but stricter and more customisable
 
 " ============================================================================*
-" Time for CursorHold, and how long it take for live TeX to update.
+" Show vertical tab indent guides (manual, no plugin)
 " ============================================================================*
 
-set updatetime=250
-
+" set list lcs=tab:\|\
+set list lcs=tab:\|┈
 
 " ============================================================================*
 " If the PC is fast enough, do syntax highlight syncing from start unless 200 lines
@@ -178,31 +189,11 @@ augroup END
 let g:python3_host_prog = $GLOBALINSTALLDIR . "/usr/bin/python3"
 
 set termguicolors
+" ============================================================================*
+" Time for CursorHold, and how long it take for live TeX to update.
+" ============================================================================*
 
-
-
-"  /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$                                
-" |______/|______/|______/|______/|______/|______/|______/|______/                                
-"  /$$    /$$  /$$$$$$   /$$$$$$                  /$$             
-" | $$   | $$ /$$__  $$ /$$__  $$                | $$             
-" | $$   | $$| $$  \__/| $$  \__/  /$$$$$$   /$$$$$$$  /$$$$$$    
-" |  $$ / $$/|  $$$$$$ | $$       /$$__  $$ /$$__  $$ /$$__  $$   
-"  \  $$ $$/  \____  $$| $$      | $$  \ $$| $$  | $$| $$$$$$$$   
-"   \  $$$/   /$$  \ $$| $$    $$| $$  | $$| $$  | $$| $$_____/   
-"    \  $/   |  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$$|  $$$$$$$   
-"     \_/     \______/  \______/  \______/  \_______/ \_______/   
-"  /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$ /$$$$$$
-" |______/|______/|______/|______/|______/|______/|______/|______/
-                                                                
-if !exists('g:vscode')
-
-set ruler
-set number relativenumber
-
-
-set mousemodel=popup
-" set t_Co=256
-set guioptions=egmrti
+set updatetime=50
 
 " ============================================================================*
 " Alacritty support for mouse

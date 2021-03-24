@@ -17,7 +17,7 @@
 "  \______/  \______/ |__/ |__/ |__/|__/ |__/ |__/ \_______/|__/  |__/   \___/   \_______/|__/      
                                                                                                   
 
-if !exists('g:vscode')
+" if !exists('g:vscode')
 "
 "*****************************************************************************
 " Create default mappings
@@ -60,4 +60,4 @@ let g:NERDTrimTrailingWhitespace = 1
 
 let g:NERDToggleCheckAllLines = 1
 
-endif
+" endif

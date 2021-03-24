@@ -25,25 +25,37 @@
 " Use gf to open the config file for a particular plugin
 " ================================================================================
 
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/platform.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/highlight.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/macros.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/startify.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/sneak.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
-source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/platform.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/sneak.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/ultisnips.vim
+
+" ================================================================================
+" Terminal Only Plugins
+" ================================================================================
+
+if !exists('g:vscode')
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/highlight.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/startify.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
+endif
+
+" ================================================================================
+" Disabled Plugins
+" ================================================================================
+
+" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lspsaga.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/completion-nvim.vim

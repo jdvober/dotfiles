@@ -12,6 +12,17 @@
 		"args": "j"
 	},
 	{
+		"command": "vscode-neovim.escape",
+		"key": "k j",
+		"when": "neovim.mode == insert && editorTextFocus"
+	},
+	{
+		"command": "vscode-neovim.compositeEscape1",
+		"key": "k",
+		"when": "neovim.mode == insert && editorTextFocus",
+		"args": "k"
+	},
+	{
 		"key": "f1",
 		"command": "-workbench.action.showCommands"
 	},
@@ -39,4 +50,13 @@
 		"command": "editor.action.commentLine",
 		"when": "editorTextFocus && !editorReadonly"
 	},
+	{
+		"key": "ctrl+o",
+		"command": "workbench.action.files.openFile",
+		"when": "neovim.mode != 'insert'"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "-workbench.action.files.openFile"
+	}
 ]

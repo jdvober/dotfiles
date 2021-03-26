@@ -83,8 +83,6 @@ augroup END
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
 " ============================================================================*
 " Enable hidden buffers
 " ============================================================================*

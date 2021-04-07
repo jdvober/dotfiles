@@ -38,7 +38,7 @@ Plug 'AndrewRadev/tagalong.vim'
 " Plug 'hrsh7th/nvim-compe'
 " Plug 'frazrepo/vim-rainbow'
 
-if !exists(vscode)
+if !exists('g:vscode')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'

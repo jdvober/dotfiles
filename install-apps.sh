@@ -247,7 +247,7 @@ install_graphics()
 install_text_editors()
 {
     echo -e "${BIPurple}Installing extra text editors.${Reset}"
-    for app in "neovim-nightly-bin" "vim-plug-git" "neovim-gtk" "vscode" 
+    for app in "neovim-nightly-bin" "vim-plug-git" "neovim-gtk" "visual-studio-code-bin" 
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
@@ -280,7 +280,7 @@ install_core_apps()
 install_extras()
 {
     echo -e "${BIPurple}Installing Optional Apps${Reset}"
-    for app in "libreoffice" "gimp" "inkscape" "audacity" "thunderbird" "obs-studio" "discord" "timeshift" "joplin" "brave-bin" 
+    for app in "libreoffice" "gimp" "inkscape" "audacity" "thunderbird" "obs-studio" "discord" "timeshift" "joplin" "brave-bin" "thunar" "thunar-archive-plugin" "xarchiver" "lxappearance" "nerd-fonts-complete-mono-glyphs" "imagemagick" "reflex"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app

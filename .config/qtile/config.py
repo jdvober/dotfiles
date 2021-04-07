@@ -103,7 +103,7 @@ keys = [
     Key([mod], 'Return', lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], 'u', lazy.spawn('alacritty'), desc="Launch terminal"),
     Key([mod], 'i', lazy.spawn('code'), desc="Launch editor"),
-    Key([mod], 'o', lazy.spawn('firefox'), desc="Launch browser"),
+    Key([mod], 'o', lazy.spawn('brave'), desc="Launch browser"),
     Key([mod], 'p', lazy.spawn('pcmanfm'), desc="Launch file manager")
 
 ]

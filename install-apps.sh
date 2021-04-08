@@ -190,9 +190,9 @@ install_base_utils()
     rustup default stable
     echo -e_done
 
-    # Install Python3 and pynvim
+    # Install Python3, pip and pynvim
     echo -e "Installing ${BICyan}python${Reset} and related utilities..."
-    sudo pacman -S --noconfirm "python" "python-pynvim"
+    sudo pacman -S --noconfirm "python" "python-pynvim" "python-pip"
     echo -e_done
 
     # Install nodejs, yarn and npm
@@ -231,6 +231,8 @@ install_graphics()
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app
     done
+	# Install utility for showing memory, cpu etc in Qtile
+	pip install psutil
     echo -e "${BICyan}Done installing ${BICyan}${app}${Reset}"
 
     # Greeter

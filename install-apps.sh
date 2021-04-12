@@ -293,7 +293,7 @@ install_extras()
 install_work()
 {
     echo -e "${BIPurple}Installing Work Apps${Reset}"
-    for app in "texlive-most" "rclone" "fuse"
+    for app in "texlive-most" "rclone" "fuse" "pandoc"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app

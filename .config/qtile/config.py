@@ -200,7 +200,7 @@ screens = [
                 widget.CPU(format=" {load_percent}%"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
 
-                widget.Memory(format=" {MemPercent}%"),
+                widget.Memory(format=" {MemPercent}% / {SwapPercent}%", measure_swap="G"),
                 widget.Sep(padding=8, linewidth=2, size_percent=65),
 
                 widget.Net(format=" {down} ↓↑ {up}"),

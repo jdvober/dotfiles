@@ -208,6 +208,9 @@ install_base_utils()
     done
     echo -e "${BICyan}Done installing ${BICyan}${app}${Reset}"
 
+    echo -e "<${BIGreen}Switching CAPS to CTRL using xmodmap ./HOME/jdv/.Xmodmap${Reset}>"
+	xmodmap ./HOME/jdv/.Xmodmap
+
     echo -e "<${BIGreen}Done installing Base Utils.  Proceeding.${Reset}>"
 }
 

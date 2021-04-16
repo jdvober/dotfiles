@@ -103,7 +103,7 @@ keys = [
     Key([mod], 'Return', lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], 'u', lazy.spawn('alacritty'), desc="Launch terminal"),
     Key([mod], 'i', lazy.spawn('code'), desc="Launch editor"),
-    Key([mod], 'o', lazy.spawn('firefox'), desc="Launch browser"),
+    Key([mod], 'o', lazy.spawn('brave'), desc="Launch browser"),
     Key([mod], 'p', lazy.spawn('pcmanfm'), desc="Launch file manager")
 
 ]
@@ -214,39 +214,39 @@ screens = [
             24, background=colors["medGrey"], opacity=0.85, margin=6
         ),
     ),
-     #  Screen(
-         #  top=bar.Bar(
-             #  [
-                 #  widget.CurrentLayoutIcon(custom_icon_paths=[
-                                          #  "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
-                 #  widget.Spacer(length=bar.STRETCH),
-                 #  widget.Chord(
-                     #  chords_colors={
-                         #  'launch': ("#ff0000", "#ffffff"),
-                     #  },
-                     #  name_transform=lambda name: name.upper()
-                 #  ),
-                 #  widget.Systray(),
-                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                 #  widget.CheckUpdates(
-                     #  colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string=" ", display_format=": {updates}"),
-                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                 #  widget.CPU(format=" {load_percent}%"),
-                 #  # widget.CPU(format=" {load_percent}%"),
-                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                 #  #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
-                 #  widget.Memory(format=" {MemPercent}%"),
-                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                 #  widget.Net(format=" {down} ↓↑ {up}"),
-                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-                 #  widget.TextBox(fmt=" ", padding=0),
-                 #  widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
-                               #  volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
-                 #  widget.Sep(padding=8, linewidth=2, size_percent=65),
-             #  ],
-             #  24, background=colors["medGrey"], opacity=0.85, margin=6
-         #  ),
-     #  ),
+     Screen(
+         top=bar.Bar(
+             [
+                 widget.CurrentLayoutIcon(custom_icon_paths=[
+                                          "/home/jdv/github.com/jdvober/dotfiles/.config/qtile/icons/"]),
+                 widget.Spacer(length=bar.STRETCH),
+                 widget.Chord(
+                     chords_colors={
+                         'launch': ("#ff0000", "#ffffff"),
+                     },
+                     name_transform=lambda name: name.upper()
+                 ),
+                 widget.Systray(),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.CheckUpdates(
+                     colour_have_updates=colors["neonGreen"], colour_no_update=colors["red"], no_update_string=" ", display_format=": {updates}"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.CPU(format=" {load_percent}%"),
+                 # widget.CPU(format=" {load_percent}%"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 #  widget.Image(filename="/usr/share/icons/korla/panel/icons/16/indicator-sensors-memory.png"),
+                 widget.Memory(format=" {MemPercent}%"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.Net(format=" {down} ↓↑ {up}"),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+                 widget.TextBox(fmt=" ", padding=0),
+                 widget.Volume(volume_app="amixer", volume_down_command="amixer set Master 2%-",
+                               volume_up_command="amixer set Master 2%+", mute_command="amixer set Master toggle", update_interval=0.2),
+                 widget.Sep(padding=8, linewidth=2, size_percent=65),
+             ],
+             24, background=colors["medGrey"], opacity=0.85, margin=6
+         ),
+     ),
      #  Screen(
          #  top=bar.Bar(
              #  [
@@ -294,7 +294,7 @@ mouse = [
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: List
 main = None  # WARNING: this is deprecated and will be removed soon
-follow_mouse_focus = False
+follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(float_rules=[

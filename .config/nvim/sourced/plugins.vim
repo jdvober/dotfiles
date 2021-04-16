@@ -38,22 +38,22 @@ Plug 'AndrewRadev/tagalong.vim'
 " Plug 'hrsh7th/nvim-compe'
 " Plug 'frazrepo/vim-rainbow'
 
-if !exists(vscode)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'shmargum/vim-sass-colors'
+if !exists('g:vscode')
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'MaxMEllon/vim-jsx-pretty'
+" Plug 'shmargum/vim-sass-colors'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'liuchengxu/vim-which-key'
+" Plug 'liuchengxu/vim-which-key'
 Plug 'xolox/vim-session'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
-Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
+" Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
 Plug 'lervag/vimtex'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'KeitaNakamura/tex-conceal.vim'

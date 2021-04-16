@@ -41,13 +41,11 @@
 if !exists('g:vscode')
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/highlight.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/fzf.vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/airline.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/bufferline.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/startify.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/netrw.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/session.vim
-	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lexima.vim
 endif
 
@@ -55,6 +53,8 @@ endif
 " Disabled Plugins
 " ================================================================================
 
+" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/which-key.vim
+" source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/coc.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/treesitter.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/vim-rainbow.vim
 " source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/lspsaga.vim

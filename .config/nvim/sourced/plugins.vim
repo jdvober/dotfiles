@@ -39,10 +39,17 @@ Plug 'AndrewRadev/tagalong.vim'
 " Plug 'frazrepo/vim-rainbow'
 
 if !exists('g:vscode')
+<<<<<<< HEAD
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'HerringtonDarkholme/yats.vim'
 " Plug 'MaxMEllon/vim-jsx-pretty'
 " Plug 'shmargum/vim-sass-colors'
+=======
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'shmargum/vim-sass-colors'
+>>>>>>> 433ed9d3aee8ba52c369f6d0d1812e3455bf325f
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'dracula/vim',{'as':'dracula'}

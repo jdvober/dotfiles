@@ -21,13 +21,13 @@ func main() {
 	apps := make(map[string][]string)
 
 	// Comment out any lines of dirs you don't want to link
-	/* apps["qtile"] = []string{"config.py", "autostart.sh"} */
-	/* apps["picom"] = []string{"picom_custom.conf"} */
-	/* apps["nitrogen"] = []string{"nitrogen.cfg"}
-	 * apps["powerline-shell"] = []string{"config.json"}
-	 * apps["powerline-shell/themes"] = []string{"basic.py"}
-	 * apps["rofi"] = []string{"config", "rofi.rasi"} */
-	/* apps["../.config"] = []string{"betterlockscreenrc"} */
+	apps["qtile"] = []string{"config.py", "autostart.sh"}
+	apps["picom"] = []string{"picom_custom.conf"}
+	apps["nitrogen"] = []string{"nitrogen.cfg"}
+	apps["powerline-shell"] = []string{"config.json"}
+	apps["powerline-shell/themes"] = []string{"basic.py"}
+	apps["rofi"] = []string{"config", "rofi.rasi"}
+	apps["../.config"] = []string{"betterlockscreenrc"}
 
 	for d, f := range apps {
 		path := filepath.Join("/home/jdv/.config", d)

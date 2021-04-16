@@ -9,7 +9,7 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from libqtile.command_client import CommandClient
 
-mod = "mod1"
+mod = "mod3"
 mod2 = "mod4"
 terminal = guess_terminal()
 

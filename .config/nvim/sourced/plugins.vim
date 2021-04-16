@@ -17,11 +17,15 @@
 " Required:
 "*****************************************************************************
 
+" Lazy load easymotion based on vscode state
+function! Cond(Cond, ...)
+  let opts = get(a:000, 0, {})
+  return a:Cond ? opts : extend(opts, { 'on': [], 'for': [] })
+endfunction
 call plug#begin(expand('~/.config/nvim/plugged'))
 
 Plug 'sirver/ultisnips'
 Plug 'justinmk/vim-sneak'
-Plug 'asvetliakov/vim-easymotion'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -38,33 +42,31 @@ Plug 'AndrewRadev/tagalong.vim'
 " Plug 'hrsh7th/nvim-compe'
 " Plug 'frazrepo/vim-rainbow'
 
+" Load depending on vscode state
+Plug 'easymotion/vim-easymotion', Cond(!exists('g:vscode'))
+Plug 'asvetliakov/vim-easymotion', Cond(exists('g:vscode'), { 'as': 'vsc-easymotion' })
+
+
 if !exists('g:vscode')
-<<<<<<< HEAD
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'MaxMEllon/vim-jsx-pretty'
-" Plug 'shmargum/vim-sass-colors'
-=======
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'shmargum/vim-sass-colors'
->>>>>>> 433ed9d3aee8ba52c369f6d0d1812e3455bf325f
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'liuchengxu/vim-which-key'
 Plug 'xolox/vim-session'
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
-" Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
 Plug 'lervag/vimtex'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'MaxMEllon/vim-jsx-pretty'
+" Plug 'shmargum/vim-sass-colors'
+" Plug 'liuchengxu/vim-which-key'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'fatih/vim-go', { 'do':':GoUpdateBinaries'}
     
 endif
 

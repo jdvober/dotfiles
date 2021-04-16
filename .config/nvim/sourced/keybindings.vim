@@ -25,13 +25,16 @@ let mapleader=','
 " ================================================================================
 
 nnoremap W b
+vnoremap W b
 nnoremap E ge
+vnoremap E ge
 
 " ================================================================================
-" jj exits insert mode
+" jj or jk exits insert mode
 " ================================================================================
 
 inoremap jj <Esc>
+inoremap jk <Esc>
 
 " ================================================================================
 " Used for moving one space in insert mode
@@ -43,20 +46,20 @@ inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
 " ================================================================================
-" Used for breaking out of brackets
-" ================================================================================
-
-inoremap jk <Esc>la
-inoremap kj <Esc>ha
-
-" ================================================================================
 " Paste on line below / line above
 " ================================================================================
 
 " Remove default binding for P first
 map P <Nop>
-nnoremap <silent> Pj ]p
+	" Put above
 nnoremap <silent> Pk [p
+nnoremap <silent> PP [p
+nnoremap <silent> Pp [p " to protect against early shift release
+
+	" Put below
+nnoremap <silent> Pj ]p
+nnoremap <silent> P; ]p
+nnoremap <silent> P: ]p " to protect against early shift release
 
 " ================================================================================
 " " Experimentally putting characters on/near home row with <C- >
@@ -142,6 +145,10 @@ nnoremap <silent> <leader><leader>t mm:%%!unexpand -t 4 --first-only<CR><localle
 " Two spaces -> tab
 nnoremap <silent> <leader><leader>t :%%!unexpand -t 2 --first-only<CR>
 
+" ================================================================================
+" Quick re-select of last visual mode
+" ================================================================================
+nnoremap <silent> vv gv
 
 " ================================================================================
 " Unbinding the mouse
@@ -172,20 +179,7 @@ nnoremap <silent> <CR> :noh<CR>
 " Find and Replace
 " ================================================================================
 nnoremap ? :%s/
-vnoremap ? :%s/\%V
-
-" ================================================================================
-" Toggle comments
-" ================================================================================
-
-" Comment in return blocks of React functional components (linewise)
-" Comment
-nnoremap <silent> <leader><leader>c 0i{/* <C-o>$<C-o>a */}<Esc>
-" Uncomment
-nnoremap <silent> <leader><leader>u 0dt*x$F*xxx
-nnoremap <silent> <leader><leader>v 0dt*x$F*xxx
-
-nnoremap <silent> <C-\/> <leader>c\<Space>
+vnoremap ? :s/
 
 " ================================================================================
 " Indenting
@@ -200,13 +194,6 @@ vmap <S-Tab> <gv
 " Tab / Shift tab in normal mode (remembers cursor position with marks)
 nnoremap <silent> <Tab> mm>i}'m
 nnoremap <silent> <S-Tab> mm<i}'m
-"
-" ================================================================================
-" Rebind <S-D> and <S-U> in normal mode to move by paragraphs
-" ================================================================================
-nnoremap <silent> <C-j> }
-nnoremap <silent> <C-k> {
-
 
 " ================================================================================
 " Quick Surrounding
@@ -219,11 +206,15 @@ nnoremap <silent> <C-k> {
 
 " Surround with "..."
 nnoremap S" g@iw"
+nnoremap S' g@iw'
 
 " Surround with {...}
 nnoremap S{ g@iw{
 
-" Surround with { ... }
+" Surround with 
+"{ 
+"...
+"}
 nnoremap S} g@iw}
 
 " Surround with (...)
@@ -240,8 +231,29 @@ nnoremap S] g@iw]
 
 " Surround with <div>...</div>
 nnoremap S<d g@iw<div><CR>
-nnoremap S<D g@iw<div><CR>
 
+
+" ================================================================================
+" VSCode Calls
+" ================================================================================
+"
+if exists('g:vscode')
+	" Open Files Dialog
+	noremap <silent> :O <Cmd>call VSCodeNotify('workbench.action.files.openFile')<CR>
+	nnoremap <silent> :o <Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>
+	
+	" Swith to different tabs
+	nnoremap <silent> <leader>0 <Cmd>call VSCodeNotify('workbench.action.openLastEditorInGroup')<CR>
+	nnoremap <silent> <leader>1 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
+	nnoremap <silent> <leader>2 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex2')<CR>
+	nnoremap <silent> <leader>3 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex3')<CR>
+	nnoremap <silent> <leader>4 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
+	nnoremap <silent> <leader>5 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
+	nnoremap <silent> <leader>6 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
+	nnoremap <silent> <leader>7 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
+	nnoremap <silent> <leader>8 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
+	nnoremap <silent> <leader>9 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex9')<CR>
+endif
 "
 "
 "

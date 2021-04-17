@@ -8,8 +8,8 @@ keycode 66 = Control_L
 add control = Control_L Control_R
 !Remap Alt_R to Hyper
 !64 = Left Alt
+!108 = Right Alt
 remove mod1 = Alt_L
 keycode 64 = Hyper_R
 add mod1 = Alt_R 
 add mod3 = Hyper_R
-

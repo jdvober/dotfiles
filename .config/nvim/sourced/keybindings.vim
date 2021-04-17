@@ -19,6 +19,7 @@
 " ================================================================================
 
 let mapleader=','
+let maplocalleader='`'
 
 " ================================================================================
 " Remap W and E for backwards versions of w and e, respectively.
@@ -37,15 +38,6 @@ inoremap jj <Esc>
 inoremap jk <Esc>
 
 " ================================================================================
-" Used for moving one space in insert mode
-" ================================================================================
-
-inoremap <C-h> <C-o>h
-inoremap <C-j> <C-o>j
-inoremap <C-k> <C-o>k
-inoremap <C-l> <C-o>l
-
-" ================================================================================
 " Paste on line below / line above
 " ================================================================================
 
@@ -53,59 +45,25 @@ inoremap <C-l> <C-o>l
 map P <Nop>
 	" Put above
 nnoremap <silent> Pk [p
+nnoremap <silent> PK [p
 nnoremap <silent> PP [p
 nnoremap <silent> Pp [p " to protect against early shift release
 
 	" Put below
 nnoremap <silent> Pj ]p
+nnoremap <silent> PJ ]p
 nnoremap <silent> P; ]p
 nnoremap <silent> P: ]p " to protect against early shift release
 
-" ================================================================================
-" " Experimentally putting characters on/near home row with <C- >
-" ================================================================================
-"
-" " Home
-" inoremap <silent> <C-g> 0
-" nnoremap <silent> <C-g> 0
-" vnoremap <silent> <C-g> 0
-"
-" " First Character
-" inoremap <silent> <C-h> ^
-" nnoremap <silent> <C-h> ^
-" vnoremap <silent> <C-h> ^
-"
-" " End
-" inoremap <silent> <C-l> $
-" nnoremap <silent> <C-l> $
-" vnoremap <silent> <C-l> $
-"
-" " Left Paren
-" inoremap <silent> <C-j> ()<C-o>i
-" nnoremap <silent> <C-j> (
-" vnoremap <silent> <C-j> (
-"
-" " Left Curly Brace
-" inoremap <silent> <C-k> {}<C-o>i
-" nnoremap <silent> <C-k> {
-" vnoremap <silent> <C-k> {
-"
-" " Percent
-" inoremap <silent> <C-n> %
-" nnoremap <silent> <C-n> %
-" vnoremap <silent> <C-n> %
-"
-" " Backtick
-" inoremap <silent> <C-'> `
-" nnoremap <silent> <C-'> `
-" vnoremap <silent> <C-'> `
-"
-" " Equals
-" inoremap <silent> <C-e> =
-" nnoremap <silent> <C-e> =
-" vnoremap <silent> <C-e> =
-"
-" onoremap <silent> t$ $
+nnoremap H ^
+vnoremap H ^
+
+nnoremap Y 0
+vnoremap Y 0
+
+nnoremap L $
+vnoremap L $
+
 " ================================================================================
 " Center line in middle of screen while in insert mode
 " ================================================================================
@@ -130,18 +88,13 @@ nnoremap <silent> zk zt2k2j
 
 nnoremap <silent> zj zb2j2k
 
-"*****************************************************************************
-" Select All
-"*****************************************************************************
-
-nnoremap <silent> <C-a> ggVG
 
 " ================================================================================
 " Spaces to Tabs
 " ================================================================================
 
 " Four spaces -> tab
-nnoremap <silent> <leader><leader>t mm:%%!unexpand -t 4 --first-only<CR><localleader><Tab>'m
+nnoremap <silent> <leader><leader>t mm:%%!unexpand -t 4 --first-only<CR>
 " Two spaces -> tab
 nnoremap <silent> <leader><leader>t :%%!unexpand -t 2 --first-only<CR>
 
@@ -158,14 +111,12 @@ set mouse=a
 map <LeftMouse> <NOP>
 map <RightMouse> <NOP>
 
-
 " ================================================================================
 " Remaping Pgup Pgdn
 " ================================================================================
 
 map <silent> <PageDown> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-D>:set scroll=0<CR>
 map <silent> <PageUp> :set scroll=0<CR>:set scroll^=2<CR>:set scroll-=1<CR><C-U>:set scroll=0<CR>
-
 
 " ================================================================================
 " This unsets the "last search pattern" register by hitting return
@@ -238,9 +189,14 @@ nnoremap S<d g@iw<div><CR>
 " ================================================================================
 "
 if exists('g:vscode')
+	" IF IN VSCODE
+	
 	" Open Files Dialog
 	noremap <silent> :O <Cmd>call VSCodeNotify('workbench.action.files.openFile')<CR>
 	nnoremap <silent> :o <Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>
+	
+	" Toggle Terminal
+	nnoremap <silent> :t <Cmd>call VSCodeNotify(workbench.action.terminal.toggleTerminal)
 	
 	" Swith to different tabs
 	nnoremap <silent> <leader>0 <Cmd>call VSCodeNotify('workbench.action.openLastEditorInGroup')<CR>
@@ -253,20 +209,20 @@ if exists('g:vscode')
 	nnoremap <silent> <leader>7 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
 	nnoremap <silent> <leader>8 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
 	nnoremap <silent> <leader>9 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex9')<CR>
+	
+	"*****************************************************************************
+	" Select All
+	"*****************************************************************************
+
+	nnoremap <silent> ggg <Cmd>call VSCodeNotify('editor.action.selectAll')
+	
+else
+	" IF NOT IN VSCODE	
+	
+	nnoremap <silent> ggg m]ggVG']
+
 endif
-"
-"
-"
-"
-"
-"
-"
-"
-"
-"
-"
-"
-"
+
 "
 "
 "

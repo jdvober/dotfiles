@@ -274,7 +274,7 @@ install_fonts(){
 install_core_apps()
 {
     echo -e "${BIPurple}Installing Core Apps${Reset}"
-    for app in "sudo" "doas" "firefox" "pcmanfm" "openssh" "dmenu2" "w3m" "feh" "i3lock" "betterlockscreen-git" "autoconf" "automake" "pantheon-screenshot" "evince" "mupdf" "okular" "breeze-icons-git" "github-desktop-bin" "xf86-input-wacom" "usbutils" "fx" "vlc" "rofi"
+    for app in "sudo" "doas" "firefox" "pcmanfm" "openssh" "dmenu2" "w3m" "feh" "i3lock" "betterlockscreen-git" "autoconf" "automake" "pantheon-screenshot" "evince" "mupdf" "okular" "breeze-icons-git" "github-desktop-bin" "xf86-input-wacom" "usbutils" "fx" "vlc" "rofi" "samba"
     do
         echo -e "Installing ${BICyan}${app}${Reset}"
         ${AUR_HELPER} -S --noconfirm $app

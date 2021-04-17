@@ -45,24 +45,43 @@ inoremap jk <Esc>
 map P <Nop>
 	" Put above
 nnoremap <silent> Pk [p
-nnoremap <silent> PK [p
-nnoremap <silent> PP [p
-nnoremap <silent> Pp [p " to protect against early shift release
+nnoremap <silent> PK O<esc>[p
 
 	" Put below
 nnoremap <silent> Pj ]p
-nnoremap <silent> PJ ]p
-nnoremap <silent> P; ]p
-nnoremap <silent> P: ]p " to protect against early shift release
+nnoremap <silent> PJ o<esc>]p
+
+	" Put at end
+nnoremap <silent> PL $p
+nnoremap <silent> Pl $p " to protect against early shift release
+
+	" Put at beginning
+
+	" Copy most recent yank into register a, then append the contents of the current line to register a, and paster register a over the line
+nnoremap <silent> PH :let @a=@0<CR>^y$:let @A=@0<CR>^v$"ap
+nnoremap <silent> Ph :let @a=@0<CR>^y$:let @A=@0<CR>^v$"ap
+" to protect against early shift release
+
+" ================================================================================
+" Move by code blocks
+" ================================================================================
+
+nnoremap J }
+vnoremap J }
+nnoremap K {
+vnoremap K {
+
+" ================================================================================
+" Move to beginning / end of line
+" ================================================================================
 
 nnoremap H ^
 vnoremap H ^
 
-nnoremap Y 0
-vnoremap Y 0
-
 nnoremap L $
 vnoremap L $
+
+inoremap qm =
 
 " ================================================================================
 " Center line in middle of screen while in insert mode
@@ -201,13 +220,21 @@ if exists('g:vscode')
 	" Swith to different tabs
 	nnoremap <silent> <leader>0 <Cmd>call VSCodeNotify('workbench.action.openLastEditorInGroup')<CR>
 	nnoremap <silent> <leader>1 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
+	nnoremap <silent> <space>a <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
 	nnoremap <silent> <leader>2 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex2')<CR>
+	nnoremap <silent> <space>s <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex2')<CR>
 	nnoremap <silent> <leader>3 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex3')<CR>
+	nnoremap <silent> <space>d <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex3')<CR>
 	nnoremap <silent> <leader>4 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
+	nnoremap <silent> <space>f <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
 	nnoremap <silent> <leader>5 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
+	nnoremap <silent> <space>z <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
 	nnoremap <silent> <leader>6 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
+	nnoremap <silent> <space>x <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
 	nnoremap <silent> <leader>7 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
+	nnoremap <silent> <space>c <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
 	nnoremap <silent> <leader>8 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
+	nnoremap <silent> <space>v <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
 	nnoremap <silent> <leader>9 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex9')<CR>
 	
 	"*****************************************************************************

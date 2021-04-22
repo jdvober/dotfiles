@@ -202,6 +202,8 @@ nnoremap S] g@iw]
 " Surround with <div>...</div>
 nnoremap S<d g@iw<div><CR>
 
+" I think this makes more sense for decrementing
+nnoremap <C-z> <C-x>
 
 " ================================================================================
 " VSCode Calls

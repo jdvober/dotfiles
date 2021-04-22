@@ -7,9 +7,9 @@ from libqtile import bar, layout, widget, hook, extension
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
-from libqtile.command_client import CommandClient
+from libqtile.command.client import CommandClient
 
-mod = "mod3"
+mod = "mod1"
 mod2 = "mod4"
 terminal = guess_terminal()
 
@@ -94,8 +94,8 @@ keys = [
 
     # Power Management Keybindings
     Key([mod2], "l", lazy.spawn('betterlockscreen -l')),
-    Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([mod2], "r", lazy.restart(), desc="Restart Qtile"),
+    Key([mod2], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Run Command Keybindings
     Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">>" -fn "Jetbrains Mono" -nb ' + \
@@ -110,15 +110,16 @@ keys = [
 
 #  groups = [Group(i) for i in "asdfuiop"]
 groups = [
-    Group("a", spawn="alacritty", layout="MonadTall",
-          init=True, position=1, label=""),
+    Group("a", spawn="alacritty", layout="MonadTall", init=True, position=1, label=""),
     Group("s", layout="max", init=True, position=2, label=""),
     Group("d", layout="max", init=True, position=3, label=""),
-    Group("f", init=True, position=4, label=""),
-    Group("z", init=True, position=5, label=""),
+    Group("f", init=True, position=4, label=""),
+    Group("z", init=True, position=5, label=""),
     Group("x", init=True, position=6, label=""),
     Group("c", init=True, position=7, label=""),
-    Group("v", init=True, position=8, label="")
+    Group("v", init=True, position=8, label=""),
+    Group("r", init=True, position=9, label=""),
+    Group("g", init=True, position=10, label=""),
 ]
 
 

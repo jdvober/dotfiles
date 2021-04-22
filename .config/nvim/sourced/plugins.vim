@@ -18,12 +18,16 @@
 "*****************************************************************************
 
 " Lazy load easymotion based on vscode state
+" https://github.com/asvetliakov/vscode-neovim/issues/415
 function! Cond(Cond, ...)
   let opts = get(a:000, 0, {})
   return a:Cond ? opts : extend(opts, { 'on': [], 'for': [] })
 endfunction
+
 call plug#begin(expand('~/.config/nvim/plugged'))
 
+Plug 'easymotion/vim-easymotion', Cond(!exists('g:vscode'))
+Plug 'asvetliakov/vim-easymotion', Cond(exists('g:vscode'), { 'as': 'vsc-easymotion' })
 Plug 'sirver/ultisnips'
 Plug 'justinmk/vim-sneak'
 Plug 'honza/vim-snippets'
@@ -43,9 +47,6 @@ Plug 'AndrewRadev/tagalong.vim'
 " Plug 'frazrepo/vim-rainbow'
 
 " Load depending on vscode state
-Plug 'easymotion/vim-easymotion', Cond(!exists('g:vscode'))
-Plug 'asvetliakov/vim-easymotion', Cond(exists('g:vscode'), { 'as': 'vsc-easymotion' })
-
 
 if !exists('g:vscode')
 Plug 'akinsho/nvim-bufferline.lua'

@@ -85,8 +85,8 @@ keys = [
     # Switch to a certain layout directly
     Key([mod], '1', lazy.group.setlayout('max')),
     Key([mod], '2', lazy.group.setlayout('monadtall')),
-    Key([mod], '3', lazy.group.setlayout('monadwide')),
-    Key([mod], '4', lazy.group.setlayout('stack')),
+	Key([mod], '3', lazy.group.setlayout('slice')),
+    Key([mod], '4', lazy.group.setlayout('monadwide')),
     Key([mod], '5', lazy.group.setlayout('ratiotile')),
 
     # Close a window
@@ -148,6 +148,7 @@ layouts = [
     layout.RatioTile(
         margin=3, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     #  layout.Tile(margin = 6),
+    layout.Slice(width=1024)
     # Try more layouts by unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
     # layout.Bsp(),

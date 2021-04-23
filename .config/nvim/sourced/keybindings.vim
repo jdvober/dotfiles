@@ -19,7 +19,7 @@
 " ================================================================================
 
 let mapleader=','
-let maplocalleader='`'
+let maplocalleader=' '
 
 " ================================================================================
 " Remap W and E for backwards versions of w and e, respectively.
@@ -213,11 +213,22 @@ if exists('g:vscode')
 	" IF IN VSCODE
 	
 	" Open Files Dialog
-	noremap <silent> :O <Cmd>call VSCodeNotify('workbench.action.files.openFile')<CR>
-	nnoremap <silent> :o <Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>
+	noremap <silent> <localleader>O <Cmd>call VSCodeNotify('workbench.action.files.openFile')<CR>
+	nnoremap <silent> <localleader>o <Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>
+	nnoremap <silent> <localleader>R <Cmd>call VSCodeNotify('workbench.action.openRecent')<CR>
 	
-	" Toggle Terminal
-	nnoremap <silent> :t <Cmd>call VSCodeNotify(workbench.action.terminal.toggleTerminal)
+	" File Explorer
+	nnoremap <silent> <localleader>F <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
+	
+	" Rename
+	nnoremap <silent> <localleader>r <Cmd>call VSCodeNotify('editor.action.rename')<CR>
+
+	" Errors
+	nnoremap <silent> <localleader>e <Cmd>call VSCodeNotify('editor.action.marker.next')<CR>
+	nnoremap <silent> <localleader>E <Cmd>call VSCodeNotify('editor.action.marker.prev')<CR>
+
+	" Close overlays
+	nnoremap <silent> <localleader>w <Cmd>call VSCodeNotify('closeMarkersNavigation')<CR>
 	
 	" Swith to different tabs
 	nnoremap <silent> <leader>0 <Cmd>call VSCodeNotify('workbench.action.openLastEditorInGroup')<CR>
@@ -239,25 +250,24 @@ if exists('g:vscode')
 	nnoremap <silent> <space>v <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
 	nnoremap <silent> <leader>9 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex9')<CR>
 	
+	" Splits
+	nnoremap <localleader>WL <Cmd>call VSCodeNotify('workbench.action.splitEditor')<CR>
+	nnoremap <localleader>WJ <Cmd>call VSCodeNotify('workbench.action.splitEditorDown')<CR>
+	nnoremap <localleader>WK <Cmd>call VSCodeNotify('workbench.action.splitEditorOrthogonal')<CR>
+	
+	" Find word under cursor in files
+nnoremap <silent> <localleader>/ <Cmd>call VSCodeNotify('workbench.action.findInFiles', { 'query': expand('<cword>')})<CR>
 	"*****************************************************************************
 	" Select All
 	"*****************************************************************************
 
-	nnoremap <silent> ggg <Cmd>call VSCodeNotify('editor.action.selectAll')
+	nnoremap <silent> <C-S-a> <Cmd>call VSCodeNotify('editor.action.selectAll')
 	
 else
 	" IF NOT IN VSCODE	
 	
-	nnoremap <silent> ggg m]ggVG']
+	nnoremap <silent> <C-S-a> m]ggVG']
 
 endif
 
-"
-"
-"
-"
-"
-"
-"
-"
 "

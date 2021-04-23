@@ -7,7 +7,15 @@
 # piactl connect
 
 # Enabling Vi-mode
-source ~/github.com/jdvober/dotfiles/.config/zsh/vi-mode/vi-mode.zsh
+source ~/github.com/jdvober/dotfiles/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/github.com/jdvober/dotfiles/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/github.com/jdvober/dotfiles/.config/zsh/zsh-vim-mode/zsh-vim-mode.plugin.zsh
+MODE_CURSOR_VIINS="#bd93f9 bar"
+MODE_CURSOR_REPLACE="$MODE_CURSOR_VIINS #ff0000"
+MODE_CURSOR_VICMD="#ffb86c block"
+MODE_CURSOR_SEARCH="#ff00ff steady underline"
+MODE_CURSOR_VISUAL="$MODE_CURSOR_VICMD block"
+MODE_CURSOR_VLINE="$MODE_CURSOR_VISUAL"
 
 # Enabling ls colors.  See trapd00r/LS_COLORS on github.
 . "/usr/share/LS_COLORS/dircolors.sh"

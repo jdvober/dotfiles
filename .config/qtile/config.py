@@ -85,7 +85,7 @@ keys = [
     # Switch to a certain layout directly
     Key([mod], '1', lazy.group.setlayout('max')),
     Key([mod], '2', lazy.group.setlayout('monadtall')),
-	Key([mod], '3', lazy.group.setlayout('slice')),
+	Key([mod], '3', lazy.group.setlayout('code')),
     Key([mod], '4', lazy.group.setlayout('monadwide')),
     Key([mod], '5', lazy.group.setlayout('ratiotile')),
 
@@ -142,14 +142,15 @@ layouts = [
     layout.Max(),
     layout.MonadTall(
         margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
+    layout.MonadTall(
+        name='code', ratio=0.8, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     layout.MonadWide(
         margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     # layout.Stack(num_stacks=2, margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaFG"], border_width=2),
     layout.RatioTile(
         margin=3, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     #  layout.Tile(margin = 6),
-    layout.Slice(width=1024)
-    # Try more layouts by unleashing below layouts.
+    # Try more layouts ly unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
     # layout.Bsp(),
     #  layout.Matrix(),

@@ -218,5 +218,3 @@ space4tab() {
 space8tab() {
 	find . -name "*.$1" ! -type d -exec bash -c 'unexpand -t 8 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
 }
-
-export PATH="~/js/sass/dart-sass/:$PATH"

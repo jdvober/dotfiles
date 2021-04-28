@@ -29,3 +29,6 @@ augroup MyColors
 	autocmd ColorScheme * call MyHighlights()
 augroup END
 colorscheme dracula
+
+" Highlight on yank duration
+let g:highlightedyank_highlight_duration = 2500

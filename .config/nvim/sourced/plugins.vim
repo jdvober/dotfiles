@@ -38,6 +38,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'xolox/vim-misc'
 Plug 'cohama/lexima.vim'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'machakann/vim-highlightedyank'
 " Plug 'chamindra/marvim'
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " Plug 'neovim/nvim-lspconfig'

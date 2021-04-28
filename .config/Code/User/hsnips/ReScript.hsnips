@@ -1,0 +1,18 @@
+snippet cl "Console Log" A
+Js.log($0)
+endsnippet
+
+snippet str "React String"
+React.string($0)
+endsnippet
+
+snippet fc "React Functional Component"
+@react.component
+let make = ($1) => {
+	$0
+}
+endsnippet
+
+snippet fh "react-firebase-hooks" A
+@module($1) external dirname: string => string = ${0:Variable Name(s)}
+endsnippet

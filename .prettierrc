@@ -1,0 +1,18 @@
+{
+	"semi": false,
+	"trailingComma": "es5",
+	"useTabs": true,
+	"tabWidth": 4,
+	"singleQuote": false,
+	"bracketSpacing": true,
+	"jsxBracketSameLine": false,
+	"arrowParens": "always",
+	"overrides": [
+		{
+			"files": ["*.md"],
+			"options": {
+				"tabWidth": 2
+			}
+		}
+	]
+}

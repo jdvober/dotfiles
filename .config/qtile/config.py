@@ -7,9 +7,9 @@ from libqtile import bar, layout, widget, hook, extension
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
-from libqtile.command_client import CommandClient
+from libqtile.command.client import CommandClient
 
-mod = "mod3"
+mod = "mod1"
 mod2 = "mod4"
 terminal = guess_terminal()
 
@@ -85,8 +85,8 @@ keys = [
     # Switch to a certain layout directly
     Key([mod], '1', lazy.group.setlayout('max')),
     Key([mod], '2', lazy.group.setlayout('monadtall')),
-    Key([mod], '3', lazy.group.setlayout('monadwide')),
-    Key([mod], '4', lazy.group.setlayout('stack')),
+	Key([mod], '3', lazy.group.setlayout('code')),
+    Key([mod], '4', lazy.group.setlayout('monadwide')),
     Key([mod], '5', lazy.group.setlayout('ratiotile')),
 
     # Close a window
@@ -94,8 +94,8 @@ keys = [
 
     # Power Management Keybindings
     Key([mod2], "l", lazy.spawn('betterlockscreen -l')),
-    Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([mod2], "r", lazy.restart(), desc="Restart Qtile"),
+    Key([mod2], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Run Command Keybindings
     Key([mod], "space", lazy.spawn('dmenu_run -b -i -dim 0.75 -h 30 -p ">>" -fn "Jetbrains Mono" -nb ' + \
@@ -110,15 +110,16 @@ keys = [
 
 #  groups = [Group(i) for i in "asdfuiop"]
 groups = [
-    Group("a", spawn="alacritty", layout="MonadTall",
-          init=True, position=1, label=""),
+    Group("a", spawn="alacritty", layout="MonadTall", init=True, position=1, label=""),
     Group("s", layout="max", init=True, position=2, label=""),
     Group("d", layout="max", init=True, position=3, label=""),
-    Group("f", init=True, position=4, label=""),
-    Group("z", init=True, position=5, label=""),
+    Group("f", init=True, position=4, label=""),
+    Group("z", init=True, position=5, label=""),
     Group("x", init=True, position=6, label=""),
     Group("c", init=True, position=7, label=""),
-    Group("v", init=True, position=8, label="")
+    Group("v", init=True, position=8, label=""),
+    Group("r", init=True, position=9, label=""),
+    Group("g", init=True, position=10, label=""),
 ]
 
 
@@ -141,13 +142,15 @@ layouts = [
     layout.Max(),
     layout.MonadTall(
         margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
+    layout.MonadTall(
+        name='code', ratio=0.8, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     layout.MonadWide(
         margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     # layout.Stack(num_stacks=2, margin=6, border_normal=colors["draculaComment"], border_focus=colors["draculaFG"], border_width=2),
     layout.RatioTile(
         margin=3, border_normal=colors["draculaComment"], border_focus=colors["draculaPink"], border_width=2),
     #  layout.Tile(margin = 6),
-    # Try more layouts by unleashing below layouts.
+    # Try more layouts ly unleashing below layouts.
     #  layout.Columns(border_focus_stack='#d75f5f'),
     # layout.Bsp(),
     #  layout.Matrix(),

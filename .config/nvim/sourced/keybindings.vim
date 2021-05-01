@@ -31,11 +31,12 @@ nnoremap E ge
 vnoremap E ge
 
 " ================================================================================
-" jj or jk exits insert mode
+" jj or jk or kj to exit insert mode
 " ================================================================================
 
 inoremap jj <Esc>
 inoremap jk <Esc>
+inoremap kj <Esc>
 
 " ================================================================================
 " Paste on line below / line above
@@ -174,6 +175,7 @@ nnoremap <silent> <S-Tab> mm<i}'m
 "ds  ...  delete surround
 "yss ...  surround entire line
 
+unmap S
 " Surround with "..."
 nnoremap S" g@iw"
 nnoremap S' g@iw'
@@ -201,6 +203,32 @@ nnoremap S] g@iw]
 
 " Surround with <div>...</div>
 nnoremap S<d g@iw<div><CR>
+
+" Surround with ~~ for strikethrough
+nnoremap S- viwc~~~~<esc>hhp
+vnoremap S- c~~~~<esc>hhp
+nnoremap S_ viwc~~~~<esc>hhp
+vnoremap S_ c~~~~<esc>hhp
+
+" Surround with $$ for inline math
+nnoremap S$ viwc\(\)<esc>hp
+vnoremap S$ c\(\)<esc>hp
+
+" Surround with \[ \] for blockmath
+nnoremap S4 viwc\[\]<esc>2hp
+vnoremap S4 viwc\[\]<esc>2hp
+
+" Surround with * for italics
+nnoremap SI viwc**<esc>hp
+vnoremap SI c**<esc>hp
+nnoremap Si viwc**<esc>hp
+vnoremap Si c**<esc>hp
+
+" Surround with ** for bold
+nnoremap SB viwc****<esc>hhp
+vnoremap SB c****<esc>hhp
+nnoremap Sb viwc****<esc>hhp
+vnoremap Sb c****<esc>hhp
 
 " I think this makes more sense for decrementing
 nnoremap <C-z> <C-x>
@@ -233,21 +261,21 @@ if exists('g:vscode')
 	" Swith to different tabs
 	nnoremap <silent> <leader>0 <Cmd>call VSCodeNotify('workbench.action.openLastEditorInGroup')<CR>
 	nnoremap <silent> <leader>1 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
-	nnoremap <silent> <space>a <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
+	nnoremap <silent> <localleader>a <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>
 	nnoremap <silent> <leader>2 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex2')<CR>
-	nnoremap <silent> <space>s <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex2')<CR>
+	nnoremap <silent> <localleader>s <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex2')<CR>
 	nnoremap <silent> <leader>3 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex3')<CR>
-	nnoremap <silent> <space>d <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex3')<CR>
+	nnoremap <silent> <localleader>d <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex3')<CR>
 	nnoremap <silent> <leader>4 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
-	nnoremap <silent> <space>f <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
+	nnoremap <silent> <localleader>f <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
 	nnoremap <silent> <leader>5 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
-	nnoremap <silent> <space>z <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
+	nnoremap <silent> <localleader>z <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
 	nnoremap <silent> <leader>6 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
-	nnoremap <silent> <space>x <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
+	nnoremap <silent> <localleader>x <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
 	nnoremap <silent> <leader>7 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
-	nnoremap <silent> <space>c <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
+	nnoremap <silent> <localleader>c <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
 	nnoremap <silent> <leader>8 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
-	nnoremap <silent> <space>v <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
+	nnoremap <silent> <localleader>v <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
 	nnoremap <silent> <leader>9 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex9')<CR>
 	
 	" Splits
@@ -257,15 +285,24 @@ if exists('g:vscode')
 	
 	" Find word under cursor in files
 nnoremap <silent> <localleader>/ <Cmd>call VSCodeNotify('workbench.action.findInFiles', { 'query': expand('<cword>')})<CR>
+
 	"*****************************************************************************
 	" Select All
 	"*****************************************************************************
 
-	nnoremap <silent> <C-S-a> <Cmd>call VSCodeNotify('editor.action.selectAll')
-	
+	nnoremap <silent> <C-S-a>		<Cmd>call VSCodeNotify('editor.action.selectAll')
+	nnoremap <silent> <localleader>A		<Cmd>call VSCodeNotify('editor.action.selectAll')
+
+
+	"*****************************************************************************
+	" File Manipulation
+	"*****************************************************************************
+	nnoremap <silent> <localleader>S		<Cmd>call VSCodeNotify('workbench.action.files.saveAs')<CR>
+	nnoremap <silent> <localleader>N		<Cmd>call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
+
 else
 	" IF NOT IN VSCODE	
-	
+
 	nnoremap <silent> <C-S-a> m]ggVG']
 
 endif

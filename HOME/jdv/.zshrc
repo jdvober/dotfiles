@@ -182,6 +182,7 @@ alias gdunmount="fusermount -u /home/jdv/google-drive-mount"
 alias oni="${HOME}/Applications/Onivim2*.AppImage"
 alias py="python3"
 alias bsstart="bsb -make-world -clean-world -w"
+alias fbstart="firebase emulators:start"
 
 # Location shortcuts
 alias ..="cd .."

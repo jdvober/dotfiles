@@ -53,13 +53,13 @@ if exists('g:vscode')
 	nnoremap <silent> <leader>4 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
 	nnoremap <silent> <localleader>f <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex4')<CR>
 	nnoremap <silent> <leader>5 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
-	nnoremap <silent> <localleader>z <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
+	nnoremap <silent> <localleader>j <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex5')<CR>
 	nnoremap <silent> <leader>6 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
-	nnoremap <silent> <localleader>x <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
+	nnoremap <silent> <localleader>k <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex6')<CR>
 	nnoremap <silent> <leader>7 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
-	nnoremap <silent> <localleader>c <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
+	nnoremap <silent> <localleader>l <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex7')<CR>
 	nnoremap <silent> <leader>8 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
-	nnoremap <silent> <localleader>v <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
+	nnoremap <silent> <localleader>; <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex8')<CR>
 	nnoremap <silent> <leader>9 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex9')<CR>
 
 	" Splits

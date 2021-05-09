@@ -1,0 +1,12 @@
+directory: /run/media/jdv/Media1/Music
+import:
+    copy: yes
+    write: no
+    move: no
+    incremental: yes
+    autotag: no
+paths:
+    default: $albumartist/$album%aunique{}/$track $title
+    singleton: $albumartist/$album%aunique{}/$track $title
+    comp: $artist/$album%aunique{}/$track $title
+threaded: yes

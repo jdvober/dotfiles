@@ -29,6 +29,7 @@
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/plugins.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/basic.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings.vim
+	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/keybindings_vscode.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/nerd-commenter.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/sneak.vim
 	source ~/github.com/jdvober/dotfiles/.config/nvim/sourced/easymotion.vim

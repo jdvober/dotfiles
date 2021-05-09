@@ -1,8 +1,12 @@
-snippet cl "Console Log" A
+snippet cl "Console Log" 
 Js.log($0)
 endsnippet
 
 snippet str "React String"
+React.string($0)
+endsnippet
+
+snippet rs "React String"
 React.string($0)
 endsnippet
 

@@ -41,7 +41,7 @@ if exists('g:vscode')
 
 	" Close overlays
 	nnoremap <silent> <localleader>w <Cmd>call VSCodeNotify('closeMarkersNavigation')<CR>
-
+	
 	" Swith to different tabs
 	nnoremap <silent> <leader>0 <Cmd>call VSCodeNotify('workbench.action.openLastEditorInGroup')<CR>
 	nnoremap <silent> <leader>1 <Cmd>call VSCodeNotify('workbench.action.openEditorAtIndex1')<CR>

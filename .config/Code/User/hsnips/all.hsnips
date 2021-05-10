@@ -1,0 +1,17 @@
+snippet q. "=>" A
+=>
+endsnippet
+
+snippet >> "=> {}" A
+=> {
+	${0}
+}
+endsnippet
+
+snippet << "-> " A
+-> 
+endsnippet
+
+snippet ql "|" A
+|
+endsnippet

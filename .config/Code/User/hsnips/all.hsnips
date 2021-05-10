@@ -8,6 +8,20 @@ snippet >> "=> {}" A
 }
 endsnippet
 
+snippet af "Arrow Function"
+let $1 = ($2) => {
+	$0
+}
+endsnippet
+
+snippet qj "underscore" A
+_
+endsnippet
+
+snippet qk "equals" A
+=
+endsnippet
+
 snippet << "-> " A
 -> 
 endsnippet

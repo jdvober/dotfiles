@@ -1,3 +1,9 @@
+snippet commentTitle "A Title Block for Comments in C-style languages" A
+////////////////////////////////////////
+// $0
+////////////////////////////////////////
+endsnippet
+
 snippet q. "=>" A
 =>
 endsnippet
@@ -5,12 +11,6 @@ endsnippet
 snippet >> "=> {}" A
 => {
 	${0}
-}
-endsnippet
-
-snippet af "Arrow Function"
-let $1 = ($2) => {
-	$0
 }
 endsnippet
 
@@ -22,8 +22,16 @@ snippet qk "equals" A
 =
 endsnippet
 
+snippet =qk "equals" A
+==
+endsnippet
+
+snippet ==qk"equals" A
+===
+endsnippet
+
 snippet << "-> " A
--> 
+->
 endsnippet
 
 snippet ql "|" A

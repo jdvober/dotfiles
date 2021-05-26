@@ -181,7 +181,7 @@ alias gdmount="rclone mount --daemon --allow-other --allow-root --vfs-cache-mode
 alias gdunmount="fusermount -u /home/jdv/google-drive-mount"
 alias oni="${HOME}/Applications/Onivim2*.AppImage"
 alias py="python3"
-alias resstart="rescript build -w"
+alias res-start="rescript build -w"
 alias fbstart="firebase emulators:start"
 
 # Location shortcuts

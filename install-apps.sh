@@ -121,9 +121,9 @@ install_yay()
 {
     echo -e "Installing ${BICyan}yay${Reset} AUR helper..."
     cd /opt
-    sudo git clone https://aur.archlinux.org/yay-git.git
-    sudo chown -R jdv:jdv ./yay-git
-    cd yay-git
+    sudo git clone https://aur.archlinux.org/yay-bin.git
+    sudo chown -R jdv:jdv ./yay-bin
+    cd yay-bin
     makepkg -si
     echo -e_done
 }
